@@ -1,0 +1,22 @@
+import JobList from "@/components/JobList";
+import { getJobsByCategory } from "@/lib/storage";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "worldglide — engineering",
+  description: "100% remote engineering jobs. no country restrictions. worldwide.",
+};
+
+export default async function EngineeringPage() {
+  const jobs = await getJobsByCategory("engineering");
+
+  return (
+    <div className="max-w-[960px] mx-auto px-8 pt-16 pb-24">
+      <JobList
+        jobs={jobs}
+        title="engineering"
+        subtitle="engineering roles across frontend, backend, full-stack, devops, mobile, data, ml, & infrastructure."
+      />
+    </div>
+  );
+}

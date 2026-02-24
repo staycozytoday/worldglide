@@ -1,0 +1,36 @@
+[
+  {
+    "id": "sub_1771464008394_mwl0vj",
+    "title": "test",
+    "company": "stay cozy & co.",
+    "companyWebsite": "https://staycozy.today",
+    "category": "product",
+    "url": "https://staycozy.today",
+    "description": "test",
+    "salary": "$80k — $120k",
+    "employmentType": "Full-time",
+    "contactEmail": "slava@staycozy.today",
+    "submittedAt": "2026-02-19T01:20:08.394Z",
+    "approved": false
+  },
+  {
+    "id": "sub_1771905763332_wx67pe",
+    "title": "test",
+    "company": "testtt",
+    "category": "product",
+    "url": "https://staycozy.today",
+    "contactEmail": "slava@staycozy.today",
+    "submittedAt": "2026-02-24T04:02:43.332Z",
+    "approved": false
+  },
+  {
+    "id": "sub_1771927420972_8y2chq",
+    "title": "asdf",
+    "company": "asdf",
+    "category": "product",
+    "url": "https://staycozy.today",
+    "contactEmail": "adsf@bk.com",
+    "submittedAt": "2026-02-24T10:03:40.972Z",
+    "approved": false
+  }
+]
