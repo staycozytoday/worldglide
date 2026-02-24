@@ -1,50 +1,26 @@
 import { Resend } from "resend";
 import crypto from "crypto";
-import fs from "fs/promises";
-import path from "path";
 
-const TOKENS_FILE = path.join(process.cwd(), "src", "data", "auth-tokens.json");
+// ============ HELPERS ============
 
-interface AuthToken {
-  token: string;
-  email: string;
-  expiresAt: string; // ISO date
-  used: boolean;
+function getSecret(): string {
+  return process.env.ADMIN_SESSION_SECRET || "dev-secret";
 }
 
-interface SessionToken {
-  session: string;
-  email: string;
-  expiresAt: string; // ISO date
+function hmacSign(payload: string): string {
+  return crypto.createHmac("sha256", getSecret()).update(payload).digest("hex");
 }
 
-// ============ TOKEN STORAGE ============
-
-async function getTokens(): Promise<AuthToken[]> {
-  try {
-    const data = await fs.readFile(TOKENS_FILE, "utf-8");
-    return JSON.parse(data);
-  } catch {
-    return [];
-  }
-}
-
-async function saveTokens(tokens: AuthToken[]): Promise<void> {
-  const dir = path.dirname(TOKENS_FILE);
-  await fs.mkdir(dir, { recursive: true });
-  await fs.writeFile(TOKENS_FILE, JSON.stringify(tokens, null, 2), "utf-8");
-}
-
-// ============ MAGIC LINK ============
+// ============ MAGIC LINK (stateless) ============
 
 /**
- * Generate a magic link token and send it via Resend.
- * Token is valid for 15 minutes.
+ * Generate a magic link and send it via Resend.
+ * The link is self-contained: email + expiry + HMAC signature.
+ * No server-side storage needed — works on serverless (Vercel).
  */
 export async function sendMagicLink(email: string): Promise<boolean> {
   const adminEmail = process.env.ADMIN_EMAIL;
   if (!adminEmail || email.toLowerCase() !== adminEmail.toLowerCase()) {
-    // Don't reveal whether the email is valid or not
     return true; // Silently succeed to prevent email enumeration
   }
 
@@ -54,17 +30,11 @@ export async function sendMagicLink(email: string): Promise<boolean> {
     return false;
   }
 
-  // Generate a secure random token
-  const token = crypto.randomBytes(32).toString("hex");
-  const expiresAt = new Date(Date.now() + 15 * 60 * 1000).toISOString(); // 15 min
-
-  // Save token
-  const tokens = await getTokens();
-  // Clean up expired tokens
-  const now = new Date();
-  const activeTokens = tokens.filter((t) => new Date(t.expiresAt) > now);
-  activeTokens.push({ token, email: adminEmail, expiresAt, used: false });
-  await saveTokens(activeTokens);
+  // Build stateless token: email:expiry:signature
+  const expires = Date.now() + 15 * 60 * 1000; // 15 minutes
+  const payload = `${adminEmail}:${expires}`;
+  const signature = hmacSign(payload);
+  const token = Buffer.from(`${payload}:${signature}`).toString("base64url");
 
   // Build magic link URL
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
@@ -101,63 +71,58 @@ export async function sendMagicLink(email: string): Promise<boolean> {
 }
 
 /**
- * Verify a magic link token and return a session token.
- * Each magic link can only be used once.
+ * Verify a stateless magic link token.
+ * Decodes base64url → checks expiry → verifies HMAC signature.
  */
-export async function verifyMagicLink(
-  token: string
-): Promise<{ session: string; email: string } | null> {
-  const tokens = await getTokens();
-  const now = new Date();
+export function verifyMagicLink(token: string): { email: string } | null {
+  try {
+    const decoded = Buffer.from(token, "base64url").toString("utf-8");
+    const parts = decoded.split(":");
+    if (parts.length !== 3) return null;
 
-  const authToken = tokens.find(
-    (t) => t.token === token && !t.used && new Date(t.expiresAt) > now
-  );
+    const [email, expiresStr, signature] = parts;
+    const expires = parseInt(expiresStr, 10);
 
-  if (!authToken) return null;
+    // Check expiry
+    if (Date.now() > expires) return null;
 
-  // Mark as used
-  authToken.used = true;
-  await saveTokens(tokens);
+    // Verify HMAC
+    const payload = `${email}:${expiresStr}`;
+    const expected = hmacSign(payload);
+    if (signature !== expected) return null;
 
-  // Generate session token (valid for 7 days)
-  const session = crypto.randomBytes(32).toString("hex");
-  return { session, email: authToken.email };
+    return { email };
+  } catch {
+    return null;
+  }
 }
 
+// ============ SESSION COOKIE ============
+
 /**
- * Check if a session cookie value is a valid admin session.
- * We use a simple HMAC approach — the session cookie contains
- * "email:timestamp:signature" so we can verify without a database lookup.
+ * Create a signed session cookie: email:expiry:signature
+ * Valid for 7 days. No database needed.
  */
 export function createSessionCookie(email: string): string {
-  const secret = process.env.ADMIN_SESSION_SECRET || process.env.ADMIN_PASSWORD || "dev-secret";
   const expires = Date.now() + 7 * 24 * 60 * 60 * 1000; // 7 days
   const payload = `${email}:${expires}`;
-  const signature = crypto
-    .createHmac("sha256", secret)
-    .update(payload)
-    .digest("hex");
+  const signature = hmacSign(payload);
   return `${payload}:${signature}`;
 }
 
+/**
+ * Verify a session cookie's signature and expiry.
+ */
 export function verifySessionCookie(cookie: string): boolean {
-  const secret = process.env.ADMIN_SESSION_SECRET || process.env.ADMIN_PASSWORD || "dev-secret";
   const parts = cookie.split(":");
   if (parts.length !== 3) return false;
 
-  const [email, expiresStr, signature] = parts;
+  const [, expiresStr, signature] = parts;
   const expires = parseInt(expiresStr, 10);
 
-  // Check expiry
   if (Date.now() > expires) return false;
 
-  // Check signature
-  const payload = `${email}:${expiresStr}`;
-  const expected = crypto
-    .createHmac("sha256", secret)
-    .update(payload)
-    .digest("hex");
-
+  const payload = `${parts[0]}:${expiresStr}`;
+  const expected = hmacSign(payload);
   return signature === expected;
 }

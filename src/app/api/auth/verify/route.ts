@@ -9,7 +9,7 @@ export async function GET(request: Request) {
     return NextResponse.redirect(new URL("/admin/login?error=missing-token", request.url));
   }
 
-  const result = await verifyMagicLink(token);
+  const result = verifyMagicLink(token);
 
   if (!result) {
     return NextResponse.redirect(new URL("/admin/login?error=invalid-or-expired", request.url));
