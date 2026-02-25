@@ -1,6 +1,8 @@
 import JobList from "@/components/JobList";
 import { getJobs } from "@/lib/storage";
 
+export const dynamic = "force-dynamic";
+
 export default async function HomePage() {
   const jobs = await getJobs();
 

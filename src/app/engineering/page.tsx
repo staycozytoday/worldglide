@@ -3,9 +3,11 @@ import { getJobsByCategory } from "@/lib/storage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "worldglide — engineering",
+  title: "worldglide ･ engineering",
   description: "100% remote engineering jobs. no country restrictions. worldwide.",
 };
+
+export const dynamic = "force-dynamic";
 
 export default async function EngineeringPage() {
   const jobs = await getJobsByCategory("engineering");

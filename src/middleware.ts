@@ -2,16 +2,16 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
 /**
- * Middleware that protects /admin routes with magic link auth.
+ * Middleware that protects /grimoire routes with magic link auth.
  *
  * Flow:
- * 1. Visit /admin → middleware checks for "admin-session" cookie
- * 2. No valid cookie → redirect to /admin/login
+ * 1. Visit /grimoire → middleware checks for "admin-session" cookie
+ * 2. No valid cookie → redirect to /grimoire/login
  * 3. User enters email → receives magic link via Resend
- * 4. Click link → /api/auth/verify sets session cookie → redirect to /admin
+ * 4. Click link → /api/auth/verify sets session cookie → redirect to /grimoire
  * 5. Session lasts 7 days
  *
- * The /admin/login page and /api/auth/* routes are NOT protected.
+ * The /grimoire/login page and /api/auth/* routes are NOT protected.
  * Uses Web Crypto API (compatible with Edge Runtime).
  */
 export async function middleware(request: NextRequest) {
@@ -19,7 +19,7 @@ export async function middleware(request: NextRequest) {
 
   // Allow login page and auth API routes through
   if (
-    pathname === "/admin/login" ||
+    pathname === "/grimoire/login" ||
     pathname.startsWith("/api/auth/")
   ) {
     return NextResponse.next();
@@ -38,7 +38,7 @@ export async function middleware(request: NextRequest) {
   }
 
   // No valid session → redirect to login
-  const loginUrl = new URL("/admin/login", request.url);
+  const loginUrl = new URL("/grimoire/login", request.url);
   return NextResponse.redirect(loginUrl);
 }
 
@@ -86,7 +86,7 @@ async function verifySession(cookie: string): Promise<boolean> {
   }
 }
 
-// Protect admin page + admin API, but NOT login page or auth API
+// Protect grimoire + admin API, but NOT login page or auth API
 export const config = {
-  matcher: ["/admin/:path*", "/api/admin/:path*"],
+  matcher: ["/grimoire/:path*", "/api/admin/:path*"],
 };

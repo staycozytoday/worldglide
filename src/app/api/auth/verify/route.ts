@@ -6,20 +6,20 @@ export async function GET(request: Request) {
   const token = url.searchParams.get("token");
 
   if (!token) {
-    return NextResponse.redirect(new URL("/admin/login?error=missing-token", request.url));
+    return NextResponse.redirect(new URL("/grimoire/login?error=missing-token", request.url));
   }
 
   const result = verifyMagicLink(token);
 
   if (!result) {
-    return NextResponse.redirect(new URL("/admin/login?error=invalid-or-expired", request.url));
+    return NextResponse.redirect(new URL("/grimoire/login?error=invalid-or-expired", request.url));
   }
 
   // Create session cookie
   const sessionValue = createSessionCookie(result.email);
 
   // Redirect to admin with session cookie
-  const response = NextResponse.redirect(new URL("/admin", request.url));
+  const response = NextResponse.redirect(new URL("/grimoire", request.url));
   response.cookies.set("admin-session", sessionValue, {
     httpOnly: true,
     secure: process.env.NODE_ENV === "production",

@@ -3,9 +3,11 @@ import { getJobsByCategory } from "@/lib/storage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "worldglide — product",
+  title: "worldglide ･ product",
   description: "100% remote product jobs. no country restrictions. worldwide.",
 };
+
+export const dynamic = "force-dynamic";
 
 export default async function ProductPage() {
   const jobs = await getJobsByCategory("product");

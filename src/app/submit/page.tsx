@@ -2,7 +2,7 @@ import SubmitForm from "@/components/SubmitForm";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "worldglide — post a job",
+  title: "worldglide ･ post a job",
   description:
     "post a 100% remote, worldwide job for free. reviewed for quality before going live.",
 };

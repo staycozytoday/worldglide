@@ -1,35 +1,71 @@
 import { Job, JobSubmission, JOB_EXPIRY_MS } from "./types";
 import { SAMPLE_JOBS } from "./sample-data";
-import fs from "fs/promises";
-import path from "path";
 
-const DATA_DIR = path.join(process.cwd(), "src", "data");
-const JOBS_FILE = path.join(DATA_DIR, "jobs.json");
-const SUBMISSIONS_FILE = path.join(DATA_DIR, "submissions.json");
+const isProduction = process.env.NODE_ENV === "production";
 
-/**
- * In development: reads/writes local JSON files
- * In production: will use Vercel Blob (swapped later)
- */
+// ============ BLOB HELPERS (production) ============
 
-async function ensureDataDir() {
+async function blobGet<T>(filename: string, fallback: T): Promise<T> {
   try {
-    await fs.mkdir(DATA_DIR, { recursive: true });
-  } catch {}
+    const { list } = await import("@vercel/blob");
+    const { blobs } = await list({ prefix: filename, limit: 1 });
+    if (blobs.length === 0) return fallback;
+
+    const res = await fetch(blobs[0].url, { cache: "no-store" });
+    return await res.json();
+  } catch (err) {
+    console.error(`[storage] blobGet "${filename}" failed:`, err);
+    return fallback;
+  }
+}
+
+async function blobPut(filename: string, data: unknown): Promise<void> {
+  const { put } = await import("@vercel/blob");
+  await put(filename, JSON.stringify(data, null, 2), {
+    access: "public",
+    addRandomSuffix: false,
+    allowOverwrite: true,
+  });
+}
+
+// ============ LOCAL FILE HELPERS (development) ============
+
+async function localGet<T>(filepath: string, fallback: T): Promise<T> {
+  try {
+    const fs = await import("fs/promises");
+    const path = await import("path");
+    const fullPath = path.join(process.cwd(), "src", "data", filepath);
+    const data = await fs.readFile(fullPath, "utf-8");
+    return JSON.parse(data);
+  } catch {
+    return fallback;
+  }
+}
+
+async function localPut(filepath: string, data: unknown): Promise<void> {
+  const fs = await import("fs/promises");
+  const path = await import("path");
+  const dir = path.join(process.cwd(), "src", "data");
+  await fs.mkdir(dir, { recursive: true });
+  const fullPath = path.join(dir, filepath);
+  await fs.writeFile(fullPath, JSON.stringify(data, null, 2), "utf-8");
+}
+
+// ============ UNIFIED STORAGE ============
+
+async function getData<T>(filename: string, fallback: T): Promise<T> {
+  return isProduction ? blobGet(filename, fallback) : localGet(filename, fallback);
+}
+
+async function putData(filename: string, data: unknown): Promise<void> {
+  return isProduction ? blobPut(filename, data) : localPut(filename, data);
 }
 
 // ============ JOBS ============
 
 export async function getJobs(): Promise<Job[]> {
-  try {
-    await ensureDataDir();
-    const data = await fs.readFile(JOBS_FILE, "utf-8");
-    const jobs: Job[] = JSON.parse(data);
-    return markExpired(jobs);
-  } catch {
-    // If no jobs file exists, return sample data
-    return markExpired(SAMPLE_JOBS);
-  }
+  const jobs = await getData<Job[]>("jobs.json", SAMPLE_JOBS);
+  return markExpired(jobs);
 }
 
 export async function getJobsByCategory(
@@ -40,33 +76,21 @@ export async function getJobsByCategory(
 }
 
 export async function saveJobs(jobs: Job[]): Promise<void> {
-  await ensureDataDir();
-  await fs.writeFile(JOBS_FILE, JSON.stringify(jobs, null, 2), "utf-8");
+  await putData("jobs.json", jobs);
 }
 
 // ============ SUBMISSIONS ============
 
 export async function getSubmissions(): Promise<JobSubmission[]> {
-  try {
-    await ensureDataDir();
-    const data = await fs.readFile(SUBMISSIONS_FILE, "utf-8");
-    return JSON.parse(data);
-  } catch {
-    return [];
-  }
+  return getData<JobSubmission[]>("submissions.json", []);
 }
 
 export async function saveSubmission(
   submission: JobSubmission
 ): Promise<void> {
-  await ensureDataDir();
   const existing = await getSubmissions();
   existing.push(submission);
-  await fs.writeFile(
-    SUBMISSIONS_FILE,
-    JSON.stringify(existing, null, 2),
-    "utf-8"
-  );
+  await putData("submissions.json", existing);
 }
 
 export async function approveSubmission(id: string): Promise<boolean> {
@@ -74,23 +98,62 @@ export async function approveSubmission(id: string): Promise<boolean> {
   const idx = submissions.findIndex((s) => s.id === id);
   if (idx === -1) return false;
 
-  submissions[idx].approved = true;
-  await fs.writeFile(
-    SUBMISSIONS_FILE,
-    JSON.stringify(submissions, null, 2),
-    "utf-8"
-  );
+  const sub = submissions[idx];
+  sub.approved = true;
+  await putData("submissions.json", submissions);
+
+  // immediately publish to jobs.json so it appears on the board
+  const jobs = await getData<Job[]>("jobs.json", []);
+  if (!jobs.some((j) => j.id === sub.id)) {
+    jobs.push({
+      id: sub.id,
+      title: sub.title,
+      company: sub.company,
+      category: sub.category,
+      url: sub.url,
+      source: "user-submitted" as const,
+      tags: [],
+      postedAt: sub.submittedAt,
+      scrapedAt: sub.submittedAt,
+      isWorldwide: true,
+    });
+    await saveJobs(jobs);
+  }
+
   return true;
 }
 
 export async function rejectSubmission(id: string): Promise<boolean> {
   const submissions = await getSubmissions();
-  const filtered = submissions.filter((s) => s.id !== id);
-  await fs.writeFile(
-    SUBMISSIONS_FILE,
-    JSON.stringify(filtered, null, 2),
-    "utf-8"
-  );
+  const idx = submissions.findIndex((s) => s.id === id);
+  if (idx === -1) return false;
+
+  submissions[idx].rejected = true;
+  await putData("submissions.json", submissions);
+
+  // remove from jobs.json if it was published
+  const jobs = await getData<Job[]>("jobs.json", []);
+  const filtered = jobs.filter((j) => j.id !== id);
+  if (filtered.length !== jobs.length) await saveJobs(filtered);
+
+  return true;
+}
+
+export async function resurrectSubmission(id: string): Promise<boolean> {
+  const submissions = await getSubmissions();
+  const idx = submissions.findIndex((s) => s.id === id);
+  if (idx === -1) return false;
+
+  submissions[idx].approved = false;
+  submissions[idx].rejected = false;
+  submissions[idx].submittedAt = new Date().toISOString(); // reset 14-day clock
+  await putData("submissions.json", submissions);
+
+  // remove from jobs.json (it goes back to pending, not live)
+  const jobs = await getData<Job[]>("jobs.json", []);
+  const filtered = jobs.filter((j) => j.id !== id);
+  if (filtered.length !== jobs.length) await saveJobs(filtered);
+
   return true;
 }
 

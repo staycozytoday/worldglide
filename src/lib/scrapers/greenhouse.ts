@@ -3,39 +3,55 @@ import { isWorldwideRemote } from "../filter";
 import { categorizeJob } from "../categorize";
 import { createJobId } from "../utils";
 import { REMOTE_COMPANIES } from "../companies";
+import { fetchWithRetry, CompanyResult } from "../fetch-retry";
+
+export interface GreenhouseResult {
+  jobs: Job[];
+  report: CompanyResult[];
+}
 
 /**
- * Scrape jobs from Greenhouse-based companies.
- * API: https://boards-api.greenhouse.io/v1/boards/{slug}/jobs
+ * scrape jobs from greenhouse-based companies.
+ * api: https://boards-api.greenhouse.io/v1/boards/{slug}/jobs
  */
-export async function scrapeGreenhouse(): Promise<Job[]> {
-  const greenhouseCompanies = REMOTE_COMPANIES.filter(
+export async function scrapeGreenhouse(): Promise<GreenhouseResult> {
+  const companies = REMOTE_COMPANIES.filter(
     (c) => c.atsType === "greenhouse" && c.atsSlug
   );
 
-  const results: Job[] = [];
+  const jobs: Job[] = [];
+  const report: CompanyResult[] = [];
 
-  // Process companies in parallel batches of 10
-  for (let i = 0; i < greenhouseCompanies.length; i += 10) {
-    const batch = greenhouseCompanies.slice(i, i + 10);
-    const batchResults = await Promise.allSettled(
-      batch.map((company) => scrapeGreenhouseCompany(company.atsSlug!, company.name, company.domain))
+  for (let i = 0; i < companies.length; i += 10) {
+    const batch = companies.slice(i, i + 10);
+    const results = await Promise.allSettled(
+      batch.map((c) => scrapeGreenhouseCompany(c.atsSlug!, c.name, c.domain))
     );
 
-    for (const result of batchResults) {
-      if (result.status === "fulfilled") {
-        results.push(...result.value);
+    for (let j = 0; j < results.length; j++) {
+      const r = results[j];
+      const c = batch[j];
+      if (r.status === "fulfilled") {
+        jobs.push(...r.value);
+        report.push({ company: c.name, ats: "greenhouse", slug: c.atsSlug!, jobs: r.value.length });
+      } else {
+        const msg = r.reason instanceof Error ? r.reason.message : String(r.reason);
+        console.error(`[greenhouse/${c.atsSlug}] failed after retries: ${msg}`);
+        report.push({ company: c.name, ats: "greenhouse", slug: c.atsSlug!, jobs: 0, error: msg });
       }
     }
 
-    // Brief pause between batches
-    if (i + 10 < greenhouseCompanies.length) {
+    if (i + 10 < companies.length) {
       await new Promise((r) => setTimeout(r, 500));
     }
   }
 
-  console.log(`[Greenhouse] Scraped ${results.length} worldwide jobs from ${greenhouseCompanies.length} companies`);
-  return results;
+  const failed = report.filter((r) => r.error).length;
+  console.log(
+    `[greenhouse] ${jobs.length} worldwide jobs from ${companies.length} companies` +
+    (failed ? ` (${failed} failed)` : "")
+  );
+  return { jobs, report };
 }
 
 async function scrapeGreenhouseCompany(
@@ -43,68 +59,56 @@ async function scrapeGreenhouseCompany(
   companyName: string,
   companyDomain?: string
 ): Promise<Job[]> {
-  try {
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 15000);
-    const res = await fetch(
-      `https://boards-api.greenhouse.io/v1/boards/${slug}/jobs?content=true`,
-      {
-        headers: { "User-Agent": "worldglide-jobs/1.0" },
-        signal: controller.signal,
-      }
-    );
-    clearTimeout(timeout);
+  const res = await fetchWithRetry(
+    `https://boards-api.greenhouse.io/v1/boards/${slug}/jobs?content=true`,
+    { headers: { "User-Agent": "worldglide-jobs/1.0" }, timeoutMs: 15000 }
+  );
 
-    if (!res.ok) {
-      console.error(`[Greenhouse/${slug}] API error: ${res.status}`);
-      return [];
-    }
-
-    const data = await res.json();
-    const jobs = data.jobs || [];
-    const results: Job[] = [];
-
-    for (const item of jobs) {
-      const locationName = item.location?.name || "";
-      const content = item.content || "";
-
-      if (
-        !isWorldwideRemote({
-          title: item.title,
-          description: content,
-          location: locationName,
-        })
-      ) {
-        continue;
-      }
-
-      const category = categorizeJob(item.title);
-      if (!category) continue;
-
-      results.push({
-        id: createJobId("greenhouse", `${slug}_${item.id}`),
-        title: item.title || "",
-        company: companyName,
-        companyLogo: companyDomain ? getCompanyLogoUrl(companyDomain) : undefined,
-        category,
-        url:
-          item.absolute_url ||
-          `https://boards.greenhouse.io/${slug}/jobs/${item.id}`,
-        source: "greenhouse",
-        tags: (item.departments || []).map((d: { name: string }) => d.name),
-        postedAt: item.updated_at || new Date().toISOString(),
-        scrapedAt: new Date().toISOString(),
-        description: content ? stripHtml(content).slice(0, 200) : undefined,
-        isWorldwide: true,
-        employmentType: "Full-time",
-      });
-    }
-
-    return results;
-  } catch (err) {
-    console.error(`[Greenhouse/${slug}] Error:`, err);
-    return [];
+  if (!res.ok) {
+    throw new Error(`api ${res.status}`);
   }
+
+  const data = await res.json();
+  const items = data.jobs || [];
+  const results: Job[] = [];
+
+  for (const item of items) {
+    const locationName = item.location?.name || "";
+    const content = item.content || "";
+
+    if (
+      !isWorldwideRemote({
+        title: item.title,
+        description: content,
+        location: locationName,
+      })
+    ) {
+      continue;
+    }
+
+    const category = categorizeJob(item.title);
+    if (!category) continue;
+
+    results.push({
+      id: createJobId("greenhouse", `${slug}_${item.id}`),
+      title: item.title || "",
+      company: companyName,
+      companyLogo: companyDomain ? getCompanyLogoUrl(companyDomain) : undefined,
+      category,
+      url:
+        item.absolute_url ||
+        `https://job-boards.greenhouse.io/${slug}/jobs/${item.id}`,
+      source: "greenhouse",
+      tags: (item.departments || []).map((d: { name: string }) => d.name),
+      postedAt: item.updated_at || new Date().toISOString(),
+      scrapedAt: new Date().toISOString(),
+      description: content ? stripHtml(content).slice(0, 200) : undefined,
+      isWorldwide: true,
+      employmentType: "Full-time",
+    });
+  }
+
+  return results;
 }
 
 function stripHtml(html: string): string {

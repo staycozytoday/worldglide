@@ -33,6 +33,7 @@ export interface JobSubmission {
   contactEmail: string;
   submittedAt: string; // ISO date
   approved: boolean; // requires admin approval
+  rejected?: boolean; // declined by admin
 }
 
 export interface RemoteCompany {

@@ -64,9 +64,9 @@ export default function SubmitForm() {
   if (state === "success") {
     return (
       <div className="py-16 animate-fade-in">
-        <p className="text-[13px] font-medium">job submitted ✓</p>
+        <p className="text-[13px] font-medium">✓ job submitted</p>
         <p className="text-[12px] text-[var(--color-text-muted)] mt-2">
-          we&apos;ll review your listing within 24 hours and notify you via email once it&apos;s live.
+          we&apos;ll review your listing within 24 hours &amp; notify you via email once it&apos;s live.
         </p>
       </div>
     );
@@ -81,12 +81,12 @@ export default function SubmitForm() {
 
       <div>
         <label htmlFor="title" className={labelClass}>title</label>
-        <input type="text" id="title" name="title" required placeholder="rockstar design ninja" className={inputClass} />
+        <input type="text" id="title" name="title" required placeholder="ninja rockstar" className={inputClass} />
       </div>
 
       <div>
         <label htmlFor="company" className={labelClass}>company</label>
-        <input type="text" id="company" name="company" required placeholder="your company name" className={inputClass} />
+        <input type="text" id="company" name="company" required placeholder="olympus optical" className={inputClass} />
       </div>
 
       <div>
@@ -111,13 +111,13 @@ export default function SubmitForm() {
 
       <div>
         <label htmlFor="url" className={labelClass}>link</label>
-        <input type="url" id="url" name="url" required placeholder="https://your-company.com/carrers/role" className={inputClass} />
+        <input type="url" id="url" name="url" required placeholder="https://company.com/careers/role" className={inputClass} />
       </div>
 
       <div>
         <label htmlFor="contactEmail" className={labelClass}>email</label>
-        <input type="email" id="contactEmail" name="contactEmail" required placeholder="your-work@mail.com" className={inputClass} />
-        <p className="text-[10px] text-[var(--color-text-muted)] mt-1 font-mono">invisible to the public. used mainly to contact you in future.</p>
+        <input type="email" id="contactEmail" name="contactEmail" required placeholder="your@email.com" className={inputClass} />
+        <p className="text-[10px] text-[var(--color-text-muted)] mt-1 font-mono">invisible to the public. used mainly to contact you in the future.</p>
       </div>
 
       {state === "error" && (

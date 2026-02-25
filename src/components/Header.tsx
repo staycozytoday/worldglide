@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const NAV_ITEMS = [
-  { label: "all", href: "/" },
   { label: "product", href: "/product" },
   { label: "engineering", href: "/engineering" },
   { label: "design", href: "/design" },
@@ -21,7 +20,7 @@ export default function Header() {
             worldglide
           </Link>
 
-          <nav className="flex items-center gap-6 ml-6">
+          <nav className="flex items-center gap-4 sm:gap-6 ml-auto sm:ml-6">
             {NAV_ITEMS.map((item) => {
               const isActive =
                 item.href === "/"
@@ -44,7 +43,7 @@ export default function Header() {
             })}
           </nav>
 
-          <div className="flex items-center gap-6 ml-auto">
+          <div className="hidden sm:flex items-center gap-6 ml-auto">
             <Link
               href="/submit"
               className={`text-[12px] transition-colors ${

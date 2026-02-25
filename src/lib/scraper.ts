@@ -3,57 +3,83 @@ import { deduplicateJobs } from "./deduplicate";
 import { scrapeGreenhouse } from "./scrapers/greenhouse";
 import { scrapeLever } from "./scrapers/lever";
 import { scrapeAshby } from "./scrapers/ashby";
+import { CompanyResult, ScrapeReport } from "./fetch-retry";
+
+export interface ScrapeOutput {
+  jobs: Job[];
+  report: ScrapeReport;
+}
 
 /**
- * Main scraping orchestrator.
- * Scrapes ONLY direct company ATS boards (Greenhouse, Lever, Ashby).
- * No third-party job boards — they're low quality and noisy.
+ * main scraping orchestrator.
+ * scrapes only direct company ats boards (greenhouse, lever, ashby).
+ * no third-party job boards — they're low quality and noisy.
  */
-export async function scrapeAllSources(): Promise<Job[]> {
-  console.log("[Scraper] Starting scrape — direct ATS only...");
+export async function scrapeAllSources(): Promise<ScrapeOutput> {
+  console.log("[scraper] starting scrape — direct ats only...");
   const startTime = Date.now();
 
-  const [greenhouseJobs, leverJobs, ashbyJobs] = await Promise.allSettled([
+  const [gh, lv, ab] = await Promise.allSettled([
     scrapeGreenhouse(),
     scrapeLever(),
     scrapeAshby(),
   ]);
 
   const allJobs: Job[] = [];
+  const allReport: CompanyResult[] = [];
 
   const sources = [
-    { name: "Greenhouse", result: greenhouseJobs },
-    { name: "Lever", result: leverJobs },
-    { name: "Ashby", result: ashbyJobs },
-  ];
+    { name: "greenhouse", result: gh },
+    { name: "lever", result: lv },
+    { name: "ashby", result: ab },
+  ] as const;
 
   for (const source of sources) {
     if (source.result.status === "fulfilled") {
-      allJobs.push(...source.result.value);
-      console.log(`[Scraper] ${source.name}: ${source.result.value.length} jobs`);
+      allJobs.push(...source.result.value.jobs);
+      allReport.push(...source.result.value.report);
+      console.log(`[scraper] ${source.name}: ${source.result.value.jobs.length} jobs`);
     } else {
-      console.error(`[Scraper] ${source.name} FAILED:`, source.result.reason);
+      console.error(`[scraper] ${source.name} FAILED entirely:`, source.result.reason);
     }
   }
 
-  // Deduplicate
+  // deduplicate
   const dedupedJobs = deduplicateJobs(allJobs);
 
-  // Sort by date (newest first)
+  // sort by date (newest first)
   dedupedJobs.sort(
     (a, b) => new Date(b.postedAt).getTime() - new Date(a.postedAt).getTime()
   );
 
-  // Keep only last 14 days (2 weeks) — fresher jobs, higher quality
+  // keep only last 14 days
   const cutoff = Date.now() - 14 * 24 * 60 * 60 * 1000;
   const recentJobs = dedupedJobs.filter(
     (job) => new Date(job.postedAt).getTime() > cutoff
   );
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+  const failures = allReport.filter((r) => r.error);
+
   console.log(
-    `[Scraper] Done in ${elapsed}s. Total: ${allJobs.length} → Deduped: ${dedupedJobs.length} → Recent (14d): ${recentJobs.length}`
+    `[scraper] done in ${elapsed}s. total: ${allJobs.length} → deduped: ${dedupedJobs.length} → recent (14d): ${recentJobs.length}` +
+    (failures.length ? ` | ${failures.length} companies failed` : "")
   );
 
-  return recentJobs;
+  if (failures.length) {
+    console.warn(
+      `[scraper] failures: ${failures.map((f) => `${f.company} (${f.error})`).join(", ")}`
+    );
+  }
+
+  return {
+    jobs: recentJobs,
+    report: {
+      companies: allReport.length,
+      succeeded: allReport.length - failures.length,
+      failed: failures.length,
+      failures,
+      elapsed: `${elapsed}s`,
+    },
+  };
 }

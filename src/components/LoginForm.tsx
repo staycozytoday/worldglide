@@ -40,25 +40,25 @@ export default function LoginForm() {
 
   if (sent) {
     return (
-      <div className="mt-8">
-        <div className="h-[40px] flex items-center text-[13px] text-[var(--color-text)]">
-          check your email for the login link.
-        </div>
+      <div>
+        <p className="text-[13px] text-[var(--color-text)]">
+          check your email for some magic.
+        </p>
         <p className="text-[11px] text-[var(--color-text-muted)] mt-2">
-          the link expires in 15 minutes.
+          the spell expires in 8 minutes.
         </p>
         <button
           onClick={() => { setSent(false); setEmail(""); }}
-          className="mt-4 text-[11px] text-[var(--color-text-muted)] underline"
+          className="mt-4 text-[11px] text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors"
         >
-          try a different email
+          use a different email
         </button>
       </div>
     );
   }
 
   return (
-    <form onSubmit={handleSubmit} className="mt-8 space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-6">
       {urlError === "invalid-or-expired" && (
         <p className="text-[11px] text-red-500">
           that link has expired or already been used. request a new one.
@@ -73,21 +73,25 @@ export default function LoginForm() {
         <p className="text-[11px] text-red-500">{error}</p>
       )}
 
-      <input
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="your@email.com"
-        required
-        className="w-full h-[40px] px-3 text-[13px] bg-transparent border border-[var(--color-border)] rounded-md focus:outline-none focus:border-[var(--color-text)] transition-colors placeholder:text-[var(--color-text-muted)]"
-      />
+      <div>
+        <label htmlFor="email" className="block text-[11px] text-[var(--color-text-muted)] mb-1 font-mono">email</label>
+        <input
+          type="email"
+          id="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="your@email.com"
+          required
+          className="w-full h-[40px] px-2 text-[12px] bg-transparent border-b border-[var(--color-border)] focus:outline-none focus:border-[var(--color-text)] placeholder:text-[var(--color-text-muted)] transition-colors"
+        />
+      </div>
 
       <button
         type="submit"
         disabled={loading || !email.trim()}
-        className="w-full h-[40px] bg-[var(--color-text)] text-[var(--color-bg)] text-[13px] font-medium rounded-md hover:opacity-90 transition-opacity disabled:opacity-40"
+        className="w-full h-[40px] text-[11px] font-mono bg-[var(--color-text)] text-[var(--color-bg)] hover:opacity-80 transition-opacity disabled:opacity-40 disabled:cursor-not-allowed"
       >
-        {loading ? "sending..." : "send login link"}
+        {loading ? "casting..." : "send"}
       </button>
     </form>
   );

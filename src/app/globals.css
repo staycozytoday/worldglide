@@ -98,8 +98,18 @@ html {
 .stagger-children > *:nth-child(9) { animation-delay: 0.18s; }
 .stagger-children > *:nth-child(10) { animation-delay: 0.2s; }
 
+/* REC dot — slow blink like a recording indicator */
+@keyframes rec-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-rec {
+  animation: rec-blink 4s ease-in-out infinite;
+}
+
 /* expired */
 .job-expired {
-  opacity: 0.3;
+  opacity: 0.4;
   pointer-events: none;
 }

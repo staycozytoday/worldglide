@@ -31,16 +31,16 @@ export default function JobList({ jobs, title, subtitle }: JobListProps) {
   return (
     <div>
       {title && (
-        <div className="mb-8">
-          <h1 className="text-[24px] font-medium tracking-tight">
+        <div className="mb-16">
+          <h1 className="text-[32px] md:text-[40px] font-medium tracking-tight leading-[1.1] text-[var(--color-text)]">
             {title}
           </h1>
           {subtitle && (
-            <p className="text-[12px] text-[var(--color-text-muted)] mt-2 max-w-[320px]">
+            <p className="text-[12px] text-[var(--color-text-muted)] mt-4 max-w-[320px] leading-relaxed">
               {subtitle}
             </p>
           )}
-          <p className="text-[11px] text-[var(--color-text-muted)] mt-2 font-mono">
+          <p className="text-[10px] text-[var(--color-text-muted)] mt-4 font-mono">
             {openCount} vacancies
           </p>
         </div>
@@ -48,10 +48,10 @@ export default function JobList({ jobs, title, subtitle }: JobListProps) {
 
       {/* column headers */}
       <div className="h-[32px] flex items-center border-b border-[var(--color-text)] text-[10px] text-[var(--color-text-muted)] font-mono">
-        <span className="w-[80px] shrink-0 hidden sm:block">time</span>
+        <span className="w-[80px] shrink-0 hidden sm:block text-right">age</span>
         <span className="flex-1 px-4">position</span>
         <span className="w-[120px] shrink-0 text-right px-4">company</span>
-        <span className="w-[72px] shrink-0 text-right hidden lg:block">type</span>
+        <span className="w-[72px] shrink-0 hidden lg:block">type</span>
       </div>
 
       {/* jobs */}
@@ -60,8 +60,8 @@ export default function JobList({ jobs, title, subtitle }: JobListProps) {
           <div key={group.label}>
             {sortedJobs
               .slice(group.startIndex, group.endIndex)
-              .map((job) => (
-                <JobCard key={job.id} job={job} />
+              .map((job, i) => (
+                <JobCard key={job.id} job={job} index={group.startIndex + i} />
               ))}
           </div>
         ))}

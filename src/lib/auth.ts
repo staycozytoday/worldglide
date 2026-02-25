@@ -31,7 +31,7 @@ export async function sendMagicLink(email: string): Promise<boolean> {
   }
 
   // Build stateless token: email:expiry:signature
-  const expires = Date.now() + 15 * 60 * 1000; // 15 minutes
+  const expires = Date.now() + 8 * 60 * 1000; // 8 minutes
   const payload = `${adminEmail}:${expires}`;
   const signature = hmacSign(payload);
   const token = Buffer.from(`${payload}:${signature}`).toString("base64url");
@@ -43,26 +43,32 @@ export async function sendMagicLink(email: string): Promise<boolean> {
   // Send email via Resend
   const resend = new Resend(resendApiKey);
   try {
-    await resend.emails.send({
-      from: process.env.RESEND_FROM_EMAIL || "worldglide <onboarding@resend.dev>",
+    const fromEmail = process.env.RESEND_FROM_EMAIL || "worldglide <onboarding@resend.dev>";
+    const { data, error } = await resend.emails.send({
+      from: fromEmail,
       to: adminEmail,
-      subject: "worldglide admin login",
+      subject: "worldglide grimoire",
       html: `
         <div style="font-family: -apple-system, sans-serif; max-width: 400px; margin: 0 auto; padding: 40px 0;">
           <p style="font-size: 14px; color: #666; margin-bottom: 24px;">
-            Click below to sign in to worldglide admin:
+            click below to open the worldglide grimoire
           </p>
           <a href="${magicLink}"
              style="display: inline-block; background: #000; color: #fff; padding: 12px 24px;
-                    text-decoration: none; font-size: 13px; font-weight: 500; border-radius: 6px;">
-            Sign in to admin →
+                    text-decoration: none; font-size: 11px; font-family: monospace;">
+            enter admin portal
           </a>
           <p style="font-size: 11px; color: #999; margin-top: 24px;">
-            This link expires in 15 minutes. If you didn't request this, ignore this email.
+            this spell fades in 8 minutes. if you didn't summon it, simply ignore this message.
           </p>
         </div>
       `,
     });
+    if (error) {
+      console.error("[Auth] Resend error:", JSON.stringify(error));
+      return false;
+    }
+    console.log("[Auth] Email sent:", data?.id);
     return true;
   } catch (err) {
     console.error("[Auth] Failed to send email:", err);
