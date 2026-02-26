@@ -55,7 +55,7 @@ export async function sendMagicLink(email: string): Promise<boolean> {
       html: `
         <div style="font-family: -apple-system, sans-serif; max-width: 400px; margin: 0 auto; padding: 40px 0; text-align: center;">
           <p style="font-size: 10px; font-family: monospace; color: #999; margin-bottom: 24px; letter-spacing: 0.05em;">
-            echo ･ worldglide grimoire
+            echo ･ grimoire
           </p>
           <p style="font-size: 13px; color: #666; margin-bottom: 24px;">
             click below to teleport to grimoire
