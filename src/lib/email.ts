@@ -30,25 +30,43 @@ export async function sendApprovalNotification({
       to,
       subject: `your job is live on worldglide`,
       html: `
-        <div style="font-family: -apple-system, sans-serif; max-width: 400px; margin: 0 auto; padding: 40px 0; text-align: center;">
-          <p style="font-size: 10px; font-family: monospace; color: #999; margin-bottom: 24px; letter-spacing: 0.05em;">
-            echo ･ worldglide
-          </p>
-          <p style="font-size: 14px; color: #333; margin-bottom: 8px;">
-            <strong>${jobTitle}</strong> at <strong>${company}</strong> is now live.
-          </p>
-          <p style="font-size: 12px; color: #666; margin-bottom: 24px;">
-            your listing has been reviewed & approved. it's now visible to candidates browsing worldglide.
-          </p>
-          <a href="${siteUrl}"
-             style="display: inline-block; background: #000; color: #fff; padding: 12px 24px;
-                    text-decoration: none; font-size: 11px; font-family: monospace;">
-            view on worldglide
-          </a>
-          <p style="font-size: 10px; color: #999; margin-top: 24px;">
-            worldglide ･ jobs without borders
-          </p>
-        </div>
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
+          <tr>
+            <td align="center" style="padding: 40px 20px;">
+              <table width="400" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td align="center" style="font-size: 10px; font-family: 'Courier New', monospace; color: #999; padding-bottom: 24px; letter-spacing: 0.05em;">
+                    echo &middot; worldglide
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="font-size: 14px; color: #333; padding-bottom: 8px;">
+                    <strong>${jobTitle}</strong> at <strong>${company}</strong> is now live.
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="font-size: 12px; color: #666; padding-bottom: 24px;">
+                    your listing has been reviewed &amp; approved. it's now visible to candidates browsing worldglide.
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding-bottom: 24px;">
+                    <a href="${siteUrl}"
+                       style="display: inline-block; background: #000; color: #fff; padding: 12px 24px;
+                              text-decoration: none; font-size: 11px; font-family: 'Courier New', monospace;">
+                      view on worldglide
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="font-size: 10px; color: #999;">
+                    worldglide &middot; jobs without borders
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
       `,
     });
 

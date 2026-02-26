@@ -53,23 +53,39 @@ export async function sendMagicLink(email: string): Promise<boolean> {
       to: adminEmail,
       subject: "worldglide grimoire",
       html: `
-        <div style="font-family: -apple-system, sans-serif; max-width: 400px; margin: 0 auto; padding: 40px 0; text-align: center;">
-          <p style="font-size: 10px; font-family: monospace; color: #999; margin-bottom: 24px; letter-spacing: 0.05em;">
-            echo ･ grimoire
-          </p>
-          <p style="font-size: 13px; color: #666; margin-bottom: 24px;">
-            click below to teleport to grimoire
-          </p>
-          <a href="${magicLink}"
-             style="display: inline-block; background: #000; color: #fff; padding: 12px 24px;
-                    text-decoration: none; font-size: 11px; font-family: monospace;">
-            enter portal
-          </a>
-          <p style="font-size: 11px; color: #999; margin-top: 24px;">
-            this spell fades in 8 minutes.<br/>
-            if you didn't summon it, simply ignore this message.
-          </p>
-        </div>
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
+          <tr>
+            <td align="center" style="padding: 40px 20px;">
+              <table width="400" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td align="center" style="font-size: 10px; font-family: 'Courier New', monospace; color: #999; padding-bottom: 24px; letter-spacing: 0.05em;">
+                    echo &middot; grimoire
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="font-size: 13px; color: #666; padding-bottom: 24px;">
+                    click below to open the grimoire
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding-bottom: 24px;">
+                    <a href="${magicLink}"
+                       style="display: inline-block; background: #000; color: #fff; padding: 12px 24px;
+                              text-decoration: none; font-size: 11px; font-family: 'Courier New', monospace;">
+                      enter portal
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="font-size: 11px; color: #999;">
+                    this spell fades in 8 minutes.<br/>
+                    if you didn't summon it, simply ignore this message.
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
       `,
     });
     if (error) {
