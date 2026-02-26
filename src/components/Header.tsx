@@ -7,7 +7,6 @@ const NAV_ITEMS = [
   { label: "product", href: "/product" },
   { label: "engineering", href: "/engineering" },
   { label: "design", href: "/design" },
-  { label: "post a job", href: "/submit" },
 ];
 
 export default function Header() {
@@ -21,12 +20,9 @@ export default function Header() {
             worldglide
           </Link>
 
-          <nav className="flex items-center gap-4 sm:gap-6 ml-auto sm:ml-6">
+          <nav className="flex items-center gap-4 sm:gap-6 ml-4 sm:ml-6">
             {NAV_ITEMS.map((item) => {
-              const isActive =
-                item.href === "/"
-                  ? pathname === "/"
-                  : pathname.startsWith(item.href);
+              const isActive = pathname.startsWith(item.href);
 
               return (
                 <Link
@@ -43,6 +39,17 @@ export default function Header() {
               );
             })}
           </nav>
+
+          <Link
+            href="/submit"
+            className={`text-[12px] ml-auto transition-colors ${
+              pathname.startsWith("/submit")
+                ? "text-[var(--color-text)]"
+                : "text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
+            }`}
+          >
+            post a job
+          </Link>
         </div>
       </div>
       <div className="h-px bg-[var(--color-border)]" />
