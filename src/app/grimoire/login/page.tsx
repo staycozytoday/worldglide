@@ -3,7 +3,7 @@ import LoginForm from "@/components/LoginForm";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "grimoire ･ worldglide",
+  title: "worldglide ･ grimoire",
 };
 
 export default function LoginPage() {

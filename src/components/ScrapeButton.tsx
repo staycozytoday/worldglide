@@ -20,23 +20,18 @@ interface ScrapeResult {
 
 type Status = "idle" | "loading" | "done" | "error";
 
-// 3 ✦ radiate from "casting" outward on each side, then restart
+// 1 ✦ travels a 3-step journey outward from "casting" on each side
 const SPARKLE_FRAMES = (() => {
-  const n = 8;
-  const trail = 3;
-  const track = (positions: number[]) => {
+  const n = 3;
+  const track = (pos: number) => {
     const chars = Array(n).fill("·");
-    for (const p of positions) {
-      if (p >= 0 && p < n) chars[p] = "✦";
-    }
+    if (pos >= 0 && pos < n) chars[pos] = "✦";
     return chars.join("");
   };
-  return Array.from({ length: n + trail }, (_, i) => {
-    // left: 3 sparkles moving right-to-left (inner → outer)
-    const leftPositions = Array.from({ length: trail }, (_, t) => n - 1 - i + t);
-    // right: 3 sparkles moving left-to-right (inner → outer)
-    const rightPositions = Array.from({ length: trail }, (_, t) => i - t);
-    return `${track(leftPositions)} casting ${track(rightPositions)}`;
+  // left: sparkle moves right-to-left (inner → outer)
+  // right: sparkle moves left-to-right (inner → outer)
+  return Array.from({ length: n }, (_, i) => {
+    return `${track(n - 1 - i)} casting ${track(i)}`;
   });
 })();
 
@@ -182,7 +177,7 @@ export default function ScrapeButton() {
       )}
 
       {status === "error" && (
-        <p className="text-[10px] text-red-500 font-mono">✗ {error}</p>
+        <p className="text-[10px] text-[var(--color-text)] font-mono">✗ {error}</p>
       )}
     </div>
   );

@@ -12,6 +12,7 @@ export async function GET(request: Request) {
   const result = verifyMagicLink(token);
 
   if (!result) {
+    console.warn("[Auth] magic link verification failed for token (truncated):", token.slice(0, 16) + "…");
     return NextResponse.redirect(new URL("/grimoire/login?error=invalid-or-expired", request.url));
   }
 

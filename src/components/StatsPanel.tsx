@@ -97,20 +97,20 @@ export default function StatsPanel({
 
       {/* stats row — total left, categories + ratio right */}
       <div className="flex justify-between mt-4">
-        <div className="flex flex-col">
+        <div className="flex flex-col justify-between">
+          <span className="text-[28px] font-medium tracking-tight tabular-nums leading-none">
+            {total}
+          </span>
           <span className="text-[10px] font-mono text-[var(--color-text-muted)] leading-none">
             total
           </span>
-          <span className="text-[28px] font-medium tracking-tight tabular-nums leading-none mt-1">
-            {total}
-          </span>
         </div>
         <div className="flex flex-col">
-          <div className="flex gap-8">
+          <div className="flex gap-6">
             {categories.map((c) => (
               <div
                 key={c.label}
-                className="flex flex-col cursor-default"
+                className="flex flex-col items-center cursor-default"
                 onMouseEnter={() =>
                   setHover({
                     key: c.label,
@@ -120,17 +120,17 @@ export default function StatsPanel({
                 }
                 onMouseLeave={() => setHover(null)}
               >
-                <span className="text-[10px] font-mono text-[var(--color-text-muted)] leading-none">
-                  {c.label}
-                </span>
-                <span className="text-[28px] font-medium tracking-tight tabular-nums leading-none mt-1">
+                <span className="text-[28px] font-medium tracking-tight tabular-nums leading-none">
                   {c.count}
+                </span>
+                <span className="text-[10px] font-mono text-[var(--color-text-muted)] leading-none mt-1">
+                  {c.label}
                 </span>
               </div>
             ))}
           </div>
           {/* ratio bar — same width as categories above */}
-          <div className="flex h-[4px] gap-[1px] mt-3">
+          <div className="flex h-[4px] gap-[1px] mt-2">
             {categories.map((c) => {
               const base = CAT_OPACITY[c.label] ?? 0.5;
               return (

@@ -4,7 +4,8 @@ import { getJobs } from "@/lib/storage";
 export const dynamic = "force-dynamic";
 
 export default async function HomePage() {
-  const jobs = await getJobs();
+  const allJobs = await getJobs();
+  const jobs = allJobs.filter((j) => !j.expired);
 
   return (
     <div className="max-w-[960px] mx-auto px-8">

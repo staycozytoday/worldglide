@@ -3,6 +3,7 @@ import {
   approveSubmission,
   rejectSubmission,
   resurrectSubmission,
+  deleteSubmission,
   getSubmissions,
 } from "@/lib/storage";
 import { sendApprovalNotification } from "@/lib/email";
@@ -53,6 +54,11 @@ export async function POST(request: Request) {
 
     if (action === "resurrect") {
       await resurrectSubmission(id);
+      return NextResponse.json({ success: true });
+    }
+
+    if (action === "delete") {
+      await deleteSubmission(id);
       return NextResponse.json({ success: true });
     }
 

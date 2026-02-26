@@ -26,7 +26,7 @@ export default function CompanyLogo({
       alt={company}
       width={20}
       height={20}
-      className="w-5 h-5 shrink-0 rounded-sm object-contain bg-white"
+      className="w-5 h-5 shrink-0 rounded-sm object-contain bg-[var(--color-bg)]"
       onError={() => setFailed(true)}
       loading="lazy"
     />

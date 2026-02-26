@@ -70,9 +70,13 @@ export async function getJobs(): Promise<Job[]> {
 
 export async function getJobsByCategory(
   category: Job["category"]
-): Promise<Job[]> {
+): Promise<{ jobs: Job[]; totalCount: number }> {
   const allJobs = await getJobs();
-  return allJobs.filter((job) => job.category === category);
+  const activeJobs = allJobs.filter((j) => !j.expired);
+  return {
+    jobs: activeJobs.filter((job) => job.category === category),
+    totalCount: activeJobs.length,
+  };
 }
 
 export async function saveJobs(jobs: Job[]): Promise<void> {
@@ -153,6 +157,21 @@ export async function resurrectSubmission(id: string): Promise<boolean> {
   const jobs = await getData<Job[]>("jobs.json", []);
   const filtered = jobs.filter((j) => j.id !== id);
   if (filtered.length !== jobs.length) await saveJobs(filtered);
+
+  return true;
+}
+
+export async function deleteSubmission(id: string): Promise<boolean> {
+  const submissions = await getSubmissions();
+  const filtered = submissions.filter((s) => s.id !== id);
+  if (filtered.length === submissions.length) return false;
+
+  await putData("submissions.json", filtered);
+
+  // also remove from jobs.json if present
+  const jobs = await getData<Job[]>("jobs.json", []);
+  const filteredJobs = jobs.filter((j) => j.id !== id);
+  if (filteredJobs.length !== jobs.length) await saveJobs(filteredJobs);
 
   return true;
 }

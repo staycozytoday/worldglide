@@ -10,12 +10,13 @@ export const metadata: Metadata = {
 export const dynamic = "force-dynamic";
 
 export default async function DesignPage() {
-  const jobs = await getJobsByCategory("design");
+  const { jobs, totalCount } = await getJobsByCategory("design");
 
   return (
     <div className="max-w-[960px] mx-auto px-8 pt-16 pb-24">
       <JobList
         jobs={jobs}
+        totalCount={totalCount}
         title="design"
         subtitle="design roles across product design, ux/ui, brand, motion, design systems, & user research."
       />

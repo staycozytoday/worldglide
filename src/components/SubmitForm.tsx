@@ -90,7 +90,7 @@ export default function SubmitForm() {
       </div>
 
       <div>
-        <span className={labelClass}>category</span>
+        <span className={labelClass}>type</span>
         <div className="flex gap-2 mt-1">
           {CATEGORIES.map((cat) => (
             <button
@@ -121,7 +121,7 @@ export default function SubmitForm() {
       </div>
 
       {state === "error" && (
-        <p className="text-[12px] text-[var(--color-text)]">{errorMsg}</p>
+        <p className="text-[12px] text-[var(--color-text)]">✗ {errorMsg}</p>
       )}
 
       <button
@@ -129,7 +129,7 @@ export default function SubmitForm() {
         disabled={state === "submitting"}
         className="w-full h-[40px] text-[11px] font-mono bg-[var(--color-text)] text-[var(--color-bg)] hover:opacity-80 transition-opacity disabled:opacity-40 disabled:cursor-not-allowed"
       >
-        {state === "submitting" ? "submitting..." : "submit"}
+        {state === "submitting" ? "sending..." : "submit"}
       </button>
 
       <p className="text-[10px] text-[var(--color-text-muted)] font-mono">

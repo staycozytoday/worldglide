@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     "curated remote roles from global, remote-first teams. no country limits, only product, engineering & design work you can do from wherever feels like home.",
   openGraph: {
-    title: "worldglide — remote jobs. any location. one internet.",
+    title: "worldglide ･ remote jobs. any location. one internet.",
     description:
       "curated remote roles from global, remote-first teams. no country limits, only product, engineering & design work you can do from wherever feels like home.",
     type: "website",

@@ -63,6 +63,14 @@ export default function Header() {
             >
               buy me a pizza
             </a>
+            <a
+              href="https://staycozy.today"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[12px] text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors"
+            >
+              stay cozy &amp; co.
+            </a>
           </div>
         </div>
       </div>

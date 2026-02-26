@@ -6,7 +6,7 @@ import StatsPanel from "@/components/StatsPanel";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "grimoire ･ worldglide",
+  title: "worldglide ･ grimoire",
 };
 
 // Don't cache the admin page
@@ -19,6 +19,7 @@ export default async function AdminPage() {
   const declined = submissions.filter((s) => s.rejected);
 
   const activeJobs = jobs.filter((j) => !j.expired);
+  const expiredJobs = jobs.filter((j) => j.expired);
 
   // Sparkline data: daily job counts over last 14 days
   const DAY_MS = 86_400_000;
@@ -92,7 +93,7 @@ export default async function AdminPage() {
         </div>
       </div>
 
-      <AdminPanel pending={pending} approved={approved} declined={declined} />
+      <AdminPanel pending={pending} approved={approved} declined={declined} expiredJobs={expiredJobs} />
     </div>
   );
 }

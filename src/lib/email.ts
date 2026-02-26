@@ -21,7 +21,7 @@ export async function sendApprovalNotification({
 
   const resend = new Resend(resendApiKey);
   const fromEmail =
-    process.env.RESEND_FROM_EMAIL || "worldglide <onboarding@resend.dev>";
+    process.env.RESEND_FROM_EMAIL || "echo <echo@worldglide.careers>";
   const siteUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://worldglide.careers";
 
   try {
@@ -30,7 +30,10 @@ export async function sendApprovalNotification({
       to,
       subject: `your job is live on worldglide`,
       html: `
-        <div style="font-family: -apple-system, sans-serif; max-width: 400px; margin: 0 auto; padding: 40px 0;">
+        <div style="font-family: -apple-system, sans-serif; max-width: 400px; margin: 0 auto; padding: 40px 0; text-align: center;">
+          <p style="font-size: 10px; font-family: monospace; color: #999; margin-bottom: 24px; letter-spacing: 0.05em;">
+            echo ･ worldglide
+          </p>
           <p style="font-size: 14px; color: #333; margin-bottom: 8px;">
             <strong>${jobTitle}</strong> at <strong>${company}</strong> is now live.
           </p>

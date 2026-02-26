@@ -36,30 +36,38 @@ export async function sendMagicLink(email: string): Promise<boolean> {
   const signature = hmacSign(payload);
   const token = Buffer.from(`${payload}:${signature}`).toString("base64url");
 
-  // Build magic link URL
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+  // Build magic link URL — always use localhost in dev so the same
+  // server that signed the token also verifies it
+  const baseUrl =
+    process.env.NODE_ENV === "development"
+      ? `http://localhost:${process.env.PORT || 3000}`
+      : process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
   const magicLink = `${baseUrl}/api/auth/verify?token=${token}`;
 
   // Send email via Resend
   const resend = new Resend(resendApiKey);
   try {
-    const fromEmail = process.env.RESEND_FROM_EMAIL || "worldglide <onboarding@resend.dev>";
+    const fromEmail = process.env.RESEND_FROM_EMAIL || "echo <echo@worldglide.careers>";
     const { data, error } = await resend.emails.send({
       from: fromEmail,
       to: adminEmail,
       subject: "worldglide grimoire",
       html: `
-        <div style="font-family: -apple-system, sans-serif; max-width: 400px; margin: 0 auto; padding: 40px 0;">
-          <p style="font-size: 14px; color: #666; margin-bottom: 24px;">
-            click below to open the worldglide grimoire
+        <div style="font-family: -apple-system, sans-serif; max-width: 400px; margin: 0 auto; padding: 40px 0; text-align: center;">
+          <p style="font-size: 10px; font-family: monospace; color: #999; margin-bottom: 24px; letter-spacing: 0.05em;">
+            echo ･ worldglide grimoire
+          </p>
+          <p style="font-size: 13px; color: #666; margin-bottom: 24px;">
+            click below to teleport to grimoire
           </p>
           <a href="${magicLink}"
              style="display: inline-block; background: #000; color: #fff; padding: 12px 24px;
                     text-decoration: none; font-size: 11px; font-family: monospace;">
-            enter admin portal
+            enter portal
           </a>
           <p style="font-size: 11px; color: #999; margin-top: 24px;">
-            this spell fades in 8 minutes. if you didn't summon it, simply ignore this message.
+            this spell fades in 8 minutes.<br/>
+            if you didn't summon it, simply ignore this message.
           </p>
         </div>
       `,

@@ -79,11 +79,11 @@ function getDateLabel(dateString: string): string {
     (now.getTime() - date.getTime()) / (1000 * 60 * 60 * 24)
   );
 
-  if (diffDays === 0) return "Today";
-  if (diffDays === 1) return "Yesterday";
-  if (diffDays < 7) return "This Week";
-  if (diffDays < 14) return "Last Week";
-  return "Expired";
+  if (diffDays === 0) return "today";
+  if (diffDays === 1) return "yesterday";
+  if (diffDays < 7) return "this week";
+  if (diffDays < 14) return "last week";
+  return "expired";
 }
 
 /**

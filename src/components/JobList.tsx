@@ -6,9 +6,10 @@ interface JobListProps {
   jobs: Job[];
   title?: string;
   subtitle?: string;
+  totalCount?: number;
 }
 
-export default function JobList({ jobs, title, subtitle }: JobListProps) {
+export default function JobList({ jobs, title, subtitle, totalCount }: JobListProps) {
   if (jobs.length === 0) {
     return (
       <div className="py-24">
@@ -26,7 +27,7 @@ export default function JobList({ jobs, title, subtitle }: JobListProps) {
   });
 
   const dateGroups = groupJobsByDate(sortedJobs);
-  const openCount = jobs.filter((j) => !j.expired).length;
+  const openCount = jobs.length;
 
   return (
     <div>
@@ -41,17 +42,17 @@ export default function JobList({ jobs, title, subtitle }: JobListProps) {
             </p>
           )}
           <p className="text-[10px] text-[var(--color-text-muted)] mt-4 font-mono">
-            {openCount} vacancies
+            {openCount} vacancies out of {totalCount ?? jobs.length}
           </p>
         </div>
       )}
 
       {/* column headers */}
-      <div className="h-[32px] flex items-center border-b border-[var(--color-text)] text-[10px] text-[var(--color-text-muted)] font-mono">
-        <span className="w-[80px] shrink-0 hidden sm:block text-right">age</span>
-        <span className="flex-1 px-4">position</span>
-        <span className="w-[120px] shrink-0 text-right px-4">company</span>
-        <span className="w-[72px] shrink-0 hidden lg:block">type</span>
+      <div className="h-[32px] flex items-center gap-6 -mx-2 px-4 border-b border-[var(--color-text)] text-[10px] text-[var(--color-text-muted)] font-mono">
+        <span className="w-[32px] shrink-0 hidden sm:block">age</span>
+        <span className="flex-1">title</span>
+        <span className="w-[120px] shrink-0 text-right">company</span>
+        <span className="w-[80px] shrink-0 hidden lg:block text-right">type</span>
       </div>
 
       {/* jobs */}

@@ -6,24 +6,10 @@
 
   /* teenage.engineering palette — near-black on light gray */
   --color-bg: #e5e5e5;
-  --color-bg-card: #e5e5e5;
   --color-bg-hover: #d9d9d9;
-  --color-bg-dark: #0f0e12;
   --color-text: #0f0e12;
-  --color-text-secondary: #555555;
   --color-text-muted: #888888;
   --color-border: #cccccc;
-  --color-border-light: #d5d5d5;
-
-  /* category markers — subtle, muted */
-  --color-engineering: #0f0e12;
-  --color-product: #0f0e12;
-  --color-design: #0f0e12;
-
-  /* utility */
-  --color-salary: #555555;
-  --color-new-badge: #0f0e12;
-  --color-expired: #bbbbbb;
 }
 
 /* base */

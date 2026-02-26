@@ -10,12 +10,13 @@ export const metadata: Metadata = {
 export const dynamic = "force-dynamic";
 
 export default async function EngineeringPage() {
-  const jobs = await getJobsByCategory("engineering");
+  const { jobs, totalCount } = await getJobsByCategory("engineering");
 
   return (
     <div className="max-w-[960px] mx-auto px-8 pt-16 pb-24">
       <JobList
         jobs={jobs}
+        totalCount={totalCount}
         title="engineering"
         subtitle="engineering roles across frontend, backend, full-stack, devops, mobile, data, ml, & infrastructure."
       />

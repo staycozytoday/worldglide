@@ -42,14 +42,14 @@ export default function LoginForm() {
     return (
       <div>
         <p className="text-[13px] text-[var(--color-text)]">
-          check your email for some magic.
+          ✓ check your email for some magic
         </p>
         <p className="text-[11px] text-[var(--color-text-muted)] mt-2">
-          the spell expires in 8 minutes.
+          the teleport spell expires in 8 minutes.
         </p>
         <button
           onClick={() => { setSent(false); setEmail(""); }}
-          className="mt-4 text-[11px] text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors"
+          className="mt-4 text-[11px] font-mono text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors"
         >
           use a different email
         </button>
@@ -60,17 +60,17 @@ export default function LoginForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       {urlError === "invalid-or-expired" && (
-        <p className="text-[11px] text-red-500">
-          that link has expired or already been used. request a new one.
+        <p className="text-[11px] text-[var(--color-text)]">
+          ✗ that link has expired or already been used. request a new one.
         </p>
       )}
       {urlError === "missing-token" && (
-        <p className="text-[11px] text-red-500">
-          invalid login link. request a new one below.
+        <p className="text-[11px] text-[var(--color-text)]">
+          ✗ invalid login link. request a new one below.
         </p>
       )}
       {error && (
-        <p className="text-[11px] text-red-500">{error}</p>
+        <p className="text-[11px] text-[var(--color-text)]">✗ {error}</p>
       )}
 
       <div>
