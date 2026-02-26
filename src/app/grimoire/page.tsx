@@ -1,6 +1,7 @@
 import { getSubmissions, getJobs } from "@/lib/storage";
 import AdminPanel from "@/components/AdminPanel";
 import ScrapeButton from "@/components/ScrapeButton";
+import LogoutButton from "@/components/LogoutButton";
 import StatsPanel from "@/components/StatsPanel";
 
 import type { Metadata } from "next";
@@ -76,17 +77,13 @@ export default async function AdminPage() {
             total={activeJobs.length}
           />
 
-          <div className="mt-4">
-            <ScrapeButton />
-          </div>
-
-          <div className="mt-3 flex justify-end">
-            <a
-              href="/api/auth/logout"
-              className="text-[10px] font-mono text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors"
-            >
-              log out
-            </a>
+          <div className="mt-4 flex gap-2">
+            <div className="flex-1 min-w-0">
+              <ScrapeButton />
+            </div>
+            <div className="flex-1 min-w-0">
+              <LogoutButton />
+            </div>
           </div>
         </div>
       </div>
