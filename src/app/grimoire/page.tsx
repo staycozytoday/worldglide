@@ -76,19 +76,17 @@ export default async function AdminPage() {
             total={activeJobs.length}
           />
 
-          {/* button row — 50/50 */}
-          <div className="mt-4 flex items-start gap-4">
-            <div className="w-1/2 min-w-0">
-              <ScrapeButton />
-            </div>
-            <div className="w-1/2">
-              <a
-                href="/api/auth/logout"
-                className="flex items-center justify-center w-full h-[40px] text-[11px] font-mono text-[var(--color-text-muted)] border border-transparent hover:border-[var(--color-border)] hover:text-[var(--color-text)] transition-all duration-300 cursor-pointer"
-              >
-                log out
-              </a>
-            </div>
+          <div className="mt-4">
+            <ScrapeButton />
+          </div>
+
+          <div className="mt-3 flex justify-end">
+            <a
+              href="/api/auth/logout"
+              className="text-[10px] font-mono text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors"
+            >
+              log out
+            </a>
           </div>
         </div>
       </div>

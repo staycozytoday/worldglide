@@ -165,7 +165,7 @@ export default function ScrapeButton() {
         <span className="relative">
           {status === "loading"
             ? SPARKLE_FRAMES[sparkleIdx]
-            : "scraping spell"}
+            : "cast spell"}
         </span>
       </button>
 

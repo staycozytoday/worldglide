@@ -152,7 +152,7 @@ export default function AdminPanel({
           {formatRelativeTime(sub.submittedAt)}
         </span>
 
-        {/* title + live dot */}
+        {/* title + live dot + email */}
         <span className="flex-1 min-w-0 flex items-center gap-2">
           {status === "live" && (
             <span className="shrink-0 w-1.5 h-1.5 bg-[var(--color-text)] rounded-full animate-rec" />
@@ -160,6 +160,11 @@ export default function AdminPanel({
           <span className="text-[13px] text-[var(--color-text)] truncate">
             {sub.title}
           </span>
+          {sub.contactEmail && (
+            <span className="hidden sm:inline text-[10px] text-[var(--color-text-muted)] font-mono shrink-0">
+              {sub.contactEmail}
+            </span>
+          )}
         </span>
 
         {/* company */}
