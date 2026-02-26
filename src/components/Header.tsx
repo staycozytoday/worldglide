@@ -7,6 +7,7 @@ const NAV_ITEMS = [
   { label: "product", href: "/product" },
   { label: "engineering", href: "/engineering" },
   { label: "design", href: "/design" },
+  { label: "post a job", href: "/submit" },
 ];
 
 export default function Header() {
@@ -42,36 +43,6 @@ export default function Header() {
               );
             })}
           </nav>
-
-          <div className="hidden sm:flex items-center gap-6 ml-auto">
-            <Link
-              href="/submit"
-              className={`text-[12px] transition-colors ${
-                pathname === "/submit"
-                  ? "text-[var(--color-text)]"
-                  : "text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
-              }`}
-            >
-              post a job
-            </Link>
-
-            <a
-              href="https://www.buymeacoffee.com/staycozy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[12px] text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors"
-            >
-              buy me a pizza
-            </a>
-            <a
-              href="https://staycozy.today"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[12px] text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors"
-            >
-              stay cozy &amp; co.
-            </a>
-          </div>
         </div>
       </div>
       <div className="h-px bg-[var(--color-border)]" />

@@ -124,11 +124,10 @@ export default function AdminPanel({
 
   function renderSectionLabel(label: string, count: number, isFirst: boolean) {
     return (
-      <div className={`flex items-center gap-3 ${isFirst ? "mt-2" : "mt-6"}`}>
-        <span className="text-[10px] font-mono text-[var(--color-text-muted)] whitespace-nowrap">
+      <div className={`${isFirst ? "mt-3" : "mt-8"}`}>
+        <span className="text-[10px] font-mono text-[var(--color-text-muted)]">
           {label} · {count}
         </span>
-        <span className="flex-1 h-px bg-[var(--color-border)]" />
       </div>
     );
   }

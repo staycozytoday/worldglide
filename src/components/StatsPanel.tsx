@@ -95,71 +95,70 @@ export default function StatsPanel({
         )}
       </div>
 
-      {/* stats row — total left, categories + ratio right */}
-      <div className="flex justify-between mt-4">
-        <div className="flex flex-col justify-between">
-          <span className="text-[28px] font-medium tracking-tight tabular-nums leading-none">
-            {total}
-          </span>
-          <span className="text-[10px] font-mono text-[var(--color-text-muted)] leading-none">
-            total
-          </span>
-        </div>
-        <div className="flex flex-col">
-          <div className="flex gap-6">
-            {categories.map((c) => (
-              <div
-                key={c.label}
-                className="flex flex-col items-center cursor-default"
-                onMouseEnter={() =>
-                  setHover({
-                    key: c.label,
-                    line1: c.label,
-                    line2: `${c.count}`,
-                  })
-                }
-                onMouseLeave={() => setHover(null)}
-              >
-                <span className="text-[28px] font-medium tracking-tight tabular-nums leading-none">
-                  {c.count}
-                </span>
-                <span className="text-[10px] font-mono text-[var(--color-text-muted)] leading-none mt-1">
-                  {c.label}
-                </span>
-              </div>
-            ))}
+      {/* total — sits above the breakdown as the parent sum */}
+      <div className="mt-4 flex items-baseline gap-2">
+        <span className="text-[28px] font-medium tracking-tight tabular-nums leading-none">
+          {total}
+        </span>
+        <span className="text-[10px] font-mono text-[var(--color-text-muted)] leading-none">
+          total
+        </span>
+      </div>
+
+      {/* category breakdown — child numbers under the total */}
+      <div className="mt-3 flex gap-6">
+        {categories.map((c) => (
+          <div
+            key={c.label}
+            className="flex items-baseline gap-1.5 cursor-default"
+            onMouseEnter={() =>
+              setHover({
+                key: c.label,
+                line1: c.label,
+                line2: `${c.count}`,
+              })
+            }
+            onMouseLeave={() => setHover(null)}
+          >
+            <span className="text-[14px] font-medium tracking-tight tabular-nums leading-none">
+              {c.count}
+            </span>
+            <span className="text-[10px] font-mono text-[var(--color-text-muted)] leading-none">
+              {c.label}
+            </span>
           </div>
-          {/* ratio bar — same width as categories above */}
-          <div className="flex h-[4px] gap-[1px] mt-2">
-            {categories.map((c) => {
-              const base = CAT_OPACITY[c.label] ?? 0.5;
-              return (
-                <div
-                  key={c.label}
-                  className="bg-[var(--color-text)] transition-opacity cursor-default"
-                  style={{
-                    width:
-                      catTotal > 0
-                        ? `${(c.count / catTotal) * 100}%`
-                        : "0%",
-                    opacity:
-                      hover?.key === c.label
-                        ? Math.min(base + 0.3, 1)
-                        : base,
-                  }}
-                  onMouseEnter={() =>
-                    setHover({
-                      key: c.label,
-                      line1: c.label,
-                      line2: `${c.count}`,
-                    })
-                  }
-                  onMouseLeave={() => setHover(null)}
-                />
-              );
-            })}
-          </div>
-        </div>
+        ))}
+      </div>
+
+      {/* ratio bar */}
+      <div className="flex h-[4px] gap-[1px] mt-2">
+        {categories.map((c) => {
+          const base = CAT_OPACITY[c.label] ?? 0.5;
+          return (
+            <div
+              key={c.label}
+              className="bg-[var(--color-text)] transition-opacity cursor-default"
+              style={{
+                width:
+                  catTotal > 0
+                    ? `${(c.count / catTotal) * 100}%`
+                    : "0%",
+                opacity:
+                  hover?.key === c.label
+                    ? Math.min(base + 0.3, 1)
+                    : base,
+              }}
+              onMouseEnter={() =>
+                setHover({
+                  key: c.label,
+                  line1: c.label,
+                  line2: `${c.count}`,
+                })
+              }
+              onMouseLeave={() => setHover(null)}
+            />
+          );
+        })}
       </div>
     </div>
   );
