@@ -74,7 +74,7 @@ export default function LoginForm() {
       )}
 
       <div>
-        <label htmlFor="email" className="block text-[11px] text-[var(--color-text-muted)] mb-1 font-mono">email</label>
+        <label htmlFor="email" className="block text-[11px] text-[var(--color-text-muted)] mb-2 font-mono">email</label>
         <input
           type="email"
           id="email"
@@ -89,7 +89,7 @@ export default function LoginForm() {
       <button
         type="submit"
         disabled={loading || !email.trim()}
-        className="w-full h-[40px] text-[11px] font-mono bg-[var(--color-text)] text-[var(--color-bg)] hover:opacity-80 transition-opacity disabled:opacity-40 disabled:cursor-not-allowed"
+        className="w-full h-[40px] text-[11px] font-mono bg-[var(--color-text)] text-[var(--color-bg)] hover:opacity-80 transition-opacity disabled:opacity-40"
       >
         {loading ? "casting..." : "send"}
       </button>

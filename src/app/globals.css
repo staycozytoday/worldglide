@@ -1,15 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
-  --font-mono: "SF Mono", "JetBrains Mono", "Fira Code", monospace;
+  --font-sans: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-ibm-plex-mono), monospace;
 
-  /* teenage.engineering palette — near-black on light gray */
-  --color-bg: #e5e5e5;
-  --color-bg-hover: #d9d9d9;
-  --color-text: #0f0e12;
-  --color-text-muted: #888888;
-  --color-border: #cccccc;
+  /* teenage.engineering palette — cool grays (slight blue undertone) */
+  --color-bg: #e3e5e8;
+  --color-bg-hover: #f5f7fa;
+  --color-text: #0e0f14;
+  --color-text-muted: #828690;
+  --color-border: #c5c8ce;
+  --color-accent: #FF6432;
 }
 
 /* base */
@@ -22,19 +23,23 @@ body {
   letter-spacing: 0.01em;
 }
 
+/* default arrow everywhere — interactive elements use hover states instead */
+html, html * { cursor: default !important; }
+
 ::selection {
-  background-color: var(--color-text);
-  color: var(--color-bg);
+  background-color: var(--color-accent);
+  color: #ffffff;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
-/* scrollbar — thin, minimal */
+/* scrollbar — thin, rounded, fades in */
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 0; }
+::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 9999px; }
 
 /* link underline animation */
 .link-underline {

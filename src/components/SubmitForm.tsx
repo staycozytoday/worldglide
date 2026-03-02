@@ -8,8 +8,6 @@ const inputClass = `w-full h-[40px] px-2 text-[12px] bg-transparent border-b bor
   focus:outline-none focus:border-[var(--color-text)]
   placeholder:text-[var(--color-text-muted)] transition-colors`;
 
-const labelClass = "block text-[11px] text-[var(--color-text-muted)] mb-1 font-mono";
-
 const CATEGORIES = ["product", "engineering", "design"] as const;
 
 export default function SubmitForm() {
@@ -80,27 +78,43 @@ export default function SubmitForm() {
       </div>
 
       <div>
-        <label htmlFor="title" className={labelClass}>title</label>
-        <input type="text" id="title" name="title" required placeholder="ninja rockstar" className={inputClass} />
+        <input type="text" id="title" name="title" required placeholder="title" className={inputClass} />
       </div>
 
       <div>
-        <label htmlFor="company" className={labelClass}>company</label>
-        <input type="text" id="company" name="company" required placeholder="olympus optical" className={inputClass} />
+        <input type="text" id="company" name="company" required placeholder="company" className={inputClass} />
       </div>
 
       <div>
-        <span className={labelClass}>type</span>
-        <div className="flex gap-2 mt-1">
+        <input
+          type="url"
+          id="url"
+          name="url"
+          required
+          placeholder="link"
+          pattern="https?://.+\..+"
+          title="enter a valid url like example.com"
+          className={inputClass}
+          onBlur={(e) => {
+            const v = e.target.value.trim();
+            if (v && !/^https?:\/\//.test(v)) {
+              e.target.value = `https://${v}`;
+            }
+          }}
+        />
+      </div>
+
+      <div>
+        <div className="flex gap-2">
           {CATEGORIES.map((cat) => (
             <button
               key={cat}
               type="button"
               onClick={() => setCategory(cat)}
-              className={`h-[32px] flex-1 text-[11px] font-mono transition-colors ${
+              className={`h-[40px] flex-1 text-[11px] font-mono transition-all duration-300 ${
                 category === cat
                   ? "bg-[var(--color-text)] text-[var(--color-bg)]"
-                  : "bg-transparent text-[var(--color-text-muted)] border border-[var(--color-border)] hover:border-[var(--color-text)] hover:text-[var(--color-text)]"
+                  : "text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
               }`}
             >
               {cat}
@@ -110,31 +124,27 @@ export default function SubmitForm() {
       </div>
 
       <div>
-        <label htmlFor="url" className={labelClass}>link</label>
-        <input type="url" id="url" name="url" required placeholder="https://company.com/careers/role" className={inputClass} />
+        <input type="email" id="contactEmail" name="contactEmail" required placeholder="email" className={inputClass} />
+        <p className="text-[10px] text-[var(--color-text-muted)] mt-2 font-mono">invisible to the public.</p>
       </div>
-
-      <div>
-        <label htmlFor="contactEmail" className={labelClass}>email</label>
-        <input type="email" id="contactEmail" name="contactEmail" required placeholder="your@email.com" className={inputClass} />
-        <p className="text-[10px] text-[var(--color-text-muted)] mt-1 font-mono">invisible to the public. used mainly to contact you in the future.</p>
-      </div>
-
-      {state === "error" && (
-        <p className="text-[12px] text-[var(--color-text)]">✗ {errorMsg}</p>
-      )}
 
       <button
         type="submit"
         disabled={state === "submitting"}
-        className="w-full h-[40px] text-[11px] font-mono bg-[var(--color-text)] text-[var(--color-bg)] hover:opacity-80 transition-opacity disabled:opacity-40 disabled:cursor-not-allowed"
+        className="w-full h-[40px] text-[11px] font-mono bg-[var(--color-text)] text-[var(--color-bg)] hover:opacity-80 transition-opacity disabled:opacity-40"
       >
-        {state === "submitting" ? "sending..." : "submit"}
+        {state === "submitting" ? "sending..." : state === "error" ? "try again" : "submit"}
       </button>
 
-      <p className="text-[10px] text-[var(--color-text-muted)] font-mono">
-        by submitting, you confirm this is a 100% remote position available worldwide. otherwise it won't be published. sending you a virtual hug.
-      </p>
+      {state === "error" ? (
+        <p className="text-[10px] text-[var(--color-text)] font-mono">
+          ✗ {errorMsg}
+        </p>
+      ) : (
+        <p className="text-[10px] text-[var(--color-text-muted)] font-mono">
+          by submitting, you confirm this is a 100% remote position available worldwide. otherwise it won't be published. sending you a virtual hug.
+        </p>
+      )}
     </form>
   );
 }

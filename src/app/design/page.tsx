@@ -13,7 +13,7 @@ export default async function DesignPage() {
   const { jobs, totalCount } = await getJobsByCategory("design");
 
   return (
-    <div className="max-w-[960px] mx-auto px-8 pt-16 pb-24">
+    <div className="max-w-[960px] mx-auto px-8 pt-16 md:pt-24 pb-24">
       <JobList
         jobs={jobs}
         totalCount={totalCount}

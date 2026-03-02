@@ -121,7 +121,6 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Coursera", domain: "coursera.org", careersUrl: "https://about.coursera.org/careers/", atsType: "greenhouse", atsSlug: "coursera" },
   { name: "Udemy", domain: "udemy.com", careersUrl: "https://about.udemy.com/careers/", atsType: "greenhouse", atsSlug: "udemy" },
   { name: "Thinkific", domain: "thinkific.com", careersUrl: "https://www.thinkific.com/careers/", atsType: "greenhouse", atsSlug: "thinkific" },
-  { name: "Kajabi", domain: "kajabi.com", careersUrl: "https://kajabi.com/careers", atsType: "greenhouse", atsSlug: "kajabi" },
   { name: "Mighty Networks", domain: "mightynetworks.com", careersUrl: "https://www.mightynetworks.com/careers", atsType: "greenhouse", atsSlug: "mighty" },
 
   // security & compliance
@@ -173,7 +172,6 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Kentik", domain: "kentik.com", careersUrl: "https://boards.greenhouse.io/kentik", atsType: "greenhouse", atsSlug: "kentik" },
   { name: "SaasGroup", domain: "saas.group", careersUrl: "https://boards.greenhouse.io/saasgroup", atsType: "greenhouse", atsSlug: "saasgroup" },
   { name: "Sauce Labs", domain: "saucelabs.com", careersUrl: "https://boards.greenhouse.io/saucelabs", atsType: "greenhouse", atsSlug: "saucelabs" },
-  { name: "Wikimedia", domain: "wikimediafoundation.org", careersUrl: "https://boards.greenhouse.io/wikimedia", atsType: "greenhouse", atsSlug: "wikimedia" },
 
   // imported 2026-02-25
   { name: "Rocket.Chat", domain: "rocket.chat", careersUrl: "https://boards.greenhouse.io/rocketchat", atsType: "greenhouse", atsSlug: "rocketchat" },
@@ -302,11 +300,9 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   // ════════════════════════════════════════════════
   // CUSTOM — no scrapeable ATS, picked up via external aggregators
   // ════════════════════════════════════════════════
-  { name: "Toptal", domain: "toptal.com", careersUrl: "https://www.toptal.com/careers", atsType: "custom" },
   { name: "SafetyWing", domain: "safetywing.com", careersUrl: "https://safetywing.com/careers", atsType: "custom" },
   { name: "Automattic", domain: "automattic.com", careersUrl: "https://automattic.com/work-with-us/", atsType: "custom" },
   { name: "Basecamp", domain: "basecamp.com", careersUrl: "https://basecamp.com/about/jobs", atsType: "custom" },
-  { name: "Bitwarden", domain: "bitwarden.com", careersUrl: "https://bitwarden.com/careers/", atsType: "custom" },
   { name: "Toggl", domain: "toggl.com", careersUrl: "https://toggl.com/jobs/", atsType: "custom" },
   { name: "MailerLite", domain: "mailerlite.com", careersUrl: "https://www.mailerlite.com/jobs", atsType: "custom" },
   { name: "Hotjar", domain: "hotjar.com", careersUrl: "https://www.hotjar.com/careers/", atsType: "custom" },
@@ -329,7 +325,6 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   // greenhouse — new
   { name: "Abnormal Security", domain: "abnormalsecurity.com", careersUrl: "https://www.abnormalsecurity.com/careers", atsType: "greenhouse", atsSlug: "abnormalsecurity" },
   { name: "ZoomInfo", domain: "zoominfo.com", careersUrl: "https://www.zoominfo.com/about/careers", atsType: "greenhouse", atsSlug: "zoominfo" },
-  { name: "Remote", domain: "remote.com", careersUrl: "https://remote.com/careers", atsType: "greenhouse", atsSlug: "remote" },
   { name: "Storyblok", domain: "storyblok.com", careersUrl: "https://www.storyblok.com/careers", atsType: "greenhouse", atsSlug: "storyblok" },
   { name: "Cato Networks", domain: "catonetworks.com", careersUrl: "https://www.catonetworks.com/careers/", atsType: "greenhouse", atsSlug: "catonetworks" },
   { name: "Bitwarden", domain: "bitwarden.com", careersUrl: "https://bitwarden.com/careers/", atsType: "greenhouse", atsSlug: "bitwarden" },
@@ -391,7 +386,6 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Otter.ai", domain: "otter.ai", careersUrl: "https://otter.ai/careers", atsType: "greenhouse", atsSlug: "otter" },
 
   // greenhouse — security
-  { name: "Orca Security", domain: "orca.security", careersUrl: "https://orca.security/careers/", atsType: "greenhouse", atsSlug: "orcasecurity" },
   { name: "Cybereason", domain: "cybereason.com", careersUrl: "https://www.cybereason.com/careers", atsType: "greenhouse", atsSlug: "cybereason" },
   { name: "Recorded Future", domain: "recordedfuture.com", careersUrl: "https://www.recordedfuture.com/careers", atsType: "greenhouse", atsSlug: "recordedfuture" },
   { name: "Egress", domain: "egress.com", careersUrl: "https://www.egress.com/careers", atsType: "greenhouse", atsSlug: "egress" },
@@ -480,7 +474,6 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   // ════════════════════════════════════════════════
 
   // greenhouse — security & compliance
-  { name: "Semgrep", domain: "semgrep.dev", careersUrl: "https://semgrep.dev/careers", atsType: "greenhouse", atsSlug: "semgrep" },
   { name: "Bugcrowd", domain: "bugcrowd.com", careersUrl: "https://www.bugcrowd.com/about/careers/", atsType: "greenhouse", atsSlug: "bugcrowd" },
   { name: "Synack", domain: "synack.com", careersUrl: "https://www.synack.com/careers/", atsType: "greenhouse", atsSlug: "synack" },
   { name: "SecurityScorecard", domain: "securityscorecard.com", careersUrl: "https://securityscorecard.com/company/careers/", atsType: "greenhouse", atsSlug: "securityscorecard" },
@@ -724,7 +717,6 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Aptos Labs", domain: "aptoslabs.com", careersUrl: "https://aptoslabs.com/careers", atsType: "greenhouse", atsSlug: "aptoslabs" },
   { name: "OKX", domain: "okx.com", careersUrl: "https://www.okx.com/careers", atsType: "greenhouse", atsSlug: "okx" },
   { name: "Wormhole", domain: "wormhole.com", careersUrl: "https://wormhole.com/careers", atsType: "greenhouse", atsSlug: "wormholefoundation" },
-  { name: "LayerZero", domain: "layerzero.network", careersUrl: "https://layerzero.network/careers", atsType: "greenhouse", atsSlug: "layerzerolabs" },
 
   // ashby
   { name: "Compound", domain: "compound.finance", careersUrl: "https://compound.finance/governance/comp", atsType: "ashby", atsSlug: "compound" },
@@ -764,6 +756,816 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Block", domain: "block.xyz", careersUrl: "https://block.xyz/careers", atsType: "greenhouse", atsSlug: "block" },
   { name: "Prolific", domain: "prolific.com", careersUrl: "https://www.prolific.com/careers", atsType: "greenhouse", atsSlug: "prolific" },
   { name: "JFrog", domain: "jfrog.com", careersUrl: "https://jfrog.com/careers", atsType: "greenhouse", atsSlug: "jfrog" },
+
+  // ── Batch 9: New companies verified 2026-03-01 ──
+
+  // ashby — AI & ML
+  { name: "Perplexity", domain: "perplexity.ai", careersUrl: "https://www.perplexity.ai/hub/careers", atsType: "ashby", atsSlug: "perplexity" },
+  { name: "Nomic", domain: "nomic.ai", careersUrl: "https://www.nomic.ai/careers", atsType: "ashby", atsSlug: "nomic" },
+  { name: "Poolside", domain: "poolside.ai", careersUrl: "https://www.poolside.ai/careers", atsType: "ashby", atsSlug: "poolside" },
+  { name: "Baseten", domain: "baseten.co", careersUrl: "https://www.baseten.co/careers", atsType: "ashby", atsSlug: "baseten" },
+  { name: "DeepL", domain: "deepl.com", careersUrl: "https://www.deepl.com/careers", atsType: "ashby", atsSlug: "deepl" },
+
+  // ashby — developer tools & infrastructure
+  { name: "Coder", domain: "coder.com", careersUrl: "https://coder.com/careers", atsType: "ashby", atsSlug: "coder" },
+  { name: "Doppler", domain: "doppler.com", careersUrl: "https://www.doppler.com/careers", atsType: "ashby", atsSlug: "doppler" },
+  { name: "Zed", domain: "zed.dev", careersUrl: "https://zed.dev/jobs", atsType: "ashby", atsSlug: "zed" },
+  { name: "Cube", domain: "cube.dev", careersUrl: "https://cube.dev/careers", atsType: "ashby", atsSlug: "cube" },
+  { name: "Oso", domain: "osohq.com", careersUrl: "https://www.osohq.com/company/jobs", atsType: "ashby", atsSlug: "oso" },
+  { name: "Polar", domain: "polar.sh", careersUrl: "https://polar.sh/careers", atsType: "ashby", atsSlug: "polar" },
+  { name: "Plane", domain: "plane.com", careersUrl: "https://plane.com/careers", atsType: "ashby", atsSlug: "plane" },
+
+  // ashby — crypto & web3
+  { name: "Mysten Labs", domain: "mystenlabs.com", careersUrl: "https://mystenlabs.com/careers", atsType: "ashby", atsSlug: "mystenlabs" },
+  { name: "Morpho", domain: "morpho.org", careersUrl: "https://www.morpho.org/careers", atsType: "ashby", atsSlug: "morpho" },
+  { name: "Spearbit", domain: "spearbit.com", careersUrl: "https://spearbit.com/careers", atsType: "ashby", atsSlug: "spearbit" },
+  { name: "Espresso Systems", domain: "espressosys.com", careersUrl: "https://www.espressosys.com/careers", atsType: "ashby", atsSlug: "espresso" },
+  { name: "Biconomy", domain: "biconomy.io", careersUrl: "https://www.biconomy.io/careers", atsType: "ashby", atsSlug: "biconomy" },
+  { name: "Turnkey", domain: "turnkey.com", careersUrl: "https://www.turnkey.com/careers", atsType: "ashby", atsSlug: "turnkey" },
+  { name: "Dynamic", domain: "dynamic.xyz", careersUrl: "https://www.dynamic.xyz/careers", atsType: "ashby", atsSlug: "dynamic" },
+
+  // ashby — saas & productivity
+  { name: "Kittl", domain: "kittl.com", careersUrl: "https://www.kittl.com/careers", atsType: "ashby", atsSlug: "kittl" },
+  { name: "Causal", domain: "causal.app", careersUrl: "https://www.causal.app/careers", atsType: "ashby", atsSlug: "causal" },
+  { name: "Range", domain: "range.co", careersUrl: "https://www.range.co/careers", atsType: "ashby", atsSlug: "range" },
+
+  // greenhouse — AI & ML
+  { name: "Together AI", domain: "together.ai", careersUrl: "https://www.together.ai/careers", atsType: "greenhouse", atsSlug: "togetherai" },
+  { name: "Lightning AI", domain: "lightning.ai", careersUrl: "https://lightning.ai/careers", atsType: "greenhouse", atsSlug: "lightningai" },
+  { name: "Fireworks AI", domain: "fireworks.ai", careersUrl: "https://fireworks.ai/careers", atsType: "greenhouse", atsSlug: "fireworksai" },
+  { name: "MindsDB", domain: "mindsdb.com", careersUrl: "https://mindsdb.com/careers", atsType: "greenhouse", atsSlug: "mindsdb" },
+
+  // greenhouse — fintech & enterprise
+  { name: "N26", domain: "n26.com", careersUrl: "https://n26.com/en/careers", atsType: "greenhouse", atsSlug: "n26" },
+  { name: "Pleo", domain: "pleo.io", careersUrl: "https://www.pleo.io/careers", atsType: "greenhouse", atsSlug: "pleo" },
+  { name: "Catchpoint", domain: "catchpoint.com", careersUrl: "https://www.catchpoint.com/careers", atsType: "greenhouse", atsSlug: "catchpoint" },
+
+  // greenhouse — privacy & crypto
+  { name: "Proton", domain: "proton.me", careersUrl: "https://proton.me/careers", atsType: "greenhouse", atsSlug: "proton" },
+  { name: "Osmosis", domain: "osmosis.zone", careersUrl: "https://osmosis.zone/careers", atsType: "greenhouse", atsSlug: "osmosis" },
+  { name: "Sei Network", domain: "sei.io", careersUrl: "https://www.sei.io/careers", atsType: "greenhouse", atsSlug: "sei" },
+
+  // ashby — fintech
+  { name: "Tradeify", domain: "tradeify.com", careersUrl: "https://www.tradeify.com/careers", atsType: "ashby", atsSlug: "tradeify" },
+
+  // lever — analytics & streaming
+  { name: "Tinybird", domain: "tinybird.co", careersUrl: "https://www.tinybird.co/careers", atsType: "lever", atsSlug: "tinybird" },
+  { name: "Restream", domain: "restream.io", careersUrl: "https://restream.io/careers", atsType: "lever", atsSlug: "restream" },
+
+  // ── batch 10: discovered via career page ATS detection ──
+
+  // greenhouse — AI & frontier
+  { name: "xAI", domain: "x.ai", careersUrl: "https://x.ai/careers", atsType: "greenhouse", atsSlug: "xai" },
+  { name: "Imbue", domain: "imbue.com", careersUrl: "https://imbue.com/careers", atsType: "greenhouse", atsSlug: "imbue" },
+  { name: "Hebbia", domain: "hebbia.ai", careersUrl: "https://www.hebbia.ai/careers", atsType: "greenhouse", atsSlug: "hebbia" },
+
+  // greenhouse — fintech & insurance
+  { name: "Betterment", domain: "betterment.com", careersUrl: "https://www.betterment.com/careers", atsType: "greenhouse", atsSlug: "betterment" },
+  { name: "Hippo Insurance", domain: "hippo.com", careersUrl: "https://www.hippo.com/careers", atsType: "greenhouse", atsSlug: "hippo70" },
+
+  // greenhouse — streaming & analytics
+  { name: "Roku", domain: "roku.com", careersUrl: "https://www.roku.com/en-us/jobs", atsType: "greenhouse", atsSlug: "roku" },
+  { name: "Superset", domain: "superset.com", careersUrl: "https://www.superset.com/careers", atsType: "greenhouse", atsSlug: "superset" },
+
+  // ashby — AI & ML
+  { name: "Runway", domain: "runwayml.com", careersUrl: "https://runwayml.com/careers", atsType: "ashby", atsSlug: "runway" },
+  { name: "Pika", domain: "pika.art", careersUrl: "https://pika.art/careers", atsType: "ashby", atsSlug: "pika" },
+  { name: "LangChain", domain: "langchain.com", careersUrl: "https://www.langchain.com/careers", atsType: "ashby", atsSlug: "langchain" },
+
+  // ashby — developer tools
+  { name: "Convex", domain: "convex.dev", careersUrl: "https://www.convex.dev/careers", atsType: "ashby", atsSlug: "convex-dev" },
+  { name: "Trigger.dev", domain: "trigger.dev", careersUrl: "https://trigger.dev/careers", atsType: "ashby", atsSlug: "triggerdev" },
+
+  // ashby — fintech & banking
+  { name: "Wealthsimple", domain: "wealthsimple.com", careersUrl: "https://www.wealthsimple.com/en-ca/careers", atsType: "ashby", atsSlug: "wealthsimple" },
+  { name: "Dave", domain: "dave.com", careersUrl: "https://www.dave.com/careers", atsType: "ashby", atsSlug: "dave" },
+  { name: "Unit", domain: "unit.co", careersUrl: "https://www.unit.co/careers", atsType: "ashby", atsSlug: "unit" },
+  { name: "Column", domain: "column.com", careersUrl: "https://column.com/careers", atsType: "ashby", atsSlug: "column" },
+
+  // ashby — data & security
+  { name: "Monte Carlo", domain: "montecarlodata.com", careersUrl: "https://www.montecarlodata.com/careers", atsType: "ashby", atsSlug: "montecarlodata" },
+  { name: "Material Security", domain: "material.security", careersUrl: "https://material.security/careers", atsType: "ashby", atsSlug: "materialsecurity" },
+
+  // lever — data & analytics
+  { name: "Matillion", domain: "matillion.com", careersUrl: "https://www.matillion.com/careers", atsType: "lever", atsSlug: "matillion" },
+
+  // ── batch 11: mass ATS slug discovery ──
+
+  // greenhouse — AI & ML
+  { name: "Glean", domain: "glean.com", careersUrl: "https://www.glean.com/careers", atsType: "greenhouse", atsSlug: "gleanwork" },
+  { name: "Inflection AI", domain: "inflection.ai", careersUrl: "https://inflection.ai/careers", atsType: "greenhouse", atsSlug: "inflectionai" },
+  { name: "Moveworks", domain: "moveworks.com", careersUrl: "https://www.moveworks.com/careers", atsType: "greenhouse", atsSlug: "moveworks" },
+  { name: "Snorkel AI", domain: "snorkel.ai", careersUrl: "https://snorkel.ai/careers", atsType: "greenhouse", atsSlug: "snorkelai" },
+  { name: "Typeface", domain: "typeface.ai", careersUrl: "https://www.typeface.ai/careers", atsType: "greenhouse", atsSlug: "typeface" },
+  { name: "Forethought", domain: "forethought.ai", careersUrl: "https://forethought.ai/careers", atsType: "greenhouse", atsSlug: "forethought" },
+  { name: "SambaNova", domain: "sambanova.ai", careersUrl: "https://sambanova.ai/careers", atsType: "greenhouse", atsSlug: "sambanovasystems" },
+  { name: "Textio", domain: "textio.com", careersUrl: "https://textio.com/careers", atsType: "greenhouse", atsSlug: "textio" },
+
+  // greenhouse — security
+  { name: "Virtru", domain: "virtru.com", careersUrl: "https://www.virtru.com/careers", atsType: "greenhouse", atsSlug: "virtru" },
+  { name: "LastPass", domain: "lastpass.com", careersUrl: "https://www.lastpass.com/careers", atsType: "greenhouse", atsSlug: "lastpass" },
+  { name: "Dashlane", domain: "dashlane.com", careersUrl: "https://www.dashlane.com/careers", atsType: "greenhouse", atsSlug: "dashlane" },
+  { name: "Torq", domain: "torq.io", careersUrl: "https://torq.io/careers", atsType: "greenhouse", atsSlug: "torq" },
+  { name: "Tines", domain: "tines.com", careersUrl: "https://www.tines.com/careers", atsType: "greenhouse", atsSlug: "tines" },
+  { name: "Ping Identity", domain: "pingidentity.com", careersUrl: "https://www.pingidentity.com/careers", atsType: "greenhouse", atsSlug: "pingidentity" },
+
+  // greenhouse — fintech & marketplace
+  { name: "Robinhood", domain: "robinhood.com", careersUrl: "https://robinhood.com/careers", atsType: "greenhouse", atsSlug: "robinhood" },
+  { name: "Nubank", domain: "nubank.com.br", careersUrl: "https://nubank.com.br/en/careers", atsType: "greenhouse", atsSlug: "nubank" },
+  { name: "StockX", domain: "stockx.com", careersUrl: "https://stockx.com/careers", atsType: "greenhouse", atsSlug: "stockx" },
+  { name: "Recharge", domain: "rechargepayments.com", careersUrl: "https://rechargepayments.com/careers", atsType: "greenhouse", atsSlug: "recharge" },
+  { name: "Mercari", domain: "mercari.com", careersUrl: "https://about.mercari.com/en/careers", atsType: "greenhouse", atsSlug: "mercari" },
+
+  // greenhouse — data & analytics
+  { name: "Sigma Computing", domain: "sigmacomputing.com", careersUrl: "https://www.sigmacomputing.com/careers", atsType: "greenhouse", atsSlug: "sigmacomputing" },
+  { name: "Sisense", domain: "sisense.com", careersUrl: "https://www.sisense.com/careers", atsType: "greenhouse", atsSlug: "sisense" },
+  { name: "Smartsheet", domain: "smartsheet.com", careersUrl: "https://www.smartsheet.com/careers", atsType: "greenhouse", atsSlug: "smartsheet" },
+
+  // greenhouse — healthcare & enterprise
+  { name: "Flatiron Health", domain: "flatironhealth.com", careersUrl: "https://flatiron.com/careers", atsType: "greenhouse", atsSlug: "flatironhealth" },
+  { name: "Modern Health", domain: "modernhealth.com", careersUrl: "https://www.modernhealth.com/careers", atsType: "greenhouse", atsSlug: "modernhealth" },
+  { name: "Jamf", domain: "jamf.com", careersUrl: "https://www.jamf.com/careers", atsType: "greenhouse", atsSlug: "jamf" },
+  { name: "Make", domain: "make.com", careersUrl: "https://www.make.com/en/careers", atsType: "greenhouse", atsSlug: "make" },
+  { name: "Superblocks", domain: "superblocks.com", careersUrl: "https://www.superblocks.com/careers", atsType: "greenhouse", atsSlug: "superblocks" },
+  { name: "Laika", domain: "heylaika.com", careersUrl: "https://heylaika.com/careers", atsType: "greenhouse", atsSlug: "laika" },
+
+  // ashby — AI & ML
+  { name: "Reka AI", domain: "reka.ai", careersUrl: "https://reka.ai/careers", atsType: "ashby", atsSlug: "reka" },
+  { name: "Synthesia", domain: "synthesia.io", careersUrl: "https://www.synthesia.io/careers", atsType: "ashby", atsSlug: "synthesia" },
+  { name: "Insitro", domain: "insitro.com", careersUrl: "https://insitro.com/careers", atsType: "ashby", atsSlug: "insitro" },
+  { name: "MosaicML", domain: "mosaicml.com", careersUrl: "https://www.mosaicml.com/careers", atsType: "ashby", atsSlug: "mosaic" },
+
+  // ashby — data & analytics
+  { name: "Snowflake", domain: "snowflake.com", careersUrl: "https://www.snowflake.com/careers", atsType: "ashby", atsSlug: "snowflake" },
+  { name: "Atlan", domain: "atlan.com", careersUrl: "https://atlan.com/careers", atsType: "ashby", atsSlug: "atlan" },
+  { name: "Lightdash", domain: "lightdash.com", careersUrl: "https://lightdash.com/careers", atsType: "ashby", atsSlug: "lightdash" },
+  { name: "Modern Treasury", domain: "moderntreasury.com", careersUrl: "https://www.moderntreasury.com/careers", atsType: "ashby", atsSlug: "moderntreasury" },
+  { name: "Astronomer", domain: "astronomer.io", careersUrl: "https://www.astronomer.io/careers", atsType: "ashby", atsSlug: "astronomer" },
+
+  // ashby — saas & CRM
+  { name: "Attio", domain: "attio.com", careersUrl: "https://attio.com/careers", atsType: "ashby", atsSlug: "attio" },
+  { name: "Motion", domain: "usemotion.com", careersUrl: "https://www.usemotion.com/careers", atsType: "ashby", atsSlug: "motion" },
+  { name: "Gorgias", domain: "gorgias.com", careersUrl: "https://www.gorgias.com/careers", atsType: "ashby", atsSlug: "gorgias" },
+  { name: "Zip", domain: "ziphq.com", careersUrl: "https://ziphq.com/careers", atsType: "ashby", atsSlug: "zip" },
+  { name: "Poshmark", domain: "poshmark.com", careersUrl: "https://poshmark.com/careers", atsType: "ashby", atsSlug: "poshmark" },
+
+  // ashby — security & infra
+  { name: "StrongDM", domain: "strongdm.com", careersUrl: "https://www.strongdm.com/careers", atsType: "ashby", atsSlug: "strongdm" },
+
+  // ashby — healthcare
+  { name: "Notable Health", domain: "notablehealth.com", careersUrl: "https://www.notablehealth.com/careers", atsType: "ashby", atsSlug: "notable" },
+  { name: "Talkiatry", domain: "talkiatry.com", careersUrl: "https://www.talkiatry.com/careers", atsType: "ashby", atsSlug: "talkiatry" },
+  { name: "Olive AI", domain: "oliveai.com", careersUrl: "https://oliveai.com/careers", atsType: "ashby", atsSlug: "olive" },
+
+  // ashby — misc
+  { name: "Rev", domain: "rev.com", careersUrl: "https://www.rev.com/careers", atsType: "ashby", atsSlug: "rev" },
+  { name: "Wistia", domain: "wistia.com", careersUrl: "https://wistia.com/careers", atsType: "ashby", atsSlug: "wistia" },
+  { name: "Roam Research", domain: "roamresearch.com", careersUrl: "https://roamresearch.com/careers", atsType: "ashby", atsSlug: "roam" },
+
+  // lever — healthcare
+  { name: "Lyra Health", domain: "lyrahealth.com", careersUrl: "https://www.lyrahealth.com/careers", atsType: "lever", atsSlug: "lyrahealth" },
+  { name: "Sword Health", domain: "swordhealth.com", careersUrl: "https://swordhealth.com/careers", atsType: "lever", atsSlug: "swordhealth" },
+  { name: "Color Health", domain: "color.com", careersUrl: "https://www.color.com/careers", atsType: "lever", atsSlug: "color" },
+  { name: "Ro", domain: "ro.co", careersUrl: "https://ro.co/careers", atsType: "lever", atsSlug: "ro" },
+  { name: "Varo Money", domain: "varomoney.com", careersUrl: "https://www.varomoney.com/careers", atsType: "lever", atsSlug: "varomoney" },
+
+  // lever — security & compliance
+  { name: "Secureframe", domain: "secureframe.com", careersUrl: "https://secureframe.com/careers", atsType: "lever", atsSlug: "secureframe" },
+  { name: "SonarSource", domain: "sonarsource.com", careersUrl: "https://www.sonarsource.com/careers", atsType: "lever", atsSlug: "sonarsource" },
+  { name: "Yubico", domain: "yubico.com", careersUrl: "https://www.yubico.com/careers", atsType: "lever", atsSlug: "yubico" },
+
+  // lever — data & developer tools
+  { name: "Pipedrive", domain: "pipedrive.com", careersUrl: "https://www.pipedrive.com/careers", atsType: "lever", atsSlug: "pipedrive" },
+  { name: "Zilliz", domain: "zilliz.com", careersUrl: "https://zilliz.com/careers", atsType: "lever", atsSlug: "zilliz" },
+  { name: "ZeroTier", domain: "zerotier.com", careersUrl: "https://www.zerotier.com/careers", atsType: "lever", atsSlug: "zerotier" },
+  { name: "Okendo", domain: "okendo.io", careersUrl: "https://okendo.io/careers", atsType: "lever", atsSlug: "okendo" },
+
+  // lever — biotech
+  { name: "BenchSci", domain: "benchsci.com", careersUrl: "https://www.benchsci.com/careers", atsType: "lever", atsSlug: "benchsci" },
+  { name: "Deep Genomics", domain: "deepgenomics.com", careersUrl: "https://www.deepgenomics.com/careers", atsType: "lever", atsSlug: "deepgenomics" },
+
+  // ── batch 12: round 2 mass discovery ──
+
+  // greenhouse — big tech & marketplace
+  { name: "Airbnb", domain: "airbnb.com", careersUrl: "https://careers.airbnb.com", atsType: "greenhouse", atsSlug: "airbnb" },
+  { name: "Oscar Health", domain: "hioscar.com", careersUrl: "https://www.hioscar.com/careers", atsType: "greenhouse", atsSlug: "oscar" },
+  { name: "Flexport", domain: "flexport.com", careersUrl: "https://www.flexport.com/careers", atsType: "greenhouse", atsSlug: "flexport" },
+  { name: "PandaDoc", domain: "pandadoc.com", careersUrl: "https://www.pandadoc.com/careers", atsType: "greenhouse", atsSlug: "pandadoc" },
+  { name: "Clover Health", domain: "cloverhealth.com", careersUrl: "https://www.cloverhealth.com/careers", atsType: "greenhouse", atsSlug: "cloverhealth" },
+  { name: "QuintoAndar", domain: "quintoandar.com.br", careersUrl: "https://carreiras.quintoandar.com.br", atsType: "greenhouse", atsSlug: "quintoandar" },
+  { name: "Redwood Materials", domain: "redwoodmaterials.com", careersUrl: "https://www.redwoodmaterials.com/careers", atsType: "greenhouse", atsSlug: "redwoodmaterials" },
+
+  // greenhouse — security & identity
+  { name: "Keeper Security", domain: "keepersecurity.com", careersUrl: "https://www.keepersecurity.com/careers", atsType: "greenhouse", atsSlug: "keepersecurity" },
+  { name: "Transmit Security", domain: "transmitsecurity.com", careersUrl: "https://www.transmitsecurity.com/careers", atsType: "greenhouse", atsSlug: "transmitsecurity" },
+  { name: "ExpressVPN", domain: "expressvpn.com", careersUrl: "https://www.expressvpn.com/jobs", atsType: "greenhouse", atsSlug: "expressvpn" },
+
+  // greenhouse — AI & data
+  { name: "Arize AI", domain: "arize.com", careersUrl: "https://arize.com/careers", atsType: "greenhouse", atsSlug: "arizeai" },
+  { name: "Merge", domain: "merge.dev", careersUrl: "https://merge.dev/careers", atsType: "greenhouse", atsSlug: "merge" },
+  { name: "Melio", domain: "melio.com", careersUrl: "https://www.melio.com/careers", atsType: "greenhouse", atsSlug: "melio" },
+
+  // greenhouse — biotech & healthcare
+  { name: "Freenome", domain: "freenome.com", careersUrl: "https://www.freenome.com/careers", atsType: "greenhouse", atsSlug: "freenome" },
+  { name: "Maven Clinic", domain: "mavenclinic.com", careersUrl: "https://www.mavenclinic.com/careers", atsType: "greenhouse", atsSlug: "mavenclinic" },
+  { name: "Veracyte", domain: "veracyte.com", careersUrl: "https://www.veracyte.com/careers", atsType: "greenhouse", atsSlug: "veracyte" },
+  { name: "PathAI", domain: "pathai.com", careersUrl: "https://www.pathai.com/careers", atsType: "greenhouse", atsSlug: "pathai" },
+  { name: "Owkin", domain: "owkin.com", careersUrl: "https://owkin.com/careers", atsType: "greenhouse", atsSlug: "owkin" },
+  { name: "Valo Health", domain: "valohealth.com", careersUrl: "https://www.valohealth.com/careers", atsType: "greenhouse", atsSlug: "valohealth" },
+
+  // greenhouse — crypto & web3
+  { name: "a16z", domain: "a16z.com", careersUrl: "https://a16z.com/about/#careers", atsType: "greenhouse", atsSlug: "a16z" },
+  { name: "Ava Labs", domain: "avalabs.org", careersUrl: "https://www.avalabs.org/careers", atsType: "greenhouse", atsSlug: "avalabs" },
+  { name: "Aztec", domain: "aztec.network", careersUrl: "https://aztec.network/careers", atsType: "greenhouse", atsSlug: "aztec" },
+
+  // greenhouse — logistics & supply chain
+  { name: "FourKites", domain: "fourkites.com", careersUrl: "https://www.fourkites.com/careers", atsType: "greenhouse", atsSlug: "fourkites" },
+  { name: "project44", domain: "project44.com", careersUrl: "https://www.project44.com/careers", atsType: "greenhouse", atsSlug: "project44" },
+
+  // greenhouse — enterprise & messaging
+  { name: "Bird", domain: "bird.com", careersUrl: "https://bird.com/careers", atsType: "greenhouse", atsSlug: "bird" },
+  { name: "Globalization Partners", domain: "globalization-partners.com", careersUrl: "https://www.globalization-partners.com/careers", atsType: "greenhouse", atsSlug: "globalizationpartners" },
+  { name: "Insider", domain: "useinsider.com", careersUrl: "https://useinsider.com/careers", atsType: "greenhouse", atsSlug: "insider" },
+
+  // greenhouse — energy & climate
+  { name: "Antora Energy", domain: "antoraenergy.com", careersUrl: "https://antoraenergy.com/careers", atsType: "greenhouse", atsSlug: "antora" },
+  { name: "Vast", domain: "vast.ai", careersUrl: "https://vast.ai/careers", atsType: "greenhouse", atsSlug: "vastai" },
+  { name: "Watershed", domain: "watershed.com", careersUrl: "https://www.watershed.com/careers", atsType: "greenhouse", atsSlug: "watershed" },
+  { name: "Patch", domain: "patch.io", careersUrl: "https://www.patch.io/careers", atsType: "greenhouse", atsSlug: "patch" },
+  { name: "Redpanda", domain: "redpanda.com", careersUrl: "https://redpanda.com/careers", atsType: "greenhouse", atsSlug: "redpandadata" },
+
+  // greenhouse — devtools & misc
+  { name: "Beautiful.ai", domain: "beautiful.ai", careersUrl: "https://www.beautiful.ai/careers", atsType: "greenhouse", atsSlug: "beautifulai" },
+  { name: "Airship", domain: "airship.com", careersUrl: "https://www.airship.com/careers", atsType: "greenhouse", atsSlug: "airship" },
+  { name: "Cortex", domain: "cortex.io", careersUrl: "https://www.cortex.io/careers", atsType: "greenhouse", atsSlug: "cortex" },
+  { name: "Cypress", domain: "cypress.io", careersUrl: "https://www.cypress.io/careers", atsType: "greenhouse", atsSlug: "cypressio" },
+  { name: "Neptune AI", domain: "neptune.ai", careersUrl: "https://neptune.ai/careers", atsType: "greenhouse", atsSlug: "neptuneai" },
+  { name: "Branch", domain: "branch.io", careersUrl: "https://branch.io/careers", atsType: "greenhouse", atsSlug: "branch" },
+  { name: "PubNub", domain: "pubnub.com", careersUrl: "https://www.pubnub.com/careers", atsType: "greenhouse", atsSlug: "pubnub" },
+  { name: "Akoya", domain: "akoya.com", careersUrl: "https://www.akoya.com/careers", atsType: "greenhouse", atsSlug: "akoya" },
+  { name: "Mangopay", domain: "mangopay.com", careersUrl: "https://www.mangopay.com/careers", atsType: "greenhouse", atsSlug: "mangopay" },
+  { name: "Babbel", domain: "babbel.com", careersUrl: "https://www.babbel.com/careers", atsType: "greenhouse", atsSlug: "babbel" },
+  { name: "HYPR", domain: "hypr.com", careersUrl: "https://www.hypr.com/careers", atsType: "greenhouse", atsSlug: "hypr" },
+
+  // ashby — AI & compute
+  { name: "Crusoe", domain: "crusoe.ai", careersUrl: "https://www.crusoe.ai/careers", atsType: "ashby", atsSlug: "crusoe" },
+  { name: "Cognition", domain: "cognition.ai", careersUrl: "https://www.cognition.ai/careers", atsType: "ashby", atsSlug: "cognition" },
+  { name: "Lambda", domain: "lambdalabs.com", careersUrl: "https://lambdalabs.com/careers", atsType: "ashby", atsSlug: "lambda" },
+  { name: "E2B", domain: "e2b.dev", careersUrl: "https://e2b.dev/careers", atsType: "ashby", atsSlug: "e2b" },
+  { name: "Letta", domain: "letta.com", careersUrl: "https://www.letta.com/careers", atsType: "ashby", atsSlug: "letta" },
+  { name: "Continue", domain: "continue.dev", careersUrl: "https://continue.dev/careers", atsType: "ashby", atsSlug: "continue" },
+  { name: "Tecton", domain: "tecton.ai", careersUrl: "https://www.tecton.ai/careers", atsType: "ashby", atsSlug: "tectonai" },
+  { name: "Gradient", domain: "gradient.ai", careersUrl: "https://gradient.ai/careers", atsType: "ashby", atsSlug: "gradient" },
+  { name: "Braintrust", domain: "braintrustdata.com", careersUrl: "https://www.braintrustdata.com/careers", atsType: "ashby", atsSlug: "braintrust" },
+
+  // ashby — security & identity
+  { name: "Delinea", domain: "delinea.com", careersUrl: "https://delinea.com/careers", atsType: "ashby", atsSlug: "delinea" },
+  { name: "Passage", domain: "passage.id", careersUrl: "https://passage.id/careers", atsType: "ashby", atsSlug: "passage" },
+
+  // ashby — fintech & enterprise
+  { name: "Pennylane", domain: "pennylane.com", careersUrl: "https://www.pennylane.com/careers", atsType: "ashby", atsSlug: "pennylane" },
+  { name: "Preply", domain: "preply.com", careersUrl: "https://preply.com/careers", atsType: "ashby", atsSlug: "preply" },
+  { name: "Ashby", domain: "ashby.com", careersUrl: "https://www.ashby.com/careers", atsType: "ashby", atsSlug: "ashby" },
+  { name: "Instructure", domain: "instructure.com", careersUrl: "https://www.instructure.com/careers", atsType: "ashby", atsSlug: "instructure" },
+  { name: "Substack", domain: "substack.com", careersUrl: "https://substack.com/careers", atsType: "ashby", atsSlug: "substack" },
+  { name: "Weave", domain: "getweave.com", careersUrl: "https://www.getweave.com/careers", atsType: "ashby", atsSlug: "weave" },
+
+  // ashby — energy & climate
+  { name: "Form Energy", domain: "formenergy.com", careersUrl: "https://formenergy.com/careers", atsType: "ashby", atsSlug: "formenergy" },
+  { name: "Twelve", domain: "twelve.co", careersUrl: "https://www.twelve.co/careers", atsType: "ashby", atsSlug: "twelve" },
+  { name: "Swan", domain: "swan.io", careersUrl: "https://www.swan.io/careers", atsType: "ashby", atsSlug: "swan" },
+
+  // ashby — gaming & media
+  { name: "Supercell", domain: "supercell.com", careersUrl: "https://supercell.com/en/careers", atsType: "ashby", atsSlug: "supercell" },
+  { name: "Improbable", domain: "improbable.io", careersUrl: "https://www.improbable.io/careers", atsType: "ashby", atsSlug: "improbable" },
+  { name: "LottieFiles", domain: "lottiefiles.com", careersUrl: "https://lottiefiles.com/careers", atsType: "ashby", atsSlug: "lottie" },
+
+  // ashby — developer tools & analytics
+  { name: "Andela", domain: "andela.com", careersUrl: "https://andela.com/careers", atsType: "ashby", atsSlug: "andela" },
+  { name: "Chromatic", domain: "chromatic.com", careersUrl: "https://www.chromatic.com/careers", atsType: "ashby", atsSlug: "chromatic" },
+  { name: "Flux", domain: "fluxcd.io", careersUrl: "https://fluxcd.io/careers", atsType: "ashby", atsSlug: "flux" },
+  { name: "Sprig", domain: "sprig.com", careersUrl: "https://sprig.com/careers", atsType: "ashby", atsSlug: "sprig" },
+  { name: "Vantage", domain: "vantage.sh", careersUrl: "https://www.vantage.sh/careers", atsType: "ashby", atsSlug: "vantage" },
+  { name: "InfluxData", domain: "influxdata.com", careersUrl: "https://www.influxdata.com/careers", atsType: "ashby", atsSlug: "influxdata" },
+
+  // ashby — crypto
+  { name: "Parity", domain: "parity.io", careersUrl: "https://www.parity.io/jobs", atsType: "ashby", atsSlug: "parity" },
+  { name: "Delphi Digital", domain: "delphidigital.io", careersUrl: "https://delphidigital.io/careers", atsType: "ashby", atsSlug: "delphi" },
+  { name: "Goldsky", domain: "goldsky.com", careersUrl: "https://goldsky.com/careers", atsType: "ashby", atsSlug: "goldsky" },
+
+  // lever — enterprise & SaaS
+  { name: "Toptal", domain: "toptal.com", careersUrl: "https://www.toptal.com/careers", atsType: "lever", atsSlug: "toptal" },
+  { name: "Saviynt", domain: "saviynt.com", careersUrl: "https://saviynt.com/careers", atsType: "lever", atsSlug: "saviynt" },
+  { name: "dLocal", domain: "dlocal.com", careersUrl: "https://dlocal.com/careers", atsType: "lever", atsSlug: "dlocal" },
+  { name: "Contentsquare", domain: "contentsquare.com", careersUrl: "https://contentsquare.com/careers", atsType: "lever", atsSlug: "contentsquare" },
+  { name: "Meesho", domain: "meesho.com", careersUrl: "https://meesho.com/careers", atsType: "lever", atsSlug: "meesho" },
+  { name: "Agicap", domain: "agicap.com", careersUrl: "https://agicap.com/careers", atsType: "lever", atsSlug: "agicap" },
+  { name: "ActiveCampaign", domain: "activecampaign.com", careersUrl: "https://www.activecampaign.com/about/careers", atsType: "lever", atsSlug: "activecampaign" },
+
+  // lever — gaming & logistics
+  { name: "Kabam", domain: "kabam.com", careersUrl: "https://www.kabam.com/careers", atsType: "lever", atsSlug: "kabam" },
+  { name: "Loadsmart", domain: "loadsmart.com", careersUrl: "https://loadsmart.com/careers", atsType: "lever", atsSlug: "loadsmart" },
+  { name: "Brevo", domain: "brevo.com", careersUrl: "https://www.brevo.com/careers", atsType: "lever", atsSlug: "brevo" },
+  { name: "Quantum Metric", domain: "quantummetric.com", careersUrl: "https://www.quantummetric.com/careers", atsType: "lever", atsSlug: "quantummetric" },
+
+  // lever — devtools & analytics
+  { name: "LogRocket", domain: "logrocket.com", careersUrl: "https://logrocket.com/careers", atsType: "lever", atsSlug: "logrocket" },
+  { name: "Omnisend", domain: "omnisend.com", careersUrl: "https://www.omnisend.com/careers", atsType: "lever", atsSlug: "omnisend" },
+  { name: "Agiloft", domain: "agiloft.com", careersUrl: "https://www.agiloft.com/careers", atsType: "lever", atsSlug: "agiloft" },
+  { name: "Plivo", domain: "plivo.com", careersUrl: "https://www.plivo.com/careers", atsType: "lever", atsSlug: "plivo" },
+  { name: "Tala", domain: "tala.co", careersUrl: "https://tala.co/careers", atsType: "lever", atsSlug: "tala" },
+  { name: "Shippo", domain: "goshippo.com", careersUrl: "https://goshippo.com/careers", atsType: "lever", atsSlug: "shippo" },
+
+  // lever — climate & energy
+  { name: "Charm Industrial", domain: "charmindustrial.com", careersUrl: "https://charmindustrial.com/careers", atsType: "lever", atsSlug: "charmindustrial" },
+  { name: "Fuel Labs", domain: "fuel.network", careersUrl: "https://fuel.network/careers", atsType: "lever", atsSlug: "fuellabs" },
+  { name: "Brilliant", domain: "brilliant.org", careersUrl: "https://brilliant.org/careers", atsType: "lever", atsSlug: "brilliant" },
+
+  // ── batch 13 — smart discovery v3 (github repo lists + slug variations) ──
+
+  // greenhouse — identity & verification
+  { name: "Jumio", domain: "jumio.com", careersUrl: "https://www.jumio.com/careers", atsType: "greenhouse", atsSlug: "jumio" },
+  { name: "Veriff", domain: "veriff.com", careersUrl: "https://www.veriff.com/careers", atsType: "greenhouse", atsSlug: "veriff" },
+
+  // greenhouse — education
+  { name: "Khan Academy", domain: "khanacademy.org", careersUrl: "https://www.khanacademy.org/careers", atsType: "greenhouse", atsSlug: "khanacademy" },
+  { name: "General Assembly", domain: "generalassemb.ly", careersUrl: "https://generalassemb.ly/careers", atsType: "greenhouse", atsSlug: "generalassembly" },
+  { name: "GoGuardian", domain: "goguardian.com", careersUrl: "https://www.goguardian.com/careers", atsType: "greenhouse", atsSlug: "goguardian" },
+  { name: "Clever", domain: "clever.com", careersUrl: "https://www.clever.com/about/careers", atsType: "greenhouse", atsSlug: "clever" },
+
+  // greenhouse — fintech & payments
+  { name: "Pilot", domain: "pilot.com", careersUrl: "https://pilot.com/careers", atsType: "greenhouse", atsSlug: "pilothq" },
+  { name: "Array", domain: "array.com", careersUrl: "https://array.com/careers", atsType: "greenhouse", atsSlug: "array" },
+  { name: "Highnote", domain: "highnote.com", careersUrl: "https://www.highnote.com/careers", atsType: "greenhouse", atsSlug: "highnote" },
+  { name: "TabaPay", domain: "tabapay.com", careersUrl: "https://tabapay.com/careers", atsType: "greenhouse", atsSlug: "tabapay" },
+  { name: "Blend", domain: "blend.com", careersUrl: "https://blend.com/company/careers", atsType: "greenhouse", atsSlug: "blend" },
+  { name: "Synctera", domain: "synctera.com", careersUrl: "https://synctera.com/careers", atsType: "greenhouse", atsSlug: "synctera" },
+
+  // greenhouse — ml & data
+  { name: "Domino Data Lab", domain: "dominodatalab.com", careersUrl: "https://www.dominodatalab.com/careers", atsType: "greenhouse", atsSlug: "dominodatalab" },
+
+  // greenhouse — martech & content
+  { name: "LaunchPotato", domain: "launchpotato.com", careersUrl: "https://launchpotato.com/careers", atsType: "greenhouse", atsSlug: "launchpotato" },
+  { name: "Ceros", domain: "ceros.com", careersUrl: "https://www.ceros.com/careers", atsType: "greenhouse", atsSlug: "ceros" },
+  { name: "Mixmax", domain: "mixmax.com", careersUrl: "https://www.mixmax.com/careers", atsType: "greenhouse", atsSlug: "mixmax" },
+
+  // greenhouse — developer tools & infra
+  { name: "NearForm", domain: "nearform.com", careersUrl: "https://www.nearform.com/careers", atsType: "greenhouse", atsSlug: "nearform" },
+  { name: "Karat", domain: "karat.com", careersUrl: "https://www.karat.com/careers", atsType: "greenhouse", atsSlug: "karat" },
+  { name: "Gradle", domain: "gradle.org", careersUrl: "https://gradle.org/careers", atsType: "greenhouse", atsSlug: "gradle" },
+  { name: "Acquia", domain: "acquia.com", careersUrl: "https://www.acquia.com/careers", atsType: "greenhouse", atsSlug: "acquia" },
+  { name: "Stack Exchange", domain: "stackexchange.com", careersUrl: "https://stackoverflow.co/company/careers", atsType: "greenhouse", atsSlug: "stackexchange" },
+  { name: "Baselayer", domain: "baselayer.com", careersUrl: "https://baselayer.com/careers", atsType: "greenhouse", atsSlug: "baselayer" },
+
+  // greenhouse — learning & enterprise
+  { name: "Intellum", domain: "intellum.com", careersUrl: "https://www.intellum.com/careers", atsType: "greenhouse", atsSlug: "intelluminc" },
+
+  // ashby — identity & fintech
+  { name: "Socure", domain: "socure.com", careersUrl: "https://www.socure.com/careers", atsType: "ashby", atsSlug: "socure" },
+  { name: "Middesk", domain: "middesk.com", careersUrl: "https://www.middesk.com/careers", atsType: "ashby", atsSlug: "middesk" },
+
+  // ashby — energy & health
+  { name: "Aurora Solar", domain: "aurorasolar.com", careersUrl: "https://www.aurorasolar.com/careers", atsType: "ashby", atsSlug: "aurorasolar" },
+  { name: "Wheel", domain: "wheel.com", careersUrl: "https://www.wheel.com/careers", atsType: "ashby", atsSlug: "wheel" },
+
+  // ashby — developer tools & ml
+  { name: "SearchApi", domain: "searchapi.io", careersUrl: "https://www.searchapi.io/careers", atsType: "ashby", atsSlug: "searchapi" },
+  { name: "BentoML", domain: "bentoml.com", careersUrl: "https://www.bentoml.com/careers", atsType: "ashby", atsSlug: "bentoml" },
+  { name: "Conduit", domain: "conduit.xyz", careersUrl: "https://conduit.xyz/careers", atsType: "ashby", atsSlug: "conduit" },
+  { name: "Binti", domain: "binti.com", careersUrl: "https://binti.com/careers", atsType: "ashby", atsSlug: "binti" },
+  { name: "Astra", domain: "astra.finance", careersUrl: "https://www.astra.finance/careers", atsType: "ashby", atsSlug: "astra" },
+
+  // lever — security & infrastructure
+  { name: "Sysdig", domain: "sysdig.com", careersUrl: "https://sysdig.com/careers", atsType: "lever", atsSlug: "sysdig" },
+  { name: "Articulate", domain: "articulate.com", careersUrl: "https://articulate.com/careers", atsType: "lever", atsSlug: "articulate" },
+  { name: "Heetch", domain: "heetch.com", careersUrl: "https://www.heetch.com/careers", atsType: "lever", atsSlug: "heetch" },
+  { name: "LiveChat", domain: "livechat.com", careersUrl: "https://www.livechat.com/careers", atsType: "lever", atsSlug: "livechatinc" },
+  { name: "TeamSnap", domain: "teamsnap.com", careersUrl: "https://www.teamsnap.com/careers", atsType: "lever", atsSlug: "teamsnap" },
+  { name: "Brightspot", domain: "brightspot.com", careersUrl: "https://www.brightspot.com/careers", atsType: "lever", atsSlug: "brightspot" },
+
+  // ── batch 14 — round 4 deep vertical discovery ──
+
+  // greenhouse — food & delivery
+  { name: "HelloFresh", domain: "hellofresh.com", careersUrl: "https://www.hellofresh.com/careers", atsType: "greenhouse", atsSlug: "hellofresh" },
+  { name: "Sweetgreen", domain: "sweetgreen.com", careersUrl: "https://www.sweetgreen.com/careers", atsType: "greenhouse", atsSlug: "sweetgreen" },
+  { name: "Misfits Market", domain: "misfitsmarket.com", careersUrl: "https://www.misfitsmarket.com/careers", atsType: "greenhouse", atsSlug: "misfitsmarket" },
+  { name: "Home Chef", domain: "homechef.com", careersUrl: "https://www.homechef.com/careers", atsType: "greenhouse", atsSlug: "homechef" },
+  { name: "Hungryroot", domain: "hungryroot.com", careersUrl: "https://www.hungryroot.com/careers", atsType: "greenhouse", atsSlug: "hungryroot" },
+  { name: "Ritual", domain: "ritual.com", careersUrl: "https://www.ritual.com/careers", atsType: "greenhouse", atsSlug: "ritual" },
+
+  // greenhouse — healthcare & biotech
+  { name: "Natera", domain: "natera.com", careersUrl: "https://www.natera.com/careers", atsType: "greenhouse", atsSlug: "natera" },
+  { name: "Omada Health", domain: "omadahealth.com", careersUrl: "https://www.omadahealth.com/careers", atsType: "greenhouse", atsSlug: "omadahealth" },
+  { name: "Amwell", domain: "amwell.com", careersUrl: "https://www.amwell.com/careers", atsType: "greenhouse", atsSlug: "amwell" },
+  { name: "Thirty Madison", domain: "thirtymadison.com", careersUrl: "https://thirtymadison.com/careers", atsType: "greenhouse", atsSlug: "thirtymadison" },
+  { name: "Ginkgo Bioworks", domain: "ginkgobioworks.com", careersUrl: "https://www.ginkgobioworks.com/careers", atsType: "greenhouse", atsSlug: "ginkgobioworks" },
+  { name: "Dotmatics", domain: "dotmatics.com", careersUrl: "https://www.dotmatics.com/careers", atsType: "greenhouse", atsSlug: "dotmatics" },
+
+  // greenhouse — transportation & logistics
+  { name: "Via", domain: "ridewithvia.com", careersUrl: "https://ridewithvia.com/careers", atsType: "greenhouse", atsSlug: "via" },
+  { name: "Uber Freight", domain: "uberfreight.com", careersUrl: "https://www.uberfreight.com/careers", atsType: "greenhouse", atsSlug: "uberfreight" },
+  { name: "Bringg", domain: "bringg.com", careersUrl: "https://www.bringg.com/careers", atsType: "greenhouse", atsSlug: "bringg" },
+  { name: "Shipwell", domain: "shipwell.com", careersUrl: "https://shipwell.com/careers", atsType: "greenhouse", atsSlug: "shipwell" },
+
+  // greenhouse — fintech & payments
+  { name: "Bill.com", domain: "bill.com", careersUrl: "https://www.bill.com/careers", atsType: "greenhouse", atsSlug: "billcom" },
+  { name: "AppsFlyer", domain: "appsflyer.com", careersUrl: "https://www.appsflyer.com/careers", atsType: "greenhouse", atsSlug: "appsflyer" },
+  { name: "Bloomreach", domain: "bloomreach.com", careersUrl: "https://www.bloomreach.com/careers", atsType: "greenhouse", atsSlug: "bloomreach" },
+  { name: "Thoropass", domain: "thoropass.com", careersUrl: "https://www.thoropass.com/careers", atsType: "greenhouse", atsSlug: "thoropass" },
+
+  // greenhouse — security
+  { name: "Obsidian Security", domain: "obsidiansecurity.com", careersUrl: "https://www.obsidiansecurity.com/careers", atsType: "greenhouse", atsSlug: "obsidiansecurity" },
+  { name: "Endor Labs", domain: "endorlabs.com", careersUrl: "https://www.endorlabs.com/careers", atsType: "greenhouse", atsSlug: "endorlabs" },
+  { name: "Apiiro", domain: "apiiro.com", careersUrl: "https://apiiro.com/careers", atsType: "greenhouse", atsSlug: "apiiro" },
+  { name: "Panther", domain: "runpanther.io", careersUrl: "https://runpanther.io/careers", atsType: "greenhouse", atsSlug: "pantherlabs" },
+
+  // greenhouse — sales & marketing
+  { name: "Apollo.io", domain: "apollo.io", careersUrl: "https://www.apollo.io/careers", atsType: "greenhouse", atsSlug: "apolloio" },
+  { name: "Newsela", domain: "newsela.com", careersUrl: "https://newsela.com/careers", atsType: "greenhouse", atsSlug: "newsela" },
+
+  // greenhouse — ai & developer tools
+  { name: "Lovable", domain: "lovable.dev", careersUrl: "https://lovable.dev/careers", atsType: "greenhouse", atsSlug: "lovable" },
+  { name: "Fellow", domain: "fellow.app", careersUrl: "https://fellow.app/careers", atsType: "greenhouse", atsSlug: "fellow" },
+  { name: "Litify", domain: "litify.com", careersUrl: "https://www.litify.com/careers", atsType: "greenhouse", atsSlug: "litify" },
+
+  // greenhouse — commerce & marketplace
+  { name: "GOAT", domain: "goat.com", careersUrl: "https://www.goat.com/careers", atsType: "greenhouse", atsSlug: "goatgroup" },
+  { name: "Orchard", domain: "orchard.com", careersUrl: "https://www.orchard.com/careers", atsType: "greenhouse", atsSlug: "orchard" },
+  { name: "OfferUp", domain: "offerup.com", careersUrl: "https://offerup.com/careers", atsType: "greenhouse", atsSlug: "offerup" },
+  { name: "Rebag", domain: "rebag.com", careersUrl: "https://www.rebag.com/careers", atsType: "greenhouse", atsSlug: "rebag" },
+  { name: "SHEIN", domain: "shein.com", careersUrl: "https://careers.shein.com", atsType: "greenhouse", atsSlug: "shein" },
+
+  // greenhouse — proptech & real estate
+  { name: "SmartRent", domain: "smartrent.com", careersUrl: "https://smartrent.com/careers", atsType: "greenhouse", atsSlug: "smartrent" },
+
+  // greenhouse — edtech
+  { name: "Outschool", domain: "outschool.com", careersUrl: "https://outschool.com/careers", atsType: "greenhouse", atsSlug: "outschool" },
+
+  // greenhouse — gaming
+  { name: "Bandai Namco", domain: "bandainamcoent.com", careersUrl: "https://www.bandainamcoent.com/careers", atsType: "greenhouse", atsSlug: "bandainamco" },
+
+  // ashby — marketplace & commerce
+  { name: "Whatnot", domain: "whatnot.com", careersUrl: "https://www.whatnot.com/careers", atsType: "ashby", atsSlug: "whatnot" },
+
+  // ashby — fintech & banking
+  { name: "Relay", domain: "relay.com", careersUrl: "https://relay.com/careers", atsType: "ashby", atsSlug: "relayfi" },
+  { name: "Mollie", domain: "mollie.com", careersUrl: "https://www.mollie.com/careers", atsType: "ashby", atsSlug: "mollie" },
+  { name: "Moss", domain: "getmoss.com", careersUrl: "https://getmoss.com/careers", atsType: "ashby", atsSlug: "moss" },
+  { name: "Fonoa", domain: "fonoa.com", careersUrl: "https://www.fonoa.com/careers", atsType: "ashby", atsSlug: "fonoa" },
+  { name: "Float", domain: "float.com", careersUrl: "https://www.float.com/careers", atsType: "ashby", atsSlug: "float" },
+  { name: "Novo", domain: "novo.co", careersUrl: "https://www.novo.co/careers", atsType: "ashby", atsSlug: "novo" },
+  { name: "Found", domain: "found.com", careersUrl: "https://found.com/careers", atsType: "ashby", atsSlug: "found" },
+  { name: "Rho", domain: "rho.co", careersUrl: "https://rho.co/careers", atsType: "ashby", atsSlug: "rho" },
+  { name: "OwnUp", domain: "ownup.com", careersUrl: "https://www.ownup.com/careers", atsType: "ashby", atsSlug: "ownup" },
+  { name: "Tomo", domain: "hellotomo.com", careersUrl: "https://hellotomo.com/careers", atsType: "ashby", atsSlug: "tomo" },
+  { name: "Capchase", domain: "capchase.com", careersUrl: "https://www.capchase.com/careers", atsType: "ashby", atsSlug: "capchase" },
+  { name: "Clearco", domain: "clear.co", careersUrl: "https://clear.co/careers", atsType: "ashby", atsSlug: "clearco" },
+  { name: "Procurify", domain: "procurify.com", careersUrl: "https://www.procurify.com/careers", atsType: "ashby", atsSlug: "procurify" },
+
+  // ashby — ai & developer tools
+  { name: "Factory", domain: "factory.ai", careersUrl: "https://www.factory.ai/careers", atsType: "ashby", atsSlug: "factory" },
+  { name: "Langfuse", domain: "langfuse.com", careersUrl: "https://langfuse.com/careers", atsType: "ashby", atsSlug: "langfuse" },
+  { name: "Greptile", domain: "greptile.com", careersUrl: "https://greptile.com/careers", atsType: "ashby", atsSlug: "greptile" },
+  { name: "Codegen", domain: "codegen.com", careersUrl: "https://www.codegen.com/careers", atsType: "ashby", atsSlug: "codegen" },
+  { name: "Sweep", domain: "sweep.net", careersUrl: "https://sweep.net/careers", atsType: "ashby", atsSlug: "sweep" },
+
+  // ashby — cloud & infrastructure
+  { name: "FluidStack", domain: "fluidstack.io", careersUrl: "https://www.fluidstack.io/careers", atsType: "ashby", atsSlug: "fluidstack" },
+
+  // ashby — analytics & security
+  { name: "Singular", domain: "singular.net", careersUrl: "https://www.singular.net/careers", atsType: "ashby", atsSlug: "singular" },
+  { name: "Oligo Security", domain: "oligo.security", careersUrl: "https://www.oligo.security/careers", atsType: "ashby", atsSlug: "oligo" },
+
+  // ashby — edtech & health
+  { name: "Cambly", domain: "cambly.com", careersUrl: "https://www.cambly.com/careers", atsType: "ashby", atsSlug: "cambly" },
+  { name: "Capsule", domain: "capsule.com", careersUrl: "https://www.capsule.com/careers", atsType: "ashby", atsSlug: "capsule" },
+
+  // lever — delivery & logistics
+  { name: "Gopuff", domain: "gopuff.com", careersUrl: "https://gopuff.com/careers", atsType: "lever", atsSlug: "gopuff" },
+  { name: "Turvo", domain: "turvo.com", careersUrl: "https://turvo.com/careers", atsType: "lever", atsSlug: "turvo" },
+  { name: "Snappr", domain: "snappr.com", careersUrl: "https://www.snappr.com/careers", atsType: "lever", atsSlug: "snappr" },
+
+  // lever — fintech & enterprise
+  { name: "Coupa", domain: "coupa.com", careersUrl: "https://www.coupa.com/careers", atsType: "lever", atsSlug: "coupa" },
+  { name: "Jeeves", domain: "tryjeeves.com", careersUrl: "https://www.tryjeeves.com/careers", atsType: "lever", atsSlug: "tryjeeves" },
+  { name: "Better", domain: "better.com", careersUrl: "https://www.better.com/careers", atsType: "lever", atsSlug: "better" },
+
+  // lever — sales & marketing
+  { name: "Outreach", domain: "outreach.io", careersUrl: "https://www.outreach.io/careers", atsType: "lever", atsSlug: "outreach" },
+  { name: "Kochava", domain: "kochava.com", careersUrl: "https://www.kochava.com/careers", atsType: "lever", atsSlug: "kochava" },
+
+  // lever — legal & proptech
+  { name: "Filevine", domain: "filevine.com", careersUrl: "https://www.filevine.com/careers", atsType: "lever", atsSlug: "filevine" },
+  { name: "Onit", domain: "onit.com", careersUrl: "https://www.onit.com/careers", atsType: "lever", atsSlug: "onit" },
+  { name: "Entrata", domain: "entrata.com", careersUrl: "https://www.entrata.com/careers", atsType: "lever", atsSlug: "entrata" },
+
+  // lever — healthcare & gaming
+  { name: "GRAIL", domain: "grail.com", careersUrl: "https://grail.com/careers", atsType: "lever", atsSlug: "grailbio" },
+  { name: "NimbleRx", domain: "nimblerx.com", careersUrl: "https://www.nimblerx.com/careers", atsType: "lever", atsSlug: "nimblerx" },
+  { name: "Jam City", domain: "jamcity.com", careersUrl: "https://www.jamcity.com/careers", atsType: "lever", atsSlug: "jamcity" },
+  { name: "Factor", domain: "factor.com", careersUrl: "https://www.factor.com/careers", atsType: "lever", atsSlug: "factor" },
+
+  // ── batch 15 — round 5 final push (eu tech, climate, ai, gaming) ──
+
+  // greenhouse — eu fintech & payments
+  { name: "SumUp", domain: "sumup.com", careersUrl: "https://www.sumup.com/careers", atsType: "greenhouse", atsSlug: "sumup" },
+  { name: "Tide", domain: "tide.co", careersUrl: "https://www.tide.co/careers", atsType: "greenhouse", atsSlug: "tide" },
+  { name: "Bitpanda", domain: "bitpanda.com", careersUrl: "https://www.bitpanda.com/careers", atsType: "greenhouse", atsSlug: "bitpanda" },
+
+  // greenhouse — ai & generative
+  { name: "Fal", domain: "fal.ai", careersUrl: "https://fal.ai/careers", atsType: "greenhouse", atsSlug: "fal" },
+  { name: "Speechmatics", domain: "speechmatics.com", careersUrl: "https://www.speechmatics.com/careers", atsType: "greenhouse", atsSlug: "speechmatics" },
+
+  // greenhouse — robotics & energy
+  { name: "Kodiak", domain: "kodiak.ai", careersUrl: "https://kodiak.ai/careers", atsType: "greenhouse", atsSlug: "kodiak" },
+  { name: "ESS", domain: "essinc.com", careersUrl: "https://www.essinc.com/careers", atsType: "greenhouse", atsSlug: "ess" },
+
+  // ashby — ai & generative
+  { name: "Exa", domain: "exa.ai", careersUrl: "https://exa.ai/careers", atsType: "ashby", atsSlug: "exa" },
+  { name: "Meshy", domain: "meshy.ai", careersUrl: "https://www.meshy.ai/careers", atsType: "ashby", atsSlug: "meshy" },
+  { name: "Ideogram", domain: "ideogram.ai", careersUrl: "https://ideogram.ai/careers", atsType: "ashby", atsSlug: "ideogram" },
+  { name: "Dust", domain: "dust.tt", careersUrl: "https://dust.tt/careers", atsType: "ashby", atsSlug: "dust" },
+  { name: "Relevance AI", domain: "relevanceai.com", careersUrl: "https://relevanceai.com/careers", atsType: "ashby", atsSlug: "relevanceai" },
+  { name: "Granola", domain: "granola.ai", careersUrl: "https://granola.ai/careers", atsType: "ashby", atsSlug: "granola" },
+
+  // ashby — devtools & infrastructure
+  { name: "Graphite", domain: "graphite.dev", careersUrl: "https://graphite.dev/careers", atsType: "ashby", atsSlug: "graphite" },
+  { name: "Twenty", domain: "twenty.com", careersUrl: "https://twenty.com/careers", atsType: "ashby", atsSlug: "twenty" },
+  { name: "Freshpaint", domain: "freshpaint.io", careersUrl: "https://www.freshpaint.io/careers", atsType: "ashby", atsSlug: "freshpaint" },
+  { name: "SavvyCal", domain: "savvycal.com", careersUrl: "https://savvycal.com/careers", atsType: "ashby", atsSlug: "savvy" },
+  { name: "Nuon", domain: "nuon.co", careersUrl: "https://nuon.co/careers", atsType: "ashby", atsSlug: "nuon" },
+  { name: "Craft", domain: "craft.do", careersUrl: "https://www.craft.do/careers", atsType: "ashby", atsSlug: "craftdocs" },
+
+  // ashby — fintech & prediction markets
+  { name: "Kalshi", domain: "kalshi.com", careersUrl: "https://kalshi.com/careers", atsType: "ashby", atsSlug: "kalshi" },
+  { name: "Freetrade", domain: "freetrade.io", careersUrl: "https://freetrade.io/careers", atsType: "ashby", atsSlug: "freetrade" },
+  { name: "Billie", domain: "billie.io", careersUrl: "https://www.billie.io/careers", atsType: "ashby", atsSlug: "billie" },
+
+  // ashby — climate & energy
+  { name: "Span", domain: "span.io", careersUrl: "https://www.span.io/careers", atsType: "ashby", atsSlug: "span" },
+  { name: "Sylvera", domain: "sylvera.com", careersUrl: "https://www.sylvera.com/careers", atsType: "ashby", atsSlug: "sylvera" },
+  { name: "Heirloom Carbon", domain: "heirloomcarbon.com", careersUrl: "https://heirloomcarbon.com/careers", atsType: "ashby", atsSlug: "heirloomcarbon" },
+  { name: "Aclima", domain: "aclima.io", careersUrl: "https://www.aclima.io/careers", atsType: "ashby", atsSlug: "aclima" },
+
+  // ashby — gaming
+  { name: "Voodoo", domain: "voodoo.io", careersUrl: "https://www.voodoo.io/careers", atsType: "ashby", atsSlug: "voodoo" },
+  { name: "Forto", domain: "forto.com", careersUrl: "https://www.forto.com/careers", atsType: "ashby", atsSlug: "forto" },
+
+  // lever — fintech & eu
+  { name: "Qonto", domain: "qonto.com", careersUrl: "https://qonto.com/careers", atsType: "lever", atsSlug: "qonto" },
+  { name: "Wealthfront", domain: "wealthfront.com", careersUrl: "https://www.wealthfront.com/careers", atsType: "lever", atsSlug: "wealthfront" },
+  { name: "Arcadia", domain: "arcadia.com", careersUrl: "https://www.arcadia.com/careers", atsType: "lever", atsSlug: "arcadia" },
+
+  // lever — devtools & infrastructure
+  { name: "Porter", domain: "porter.run", careersUrl: "https://porter.run/careers", atsType: "lever", atsSlug: "porter" },
+  { name: "Trunk", domain: "trunk.io", careersUrl: "https://trunk.io/careers", atsType: "lever", atsSlug: "trunkio" },
+
+  // lever — crypto & gaming
+  { name: "Ethena", domain: "ethena.fi", careersUrl: "https://ethena.fi/careers", atsType: "lever", atsSlug: "ethena" },
+  { name: "Kolibri Games", domain: "kolibrigames.com", careersUrl: "https://kolibrigames.com/careers", atsType: "lever", atsSlug: "kolibrigames" },
+
+  // ── batch 16 — final sweep (insurtech, robotics, enterprise, travel) ──
+
+  // greenhouse — robotics & autonomous
+  { name: "Figure AI", domain: "figure.ai", careersUrl: "https://figure.ai/careers", atsType: "greenhouse", atsSlug: "figureai" },
+  { name: "Agility Robotics", domain: "agilityrobotics.com", careersUrl: "https://agilityrobotics.com/careers", atsType: "greenhouse", atsSlug: "agilityrobotics" },
+  { name: "Locus Robotics", domain: "locusrobotics.com", careersUrl: "https://locusrobotics.com/careers", atsType: "greenhouse", atsSlug: "locusrobotics" },
+
+  // greenhouse — insurtech
+  { name: "Ethos Life", domain: "ethoslife.com", careersUrl: "https://www.ethoslife.com/careers", atsType: "greenhouse", atsSlug: "ethoslife" },
+  { name: "Pie Insurance", domain: "pieinsurance.com", careersUrl: "https://pieinsurance.com/careers", atsType: "greenhouse", atsSlug: "pieinsurance" },
+  { name: "Cowbell Cyber", domain: "cowbell.insure", careersUrl: "https://cowbell.insure/careers", atsType: "greenhouse", atsSlug: "cowbellcyber" },
+
+  // greenhouse — ai & enterprise
+  { name: "Parloa", domain: "parloa.com", careersUrl: "https://www.parloa.com/careers", atsType: "greenhouse", atsSlug: "parloa" },
+  { name: "BuildOps", domain: "buildops.com", careersUrl: "https://buildops.com/careers", atsType: "greenhouse", atsSlug: "buildops" },
+  { name: "Incode", domain: "incode.com", careersUrl: "https://incode.com/careers", atsType: "greenhouse", atsSlug: "incode" },
+
+  // greenhouse — data & construction
+  { name: "Dremio", domain: "dremio.com", careersUrl: "https://www.dremio.com/careers", atsType: "greenhouse", atsSlug: "dremio" },
+  { name: "Fieldwire", domain: "fieldwire.com", careersUrl: "https://www.fieldwire.com/careers", atsType: "greenhouse", atsSlug: "fieldwire" },
+  { name: "Apaleo", domain: "apaleo.com", careersUrl: "https://apaleo.com/careers", atsType: "greenhouse", atsSlug: "apaleo" },
+
+  // ashby — travel & insurtech
+  { name: "Hopper", domain: "hopper.com", careersUrl: "https://www.hopper.com/careers", atsType: "ashby", atsSlug: "hopper" },
+  { name: "Lemonade", domain: "lemonade.com", careersUrl: "https://www.lemonade.com/careers", atsType: "ashby", atsSlug: "lemonade" },
+  { name: "Bestow", domain: "bestow.com", careersUrl: "https://www.bestow.com/careers", atsType: "ashby", atsSlug: "bestow" },
+  { name: "Branch Insurance", domain: "ourbranch.com", careersUrl: "https://www.ourbranch.com/careers", atsType: "ashby", atsSlug: "branchinsurance" },
+
+  // lever — data & drones
+  { name: "Hevo Data", domain: "hevodata.com", careersUrl: "https://hevodata.com/careers", atsType: "lever", atsSlug: "hevodata" },
+  { name: "DroneDeploy", domain: "dronedeploy.com", careersUrl: "https://www.dronedeploy.com/careers", atsType: "lever", atsSlug: "dronedeploy" },
+
+  // ── batch 17 — round 7 (pos, billing, location, sales, education) ──
+
+  // greenhouse — restaurant & fintech
+  { name: "Slice", domain: "slicelife.com", careersUrl: "https://slicelife.com/careers", atsType: "greenhouse", atsSlug: "slice" },
+  { name: "Proof", domain: "proof.com", careersUrl: "https://www.proof.com/careers", atsType: "greenhouse", atsSlug: "proof" },
+  { name: "Metronome", domain: "metronome.com", careersUrl: "https://www.metronome.com/careers", atsType: "greenhouse", atsSlug: "metronome" },
+  { name: "Radar", domain: "radar.com", careersUrl: "https://radar.com/careers", atsType: "greenhouse", atsSlug: "radar" },
+  { name: "D2L", domain: "d2l.com", careersUrl: "https://www.d2l.com/careers", atsType: "greenhouse", atsSlug: "d2l" },
+
+  // ashby — commerce & location
+  { name: "Lightspeed", domain: "lightspeedhq.com", careersUrl: "https://www.lightspeedhq.com/careers", atsType: "ashby", atsSlug: "lightspeedhq" },
+  { name: "Lemlist", domain: "lemlist.com", careersUrl: "https://www.lemlist.com/careers", atsType: "ashby", atsSlug: "lemlist" },
+  { name: "what3words", domain: "what3words.com", careersUrl: "https://what3words.com/careers", atsType: "ashby", atsSlug: "what3words" },
+  { name: "Foursquare", domain: "foursquare.com", careersUrl: "https://foursquare.com/careers", atsType: "ashby", atsSlug: "foursquare" },
+
+  // lever — sales & recognition
+  { name: "Reply", domain: "reply.io", careersUrl: "https://reply.io/careers", atsType: "lever", atsSlug: "reply" },
+  { name: "Achievers", domain: "achievers.com", careersUrl: "https://www.achievers.com/careers", atsType: "lever", atsSlug: "achievers" },
+  { name: "Olo", domain: "olo.com", careersUrl: "https://www.olo.com/careers", atsType: "lever", atsSlug: "olo" },
+
+  // ── batch 18 · round 8 broad sweep (aerospace, quantum, nuclear, mobility, media, fashion) ──
+
+  // greenhouse — aerospace & space
+  { name: "SpaceX", domain: "spacex.com", careersUrl: "https://www.spacex.com/careers", atsType: "greenhouse", atsSlug: "spacex" },
+  { name: "Rocket Lab", domain: "rocketlabusa.com", careersUrl: "https://www.rocketlabusa.com/careers", atsType: "greenhouse", atsSlug: "rocketlab" },
+  { name: "Astranis", domain: "astranis.com", careersUrl: "https://www.astranis.com/careers", atsType: "greenhouse", atsSlug: "astranis" },
+  { name: "Varda Space", domain: "varda.com", careersUrl: "https://www.varda.com/careers", atsType: "greenhouse", atsSlug: "vardaspace" },
+  { name: "Capella Space", domain: "capellaspace.com", careersUrl: "https://www.capellaspace.com/careers", atsType: "greenhouse", atsSlug: "capellaspace" },
+
+  // greenhouse — quantum & nuclear
+  { name: "IonQ", domain: "ionq.com", careersUrl: "https://ionq.com/careers", atsType: "greenhouse", atsSlug: "ionq" },
+  { name: "PsiQuantum", domain: "psiquantum.com", careersUrl: "https://www.psiquantum.com/careers", atsType: "greenhouse", atsSlug: "psiquantum" },
+  { name: "Oklo", domain: "oklo.com", careersUrl: "https://oklo.com/careers", atsType: "greenhouse", atsSlug: "oklo" },
+  { name: "Kairos Power", domain: "kairospower.com", careersUrl: "https://kairospower.com/careers", atsType: "greenhouse", atsSlug: "kairospower" },
+
+  // greenhouse — automotive & mobility
+  { name: "Lucid Motors", domain: "lucidmotors.com", careersUrl: "https://www.lucidmotors.com/careers", atsType: "greenhouse", atsSlug: "lucidmotors" },
+  { name: "BYD", domain: "byd.com", careersUrl: "https://www.byd.com/careers", atsType: "greenhouse", atsSlug: "byd" },
+  { name: "FreeNow", domain: "free-now.com", careersUrl: "https://www.free-now.com/careers", atsType: "greenhouse", atsSlug: "freenow" },
+
+  // greenhouse — media & content
+  { name: "Crunchyroll", domain: "crunchyroll.com", careersUrl: "https://www.crunchyroll.com/careers", atsType: "greenhouse", atsSlug: "crunchyroll" },
+  { name: "Vox Media", domain: "voxmedia.com", careersUrl: "https://www.voxmedia.com/careers", atsType: "greenhouse", atsSlug: "voxmedia" },
+  { name: "Axios", domain: "axios.com", careersUrl: "https://www.axios.com/careers", atsType: "greenhouse", atsSlug: "axios" },
+  { name: "BuzzFeed", domain: "buzzfeed.com", careersUrl: "https://www.buzzfeed.com/careers", atsType: "greenhouse", atsSlug: "buzzfeed" },
+
+  // greenhouse — fashion & beauty
+  { name: "Stitch Fix", domain: "stitchfix.com", careersUrl: "https://www.stitchfix.com/careers", atsType: "greenhouse", atsSlug: "stitchfix" },
+  { name: "Rent the Runway", domain: "renttherunway.com", careersUrl: "https://www.renttherunway.com/careers", atsType: "greenhouse", atsSlug: "renttherunway" },
+  { name: "Gymshark", domain: "gymshark.com", careersUrl: "https://www.gymshark.com/careers", atsType: "greenhouse", atsSlug: "gymshark" },
+  { name: "Glossier", domain: "glossier.com", careersUrl: "https://www.glossier.com/careers", atsType: "greenhouse", atsSlug: "glossier" },
+
+  // greenhouse — health & wellness
+  { name: "Oura", domain: "ouraring.com", careersUrl: "https://ouraring.com/careers", atsType: "greenhouse", atsSlug: "oura" },
+  { name: "Talkspace", domain: "talkspace.com", careersUrl: "https://www.talkspace.com/careers", atsType: "greenhouse", atsSlug: "talkspace" },
+
+  // greenhouse — agriculture & real estate
+  { name: "Pivot Bio", domain: "pivotbio.com", careersUrl: "https://www.pivotbio.com/careers", atsType: "greenhouse", atsSlug: "pivotbio" },
+  { name: "CoStar", domain: "costargroup.com", careersUrl: "https://www.costargroup.com/careers", atsType: "greenhouse", atsSlug: "costar" },
+  { name: "Bark", domain: "bark.co", careersUrl: "https://www.bark.co/careers", atsType: "greenhouse", atsSlug: "bark" },
+
+  // ashby — energy & deep tech
+  { name: "Helion Energy", domain: "helionenergy.com", careersUrl: "https://www.helionenergy.com/careers", atsType: "ashby", atsSlug: "helion" },
+  { name: "Focused Energy", domain: "focused-energy.world", careersUrl: "https://www.focused-energy.world/careers", atsType: "ashby", atsSlug: "focused" },
+  { name: "Orbital", domain: "orbital.com", careersUrl: "https://orbital.com/careers", atsType: "ashby", atsSlug: "orbital" },
+  { name: "Lynk", domain: "lynk.world", careersUrl: "https://lynk.world/careers", atsType: "ashby", atsSlug: "lynk" },
+
+  // ashby — fitness & consumer
+  { name: "Strava", domain: "strava.com", careersUrl: "https://www.strava.com/careers", atsType: "ashby", atsSlug: "strava" },
+  { name: "BetterUp", domain: "betterup.com", careersUrl: "https://www.betterup.com/careers", atsType: "ashby", atsSlug: "betterup" },
+  { name: "Quora", domain: "quora.com", careersUrl: "https://www.quora.com/careers", atsType: "ashby", atsSlug: "quora" },
+  { name: "PhotoRoom", domain: "photoroom.com", careersUrl: "https://www.photoroom.com/careers", atsType: "ashby", atsSlug: "photoroom" },
+  { name: "Upside", domain: "upside.com", careersUrl: "https://www.upside.com/careers", atsType: "ashby", atsSlug: "upside" },
+
+  // lever — quantum & misc
+  { name: "Rigetti", domain: "rigetti.com", careersUrl: "https://www.rigetti.com/careers", atsType: "lever", atsSlug: "rigetti" },
+  { name: "Atom Computing", domain: "atom-computing.com", careersUrl: "https://www.atom-computing.com/careers", atsType: "lever", atsSlug: "atomcomputing" },
+  { name: "Getty Images", domain: "gettyimages.com", careersUrl: "https://www.gettyimages.com/careers", atsType: "lever", atsSlug: "gettyimages" },
+  { name: "Rover", domain: "rover.com", careersUrl: "https://www.rover.com/careers", atsType: "lever", atsSlug: "rover" },
+  { name: "Arable", domain: "arable.com", careersUrl: "https://www.arable.com/careers", atsType: "lever", atsSlug: "arable" },
+  { name: "Fi", domain: "tryfi.com", careersUrl: "https://www.tryfi.com/careers", atsType: "lever", atsSlug: "fi" },
+
+  // ── batch 19 · round 9 (govtech, defense, adtech, manufacturing, privacy) ──
+
+  // greenhouse — defense & govtech
+  { name: "Anduril", domain: "anduril.com", careersUrl: "https://www.anduril.com/careers", atsType: "greenhouse", atsSlug: "andurilindustries" },
+  { name: "Govini", domain: "govini.com", careersUrl: "https://govini.com/careers", atsType: "greenhouse", atsSlug: "govini" },
+  { name: "Accela", domain: "accela.com", careersUrl: "https://www.accela.com/careers", atsType: "greenhouse", atsSlug: "accela" },
+
+  // greenhouse — manufacturing & 3D printing
+  { name: "Xometry", domain: "xometry.com", careersUrl: "https://www.xometry.com/careers", atsType: "greenhouse", atsSlug: "xometry" },
+  { name: "Formlabs", domain: "formlabs.com", careersUrl: "https://formlabs.com/careers", atsType: "greenhouse", atsSlug: "formlabs" },
+  { name: "Fictiv", domain: "fictiv.com", careersUrl: "https://www.fictiv.com/careers", atsType: "greenhouse", atsSlug: "fictiv" },
+  { name: "Markforged", domain: "markforged.com", careersUrl: "https://markforged.com/careers", atsType: "greenhouse", atsSlug: "markforged" },
+  { name: "Carbon", domain: "carbon3d.com", careersUrl: "https://www.carbon3d.com/careers", atsType: "greenhouse", atsSlug: "carbon" },
+  { name: "Augury", domain: "augury.com", careersUrl: "https://www.augury.com/careers", atsType: "greenhouse", atsSlug: "augury" },
+  { name: "Tulip", domain: "tulip.co", careersUrl: "https://tulip.co/careers", atsType: "greenhouse", atsSlug: "tulip" },
+
+  // greenhouse — adtech & mobile
+  { name: "Taboola", domain: "taboola.com", careersUrl: "https://www.taboola.com/careers", atsType: "greenhouse", atsSlug: "taboola" },
+  { name: "Moloco", domain: "moloco.com", careersUrl: "https://www.moloco.com/careers", atsType: "greenhouse", atsSlug: "moloco" },
+  { name: "InMobi", domain: "inmobi.com", careersUrl: "https://www.inmobi.com/careers", atsType: "greenhouse", atsSlug: "inmobi" },
+  { name: "AppLovin", domain: "applovin.com", careersUrl: "https://www.applovin.com/careers", atsType: "greenhouse", atsSlug: "applovin" },
+  { name: "PubMatic", domain: "pubmatic.com", careersUrl: "https://pubmatic.com/careers", atsType: "greenhouse", atsSlug: "pubmatic" },
+  { name: "TripleLift", domain: "triplelift.com", careersUrl: "https://triplelift.com/careers", atsType: "greenhouse", atsSlug: "triplelift" },
+  { name: "Liftoff", domain: "liftoff.io", careersUrl: "https://liftoff.io/careers", atsType: "greenhouse", atsSlug: "liftoff" },
+  { name: "Kargo", domain: "kargo.com", careersUrl: "https://www.kargo.com/careers", atsType: "greenhouse", atsSlug: "kargo" },
+
+  // greenhouse — fleet & logistics
+  { name: "Motive", domain: "gomotive.com", careersUrl: "https://gomotive.com/careers", atsType: "greenhouse", atsSlug: "gomotive" },
+  { name: "Geotab", domain: "geotab.com", careersUrl: "https://www.geotab.com/careers", atsType: "greenhouse", atsSlug: "geotab" },
+  { name: "Platform Science", domain: "platformscience.com", careersUrl: "https://www.platformscience.com/careers", atsType: "greenhouse", atsSlug: "platformscience" },
+
+  // greenhouse — privacy & compliance
+  { name: "OneTrust", domain: "onetrust.com", careersUrl: "https://www.onetrust.com/careers", atsType: "greenhouse", atsSlug: "onetrust" },
+  { name: "BigID", domain: "bigid.com", careersUrl: "https://bigid.com/careers", atsType: "greenhouse", atsSlug: "bigid" },
+  { name: "Osano", domain: "osano.com", careersUrl: "https://www.osano.com/careers", atsType: "greenhouse", atsSlug: "osano" },
+
+  // greenhouse — payments & events
+  { name: "TransferGo", domain: "transfergo.com", careersUrl: "https://www.transfergo.com/careers", atsType: "greenhouse", atsSlug: "transfergo" },
+  { name: "Swoogo", domain: "swoogo.com", careersUrl: "https://swoogo.com/careers", atsType: "greenhouse", atsSlug: "swoogo" },
+  { name: "BrightHire", domain: "brighthire.com", careersUrl: "https://brighthire.com/careers", atsType: "greenhouse", atsSlug: "brighthire" },
+  { name: "Clearway Energy", domain: "clearwayenergy.com", careersUrl: "https://www.clearwayenergy.com/careers", atsType: "greenhouse", atsSlug: "clearway" },
+
+  // ashby — defense & insurance
+  { name: "Applied Systems", domain: "appliedsystems.com", careersUrl: "https://www.appliedsystems.com/careers", atsType: "ashby", atsSlug: "applied" },
+  { name: "Kin Insurance", domain: "kininsurance.com", careersUrl: "https://www.kininsurance.com/careers", atsType: "ashby", atsSlug: "kin" },
+  { name: "Cape Analytics", domain: "capeanalytics.com", careersUrl: "https://capeanalytics.com/careers", atsType: "ashby", atsSlug: "cape" },
+  { name: "Tractable", domain: "tractable.ai", careersUrl: "https://tractable.ai/careers", atsType: "ashby", atsSlug: "tractable" },
+
+  // ashby — adtech & recruiting
+  { name: "Paradox", domain: "paradox.ai", careersUrl: "https://www.paradox.ai/careers", atsType: "ashby", atsSlug: "paradox" },
+  { name: "Permutive", domain: "permutive.com", careersUrl: "https://permutive.com/careers", atsType: "ashby", atsSlug: "permutive" },
+  { name: "Primer", domain: "primer.ai", careersUrl: "https://primer.ai/careers", atsType: "ashby", atsSlug: "primer" },
+  { name: "Beamery", domain: "beamery.com", careersUrl: "https://beamery.com/careers", atsType: "ashby", atsSlug: "beamery" },
+
+  // lever — defense & manufacturing
+  { name: "Shield AI", domain: "shield.ai", careersUrl: "https://shield.ai/careers", atsType: "lever", atsSlug: "shieldai" },
+  { name: "Protolabs", domain: "protolabs.com", careersUrl: "https://www.protolabs.com/careers", atsType: "lever", atsSlug: "protolabs" },
+  { name: "Velo3D", domain: "velo3d.com", careersUrl: "https://velo3d.com/careers", atsType: "lever", atsSlug: "velo3d" },
+  { name: "Ogury", domain: "ogury.com", careersUrl: "https://ogury.com/careers", atsType: "lever", atsSlug: "ogury" },
+  { name: "Sonatype", domain: "sonatype.com", careersUrl: "https://www.sonatype.com/careers", atsType: "lever", atsSlug: "sonatype" },
+  { name: "Voltus", domain: "voltus.co", careersUrl: "https://www.voltus.co/careers", atsType: "lever", atsSlug: "voltus" },
+  { name: "Immuta", domain: "immuta.com", careersUrl: "https://www.immuta.com/careers", atsType: "lever", atsSlug: "immuta" },
+
+  // ── batch 20 · round 10 (autonomous vehicles, AI chips, enterprise, consumer fintech) ──
+
+  // greenhouse — autonomous vehicles
+  { name: "Waymo", domain: "waymo.com", careersUrl: "https://waymo.com/careers", atsType: "greenhouse", atsSlug: "waymo" },
+  { name: "Motional", domain: "motional.com", careersUrl: "https://motional.com/careers", atsType: "greenhouse", atsSlug: "motional" },
+  { name: "Nuro", domain: "nuro.ai", careersUrl: "https://www.nuro.ai/careers", atsType: "greenhouse", atsSlug: "nuro" },
+
+  // greenhouse — AI chips & photonics
+  { name: "Tenstorrent", domain: "tenstorrent.com", careersUrl: "https://tenstorrent.com/careers", atsType: "greenhouse", atsSlug: "tenstorrent" },
+  { name: "Lightmatter", domain: "lightmatter.co", careersUrl: "https://lightmatter.co/careers", atsType: "greenhouse", atsSlug: "lightmatter" },
+
+  // greenhouse — enterprise & fintech
+  { name: "Celonis", domain: "celonis.com", careersUrl: "https://www.celonis.com/careers", atsType: "greenhouse", atsSlug: "celonis" },
+  { name: "Credit Karma", domain: "creditkarma.com", careersUrl: "https://www.creditkarma.com/careers", atsType: "greenhouse", atsSlug: "creditkarma" },
+  { name: "Rocket Money", domain: "rocketmoney.com", careersUrl: "https://www.rocketmoney.com/careers", atsType: "greenhouse", atsSlug: "truebill" },
+  { name: "Blumira", domain: "blumira.com", careersUrl: "https://www.blumira.com/careers", atsType: "greenhouse", atsSlug: "blumira" },
+
+  // ashby — automation & consumer
+  { name: "UiPath", domain: "uipath.com", careersUrl: "https://www.uipath.com/careers", atsType: "ashby", atsSlug: "uipath" },
+  { name: "Arlo", domain: "arlo.com", careersUrl: "https://www.arlo.com/careers", atsType: "ashby", atsSlug: "arlo" },
+  { name: "Acorns", domain: "acorns.com", careersUrl: "https://www.acorns.com/careers", atsType: "ashby", atsSlug: "acorns" },
+  { name: "Raspberry Pi", domain: "raspberrypi.com", careersUrl: "https://www.raspberrypi.com/careers", atsType: "ashby", atsSlug: "raspberry" },
+
+  // lever — autonomous & solar
+  { name: "Zoox", domain: "zoox.com", careersUrl: "https://zoox.com/careers", atsType: "lever", atsSlug: "zoox" },
+  { name: "Omnidian", domain: "omnidian.com", careersUrl: "https://omnidian.com/careers", atsType: "lever", atsSlug: "omnidian" },
+
+  // ── batch 21 · round 11 (autonomous, social) ──
+  { name: "Aurora Innovation", domain: "aurora.tech", careersUrl: "https://aurora.tech/careers", atsType: "greenhouse", atsSlug: "aurorainnovation" },
+  { name: "Bumble", domain: "bumble.com", careersUrl: "https://bumble.com/careers", atsType: "lever", atsSlug: "bumbleinc" },
+
+  // ── batch 22 · round 12 (API tools, AR, AI, fintech) ──
+
+  // greenhouse — API & AR
+  { name: "Postman", domain: "postman.com", careersUrl: "https://www.postman.com/careers", atsType: "greenhouse", atsSlug: "postman" },
+  { name: "Magic Leap", domain: "magicleap.com", careersUrl: "https://www.magicleap.com/careers", atsType: "greenhouse", atsSlug: "magicleap" },
+  { name: "Figure Technologies", domain: "figure.com", careersUrl: "https://www.figure.com/careers", atsType: "greenhouse", atsSlug: "figure" },
+
+  // ashby — AI & community
+  { name: "Common Room", domain: "commonroom.io", careersUrl: "https://www.commonroom.io/careers", atsType: "ashby", atsSlug: "commonroom" },
+  { name: "LlamaIndex", domain: "llamaindex.ai", careersUrl: "https://www.llamaindex.ai/careers", atsType: "ashby", atsSlug: "llamaindex" },
+  { name: "Laurel", domain: "laurel.ai", careersUrl: "https://laurel.ai/careers", atsType: "ashby", atsSlug: "laurel" },
+  { name: "Abound", domain: "abound.com", careersUrl: "https://www.abound.com/careers", atsType: "ashby", atsSlug: "abound" },
+
+  // lever — lending
+  { name: "Prosper", domain: "prosper.com", careersUrl: "https://www.prosper.com/careers", atsType: "lever", atsSlug: "prosper" },
+
+  // ── batch 23 · final push (marketplace, health, AI, enterprise) ──
+
+  // greenhouse — consumer & marketplace
+  { name: "DoorDash", domain: "doordash.com", careersUrl: "https://careers.doordash.com", atsType: "greenhouse", atsSlug: "doordashusa" },
+  { name: "Thumbtack", domain: "thumbtack.com", careersUrl: "https://www.thumbtack.com/careers", atsType: "greenhouse", atsSlug: "thumbtack" },
+  { name: "TaskRabbit", domain: "taskrabbit.com", careersUrl: "https://www.taskrabbit.com/careers", atsType: "greenhouse", atsSlug: "taskrabbit" },
+  { name: "Angi", domain: "angi.com", careersUrl: "https://www.angi.com/careers", atsType: "greenhouse", atsSlug: "angi" },
+  { name: "Instawork", domain: "instawork.com", careersUrl: "https://www.instawork.com/careers", atsType: "greenhouse", atsSlug: "instawork" },
+  { name: "ZocDoc", domain: "zocdoc.com", careersUrl: "https://www.zocdoc.com/careers", atsType: "greenhouse", atsSlug: "zocdoc" },
+  { name: "Care.com", domain: "care.com", careersUrl: "https://www.care.com/careers", atsType: "greenhouse", atsSlug: "carecom" },
+
+  // ashby — health & enterprise
+  { name: "Sesame", domain: "sesamecare.com", careersUrl: "https://sesamecare.com/careers", atsType: "ashby", atsSlug: "sesame" },
+  { name: "Demandbase", domain: "demandbase.com", careersUrl: "https://www.demandbase.com/careers", atsType: "ashby", atsSlug: "demandbase" },
+  { name: "ShiftKey", domain: "shiftkey.com", careersUrl: "https://www.shiftkey.com/careers", atsType: "ashby", atsSlug: "shiftkey" },
+
+  // lever — identity
+  { name: "JumpCloud", domain: "jumpcloud.com", careersUrl: "https://jumpcloud.com/careers", atsType: "lever", atsSlug: "jumpcloud" },
 ];
 
 /** number of companies we actually scrape (excludes custom) */

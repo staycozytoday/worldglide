@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { scrapeAllSources } from "@/lib/scraper";
-import { saveJobs, getApprovedSubmissionsAsJobs } from "@/lib/storage";
+import { saveJobs, getApprovedSubmissionsAsJobs, saveStats } from "@/lib/storage";
 
 export const maxDuration = 300;
 
@@ -25,6 +25,14 @@ export async function GET(request: Request) {
     const allJobs = [...scrapedJobs, ...submittedJobs];
 
     await saveJobs(allJobs);
+
+    // save stats for homepage pass-rate display
+    await saveStats({
+      rawJobsScanned: report.rawJobsTotal,
+      worldwideJobs: scrapedJobs.length,
+      companiesScraped: report.companies,
+      lastUpdated: new Date().toISOString(),
+    });
 
     const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
 

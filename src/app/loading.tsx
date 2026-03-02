@@ -2,7 +2,7 @@ export default function Loading() {
   return (
     <div className="max-w-[960px] mx-auto px-8 pt-16 pb-24">
       {/* skeleton header — matches JobList column headers */}
-      <div className="h-[32px] flex items-center gap-6 -mx-2 px-4 border-b border-[var(--color-text)]">
+      <div className="h-[32px] flex items-center gap-6 -mx-2 px-4 border-b border-[var(--color-border)]">
         <span className="w-[32px] shrink-0 hidden sm:block">
           <span className="block h-[8px] w-[24px] bg-[var(--color-border)] rounded-sm" />
         </span>

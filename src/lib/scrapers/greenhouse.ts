@@ -32,12 +32,12 @@ export async function scrapeGreenhouse(): Promise<GreenhouseResult> {
       const r = results[j];
       const c = batch[j];
       if (r.status === "fulfilled") {
-        jobs.push(...r.value);
-        report.push({ company: c.name, ats: "greenhouse", slug: c.atsSlug!, jobs: r.value.length });
+        jobs.push(...r.value.jobs);
+        report.push({ company: c.name, ats: "greenhouse", slug: c.atsSlug!, jobs: r.value.jobs.length, rawJobs: r.value.rawCount });
       } else {
         const msg = r.reason instanceof Error ? r.reason.message : String(r.reason);
         console.error(`[greenhouse/${c.atsSlug}] failed after retries: ${msg}`);
-        report.push({ company: c.name, ats: "greenhouse", slug: c.atsSlug!, jobs: 0, error: msg });
+        report.push({ company: c.name, ats: "greenhouse", slug: c.atsSlug!, jobs: 0, rawJobs: 0, error: msg });
       }
     }
 
@@ -58,7 +58,7 @@ async function scrapeGreenhouseCompany(
   slug: string,
   companyName: string,
   companyDomain?: string
-): Promise<Job[]> {
+): Promise<{ jobs: Job[]; rawCount: number }> {
   const res = await fetchWithRetry(
     `https://boards-api.greenhouse.io/v1/boards/${slug}/jobs?content=true`,
     { headers: { "User-Agent": "worldglide-jobs/1.0" }, timeoutMs: 15000 }
@@ -70,6 +70,7 @@ async function scrapeGreenhouseCompany(
 
   const data = await res.json();
   const items = data.jobs || [];
+  const rawCount = items.length;
   const results: Job[] = [];
 
   for (const item of items) {
@@ -108,7 +109,7 @@ async function scrapeGreenhouseCompany(
     });
   }
 
-  return results;
+  return { jobs: results, rawCount };
 }
 
 function stripHtml(html: string): string {

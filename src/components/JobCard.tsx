@@ -24,7 +24,7 @@ export default function JobCard({ job, index = 0 }: { job: Job; index?: number }
           </span>
           {fresh && (
             <span
-              className="shrink-0 w-1.5 h-1.5 bg-[var(--color-text)] rounded-full animate-rec"
+              className="shrink-0 w-1.5 h-1.5 bg-[var(--color-accent)] rounded-full animate-rec"
               style={{
                 animationDuration: `${3 + (index % 5) * 0.7}s`,
                 animationDelay: `${((index * 1.7) % 4).toFixed(1)}s`,
@@ -34,7 +34,7 @@ export default function JobCard({ job, index = 0 }: { job: Job; index?: number }
         </span>
 
         {/* company */}
-        <span className="text-[13px] text-[var(--color-text)] w-[120px] shrink-0 truncate text-right">
+        <span className="text-[13px] text-[var(--color-text)] w-[160px] shrink-0 truncate text-right">
           {job.company}
         </span>
 

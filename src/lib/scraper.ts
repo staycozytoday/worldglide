@@ -72,12 +72,15 @@ export async function scrapeAllSources(): Promise<ScrapeOutput> {
     );
   }
 
+  const rawJobsTotal = allReport.reduce((sum, r) => sum + (r.rawJobs || 0), 0);
+
   return {
     jobs: recentJobs,
     report: {
       companies: allReport.length,
       succeeded: allReport.length - failures.length,
       failed: failures.length,
+      rawJobsTotal,
       failures,
       elapsed: `${elapsed}s`,
     },

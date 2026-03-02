@@ -67,7 +67,7 @@ export async function POST(request: Request) {
   } catch (err) {
     console.error("Submit error:", err);
     return NextResponse.json(
-      { error: "Something went wrong" },
+      { error: "couldn't save right now — please try again later" },
       { status: 500 }
     );
   }

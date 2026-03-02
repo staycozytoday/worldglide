@@ -32,12 +32,12 @@ export async function scrapeLever(): Promise<LeverResult> {
       const r = results[j];
       const c = batch[j];
       if (r.status === "fulfilled") {
-        jobs.push(...r.value);
-        report.push({ company: c.name, ats: "lever", slug: c.atsSlug!, jobs: r.value.length });
+        jobs.push(...r.value.jobs);
+        report.push({ company: c.name, ats: "lever", slug: c.atsSlug!, jobs: r.value.jobs.length, rawJobs: r.value.rawCount });
       } else {
         const msg = r.reason instanceof Error ? r.reason.message : String(r.reason);
         console.error(`[lever/${c.atsSlug}] failed after retries: ${msg}`);
-        report.push({ company: c.name, ats: "lever", slug: c.atsSlug!, jobs: 0, error: msg });
+        report.push({ company: c.name, ats: "lever", slug: c.atsSlug!, jobs: 0, rawJobs: 0, error: msg });
       }
     }
 
@@ -58,7 +58,7 @@ async function scrapeLeverCompany(
   slug: string,
   companyName: string,
   companyDomain?: string
-): Promise<Job[]> {
+): Promise<{ jobs: Job[]; rawCount: number }> {
   const res = await fetchWithRetry(
     `https://api.lever.co/v0/postings/${slug}?mode=json`,
     { headers: { "User-Agent": "worldglide-jobs/1.0" }, timeoutMs: 15000 }
@@ -69,8 +69,9 @@ async function scrapeLeverCompany(
   }
 
   const data = await res.json();
-  if (!Array.isArray(data)) return [];
+  if (!Array.isArray(data)) return { jobs: [], rawCount: 0 };
 
+  const rawCount = data.length;
   const results: Job[] = [];
 
   for (const item of data) {
@@ -115,5 +116,5 @@ async function scrapeLeverCompany(
     });
   }
 
-  return results;
+  return { jobs: results, rawCount };
 }

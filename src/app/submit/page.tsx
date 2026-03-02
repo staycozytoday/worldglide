@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function SubmitPage() {
   return (
-    <div className="max-w-[960px] mx-auto px-8 pt-16 pb-24">
+    <div className="max-w-[960px] mx-auto px-8 pt-16 md:pt-24 pb-24">
       <div className="max-w-[480px]">
         <div className="mb-16">
           <h1 className="text-[32px] md:text-[40px] font-medium tracking-tight leading-[1.1]">

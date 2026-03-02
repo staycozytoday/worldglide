@@ -2,7 +2,7 @@ import { getSubmissions, getJobs } from "@/lib/storage";
 import AdminPanel from "@/components/AdminPanel";
 import ScrapeButton from "@/components/ScrapeButton";
 import LogoutButton from "@/components/LogoutButton";
-import StatsPanel from "@/components/StatsPanel";
+import StatsPanel from "@/components/statspanel";
 
 import type { Metadata } from "next";
 
@@ -20,7 +20,16 @@ export default async function AdminPage() {
   const declined = submissions.filter((s) => s.rejected);
 
   const activeJobs = jobs.filter((j) => !j.expired);
-  const expiredJobs = jobs.filter((j) => j.expired);
+  const realExpiredJobs = jobs.filter((j) => j.expired);
+
+  // temporary fake archive data for testing
+  const expiredJobs = realExpiredJobs.length === 0
+    ? [
+        { id: "fake-1", title: "senior product designer", company: "linear", url: "https://linear.app", category: "design" as const, postedAt: "2026-02-10T00:00:00Z", expired: true, source: "greenhouse" as const, tags: [], scrapedAt: "2026-02-10T00:00:00Z", isWorldwide: true },
+        { id: "fake-2", title: "staff engineer, infrastructure", company: "vercel", url: "https://vercel.com", category: "engineering" as const, postedAt: "2026-02-08T00:00:00Z", expired: true, source: "greenhouse" as const, tags: [], scrapedAt: "2026-02-08T00:00:00Z", isWorldwide: true },
+        { id: "fake-3", title: "product manager, growth", company: "notion", url: "https://notion.so", category: "product" as const, postedAt: "2026-02-05T00:00:00Z", expired: true, source: "greenhouse" as const, tags: [], scrapedAt: "2026-02-05T00:00:00Z", isWorldwide: true },
+      ]
+    : realExpiredJobs;
 
   // Sparkline data: daily job counts over last 14 days
   const DAY_MS = 86_400_000;
@@ -39,6 +48,8 @@ export default async function AdminPage() {
     };
   });
 
+  const companies = new Set(activeJobs.map((j) => j.company)).size;
+
   const categories = [
     {
       label: "engineering",
@@ -55,7 +66,7 @@ export default async function AdminPage() {
   ];
 
   return (
-    <div className="max-w-[960px] mx-auto px-8 pt-16 pb-8">
+    <div className="max-w-[960px] mx-auto px-8 pt-16 md:pt-24 pb-16">
       <div className="mb-16 flex flex-col md:flex-row md:items-start md:justify-between gap-8 md:gap-16">
         {/* left: title + description */}
         <div>
@@ -75,6 +86,7 @@ export default async function AdminPage() {
             dailyCounts={dailyCounts}
             categories={categories}
             total={activeJobs.length}
+            companies={companies}
           />
 
           <div className="mt-4 flex gap-2">

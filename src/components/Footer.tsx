@@ -10,14 +10,25 @@ export default function Footer() {
             <span className="sm:hidden">sourced from top {SCRAPED_COMPANY_COUNT} remote-first companies.</span>
           </p>
 
-          <a
-            href="https://staycozy.today"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[12px] text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors sm:ml-auto"
-          >
-            stay cozy &amp; co.
-          </a>
+          <span className="flex items-center gap-2 sm:ml-auto">
+            <a
+              href="https://buymeacoffee.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[12px] text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors"
+            >
+              buy me a pizza
+            </a>
+            <span className="text-[10px] text-[var(--color-text-muted)]">･</span>
+            <a
+              href="https://staycozy.today"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[12px] text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors"
+            >
+              stay cozy &amp; co.
+            </a>
+          </span>
         </div>
       </div>
     </footer>

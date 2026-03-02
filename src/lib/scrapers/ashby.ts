@@ -34,12 +34,12 @@ export async function scrapeAshby(): Promise<AshbyResult> {
       const r = results[j];
       const c = batch[j];
       if (r.status === "fulfilled") {
-        jobs.push(...r.value);
-        report.push({ company: c.name, ats: "ashby", slug: c.atsSlug!, jobs: r.value.length });
+        jobs.push(...r.value.jobs);
+        report.push({ company: c.name, ats: "ashby", slug: c.atsSlug!, jobs: r.value.jobs.length, rawJobs: r.value.rawCount });
       } else {
         const msg = r.reason instanceof Error ? r.reason.message : String(r.reason);
         console.error(`[ashby/${c.atsSlug}] failed after retries: ${msg}`);
-        report.push({ company: c.name, ats: "ashby", slug: c.atsSlug!, jobs: 0, error: msg });
+        report.push({ company: c.name, ats: "ashby", slug: c.atsSlug!, jobs: 0, rawJobs: 0, error: msg });
       }
     }
 
@@ -60,7 +60,7 @@ async function scrapeAshbyCompany(
   slug: string,
   companyName: string,
   companyDomain?: string
-): Promise<Job[]> {
+): Promise<{ jobs: Job[]; rawCount: number }> {
   const res = await fetchWithRetry(
     `https://api.ashbyhq.com/posting-api/job-board/${slug}`,
     {
@@ -79,6 +79,7 @@ async function scrapeAshbyCompany(
 
   const data = await res.json();
   const items = data.jobs || [];
+  const rawCount = items.length;
   const results: Job[] = [];
 
   for (const item of items) {
@@ -142,7 +143,7 @@ async function scrapeAshbyCompany(
     });
   }
 
-  return results;
+  return { jobs: results, rawCount };
 }
 
 function stripHtml(html: string): string {

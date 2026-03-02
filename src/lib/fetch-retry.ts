@@ -60,6 +60,7 @@ export interface CompanyResult {
   ats: string;
   slug: string;
   jobs: number;
+  rawJobs: number;   // total jobs before worldwide + category filter
   error?: string;
 }
 
@@ -70,6 +71,7 @@ export interface ScrapeReport {
   companies: number;
   succeeded: number;
   failed: number;
+  rawJobsTotal: number;  // total jobs scanned across all companies
   failures: CompanyResult[];
   elapsed: string;
 }

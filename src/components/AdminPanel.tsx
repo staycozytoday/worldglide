@@ -1,6 +1,6 @@
 "use client";
 
-import { Job, JobSubmission, JOB_EXPIRY_MS } from "@/lib/types";
+import { Job, JobSubmission } from "@/lib/types";
 import { formatRelativeTime } from "@/lib/utils";
 import { useState } from "react";
 
@@ -11,35 +11,35 @@ interface AdminPanelProps {
   expiredJobs: Job[];
 }
 
-type Status = "pending" | "live" | "expired" | "declined";
-
-function getStatus(sub: JobSubmission): Status {
-  if (sub.rejected) return "declined";
-  if (sub.approved) {
-    const age = Date.now() - new Date(sub.submittedAt).getTime();
-    if (age > JOB_EXPIRY_MS) return "expired";
-    return "live";
-  }
-  return "pending";
-}
+type Status = "pending" | "live" | "declined";
 
 // text-link action styles
 const BTN =
-  "text-[11px] font-mono text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors disabled:opacity-40 disabled:cursor-not-allowed whitespace-nowrap";
-const BTN_ACTION =
-  "text-[11px] font-mono text-[var(--color-text)] hover:opacity-60 transition-opacity disabled:opacity-40 disabled:cursor-not-allowed whitespace-nowrap";
+  "text-[11px] font-mono text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors disabled:opacity-40 whitespace-nowrap";
 
 export default function AdminPanel({
   pending: initialPending,
   approved: initialApproved,
   declined: initialDeclined,
-  expiredJobs,
+  expiredJobs: initialExpired,
 }: AdminPanelProps) {
   const [pending, setPending] = useState(initialPending);
   const [approved, setApproved] = useState(initialApproved);
   const [declined, setDeclined] = useState(initialDeclined);
+  const [expired, setExpired] = useState(initialExpired);
   const [loading, setLoading] = useState<string | null>(null);
-  const [archiveOpen, setArchiveOpen] = useState(false);
+  const [openSections, setOpenSections] = useState<Set<string>>(
+    new Set(["pending", "live"]),
+  );
+
+  function toggleSection(key: string) {
+    setOpenSections((prev) => {
+      const next = new Set(prev);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
+  }
 
   async function handleAction(
     id: string,
@@ -83,16 +83,8 @@ export default function AdminPanel({
               { ...sub, approved: false, rejected: false },
             ]);
         }
-        if (action === "resurrect" && from === "approved") {
-          const sub = approved.find((s) => s.id === id);
-          setApproved(approved.filter((s) => s.id !== id));
-          if (sub)
-            setPending([
-              ...pending,
-              { ...sub, approved: false, rejected: false },
-            ]);
-        }
         if (action === "delete") {
+          setPending(pending.filter((s) => s.id !== id));
           setApproved(approved.filter((s) => s.id !== id));
           setDeclined(declined.filter((s) => s.id !== id));
         }
@@ -104,31 +96,27 @@ export default function AdminPanel({
     }
   }
 
-  // group approved by status
-  const liveRows = approved
-    .map((sub) => ({ sub, status: getStatus(sub) as Status, from: "approved" as const }))
-    .filter((r) => r.status === "live");
-
-  const expiredSubRows = approved
-    .map((sub) => ({ sub, status: getStatus(sub) as Status, from: "approved" as const }))
-    .filter((r) => r.status === "expired");
+  // all approved submissions are live
+  const liveRows = approved;
 
   const allEmpty =
     pending.length === 0 &&
     liveRows.length === 0 &&
     declined.length === 0 &&
-    expiredSubRows.length === 0 &&
-    expiredJobs.length === 0;
+    expired.length === 0;
 
   // ── section label ──────────────────────────────────
 
-  function renderSectionLabel(label: string, count: number, isFirst: boolean) {
+  function renderSectionLabel(key: string, label: string, count: number, isFirst: boolean) {
+    const isOpen = openSections.has(key);
     return (
-      <div className={`${isFirst ? "mt-3" : "mt-8"}`}>
-        <span className="text-[10px] font-mono text-[var(--color-text-muted)]">
-          {label} · {count}
-        </span>
-      </div>
+      <button
+        onClick={() => toggleSection(key)}
+        className={`${isFirst ? "mt-2" : "mt-8"} w-full h-[32px] flex items-center justify-between -mx-2 px-4 text-[10px] font-mono ${isOpen ? "text-[var(--color-text)]" : "text-[var(--color-text-muted)]"} hover:text-[var(--color-text)] border-b border-[var(--color-border)] transition-colors`}
+      >
+        <span>{label} · {count}</span>
+        <span>{isOpen ? "−" : "+"}</span>
+      </button>
     );
   }
 
@@ -139,47 +127,46 @@ export default function AdminPanel({
     status: Status,
     from: "pending" | "approved" | "declined",
   ) {
-    const dimmed = status === "expired" || status === "declined";
     return (
       <div
         key={sub.id}
-        className={`group relative h-[40px] border-b border-[var(--color-border)] flex items-center gap-6 -mx-2 px-4 transition-colors hover:bg-[var(--color-bg-hover)] ${
-          dimmed ? "opacity-40" : ""
-        }`}
+        className="group relative h-[40px] border-b border-[var(--color-border)] flex items-center gap-6 -mx-2 px-4 transition-colors hover:bg-[var(--color-bg-hover)]"
       >
         {/* age */}
         <span className="w-[32px] shrink-0 hidden sm:block text-[11px] text-[var(--color-text-muted)] font-mono">
           {formatRelativeTime(sub.submittedAt)}
         </span>
 
-        {/* title + live dot + email */}
-        <span className="flex-1 min-w-0 flex items-center gap-2">
-          {status === "live" && (
-            <span className="shrink-0 w-1.5 h-1.5 bg-[var(--color-text)] rounded-full animate-rec" />
-          )}
-          <span className="text-[13px] text-[var(--color-text)] truncate">
-            {sub.title}
-          </span>
-          {sub.contactEmail && (
-            <span className="hidden sm:inline text-[10px] text-[var(--color-text-muted)] font-mono shrink-0">
-              {sub.contactEmail}
-            </span>
-          )}
+        {/* title + company */}
+        <span className="flex-1 min-w-0 flex items-center gap-2 text-[13px] text-[var(--color-text)]">
+          <span className="truncate">{sub.title}</span>
+          <span className="hidden sm:inline text-[var(--color-text-muted)] shrink-0">·</span>
+          <span className="hidden sm:inline shrink-0">{sub.company}</span>
         </span>
 
-        {/* company */}
-        <span className="text-[13px] text-[var(--color-text)] w-[120px] shrink-0 truncate text-right">
-          {sub.company}
-        </span>
+        {/* email */}
+        {sub.contactEmail && (
+          <span className="hidden sm:inline text-[13px] text-[var(--color-text)] w-[180px] shrink-0 truncate text-right">
+            {sub.contactEmail}
+          </span>
+        )}
 
         {/* mobile actions — always visible, compact */}
         <span className="flex items-center gap-2 lg:hidden shrink-0">
+          <a
+            href={sub.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={BTN}
+          >
+            ↗
+          </a>
           {status === "pending" && (
             <>
               <button
                 onClick={() => handleAction(sub.id, "approve", from)}
                 disabled={loading === sub.id}
-                className={BTN_ACTION}
+                className={BTN}
               >
                 ✓
               </button>
@@ -192,70 +179,66 @@ export default function AdminPanel({
               </button>
             </>
           )}
+        </span>
+
+        {/* type — desktop only */}
+        <span className="text-[11px] text-[var(--color-text-muted)] w-[80px] shrink-0 hidden lg:block font-mono text-right">
+          {sub.category}
+        </span>
+
+        {/* desktop hover actions — centered overlay */}
+        <span className="absolute inset-0 hidden lg:group-hover:flex items-center justify-center [background:linear-gradient(90deg,transparent,var(--color-bg-hover)_30%,var(--color-bg-hover)_70%,transparent)] gap-4">
           <a
             href={sub.url}
             target="_blank"
             rel="noopener noreferrer"
             className={BTN}
           >
-            ↗
+            view
           </a>
-        </span>
-
-        {/* type — desktop only, invisible on hover when actions show */}
-        <span className="text-[11px] text-[var(--color-text-muted)] w-[80px] shrink-0 hidden lg:block font-mono text-right lg:group-hover:invisible">
-          {sub.category}
-        </span>
-
-        {/* desktop hover actions — gradient overlay from right */}
-        <span className="absolute right-0 inset-y-0 hidden lg:group-hover:flex items-center">
-          <span className="w-8 h-full bg-gradient-to-r from-transparent to-[var(--color-bg-hover)]" />
-          <span className="h-full bg-[var(--color-bg-hover)] flex items-center gap-3 pr-4">
-            {status === "pending" && (
-              <>
-                <button
-                  onClick={() => handleAction(sub.id, "approve", from)}
-                  disabled={loading === sub.id}
-                  className={BTN_ACTION}
-                >
-                  approve
-                </button>
-                <button
-                  onClick={() => handleAction(sub.id, "reject", from)}
-                  disabled={loading === sub.id}
-                  className={BTN}
-                >
-                  reject
-                </button>
-              </>
-            )}
-            <a
-              href={sub.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={BTN}
-            >
-              view ↗
-            </a>
-            {status === "live" && (
+          {status === "pending" && (
+            <>
+              <button
+                onClick={() => handleAction(sub.id, "approve", from)}
+                disabled={loading === sub.id}
+                className={BTN}
+              >
+                approve
+              </button>
               <button
                 onClick={() => handleAction(sub.id, "reject", from)}
                 disabled={loading === sub.id}
                 className={BTN}
               >
-                disable
+                reject
               </button>
-            )}
-            {(status === "expired" || status === "declined") && (
-              <button
-                onClick={() => handleAction(sub.id, "resurrect", from)}
-                disabled={loading === sub.id}
-                className={BTN}
-              >
-                resurrect
-              </button>
-            )}
-          </span>
+            </>
+          )}
+          {status === "live" && (
+            <button
+              onClick={() => handleAction(sub.id, "reject", from)}
+              disabled={loading === sub.id}
+              className={BTN}
+            >
+              disable
+            </button>
+          )}
+          {status === "declined" && (
+            <button
+              onClick={() => handleAction(sub.id, "resurrect", from)}
+              disabled={loading === sub.id}
+              className={BTN}
+            >
+              resurrect
+            </button>
+          )}
+          <button
+            onClick={() => handleAction(sub.id, "delete", from)}
+            disabled={loading === sub.id}
+            className={BTN}
+          >
+            archive
+          </button>
         </span>
       </div>
     );
@@ -265,28 +248,38 @@ export default function AdminPanel({
 
   function renderScrapedRow(job: Job) {
     return (
-      <a
+      <div
         key={job.id}
-        href={job.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group block"
+        className="group relative h-[40px] border-b border-[var(--color-border)] flex items-center gap-6 -mx-2 px-4 transition-colors hover:bg-[var(--color-bg-hover)]"
       >
-        <div className="h-[40px] border-b border-[var(--color-border)] flex items-center gap-6 -mx-2 px-4 transition-colors group-hover:bg-[var(--color-bg-hover)]">
-          <span className="w-[32px] shrink-0 hidden sm:block text-[11px] text-[var(--color-text-muted)] font-mono">
-            {formatRelativeTime(job.postedAt)}
-          </span>
-          <span className="flex-1 min-w-0 text-[13px] text-[var(--color-text)] truncate">
-            {job.title}
-          </span>
-          <span className="text-[13px] text-[var(--color-text)] w-[120px] shrink-0 truncate text-right">
-            {job.company}
-          </span>
-          <span className="text-[11px] text-[var(--color-text-muted)] w-[80px] shrink-0 hidden lg:block font-mono text-right">
-            {job.category}
-          </span>
-        </div>
-      </a>
+        {/* age */}
+        <span className="w-[32px] shrink-0 hidden sm:block text-[11px] text-[var(--color-text-muted)] font-mono">
+          {formatRelativeTime(job.postedAt)}
+        </span>
+
+        {/* title + company */}
+        <span className="flex-1 min-w-0 flex items-center gap-2 text-[13px] text-[var(--color-text)]">
+          <span className="truncate">{job.title}</span>
+          <span className="hidden sm:inline text-[var(--color-text-muted)] shrink-0">·</span>
+          <span className="hidden sm:inline shrink-0">{job.company}</span>
+        </span>
+
+        {/* mobile actions */}
+        <span className="flex items-center gap-2 lg:hidden shrink-0">
+          <a href={job.url} target="_blank" rel="noopener noreferrer" className={BTN}>↗</a>
+        </span>
+
+        {/* type — desktop only */}
+        <span className="text-[11px] text-[var(--color-text-muted)] w-[80px] shrink-0 hidden lg:block font-mono text-right">
+          {job.category}
+        </span>
+
+        {/* desktop hover actions — centered */}
+        <span className="absolute inset-0 hidden lg:group-hover:flex items-center justify-center [background:linear-gradient(90deg,transparent,var(--color-bg-hover)_30%,var(--color-bg-hover)_70%,transparent)] gap-4">
+          <a href={job.url} target="_blank" rel="noopener noreferrer" className={BTN}>view</a>
+          <button onClick={() => setExpired(expired.filter((j) => j.id !== job.id))} className={BTN}>delete</button>
+        </span>
+      </div>
     );
   }
 
@@ -296,14 +289,6 @@ export default function AdminPanel({
 
   return (
     <div>
-      {/* column headers — matches homepage exactly */}
-      <div className="h-[32px] flex items-center gap-6 -mx-2 px-4 border-b border-[var(--color-text)] text-[10px] text-[var(--color-text-muted)] font-mono">
-        <span className="w-[32px] shrink-0 hidden sm:block">age</span>
-        <span className="flex-1">title</span>
-        <span className="w-[120px] shrink-0 text-right">company</span>
-        <span className="w-[80px] shrink-0 hidden lg:block text-right">type</span>
-      </div>
-
       {allEmpty && (
         <p className="text-[11px] text-[var(--color-text-muted)] font-mono py-6">
           no submissions yet.
@@ -313,57 +298,42 @@ export default function AdminPanel({
       {/* pending */}
       {pending.length > 0 && (
         <div>
-          {renderSectionLabel("pending", pending.length, sectionIndex++ === 0)}
-          {pending.map((sub) =>
-            renderSubmissionRow(sub, "pending", "pending"),
-          )}
+          {renderSectionLabel("pending", "pending", pending.length, sectionIndex++ === 0)}
+          {openSections.has("pending") &&
+            pending.map((sub) =>
+              renderSubmissionRow(sub, "pending", "pending"),
+            )}
         </div>
       )}
 
       {/* live */}
       {liveRows.length > 0 && (
         <div>
-          {renderSectionLabel("live", liveRows.length, sectionIndex++ === 0)}
-          {liveRows.map((r) =>
-            renderSubmissionRow(r.sub, "live", r.from),
-          )}
+          {renderSectionLabel("live", "live", liveRows.length, sectionIndex++ === 0)}
+          {openSections.has("live") &&
+            liveRows.map((sub) =>
+              renderSubmissionRow(sub, "live", "approved"),
+            )}
         </div>
       )}
 
       {/* declined */}
       {declined.length > 0 && (
         <div>
-          {renderSectionLabel("declined", declined.length, sectionIndex++ === 0)}
-          {declined.map((sub) =>
-            renderSubmissionRow(sub, "declined", "declined"),
-          )}
+          {renderSectionLabel("declined", "declined", declined.length, sectionIndex++ === 0)}
+          {openSections.has("declined") &&
+            declined.map((sub) =>
+              renderSubmissionRow(sub, "declined", "declined"),
+            )}
         </div>
       )}
 
-      {/* expired submissions */}
-      {expiredSubRows.length > 0 && (
+      {/* archive — scraped jobs past 14-day window */}
+      {expired.length > 0 && (
         <div>
-          {renderSectionLabel("expired", expiredSubRows.length, sectionIndex++ === 0)}
-          {expiredSubRows.map((r) =>
-            renderSubmissionRow(r.sub, "expired", r.from),
-          )}
-        </div>
-      )}
-
-      {/* archive — expired scraped jobs from homepage */}
-      {expiredJobs.length > 0 && (
-        <div className="mt-8">
-          <button
-            onClick={() => setArchiveOpen(!archiveOpen)}
-            className="text-[10px] font-mono text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors"
-          >
-            archive · {expiredJobs.length} {archiveOpen ? "↑" : "↓"}
-          </button>
-          {archiveOpen && (
-            <div className="mt-2 opacity-30">
-              {expiredJobs.map(renderScrapedRow)}
-            </div>
-          )}
+          {renderSectionLabel("archive", "archive", expired.length, sectionIndex++ === 0)}
+          {openSections.has("archive") &&
+            expired.map(renderScrapedRow)}
         </div>
       )}
     </div>

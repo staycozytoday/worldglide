@@ -1,17 +1,24 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { GeistSans } from "geist/font/sans";
+import { IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SmoothScroll from "@/components/SmoothScroll";
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+const ibmPlexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-ibm-plex-mono",
+});
 
 export const metadata: Metadata = {
-  title: "worldglide ･ jobs without borders for people without limits",
+  title: "worldglide ･ careers without borders for humans without limits",
   description:
     "curated remote roles from global, remote-first teams. no country limits, only product, engineering & design work you can do from wherever feels like home.",
   openGraph: {
-    title: "worldglide ･ remote jobs. any location. one internet.",
+    title: "worldglide ･ careers without borders for humans without limits.",
     description:
       "curated remote roles from global, remote-first teams. no country limits, only product, engineering & design work you can do from wherever feels like home.",
     type: "website",
@@ -24,34 +31,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${GeistSans.variable} ${ibmPlexMono.variable}`}>
       <head>
         <link rel="icon" href="/favicon.gif" type="image/gif" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
-          rel="stylesheet"
+<Script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="a62a4be2-bff2-46c3-8a19-7c16bd5b8d1b"
+          strategy="afterInteractive"
         />
-        {GA_ID && (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-              strategy="afterInteractive"
-            />
-            <Script id="gtag-init" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${GA_ID}');
-              `}
-            </Script>
-          </>
-        )}
       </head>
       <body className="min-h-screen flex flex-col font-sans">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <SmoothScroll>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </SmoothScroll>
       </body>
     </html>
   );

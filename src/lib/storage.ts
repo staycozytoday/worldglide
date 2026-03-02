@@ -5,13 +5,24 @@ const isProduction = process.env.NODE_ENV === "production";
 
 // ============ BLOB HELPERS (production) ============
 
+// Derive the public blob store URL from the token to avoid list() calls
+// Token format: vercel_blob_rw_<storeId>_<rest>
+// Public URL: https://<storeId>.public.blob.vercel-storage.com
+function getBlobBaseUrl(): string | null {
+  const token = process.env.BLOB_READ_WRITE_TOKEN;
+  if (!token) return null;
+  const match = token.match(/^vercel_blob_rw_([a-zA-Z0-9]+)_/);
+  return match ? `https://${match[1]}.public.blob.vercel-storage.com` : null;
+}
+
 async function blobGet<T>(filename: string, fallback: T): Promise<T> {
   try {
-    const { list } = await import("@vercel/blob");
-    const { blobs } = await list({ prefix: filename, limit: 1 });
-    if (blobs.length === 0) return fallback;
+    // Direct fetch → no list() call → no "advanced operation" cost
+    const base = getBlobBaseUrl();
+    if (!base) return fallback;
 
-    const res = await fetch(blobs[0].url, { cache: "no-store" });
+    const res = await fetch(`${base}/${filename}`, { cache: "no-store" });
+    if (!res.ok) return fallback;
     return await res.json();
   } catch (err) {
     console.error(`[storage] blobGet "${filename}" failed:`, err);
@@ -195,6 +206,23 @@ export async function getApprovedSubmissionsAsJobs(): Promise<Job[]> {
       scrapedAt: s.submittedAt,
       isWorldwide: true,
     }));
+}
+
+// ============ SCRAPE STATS ============
+
+export interface ScrapeStats {
+  rawJobsScanned: number;
+  worldwideJobs: number;
+  companiesScraped: number;
+  lastUpdated: string;
+}
+
+export async function getStats(): Promise<ScrapeStats | null> {
+  return getData<ScrapeStats | null>("stats.json", null);
+}
+
+export async function saveStats(stats: ScrapeStats): Promise<void> {
+  await putData("stats.json", stats);
 }
 
 // ============ HELPERS ============

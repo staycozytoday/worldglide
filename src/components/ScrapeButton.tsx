@@ -43,6 +43,7 @@ export default function ScrapeButton() {
   const [sparkleIdx, setSparkleIdx] = useState(0);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const sparkleRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const abortRef = useRef<AbortController | null>(null);
 
   // animated progress bar — fills to ~90% over ~60s, then waits
   useEffect(() => {
@@ -72,13 +73,25 @@ export default function ScrapeButton() {
     };
   }, [status]);
 
+  function handleClick() {
+    if (status === "loading") {
+      abortRef.current?.abort();
+      abortRef.current = null;
+      setStatus("idle");
+      return;
+    }
+    handleScrape();
+  }
+
   async function handleScrape() {
+    const controller = new AbortController();
+    abortRef.current = controller;
     setStatus("loading");
     setResult(null);
     setError("");
 
     try {
-      const res = await fetch("/api/admin/scrape", { method: "POST" });
+      const res = await fetch("/api/admin/scrape", { method: "POST", signal: controller.signal });
 
       if (!res.ok) {
         const data = await res.json().catch(() => ({}));
@@ -133,6 +146,7 @@ export default function ScrapeButton() {
         }
       }
     } catch (err) {
+      if (err instanceof DOMException && err.name === "AbortError") return;
       setStatus("error");
       setError(err instanceof Error ? err.message : "network error");
     }
@@ -141,23 +155,14 @@ export default function ScrapeButton() {
   return (
     <div className="flex flex-col gap-2">
       <button
-        onClick={handleScrape}
-        disabled={status === "loading"}
-        className="w-full h-[40px] text-[11px] font-mono border border-transparent text-[var(--color-text-muted)] hover:border-[var(--color-border)] hover:text-[var(--color-text)] transition-all duration-300 cursor-pointer disabled:cursor-not-allowed disabled:hover:border-transparent disabled:hover:text-[var(--color-text-muted)] disabled:opacity-60 relative overflow-hidden"
+        onClick={handleClick}
+        className="w-full h-[40px] text-[11px] font-mono text-[var(--color-text-muted)] hover:text-[var(--color-text)] border border-transparent hover:border-[var(--color-border)] transition-all duration-300 relative overflow-hidden"
       >
-        {/* progress fill — grows inward from both edges */}
+        {/* progress fill — grows outward from center (inside-out) */}
         <span
-          className="absolute inset-y-0 left-0 bg-[var(--color-text)] transition-all ease-out"
+          className="absolute inset-y-0 left-1/2 -translate-x-1/2 bg-[var(--color-text)] transition-all ease-out"
           style={{
-            width: `${progress / 2}%`,
-            opacity: status === "loading" || (status === "done" && progress > 0) ? 0.08 : 0,
-            transitionDuration: status === "done" ? "300ms" : "500ms",
-          }}
-        />
-        <span
-          className="absolute inset-y-0 right-0 bg-[var(--color-text)] transition-all ease-out"
-          style={{
-            width: `${progress / 2}%`,
+            width: `${progress}%`,
             opacity: status === "loading" || (status === "done" && progress > 0) ? 0.08 : 0,
             transitionDuration: status === "done" ? "300ms" : "500ms",
           }}
@@ -165,14 +170,16 @@ export default function ScrapeButton() {
         <span className="relative">
           {status === "loading"
             ? SPARKLE_FRAMES[sparkleIdx]
-            : "cast spell"}
+            : status === "done"
+              ? "cast again"
+              : "cast spell"}
         </span>
       </button>
 
       {status === "done" && result && (
         <div className="text-[10px] text-[var(--color-text-muted)] font-mono leading-relaxed text-center">
           <p>{result.stats.scraped} jobs from {result.report.companies} companies</p>
-          <p>{result.stats.elapsed} ･ {result.report.failed} failures</p>
+          <p>{result.report.failed} failures ･ took {result.stats.elapsed}</p>
         </div>
       )}
 

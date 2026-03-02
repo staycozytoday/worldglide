@@ -60,7 +60,7 @@ export async function sendApprovalNotification({
                 </tr>
                 <tr>
                   <td align="center" style="font-size: 10px; color: #999;">
-                    worldglide &middot; jobs without borders
+                    worldglide &middot; careers without borders
                   </td>
                 </tr>
               </table>

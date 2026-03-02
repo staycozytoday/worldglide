@@ -1,6 +1,11 @@
+"use client";
+
 import { Job } from "@/lib/types";
-import { groupJobsByDate } from "@/lib/utils";
 import JobCard from "./JobCard";
+import { useState } from "react";
+
+type SortColumn = "age" | "title" | "company" | "type";
+type SortDir = "asc" | "desc";
 
 interface JobListProps {
   jobs: Job[];
@@ -9,7 +14,17 @@ interface JobListProps {
   totalCount?: number;
 }
 
+const COLS: { key: SortColumn; label: string; cls: string; right?: boolean }[] = [
+  { key: "age", label: "age", cls: "w-[32px] shrink-0 hidden sm:block text-left" },
+  { key: "title", label: "title", cls: "flex-1 text-left" },
+  { key: "company", label: "company", cls: "w-[160px] shrink-0 text-right", right: true },
+  { key: "type", label: "type", cls: "w-[80px] shrink-0 hidden lg:block text-right", right: true },
+];
+
 export default function JobList({ jobs, title, subtitle, totalCount }: JobListProps) {
+  const [sortCol, setSortCol] = useState<SortColumn>("age");
+  const [sortDir, setSortDir] = useState<SortDir>("asc");
+
   if (jobs.length === 0) {
     return (
       <div className="py-24">
@@ -20,13 +35,31 @@ export default function JobList({ jobs, title, subtitle, totalCount }: JobListPr
     );
   }
 
-  const sortedJobs = [...jobs].sort((a, b) => {
-    const aTime = new Date(a.postedAt).getTime();
-    const bTime = new Date(b.postedAt).getTime();
-    return bTime - aTime;
+  function handleSort(col: SortColumn) {
+    if (sortCol === col) {
+      setSortDir((d) => (d === "asc" ? "desc" : "asc"));
+    } else {
+      setSortCol(col);
+      setSortDir("asc");
+    }
+  }
+
+  const sorted = [...jobs].sort((a, b) => {
+    const dir = sortDir === "asc" ? 1 : -1;
+    switch (sortCol) {
+      case "age":
+        return dir * (new Date(b.postedAt).getTime() - new Date(a.postedAt).getTime());
+      case "title":
+        return dir * a.title.localeCompare(b.title);
+      case "company":
+        return dir * a.company.localeCompare(b.company);
+      case "type":
+        return dir * a.category.localeCompare(b.category);
+      default:
+        return 0;
+    }
   });
 
-  const dateGroups = groupJobsByDate(sortedJobs);
   const openCount = jobs.length;
 
   return (
@@ -42,29 +75,40 @@ export default function JobList({ jobs, title, subtitle, totalCount }: JobListPr
             </p>
           )}
           <p className="text-[10px] text-[var(--color-text-muted)] mt-4 font-mono">
-            {openCount} vacancies out of {totalCount ?? jobs.length}
+            {openCount}/{totalCount ?? jobs.length}
           </p>
         </div>
       )}
 
-      {/* column headers */}
-      <div className="h-[32px] flex items-center gap-6 -mx-2 px-4 border-b border-[var(--color-text)] text-[10px] text-[var(--color-text-muted)] font-mono">
-        <span className="w-[32px] shrink-0 hidden sm:block">age</span>
-        <span className="flex-1">title</span>
-        <span className="w-[120px] shrink-0 text-right">company</span>
-        <span className="w-[80px] shrink-0 hidden lg:block text-right">type</span>
+      {/* column headers — clickable to sort */}
+      <div className="h-[32px] flex items-center gap-6 -mx-2 px-4 border-b border-[var(--color-border)] text-[10px] font-mono">
+        {COLS.map(({ key, label, cls, right }) => (
+          <button
+            key={key}
+            onClick={() => handleSort(key)}
+            className={`${cls} text-[var(--color-text-muted)]`}
+          >
+            <span className="hover:text-[var(--color-text)] transition-colors">
+              {sortCol === key && right && (
+                <span className="mr-0.5">
+                  {sortDir === "asc" ? "↑" : "↓"}
+                </span>
+              )}
+              {label}
+              {sortCol === key && !right && (
+                <span className="ml-0.5">
+                  {sortDir === "asc" ? "↑" : "↓"}
+                </span>
+              )}
+            </span>
+          </button>
+        ))}
       </div>
 
       {/* jobs */}
-      <div className="stagger-children">
-        {dateGroups.map((group) => (
-          <div key={group.label}>
-            {sortedJobs
-              .slice(group.startIndex, group.endIndex)
-              .map((job, i) => (
-                <JobCard key={job.id} job={job} index={group.startIndex + i} />
-              ))}
-          </div>
+      <div>
+        {sorted.map((job, i) => (
+          <JobCard key={job.id} job={job} index={i} />
         ))}
       </div>
     </div>

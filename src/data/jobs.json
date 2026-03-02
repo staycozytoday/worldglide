@@ -1,5 +1,788 @@
 [
   {
+    "id": "greenhouse_aflt2r",
+    "title": "AI Tutor - Software Engineer Specialist",
+    "company": "xAI",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/xai/jobs/5063490007",
+    "source": "greenhouse",
+    "tags": [
+      "Human Data"
+    ],
+    "postedAt": "2026-03-01T19:56:01-05:00",
+    "scrapedAt": "2026-03-02T09:17:33.571Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h3&gt;&lt;strong&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;About xAI&lt;/span&gt;&lt;/strong&gt;&lt;/h3&gt; &lt;p&gt;&l",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_spcmru",
+    "title": "Senior DevOps (DevEx/CI) Engineer ",
+    "company": "Brave",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=brave.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/brave/jobs/1287724",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering"
+    ],
+    "postedAt": "2026-02-28T15:23:56-05:00",
+    "scrapedAt": "2026-03-02T09:17:16.310Z",
+    "description": "&lt;h3 style=&quot;line-height: 1.4;&quot;&gt;&lt;strong&gt;Senior DevOps Engineer - &lt;/strong&gt;&lt;strong&gt;Developer Experience and CI&lt;/strong&gt;&lt;/h3&gt; &lt;h4 style=&quot;line-height: ",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_54fxg1",
+    "title": "Senior Professional Services Technical Architect, META",
+    "company": "GitLab",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=gitlab.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/gitlab/jobs/8343384002",
+    "source": "greenhouse",
+    "tags": [
+      "Consulting Delivery"
+    ],
+    "postedAt": "2026-02-28T11:35:55-05:00",
+    "scrapedAt": "2026-03-02T09:16:41.342Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_rst581",
+    "title": "Senior Product Designer",
+    "company": "TRM Labs",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=trmlabs.com&sz=128",
+    "category": "design",
+    "url": "https://job-boards.greenhouse.io/trmlabs/jobs/5740948004",
+    "source": "greenhouse",
+    "tags": [
+      "Product"
+    ],
+    "postedAt": "2026-02-27T22:30:15-05:00",
+    "scrapedAt": "2026-03-02T09:17:08.505Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;Build a Safer World.&amp;nbsp;&lt;/h2&gt; &lt;p&gt;TRM Labs provides blockchain analytics and AI solutions to help law enforcement and national sec",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_abzzy3",
+    "title": "Senior Data Engineer, Graph Analytics",
+    "company": "TRM Labs",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=trmlabs.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/trmlabs/jobs/5701248004",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering"
+    ],
+    "postedAt": "2026-02-27T22:30:08-05:00",
+    "scrapedAt": "2026-03-02T09:17:08.505Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;Build a Safer World.&amp;nbsp;&lt;/h2&gt; &lt;p&gt;TRM Labs provides blockchain analytics and AI solutions to help law enforcement and national sec",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_ga95p",
+    "title": "Senior Software Engineer, Graph Analytics",
+    "company": "TRM Labs",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=trmlabs.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/trmlabs/jobs/5412012004",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering"
+    ],
+    "postedAt": "2026-02-27T22:30:08-05:00",
+    "scrapedAt": "2026-03-02T09:17:08.505Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;Build a Safer World.&amp;nbsp;&lt;/h2&gt; &lt;p&gt;TRM Labs provides blockchain analytics and AI solutions to help law enforcement and national sec",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_7714zj",
+    "title": "Solutions Architect ",
+    "company": "Typeface",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=typeface.ai&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/typeface/jobs/4989851007",
+    "source": "greenhouse",
+    "tags": [
+      "Customer Success "
+    ],
+    "postedAt": "2026-02-27T18:07:53-05:00",
+    "scrapedAt": "2026-03-02T09:17:34.867Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;&lt;span data-contrast=&quot;none&quot;&gt;&lt;span data-ccp-parastyle=&quot;paragraph&quot; data-ccp-parastyle-defn=&quot;{&amp;quot;",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_amu51w",
+    "title": "Senior Data Scientist, Pricing ",
+    "company": "Airbnb",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=airbnb.com&sz=128",
+    "category": "engineering",
+    "url": "https://careers.airbnb.com/positions/7662244?gh_jid=7662244",
+    "source": "greenhouse",
+    "tags": [
+      "Data Science"
+    ],
+    "postedAt": "2026-02-27T14:21:04-05:00",
+    "scrapedAt": "2026-03-02T09:17:37.797Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-family: helvetica, arial, sans-serif; font-size: 12pt;&quot;&gt;Airbnb was born in 2007 when two hosts welcomed three gues",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_l9e6ql",
+    "title": "Engineering Manager, Customer Tech",
+    "company": "Misfits Market",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=misfitsmarket.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/misfitsmarket/jobs/7587393003",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering "
+    ],
+    "postedAt": "2026-02-27T13:16:43-05:00",
+    "scrapedAt": "2026-03-02T09:17:45.789Z",
+    "description": "&lt;p&gt;&lt;strong&gt;About Misfits Market&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;em&gt;Misfits Market is a mission-driven, high-growth startup dedicated to reducing food waste and making shopping for",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_7zzjui",
+    "title": "Technical Product Manager",
+    "company": "Arize AI",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=arize.com&sz=128",
+    "category": "product",
+    "url": "https://job-boards.greenhouse.io/arizeai/jobs/5814833004",
+    "source": "greenhouse",
+    "tags": [
+      "Product"
+    ],
+    "postedAt": "2026-02-27T13:05:28-05:00",
+    "scrapedAt": "2026-03-02T09:17:38.685Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h3&gt;About Arize&lt;/h3&gt; &lt;p&gt;AI is rapidly transforming the world. As generative AI reshapes industries, teams need powerful ways to monitor, tr",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_iepmw",
+    "title": "Senior Product Manager",
+    "company": "Axios",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=axios.com&sz=128",
+    "category": "product",
+    "url": "https://job-boards.greenhouse.io/axios/jobs/7520382",
+    "source": "greenhouse",
+    "tags": [
+      "Product, Design & Tech"
+    ],
+    "postedAt": "2026-02-27T12:54:23-05:00",
+    "scrapedAt": "2026-03-02T09:17:59.960Z",
+    "description": "&lt;p&gt;&lt;span style=&quot;font-size: 12pt;&quot;&gt;&lt;strong&gt;The big picture: &lt;/strong&gt;Axios is a media company dedicated to delivering trustworthy news and information with efficiency,",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_8n485",
+    "title": "Product Strategy & Operations, Link",
+    "company": "Stripe",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=stripe.com&sz=128",
+    "category": "product",
+    "url": "https://stripe.com/jobs/search?gh_jid=7657938",
+    "source": "greenhouse",
+    "tags": [
+      "8560 Bank Connections - Eng"
+    ],
+    "postedAt": "2026-02-27T11:52:33-05:00",
+    "scrapedAt": "2026-03-02T09:16:49.361Z",
+    "description": "&lt;h2&gt;&lt;strong&gt;Who we are&lt;/strong&gt;&lt;/h2&gt; &lt;h3&gt;&lt;strong&gt;About Stripe&lt;/strong&gt;&lt;/h3&gt; &lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Stripe is a financi",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_9phbrr",
+    "title": "Senior Software Engineer/Developer",
+    "company": "Akoya",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=akoya.com&sz=128",
+    "category": "engineering",
+    "url": "https://akoya.com/careers?gh_jid=5812144004",
+    "source": "greenhouse",
+    "tags": [
+      "Product Engineering"
+    ],
+    "postedAt": "2026-02-27T10:41:54-05:00",
+    "scrapedAt": "2026-03-02T09:17:41.738Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h3&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;Meet the future&lt;/span&gt;&lt;/h3&gt; &lt;p&gt;&lt;span style=&quot;font",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_zo56m",
+    "title": "Principal Product Manager, Document Domain ",
+    "company": "PandaDoc",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=pandadoc.com&sz=128",
+    "category": "product",
+    "url": "https://job-boards.greenhouse.io/pandadoc/jobs/7662093",
+    "source": "greenhouse",
+    "tags": [
+      "Product"
+    ],
+    "postedAt": "2026-02-27T09:37:34-05:00",
+    "scrapedAt": "2026-03-02T09:17:38.716Z",
+    "description": "&lt;p&gt;PandaDoc is hiring a Principal Product Manager to lead the evolution of our Document Experience — redefining how professionals create, refine, collaborate on, and complete documents in an inc",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_qyhale",
+    "title": "Frontend Engineer (Document App Track)",
+    "company": "PandaDoc",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=pandadoc.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/pandadoc/jobs/5955762",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering"
+    ],
+    "postedAt": "2026-02-27T09:17:58-05:00",
+    "scrapedAt": "2026-03-02T09:17:38.715Z",
+    "description": "&lt;p&gt;Currently, PandaDoc is seeking a &lt;strong&gt;Middle Frontend Engineer&lt;/strong&gt; to join our Document App Track, specifically within the Content Area — the team behind &lt;strong&gt;Pan",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_5ituo7",
+    "title": "Sr Lead Machine Learning Engineer",
+    "company": "Upwork",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=upwork.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/upwork/jobs/7565868003",
+    "source": "greenhouse",
+    "tags": [
+      "Machine Learning"
+    ],
+    "postedAt": "2026-02-27T09:14:22-05:00",
+    "scrapedAt": "2026-03-02T09:16:58.012Z",
+    "description": "&lt;p&gt;Upwork Inc.’s (Nasdaq: UPWK) family of companies connects businesses with global, AI-enabled talent across every contingent work type including freelance, fractional, and payrolled. This port",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_5lam45",
+    "title": "Engineering Manager in Core Product Engineering",
+    "company": "Pleo",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=pleo.io&sz=128",
+    "category": "engineering",
+    "url": "https://pleo.io/en/careers/jobs/7629678003?gh_jid=7629678003",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering"
+    ],
+    "postedAt": "2026-02-27T05:42:59-05:00",
+    "scrapedAt": "2026-03-02T09:17:31.574Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Messy spend management is tricky business. And tedious processes are a lose-lose situation for all involved, not just finance. At Pleo, we&#39;re ch",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_sk103x",
+    "title": "Senior Backend Engineer (Elixir)",
+    "company": "Remote",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=remote.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/remotecom/jobs/7453016003",
+    "source": "greenhouse",
+    "tags": [
+      "Product Engineering Backend"
+    ],
+    "postedAt": "2026-02-27T04:56:00-05:00",
+    "scrapedAt": "2026-03-02T09:17:05.490Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Remote&lt;/strong&gt;&lt;/h2&gt; &lt;div&gt;&lt;span style=&quot;font-size: 12pt; font-family: helvetica, arial, sans-serif;&qu",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_xki4lu",
+    "title": "External Contractor - Mentor role for Software Architect track",
+    "company": "Udacity",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=udacity.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/udacity/jobs/8441274002",
+    "source": "greenhouse",
+    "tags": [
+      "Tutor"
+    ],
+    "postedAt": "2026-02-27T02:48:43-05:00",
+    "scrapedAt": "2026-03-02T09:17:09.664Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;About Us&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Udacity is now an Accenture company, and ex",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_xlmcs3",
+    "title": "External Contractor - Mentor role for AI-Powered Software Engineer track",
+    "company": "Udacity",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=udacity.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/udacity/jobs/8441253002",
+    "source": "greenhouse",
+    "tags": [
+      "Tutor"
+    ],
+    "postedAt": "2026-02-27T02:04:55-05:00",
+    "scrapedAt": "2026-03-02T09:17:09.664Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;About Us&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Udacity is now an Accenture company, and ex",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_1zc7g7",
+    "title": "Sr. Site Reliability Engineer (SRE)",
+    "company": "Zora",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=zora.co&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/zora/jobs/5811801004",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering"
+    ],
+    "postedAt": "2026-02-26T21:23:32-05:00",
+    "scrapedAt": "2026-03-02T09:17:17.087Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h3&gt;About Us:&lt;/h3&gt; &lt;p&gt;Zora is a new kind of on-chain social network where you can express yourself freely, connect with others, and discove",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_i1e68d",
+    "title": "Senior Engineering Manager, Cloud Engineering",
+    "company": "Mozilla",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=mozilla.org&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/mozilla/jobs/7018057",
+    "source": "greenhouse",
+    "tags": [
+      "Security"
+    ],
+    "postedAt": "2026-02-26T19:16:09-05:00",
+    "scrapedAt": "2026-03-02T09:17:08.341Z",
+    "description": "&lt;div class=&quot;gmail_default&quot; style=&quot;font-size: small;&quot;&gt; &lt;div&gt; &lt;div&gt;To learn the Hiring Ranges for this position, please select your location from the &lt;strong&gt;",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_vilejz",
+    "title": "Senior Mobile Engineer ",
+    "company": "Sezzle",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=sezzle.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/sezzle/jobs/7549191003",
+    "source": "greenhouse",
+    "tags": [
+      "DV-Development"
+    ],
+    "postedAt": "2026-02-26T18:49:34-05:00",
+    "scrapedAt": "2026-03-02T09:17:12.428Z",
+    "description": "&lt;p&gt;&lt;strong&gt;&lt;strong data-stringify-type=&quot;bold&quot;&gt;The salary range for this role is&amp;nbsp;&lt;/strong&gt;$4,600 - $9,500&lt;strong data-stringify-type=&quot;bold&quot;&gt;&a",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_i1eru5",
+    "title": "Staff Software Engineer, IAM",
+    "company": "Mozilla",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=mozilla.org&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/mozilla/jobs/7017210",
+    "source": "greenhouse",
+    "tags": [
+      "Security"
+    ],
+    "postedAt": "2026-02-26T17:46:07-05:00",
+    "scrapedAt": "2026-03-02T09:17:08.342Z",
+    "description": "&lt;div class=&quot;gmail_default&quot; style=&quot;font-size: small;&quot;&gt; &lt;div&gt; &lt;div&gt;To learn the Hiring Ranges for this position, please select your location from the &lt;strong&gt;",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_vvyt8y",
+    "title": "Senior Robotics Software Engineer, Autonomy",
+    "company": "Agility Robotics",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=agilityrobotics.com&sz=128",
+    "category": "engineering",
+    "url": "https://www.agilityrobotics.com/about/job-post?gh_jid=5384557004",
+    "source": "greenhouse",
+    "tags": [
+      "Software Engineering"
+    ],
+    "postedAt": "2026-02-26T17:36:03-05:00",
+    "scrapedAt": "2026-03-02T09:17:50.369Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Agility Robotics is a pioneer. Our robot, Digit, is the first to be sold into workplaces across the ",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_gij15n",
+    "title": "Senior Security Engineer - Incident Response",
+    "company": "Mozilla",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=mozilla.org&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/mozilla/jobs/7381944",
+    "source": "greenhouse",
+    "tags": [
+      "Security"
+    ],
+    "postedAt": "2026-02-26T17:01:33-05:00",
+    "scrapedAt": "2026-03-02T09:17:08.341Z",
+    "description": "&lt;div class=&quot;gmail_default&quot; style=&quot;font-size: small;&quot;&gt; &lt;div&gt; &lt;div&gt;To learn the Hiring Ranges for this position, please select your location from the &lt;strong&gt;",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_giznnd",
+    "title": "Staff Security Engineer, Product Security",
+    "company": "Mozilla",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=mozilla.org&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/mozilla/jobs/7376809",
+    "source": "greenhouse",
+    "tags": [
+      "Security"
+    ],
+    "postedAt": "2026-02-26T17:01:25-05:00",
+    "scrapedAt": "2026-03-02T09:17:08.342Z",
+    "description": "&lt;div class=&quot;gmail_default&quot; style=&quot;font-size: small;&quot;&gt; &lt;div&gt; &lt;div&gt;To learn the Hiring Ranges for this position, please select your location from the &lt;strong&gt;",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_ckbqbd",
+    "title": "Senior Software Engineer, Infrastructure",
+    "company": "Lithic",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=lithic.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/lithic/jobs/5721222004",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering"
+    ],
+    "postedAt": "2026-02-26T16:48:51-05:00",
+    "scrapedAt": "2026-03-02T09:17:17.077Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Lithic is the modern card issuing and processing platform empowering ambitious financial companies to build the future of payments.&lt;/p&gt; &lt;p&",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_jsfg81",
+    "title": "Senior Software Engineer, Issuing",
+    "company": "Lithic",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=lithic.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/lithic/jobs/5563534004",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering"
+    ],
+    "postedAt": "2026-02-26T16:48:24-05:00",
+    "scrapedAt": "2026-03-02T09:17:17.077Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Lithic is the modern card issuing and processing platform empowering ambitious financial companies to build the future of payments.&lt;/p&gt; &lt;p&",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_wwy06k",
+    "title": "Senior Software Engineer, Treasury",
+    "company": "Lithic",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=lithic.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/lithic/jobs/5737189004",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering"
+    ],
+    "postedAt": "2026-02-26T16:47:59-05:00",
+    "scrapedAt": "2026-03-02T09:17:17.077Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Lithic is the modern card issuing and processing platform empowering ambitious financial companies to build the future of payments.&lt;/p&gt; &lt;p&",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_9jyitm",
+    "title": "Software Engineer II, Processing",
+    "company": "Lithic",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=lithic.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/lithic/jobs/4837864004",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering"
+    ],
+    "postedAt": "2026-02-26T16:47:32-05:00",
+    "scrapedAt": "2026-03-02T09:17:17.077Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Lithic is the modern card issuing and processing platform empowering ambitious financial companies to build the future of payments.&lt;/p&gt; &lt;p&",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_9d6lkz",
+    "title": "Senior Data Engineer",
+    "company": "MasterClass",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=masterclass.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/masterclass/jobs/7555527",
+    "source": "greenhouse",
+    "tags": [
+      "Data"
+    ],
+    "postedAt": "2026-02-26T15:26:27-05:00",
+    "scrapedAt": "2026-03-02T09:17:09.656Z",
+    "description": "&lt;p&gt;&lt;strong&gt;Who we are:&lt;br&gt;&lt;/strong&gt;MasterClass is&amp;nbsp;&lt;em&gt;the&amp;nbsp;&lt;/em&gt;streaming platform where the world’s best come together so anyone, anywhere, can ac",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_foz8dx",
+    "title": "Systems Engineering Tutor",
+    "company": "xAI",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/xai/jobs/4925845007",
+    "source": "greenhouse",
+    "tags": [
+      "Human Data"
+    ],
+    "postedAt": "2026-02-26T14:59:36-05:00",
+    "scrapedAt": "2026-03-02T09:17:33.572Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h3&gt;&lt;strong&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;About xAI&lt;/span&gt;&lt;/strong&gt;&lt;/h3&gt; &lt;p&gt;&l",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_g5awtg",
+    "title": "Senior Product Designer ",
+    "company": "Hungryroot",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=hungryroot.com&sz=128",
+    "category": "design",
+    "url": "https://job-boards.greenhouse.io/hungryroot/jobs/5779914004",
+    "source": "greenhouse",
+    "tags": [
+      "Product"
+    ],
+    "postedAt": "2026-02-26T12:55:34-05:00",
+    "scrapedAt": "2026-03-02T09:17:45.696Z",
+    "description": "&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&lt;strong&gt;About Us&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt; &lt;p&gt;Hungryroot is using AI to build the most consumer-centric food and wellnes",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_p8ykt",
+    "title": "Product Manager, Banking as a Service",
+    "company": "Stripe",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=stripe.com&sz=128",
+    "category": "product",
+    "url": "https://stripe.com/jobs/search?gh_jid=7561053",
+    "source": "greenhouse",
+    "tags": [
+      "8256 BaaS - PM"
+    ],
+    "postedAt": "2026-02-26T12:14:16-05:00",
+    "scrapedAt": "2026-03-02T09:16:49.360Z",
+    "description": "&lt;h2&gt;&lt;strong&gt;Product Manager, Banking as a Service&lt;/strong&gt;&lt;/h2&gt; &lt;h2&gt;&lt;strong&gt;Who we are&lt;/strong&gt;&lt;/h2&gt; &lt;h3&gt;&lt;strong&gt;About Stripe&lt;/strong&gt;",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_261t5r",
+    "title": "Program Manager, Third Party Regulatory Risk",
+    "company": "Stripe",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=stripe.com&sz=128",
+    "category": "product",
+    "url": "https://stripe.com/jobs/search?gh_jid=7230209",
+    "source": "greenhouse",
+    "tags": [
+      "6427 Procurement"
+    ],
+    "postedAt": "2026-02-26T12:14:16-05:00",
+    "scrapedAt": "2026-03-02T09:16:49.361Z",
+    "description": "&lt;h2&gt;&lt;strong&gt;Who we are &lt;/strong&gt;&lt;/h2&gt; &lt;h3&gt;&lt;strong&gt;About Stripe&lt;/strong&gt;&lt;/h3&gt; &lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Stripe is a financ",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_kjddfd",
+    "title": "Engineering Manager",
+    "company": "Akoya",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=akoya.com&sz=128",
+    "category": "engineering",
+    "url": "https://akoya.com/careers?gh_jid=5811981004",
+    "source": "greenhouse",
+    "tags": [
+      "Product Engineering"
+    ],
+    "postedAt": "2026-02-26T11:10:29-05:00",
+    "scrapedAt": "2026-03-02T09:17:41.738Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h3&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;Meet the future&lt;/span&gt;&lt;/h3&gt; &lt;p&gt;&lt;span style=&quot;font",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "ashby_jz9b9y",
+    "title": "Senior Product Manager - Core Platform",
+    "company": "Camunda",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=camunda.com&sz=128",
+    "category": "product",
+    "url": "https://jobs.ashbyhq.com/camunda/b771e145-a5cf-4867-ad13-b54830e3b744",
+    "source": "ashby",
+    "tags": [
+      "Engineering",
+      "Products"
+    ],
+    "postedAt": "2026-02-26T14:38:26.888Z",
+    "scrapedAt": "2026-03-02T09:17:08.516Z",
+    "description": "Join us for our upcoming webinar, How to Be a Leader, Not Just a Manager. A practical session with a powerhouse panel on leading modern, remote teams. Register here ! Camunda is the leader in enterpri",
+    "isWorldwide": true,
+    "employmentType": "FullTime"
+  },
+  {
+    "id": "greenhouse_3xkdi5",
+    "title": "Senior AI Engineer",
+    "company": "Talkspace",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=talkspace.com&sz=128",
+    "category": "engineering",
+    "url": "https://www.talkspace.com/careers/job?gh_jid=5739521004",
+    "source": "greenhouse",
+    "tags": [
+      "Technology"
+    ],
+    "postedAt": "2026-02-25T22:24:02-05:00",
+    "scrapedAt": "2026-03-02T09:18:02.353Z",
+    "description": "&lt;p&gt;&lt;span style=&quot;font-weight: 400; font-family: helvetica, arial, sans-serif; font-size: 12pt;&quot;&gt;At Talkspace, we are committed to fostering a diverse, equitable, inclusive, and be",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_g16xwr",
+    "title": "Program Manager, CCaaS Governance",
+    "company": "Chime",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=chime.com&sz=128",
+    "category": "product",
+    "url": "https://boards.greenhouse.io/chime/jobs/8391162002?gh_jid=8391162002",
+    "source": "greenhouse",
+    "tags": [
+      "Operations"
+    ],
+    "postedAt": "2026-02-25T18:46:20-05:00",
+    "scrapedAt": "2026-03-02T09:17:10.549Z",
+    "description": "&lt;h3&gt;About the role&lt;/h3&gt; &lt;p&gt;We are hiring a Program Manager to join our Systems Enablement team within OMX Operations. As our CCaaS Program Manager, you will lead the governance, life",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_621auz",
+    "title": "Senior Staff Safety Software Engineer",
+    "company": "Agility Robotics",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=agilityrobotics.com&sz=128",
+    "category": "engineering",
+    "url": "https://www.agilityrobotics.com/about/job-post?gh_jid=5710357004",
+    "source": "greenhouse",
+    "tags": [
+      "Software Engineering"
+    ],
+    "postedAt": "2026-02-25T16:49:03-05:00",
+    "scrapedAt": "2026-03-02T09:17:50.369Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Agility Robotics is a pioneer. Our robot, Digit, is the first to be sold into workplaces across the ",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_648h8f",
+    "title": "Staff Software Engineer, Internal Services",
+    "company": "Agility Robotics",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=agilityrobotics.com&sz=128",
+    "category": "engineering",
+    "url": "https://www.agilityrobotics.com/about/job-post?gh_jid=5710397004",
+    "source": "greenhouse",
+    "tags": [
+      "Software Engineering"
+    ],
+    "postedAt": "2026-02-25T16:49:03-05:00",
+    "scrapedAt": "2026-03-02T09:17:50.369Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Agility Robotics is a pioneer. Our robot, Digit, is the first to be sold into workplaces across the ",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_z535y",
+    "title": "Senior Product Designer, CLM",
+    "company": "PandaDoc",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=pandadoc.com&sz=128",
+    "category": "design",
+    "url": "https://job-boards.greenhouse.io/pandadoc/jobs/7653543",
+    "source": "greenhouse",
+    "tags": [
+      "Product"
+    ],
+    "postedAt": "2026-02-25T08:42:59-05:00",
+    "scrapedAt": "2026-03-02T09:17:38.716Z",
+    "description": "&lt;p&gt;&lt;strong&gt;We&#39;re seeking a highly-skilled Senior Product Designer to shape PandaDoc&#39;s CLM offering from the ground up. An ideal candidate should be able to balance simplicity with ",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_z534a",
+    "title": "Senior Product Designer, Core UX & Mobile",
+    "company": "PandaDoc",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=pandadoc.com&sz=128",
+    "category": "design",
+    "url": "https://job-boards.greenhouse.io/pandadoc/jobs/7653525",
+    "source": "greenhouse",
+    "tags": [
+      "Product"
+    ],
+    "postedAt": "2026-02-25T08:23:56-05:00",
+    "scrapedAt": "2026-03-02T09:17:38.716Z",
+    "description": "&lt;p&gt;One of our key areas is the &lt;strong&gt;Core UX &amp;amp; Mobile&lt;/strong&gt; area, where we work on the foundations of the experience for our users across both mobile and web platforms. ",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_dcu5f2",
+    "title": "Principal Product Manager",
+    "company": "Cortex",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=cortex.io&sz=128",
+    "category": "product",
+    "url": "https://job-boards.greenhouse.io/cortex/jobs/5132025008",
+    "source": "greenhouse",
+    "tags": [
+      "Product Management"
+    ],
+    "postedAt": "2026-02-25T01:00:29-05:00",
+    "scrapedAt": "2026-03-02T09:17:41.739Z",
+    "description": "&lt;p&gt;&lt;strong&gt;🧠 About Cortex&lt;/strong&gt;&lt;br&gt;Cortex helps engineering teams ship better software faster. We&#39;re an AI-powered Internal Developer Portal that enforces reliability s",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_12qado",
+    "title": "Lead Software Engineer, Backend",
+    "company": "Cortex",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=cortex.io&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/cortex/jobs/5131543008",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering"
+    ],
+    "postedAt": "2026-02-24T17:06:48-05:00",
+    "scrapedAt": "2026-03-02T09:17:41.739Z",
+    "description": "&lt;p&gt;&lt;strong&gt;🧠 About Cortex&lt;/strong&gt;&lt;br&gt;Cortex helps engineering teams ship better software faster. We&#39;re an AI-powered Internal Developer Portal that enforces reliability s",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
     "id": "greenhouse_fnorfs",
     "title": "Senior Security Engineer, Add-ons Operations",
     "company": "Mozilla",
@@ -11,7 +794,7 @@
       "Firefox"
     ],
     "postedAt": "2026-02-24T16:46:16-05:00",
-    "scrapedAt": "2026-02-25T10:25:03.560Z",
+    "scrapedAt": "2026-03-02T09:17:08.341Z",
     "description": "&lt;div class=&quot;gmail_default&quot; style=&quot;font-size: small;&quot;&gt; &lt;div&gt; &lt;div&gt;To learn the Hiring Ranges for this position, please select your location from the &lt;strong&gt;",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -28,76 +811,8 @@
       "Firefox"
     ],
     "postedAt": "2026-02-24T16:46:14-05:00",
-    "scrapedAt": "2026-02-25T10:25:03.561Z",
+    "scrapedAt": "2026-03-02T09:17:08.342Z",
     "description": "&lt;div class=&quot;gmail_default&quot; style=&quot;font-size: small;&quot;&gt; &lt;div&gt; &lt;div&gt;To learn the Hiring Ranges for this position, please select your location from the &lt;strong&gt;",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_gij15n",
-    "title": "Senior Security Engineer - Incident Response",
-    "company": "Mozilla",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=mozilla.org&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/mozilla/jobs/7381944",
-    "source": "greenhouse",
-    "tags": [
-      "Security"
-    ],
-    "postedAt": "2026-02-24T16:01:51-05:00",
-    "scrapedAt": "2026-02-25T10:25:03.560Z",
-    "description": "&lt;div class=&quot;gmail_default&quot; style=&quot;font-size: small;&quot;&gt; &lt;div&gt; &lt;div&gt;To learn the Hiring Ranges for this position, please select your location from the &lt;strong&gt;",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_i1eru5",
-    "title": "Staff Software Engineer, IAM",
-    "company": "Mozilla",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=mozilla.org&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/mozilla/jobs/7017210",
-    "source": "greenhouse",
-    "tags": [
-      "Security"
-    ],
-    "postedAt": "2026-02-24T16:01:42-05:00",
-    "scrapedAt": "2026-02-25T10:25:03.561Z",
-    "description": "&lt;div class=&quot;gmail_default&quot; style=&quot;font-size: small;&quot;&gt; &lt;div&gt; &lt;div&gt;To learn the Hiring Ranges for this position, please select your location from the &lt;strong&gt;",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_x2askr",
-    "title": "Lead Machine Learning Engineer",
-    "company": "Upwork",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=upwork.com&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/upwork/jobs/7490995003",
-    "source": "greenhouse",
-    "tags": [
-      "Machine Learning"
-    ],
-    "postedAt": "2026-02-24T16:00:07-05:00",
-    "scrapedAt": "2026-02-25T10:24:54.479Z",
-    "description": "&lt;p&gt;&lt;b&gt;Lead Machine Learning Engineer&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Upwork ($UPWK) is the world’s largest work marketplace, connecting businesses with highly skilled profes",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_g16xwr",
-    "title": "Program Manager, CCaaS Governance",
-    "company": "Chime",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=chime.com&sz=128",
-    "category": "product",
-    "url": "https://boards.greenhouse.io/chime/jobs/8391162002?gh_jid=8391162002",
-    "source": "greenhouse",
-    "tags": [
-      "Operations"
-    ],
-    "postedAt": "2026-02-24T12:57:16-05:00",
-    "scrapedAt": "2026-02-25T10:25:07.475Z",
-    "description": "&lt;h3&gt;About the role&lt;/h3&gt; &lt;p&gt;We are hiring a Program Manager to join our Systems Enablement team within OMX Operations. As our CCaaS Program Manager, you will lead the governance, life",
     "isWorldwide": true,
     "employmentType": "Full-time"
   },
@@ -113,7 +828,7 @@
       "MZLA/Thunderbird"
     ],
     "postedAt": "2026-02-24T11:59:31-05:00",
-    "scrapedAt": "2026-02-25T10:25:03.560Z",
+    "scrapedAt": "2026-03-02T09:17:08.341Z",
     "description": "&lt;p&gt;&lt;strong&gt;MZLA Technologies Corporation (MZLA)&lt;/strong&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; is a wholly owned, for-profit subsidiary of the Mozilla Foundation and home t",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -130,7 +845,7 @@
       "G & A : HR Technology"
     ],
     "postedAt": "2026-02-24T09:09:39-05:00",
-    "scrapedAt": "2026-02-25T10:24:47.439Z",
+    "scrapedAt": "2026-03-02T09:16:51.346Z",
     "description": "&lt;p&gt;Toast creates technology to help restaurants and local businesses succeed in a digital world, helping business owners operate, increase sales, engage customers, and keep employees happy.&lt;/",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -147,24 +862,7 @@
       "Product Engineering Backend"
     ],
     "postedAt": "2026-02-24T08:03:06-05:00",
-    "scrapedAt": "2026-02-25T10:25:02.416Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Remote&lt;/strong&gt;&lt;/h2&gt; &lt;div&gt;&lt;span style=&quot;font-size: 12pt; font-family: helvetica, arial, sans-serif;&qu",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_cupsp4",
-    "title": "Senior Backend Engineer (Elixir)",
-    "company": "Remote",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=remote.com&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/remotecom/jobs/7515760003",
-    "source": "greenhouse",
-    "tags": [
-      "Product Engineering Backend"
-    ],
-    "postedAt": "2026-02-24T08:03:06-05:00",
-    "scrapedAt": "2026-02-25T10:25:02.416Z",
+    "scrapedAt": "2026-03-02T09:17:05.490Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Remote&lt;/strong&gt;&lt;/h2&gt; &lt;div&gt;&lt;span style=&quot;font-size: 12pt; font-family: helvetica, arial, sans-serif;&qu",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -181,7 +879,7 @@
       "Product Design"
     ],
     "postedAt": "2026-02-24T08:03:06-05:00",
-    "scrapedAt": "2026-02-25T10:25:02.417Z",
+    "scrapedAt": "2026-03-02T09:17:05.491Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Remote&lt;/strong&gt;&lt;/h2&gt; &lt;div&gt;&lt;span style=&quot;font-size: 12pt; font-family: helvetica, arial, sans-serif;&qu",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -198,7 +896,7 @@
       "Development"
     ],
     "postedAt": "2026-02-24T06:42:37-05:00",
-    "scrapedAt": "2026-02-25T10:24:47.189Z",
+    "scrapedAt": "2026-03-02T09:16:50.094Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h3&gt;&lt;strong&gt;About us&lt;/strong&gt;&lt;/h3&gt; &lt;p&gt;Founded in 2015 with the mission to protect the open economy, OpenZeppelin is the world l",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -215,42 +913,229 @@
       "Delivery TA2"
     ],
     "postedAt": "2026-02-24T06:05:01-05:00",
-    "scrapedAt": "2026-02-25T10:25:03.226Z",
+    "scrapedAt": "2026-03-02T09:17:05.381Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;About Turing&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Based in San Francisco, California, Turing is the world’s leading research accelerator ",
     "isWorldwide": true,
     "employmentType": "Full-time"
   },
   {
-    "id": "greenhouse_p8ykt",
-    "title": "Product Manager, Banking as a Service",
-    "company": "Stripe",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=stripe.com&sz=128",
-    "category": "product",
-    "url": "https://stripe.com/jobs/search?gh_jid=7561053",
+    "id": "greenhouse_322iyb",
+    "title": "Core Mechanical Design - Senior Mechanical Design Engineer",
+    "company": "Oklo",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=oklo.com&sz=128",
+    "category": "design",
+    "url": "https://job-boards.greenhouse.io/oklo/jobs/5775089004",
     "source": "greenhouse",
     "tags": [
-      "8256 BaaS - PM"
+      "Mechanical Engineering"
     ],
-    "postedAt": "2026-02-23T17:58:19-05:00",
-    "scrapedAt": "2026-02-25T10:24:46.089Z",
-    "description": "&lt;h2&gt;&lt;strong&gt;Product Manager, Banking as a Service&lt;/strong&gt;&lt;/h2&gt; &lt;h2&gt;&lt;strong&gt;Who we are&lt;/strong&gt;&lt;/h2&gt; &lt;h3&gt;&lt;strong&gt;About Stripe&lt;/strong&gt;",
+    "postedAt": "2026-02-23T17:50:01-05:00",
+    "scrapedAt": "2026-03-02T09:18:00.384Z",
+    "description": "&lt;p&gt;Thanks for your interest in Oklo!&amp;nbsp; We are searching for a Core Mechanical Design Engineer&lt;strong data-renderer-mark=&quot;true&quot;&gt; &lt;/strong&gt;to join our engineering tea",
     "isWorldwide": true,
     "employmentType": "Full-time"
   },
   {
-    "id": "greenhouse_261t5r",
-    "title": "Program Manager, Third Party Regulatory Risk",
-    "company": "Stripe",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=stripe.com&sz=128",
-    "category": "product",
-    "url": "https://stripe.com/jobs/search?gh_jid=7230209",
+    "id": "greenhouse_5v8158",
+    "title": "Facilities Design Engineer - Fuel Fabrication",
+    "company": "Oklo",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=oklo.com&sz=128",
+    "category": "design",
+    "url": "https://job-boards.greenhouse.io/oklo/jobs/5775668004",
     "source": "greenhouse",
     "tags": [
-      "6427 Procurement"
+      "Engineering"
     ],
-    "postedAt": "2026-02-23T17:58:19-05:00",
-    "scrapedAt": "2026-02-25T10:24:46.089Z",
-    "description": "&lt;h2&gt;&lt;strong&gt;Who we are &lt;/strong&gt;&lt;/h2&gt; &lt;h3&gt;&lt;strong&gt;About Stripe&lt;/strong&gt;&lt;/h3&gt; &lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Stripe is a financ",
+    "postedAt": "2026-02-23T17:50:01-05:00",
+    "scrapedAt": "2026-03-02T09:18:00.388Z",
+    "description": "&lt;p&gt;Thanks for your interest in Oklo! We are searching for a&lt;strong data-renderer-mark=&quot;true&quot;&gt; Facilities Design Engineer &lt;/strong&gt;to join our Fuel Fabrication Team.&lt;/p&g",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_3jdjt5",
+    "title": "Facilities Design Engineer - Fuel Manufacturing Electrical Focus",
+    "company": "Oklo",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=oklo.com&sz=128",
+    "category": "design",
+    "url": "https://job-boards.greenhouse.io/oklo/jobs/5762548004",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering"
+    ],
+    "postedAt": "2026-02-23T17:50:01-05:00",
+    "scrapedAt": "2026-03-02T09:18:00.389Z",
+    "description": "&lt;p&gt;Thanks for your interest in Oklo!&amp;nbsp; We are searching for a Facilities Design Engineer to join our engineering team.&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Position Description&lt;/strong&gt",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_5xzmrt",
+    "title": "Facility Design Engineer",
+    "company": "Oklo",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=oklo.com&sz=128",
+    "category": "design",
+    "url": "https://job-boards.greenhouse.io/oklo/jobs/5490078004",
+    "source": "greenhouse",
+    "tags": [
+      "Fuel Recycling"
+    ],
+    "postedAt": "2026-02-23T17:50:01-05:00",
+    "scrapedAt": "2026-03-02T09:18:00.389Z",
+    "description": "&lt;p data-renderer-start-pos=&quot;1&quot;&gt;Thanks for your interest in Oklo!&amp;nbsp; We are searching for a Facility Design Engineer&lt;strong data-renderer-mark=&quot;true&quot;&gt; &lt;/strong",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_6wzujs",
+    "title": "Hot Cell Design Engineer",
+    "company": "Oklo",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=oklo.com&sz=128",
+    "category": "design",
+    "url": "https://job-boards.greenhouse.io/oklo/jobs/5596070004",
+    "source": "greenhouse",
+    "tags": [
+      "Fuel Recycling"
+    ],
+    "postedAt": "2026-02-23T17:50:01-05:00",
+    "scrapedAt": "2026-03-02T09:18:00.391Z",
+    "description": "&lt;p data-renderer-start-pos=&quot;1&quot;&gt;Thanks for your interest in Oklo!&amp;nbsp; We are searching for a radiological&lt;strong data-renderer-mark=&quot;true&quot;&gt; &lt;span class=&quot;fa",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_l9e3nd",
+    "title": "Junior Software Engineer",
+    "company": "Oklo",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=oklo.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/oklo/jobs/5739861004",
+    "source": "greenhouse",
+    "tags": [
+      "Software and DevOps Engineering"
+    ],
+    "postedAt": "2026-02-23T17:50:01-05:00",
+    "scrapedAt": "2026-03-02T09:18:00.391Z",
+    "description": "&lt;p&gt;Join us in pioneering the next generation of nuclear reactors! You&#39;ll leverage your software skills alongside nuclear engineers to model, simulate, design, and deploy advanced fission pow",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_rs5u7d",
+    "title": "Security Engineer",
+    "company": "Oklo",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=oklo.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/oklo/jobs/5218928004",
+    "source": "greenhouse",
+    "tags": [
+      "General"
+    ],
+    "postedAt": "2026-02-23T17:50:01-05:00",
+    "scrapedAt": "2026-03-02T09:18:00.395Z",
+    "description": "&lt;p data-renderer-start-pos=&quot;1&quot;&gt;Thanks for your interest in Oklo!&amp;nbsp; We are searching for a Security Engineer to join our team. We are looking to fill this position immediately.&",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_t781sk",
+    "title": "Senior Mechanical Design Engineer - Reactor Module",
+    "company": "Oklo",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=oklo.com&sz=128",
+    "category": "design",
+    "url": "https://job-boards.greenhouse.io/oklo/jobs/5743023004",
+    "source": "greenhouse",
+    "tags": [
+      "Mechanical Engineering"
+    ],
+    "postedAt": "2026-02-23T17:50:01-05:00",
+    "scrapedAt": "2026-03-02T09:18:00.396Z",
+    "description": "&lt;p&gt;Thanks for your interest in Oklo!&amp;nbsp; We are searching for an experienced Mechanical Design Engineer to join our team. We are looking to fill this position immediately. Level (Engineer ",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_jech8d",
+    "title": "Senior Software Engineer",
+    "company": "Oklo",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=oklo.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/oklo/jobs/5739483004",
+    "source": "greenhouse",
+    "tags": [
+      "Software and DevOps Engineering"
+    ],
+    "postedAt": "2026-02-23T17:50:01-05:00",
+    "scrapedAt": "2026-03-02T09:18:00.397Z",
+    "description": "&lt;p&gt;Join us in pioneering the next generation of nuclear reactors! You&#39;ll leverage your software skills alongside nuclear engineers to model, simulate, design, and deploy advanced fission pow",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_isz4pa",
+    "title": "Software Engineer",
+    "company": "Oklo",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=oklo.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/oklo/jobs/4018702004",
+    "source": "greenhouse",
+    "tags": [
+      "Software and DevOps Engineering"
+    ],
+    "postedAt": "2026-02-23T17:50:01-05:00",
+    "scrapedAt": "2026-03-02T09:18:00.397Z",
+    "description": "&lt;p data-renderer-start-pos=&quot;1&quot;&gt;Join us in pioneering the next generation of nuclear reactors! You&#39;ll leverage your software skills alongside nuclear engineers to model, simulate, d",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_uqx48e",
+    "title": "Sr. Manager, Hardware Test Engineering",
+    "company": "Oklo",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=oklo.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/oklo/jobs/5641268004",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering"
+    ],
+    "postedAt": "2026-02-23T17:50:01-05:00",
+    "scrapedAt": "2026-03-02T09:18:00.398Z",
+    "description": "&lt;h3 id=&quot;Position-Description&quot; data-renderer-start-pos=&quot;1&quot;&gt;Position Description&lt;/h3&gt; &lt;p data-renderer-start-pos=&quot;23&quot;&gt;Oklo is looking for an experienced a",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_555oqj",
+    "title": "Systems Engineer, Requirements and Integration",
+    "company": "Oklo",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=oklo.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/oklo/jobs/5649054004",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering"
+    ],
+    "postedAt": "2026-02-23T17:50:01-05:00",
+    "scrapedAt": "2026-03-02T09:18:00.398Z",
+    "description": "&lt;div id=&quot;content&quot; class=&quot;highlighter-context page view&quot; data-inline-comments-target=&quot;true&quot; data-testid=&quot;page-content-only&quot;&gt; &lt;div class=&quot;_19pkidpf ",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_nash28",
+    "title": "Senior Software Engineer II",
+    "company": "Freenome",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=freenome.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/freenome/jobs/8414748002",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering"
+    ],
+    "postedAt": "2026-02-23T15:48:49-05:00",
+    "scrapedAt": "2026-03-02T09:17:40.072Z",
+    "description": "&lt;p&gt;&lt;strong&gt;About this opportunity:&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;span style=&quot;font-weight: 300;&quot;&gt;At Freenome we are seeking a Senior Software Engineer to grow our Platf",
     "isWorldwide": true,
     "employmentType": "Full-time"
   },
@@ -266,61 +1151,46 @@
       "2150 Javascript"
     ],
     "postedAt": "2026-02-23T11:37:16-05:00",
-    "scrapedAt": "2026-02-25T10:24:52.034Z",
+    "scrapedAt": "2026-03-02T09:16:56.646Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;div&gt;Wrike is the most powerful work management platform. Built for teams and organizations looking to collaborate, create, and exceed every day, Wrike",
     "isWorldwide": true,
     "employmentType": "Full-time"
   },
   {
-    "id": "greenhouse_abzzy3",
-    "title": "Senior Data Engineer, Graph Analytics",
-    "company": "TRM Labs",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=trmlabs.com&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/trmlabs/jobs/5701248004",
-    "source": "greenhouse",
-    "tags": [
-      "Engineering"
-    ],
-    "postedAt": "2026-02-22T17:00:40-05:00",
-    "scrapedAt": "2026-02-25T10:25:03.191Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;Build a Safer World.&amp;nbsp;&lt;/h2&gt; &lt;p&gt;TRM Labs provides blockchain analytics and AI solutions to help law enforcement and national sec",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_rst581",
+    "id": "ashby_fx8tcd",
     "title": "Senior Product Designer",
-    "company": "TRM Labs",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=trmlabs.com&sz=128",
+    "company": "Tradeify",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=tradeify.com&sz=128",
     "category": "design",
-    "url": "https://job-boards.greenhouse.io/trmlabs/jobs/5740948004",
-    "source": "greenhouse",
+    "url": "https://jobs.ashbyhq.com/tradeify/b7de710b-ccc3-4743-90b8-88bf954d0939",
+    "source": "ashby",
     "tags": [
+      "Product",
       "Product"
     ],
-    "postedAt": "2026-02-22T17:00:40-05:00",
-    "scrapedAt": "2026-02-25T10:25:03.191Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;Build a Safer World.&amp;nbsp;&lt;/h2&gt; &lt;p&gt;TRM Labs provides blockchain analytics and AI solutions to help law enforcement and national sec",
+    "postedAt": "2026-02-20T19:58:22.086Z",
+    "scrapedAt": "2026-03-02T09:17:26.923Z",
+    "description": "About Tradeify Tradeify is a fast-growing futures proprietary trading firm operating a performance-driven B2C growth engine across paid and organic channels. We are building a premium, performance-dri",
     "isWorldwide": true,
-    "employmentType": "Full-time"
+    "employmentType": "FullTime"
   },
   {
-    "id": "greenhouse_ga95p",
-    "title": "Senior Software Engineer, Graph Analytics",
-    "company": "TRM Labs",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=trmlabs.com&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/trmlabs/jobs/5412012004",
-    "source": "greenhouse",
+    "id": "ashby_trlc5k",
+    "title": "Web Designer",
+    "company": "Tradeify",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=tradeify.com&sz=128",
+    "category": "design",
+    "url": "https://jobs.ashbyhq.com/tradeify/9b64a099-c9d8-433f-bc18-c08e16fd92c8",
+    "source": "ashby",
     "tags": [
-      "Engineering"
+      "Product",
+      "Product"
     ],
-    "postedAt": "2026-02-22T17:00:40-05:00",
-    "scrapedAt": "2026-02-25T10:25:03.192Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;Build a Safer World.&amp;nbsp;&lt;/h2&gt; &lt;p&gt;TRM Labs provides blockchain analytics and AI solutions to help law enforcement and national sec",
+    "postedAt": "2026-02-20T19:44:34.046Z",
+    "scrapedAt": "2026-03-02T09:17:26.923Z",
+    "description": "About Tradeify Tradeify is a fast-growing futures proprietary trading firm operating a performance-driven B2C growth engine across paid and organic channels. We are building a premium brand in trading",
     "isWorldwide": true,
-    "employmentType": "Full-time"
+    "employmentType": "FullTime"
   },
   {
     "id": "greenhouse_grg8kt",
@@ -334,7 +1204,7 @@
       "Developer Relations (Non-Tech)"
     ],
     "postedAt": "2026-02-20T13:06:36-05:00",
-    "scrapedAt": "2026-02-25T10:25:12.748Z",
+    "scrapedAt": "2026-03-02T09:17:15.551Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Every day, tens of millions of people come to Roblox to explore, create, play, learn, and connect wi",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -351,7 +1221,7 @@
       "R&D"
     ],
     "postedAt": "2026-02-20T09:40:40-05:00",
-    "scrapedAt": "2026-02-25T10:24:39.571Z",
+    "scrapedAt": "2026-03-02T09:16:40.513Z",
     "description": "&lt;h4&gt;&lt;strong&gt;About the Team:&lt;/strong&gt;&lt;/h4&gt; &lt;p&gt;Our growing User Experience (UX) team is looking for a Senior Product Designer &amp;amp; Researcher generalist to help evolve",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -369,7 +1239,7 @@
       "Products"
     ],
     "postedAt": "2026-02-20T05:31:31.448Z",
-    "scrapedAt": "2026-02-25T10:25:02.342Z",
+    "scrapedAt": "2026-03-02T09:17:08.516Z",
     "description": "Join us for our upcoming webinar, How to Be a Leader, Not Just a Manager. A practical session with a powerhouse panel on leading modern, remote teams. Register here ! Camunda is the leader in enterpri",
     "isWorldwide": true,
     "employmentType": "FullTime"
@@ -386,7 +1256,7 @@
       "DV-Development"
     ],
     "postedAt": "2026-02-20T00:00:47-05:00",
-    "scrapedAt": "2026-02-25T10:25:08.631Z",
+    "scrapedAt": "2026-03-02T09:17:12.428Z",
     "description": "&lt;p&gt;&lt;strong&gt;The salary range for this role is negotiable, the range being $7000 - $12000 per month (Gross in USD)&amp;nbsp;&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;About Sezzle:&lt;",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -403,25 +1273,8 @@
       "DV-Development"
     ],
     "postedAt": "2026-02-20T00:00:46-05:00",
-    "scrapedAt": "2026-02-25T10:25:08.630Z",
+    "scrapedAt": "2026-03-02T09:17:12.427Z",
     "description": "&lt;p&gt;&lt;strong&gt;The salary range for this role is $750 - $1,800 per month (Gross in USD)&amp;nbsp;&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;About Sezzle:&lt;/strong&gt;&lt;/p&gt; &lt;p&g",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_vilejz",
-    "title": "Senior Mobile Engineer ",
-    "company": "Sezzle",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=sezzle.com&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/sezzle/jobs/7549191003",
-    "source": "greenhouse",
-    "tags": [
-      "DV-Development"
-    ],
-    "postedAt": "2026-02-20T00:00:45-05:00",
-    "scrapedAt": "2026-02-25T10:25:08.632Z",
-    "description": "&lt;p&gt;&lt;strong&gt;&lt;strong data-stringify-type=&quot;bold&quot;&gt;The salary range for this role is&amp;nbsp;&lt;/strong&gt;$4,600 - $9,500&lt;strong data-stringify-type=&quot;bold&quot;&gt;&a",
     "isWorldwide": true,
     "employmentType": "Full-time"
   },
@@ -437,7 +1290,7 @@
       "DV-Development"
     ],
     "postedAt": "2026-02-20T00:00:43-05:00",
-    "scrapedAt": "2026-02-25T10:25:08.632Z",
+    "scrapedAt": "2026-03-02T09:17:12.428Z",
     "description": "&lt;p&gt;&lt;strong&gt;The salary range for this role is $6,000 - $12,500 per month (Gross in USD)&amp;nbsp;&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;About Sezzle:&lt;/strong&gt;&lt;/p&gt; &lt;",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -455,7 +1308,7 @@
       "Products"
     ],
     "postedAt": "2026-02-20T01:18:49.259Z",
-    "scrapedAt": "2026-02-25T10:25:02.342Z",
+    "scrapedAt": "2026-03-02T09:17:08.516Z",
     "description": "Join us for our upcoming webinar, How to Be a Leader, Not Just a Manager. A practical session with a powerhouse panel on leading modern, remote teams. Register here ! Camunda is the leader in enterpri",
     "isWorldwide": true,
     "employmentType": "FullTime"
@@ -473,10 +1326,27 @@
       "Engineering"
     ],
     "postedAt": "2026-02-19T23:43:54.439Z",
-    "scrapedAt": "2026-02-25T10:25:03.576Z",
+    "scrapedAt": "2026-03-02T09:17:10.138Z",
     "description": "Phantom is the modern money app used by tens of millions around the world. Our product combines everything people need to manage, spend, and grow their money in one simple, intuitive experience. Phant",
     "isWorldwide": true,
     "employmentType": "FullTime"
+  },
+  {
+    "id": "greenhouse_ol7dlg",
+    "title": "Software Test Lead Engineer (SDET)",
+    "company": "Accela",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=accela.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/accela/jobs/7371907",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering"
+    ],
+    "postedAt": "2026-02-19T18:07:26-05:00",
+    "scrapedAt": "2026-03-02T09:18:16.804Z",
+    "description": "&lt;p&gt;&lt;strong&gt;ABOUT THE ROLE&lt;/strong&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;The&amp;nbsp;&lt;strong&gt;Software Test Development Lead (SDET – Lead)&lt;/strong&gt;&am",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
   },
   {
     "id": "greenhouse_ju2rxs",
@@ -490,8 +1360,76 @@
       "Engineering"
     ],
     "postedAt": "2026-02-19T16:05:46-05:00",
-    "scrapedAt": "2026-02-25T10:24:47.584Z",
+    "scrapedAt": "2026-03-02T09:16:50.299Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;Why join us&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Brex is the AI-powered spend platform. We help companies spend with confidence with inte",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_pj4uou",
+    "title": "Senior Site Reliability Engineer",
+    "company": "BrightHire",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=brighthire.com&sz=128",
+    "category": "engineering",
+    "url": "https://brighthire.com/careers/?gh_jid=5732620004",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering"
+    ],
+    "postedAt": "2026-02-19T13:25:39-05:00",
+    "scrapedAt": "2026-03-02T09:18:22.560Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;BrightHire is a category-creating, high-growth, Series B software company with a mission to give everyone the hiring experience they deserve.&lt;/p&",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_l2n6u9",
+    "title": "Senior/Staff ML Engineer",
+    "company": "BrightHire",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=brighthire.com&sz=128",
+    "category": "engineering",
+    "url": "https://brighthire.com/careers/?gh_jid=5685510004",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering"
+    ],
+    "postedAt": "2026-02-19T12:34:55-05:00",
+    "scrapedAt": "2026-03-02T09:18:22.560Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;BrightHire is a category-creating, high-growth, Series B software company with a mission to give everyone the hiring experience they deserve.&lt;/p&",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_i8brc7",
+    "title": "Director, Product Strategy (Supplemental & Assessment Portfolio)",
+    "company": "Newsela",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=newsela.com&sz=128",
+    "category": "product",
+    "url": "https://job-boards.greenhouse.io/newsela/jobs/7592338",
+    "source": "greenhouse",
+    "tags": [
+      "Product Management"
+    ],
+    "postedAt": "2026-02-19T11:11:09-05:00",
+    "scrapedAt": "2026-03-02T09:17:47.833Z",
+    "description": "&lt;p&gt;&lt;span style=&quot;font-size: 12pt;&quot;&gt;The&amp;nbsp;&lt;strong&gt;Director of the Supplemental and Assessment Portfolio &lt;/strong&gt;serves as the strategic leader for the Formative",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_fyfel8",
+    "title": "Senior Platform Engineer",
+    "company": "Mixmax",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=mixmax.com&sz=128",
+    "category": "engineering",
+    "url": "https://mixmax.com/careers/position/8400009002?gh_jid=8400009002",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering"
+    ],
+    "postedAt": "2026-02-19T08:06:30-05:00",
+    "scrapedAt": "2026-03-02T09:17:44.957Z",
+    "description": "&lt;p&gt;Mixmax is the #1 product helping Revenue teams to become automatically proactive by eliminating busywork for a flawless customer experience&lt;/p&gt; &lt;h3&gt;&lt;strong&gt;The Opportunity&l",
     "isWorldwide": true,
     "employmentType": "Full-time"
   },
@@ -507,7 +1445,7 @@
       "MZLA/Thunderbird"
     ],
     "postedAt": "2026-02-18T16:12:31-05:00",
-    "scrapedAt": "2026-02-25T10:25:03.561Z",
+    "scrapedAt": "2026-03-02T09:17:08.342Z",
     "description": "&lt;p&gt;&lt;strong&gt;MZLA Technologies Corporation (MZLA)&lt;/strong&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; is a wholly owned, for-profit subsidiary of the Mozilla Foundation and home t",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -524,7 +1462,7 @@
       "DV-Development"
     ],
     "postedAt": "2026-02-18T13:19:43-05:00",
-    "scrapedAt": "2026-02-25T10:25:08.629Z",
+    "scrapedAt": "2026-03-02T09:17:12.427Z",
     "description": "&lt;p&gt;&lt;span style=&quot;font-size: 12pt;&quot;&gt;&lt;strong&gt;The salary range for this role is 2,500 - 3,333 USD&amp;nbsp;&amp;nbsp;per month (Gross in USD)&amp;nbsp;&lt;/strong&gt;&lt;/span&",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -541,7 +1479,7 @@
       "DV-Development"
     ],
     "postedAt": "2026-02-18T13:14:19-05:00",
-    "scrapedAt": "2026-02-25T10:25:08.629Z",
+    "scrapedAt": "2026-03-02T09:17:12.426Z",
     "description": "&lt;p&gt;&lt;span style=&quot;font-size: 12pt;&quot;&gt;&lt;strong&gt;The salary range for this role is 3,333 USD - 4,200 USD per month (Gross in USD)&amp;nbsp;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt; &",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -558,7 +1496,7 @@
       "Cloud Engineering"
     ],
     "postedAt": "2026-02-18T12:56:29-05:00",
-    "scrapedAt": "2026-02-25T10:24:40.359Z",
+    "scrapedAt": "2026-03-02T09:16:43.463Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -575,8 +1513,43 @@
       "Core Systems & Platforms"
     ],
     "postedAt": "2026-02-18T12:10:33-05:00",
-    "scrapedAt": "2026-02-25T10:24:57.048Z",
+    "scrapedAt": "2026-03-02T09:16:59.176Z",
     "description": "&lt;p&gt;At Lyft, our purpose is to serve and connect. We aim to achieve this by cultivating a work environment where all team members belong and have the opportunity to thrive.&lt;/p&gt; &lt;p&gt;Lyf",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "lever_e2r77w",
+    "title": "Senior Site Reliability Engineer",
+    "company": "Loadsmart",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=loadsmart.com&sz=128",
+    "category": "engineering",
+    "url": "https://jobs.lever.co/loadsmart/1fa730a3-fbe6-4ef8-b7ec-fc737a93562d",
+    "source": "lever",
+    "tags": [
+      "Engineering",
+      "Engineering"
+    ],
+    "postedAt": "2026-02-18T15:54:46.557Z",
+    "scrapedAt": "2026-03-02T09:18:14.534Z",
+    "description": "ARE YOU INTERESTED IN JOINING AN INNOVATIVE LOGISTICS TECHNOLOGY  COMPANY?\n\nLoadsmart is a growth-stage technology company valued at over $1 billion (a true Tech Unicorn)!\n\nWe are a collection of indu",
+    "isWorldwide": true,
+    "employmentType": "Full-Time"
+  },
+  {
+    "id": "greenhouse_1cwbky",
+    "title": "Senior Python Engineer, Application Platform",
+    "company": "PandaDoc",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=pandadoc.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/pandadoc/jobs/7178170",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering"
+    ],
+    "postedAt": "2026-02-18T07:51:25-05:00",
+    "scrapedAt": "2026-03-02T09:17:38.717Z",
+    "description": "&lt;h1&gt;&lt;strong&gt;Senior Software Engineer&lt;/strong&gt;&lt;/h1&gt; &lt;h2&gt;&lt;strong&gt;Company description&lt;/strong&gt;&lt;/h2&gt; &lt;p&gt;&lt;strong&gt;At PandaDoc, we&#39;re building ",
     "isWorldwide": true,
     "employmentType": "Full-time"
   },
@@ -592,7 +1565,7 @@
       "936 Engineering - Data Engineering"
     ],
     "postedAt": "2026-02-17T17:32:29-05:00",
-    "scrapedAt": "2026-02-25T10:25:07.294Z",
+    "scrapedAt": "2026-03-02T09:17:10.528Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;ZoomInfo is where careers accelerate. We move fast, think boldly, and empower you to do the best work of your life. You’ll be surrounded by teammate",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -609,8 +1582,127 @@
       "Engineering"
     ],
     "postedAt": "2026-02-17T16:06:59-05:00",
-    "scrapedAt": "2026-02-25T10:25:08.580Z",
+    "scrapedAt": "2026-03-02T09:17:12.377Z",
     "description": "&lt;p&gt;At Apollo Education Systems, we’re on an exciting mission to transform how schools utilize data to enhance student outcomes. With a strong foundation from our proven founders who have success",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_hnfrbf",
+    "title": "Senior Software Development Engineer, Frontend (Storefront)",
+    "company": "Recharge",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=rechargepayments.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/recharge/jobs/8405088002",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering General"
+    ],
+    "postedAt": "2026-02-17T15:16:04-05:00",
+    "scrapedAt": "2026-03-02T09:17:36.086Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;Who we are&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Recharge is the subscription platform for the world’s fastest-growing and most innovative",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_w3ufxe",
+    "title": "Product Manager II (Remote from Bulgaria)",
+    "company": "Smartsheet",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=smartsheet.com&sz=128",
+    "category": "product",
+    "url": "https://job-boards.greenhouse.io/smartsheet/jobs/7386364",
+    "source": "greenhouse",
+    "tags": [
+      "Product Mgt"
+    ],
+    "postedAt": "2026-02-17T13:18:58-05:00",
+    "scrapedAt": "2026-03-02T09:17:37.942Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;For over 20 years, Smartsheet has helped people and teams achieve–well, anything. From seamless work management to smart, scalable solutions, we’ve ",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_w3t5a7",
+    "title": "Senior Software Engineer, Platform Security (Remote from Bulgaria)",
+    "company": "Smartsheet",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=smartsheet.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/smartsheet/jobs/7388435",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering - Developers"
+    ],
+    "postedAt": "2026-02-17T13:18:58-05:00",
+    "scrapedAt": "2026-03-02T09:17:37.943Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;For over 20 years, Smartsheet has helped people and teams achieve–well, anything. From seamless work management to smart, scalable solutions, we’ve ",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_o7rsub",
+    "title": "Software Engineer II (Remote Eligible from Bulgaria)",
+    "company": "Smartsheet",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=smartsheet.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/smartsheet/jobs/6366658",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering - Developers"
+    ],
+    "postedAt": "2026-02-17T13:18:55-05:00",
+    "scrapedAt": "2026-03-02T09:17:37.943Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;For over 20 years, Smartsheet has helped people and teams achieve–well, anything. From seamless work management to smart, scalable solutions, we’ve ",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_v55gw3",
+    "title": "Sr. Software Engineer  (Remote Eligible from Bulgaria)",
+    "company": "Smartsheet",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=smartsheet.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/smartsheet/jobs/7599444",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering - Developers"
+    ],
+    "postedAt": "2026-02-17T13:18:55-05:00",
+    "scrapedAt": "2026-03-02T09:17:37.943Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;For over 20 years, Smartsheet has helped people and teams achieve–well, anything. From seamless work management to smart, scalable solutions, we’ve ",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_x0l2a3",
+    "title": "Principal Engineer Motion Planning",
+    "company": "Motional",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=motional.com&sz=128",
+    "category": "engineering",
+    "url": "https://motional.com/open-positions/?gh_jid=6655578003#/6655578003",
+    "source": "greenhouse",
+    "tags": [
+      "Autonomy"
+    ],
+    "postedAt": "2026-02-17T12:48:04-05:00",
+    "scrapedAt": "2026-03-02T09:18:23.330Z",
+    "description": "&lt;div class=&quot;section page-centered&quot;&gt; &lt;div&gt;On our Motion Planning team, you&#39;ll apply your passion in robotics and software development for production-ready autonomous vehicles.",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_pvccim",
+    "title": "Senior Machine Learning Engineer-Perception",
+    "company": "Motional",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=motional.com&sz=128",
+    "category": "engineering",
+    "url": "https://motional.com/open-positions/?gh_jid=6293658003#/6293658003",
+    "source": "greenhouse",
+    "tags": [
+      "Autonomy"
+    ],
+    "postedAt": "2026-02-17T12:48:04-05:00",
+    "scrapedAt": "2026-03-02T09:18:23.330Z",
+    "description": "&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;On our Perception Team, you have the opportunity to work with world-class ML engineers and research scientists, whose mission is to make self-d",
     "isWorldwide": true,
     "employmentType": "Full-time"
   },
@@ -626,7 +1718,7 @@
       "Customer Success"
     ],
     "postedAt": "2026-02-17T12:18:10-05:00",
-    "scrapedAt": "2026-02-25T10:25:01.301Z",
+    "scrapedAt": "2026-03-02T09:17:07.563Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;&lt;strong&gt;Who we are&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt; &lt;p&gt;&lt",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -644,41 +1736,24 @@
       "Research & Development"
     ],
     "postedAt": "2026-02-17T17:03:49.805Z",
-    "scrapedAt": "2026-02-25T10:25:01.356Z",
+    "scrapedAt": "2026-03-02T09:17:07.831Z",
     "description": "About Chili Piper Chili Piper is a B2B SaaS company that helps GTM teams turn inbound leads into qualified meetings - instantly. Our Demand Conversion Platform makes it easier for buyers and sellers t",
     "isWorldwide": true,
     "employmentType": "FullTime"
   },
   {
-    "id": "greenhouse_cbrvug",
+    "id": "greenhouse_cbrud5",
     "title": "Staff Software Engineer",
     "company": "Wikimedia Foundation",
     "companyLogo": "https://www.google.com/s2/favicons?domain=wikimedia.org&sz=128",
     "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/wikimedia/jobs/7545354",
+    "url": "https://job-boards.greenhouse.io/wikimedia/jobs/7545157",
     "source": "greenhouse",
     "tags": [
       "Product & Technology"
     ],
-    "postedAt": "2026-02-17T11:58:20-05:00",
-    "scrapedAt": "2026-02-25T10:25:03.275Z",
-    "description": "&lt;p&gt;&lt;strong&gt;Staff Software Engineer&amp;nbsp;&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;PLEASE NOTE:&lt;/strong&gt; We will only be considering hiring within UTC-3 to UTC+3 due to the",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_cbrvug",
-    "title": "Staff Software Engineer",
-    "company": "Wikimedia",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=wikimediafoundation.org&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/wikimedia/jobs/7545354",
-    "source": "greenhouse",
-    "tags": [
-      "Product & Technology"
-    ],
-    "postedAt": "2026-02-17T11:58:20-05:00",
-    "scrapedAt": "2026-02-25T10:25:06.549Z",
+    "postedAt": "2026-02-17T11:58:02-05:00",
+    "scrapedAt": "2026-03-02T09:17:08.497Z",
     "description": "&lt;p&gt;&lt;strong&gt;Staff Software Engineer&amp;nbsp;&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;PLEASE NOTE:&lt;/strong&gt; We will only be considering hiring within UTC-3 to UTC+3 due to the",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -695,231 +1770,77 @@
       "Support"
     ],
     "postedAt": "2026-02-17T09:11:41-05:00",
-    "scrapedAt": "2026-02-25T10:25:01.300Z",
+    "scrapedAt": "2026-03-02T09:17:07.562Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;&lt;strong&gt;Who we are&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt; &lt;p&gt;&lt",
     "isWorldwide": true,
     "employmentType": "Full-time"
   },
   {
-    "id": "greenhouse_26kg86",
-    "title": "Senior Software Engineer - Connected Asset Maintenance",
-    "company": "Samsara",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=samsara.com&sz=128",
+    "id": "ashby_k2yqgi",
+    "title": "Android Engineer",
+    "company": "Parity",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=parity.io&sz=128",
     "category": "engineering",
-    "url": "https://www.samsara.com/company/careers/roles/7266433?gh_jid=7266433",
-    "source": "greenhouse",
-    "tags": [
-      "Workforce"
-    ],
-    "postedAt": "2026-02-13T21:15:09-05:00",
-    "scrapedAt": "2026-02-25T10:25:01.297Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;&lt;strong&gt;Who we are&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt; &lt;p&gt;&lt",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_26kgax",
-    "title": "Senior Software Engineer I/II - Mobile Platform",
-    "company": "Samsara",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=samsara.com&sz=128",
-    "category": "engineering",
-    "url": "https://www.samsara.com/company/careers/roles/7266469?gh_jid=7266469",
-    "source": "greenhouse",
-    "tags": [
-      "Platform"
-    ],
-    "postedAt": "2026-02-13T21:11:52-05:00",
-    "scrapedAt": "2026-02-25T10:25:01.298Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;&lt;strong&gt;Who we are&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt; &lt;p&gt;&lt",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "lever_faiiow",
-    "title": "Head of Product",
-    "company": "Celestia",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=celestia.org&sz=128",
-    "category": "product",
-    "url": "https://jobs.lever.co/celestia/b2a99f19-fdf1-471c-85e8-d106faa58a2f",
-    "source": "lever",
-    "tags": [
-      "Product"
-    ],
-    "postedAt": "2026-02-13T05:21:14.559Z",
-    "scrapedAt": "2026-02-25T10:25:11.928Z",
-    "description": "About Celestia Labs\nCelestia is the L1 for specialised onchain markets, enabling fibre optic performance with millisecond latency. Today, more than 30 networks across exchanges, real-world assets, and",
-    "isWorldwide": true,
-    "employmentType": "Full Time"
-  },
-  {
-    "id": "greenhouse_f7qq7e",
-    "title": "Staff Mobile Engineer, iOS",
-    "company": "Mozilla",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=mozilla.org&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/mozilla/jobs/7604349",
-    "source": "greenhouse",
-    "tags": [
-      "MZLA/Thunderbird"
-    ],
-    "postedAt": "2026-02-12T11:12:45-05:00",
-    "scrapedAt": "2026-02-25T10:25:03.561Z",
-    "description": "&lt;p&gt;&lt;strong&gt;Why Thunderbird?&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;MZLA Technologies Corporation (MZLA)&lt;/strong&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; is a wholly ",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_f7nkt3",
-    "title": "Staff Engineer, Front End (Desktop)",
-    "company": "Mozilla",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=mozilla.org&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/mozilla/jobs/7609121",
-    "source": "greenhouse",
-    "tags": [
-      "MZLA/Thunderbird"
-    ],
-    "postedAt": "2026-02-12T11:09:21-05:00",
-    "scrapedAt": "2026-02-25T10:25:03.561Z",
-    "description": "&lt;p&gt;&lt;strong&gt;MZLA Technologies Corporation (MZLA)&lt;/strong&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; is a wholly owned, for-profit subsidiary of the Mozilla Foundation and home t",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "ashby_wfe214",
-    "title": "Senior Security Program Manager",
-    "company": "Keyrock",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=keyrock.eu&sz=128",
-    "category": "product",
-    "url": "https://jobs.ashbyhq.com/keyrock/9a0d86b5-7097-41a1-8651-0f48857216eb",
+    "url": "https://jobs.ashbyhq.com/parity/35a37737-a059-4da4-bf93-f3536101fc3e",
     "source": "ashby",
     "tags": [
-      "Security",
-      "R&D/Engineering"
+      "Product Engineering",
+      "Acceleration"
     ],
-    "postedAt": "2026-02-12T14:57:22.275Z",
-    "scrapedAt": "2026-02-25T10:25:16.882Z",
-    "description": "About Keyrock Since our beginnings in 2017, we've grown to be a leading change-maker in the digital asset space, renowned for our partnerships and innovation. Today, we rock with over 200 team members",
+    "postedAt": "2026-02-17T13:00:59.866Z",
+    "scrapedAt": "2026-03-02T09:17:46.369Z",
+    "description": "About Us Parity is one of the world’s most experienced companies building the core infrastructure behind blockchain — the system that allows information and value to be shared securely without needing",
     "isWorldwide": true,
     "employmentType": "FullTime"
   },
   {
-    "id": "greenhouse_26kfgk",
-    "title": "Senior Software Engineer II, Fleet Safety",
-    "company": "Samsara",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=samsara.com&sz=128",
-    "category": "engineering",
-    "url": "https://www.samsara.com/company/careers/roles/7266321?gh_jid=7266321",
+    "id": "greenhouse_xgguk",
+    "title": "Senior Software Engineer, Core UX Platform",
+    "company": "PandaDoc",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=pandadoc.com&sz=128",
+    "category": "design",
+    "url": "https://job-boards.greenhouse.io/pandadoc/jobs/7621726",
     "source": "greenhouse",
-    "tags": [
-      "Safety"
-    ],
-    "postedAt": "2026-02-12T05:55:26-05:00",
-    "scrapedAt": "2026-02-25T10:25:01.298Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;&lt;strong&gt;Who we are&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt; &lt;p&gt;&lt",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "ashby_wqje5n",
-    "title": "Protocol Security Engineer",
-    "company": "zkSync",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=zksync.io&sz=128",
-    "category": "engineering",
-    "url": "https://jobs.ashbyhq.com/matter-labs/614b7193-a54b-443d-9f6a-a74e07698dc0",
-    "source": "ashby",
-    "tags": [
-      "Engineering",
-      "Engineering"
-    ],
-    "postedAt": "2026-02-12T09:01:47.256Z",
-    "scrapedAt": "2026-02-25T10:25:03.335Z",
-    "description": "Who we are → About Matter Labs At Matter Labs, we believe freedom drives progress and prosperity . Our mission is to advance freedom for all — through mass adoption of crypto. To make that real, we’re",
-    "isWorldwide": true,
-    "employmentType": "FullTime"
-  },
-  {
-    "id": "greenhouse_3mu9il",
-    "title": "Staff Software Engineer - CAM",
-    "company": "Samsara",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=samsara.com&sz=128",
-    "category": "engineering",
-    "url": "https://www.samsara.com/company/careers/roles/7588828?gh_jid=7588828",
-    "source": "greenhouse",
-    "tags": [
-      "Workforce"
-    ],
-    "postedAt": "2026-02-11T17:06:33-05:00",
-    "scrapedAt": "2026-02-25T10:25:01.300Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;&lt;strong&gt;Who we are&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt; &lt;p&gt;&lt",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_26kh2d",
-    "title": "Senior Software Engineer II - Route Planning",
-    "company": "Samsara",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=samsara.com&sz=128",
-    "category": "engineering",
-    "url": "https://www.samsara.com/company/careers/roles/7266575?gh_jid=7266575",
-    "source": "greenhouse",
-    "tags": [
-      "Telematics"
-    ],
-    "postedAt": "2026-02-11T14:26:41-05:00",
-    "scrapedAt": "2026-02-25T10:25:01.299Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;&lt;strong&gt;Who we are&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt; &lt;p&gt;&lt",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_26kfgm",
-    "title": "Full Stack Engineer II",
-    "company": "Samsara",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=samsara.com&sz=128",
-    "category": "engineering",
-    "url": "https://www.samsara.com/company/careers/roles/7266323?gh_jid=7266323",
-    "source": "greenhouse",
-    "tags": [
-      "Workforce"
-    ],
-    "postedAt": "2026-02-11T14:20:05-05:00",
-    "scrapedAt": "2026-02-25T10:25:01.294Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;&lt;strong&gt;Who we are&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt; &lt;p&gt;&lt",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "lever_h9jk9u",
-    "title": "Senior Quality Engineer, Full Stack",
-    "company": "Offchain Labs",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=offchainlabs.com&sz=128",
-    "category": "engineering",
-    "url": "https://jobs.lever.co/offchainlabs/ef8b7655-c9cb-46c9-8eae-d8513b1b9f23",
-    "source": "lever",
     "tags": [
       "Engineering"
     ],
-    "postedAt": "2026-02-11T18:41:09.482Z",
-    "scrapedAt": "2026-02-25T10:25:26.156Z",
-    "description": "At Offchain Labs, we aren’t just building products: we’re leading a movement. \n\nAs pioneers in blockchain scalability and security, we're at the forefront of transforming how the world interacts with ",
+    "postedAt": "2026-02-17T07:34:47-05:00",
+    "scrapedAt": "2026-03-02T09:17:38.717Z",
+    "description": "&lt;h2&gt;&lt;strong&gt;Senior Software Engineer&lt;/strong&gt;&lt;/h2&gt; &lt;h3&gt;&lt;strong&gt;Company description&lt;/strong&gt;&lt;/h3&gt; &lt;p&gt;&lt;strong&gt;At PandaDoc, we&#39;re building ",
     "isWorldwide": true,
     "employmentType": "Full-time"
   },
   {
-    "id": "greenhouse_2oof9v",
-    "title": "Senior Software Engineer II,  Smart Trailer & Connected Equipment",
-    "company": "Samsara",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=samsara.com&sz=128",
-    "category": "engineering",
-    "url": "https://www.samsara.com/company/careers/roles/7384619?gh_jid=7384619",
+    "id": "greenhouse_xggue",
+    "title": "Senior Software Engineer, Design Systems",
+    "company": "PandaDoc",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=pandadoc.com&sz=128",
+    "category": "design",
+    "url": "https://job-boards.greenhouse.io/pandadoc/jobs/7621720",
     "source": "greenhouse",
     "tags": [
-      "STCE"
+      "Engineering"
     ],
-    "postedAt": "2026-02-11T10:57:58-05:00",
-    "scrapedAt": "2026-02-25T10:25:01.299Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;&lt;strong&gt;Who we are&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt; &lt;p&gt;&lt",
+    "postedAt": "2026-02-17T07:31:47-05:00",
+    "scrapedAt": "2026-03-02T09:17:38.718Z",
+    "description": "&lt;h2&gt;&lt;strong&gt;Senior Software Engineer&lt;/strong&gt;&lt;/h2&gt; &lt;h3&gt;&lt;strong&gt;Company description&lt;/strong&gt;&lt;/h3&gt; &lt;p&gt;&lt;strong&gt;At PandaDoc, we&#39;re building ",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_8n13nf",
+    "title": "Senior Software Development Engineer, Backend (Subscriptions)",
+    "company": "Recharge",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=rechargepayments.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/recharge/jobs/8373413002",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering General"
+    ],
+    "postedAt": "2026-02-16T14:11:26-05:00",
+    "scrapedAt": "2026-03-02T09:17:36.086Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;Who we are&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Recharge is the subscription platform for the world’s fastest-growing and most innovative",
     "isWorldwide": true,
     "employmentType": "Full-time"
   }
