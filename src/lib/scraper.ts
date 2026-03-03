@@ -3,6 +3,7 @@ import { deduplicateJobs } from "./deduplicate";
 import { scrapeGreenhouse } from "./scrapers/greenhouse";
 import { scrapeLever } from "./scrapers/lever";
 import { scrapeAshby } from "./scrapers/ashby";
+import { scrapeGem } from "./scrapers/gem";
 import { CompanyResult, ScrapeReport } from "./fetch-retry";
 
 export interface ScrapeOutput {
@@ -19,10 +20,11 @@ export async function scrapeAllSources(): Promise<ScrapeOutput> {
   console.log("[scraper] starting scrape — direct ats only...");
   const startTime = Date.now();
 
-  const [gh, lv, ab] = await Promise.allSettled([
+  const [gh, lv, ab, gm] = await Promise.allSettled([
     scrapeGreenhouse(),
     scrapeLever(),
     scrapeAshby(),
+    scrapeGem(),
   ]);
 
   const allJobs: Job[] = [];
@@ -32,6 +34,7 @@ export async function scrapeAllSources(): Promise<ScrapeOutput> {
     { name: "greenhouse", result: gh },
     { name: "lever", result: lv },
     { name: "ashby", result: ab },
+    { name: "gem", result: gm },
   ] as const;
 
   for (const source of sources) {

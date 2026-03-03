@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ThemeToggle from "./ThemeToggle";
 
 const NAV_ITEMS = [
   { label: "product", href: "/product" },
@@ -16,6 +17,9 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-[var(--color-bg)]">
       <div className="max-w-[960px] mx-auto px-8">
         <div className="flex items-center h-[48px]">
+          <span className="mr-[8px]">
+            <ThemeToggle />
+          </span>
           <Link href="/" className="text-[14px] font-medium tracking-tight">
             worldglide
           </Link>
@@ -50,6 +54,7 @@ export default function Header() {
           >
             post a job
           </Link>
+
         </div>
       </div>
       <div className="h-px bg-[var(--color-border)]" />

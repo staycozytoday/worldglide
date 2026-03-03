@@ -13,6 +13,37 @@
   --color-accent: #FF6432;
 }
 
+/* dark mode — system preference fallback (no JS) */
+@media (prefers-color-scheme: dark) {
+  @theme {
+    --color-bg: #161618;
+    --color-bg-hover: #1e1e21;
+    --color-text: #e3e5e8;
+    --color-text-muted: #6b6e76;
+    --color-border: #2a2b2f;
+    --color-accent: #FF6432;
+  }
+}
+
+/* manual toggle overrides — data-theme wins over media query */
+html[data-theme="dark"] {
+  --color-bg: #161618;
+  --color-bg-hover: #1e1e21;
+  --color-text: #e3e5e8;
+  --color-text-muted: #6b6e76;
+  --color-border: #2a2b2f;
+  --color-accent: #FF6432;
+}
+
+html[data-theme="light"] {
+  --color-bg: #e3e5e8;
+  --color-bg-hover: #f5f7fa;
+  --color-text: #0e0f14;
+  --color-text-muted: #828690;
+  --color-border: #c5c8ce;
+  --color-accent: #FF6432;
+}
+
 /* base */
 body {
   background-color: var(--color-bg);
@@ -97,6 +128,34 @@ html {
 
 .animate-rec {
   animation: rec-blink 4s ease-in-out infinite;
+}
+
+/* breathing pulse — idle orange dot */
+@keyframes breathe {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.animate-breathe {
+  animation: breathe 3s ease-in-out infinite;
+}
+
+/* glitch jitter — tiny random offset during theme toggle */
+@keyframes glitch-jitter {
+  0%, 100% { transform: translate(0, 0); opacity: 1; }
+  10% { transform: translate(-1px, 1px); opacity: 0.8; }
+  20% { transform: translate(1px, -1px); opacity: 1; }
+  30% { transform: translate(0, 1px); opacity: 0.6; }
+  40% { transform: translate(-1px, 0); opacity: 1; }
+  50% { transform: translate(1px, 1px); opacity: 0.7; }
+  60% { transform: translate(-1px, -1px); opacity: 1; }
+  70% { transform: translate(0, -1px); opacity: 0.5; }
+  80% { transform: translate(1px, 0); opacity: 0.9; }
+  90% { transform: translate(-1px, 1px); opacity: 1; }
+}
+
+.animate-glitch-jitter {
+  animation: glitch-jitter 0.3s steps(1) infinite;
 }
 
 /* expired */

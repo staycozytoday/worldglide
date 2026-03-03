@@ -303,10 +303,10 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "SafetyWing", domain: "safetywing.com", careersUrl: "https://safetywing.com/careers", atsType: "custom" },
   { name: "Automattic", domain: "automattic.com", careersUrl: "https://automattic.com/work-with-us/", atsType: "custom" },
   { name: "Basecamp", domain: "basecamp.com", careersUrl: "https://basecamp.com/about/jobs", atsType: "custom" },
-  { name: "Toggl", domain: "toggl.com", careersUrl: "https://toggl.com/jobs/", atsType: "custom" },
+  { name: "Toggl", domain: "toggl.com", careersUrl: "https://toggl.com/jobs/", atsType: "ashby", atsSlug: "toggl" },
   { name: "MailerLite", domain: "mailerlite.com", careersUrl: "https://www.mailerlite.com/jobs", atsType: "custom" },
   { name: "Hotjar", domain: "hotjar.com", careersUrl: "https://www.hotjar.com/careers/", atsType: "custom" },
-  { name: "DuckDuckGo", domain: "duckduckgo.com", careersUrl: "https://duckduckgo.com/hiring", atsType: "custom" },
+  { name: "DuckDuckGo", domain: "duckduckgo.com", careersUrl: "https://duckduckgo.com/hiring", atsType: "ashby", atsSlug: "duck-duck-go" },
   { name: "Dribbble", domain: "dribbble.com", careersUrl: "https://dribbble.com/careers", atsType: "custom" },
   { name: "X-Team", domain: "x-team.com", careersUrl: "https://x-team.com/join/", atsType: "custom" },
   { name: "Shopify", domain: "shopify.com", careersUrl: "https://www.shopify.com/careers", atsType: "custom" },
@@ -1566,6 +1566,43 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
 
   // lever — identity
   { name: "JumpCloud", domain: "jumpcloud.com", careersUrl: "https://jumpcloud.com/careers", atsType: "lever", atsSlug: "jumpcloud" },
+
+  // ashby — new additions
+  { name: "Chainlink Labs", domain: "chain.link", careersUrl: "https://chain.link/careers", atsType: "ashby", atsSlug: "chainlink-labs" },
+  { name: "EverAI", domain: "everai.com", careersUrl: "https://everai.com/careers", atsType: "ashby", atsSlug: "everai" },
+  { name: "Vanta", domain: "vanta.com", careersUrl: "https://www.vanta.com/careers", atsType: "ashby", atsSlug: "vanta" },
+  { name: "Stytch", domain: "stytch.com", careersUrl: "https://stytch.com/careers", atsType: "ashby", atsSlug: "stytch" },
+  { name: "Modern Treasury", domain: "moderntreasury.com", careersUrl: "https://www.moderntreasury.com/careers", atsType: "ashby", atsSlug: "moderntreasury" },
+  { name: "incident.io", domain: "incident.io", careersUrl: "https://incident.io/careers", atsType: "ashby", atsSlug: "incident" },
+  { name: "Ramp", domain: "ramp.com", careersUrl: "https://ramp.com/careers", atsType: "ashby", atsSlug: "ramp" },
+  { name: "Suno", domain: "suno.com", careersUrl: "https://suno.com/careers", atsType: "ashby", atsSlug: "suno" },
+  { name: "Harvey AI", domain: "harvey.ai", careersUrl: "https://www.harvey.ai/careers", atsType: "ashby", atsSlug: "harvey" },
+  { name: "Cognition", domain: "cognition.ai", careersUrl: "https://www.cognition.ai/careers", atsType: "ashby", atsSlug: "cognition" },
+  { name: "Ashby", domain: "ashbyhq.com", careersUrl: "https://www.ashbyhq.com/careers", atsType: "ashby", atsSlug: "ashby" },
+
+  // greenhouse — new additions
+  { name: "Fingerprint", domain: "fingerprint.com", careersUrl: "https://fingerprint.com/careers/", atsType: "greenhouse", atsSlug: "fingerprint" },
+
+  // gem — 4th ats
+  { name: "Bluesky", domain: "bsky.social", careersUrl: "https://jobs.gem.com/bluesky", atsType: "gem", atsSlug: "bluesky" },
+  { name: "CodeSignal", domain: "codesignal.com", careersUrl: "https://jobs.gem.com/codesignal", atsType: "gem", atsSlug: "codesignal" },
+  { name: "Genspark", domain: "genspark.ai", careersUrl: "https://jobs.gem.com/genspark", atsType: "gem", atsSlug: "genspark" },
+  { name: "Gem", domain: "gem.com", careersUrl: "https://jobs.gem.com/gem", atsType: "gem", atsSlug: "gem" },
+  { name: "Bilt Rewards", domain: "bilt.com", careersUrl: "https://jobs.gem.com/bilt", atsType: "gem", atsSlug: "bilt" },
+  { name: "Luma AI", domain: "lumalabs.ai", careersUrl: "https://jobs.gem.com/lumalabs-ai", atsType: "gem", atsSlug: "lumalabs-ai" },
+  { name: "Superblocks", domain: "superblocks.com", careersUrl: "https://jobs.gem.com/superblocks", atsType: "gem", atsSlug: "superblocks" },
+  { name: "sennder", domain: "sennder.com", careersUrl: "https://jobs.gem.com/senndertechnologies-gmbh", atsType: "gem", atsSlug: "senndertechnologies-gmbh" },
+  { name: "BioRender", domain: "biorender.com", careersUrl: "https://jobs.gem.com/biorender", atsType: "gem", atsSlug: "biorender" },
+  { name: "Eliza", domain: "eliza.com", careersUrl: "https://jobs.gem.com/eliza", atsType: "gem", atsSlug: "eliza" },
+  { name: "Agora", domain: "agora.io", careersUrl: "https://jobs.gem.com/agora", atsType: "gem", atsSlug: "agora" },
+  { name: "Nue", domain: "nue.io", careersUrl: "https://jobs.gem.com/nue", atsType: "gem", atsSlug: "nue" },
+  { name: "Inception AI", domain: "inceptionlabs.ai", careersUrl: "https://jobs.gem.com/inception", atsType: "gem", atsSlug: "inception" },
+  { name: "Nominal", domain: "nominal.io", careersUrl: "https://jobs.gem.com/nominal", atsType: "gem", atsSlug: "nominal" },
+  { name: "Letter AI", domain: "letter.ai", careersUrl: "https://jobs.gem.com/letter-ai", atsType: "gem", atsSlug: "letter-ai" },
+  { name: "Roamless", domain: "roamless.com", careersUrl: "https://jobs.gem.com/roamless", atsType: "gem", atsSlug: "roamless" },
+  { name: "Nuvo", domain: "getnuvo.com", careersUrl: "https://jobs.gem.com/nuvo", atsType: "gem", atsSlug: "nuvo" },
+  { name: "Index Exchange", domain: "indexexchange.com", careersUrl: "https://jobs.gem.com/index-exchange", atsType: "gem", atsSlug: "index-exchange" },
+  { name: "CloudRaft", domain: "cloudraft.io", careersUrl: "https://jobs.gem.com/cloudraft", atsType: "gem", atsSlug: "cloudraft" },
 ];
 
 /** number of companies we actually scrape (excludes custom) */
