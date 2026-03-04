@@ -74,6 +74,23 @@ const WORLDWIDE_EXACT_LOCATIONS = [
   "home based worldwide",
   "home-based - worldwide",
   "home-based worldwide",
+  // Additional patterns seen in the wild
+  "remote - worldwide",
+  "remote/worldwide",
+  "remote | worldwide",
+  "remote: worldwide",
+  "remote, global",
+  "remote - global",
+  "remote/global",
+  "global remote",
+  "global | remote",
+  "earth",
+  "all locations",
+  "remote - all regions",
+  "remote (all regions)",
+  "international",
+  "remote international",
+  "remote - international",
 ];
 
 /** Phrases in title/description that prove geographic restriction */
@@ -92,9 +109,7 @@ const RESTRICTION_PHRASES = [
   "permanent resident required",
   "within the us", "within the uk", "within the eu",
   "united states only", "united kingdom only",
-  "us timezone required", "us time zone required",
   "americas only", "emea only", "apac only",
-  "est only", "pst only", "cet only", "gmt only",
   "north america only", "europe only",
 ];
 
@@ -209,6 +224,8 @@ function hasGeographicQualifier(location: string): boolean {
     if (!part) continue;
     // Skip the "remote" part itself
     if (part === "remote") continue;
+    // Skip timezone references — timezone ≠ location restriction
+    if (/time\s*zone|timezone|\btz\b|hours|working\s*hours/i.test(part)) continue;
 
     // Check if this part matches a known country/region
     for (const term of COUNTRY_AND_REGION_TERMS) {
