@@ -44,6 +44,14 @@ export default function Header() {
             })}
           </nav>
 
+          <a
+            href="https://buymeacoffee.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-auto text-[12px] text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors"
+          >
+            buy me a pizza
+          </a>
         </div>
       </div>
       <div className="h-px bg-[var(--color-border)]" />
