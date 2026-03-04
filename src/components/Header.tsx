@@ -45,7 +45,7 @@ export default function Header() {
           </nav>
 
           <a
-            href="https://buymeacoffee.com"
+            href="https://buymeacoffee.com/staycozy"
             target="_blank"
             rel="noopener noreferrer"
             className="ml-auto text-[12px] text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors"
