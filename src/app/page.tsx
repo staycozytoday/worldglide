@@ -31,7 +31,7 @@ export default async function HomePage() {
           wherever feels like home.
         </p>
         <p className="text-[10px] text-[var(--color-text-muted)] mt-4 font-mono leading-relaxed max-w-[360px]">
-          0.1% of remote jobs are actually remote. based on {stats ? `${jobs.length}/${stats.rawJobsScanned.toLocaleString()}` : "—"} scanned. this is la crème de la crème topped with le jus du jus. avec plaisir.
+          0.1% of remote jobs are actually worldwide remote. based on {stats ? `${jobs.length}/${stats.rawJobsScanned.toLocaleString()}` : "—"} scanned. this is la crème de la crème topped with le jus du jus. you're welcome.
         </p>
       </section>
 

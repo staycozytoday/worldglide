@@ -9,8 +9,26 @@ const GLITCH_CHARS = [
 
 const DOT = "●";
 
+const THEMES = ["light", "dark", "purple", "orange"] as const;
+type Theme = (typeof THEMES)[number];
+
+const THEME_META: Record<Theme, { colorScheme: string; themeColor: string; dotColor: string }> = {
+  light:  { colorScheme: "light", themeColor: "#e3e5e8", dotColor: "#e85d2c" },
+  dark:   { colorScheme: "dark",  themeColor: "#161618", dotColor: "#e85d2c" },
+  purple: { colorScheme: "dark",  themeColor: "#6432FF", dotColor: "#FF6432" },
+  orange: { colorScheme: "dark",  themeColor: "#FF6432", dotColor: "#6432FF" },
+};
+
+function applyTheme(theme: Theme) {
+  const { colorScheme, themeColor } = THEME_META[theme];
+  document.documentElement.setAttribute("data-theme", theme);
+  document.documentElement.style.colorScheme = colorScheme;
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.setAttribute("content", themeColor);
+}
+
 export default function ThemeToggle() {
-  const [dark, setDark] = useState(false);
+  const [theme, setTheme] = useState<Theme>("light");
   const [mounted, setMounted] = useState(false);
   const [display, setDisplay] = useState(DOT);
   const [glitching, setGlitching] = useState(false);
@@ -18,12 +36,29 @@ export default function ThemeToggle() {
 
   useEffect(() => {
     setMounted(true);
-    const stored = localStorage.getItem("theme");
-    const isDark =
-      stored === "dark" ||
-      (!stored && window.matchMedia("(prefers-color-scheme: dark)").matches);
-    setDark(isDark);
-    document.documentElement.setAttribute("data-theme", isDark ? "dark" : "light");
+    const stored = localStorage.getItem("theme") as Theme | null;
+    let initial: Theme;
+    if (stored && THEMES.includes(stored)) {
+      initial = stored;
+    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      initial = "dark";
+    } else {
+      initial = "light";
+    }
+    setTheme(initial);
+    applyTheme(initial);
+
+    // follow system changes in real time (only when no manual override)
+    const mq = window.matchMedia("(prefers-color-scheme: dark)");
+    const onChange = (e: MediaQueryListEvent) => {
+      if (!localStorage.getItem("theme")) {
+        const next: Theme = e.matches ? "dark" : "light";
+        setTheme(next);
+        applyTheme(next);
+      }
+    };
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
   }, []);
 
   const startGlitch = useCallback(() => {
@@ -41,24 +76,29 @@ export default function ThemeToggle() {
     setGlitching(false);
   }, []);
 
+  // cycle: light → dark → purple → orange → light
   const toggle = useCallback(() => {
-    const next = !dark;
-    setDark(next);
-    document.documentElement.setAttribute("data-theme", next ? "dark" : "light");
-    localStorage.setItem("theme", next ? "dark" : "light");
-  }, [dark]);
+    const i = THEMES.indexOf(theme);
+    const next = THEMES[(i + 1) % THEMES.length];
+    setTheme(next);
+    applyTheme(next);
+    localStorage.setItem("theme", next);
+  }, [theme]);
 
   if (!mounted) return <span className="w-[16px] inline-block" />;
+
+  const { dotColor } = THEME_META[theme];
 
   return (
     <button
       onClick={toggle}
       onMouseEnter={startGlitch}
       onMouseLeave={stopGlitch}
-      className={`w-[16px] text-center text-[14px] font-mono leading-none text-[#e85d2c] hover:text-[#FF6432] transition-colors duration-500 cursor-pointer select-none ${
+      style={{ color: dotColor }}
+      className={`w-[16px] text-center text-[14px] font-mono leading-none cursor-pointer select-none ${
         glitching ? "animate-glitch-jitter" : ""
       }`}
-      aria-label={dark ? "switch to light mode" : "switch to dark mode"}
+      aria-label={`switch theme (current: ${theme})`}
     >
       {display}
     </button>

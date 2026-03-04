@@ -9,9 +9,9 @@ export default function JobCard({ job, index = 0 }: { job: Job; index?: number }
       href={job.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="group block"
+      className="block job-row"
     >
-      <div className="h-[40px] border-b border-[var(--color-border)] flex items-center gap-6 transition-colors group-hover:bg-[var(--color-bg-hover)] -mx-2 px-4">
+      <div className="h-[40px] border-b border-[var(--color-border)] flex items-center gap-6 -mx-2 px-4">
         {/* age */}
         <span className="text-[11px] text-[var(--color-text-muted)] w-[32px] shrink-0 hidden sm:block font-mono">
           {formatRelativeTime(job.postedAt)}
