@@ -1,16 +1,18 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import JobList from "@/components/JobList";
-import { getJobs, getStats } from "@/lib/storage";
+import { getJobs, getStats, ScrapeStats } from "@/lib/storage";
+import { Job } from "@/lib/types";
 
-export const dynamic = "force-dynamic";
+export default function HomePage() {
+  const [jobs, setJobs] = useState<Job[]>([]);
+  const [stats, setStats] = useState<ScrapeStats | null>(null);
 
-export default async function HomePage() {
-  const allJobs = await getJobs();
-  const jobs = allJobs.filter((j) => !j.expired);
-  const stats = await getStats();
-
-  const passRate = stats && stats.rawJobsScanned > 0
-    ? ((stats.worldwideJobs / stats.rawJobsScanned) * 100).toFixed(1)
-    : null;
+  useEffect(() => {
+    getJobs().then((all) => setJobs(all.filter((j) => !j.expired)));
+    getStats().then(setStats);
+  }, []);
 
   return (
     <div className="max-w-[960px] mx-auto px-8">

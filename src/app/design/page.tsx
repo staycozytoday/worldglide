@@ -1,16 +1,10 @@
+"use client";
+
 import JobList from "@/components/JobList";
-import { getJobsByCategory } from "@/lib/storage";
-import type { Metadata } from "next";
+import { useJobsByCategory } from "@/lib/useJobs";
 
-export const metadata: Metadata = {
-  title: "worldglide ･ design",
-  description: "100% remote design jobs. no country restrictions. worldwide.",
-};
-
-export const dynamic = "force-dynamic";
-
-export default async function DesignPage() {
-  const { jobs, totalCount } = await getJobsByCategory("design");
+export default function DesignPage() {
+  const { jobs, totalCount } = useJobsByCategory("design");
 
   return (
     <div className="max-w-[960px] mx-auto px-8 pt-16 md:pt-24 pb-24">

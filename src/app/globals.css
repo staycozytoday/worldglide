@@ -11,6 +11,9 @@
   --color-text-muted: #828690;
   --color-border: #c5c8ce;
   --color-accent: #FF6432;
+  --shock-a: 255, 100, 50;
+  --shock-b: 100, 50, 255;
+  --shock-c: 200, 80, 160;
 }
 
 /* dark mode — system preference fallback (no JS) */
@@ -22,6 +25,9 @@
     --color-text-muted: #6b6e76;
     --color-border: #2a2b2f;
     --color-accent: #FF6432;
+    --shock-a: 255, 100, 50;
+    --shock-b: 100, 50, 255;
+    --shock-c: 200, 80, 160;
   }
 }
 
@@ -33,6 +39,9 @@ html[data-theme="dark"] {
   --color-text-muted: #6b6e76;
   --color-border: #2a2b2f;
   --color-accent: #FF6432;
+  --shock-a: 255, 100, 50;
+  --shock-b: 100, 50, 255;
+  --shock-c: 200, 80, 160;
 }
 
 html[data-theme="light"] {
@@ -42,6 +51,9 @@ html[data-theme="light"] {
   --color-text-muted: #828690;
   --color-border: #c5c8ce;
   --color-accent: #FF6432;
+  --shock-a: 255, 100, 50;
+  --shock-b: 100, 50, 255;
+  --shock-c: 200, 80, 160;
 }
 
 html[data-theme="purple"] {
@@ -51,6 +63,9 @@ html[data-theme="purple"] {
   --color-text-muted: #b0a0dd;
   --color-border: #7c52ff;
   --color-accent: #FF6432;
+  --shock-a: 20, 15, 40;
+  --shock-b: 255, 255, 255;
+  --shock-c: 160, 140, 200;
 }
 
 html[data-theme="orange"] {
@@ -60,6 +75,9 @@ html[data-theme="orange"] {
   --color-text-muted: #ddb0a0;
   --color-border: #ff7c52;
   --color-accent: #6432FF;
+  --shock-a: 40, 15, 10;
+  --shock-b: 255, 255, 255;
+  --shock-c: 200, 160, 140;
 }
 
 /* base */
@@ -177,6 +195,31 @@ html {
 
 .animate-glitch-jitter {
   animation: glitch-jitter 0.3s steps(1) infinite;
+}
+
+/* electric shock — chromatic aberration ripple from theme toggle dot
+   --shock-a/b/c are RGB channels set per theme:
+   light/dark → red/cyan/yellow (colorful on neutral)
+   purple/orange → dark/white/gray (neutral on colorful) */
+@keyframes electric-shock {
+  0%   { transform: none; text-shadow: none; opacity: 1; clip-path: none; filter: none; }
+  5%   { transform: translate(-6px, 2px) skewX(-8deg) scaleX(1.02); text-shadow: 6px 0 rgba(var(--shock-a), 0.9), -6px 0 rgba(var(--shock-b), 0.9); opacity: 0; clip-path: inset(0 0 60% 0); filter: blur(1px); }
+  10%  { transform: translate(8px, -3px) skewX(6deg) scaleY(0.98); text-shadow: -5px 2px rgba(var(--shock-a), 0.8), 5px -2px rgba(var(--shock-b), 0.8); opacity: 1; clip-path: inset(40% 0 0 0); filter: none; }
+  15%  { transform: translate(-4px, 1px) skewX(-10deg); text-shadow: 8px 0 rgba(var(--shock-a), 1), -8px 0 rgba(var(--shock-b), 1); opacity: 0.2; clip-path: inset(15% 0 45% 0); filter: blur(2px); }
+  20%  { transform: translate(5px, -2px) skewX(4deg) scaleX(0.97); text-shadow: -4px 1px rgba(var(--shock-a), 0.6), 4px -1px rgba(var(--shock-b), 0.6); opacity: 0.9; clip-path: none; filter: none; }
+  28%  { transform: translate(-7px, 3px) skewX(-6deg); text-shadow: 5px 0 rgba(var(--shock-a), 0.7), -5px 0 rgba(var(--shock-b), 0.7), 0 3px rgba(var(--shock-c), 0.4); opacity: 0.1; clip-path: inset(0 0 70% 0); }
+  35%  { transform: translate(3px, 0) skewX(3deg); text-shadow: -3px 0 rgba(var(--shock-a), 0.5), 3px 0 rgba(var(--shock-b), 0.5); opacity: 1; clip-path: inset(50% 0 10% 0); }
+  42%  { transform: translate(-2px, -1px) skewX(-2deg); text-shadow: 4px 0 rgba(var(--shock-a), 0.8), -4px 0 rgba(var(--shock-b), 0.8); opacity: 0.3; clip-path: none; filter: blur(1px); }
+  50%  { transform: translate(4px, 2px) skewX(5deg); text-shadow: -6px 0 rgba(var(--shock-a), 0.6), 6px 0 rgba(var(--shock-b), 0.6); opacity: 0.7; clip-path: inset(20% 0 30% 0); filter: none; }
+  60%  { transform: translate(-3px, 1px) skewX(-3deg); text-shadow: 3px 0 rgba(var(--shock-a), 0.4), -3px 0 rgba(var(--shock-b), 0.4); opacity: 0.5; }
+  72%  { transform: translate(2px, -1px); text-shadow: -2px 0 rgba(var(--shock-a), 0.3), 2px 0 rgba(var(--shock-b), 0.3); opacity: 0.85; }
+  85%  { transform: translate(-1px, 0); text-shadow: 1px 0 rgba(var(--shock-a), 0.1), -1px 0 rgba(var(--shock-b), 0.1); opacity: 0.95; }
+  100% { transform: none; text-shadow: none; opacity: 1; clip-path: none; filter: none; }
+}
+
+.shocking {
+  animation: electric-shock 400ms steps(1) var(--shock-delay, 0ms) 1 both !important;
+  will-change: transform, opacity, filter;
 }
 
 /* job row — instant hover, no transitions */

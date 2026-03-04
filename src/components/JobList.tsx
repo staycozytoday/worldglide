@@ -23,7 +23,7 @@ const COLS: { key: SortColumn; label: string; cls: string; right?: boolean }[] =
 
 export default function JobList({ jobs, title, subtitle, totalCount }: JobListProps) {
   const [sortCol, setSortCol] = useState<SortColumn>("age");
-  const [sortDir, setSortDir] = useState<SortDir>("asc");
+  const [sortDir, setSortDir] = useState<SortDir>("desc");
 
   if (jobs.length === 0) {
     return (
@@ -48,7 +48,7 @@ export default function JobList({ jobs, title, subtitle, totalCount }: JobListPr
     const dir = sortDir === "asc" ? 1 : -1;
     switch (sortCol) {
       case "age":
-        return dir * (new Date(b.postedAt).getTime() - new Date(a.postedAt).getTime());
+        return dir * (new Date(a.postedAt).getTime() - new Date(b.postedAt).getTime());
       case "title":
         return dir * a.title.localeCompare(b.title);
       case "company":

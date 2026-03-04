@@ -33,6 +33,7 @@ export default function ThemeToggle() {
   const [display, setDisplay] = useState(DOT);
   const [glitching, setGlitching] = useState(false);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const btnRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     setMounted(true);
@@ -76,6 +77,43 @@ export default function ThemeToggle() {
     setGlitching(false);
   }, []);
 
+  // electric shock ripple — spreads outward from the dot
+  const shockRipple = useCallback(() => {
+    const btn = btnRef.current;
+    if (!btn) return;
+    const rect = btn.getBoundingClientRect();
+    const ox = rect.left + rect.width / 2;
+    const oy = rect.top + rect.height / 2;
+
+    // find all visible text-bearing elements
+    const els = document.querySelectorAll<HTMLElement>(
+      "h1,h2,h3,p,a,span,button,td,th,li,nav,label"
+    );
+    const maxDist = Math.hypot(window.innerWidth, window.innerHeight);
+
+    els.forEach((el) => {
+      const r = el.getBoundingClientRect();
+      if (r.width === 0 || r.height === 0) return;
+      const ex = r.left + r.width / 2;
+      const ey = r.top + r.height / 2;
+      const dist = Math.hypot(ex - ox, ey - oy);
+      const delay = Math.round((dist / maxDist) * 600); // 0-600ms spread
+      el.style.setProperty("--shock-delay", `${delay}ms`);
+      el.classList.remove("shocking");
+      // force reflow so re-adding the class restarts the animation
+      void el.offsetWidth;
+      el.classList.add("shocking");
+    });
+
+    // cleanup after all animations finish
+    setTimeout(() => {
+      els.forEach((el) => {
+        el.classList.remove("shocking");
+        el.style.removeProperty("--shock-delay");
+      });
+    }, 1100);
+  }, []);
+
   // cycle: light → dark → purple → orange → light
   const toggle = useCallback(() => {
     const i = THEMES.indexOf(theme);
@@ -83,7 +121,8 @@ export default function ThemeToggle() {
     setTheme(next);
     applyTheme(next);
     localStorage.setItem("theme", next);
-  }, [theme]);
+    shockRipple();
+  }, [theme, shockRipple]);
 
   if (!mounted) return <span className="w-[16px] inline-block" />;
 
@@ -91,6 +130,7 @@ export default function ThemeToggle() {
 
   return (
     <button
+      ref={btnRef}
       onClick={toggle}
       onMouseEnter={startGlitch}
       onMouseLeave={stopGlitch}

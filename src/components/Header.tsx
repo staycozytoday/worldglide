@@ -44,17 +44,6 @@ export default function Header() {
             })}
           </nav>
 
-          <Link
-            href="/submit"
-            className={`text-[12px] ml-auto transition-colors ${
-              pathname.startsWith("/submit")
-                ? "text-[var(--color-text)]"
-                : "text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
-            }`}
-          >
-            post a job
-          </Link>
-
         </div>
       </div>
       <div className="h-px bg-[var(--color-border)]" />
