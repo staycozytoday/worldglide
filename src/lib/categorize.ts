@@ -4,9 +4,14 @@ import { Category } from "./types";
  * Categorize a job into Engineering, Product, or Design.
  * Returns null if the job doesn't belong to any of the three.
  *
- * Philosophy: PRECISION over recall. Better to miss a job than
- * to show a Sales role under Engineering. Every match must be
- * unambiguous. Title is the primary signal.
+ * Philosophy: The craft trio — engineers, designers, and product people
+ * are the minimum to build something from nothing. That's the focus.
+ *
+ * Engineering = builds it (software, infra, security, IT, data eng)
+ * Design = shapes it (product, UX, UI, visual, research, motion)
+ * Product = steers it (PM, TPM, data analyst, tech writer, strategy)
+ *
+ * PRECISION over recall. Better to miss a job than miscategorize.
  */
 
 /**
@@ -43,11 +48,10 @@ const EXCLUDE_TITLE_PATTERNS = [
   /\boperations\s+(manager|director|lead|analyst)/i,
   // Generic leadership that isn't clearly eng/design/product
   /\bchief\s+(revenue|marketing|people|financial|operating)\b/i,
-  // Data roles that are analytics/BI, not engineering
-  /\b(data\s+analyst|business\s+analyst|business\s+intelligence)\b/i,
-  /\banalyst\b(?!.*engineer)/i,
+  // BI/business analyst (not data analyst — that's product)
+  /\b(business\s+analyst|business\s+intelligence)\b/i,
   // Copywriting, editorial (not design)
-  /\b(copywriter|editor|editorial|journalist|technical\s+writer)\b/i,
+  /\b(copywriter|editor|editorial|journalist)\b/i,
   // Community
   /community\s+(manager|lead|director)/i,
   // Training / education
@@ -90,6 +94,21 @@ const ENGINEERING_PATTERNS = [
   /\b(staff|senior|principal|lead)\s+engineer\b/i,
   /\b(staff|senior|principal)\s+mobile\s+engineer\b/i,
   /\b(dev|developer)\b(?!.*ops.*manager)(?!.*rel)/i,
+  // Security / InfoSec (non-engineer titles still craft roles)
+  /\b(security|infosec|information\s+security)\s+(analyst|specialist|consultant|researcher|architect|director|lead|head|manager)\b/i,
+  /\bcybersecurity\b/i,
+  /\bpentester\b/i,
+  /\bpenetration\s+test/i,
+  /\bthreat\s+(analyst|researcher|engineer|hunter)/i,
+  /\bsoc\s+analyst/i,
+  /\bsecurity\s+operations/i,
+  /\bciso\b/i,
+  // IT / Sysadmin (infrastructure craft)
+  /\b(system|network|database)\s+admin/i,
+  /\bsysadmin\b/i,
+  /\bit\s+(engineer|manager|director|lead|specialist|administrator)\b/i,
+  /\bnetwork\s+engineer/i,
+  /\bdatabase\s+(engineer|administrator|architect)\b/i,
 ];
 
 /** Design: must clearly be a design role */
@@ -139,6 +158,14 @@ const PRODUCT_PATTERNS = [
   /\bproject\s+manager\b/i,
   /\bscrum\s+master\b/i,
   /\bagile\s+coach\b/i,
+  // Data analyst (understands the product through data)
+  /\bdata\s+analyst/i,
+  /\banalytics\s+(manager|lead|director|engineer)\b/i,
+  // Technical writer (documents the product)
+  /\btechnical\s+writer\b/i,
+  /\btechnical\s+writing/i,
+  /\bdocumentation\s+(engineer|manager|lead|specialist)\b/i,
+  /\bapi\s+writer\b/i,
 ];
 
 export function categorizeJob(

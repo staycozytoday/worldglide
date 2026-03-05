@@ -1836,6 +1836,37 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Neon",                domain: "neon.tech",             careersUrl: "https://neon.tech/careers",                 atsType: "lever", atsSlug: "neon" },
 
   // ════════════════════════════════════════════════
+  // BATCH 4 — crypto/web3/devtools discovery (2026-03-05)
+  // ════════════════════════════════════════════════
+
+  // ashby — crypto/web3
+  { name: "Trust Wallet",       domain: "trustwallet.com",       careersUrl: "https://trustwallet.com/careers",           atsType: "ashby", atsSlug: "trust-wallet" },
+  { name: "Monad Foundation",   domain: "monad.xyz",             careersUrl: "https://monad.xyz/careers",                 atsType: "ashby", atsSlug: "monad.foundation" },
+  { name: "P2P.org",            domain: "p2p.org",               careersUrl: "https://p2p.org/careers",                   atsType: "ashby", atsSlug: "p2p.org" },
+  { name: "0x",                 domain: "0x.org",                careersUrl: "https://0x.org/careers",                    atsType: "ashby", atsSlug: "0x" },
+  { name: "Allium",             domain: "allium.so",             careersUrl: "https://allium.so/careers",                 atsType: "ashby", atsSlug: "allium" },
+  { name: "CoinTracker",        domain: "cointracker.io",        careersUrl: "https://www.cointracker.io/careers",        atsType: "ashby", atsSlug: "cointracker" },
+  { name: "Partisia Blockchain", domain: "partisiablockchain.com", careersUrl: "https://partisiablockchain.com/careers",  atsType: "ashby", atsSlug: "partisiablockchain" },
+  { name: "Sky Mavis",          domain: "skymavis.com",          careersUrl: "https://skymavis.com/careers",              atsType: "ashby", atsSlug: "skymavis" },
+  // ashby — devtools/security
+  { name: "Horizon3 AI",        domain: "horizon3.ai",           careersUrl: "https://horizon3.ai/careers",               atsType: "ashby", atsSlug: "horizon3ai" },
+  { name: "SF Compute",         domain: "sfcompute.com",         careersUrl: "https://sfcompute.com/careers",             atsType: "ashby", atsSlug: "sfcompute" },
+
+  // lever — crypto/web3
+  { name: "Animoca Brands",     domain: "animocabrands.com",     careersUrl: "https://www.animocabrands.com/careers",     atsType: "lever", atsSlug: "animocabrands" },
+  { name: "CertiK",             domain: "certik.com",            careersUrl: "https://www.certik.com/careers",            atsType: "lever", atsSlug: "certik" },
+  { name: "Crypto.com",         domain: "crypto.com",            careersUrl: "https://crypto.com/careers",                atsType: "lever", atsSlug: "crypto" },
+  { name: "Sei Labs",           domain: "sei.io",                careersUrl: "https://sei.io/careers",                    atsType: "lever", atsSlug: "SeiLabs" },
+  { name: "Merkle Science",     domain: "merklescience.com",     careersUrl: "https://merklescience.com/careers",         atsType: "lever", atsSlug: "merklescience" },
+  { name: "InfStones",          domain: "infstones.com",         careersUrl: "https://infstones.com/careers",             atsType: "lever", atsSlug: "infstones" },
+  { name: "Veda Tech Labs",     domain: "veda.tech",             careersUrl: "https://veda.tech/careers",                 atsType: "lever", atsSlug: "vedatechlabs" },
+  { name: "Crypto Banter",      domain: "cryptobanter.com",      careersUrl: "https://cryptobanter.com/careers",          atsType: "lever", atsSlug: "crypto-banter" },
+
+  // workable — new
+  { name: "GetResponse",        domain: "getresponse.com",       careersUrl: "https://www.getresponse.com/about-us/careers", atsType: "workable", atsSlug: "getresponse" },
+  { name: "Driftrock",          domain: "driftrock.com",         careersUrl: "https://www.driftrock.com/careers",         atsType: "workable", atsSlug: "driftrock" },
+
+  // ════════════════════════════════════════════════
   // SMARTRECRUITERS — api.smartrecruiters.com/v1/companies/{slug}/postings
   // ════════════════════════════════════════════════
   { name: "Wise",                domain: "wise.com",              careersUrl: "https://www.wise.jobs/",                    atsType: "smartrecruiters", atsSlug: "wise" },

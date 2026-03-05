@@ -14,16 +14,19 @@ interface JobListProps {
   totalCount?: number;
 }
 
+const PAGE_SIZE = 25;
+
 const COLS: { key: SortColumn; label: string; cls: string; right?: boolean }[] = [
   { key: "age", label: "age", cls: "w-[32px] shrink-0 hidden sm:block text-left" },
   { key: "title", label: "title", cls: "flex-1 text-left" },
-  { key: "company", label: "company", cls: "w-[160px] shrink-0 text-right", right: true },
+  { key: "company", label: "company", cls: "w-[100px] sm:w-[160px] shrink-0 text-right", right: true },
   { key: "type", label: "type", cls: "w-[80px] shrink-0 hidden lg:block text-right", right: true },
 ];
 
 export default function JobList({ jobs, title, subtitle, totalCount }: JobListProps) {
   const [sortCol, setSortCol] = useState<SortColumn>("age");
   const [sortDir, setSortDir] = useState<SortDir>("desc");
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
   if (jobs.length === 0) {
     return (
@@ -60,6 +63,8 @@ export default function JobList({ jobs, title, subtitle, totalCount }: JobListPr
     }
   });
 
+  const displayed = sorted.slice(0, visibleCount);
+  const remaining = sorted.length - visibleCount;
   const openCount = jobs.length;
 
   return (
@@ -81,14 +86,16 @@ export default function JobList({ jobs, title, subtitle, totalCount }: JobListPr
       )}
 
       {/* column headers — clickable to sort */}
-      <div className="h-[32px] flex items-center gap-6 -mx-2 px-4 border-b border-[var(--color-border)] text-[10px] font-mono">
+      <div className="h-[32px] flex items-center gap-2 sm:gap-6 -mx-2 px-4 border-b border-[var(--color-border)] text-[10px] font-mono">
+        {/* spacer for ❋ column */}
+        <span className="w-[20px] shrink-0" />
         {COLS.map(({ key, label, cls, right }) => (
           <button
             key={key}
             onClick={() => handleSort(key)}
             className={`${cls} text-[var(--color-text-muted)]`}
           >
-            <span className="hover:text-[var(--color-text)] transition-colors">
+            <span className="hover:text-[var(--color-text)]">
               {sortCol === key && right && (
                 <span className="mr-0.5">
                   {sortDir === "asc" ? "↑" : "↓"}
@@ -107,10 +114,20 @@ export default function JobList({ jobs, title, subtitle, totalCount }: JobListPr
 
       {/* jobs */}
       <div>
-        {sorted.map((job, i) => (
+        {displayed.map((job, i) => (
           <JobCard key={job.id} job={job} index={i} />
         ))}
       </div>
+
+      {/* view more */}
+      {remaining > 0 && (
+        <button
+          onClick={() => setVisibleCount((v) => v + PAGE_SIZE)}
+          className="w-full h-[40px] border-b border-[var(--color-border)] flex items-center justify-center -mx-2 px-4 text-[11px] font-mono text-[var(--color-text-muted)] hover:text-[var(--color-text)] hover:bg-[var(--color-bg-hover)]"
+        >
+          view {remaining} more
+        </button>
+      )}
     </div>
   );
 }
