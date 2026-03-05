@@ -64,18 +64,10 @@ export default function ThemeToggle() {
   const startGlitch = useCallback(() => {
     if (glitching) return;
     setGlitching(true);
-    // brief glitch burst → settle on +
-    let ticks = 0;
+    // glitch burst while hovering — cycles through shapes
     intervalRef.current = setInterval(() => {
-      ticks++;
-      if (ticks < 4) {
-        setDisplay(GLITCH_CHARS[Math.floor(Math.random() * GLITCH_CHARS.length)]);
-      } else {
-        setDisplay("+");
-        if (intervalRef.current) clearInterval(intervalRef.current);
-        intervalRef.current = null;
-      }
-    }, 40);
+      setDisplay(GLITCH_CHARS[Math.floor(Math.random() * GLITCH_CHARS.length)]);
+    }, 80);
   }, [glitching]);
 
   const stopGlitch = useCallback(() => {

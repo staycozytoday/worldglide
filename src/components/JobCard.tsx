@@ -3,14 +3,17 @@
 import { Job } from "@/lib/types";
 import { formatRelativeTime, isNew } from "@/lib/utils";
 import { useVisited } from "@/lib/useVisited";
+import { useFavorites } from "@/lib/useFavorites";
 
 export default function JobCard({ job, index = 0 }: { job: Job; index?: number }) {
   const fresh = isNew(job.postedAt);
   const { isVisited, markVisited } = useVisited();
+  const { isFavorited, toggleFavorite } = useFavorites();
   const visited = isVisited(job.company);
+  const faved = isFavorited(job.id);
 
   return (
-    <div className={`flex items-center h-[40px] border-b border-[var(--color-border)] -mx-2 px-4 gap-2 sm:gap-6 job-row-wrap ${visited ? "opacity-95" : ""}`}>
+    <div className={`group relative flex items-center h-[40px] border-b border-[var(--color-border)] -mx-2 px-4 gap-2 sm:gap-6 job-row-wrap ${visited ? "opacity-[0.98]" : ""}`}>
       {/* age */}
       <span className="text-[11px] text-[var(--color-text-muted)] w-[32px] shrink-0 hidden sm:block font-mono">
         {formatRelativeTime(job.postedAt)}
@@ -29,7 +32,7 @@ export default function JobCard({ job, index = 0 }: { job: Job; index?: number }
         </span>
         {fresh && (
           <span
-            className="shrink-0 w-1.5 h-1.5 bg-[var(--color-accent)] rounded-full animate-rec"
+            className={`shrink-0 w-1.5 h-1.5 bg-[var(--color-accent)] rounded-full animate-rec ${visited ? "opacity-40" : ""}`}
             style={{
               animationDuration: `${3 + (index % 5) * 0.7}s`,
               animationDelay: `${((index * 1.7) % 4).toFixed(1)}s`,
@@ -55,6 +58,19 @@ export default function JobCard({ job, index = 0 }: { job: Job; index?: number }
       <span className="text-[11px] text-[var(--color-text-muted)] w-[80px] shrink-0 hidden lg:block font-mono text-right">
         {job.category}
       </span>
+
+      {/* fav — absolute overlay, no layout impact */}
+      <button
+        onClick={(e) => { e.preventDefault(); e.stopPropagation(); toggleFavorite(job.id); }}
+        className={`absolute left-[52px] top-1/2 -translate-x-1/2 -translate-y-1/2 text-[14px] hidden sm:block ${
+          faved
+            ? "text-[var(--color-text)]"
+            : "text-[var(--color-text-muted)] opacity-0 group-hover:opacity-100"
+        }`}
+        aria-label={faved ? "remove from favorites" : "add to favorites"}
+      >
+        ❋
+      </button>
     </div>
   );
 }

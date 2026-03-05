@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { GeistSans } from "geist/font/sans";
 import { IBM_Plex_Mono } from "next/font/google";
+import { Suspense } from "react";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
 
 const ibmPlexMono = IBM_Plex_Mono({
   subsets: ["latin"],
@@ -40,7 +40,7 @@ export default function RootLayout({
             __html: `(function(){try{var t=localStorage.getItem('theme');var th=t&&['light','dark','purple','orange'].indexOf(t)>-1?t:'light';document.documentElement.setAttribute('data-theme',th);document.documentElement.style.colorScheme=th==='light'?'light':'dark';var c={light:'#e3e5e8',dark:'#161618',purple:'#6432FF',orange:'#FF6432'};var m=document.querySelector('meta[name=theme-color]');if(m)m.setAttribute('content',c[th]||'#e3e5e8')}catch(e){}})()`,
           }}
         />
-<Script
+        <Script
           defer
           src="https://cloud.umami.is/script.js"
           data-website-id="a62a4be2-bff2-46c3-8a19-7c16bd5b8d1b"
@@ -48,8 +48,10 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col font-sans">
-        <Header />
-        <main className="flex-1">{children}</main>
+        <Suspense>
+          <Header />
+          <main className="flex-1">{children}</main>
+        </Suspense>
         <Footer />
       </body>
     </html>

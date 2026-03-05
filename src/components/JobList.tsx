@@ -3,6 +3,8 @@
 import { Job } from "@/lib/types";
 import JobCard from "./JobCard";
 import { useState } from "react";
+import { useSearchParams } from "next/navigation";
+import { useFavorites } from "@/lib/useFavorites";
 
 type SortColumn = "age" | "title" | "company" | "type";
 type SortDir = "asc" | "desc";
@@ -27,16 +29,12 @@ export default function JobList({ jobs, title, subtitle, totalCount }: JobListPr
   const [sortCol, setSortCol] = useState<SortColumn>("age");
   const [sortDir, setSortDir] = useState<SortDir>("desc");
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+  const searchParams = useSearchParams();
+  const { isFavorited } = useFavorites();
+  const savedActive = searchParams.get("saved") === "1";
 
-  if (jobs.length === 0) {
-    return (
-      <div className="py-24">
-        <p className="text-[12px] text-[var(--color-text-muted)]">
-          no jobs found. check back tomorrow.
-        </p>
-      </div>
-    );
-  }
+  const filtered = savedActive ? jobs.filter((j) => isFavorited(j.id)) : jobs;
+  const isEmpty = filtered.length === 0;
 
   function handleSort(col: SortColumn) {
     if (sortCol === col) {
@@ -47,7 +45,7 @@ export default function JobList({ jobs, title, subtitle, totalCount }: JobListPr
     }
   }
 
-  const sorted = [...jobs].sort((a, b) => {
+  const sorted = [...filtered].sort((a, b) => {
     const dir = sortDir === "asc" ? 1 : -1;
     switch (sortCol) {
       case "age":
@@ -65,7 +63,7 @@ export default function JobList({ jobs, title, subtitle, totalCount }: JobListPr
 
   const displayed = sorted.slice(0, visibleCount);
   const remaining = sorted.length - visibleCount;
-  const openCount = jobs.length;
+  const openCount = filtered.length;
 
   return (
     <div className="overflow-hidden">
@@ -85,42 +83,50 @@ export default function JobList({ jobs, title, subtitle, totalCount }: JobListPr
         </div>
       )}
 
-      {/* column headers — clickable to sort */}
-      <div className="h-[32px] flex items-center gap-2 sm:gap-6 -mx-2 px-4 border-b border-[var(--color-border)] text-[10px] font-mono">
-        {COLS.map(({ key, label, cls, right }) => (
-          <button
-            key={key}
-            onClick={() => handleSort(key)}
-            className={`${cls} text-[var(--color-text-muted)]`}
-          >
-            <span className="hover:text-[var(--color-text)]">
-              {sortCol === key && right && (
-                <span className="mr-0.5">{sortDir === "asc" ? "↑" : "↓"}</span>
-              )}
-              {label}
-              {sortCol === key && !right && (
-                <span className="ml-0.5">{sortDir === "asc" ? "↑" : "↓"}</span>
-              )}
-            </span>
-          </button>
-        ))}
-      </div>
+      {isEmpty ? (
+        <p className="text-[12px] text-[var(--color-text-muted)]">
+          {savedActive ? "no favorite jobs yet. click ❋ next to the job name to save it." : "no jobs found. check back tomorrow."}
+        </p>
+      ) : (
+        <>
+          {/* column headers — clickable to sort */}
+          <div className="h-[32px] flex items-center gap-2 sm:gap-6 -mx-2 px-4 border-b border-[var(--color-border)] text-[10px] font-mono">
+            {COLS.map(({ key, label, cls, right }) => (
+              <button
+                key={key}
+                onClick={() => handleSort(key)}
+                className={`${cls} text-[var(--color-text-muted)]`}
+              >
+                <span className="hover:text-[var(--color-text)]">
+                  {sortCol === key && right && (
+                    <span className="mr-0.5">{sortDir === "asc" ? "↑" : "↓"}</span>
+                  )}
+                  {label}
+                  {sortCol === key && !right && (
+                    <span className="ml-0.5">{sortDir === "asc" ? "↑" : "↓"}</span>
+                  )}
+                </span>
+              </button>
+            ))}
+          </div>
 
-      {/* jobs */}
-      <div>
-        {displayed.map((job, i) => (
-          <JobCard key={job.id} job={job} index={i} />
-        ))}
-      </div>
+          {/* jobs */}
+          <div>
+            {displayed.map((job, i) => (
+              <JobCard key={job.id} job={job} index={i} />
+            ))}
+          </div>
 
-      {/* view more */}
-      {remaining > 0 && (
-        <button
-          onClick={() => setVisibleCount((v) => v + PAGE_SIZE)}
-          className="w-full h-[40px] border-b border-[var(--color-border)] flex items-center justify-center -mx-2 px-4 text-[11px] font-mono text-[var(--color-text-muted)] hover:text-[var(--color-text)] job-row-wrap"
-        >
-          view {remaining} more
-        </button>
+          {/* view more */}
+          {remaining > 0 && (
+            <button
+              onClick={() => setVisibleCount((v) => v + PAGE_SIZE)}
+              className="w-full h-[40px] border-b border-[var(--color-border)] flex items-center justify-center text-[11px] font-mono text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
+            >
+              view {remaining} more
+            </button>
+          )}
+        </>
       )}
     </div>
   );

@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { usePathname, useSearchParams, useRouter } from "next/navigation";
+import { useState, useCallback } from "react";
 import ThemeToggle from "./ThemeToggle";
+import { useFavorites } from "@/lib/useFavorites";
 
 const NAV_ITEMS = [
   { label: "product", href: "/product" },
@@ -13,7 +14,22 @@ const NAV_ITEMS = [
 
 export default function Header() {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
+  const { count } = useFavorites();
+  const savedActive = searchParams.get("saved") === "1";
+
+  const toggleSaved = useCallback(() => {
+    const params = new URLSearchParams(searchParams.toString());
+    if (savedActive) {
+      params.delete("saved");
+    } else {
+      params.set("saved", "1");
+    }
+    const q = params.toString();
+    router.push(pathname + (q ? `?${q}` : ""));
+  }, [savedActive, searchParams, pathname, router]);
 
   const navLink = (item: { label: string; href: string }, mobile = false) => {
     const isActive = pathname.startsWith(item.href);
@@ -48,17 +64,23 @@ export default function Header() {
           {/* desktop nav — visible sm and up */}
           <nav className="hidden sm:flex items-center gap-6 ml-6">
             {NAV_ITEMS.map((item) => navLink(item))}
+            {count > 0 && (
+              <button
+                onClick={toggleSaved}
+                className="text-[12px] text-[var(--color-text)]"
+              >
+                ❋
+              </button>
+            )}
           </nav>
 
-          {/* buy me a pizza — desktop */}
-          <a
-            href="https://buymeacoffee.com/staycozy"
-            target="_blank"
-            rel="noopener noreferrer"
+          {/* post a job — desktop */}
+          <Link
+            href="/submit"
             className="ml-auto hidden sm:block text-[12px] text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
           >
-            buy me a pizza
-          </a>
+            post a job
+          </Link>
 
           {/* mobile menu toggle */}
           <button
@@ -76,15 +98,22 @@ export default function Header() {
         <div className="sm:hidden border-t border-[var(--color-border)] bg-[var(--color-bg)]">
           <nav className="max-w-[960px] mx-auto px-8 py-4 flex flex-col gap-4">
             {NAV_ITEMS.map((item) => navLink(item, true))}
+            {count > 0 && (
+              <button
+                onClick={() => { toggleSaved(); setMenuOpen(false); }}
+                className="text-[12px] text-left text-[var(--color-text)]"
+              >
+                ❋
+              </button>
+            )}
 
-            <a
-              href="https://buymeacoffee.com/staycozy"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/submit"
+              onClick={() => setMenuOpen(false)}
               className="text-[12px] text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
             >
-              buy me a pizza
-            </a>
+              post a job
+            </Link>
           </nav>
         </div>
       )}
