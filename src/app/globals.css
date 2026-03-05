@@ -235,10 +235,6 @@ html {
   transition: none;
 }
 
-/* favorite star — reveal on row hover unless already saved */
-.job-row-wrap .fav-icon-hidden { color: transparent; }
-.job-row-wrap:hover .fav-icon-hidden { color: var(--color-border); }
-
 /* expired */
 .job-expired {
   opacity: 0.4;

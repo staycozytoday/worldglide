@@ -13,7 +13,7 @@ export default function JobCard({ job, index = 0 }: { job: Job; index?: number }
   const saved = isFavorited(job.id);
 
   return (
-    <div className="flex items-center h-[40px] border-b border-[var(--color-border)] -mx-2 px-4 gap-2 sm:gap-6 job-row-wrap">
+    <div className={`flex items-center h-[40px] border-b border-[var(--color-border)] -mx-2 px-4 gap-2 sm:gap-6 job-row-wrap ${visited ? "opacity-50" : ""}`}>
       {/* favorite toggle */}
       <button
         onClick={(e) => {
@@ -33,7 +33,7 @@ export default function JobCard({ job, index = 0 }: { job: Job; index?: number }
           className={`text-[13px] leading-none ${
             saved
               ? "text-[var(--color-fav)]"
-              : "fav-icon-hidden"
+              : "text-white/30"
           }`}
         >
           ❋
@@ -67,17 +67,14 @@ export default function JobCard({ job, index = 0 }: { job: Job; index?: number }
         )}
       </a>
 
-      {/* company + visited dot */}
+      {/* company */}
       <a
         href={job.url}
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => markVisited(job.company)}
-        className="w-[100px] sm:w-[160px] shrink-0 flex items-center justify-end gap-1.5 h-full"
+        className="w-[100px] sm:w-[160px] shrink-0 flex items-center justify-end h-full"
       >
-        {visited && (
-          <span className="shrink-0 w-1 h-1 rounded-full bg-[var(--color-text-muted)] opacity-40" />
-        )}
         <span className={`text-[13px] truncate ${visited ? "text-[var(--color-text-muted)]" : "text-[var(--color-text)]"}`}>
           {job.company}
         </span>
