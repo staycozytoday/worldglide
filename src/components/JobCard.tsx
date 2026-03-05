@@ -3,43 +3,14 @@
 import { Job } from "@/lib/types";
 import { formatRelativeTime, isNew } from "@/lib/utils";
 import { useVisited } from "@/lib/useVisited";
-import { useFavorites } from "@/lib/useFavorites";
 
 export default function JobCard({ job, index = 0 }: { job: Job; index?: number }) {
   const fresh = isNew(job.postedAt);
   const { isVisited, markVisited } = useVisited();
-  const { isFavorited, toggleFavorite } = useFavorites();
   const visited = isVisited(job.company);
-  const saved = isFavorited(job.id);
 
   return (
-    <div className={`flex items-center h-[40px] border-b border-[var(--color-border)] -mx-2 px-4 gap-2 sm:gap-6 job-row-wrap ${visited ? "opacity-50" : ""}`}>
-      {/* favorite toggle */}
-      <button
-        onClick={(e) => {
-          e.preventDefault();
-          e.stopPropagation();
-          toggleFavorite(job.id, {
-            title: job.title,
-            company: job.company,
-            url: job.url,
-            category: job.category,
-          });
-        }}
-        className="shrink-0 w-[20px] h-[40px] flex items-center justify-center"
-        aria-label={saved ? "unsave job" : "save job"}
-      >
-        <span
-          className={`text-[13px] leading-none ${
-            saved
-              ? "text-[var(--color-fav)]"
-              : "text-white/30"
-          }`}
-        >
-          ❋
-        </span>
-      </button>
-
+    <div className={`flex items-center h-[40px] border-b border-[var(--color-border)] -mx-2 px-4 gap-2 sm:gap-6 job-row-wrap ${visited ? "opacity-95" : ""}`}>
       {/* age */}
       <span className="text-[11px] text-[var(--color-text-muted)] w-[32px] shrink-0 hidden sm:block font-mono">
         {formatRelativeTime(job.postedAt)}
@@ -73,7 +44,7 @@ export default function JobCard({ job, index = 0 }: { job: Job; index?: number }
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => markVisited(job.company)}
-        className="w-[100px] sm:w-[160px] shrink-0 flex items-center justify-end h-full"
+        className="w-[96px] sm:w-[160px] shrink-0 flex items-center justify-end h-full"
       >
         <span className={`text-[13px] truncate ${visited ? "text-[var(--color-text-muted)]" : "text-[var(--color-text)]"}`}>
           {job.company}

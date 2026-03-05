@@ -19,7 +19,7 @@ const PAGE_SIZE = 25;
 const COLS: { key: SortColumn; label: string; cls: string; right?: boolean }[] = [
   { key: "age", label: "age", cls: "w-[32px] shrink-0 hidden sm:block text-left" },
   { key: "title", label: "title", cls: "flex-1 text-left" },
-  { key: "company", label: "company", cls: "w-[100px] sm:w-[160px] shrink-0 text-right", right: true },
+  { key: "company", label: "company", cls: "w-[96px] sm:w-[160px] shrink-0 text-right", right: true },
   { key: "type", label: "type", cls: "w-[80px] shrink-0 hidden lg:block text-right", right: true },
 ];
 
@@ -68,7 +68,7 @@ export default function JobList({ jobs, title, subtitle, totalCount }: JobListPr
   const openCount = jobs.length;
 
   return (
-    <div>
+    <div className="overflow-hidden">
       {title && (
         <div className="mb-16">
           <h1 className="text-[32px] md:text-[40px] font-medium tracking-tight leading-[1.1] text-[var(--color-text)]">
@@ -87,8 +87,6 @@ export default function JobList({ jobs, title, subtitle, totalCount }: JobListPr
 
       {/* column headers — clickable to sort */}
       <div className="h-[32px] flex items-center gap-2 sm:gap-6 -mx-2 px-4 border-b border-[var(--color-border)] text-[10px] font-mono">
-        {/* spacer for ❋ column */}
-        <span className="w-[20px] shrink-0" />
         {COLS.map(({ key, label, cls, right }) => (
           <button
             key={key}
@@ -97,15 +95,11 @@ export default function JobList({ jobs, title, subtitle, totalCount }: JobListPr
           >
             <span className="hover:text-[var(--color-text)]">
               {sortCol === key && right && (
-                <span className="mr-0.5">
-                  {sortDir === "asc" ? "↑" : "↓"}
-                </span>
+                <span className="mr-0.5">{sortDir === "asc" ? "↑" : "↓"}</span>
               )}
               {label}
               {sortCol === key && !right && (
-                <span className="ml-0.5">
-                  {sortDir === "asc" ? "↑" : "↓"}
-                </span>
+                <span className="ml-0.5">{sortDir === "asc" ? "↑" : "↓"}</span>
               )}
             </span>
           </button>
@@ -123,7 +117,7 @@ export default function JobList({ jobs, title, subtitle, totalCount }: JobListPr
       {remaining > 0 && (
         <button
           onClick={() => setVisibleCount((v) => v + PAGE_SIZE)}
-          className="w-full h-[40px] border-b border-[var(--color-border)] flex items-center justify-center -mx-2 px-4 text-[11px] font-mono text-[var(--color-text-muted)] hover:text-[var(--color-text)] hover:bg-[var(--color-bg-hover)]"
+          className="w-full h-[40px] border-b border-[var(--color-border)] flex items-center justify-center -mx-2 px-4 text-[11px] font-mono text-[var(--color-text-muted)] hover:text-[var(--color-text)] job-row-wrap"
         >
           view {remaining} more
         </button>
