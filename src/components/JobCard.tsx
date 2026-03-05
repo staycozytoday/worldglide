@@ -32,7 +32,7 @@ export default function JobCard({ job, index = 0 }: { job: Job; index?: number }
         <span
           className={`text-[13px] leading-none ${
             saved
-              ? "text-[var(--color-accent)]"
+              ? "text-[var(--color-fav)]"
               : "fav-icon-hidden"
           }`}
         >

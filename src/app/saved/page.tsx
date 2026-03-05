@@ -54,7 +54,7 @@ export default function SavedPage() {
                 className="shrink-0 w-[20px] h-[40px] flex items-center justify-center"
                 aria-label="unsave job"
               >
-                <span className="text-[13px] leading-none text-[var(--color-accent)]">
+                <span className="text-[13px] leading-none text-[var(--color-fav)]">
                   ❋
                 </span>
               </button>

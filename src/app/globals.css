@@ -11,6 +11,7 @@
   --color-text-muted: #828690;
   --color-border: #c5c8ce;
   --color-accent: #FF6432;
+  --color-fav: #6432FF;
   --shock-a: 255, 100, 50;
   --shock-b: 100, 50, 255;
   --shock-c: 200, 80, 160;
@@ -25,6 +26,7 @@
     --color-text-muted: #6b6e76;
     --color-border: #2a2b2f;
     --color-accent: #FF6432;
+    --color-fav: #6432FF;
     --shock-a: 255, 100, 50;
     --shock-b: 100, 50, 255;
     --shock-c: 200, 80, 160;
@@ -39,6 +41,7 @@ html[data-theme="dark"] {
   --color-text-muted: #6b6e76;
   --color-border: #2a2b2f;
   --color-accent: #FF6432;
+  --color-fav: #6432FF;
   --shock-a: 255, 100, 50;
   --shock-b: 100, 50, 255;
   --shock-c: 200, 80, 160;
@@ -51,6 +54,7 @@ html[data-theme="light"] {
   --color-text-muted: #828690;
   --color-border: #c5c8ce;
   --color-accent: #FF6432;
+  --color-fav: #6432FF;
   --shock-a: 255, 100, 50;
   --shock-b: 100, 50, 255;
   --shock-c: 200, 80, 160;
@@ -63,6 +67,7 @@ html[data-theme="purple"] {
   --color-text-muted: #b0a0dd;
   --color-border: #7c52ff;
   --color-accent: #FF6432;
+  --color-fav: #f0ecff;
   --shock-a: 20, 15, 40;
   --shock-b: 255, 255, 255;
   --shock-c: 160, 140, 200;
@@ -75,6 +80,7 @@ html[data-theme="orange"] {
   --color-text-muted: #ddb0a0;
   --color-border: #ff7c52;
   --color-accent: #6432FF;
+  --color-fav: #6432FF;
   --shock-a: 40, 15, 10;
   --shock-b: 255, 255, 255;
   --shock-c: 200, 160, 140;
