@@ -182,7 +182,7 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   // ════════════════════════════════════════════════
   { name: "Superside", domain: "superside.com", careersUrl: "https://www.superside.com/careers", atsType: "lever", atsSlug: "superside" },
   { name: "Kraken", domain: "kraken.com", careersUrl: "https://www.kraken.com/careers", atsType: "lever", atsSlug: "kraken" },
-  { name: "Plaid", domain: "plaid.com", careersUrl: "https://plaid.com/careers/", atsType: "lever", atsSlug: "plaid" },
+  // { name: "Plaid", domain: "plaid.com", careersUrl: "https://plaid.com/careers/", atsType: "lever", atsSlug: "plaid" }, // migrated to Ashby (2026-03)
   { name: "Metabase", domain: "metabase.com", careersUrl: "https://www.metabase.com/jobs/", atsType: "lever", atsSlug: "metabase" },
   { name: "Palantir", domain: "palantir.com", careersUrl: "https://www.palantir.com/careers/", atsType: "lever", atsSlug: "palantir" },
   { name: "WHOOP", domain: "whoop.com", careersUrl: "https://www.whoop.com/careers/", atsType: "lever", atsSlug: "whoop" },
@@ -211,7 +211,7 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   // ════════════════════════════════════════════════
 
   // dev platforms & infra
-  { name: "Vercel", domain: "vercel.com", careersUrl: "https://vercel.com/careers", atsType: "ashby", atsSlug: "vercel" },
+  // { name: "Vercel", domain: "vercel.com", careersUrl: "https://vercel.com/careers", atsType: "ashby", atsSlug: "vercel" }, // migrated to Greenhouse (2026-03)
   { name: "Supabase", domain: "supabase.com", careersUrl: "https://supabase.com/careers", atsType: "ashby", atsSlug: "supabase" },
   { name: "Render", domain: "render.com", careersUrl: "https://render.com/careers", atsType: "ashby", atsSlug: "render" },
   { name: "Railway", domain: "railway.app", careersUrl: "https://railway.app/careers", atsType: "ashby", atsSlug: "railway" },
@@ -1811,6 +1811,44 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Syntax",              domain: "syntax.com",            careersUrl: "https://jobs.lever.co/syntax",              atsType: "lever", atsSlug: "syntax" },
   { name: "Tag",                 domain: "tag.com",               careersUrl: "https://jobs.lever.co/tag",                 atsType: "lever", atsSlug: "tag" },
   { name: "Token",               domain: "token.com",             careersUrl: "https://jobs.lever.co/token",               atsType: "lever", atsSlug: "token" },
+
+  // ── BATCH 3 (2026-03-05) — new companies ──────────
+
+  // greenhouse — new
+  { name: "Vercel",              domain: "vercel.com",            careersUrl: "https://vercel.com/careers",                atsType: "greenhouse", atsSlug: "vercel" },
+  { name: "DataCamp",            domain: "datacamp.com",          careersUrl: "https://www.datacamp.com/careers",          atsType: "greenhouse", atsSlug: "datacamp" },
+  { name: "Cobo",                domain: "cobo.com",              careersUrl: "https://www.cobo.com/careers",              atsType: "greenhouse", atsSlug: "cobo" },
+  { name: "Copper.co",           domain: "copper.co",             careersUrl: "https://copper.co/careers",                 atsType: "greenhouse", atsSlug: "copperco" },
+  { name: "Ghost",               domain: "ghost.org",             careersUrl: "https://ghost.org/about/",                  atsType: "greenhouse", atsSlug: "ghost" },
+  { name: "Paystack",            domain: "paystack.com",          careersUrl: "https://paystack.com/careers",              atsType: "greenhouse", atsSlug: "paystack" },
+  { name: "Knack",               domain: "knack.com",             careersUrl: "https://www.knack.com/careers",             atsType: "greenhouse", atsSlug: "knack" },
+
+  // ashby — new
+  { name: "Plaid",               domain: "plaid.com",             careersUrl: "https://plaid.com/careers/",                atsType: "ashby", atsSlug: "plaid" },
+  { name: "Roboflow",            domain: "roboflow.com",          careersUrl: "https://roboflow.com/careers",              atsType: "ashby", atsSlug: "roboflow" },
+  { name: "Fleek",               domain: "fleek.xyz",             careersUrl: "https://fleek.xyz/careers",                 atsType: "ashby", atsSlug: "fleek" },
+  { name: "AKASA",               domain: "akasa.com",             careersUrl: "https://www.akasa.com/careers",             atsType: "ashby", atsSlug: "akasa" },
+  { name: "Bunny.net",           domain: "bunny.net",             careersUrl: "https://bunny.net/careers",                 atsType: "ashby", atsSlug: "bunny" },
+  { name: "Fathom",              domain: "fathom.video",          careersUrl: "https://fathom.video/careers",              atsType: "ashby", atsSlug: "fathom" },
+  { name: "Pyth Network",        domain: "pyth.network",          careersUrl: "https://pyth.network/careers",              atsType: "ashby", atsSlug: "pythnetwork" },
+
+  // lever — new
+  { name: "Neon",                domain: "neon.tech",             careersUrl: "https://neon.tech/careers",                 atsType: "lever", atsSlug: "neon" },
+
+  // ════════════════════════════════════════════════
+  // SMARTRECRUITERS — api.smartrecruiters.com/v1/companies/{slug}/postings
+  // ════════════════════════════════════════════════
+  { name: "Wise",                domain: "wise.com",              careersUrl: "https://www.wise.jobs/",                    atsType: "smartrecruiters", atsSlug: "wise" },
+  { name: "Canva",               domain: "canva.com",             careersUrl: "https://www.canva.com/careers/",            atsType: "smartrecruiters", atsSlug: "canva" },
+  { name: "Visa",                domain: "visa.com",              careersUrl: "https://usa.visa.com/careers.html",         atsType: "smartrecruiters", atsSlug: "visa" },
+  { name: "CERN",                domain: "home.cern",             careersUrl: "https://careers.cern/",                     atsType: "smartrecruiters", atsSlug: "cern" },
+  { name: "DocuSign",            domain: "docusign.com",          careersUrl: "https://www.docusign.com/careers",          atsType: "smartrecruiters", atsSlug: "docusign" },
+  { name: "SmartRecruiters",     domain: "smartrecruiters.com",   careersUrl: "https://www.smartrecruiters.com/careers",   atsType: "smartrecruiters", atsSlug: "smartrecruiters" },
+
+  // ════════════════════════════════════════════════
+  // WORKABLE — apply.workable.com/api/v1/widget/accounts/{slug}
+  // ════════════════════════════════════════════════
+  { name: "Hugging Face",        domain: "huggingface.co",        careersUrl: "https://huggingface.co/jobs",               atsType: "workable", atsSlug: "huggingface" },
 ];
 
 /** number of companies we actually scrape (excludes custom) */

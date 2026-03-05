@@ -41,9 +41,8 @@ export default function ThemeToggle() {
     let initial: Theme;
     if (stored && THEMES.includes(stored)) {
       initial = stored;
-    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      initial = "dark";
     } else {
+      // default to light (gray) for first-time visitors regardless of system preference
       initial = "light";
     }
     setTheme(initial);

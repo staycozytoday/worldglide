@@ -37,7 +37,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#e3e5e8" />
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('theme');var th=t&&['light','dark','purple','orange'].indexOf(t)>-1?t:(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',th);document.documentElement.style.colorScheme=th==='light'?'light':'dark';var c={light:'#e3e5e8',dark:'#161618',purple:'#6432FF',orange:'#FF6432'};var m=document.querySelector('meta[name=theme-color]');if(m)m.setAttribute('content',c[th]||'#e3e5e8')}catch(e){}})()`,
+            __html: `(function(){try{var t=localStorage.getItem('theme');var th=t&&['light','dark','purple','orange'].indexOf(t)>-1?t:'light';document.documentElement.setAttribute('data-theme',th);document.documentElement.style.colorScheme=th==='light'?'light':'dark';var c={light:'#e3e5e8',dark:'#161618',purple:'#6432FF',orange:'#FF6432'};var m=document.querySelector('meta[name=theme-color]');if(m)m.setAttribute('content',c[th]||'#e3e5e8')}catch(e){}})()`,
           }}
         />
 <Script

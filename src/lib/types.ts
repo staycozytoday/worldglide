@@ -5,6 +5,8 @@ export type Source =
   | "lever"
   | "ashby"
   | "gem"
+  | "smartrecruiters"
+  | "workable"
   | "user-submitted";
 
 export interface Job {
@@ -41,7 +43,7 @@ export interface RemoteCompany {
   name: string;
   domain: string; // e.g. "gitlab.com" — used for logo via logo.clearbit.com
   careersUrl: string;
-  atsType?: "greenhouse" | "lever" | "ashby" | "gem" | "custom";
+  atsType?: "greenhouse" | "lever" | "ashby" | "gem" | "smartrecruiters" | "workable" | "custom";
   atsSlug?: string; // e.g. "gitlab" for boards.greenhouse.io/gitlab
 }
 
