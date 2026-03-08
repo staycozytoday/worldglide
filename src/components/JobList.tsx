@@ -121,7 +121,7 @@ export default function JobList({ jobs, title, subtitle, totalCount }: JobListPr
           {remaining > 0 && (
             <button
               onClick={() => setVisibleCount((v) => v + PAGE_SIZE)}
-              className="w-full h-[40px] border-b border-[var(--color-border)] flex items-center justify-center text-[11px] font-mono text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
+              className="w-full h-[40px] border-b border-[var(--color-border)] flex items-center justify-center text-[11px] font-mono text-[var(--color-text-muted)] hover:text-[var(--color-text)] cursor-pointer job-row-wrap"
             >
               view {remaining} more
             </button>
