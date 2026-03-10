@@ -5,6 +5,9 @@
  * A job must PROVE it's worldwide. If there's any doubt, reject it.
  * "Remote" alone is not enough — "Remote, US" is US-only.
  * Only jobs with no geographic qualifiers pass.
+ *
+ * This is the single most important file in the codebase.
+ * One false positive = broken trust. Be aggressive with rejections.
  */
 
 export interface FilterableJob {
@@ -19,31 +22,105 @@ export interface FilterableJob {
 
 /**
  * Countries/regions that, when paired with "Remote", mean restricted.
- * If location is "Remote, {ANYTHING HERE}" → it's restricted.
+ * Comprehensive list — every real country that shows up in job listings.
  */
 const COUNTRY_AND_REGION_TERMS = [
-  // Countries
+  // ── Major English-speaking ────────────────────────────────────
   "us", "usa", "u.s.", "u.s.a.", "united states", "america",
   "uk", "u.k.", "united kingdom", "britain", "england", "scotland", "wales",
-  "canada", "australia", "india", "germany", "france", "spain",
-  "italy", "netherlands", "ireland", "israel", "brazil", "mexico",
-  "japan", "korea", "china", "singapore", "sweden", "norway",
-  "denmark", "finland", "poland", "portugal", "switzerland",
-  "austria", "belgium", "czech", "romania", "new zealand",
-  "south africa", "argentina", "chile", "colombia", "turkey",
-  "philippines", "indonesia", "thailand", "vietnam", "malaysia",
-  "taiwan", "hong kong",
-  // Regions
+  "canada", "australia", "new zealand",
+  "ireland", "south africa",
+  // ── Western Europe ────────────────────────────────────────────
+  "germany", "france", "spain", "italy", "netherlands", "belgium",
+  "switzerland", "austria", "portugal", "luxembourg", "liechtenstein",
+  "monaco", "andorra", "san marino",
+  // ── Northern Europe ───────────────────────────────────────────
+  "sweden", "norway", "denmark", "finland", "iceland",
+  // ── Central & Eastern Europe ──────────────────────────────────
+  "poland", "czech", "czechia", "czech republic", "slovakia",
+  "hungary", "romania", "bulgaria", "croatia", "slovenia",
+  "serbia", "bosnia", "montenegro", "albania", "north macedonia",
+  "macedonia", "kosovo", "moldova", "ukraine", "belarus",
+  "estonia", "latvia", "lithuania",
+  // ── Southern Europe / Mediterranean ───────────────────────────
+  "greece", "cyprus", "malta", "turkey", "türkiye",
+  // ── Middle East ───────────────────────────────────────────────
+  "israel", "uae", "united arab emirates", "dubai", "saudi arabia",
+  "qatar", "bahrain", "kuwait", "oman", "jordan", "lebanon",
+  // ── Asia ──────────────────────────────────────────────────────
+  "india", "japan", "korea", "south korea", "china", "singapore",
+  "taiwan", "hong kong", "philippines", "indonesia", "thailand",
+  "vietnam", "malaysia", "pakistan", "bangladesh", "sri lanka",
+  "myanmar", "cambodia", "nepal", "mongolia",
+  // ── Americas ──────────────────────────────────────────────────
+  "brazil", "mexico", "argentina", "chile", "colombia", "peru",
+  "venezuela", "ecuador", "uruguay", "paraguay", "bolivia",
+  "costa rica", "panama", "guatemala", "dominican republic",
+  "puerto rico", "jamaica", "trinidad", "cuba",
+  // ── Africa ────────────────────────────────────────────────────
+  "nigeria", "kenya", "egypt", "ghana", "ethiopia", "tanzania",
+  "uganda", "rwanda", "morocco", "tunisia", "senegal",
+  // ── Oceania ───────────────────────────────────────────────────
+  "fiji", "papua new guinea",
+
+  // ── Regions ───────────────────────────────────────────────────
   "emea", "apac", "americas", "north america", "south america",
   "latin america", "latam", "europe", "european union", "eu",
   "asia", "asia pacific", "middle east", "africa",
-  // US states (common in remote listings)
+  "central europe", "eastern europe", "western europe",
+  "nordics", "nordic", "baltics", "balkans",
+  "dach", "benelux", "cee", "mena", "anz",
+
+  // ── US states (most common in remote listings) ────────────────
   "california", "new york", "texas", "florida", "washington",
   "colorado", "massachusetts", "illinois", "georgia", "virginia",
   "oregon", "pennsylvania", "ohio", "michigan", "north carolina",
   "arizona", "maryland", "minnesota", "connecticut", "utah",
-  // Canadian provinces
+  "nevada", "tennessee", "missouri", "wisconsin", "indiana",
+  "new jersey", "south carolina", "iowa", "kentucky", "louisiana",
+  "alabama", "oklahoma", "nebraska", "kansas", "hawaii",
+  "new hampshire", "maine", "vermont", "rhode island",
+  "delaware", "montana", "idaho", "wyoming", "west virginia",
+  "north dakota", "south dakota", "alaska", "mississippi",
+  "arkansas", "new mexico",
+
+  // ── Canadian provinces ────────────────────────────────────────
   "ontario", "british columbia", "quebec", "alberta",
+  "manitoba", "saskatchewan", "nova scotia",
+
+  // ── Major cities that appear as location restrictions ─────────
+  "berlin", "london", "paris", "amsterdam", "dublin", "barcelona",
+  "madrid", "lisbon", "munich", "hamburg", "vienna", "zurich",
+  "stockholm", "oslo", "copenhagen", "helsinki",
+  "new york city", "nyc", "san francisco", "sf", "seattle",
+  "austin", "denver", "chicago", "boston", "los angeles", "la",
+  "toronto", "vancouver", "montreal", "sydney", "melbourne",
+  "tel aviv", "bangalore", "bengaluru", "hyderabad", "mumbai",
+  "tokyo", "seoul", "shanghai", "beijing", "são paulo", "sao paulo",
+  "mexico city", "buenos aires", "bogota", "bogotá", "lima",
+  "lagos", "nairobi", "cairo", "cape town",
+  "warsaw", "prague", "budapest", "bucharest", "sofia",
+  "zagreb", "belgrade", "tallinn", "riga", "vilnius",
+  "singapore city", "kuala lumpur", "bangkok", "jakarta", "manila",
+  "ho chi minh", "hanoi",
+];
+
+/**
+ * Structural patterns that ALWAYS indicate geographic restriction,
+ * regardless of what follows them.
+ * "Remote from Bulgaria" → restricted (doesn't matter that Bulgaria isn't a major country)
+ * "Based in Nigeria" → restricted
+ */
+const GEO_STRUCTURAL_PATTERNS = [
+  /\bremote\s+from\s+\S/,              // "Remote from Bulgaria"
+  /\bremote\s+in\s+\S/,               // "Remote in Germany"
+  /\bbased\s+in\s+\S/,                // "Based in UK"
+  /\blocated\s+in\s+\S/,              // "Located in US"
+  /\bresident\s+(?:of|in)\s+\S/,      // "Resident of Canada"
+  /\bwithin\s+\S/,                     // "Within EMEA"
+  /\bopen\s+to\s+candidates?\s+in\s/,  // "Open to candidates in EU"
+  /\beligible\s+(?:in|for)\s+\S/,     // "Eligible in US"
+  /\bwork\s+from\s+(?!anywhere|home)\S/, // "Work from Germany" (not "Work from anywhere/home")
 ];
 
 /**
@@ -75,12 +152,10 @@ const WORLDWIDE_EXACT_LOCATIONS = [
   "home-based - worldwide",
   "home-based worldwide",
   // Additional patterns seen in the wild
-  "remote - worldwide",
   "remote/worldwide",
   "remote | worldwide",
   "remote: worldwide",
   "remote, global",
-  "remote - global",
   "remote/global",
   "global remote",
   "global | remote",
@@ -96,9 +171,9 @@ const WORLDWIDE_EXACT_LOCATIONS = [
 /** Phrases in title/description that prove geographic restriction */
 const RESTRICTION_PHRASES = [
   "us only", "usa only", "uk only", "eu only", "europe only",
-  "canada only", "australia only",
-  "us-based", "uk-based", "eu-based",
-  "us based", "uk based", "eu based",
+  "canada only", "australia only", "india only",
+  "us-based", "uk-based", "eu-based", "india-based",
+  "us based", "uk based", "eu based", "india based",
   "must be located in", "must reside in", "must be based in",
   "residents only", "residents of",
   "authorized to work in", "work authorization required",
@@ -110,7 +185,10 @@ const RESTRICTION_PHRASES = [
   "within the us", "within the uk", "within the eu",
   "united states only", "united kingdom only",
   "americas only", "emea only", "apac only",
-  "north america only", "europe only",
+  "north america only",
+  "this role is limited to", "this position is limited to",
+  "restricted to candidates in", "available in select",
+  "open to applicants in",
 ];
 
 /**
@@ -134,23 +212,30 @@ export function isWorldwideRemote(job: FilterableJob): boolean {
     // Check if it exactly matches a known worldwide location
     if (WORLDWIDE_EXACT_LOCATIONS.includes(locLower)) {
       locationIsExactWorldwide = true;
-      // Strong signal — proceed to structural checks but skip description scanning
     } else {
-      // Location has qualifiers. Parse "Remote, X" or "Remote - X" patterns.
-      // If location contains "remote" but also contains a country/region → reject
+      // Check structural patterns first (catches "Remote from Bulgaria" etc.)
+      if (hasStructuralGeoPattern(locLower)) {
+        return false;
+      }
+
+      // Check country/region terms
       if (hasGeographicQualifier(locLower)) {
         return false;
       }
 
       // If location doesn't contain "remote" at all and isn't a worldwide keyword → reject
-      if (!locLower.includes("remote") && !locLower.includes("worldwide") && !locLower.includes("anywhere") && !locLower.includes("global")) {
+      if (
+        !locLower.includes("remote") &&
+        !locLower.includes("worldwide") &&
+        !locLower.includes("anywhere") &&
+        !locLower.includes("global")
+      ) {
         return false;
       }
     }
   }
 
   // --- STEP 2: Check structured location restrictions ---
-  // These are explicit machine-readable fields → always trust them
   if (job.locationRestrictions && job.locationRestrictions.length > 0) {
     return false;
   }
@@ -167,20 +252,20 @@ export function isWorldwideRemote(job: FilterableJob): boolean {
     }
   }
 
-  // --- STEP 3: Check title for country/region names ---
-  // Titles like "Backend Engineer, Canada" or "Senior Dev (US)" are restricted
+  // --- STEP 3: Check title for geographic restriction ---
   if (job.title) {
     const titleLower = job.title.toLowerCase();
+    // Check structural patterns in title (e.g. "PM (Remote from Bulgaria)")
+    if (hasStructuralGeoPattern(titleLower)) {
+      return false;
+    }
     if (hasGeographicQualifier(titleLower)) {
       return false;
     }
   }
 
   // --- STEP 4: Scan description for restriction phrases ---
-  // ONLY if the location field wasn't an exact worldwide match.
-  // When location is explicitly "Remote" or "Worldwide", generic legal boilerplate
-  // like "must reside in the country specified in posting" should NOT override it.
-  // The location field is the strongest signal we have.
+  // Skip when location is an exact worldwide match — legal boilerplate shouldn't override it
   if (!locationIsExactWorldwide) {
     const textToCheck = [job.title || "", job.description || ""]
       .join(" ")
@@ -213,6 +298,20 @@ export function isWorldwideRemote(job: FilterableJob): boolean {
   return true;
 }
 
+/**
+ * Check for structural patterns that always indicate geographic restriction.
+ * These work regardless of whether the country/city is in our list.
+ * "Remote from X" is ALWAYS a restriction, no matter what X is.
+ */
+function hasStructuralGeoPattern(text: string): boolean {
+  for (const pattern of GEO_STRUCTURAL_PATTERNS) {
+    if (pattern.test(text)) {
+      return true;
+    }
+  }
+  return false;
+}
+
 /** Check if a location string contains country or region qualifiers */
 function hasGeographicQualifier(location: string): boolean {
   // Split on common delimiters: comma, semicolon, dash, parentheses
@@ -222,26 +321,25 @@ function hasGeographicQualifier(location: string): boolean {
 
   for (const part of parts) {
     if (!part) continue;
-    // Skip the "remote" part itself
-    if (part === "remote") continue;
+    // Skip the "remote" and "fully remote" parts
+    if (part === "remote" || part === "fully remote") continue;
     // Skip timezone references — timezone ≠ location restriction
     if (/time\s*zone|timezone|\btz\b|hours|working\s*hours/i.test(part)) continue;
+    // Skip generic job-level qualifiers
+    if (/full\s*time|part\s*time|contract|freelance|hybrid/i.test(part)) continue;
 
-    // Check if this part matches a known country/region
+    // Check if this part matches a known country/region/city
     for (const term of COUNTRY_AND_REGION_TERMS) {
       if (part === term) {
-        // Exact match is always valid
         return true;
       }
       // For short terms (≤3 chars like "us", "uk", "eu"), require word boundary match
-      // to prevent "user" matching "us", "queue" matching "eu", etc.
       if (term.length <= 3) {
         const wordBoundaryRegex = new RegExp(`\\b${term}\\b`);
         if (wordBoundaryRegex.test(part)) {
           return true;
         }
       } else {
-        // Longer terms are safe for substring matching
         if (part.includes(term)) {
           return true;
         }
@@ -249,13 +347,22 @@ function hasGeographicQualifier(location: string): boolean {
     }
 
     // If the part is a standalone 2-letter code (likely country code like US, UK, DE)
-    if (/^[a-z]{2}$/.test(part) && part !== "no") {
+    // But exclude common job abbreviations: PM, QA, VP, HR, IT, AI, ML, UI, UX, BI, SE, RE, QE, DB
+    if (/^[a-z]{2}$/.test(part) && !JOB_ABBREVIATIONS.has(part)) {
       return true;
     }
   }
 
   return false;
 }
+
+/** Common 2-letter job abbreviations that are NOT country codes */
+const JOB_ABBREVIATIONS = new Set([
+  "pm", "qa", "vp", "hr", "it", "ai", "ml", "ui", "ux",
+  "bi", "se", "re", "qe", "db", "os", "dx", "cx", "gm",
+  "am", "sm", "em", "ic", "sr", "ab", "ad", "do", "go",
+  "id", "ii", "iv", "no", "or", "so", "to", "up",
+]);
 
 /** Check if a string is a worldwide keyword */
 function isWorldwideKeyword(text: string): boolean {
