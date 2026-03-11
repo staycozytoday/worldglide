@@ -191,17 +191,16 @@ const RESTRICTION_PHRASES = [
   "open to applicants in",
 ];
 
+export interface FilterResult {
+  pass: boolean;
+  reason: string;
+}
+
 /**
- * Returns true ONLY if the job is genuinely available worldwide.
- *
- * The logic:
- * 1. If location field exists, it must match a known worldwide pattern EXACTLY.
- *    "Remote" alone = worldwide. "Remote, US" = NOT worldwide.
- * 2. If location has any country/region qualifier after "Remote" → reject.
- * 3. If description/title contains restriction phrases → reject.
- * 4. If no location field at all, check description for worldwide signals.
+ * Analyzes whether a job is genuinely worldwide, returning the rejection reason.
+ * This is the core filter logic — `isWorldwideRemote` is a thin wrapper.
  */
-export function isWorldwideRemote(job: FilterableJob): boolean {
+export function analyzeWorldwideRemote(job: FilterableJob): FilterResult {
   const location = (job.location || "").trim();
   let locationIsExactWorldwide = false;
 
@@ -209,63 +208,55 @@ export function isWorldwideRemote(job: FilterableJob): boolean {
   if (location) {
     const locLower = location.toLowerCase().trim();
 
-    // Check if it exactly matches a known worldwide location
     if (WORLDWIDE_EXACT_LOCATIONS.includes(locLower)) {
       locationIsExactWorldwide = true;
     } else {
-      // Check structural patterns first (catches "Remote from Bulgaria" etc.)
       if (hasStructuralGeoPattern(locLower)) {
-        return false;
+        return { pass: false, reason: "structural_pattern_location" };
       }
-
-      // Check country/region terms
       if (hasGeographicQualifier(locLower)) {
-        return false;
+        return { pass: false, reason: "geo_qualifier_location" };
       }
-
-      // If location doesn't contain "remote" at all and isn't a worldwide keyword → reject
       if (
         !locLower.includes("remote") &&
         !locLower.includes("worldwide") &&
         !locLower.includes("anywhere") &&
         !locLower.includes("global")
       ) {
-        return false;
+        return { pass: false, reason: "no_remote_keyword" };
       }
     }
   }
 
   // --- STEP 2: Check structured location restrictions ---
   if (job.locationRestrictions && job.locationRestrictions.length > 0) {
-    return false;
+    return { pass: false, reason: "location_restrictions" };
   }
   if (job.candidateRequiredLocation) {
     const crl = job.candidateRequiredLocation.toLowerCase();
     if (!isWorldwideKeyword(crl)) {
-      return false;
+      return { pass: false, reason: "candidate_required_location" };
     }
   }
   if (job.jobGeo) {
     const geo = job.jobGeo.toLowerCase();
     if (!isWorldwideKeyword(geo)) {
-      return false;
+      return { pass: false, reason: "job_geo" };
     }
   }
 
   // --- STEP 3: Check title for geographic restriction ---
   if (job.title) {
     const titleLower = job.title.toLowerCase();
-    // Check structural patterns in title (e.g. "PM (Remote from Bulgaria)")
     if (hasStructuralGeoPattern(titleLower)) {
-      return false;
+      return { pass: false, reason: "structural_pattern_title" };
     }
     if (hasGeographicQualifier(titleLower)) {
-      return false;
+      return { pass: false, reason: "geo_qualifier_title" };
     }
   }
 
   // --- STEP 4: Scan description for restriction phrases ---
-  // Skip when location is an exact worldwide match — legal boilerplate shouldn't override it
   if (!locationIsExactWorldwide) {
     const textToCheck = [job.title || "", job.description || ""]
       .join(" ")
@@ -273,7 +264,7 @@ export function isWorldwideRemote(job: FilterableJob): boolean {
 
     for (const phrase of RESTRICTION_PHRASES) {
       if (textToCheck.includes(phrase)) {
-        return false;
+        return { pass: false, reason: "restriction_phrase" };
       }
     }
   }
@@ -291,11 +282,19 @@ export function isWorldwideRemote(job: FilterableJob): boolean {
       textToCheck.includes("no location requirement") ||
       textToCheck.includes("location independent");
     if (!hasWorldwideSignal) {
-      return false;
+      return { pass: false, reason: "no_worldwide_signal" };
     }
   }
 
-  return true;
+  return { pass: true, reason: "pass" };
+}
+
+/**
+ * Returns true ONLY if the job is genuinely available worldwide.
+ * Thin wrapper around analyzeWorldwideRemote for existing call sites.
+ */
+export function isWorldwideRemote(job: FilterableJob): boolean {
+  return analyzeWorldwideRemote(job).pass;
 }
 
 /**
