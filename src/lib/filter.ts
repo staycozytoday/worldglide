@@ -166,6 +166,16 @@ const WORLDWIDE_EXACT_LOCATIONS = [
   "international",
   "remote international",
   "remote - international",
+  // Flexible / distributed
+  "distributed",
+  "remote-first",
+  "remote first",
+  "remote / hq optional",
+  "remote, flexible",
+  "remote (flexible)",
+  "remote - flexible location",
+  "no office",
+  "home office",
 ];
 
 /** Phrases in title/description that prove geographic restriction */
@@ -280,7 +290,13 @@ export function analyzeWorldwideRemote(job: FilterableJob): FilterResult {
       textToCheck.includes("globally") ||
       textToCheck.includes("any location") ||
       textToCheck.includes("no location requirement") ||
-      textToCheck.includes("location independent");
+      textToCheck.includes("location independent") ||
+      textToCheck.includes("open to candidates globally") ||
+      textToCheck.includes("hire from anywhere") ||
+      textToCheck.includes("no geographic restriction") ||
+      textToCheck.includes("distributed team") ||
+      textToCheck.includes("remote friendly") ||
+      textToCheck.includes("across the globe");
     if (!hasWorldwideSignal) {
       return { pass: false, reason: "no_worldwide_signal" };
     }
