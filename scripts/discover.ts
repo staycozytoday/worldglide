@@ -1,30 +1,27 @@
 #!/usr/bin/env npx tsx
 /**
- * Company Discovery Script
+ * Discovery orchestrator — runs all sources, verifies candidates
+ * against ATS APIs, and outputs new companies ready to add.
  *
- * Probes Greenhouse, Lever, and Ashby APIs for each candidate company.
- * Outputs a CSV with ATS type, slug, job counts, and worldwide job counts.
+ * Pipeline: discover-sources → verify against ATS → report
  *
  * Usage: npx tsx scripts/discover.ts
+ * Output: scripts/output/discovered-new.csv + companies.ts snippet
  */
 
 import { writeFileSync, mkdirSync } from "fs";
-import { CANDIDATES, type Candidate } from "./candidates";
-
-// Import the existing filter to check worldwide jobs
+import { discoverAll, type DiscoveredCompany } from "./discover-sources";
 import { isWorldwideRemote, type FilterableJob } from "../src/lib/filter";
-
-// Import existing companies to detect duplicates
 import { REMOTE_COMPANIES } from "../src/lib/companies";
 
 // ─── Config ────────────────────────────────────────────────────────
 const BATCH_SIZE = 5;
-const BATCH_DELAY_MS = 600;
+const BATCH_DELAY_MS = 500;
 const REQUEST_TIMEOUT_MS = 10_000;
-const MAX_WORLDWIDE_SAMPLE = 10; // Check first N jobs for worldwide signal
+const MAX_WORLDWIDE_SAMPLE = 10;
 
 // ─── Types ─────────────────────────────────────────────────────────
-type ATSType = "greenhouse" | "lever" | "ashby";
+type ATSType = "greenhouse" | "lever" | "ashby" | "workable";
 
 interface DiscoveryResult {
   name: string;
@@ -35,54 +32,40 @@ interface DiscoveryResult {
   worldwideJobs: number;
   status: "NEW" | "SKIP_NO_WORLDWIDE" | "NO_ATS_FOUND" | "ALREADY_EXISTS";
   careersUrl: string;
+  source: string;
 }
 
 // ─── Slug Generation ───────────────────────────────────────────────
-function generateSlugs(candidate: Candidate): string[] {
+function generateSlugs(name: string, domain: string): string[] {
   const slugs = new Set<string>();
 
-  // From explicit hints
-  if (candidate.slugHints) {
-    for (const hint of candidate.slugHints) {
-      slugs.add(hint.toLowerCase());
-    }
-  }
-
-  // From domain (remove TLD)
-  const domainBase = candidate.domain.split(".")[0].toLowerCase();
+  const domainBase = domain.split(".")[0].toLowerCase();
   slugs.add(domainBase);
 
-  // From name: lowercase, various transforms
-  const nameLower = candidate.name.toLowerCase();
+  const nameLower = name.toLowerCase();
   const nameClean = nameLower.replace(/[^a-z0-9\s-]/g, "").trim();
-
-  // "Acme Corp" -> "acmecorp", "acme-corp", "acme"
   slugs.add(nameClean.replace(/\s+/g, ""));
   slugs.add(nameClean.replace(/\s+/g, "-"));
+
   const firstName = nameClean.split(/\s+/)[0];
-  if (firstName && firstName.length > 2) {
-    slugs.add(firstName);
-  }
+  if (firstName && firstName.length > 2) slugs.add(firstName);
 
-  // Handle ".io", ".ai" style companies: "fly.io" -> "flyio"
-  const domainNoTLD = candidate.domain.replace(/\./g, "").toLowerCase();
-  if (domainNoTLD !== domainBase) {
-    slugs.add(domainNoTLD);
-  }
+  // Handle ".io", ".ai" style companies
+  const domainNoTLD = domain.replace(/\./g, "").toLowerCase();
+  if (domainNoTLD !== domainBase) slugs.add(domainNoTLD);
 
-  return Array.from(slugs).filter((s) => s.length > 0);
+  if (nameClean.endsWith("labs")) slugs.add(nameClean.slice(0, -4).replace(/\s+/g, ""));
+
+  return [...slugs].filter(s => s.length >= 2);
 }
 
 // ─── ATS Probing ───────────────────────────────────────────────────
 
-async function fetchWithTimeout(
-  url: string,
-  timeoutMs: number
-): Promise<Response | null> {
+async function fetchWithTimeout(url: string, opts?: RequestInit): Promise<Response | null> {
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  const timer = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
   try {
-    const res = await fetch(url, { signal: controller.signal });
+    const res = await fetch(url, { ...opts, signal: controller.signal });
     clearTimeout(timer);
     return res;
   } catch {
@@ -100,294 +83,264 @@ interface ATSProbeResult {
 }
 
 async function probeGreenhouse(slug: string): Promise<ATSProbeResult | null> {
-  const url = `https://boards-api.greenhouse.io/v1/boards/${slug}/jobs?content=true`;
-  const res = await fetchWithTimeout(url, REQUEST_TIMEOUT_MS);
+  const res = await fetchWithTimeout(
+    `https://boards-api.greenhouse.io/v1/boards/${slug}/jobs?content=true`
+  );
   if (!res || !res.ok) return null;
-
   try {
     const data = await res.json();
     const jobs = data?.jobs;
     if (!Array.isArray(jobs) || jobs.length === 0) return null;
 
-    let worldwideCount = 0;
-    const sample = jobs.slice(0, MAX_WORLDWIDE_SAMPLE);
-    for (const job of sample) {
-      const filterable: FilterableJob = {
+    let ww = 0;
+    for (const job of jobs.slice(0, MAX_WORLDWIDE_SAMPLE)) {
+      const f: FilterableJob = {
         title: job.title || "",
         location: job.location?.name || "",
-        description: (job.content || "").substring(0, 500),
+        description: (job.content || "").replace(/<[^>]*>/g, " ").substring(0, 500),
       };
-      if (isWorldwideRemote(filterable)) {
-        worldwideCount++;
-      }
+      if (isWorldwideRemote(f)) ww++;
     }
-
-    // Extrapolate worldwide ratio to full list
-    const ratio = worldwideCount / sample.length;
-    const estimatedWorldwide = Math.round(ratio * jobs.length);
-
+    const ratio = ww / Math.min(jobs.length, MAX_WORLDWIDE_SAMPLE);
     return {
-      atsType: "greenhouse",
-      slug,
-      totalJobs: jobs.length,
-      worldwideJobs: estimatedWorldwide,
+      atsType: "greenhouse", slug, totalJobs: jobs.length,
+      worldwideJobs: Math.round(ratio * jobs.length),
       careersUrl: `https://boards.greenhouse.io/${slug}`,
     };
-  } catch {
-    return null;
-  }
+  } catch { return null; }
 }
 
 async function probeLever(slug: string): Promise<ATSProbeResult | null> {
-  const url = `https://api.lever.co/v0/postings/${slug}?mode=json`;
-  const res = await fetchWithTimeout(url, REQUEST_TIMEOUT_MS);
+  const res = await fetchWithTimeout(
+    `https://api.lever.co/v0/postings/${slug}?mode=json`
+  );
   if (!res || !res.ok) return null;
-
   try {
     const jobs = await res.json();
     if (!Array.isArray(jobs) || jobs.length === 0) return null;
 
-    let worldwideCount = 0;
-    const sample = jobs.slice(0, MAX_WORLDWIDE_SAMPLE);
-    for (const job of sample) {
-      const filterable: FilterableJob = {
+    let ww = 0;
+    for (const job of jobs.slice(0, MAX_WORLDWIDE_SAMPLE)) {
+      const f: FilterableJob = {
         title: job.text || "",
         location: job.categories?.location || "",
         description: (job.descriptionPlain || "").substring(0, 500),
       };
-      if (isWorldwideRemote(filterable)) {
-        worldwideCount++;
-      }
+      if (isWorldwideRemote(f)) ww++;
     }
-
-    const ratio = worldwideCount / sample.length;
-    const estimatedWorldwide = Math.round(ratio * jobs.length);
-
+    const ratio = ww / Math.min(jobs.length, MAX_WORLDWIDE_SAMPLE);
     return {
-      atsType: "lever",
-      slug,
-      totalJobs: jobs.length,
-      worldwideJobs: estimatedWorldwide,
+      atsType: "lever", slug, totalJobs: jobs.length,
+      worldwideJobs: Math.round(ratio * jobs.length),
       careersUrl: `https://jobs.lever.co/${slug}`,
     };
-  } catch {
-    return null;
-  }
+  } catch { return null; }
 }
 
 async function probeAshby(slug: string): Promise<ATSProbeResult | null> {
-  const url = `https://api.ashbyhq.com/posting-api/job-board/${slug}`;
-  const res = await fetchWithTimeout(url, REQUEST_TIMEOUT_MS);
+  const res = await fetchWithTimeout(
+    `https://api.ashbyhq.com/posting-api/job-board/${slug}`
+  );
   if (!res || !res.ok) return null;
-
   try {
     const data = await res.json();
     const jobs = data?.jobs;
     if (!Array.isArray(jobs) || jobs.length === 0) return null;
 
-    let worldwideCount = 0;
-    const sample = jobs.slice(0, MAX_WORLDWIDE_SAMPLE);
-    for (const job of sample) {
-      const locationParts: string[] = [];
-      if (job.location) locationParts.push(String(job.location));
+    let ww = 0;
+    for (const job of jobs.slice(0, MAX_WORLDWIDE_SAMPLE)) {
+      const locs: string[] = [];
+      if (job.location) locs.push(String(job.location));
       if (Array.isArray(job.secondaryLocations)) {
         for (const loc of job.secondaryLocations) {
-          if (typeof loc === "string") locationParts.push(loc);
+          if (typeof loc === "string") locs.push(loc);
         }
       }
-      const filterable: FilterableJob = {
+      const f: FilterableJob = {
         title: job.title || "",
-        location: locationParts.join(", "),
-        description: (job.descriptionHtml || "")
-          .replace(/<[^>]*>/g, "")
-          .substring(0, 500),
+        location: locs.join(", "),
+        description: (job.descriptionHtml || "").replace(/<[^>]*>/g, " ").substring(0, 500),
       };
-      if (isWorldwideRemote(filterable)) {
-        worldwideCount++;
-      }
+      if (isWorldwideRemote(f)) ww++;
     }
-
-    const ratio = worldwideCount / sample.length;
-    const estimatedWorldwide = Math.round(ratio * jobs.length);
-
+    const ratio = ww / Math.min(jobs.length, MAX_WORLDWIDE_SAMPLE);
     return {
-      atsType: "ashby",
-      slug,
-      totalJobs: jobs.length,
-      worldwideJobs: estimatedWorldwide,
+      atsType: "ashby", slug, totalJobs: jobs.length,
+      worldwideJobs: Math.round(ratio * jobs.length),
       careersUrl: `https://jobs.ashbyhq.com/${slug}`,
     };
-  } catch {
-    return null;
-  }
+  } catch { return null; }
+}
+
+async function probeWorkable(slug: string): Promise<ATSProbeResult | null> {
+  const res = await fetchWithTimeout(
+    `https://apply.workable.com/api/v3/accounts/${slug}/jobs`,
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ query: "", location: [], department: [], worktype: [], remote: [] }),
+    }
+  );
+  if (!res || !res.ok) return null;
+  try {
+    const data = await res.json();
+    const jobs = data?.results;
+    if (!Array.isArray(jobs) || jobs.length === 0) return null;
+
+    // Workable results don't include enough for worldwide check in listing
+    return {
+      atsType: "workable", slug, totalJobs: jobs.length,
+      worldwideJobs: 0, // conservative — unknown
+      careersUrl: `https://apply.workable.com/${slug}`,
+    };
+  } catch { return null; }
 }
 
 // ─── Main Discovery ────────────────────────────────────────────────
 
-async function discoverCompany(
-  candidate: Candidate
-): Promise<DiscoveryResult> {
-  // Check if already exists in current companies list
-  const existingDomains = new Set(REMOTE_COMPANIES.map((c) => c.domain));
-  if (existingDomains.has(candidate.domain)) {
+const existingDomains = new Set(REMOTE_COMPANIES.map(c => c.domain.toLowerCase()));
+const existingSlugs = new Set(
+  REMOTE_COMPANIES.map(c => c.atsSlug?.toLowerCase()).filter(Boolean)
+);
+
+async function discoverCompany(candidate: DiscoveredCompany): Promise<DiscoveryResult> {
+  if (existingDomains.has(candidate.domain.toLowerCase())) {
     return {
-      name: candidate.name,
-      domain: candidate.domain,
-      atsType: "",
-      atsSlug: "",
-      totalJobs: 0,
-      worldwideJobs: 0,
-      status: "ALREADY_EXISTS",
-      careersUrl: "",
+      name: candidate.name, domain: candidate.domain,
+      atsType: "", atsSlug: "", totalJobs: 0, worldwideJobs: 0,
+      status: "ALREADY_EXISTS", careersUrl: "", source: candidate.source,
     };
   }
 
-  const slugs = generateSlugs(candidate);
+  const slugs = generateSlugs(candidate.name, candidate.domain);
   let bestResult: ATSProbeResult | null = null;
 
-  // Try each slug against all 3 ATS platforms
   for (const slug of slugs) {
-    // Probe all 3 in parallel for each slug
-    const [gh, lv, ash] = await Promise.all([
+    if (existingSlugs.has(slug)) continue;
+
+    const [gh, lv, ash, wk] = await Promise.all([
       probeGreenhouse(slug),
       probeLever(slug),
       probeAshby(slug),
+      probeWorkable(slug),
     ]);
 
-    // Pick the one with most jobs (likely the real one)
-    const results = [gh, lv, ash].filter(Boolean) as ATSProbeResult[];
+    const results = [gh, lv, ash, wk].filter(Boolean) as ATSProbeResult[];
     for (const r of results) {
       if (!bestResult || r.totalJobs > bestResult.totalJobs) {
         bestResult = r;
       }
     }
 
-    // If we found something with jobs, stop trying more slugs
     if (bestResult && bestResult.totalJobs > 0) break;
   }
 
   if (!bestResult) {
     return {
-      name: candidate.name,
-      domain: candidate.domain,
-      atsType: "",
-      atsSlug: "",
-      totalJobs: 0,
-      worldwideJobs: 0,
-      status: "NO_ATS_FOUND",
-      careersUrl: "",
+      name: candidate.name, domain: candidate.domain,
+      atsType: "", atsSlug: "", totalJobs: 0, worldwideJobs: 0,
+      status: "NO_ATS_FOUND", careersUrl: "", source: candidate.source,
     };
   }
 
   return {
-    name: candidate.name,
-    domain: candidate.domain,
-    atsType: bestResult.atsType,
-    atsSlug: bestResult.slug,
-    totalJobs: bestResult.totalJobs,
-    worldwideJobs: bestResult.worldwideJobs,
+    name: candidate.name, domain: candidate.domain,
+    atsType: bestResult.atsType, atsSlug: bestResult.slug,
+    totalJobs: bestResult.totalJobs, worldwideJobs: bestResult.worldwideJobs,
     status: bestResult.worldwideJobs > 0 ? "NEW" : "SKIP_NO_WORLDWIDE",
-    careersUrl: bestResult.careersUrl,
+    careersUrl: bestResult.careersUrl, source: candidate.source,
   };
 }
 
-async function sleep(ms: number): Promise<void> {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
 async function main() {
-  console.log(`\nDiscovering ATS for ${CANDIDATES.length} candidates...\n`);
+  const startTime = Date.now();
 
+  // Step 1: Discover candidates from all sources
+  console.log("[orchestrator] step 1: discovering candidates from sources...");
+  const candidates = await discoverAll();
+
+  console.log(`[orchestrator] ${candidates.length} candidates to verify\n`);
+
+  // Step 2: Verify in batches
   const results: DiscoveryResult[] = [];
   let processed = 0;
 
-  // Process in batches
-  for (let i = 0; i < CANDIDATES.length; i += BATCH_SIZE) {
-    const batch = CANDIDATES.slice(i, i + BATCH_SIZE);
+  for (let i = 0; i < candidates.length; i += BATCH_SIZE) {
+    const batch = candidates.slice(i, i + BATCH_SIZE);
     const batchResults = await Promise.all(batch.map(discoverCompany));
     results.push(...batchResults);
-
     processed += batch.length;
 
-    // Progress log
-    const newCount = batchResults.filter((r) => r.status === "NEW").length;
-    const names = batch.map((c) => c.name).join(", ");
-    console.log(
-      `[${processed}/${CANDIDATES.length}] ${names} → ${newCount} new`
-    );
+    const newCount = batchResults.filter(r => r.status === "NEW").length;
+    if (processed % 50 === 0 || processed === candidates.length) {
+      const totalNew = results.filter(r => r.status === "NEW").length;
+      console.log(`[orchestrator] ${processed}/${candidates.length} verified (${totalNew} new found)`);
+    }
 
-    // Rate limit between batches
-    if (i + BATCH_SIZE < CANDIDATES.length) {
-      await sleep(BATCH_DELAY_MS);
+    if (i + BATCH_SIZE < candidates.length) {
+      await new Promise(r => setTimeout(r, BATCH_DELAY_MS));
     }
   }
 
-  // ─── Summary ───────────────────────────────────────────────────
-  const newOnes = results.filter((r) => r.status === "NEW");
-  const skipped = results.filter((r) => r.status === "SKIP_NO_WORLDWIDE");
-  const noAts = results.filter((r) => r.status === "NO_ATS_FOUND");
-  const existing = results.filter((r) => r.status === "ALREADY_EXISTS");
+  // ─── Report ───────────────────────────────────────────────────
+  const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+  const newOnes = results.filter(r => r.status === "NEW");
+  const skipped = results.filter(r => r.status === "SKIP_NO_WORLDWIDE");
+  const noAts = results.filter(r => r.status === "NO_ATS_FOUND");
+  const existing = results.filter(r => r.status === "ALREADY_EXISTS");
 
   console.log(`\n${"=".repeat(60)}`);
-  console.log(`DISCOVERY COMPLETE`);
+  console.log(`DISCOVERY COMPLETE (${elapsed}s)`);
   console.log(`${"=".repeat(60)}`);
   console.log(`NEW (has worldwide jobs):     ${newOnes.length}`);
-  console.log(`SKIP (no worldwide jobs):     ${skipped.length}`);
+  console.log(`SKIP (ATS found, no WW):      ${skipped.length}`);
   console.log(`NO ATS FOUND:                 ${noAts.length}`);
   console.log(`ALREADY EXISTS:               ${existing.length}`);
   console.log(`TOTAL:                        ${results.length}`);
 
   if (newOnes.length > 0) {
-    console.log(`\nNew companies by ATS:`);
-    const byAts = { greenhouse: 0, lever: 0, ashby: 0 };
-    for (const r of newOnes) {
-      if (r.atsType === "greenhouse") byAts.greenhouse++;
-      else if (r.atsType === "lever") byAts.lever++;
-      else if (r.atsType === "ashby") byAts.ashby++;
+    console.log(`\nBy ATS:`);
+    const byAts: Record<string, number> = {};
+    for (const r of newOnes) byAts[r.atsType] = (byAts[r.atsType] || 0) + 1;
+    for (const [ats, count] of Object.entries(byAts).sort((a, b) => b[1] - a[1])) {
+      console.log(`  ${ats}: ${count}`);
     }
-    console.log(`  Greenhouse: ${byAts.greenhouse}`);
-    console.log(`  Lever:      ${byAts.lever}`);
-    console.log(`  Ashby:      ${byAts.ashby}`);
 
-    console.log(`\nTop new companies by worldwide job count:`);
-    const sorted = [...newOnes].sort(
-      (a, b) => b.worldwideJobs - a.worldwideJobs
-    );
-    for (const r of sorted.slice(0, 20)) {
-      console.log(
-        `  ${r.name.padEnd(25)} ${r.atsType.padEnd(12)} ${String(r.worldwideJobs).padStart(3)} worldwide / ${r.totalJobs} total`
-      );
+    console.log(`\nTop 30 new companies by worldwide job count:`);
+    const sorted = [...newOnes].sort((a, b) => b.worldwideJobs - a.worldwideJobs);
+    for (const r of sorted.slice(0, 30)) {
+      console.log(`  ${r.name.padEnd(30)} ${r.atsType.padEnd(12)} ${String(r.worldwideJobs).padStart(3)} ww / ${r.totalJobs} total`);
     }
   }
 
-  // ─── Write CSV ─────────────────────────────────────────────────
+  // ─── Write output ─────────────────────────────────────────────
   mkdirSync("scripts/output", { recursive: true });
 
-  const csvHeader =
-    "name,domain,atsType,atsSlug,totalJobs,worldwideJobs,status,careersUrl";
-  const csvRows = results.map(
-    (r) =>
-      `"${r.name}","${r.domain}","${r.atsType}","${r.atsSlug}",${r.totalJobs},${r.worldwideJobs},"${r.status}","${r.careersUrl}"`
+  const csvHeader = "name,domain,atsType,atsSlug,totalJobs,worldwideJobs,status,careersUrl,source";
+  const csvRows = results.map(r =>
+    `"${r.name}","${r.domain}","${r.atsType}","${r.atsSlug}",${r.totalJobs},${r.worldwideJobs},"${r.status}","${r.careersUrl}","${r.source}"`
   );
+  writeFileSync("scripts/output/discovered.csv", [csvHeader, ...csvRows].join("\n"), "utf-8");
 
-  const csvContent = [csvHeader, ...csvRows].join("\n");
-  const csvPath = "scripts/output/discovered.csv";
-  writeFileSync(csvPath, csvContent, "utf-8");
-  console.log(`\nCSV written to: ${csvPath}`);
-
-  // Also write a filtered "new only" CSV for easy review
-  const newRows = results
-    .filter((r) => r.status === "NEW")
+  const newRows = [...newOnes]
     .sort((a, b) => b.worldwideJobs - a.worldwideJobs)
-    .map(
-      (r) =>
-        `"${r.name}","${r.domain}","${r.atsType}","${r.atsSlug}",${r.totalJobs},${r.worldwideJobs},"${r.status}","${r.careersUrl}"`
+    .map(r =>
+      `"${r.name}","${r.domain}","${r.atsType}","${r.atsSlug}",${r.totalJobs},${r.worldwideJobs},"${r.status}","${r.careersUrl}","${r.source}"`
     );
+  writeFileSync("scripts/output/discovered-new.csv", [csvHeader, ...newRows].join("\n"), "utf-8");
 
-  const newCsvContent = [csvHeader, ...newRows].join("\n");
-  const newCsvPath = "scripts/output/discovered-new.csv";
-  writeFileSync(newCsvPath, newCsvContent, "utf-8");
-  console.log(`New companies CSV: ${newCsvPath}`);
+  // Generate companies.ts snippet
+  console.log(`\n--- Copy-paste for companies.ts ---`);
+  const sorted = [...newOnes].sort((a, b) => b.worldwideJobs - a.worldwideJobs);
+  for (const c of sorted) {
+    console.log(`  { name: "${c.name}", domain: "${c.domain}", careersUrl: "${c.careersUrl}", atsType: "${c.atsType}", atsSlug: "${c.atsSlug}" },`);
+  }
+
+  console.log(`\nCSV: scripts/output/discovered.csv`);
+  console.log(`New only: scripts/output/discovered-new.csv`);
 }
 
-main().catch(console.error);
+main().catch(err => {
+  console.error("[orchestrator] fatal:", err);
+  process.exit(1);
+});

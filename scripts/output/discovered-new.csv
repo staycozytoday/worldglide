@@ -1,4 +1,5 @@
-name,domain,atsType,atsSlug,totalJobs,worldwideJobs,status,careersUrl
-"Iterative","iterative.ai","lever","iterative",5,5,"NEW","https://jobs.lever.co/iterative"
-"Udacity","udacity.com","greenhouse","udacity",7,2,"NEW","https://boards.greenhouse.io/udacity"
-"Rocket.Chat","rocket.chat","greenhouse","rocketchat",2,1,"NEW","https://boards.greenhouse.io/rocketchat"
+name,domain,atsType,atsSlug,totalJobs,worldwideJobs,status,careersUrl,source
+"It’s Unclearly Defined, but Telecommuting Is Fast on the Rise","nytimes.com","greenhouse","its",25,15,"NEW","https://boards.greenhouse.io/its","github-list"
+"Nomad House","nomadhouse.io","ashby","nomad",5,2,"NEW","https://jobs.ashbyhq.com/nomad","github-list"
+"Nomad List","nomads.com","ashby","nomad",5,2,"NEW","https://jobs.ashbyhq.com/nomad","github-list"
+"Ergeon","ergeon.com","greenhouse","ergeon",1,1,"NEW","https://boards.greenhouse.io/ergeon","github-list"
