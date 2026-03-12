@@ -177,6 +177,17 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Rocket.Chat", domain: "rocket.chat", careersUrl: "https://boards.greenhouse.io/rocketchat", atsType: "greenhouse", atsSlug: "rocketchat" },
   { name: "Udacity", domain: "udacity.com", careersUrl: "https://boards.greenhouse.io/udacity", atsType: "greenhouse", atsSlug: "udacity" },
 
+  // imported 2026-03-10 (remoteintech scan)
+  { name: "RunwayML", domain: "runwayml.com", careersUrl: "https://boards.greenhouse.io/runwayml", atsType: "greenhouse", atsSlug: "runwayml" },
+  { name: "Amplemarket", domain: "amplemarket.com", careersUrl: "https://boards.greenhouse.io/amplemarket", atsType: "greenhouse", atsSlug: "amplemarket" },
+  { name: "Zup Innovation", domain: "zup.com.br", careersUrl: "https://boards.greenhouse.io/zupinnovation", atsType: "greenhouse", atsSlug: "zupinnovation" },
+  { name: "OfferFit", domain: "offerfit.ai", careersUrl: "https://boards.greenhouse.io/offerfit", atsType: "greenhouse", atsSlug: "offerfit" },
+
+  // imported 2026-03-12 (discovery pipeline)
+  { name: "Modus Create", domain: "moduscreate.com", careersUrl: "https://boards.greenhouse.io/moduscreate", atsType: "greenhouse", atsSlug: "moduscreate" },
+  { name: "CRO Metrics", domain: "crometrics.com", careersUrl: "https://boards.greenhouse.io/crometrics", atsType: "greenhouse", atsSlug: "crometrics" },
+  { name: "Ergeon", domain: "ergeon.com", careersUrl: "https://boards.greenhouse.io/ergeon", atsType: "greenhouse", atsSlug: "ergeon" },
+
   // ════════════════════════════════════════════════
   // LEVER — api.lever.co/v0/postings/{slug}
   // ════════════════════════════════════════════════
@@ -205,6 +216,9 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
 
   // imported 2026-02-25
   { name: "Iterative", domain: "iterative.ai", careersUrl: "https://jobs.lever.co/iterative", atsType: "lever", atsSlug: "iterative" },
+
+  // imported 2026-03-10 (remoteintech scan)
+  { name: "Quantcast", domain: "quantcast.com", careersUrl: "https://jobs.lever.co/quantcast", atsType: "lever", atsSlug: "quantcast" },
 
   // ════════════════════════════════════════════════
   // ASHBY — api.ashbyhq.com/posting-api/job-board/{slug}
@@ -296,6 +310,10 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
 
   // imported 2026-02-25
   { name: "ConvertKit", domain: "convertkit.com", careersUrl: "https://jobs.ashbyhq.com/kit", atsType: "ashby", atsSlug: "kit" },
+
+  // imported 2026-03-12 (discovery pipeline)
+  { name: "9fin", domain: "9fin.com", careersUrl: "https://jobs.ashbyhq.com/9fin", atsType: "ashby", atsSlug: "9fin" },
+  { name: "Unmind", domain: "unmind.com", careersUrl: "https://jobs.ashbyhq.com/unmind", atsType: "ashby", atsSlug: "unmind" },
 
   // ════════════════════════════════════════════════
   // CUSTOM — no scrapeable ATS, picked up via external aggregators
@@ -1880,6 +1898,10 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   // WORKABLE — apply.workable.com/api/v1/widget/accounts/{slug}
   // ════════════════════════════════════════════════
   { name: "Hugging Face",        domain: "huggingface.co",        careersUrl: "https://huggingface.co/jobs",               atsType: "workable", atsSlug: "huggingface" },
+
+  // imported 2026-03-10 (remoteintech scan)
+  { name: "Zyte",               domain: "zyte.com",              careersUrl: "https://apply.workable.com/zyte",           atsType: "workable", atsSlug: "zyte" },
+  { name: "DevSquad",           domain: "devsquad.com",          careersUrl: "https://apply.workable.com/devsquad",       atsType: "workable", atsSlug: "devsquad" },
 ];
 
 /** number of companies we actually scrape (excludes custom) */
