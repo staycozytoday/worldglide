@@ -82,6 +82,7 @@ async function scrapeGreenhouseCompany(
         title: item.title,
         description: content,
         location: locationName,
+        companySlug: slug,
       })
     ) {
       continue;

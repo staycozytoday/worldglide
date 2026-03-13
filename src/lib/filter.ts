@@ -18,6 +18,7 @@ export interface FilterableJob {
   candidateRequiredLocation?: string;
   jobGeo?: string;
   tags?: string[];
+  companySlug?: string;  // ATS slug, used for trusted company allowlist
 }
 
 /**
@@ -201,6 +202,23 @@ const RESTRICTION_PHRASES = [
   "open to applicants in",
 ];
 
+/**
+ * Companies known to be worldwide-first.
+ * When these companies post "Remote" with no geo qualifier, trust it as worldwide.
+ * This bypasses the description signal requirement for location="Remote".
+ * Still reject if explicit geo qualifier is present ("Remote, US").
+ *
+ * Key: atsSlug values from companies.ts
+ */
+const TRUSTED_WORLDWIDE_SLUGS = new Set([
+  // Verified worldwide-first companies
+  "gitlab", "canonical", "remote", "zapier", "buffer",
+  "toptal", "safetywing", "hotjar", "close", "helpscout",
+  "articulate", "toggl", "gitbook", "posthog", "sourcegraph91",
+  "mattermost", "ghost", "doist", "automattic", "superside",
+  "wikimedia", "mozilla", "elastic", "testgorilla", "oyster",
+]);
+
 export interface FilterResult {
   pass: boolean;
   reason: string;
@@ -279,7 +297,18 @@ export function analyzeWorldwideRemote(job: FilterableJob): FilterResult {
     }
   }
 
-  // --- STEP 5: If no location was provided, require worldwide signal in text ---
+  // --- STEP 5: If location is ambiguous, check for worldwide signal ---
+  if (!locationIsExactWorldwide) {
+    // 5a: Trusted companies get a pass for bare "Remote" locations
+    if (job.companySlug && TRUSTED_WORLDWIDE_SLUGS.has(job.companySlug)) {
+      const locLower = (job.location || "").toLowerCase().trim();
+      if (locLower.includes("remote")) {
+        return { pass: true, reason: "pass_trusted_company" };
+      }
+    }
+  }
+
+  // --- STEP 6: If no location was provided, require worldwide signal in text ---
   if (!location) {
     const textToCheck = [job.title || "", job.description || ""]
       .join(" ")

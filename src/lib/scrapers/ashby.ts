@@ -108,6 +108,7 @@ async function scrapeAshbyCompany(
         title: item.title,
         description: item.descriptionHtml ? stripHtml(item.descriptionHtml) : "",
         location: locationText,
+        companySlug: slug,
       })
     ) {
       continue;

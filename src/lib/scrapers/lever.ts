@@ -83,6 +83,7 @@ async function scrapeLeverCompany(
         title: item.text,
         description: item.descriptionPlain || "",
         location: locationText,
+        companySlug: slug,
       })
     ) {
       continue;

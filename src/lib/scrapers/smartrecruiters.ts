@@ -124,6 +124,7 @@ async function scrapeSmartRecruitersCompany(
         title: item.name || "",
         description: "",
         location: locationStr,
+        companySlug: slug,
       })
     ) {
       continue;

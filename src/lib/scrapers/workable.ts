@@ -107,6 +107,7 @@ async function scrapeWorkableCompany(
         title: item.title || "",
         description: "",
         location: fullLocation,
+        companySlug: slug,
       })
     ) {
       continue;

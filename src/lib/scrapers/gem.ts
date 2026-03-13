@@ -92,6 +92,7 @@ async function scrapeGemCompany(
         title: item.title,
         description: item.content_plain || "",
         location: locationName,
+        companySlug: slug,
       })
     ) {
       continue;
