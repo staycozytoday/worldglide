@@ -188,6 +188,12 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "CRO Metrics", domain: "crometrics.com", careersUrl: "https://boards.greenhouse.io/crometrics", atsType: "greenhouse", atsSlug: "crometrics" },
   { name: "Ergeon", domain: "ergeon.com", careersUrl: "https://boards.greenhouse.io/ergeon", atsType: "greenhouse", atsSlug: "ergeon" },
 
+  // imported 2026-03-13 (growth v2 — design company blitz + woodyjobs)
+  { name: "MetaLab",          domain: "metalab.com",           careersUrl: "https://boards.greenhouse.io/metalab",         atsType: "greenhouse", atsSlug: "metalab" },
+  { name: "HUGE",             domain: "hugeinc.com",           careersUrl: "https://boards.greenhouse.io/hugeinc",         atsType: "greenhouse", atsSlug: "hugeinc" },
+  { name: "7shifts",          domain: "7shifts.com",           careersUrl: "https://boards.greenhouse.io/7shifts",         atsType: "greenhouse", atsSlug: "7shifts" },
+  { name: "RegScale",         domain: "regscale.com",          careersUrl: "https://boards.greenhouse.io/regscale",        atsType: "greenhouse", atsSlug: "regscale" },
+
   // ════════════════════════════════════════════════
   // LEVER — api.lever.co/v0/postings/{slug}
   // ════════════════════════════════════════════════
@@ -219,6 +225,11 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
 
   // imported 2026-03-10 (remoteintech scan)
   { name: "Quantcast", domain: "quantcast.com", careersUrl: "https://jobs.lever.co/quantcast", atsType: "lever", atsSlug: "quantcast" },
+
+  // imported 2026-03-13 (growth v2 — design company blitz + woodyjobs)
+  { name: "Instrument",       domain: "instrument.com",        careersUrl: "https://jobs.lever.co/instrument",             atsType: "lever", atsSlug: "instrument" },
+  { name: "Aircall",          domain: "aircall.io",            careersUrl: "https://jobs.lever.co/aircall",                atsType: "lever", atsSlug: "aircall" },
+  { name: "Moo",              domain: "moo.com",               careersUrl: "https://jobs.lever.co/moo",                    atsType: "lever", atsSlug: "moo" },
 
   // ════════════════════════════════════════════════
   // ASHBY — api.ashbyhq.com/posting-api/job-board/{slug}
@@ -314,6 +325,9 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   // imported 2026-03-12 (discovery pipeline)
   { name: "9fin", domain: "9fin.com", careersUrl: "https://jobs.ashbyhq.com/9fin", atsType: "ashby", atsSlug: "9fin" },
   { name: "Unmind", domain: "unmind.com", careersUrl: "https://jobs.ashbyhq.com/unmind", atsType: "ashby", atsSlug: "unmind" },
+
+  // imported 2026-03-13 (growth v2 — design company blitz)
+  { name: "Maze",             domain: "maze.co",               careersUrl: "https://jobs.ashbyhq.com/mazedesign",          atsType: "ashby", atsSlug: "mazedesign" },
 
   // ════════════════════════════════════════════════
   // CUSTOM — no scrapeable ATS, picked up via external aggregators
