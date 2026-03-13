@@ -325,7 +325,30 @@ export function analyzeWorldwideRemote(job: FilterableJob): FilterResult {
       textToCheck.includes("no geographic restriction") ||
       textToCheck.includes("distributed team") ||
       textToCheck.includes("remote friendly") ||
-      textToCheck.includes("across the globe");
+      textToCheck.includes("across the globe") ||
+      // New signals (v2)
+      textToCheck.includes("open to all locations") ||
+      textToCheck.includes("timezone-flexible") ||
+      textToCheck.includes("timezone agnostic") ||
+      textToCheck.includes("location-agnostic") ||
+      textToCheck.includes("location agnostic") ||
+      textToCheck.includes("work from wherever") ||
+      textToCheck.includes("live wherever") ||
+      textToCheck.includes("based wherever") ||
+      textToCheck.includes("all geographies") ||
+      textToCheck.includes("every timezone") ||
+      textToCheck.includes("any country") ||
+      textToCheck.includes("regardless of location") ||
+      textToCheck.includes("truly remote") ||
+      textToCheck.includes("100% distributed") ||
+      textToCheck.includes("fully distributed") ||
+      textToCheck.includes("global workforce") ||
+      textToCheck.includes("remote-first company") ||
+      textToCheck.includes("location is not a factor") ||
+      textToCheck.includes("we hire everywhere") ||
+      textToCheck.includes("remote without borders") ||
+      textToCheck.includes("any timezone") ||
+      textToCheck.includes("no location restrictions");
     if (!hasWorldwideSignal) {
       return { pass: false, reason: "no_worldwide_signal" };
     }
