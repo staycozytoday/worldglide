@@ -45,13 +45,16 @@ const EXCLUDE_TITLE_PATTERNS = [
   /\b(finance|accounting|accountant|payroll|controller)\b/i,
   /\b(legal|counsel|attorney|compliance|paralegal)\b/i,
   /\b(office\s+manager|executive\s+assistant|admin\s+assist)/i,
-  /\boperations\s+(manager|director|lead|analyst)/i,
+  /\b(?<!design\s)operations\s+(manager|director|lead|analyst)/i,
   // Generic leadership that isn't clearly eng/design/product
   /\bchief\s+(revenue|marketing|people|financial|operating)\b/i,
   // BI/business analyst (not data analyst — that's product)
   /\b(business\s+analyst|business\s+intelligence)\b/i,
-  // Copywriting, editorial (not design)
-  /\b(copywriter|editor|editorial|journalist)\b/i,
+  // Copywriting, editorial (not design) — but allow "UX writer/copywriter"
+  /\b(?<!ux\s)copywriter\b/i,
+  /\b(?<!ux\s)editor(?!ial\s+design)\b/i,
+  /\beditorial(?!\s+design)\b/i,
+  /\bjournalist\b/i,
   // Community
   /community\s+(manager|lead|director)/i,
   // Training / education
@@ -141,6 +144,29 @@ const DESIGN_PATTERNS = [
   /\bdesign\s+engineer/i,
   /\bcreative\s+tech/i,
   /\bprototyp/i,
+  // Writing & content (design craft)
+  /\bux\s+writ/i,                           // UX Writer, UX Writing Lead
+  /\bcontent\s+strateg/i,                    // Content Strategist (design side)
+  // Service & experience design
+  /\bservice\s+design/i,                     // Service Designer
+  /\bexperience\s+design/i,                  // Experience Designer
+  // Research (design)
+  /\bdesign\s+research/i,                    // Design Researcher
+  // Ops & strategy
+  /\bdesign\s+ops/i,                         // Design Ops Manager
+  /\bdesign\s+operations/i,                  // Design Operations
+  /\bdesign\s+strateg/i,                     // Design Strategist
+  // Art direction
+  /\bart\s+director\b/i,                     // Art Director
+  // Specialized design
+  /\bdesign\s+technolog/i,                   // Design Technologist
+  /\baccessibility\s+(designer|specialist|lead|manager|engineer)/i,
+  /\bconversational\s+design/i,             // Conversational Designer
+  /\bvoice\s+design/i,                       // Voice Designer
+  /\bgame\s+design/i,                        // Game Designer
+  /\bsound\s+design/i,                       // Sound Designer
+  // UX copywriter (rescued from exclusion)
+  /\bux\s+copywriter/i,
 ];
 
 /** Product: must clearly be a product management role */
