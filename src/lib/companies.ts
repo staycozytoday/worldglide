@@ -194,6 +194,10 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "7shifts",          domain: "7shifts.com",           careersUrl: "https://boards.greenhouse.io/7shifts",         atsType: "greenhouse", atsSlug: "7shifts" },
   { name: "RegScale",         domain: "regscale.com",          careersUrl: "https://boards.greenhouse.io/regscale",        atsType: "greenhouse", atsSlug: "regscale" },
 
+  // imported 2026-03-14 (harvest-ats.ts)
+  { name: "dbt Labs",         domain: "getdbt.com",            careersUrl: "https://boards.greenhouse.io/dbtlabsinc",      atsType: "greenhouse", atsSlug: "dbtlabsinc" },
+  { name: "Solana Labs",      domain: "solanalabs.com",        careersUrl: "https://boards.greenhouse.io/solana",           atsType: "greenhouse", atsSlug: "solana" },
+
   // ════════════════════════════════════════════════
   // LEVER — api.lever.co/v0/postings/{slug}
   // ════════════════════════════════════════════════
@@ -230,6 +234,9 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Instrument",       domain: "instrument.com",        careersUrl: "https://jobs.lever.co/instrument",             atsType: "lever", atsSlug: "instrument" },
   { name: "Aircall",          domain: "aircall.io",            careersUrl: "https://jobs.lever.co/aircall",                atsType: "lever", atsSlug: "aircall" },
   { name: "Moo",              domain: "moo.com",               careersUrl: "https://jobs.lever.co/moo",                    atsType: "lever", atsSlug: "moo" },
+
+  // imported 2026-03-14 (harvest-ats.ts)
+  { name: "Swile",            domain: "swile.co",              careersUrl: "https://jobs.lever.co/swile",                  atsType: "lever", atsSlug: "swile" },
 
   // ════════════════════════════════════════════════
   // ASHBY — api.ashbyhq.com/posting-api/job-board/{slug}
@@ -328,6 +335,10 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
 
   // imported 2026-03-13 (growth v2 — design company blitz)
   { name: "Maze",             domain: "maze.co",               careersUrl: "https://jobs.ashbyhq.com/mazedesign",          atsType: "ashby", atsSlug: "mazedesign" },
+
+  // imported 2026-03-14 (harvest-ats.ts)
+  { name: "Back Market",      domain: "backmarket.com",        careersUrl: "https://jobs.ashbyhq.com/backmarket",           atsType: "ashby", atsSlug: "backmarket" },
+  { name: "a16z Crypto",      domain: "a16zcrypto.com",        careersUrl: "https://jobs.ashbyhq.com/a16z-crypto",          atsType: "ashby", atsSlug: "a16z-crypto" },
 
   // ════════════════════════════════════════════════
   // CUSTOM — no scrapeable ATS, picked up via external aggregators
@@ -1631,6 +1642,9 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Index Exchange", domain: "indexexchange.com", careersUrl: "https://jobs.gem.com/index-exchange", atsType: "gem", atsSlug: "index-exchange" },
   { name: "CloudRaft", domain: "cloudraft.io", careersUrl: "https://jobs.gem.com/cloudraft", atsType: "gem", atsSlug: "cloudraft" },
 
+  // imported 2026-03-14 (harvest-ats.ts)
+  { name: "Multiplier",       domain: "usemultiplier.com",     careersUrl: "https://jobs.gem.com/multiplierhq",            atsType: "gem", atsSlug: "multiplierhq" },
+
   // remote-first batch — verified slugs
   { name: "Velocity Global", domain: "velocityglobal.com", careersUrl: "https://velocityglobal.com/careers/", atsType: "lever", atsSlug: "velocityglobal" },
   { name: "Rula", domain: "rula.com", careersUrl: "https://www.rula.com/careers", atsType: "ashby", atsSlug: "rula" },
@@ -1907,6 +1921,10 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "CERN",                domain: "home.cern",             careersUrl: "https://careers.cern/",                     atsType: "smartrecruiters", atsSlug: "cern" },
   { name: "DocuSign",            domain: "docusign.com",          careersUrl: "https://www.docusign.com/careers",          atsType: "smartrecruiters", atsSlug: "docusign" },
   { name: "SmartRecruiters",     domain: "smartrecruiters.com",   careersUrl: "https://www.smartrecruiters.com/careers",   atsType: "smartrecruiters", atsSlug: "smartrecruiters" },
+
+  // imported 2026-03-14 (harvest-ats.ts)
+  { name: "Unleash",            domain: "getunleash.io",         careersUrl: "https://jobs.smartrecruiters.com/unleash",     atsType: "smartrecruiters", atsSlug: "unleash" },
+  { name: "BigCommerce",        domain: "bigcommerce.com",       careersUrl: "https://jobs.smartrecruiters.com/bigcommerce", atsType: "smartrecruiters", atsSlug: "bigcommerce" },
 
   // ════════════════════════════════════════════════
   // WORKABLE — apply.workable.com/api/v1/widget/accounts/{slug}
