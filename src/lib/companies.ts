@@ -1926,6 +1926,12 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Unleash",            domain: "getunleash.io",         careersUrl: "https://jobs.smartrecruiters.com/unleash",     atsType: "smartrecruiters", atsSlug: "unleash" },
   { name: "BigCommerce",        domain: "bigcommerce.com",       careersUrl: "https://jobs.smartrecruiters.com/bigcommerce", atsType: "smartrecruiters", atsSlug: "bigcommerce" },
 
+  // imported 2026-03-14 (discover-sr-workable.ts)
+  { name: "Delivery Hero",     domain: "deliveryhero.com",      careersUrl: "https://jobs.smartrecruiters.com/deliveryhero",  atsType: "smartrecruiters", atsSlug: "deliveryhero" },
+  { name: "Freshworks",        domain: "freshworks.com",        careersUrl: "https://jobs.smartrecruiters.com/freshworks",    atsType: "smartrecruiters", atsSlug: "freshworks" },
+  { name: "Thales",            domain: "thales.com",            careersUrl: "https://jobs.smartrecruiters.com/thales",        atsType: "smartrecruiters", atsSlug: "thales" },
+  { name: "Dataiku",           domain: "dataiku.com",           careersUrl: "https://jobs.smartrecruiters.com/dataiku",       atsType: "smartrecruiters", atsSlug: "dataiku" },
+
   // ════════════════════════════════════════════════
   // WORKABLE — apply.workable.com/api/v1/widget/accounts/{slug}
   // ════════════════════════════════════════════════
