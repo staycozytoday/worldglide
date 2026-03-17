@@ -1,0 +1,56 @@
+[
+  {
+    "name": "ChowNow",
+    "slug": "chownow",
+    "atsType": "lever",
+    "domain": "chownow.com",
+    "worldwideJobCount": 3,
+    "totalJobCount": 13,
+    "source": "feedback:remoteok"
+  },
+  {
+    "name": "Pulley",
+    "slug": "pulley",
+    "atsType": "greenhouse",
+    "domain": "pulley.com",
+    "worldwideJobCount": 3,
+    "totalJobCount": 4,
+    "source": "feedback:remoteok"
+  },
+  {
+    "name": "Office Hours",
+    "slug": "office-hours",
+    "atsType": "ashby",
+    "domain": "officehours.com",
+    "worldwideJobCount": 1,
+    "totalJobCount": 15,
+    "source": "feedback:remoteok"
+  },
+  {
+    "name": "Life360",
+    "slug": "life360",
+    "atsType": "greenhouse",
+    "domain": "life360.com",
+    "worldwideJobCount": 0,
+    "totalJobCount": 38,
+    "source": "feedback:remoteok"
+  },
+  {
+    "name": "Sanctuary Computer",
+    "slug": "sanctuary",
+    "atsType": "lever",
+    "domain": "sanctuary.com",
+    "worldwideJobCount": 0,
+    "totalJobCount": 9,
+    "source": "feedback:remoteok"
+  },
+  {
+    "name": "Galaxy",
+    "slug": "galaxy",
+    "atsType": "greenhouse",
+    "domain": "galaxy.com",
+    "worldwideJobCount": 0,
+    "totalJobCount": 2,
+    "source": "feedback:remoteok"
+  }
+]

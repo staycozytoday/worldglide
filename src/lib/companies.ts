@@ -1973,6 +1973,14 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Davies Group",       domain: "daviesgroup.com",       careersUrl: "https://davies-group.pinpointhq.com",        atsType: "pinpoint", atsSlug: "davies-group" },
   { name: "Merseyrail",         domain: "merseyrail.org",        careersUrl: "https://merseyrail.pinpointhq.com",          atsType: "pinpoint", atsSlug: "merseyrail" },
   { name: "citizenM",           domain: "citizenm.com",          careersUrl: "https://citizenm.pinpointhq.com",            atsType: "pinpoint", atsSlug: "citizenm" },
+
+  // ════════════════════════════════════════════════
+  // DISCOVERED — auto-discovered via discover-companies.ts feedback loop
+  // ════════════════════════════════════════════════
+
+  { name: "ChowNow", domain: "chownow.com", careersUrl: "https://chownow.com/careers", atsType: "lever", atsSlug: "chownow" },
+  { name: "Pulley", domain: "pulley.com", careersUrl: "https://pulley.com/careers", atsType: "greenhouse", atsSlug: "pulley" },
+  { name: "Office Hours", domain: "officehours.com", careersUrl: "https://officehours.com/careers", atsType: "ashby", atsSlug: "office-hours" },
 ];
 
 /** number of companies we actually scrape (excludes custom) */
