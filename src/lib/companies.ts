@@ -1941,6 +1941,18 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   // imported 2026-03-10 (remoteintech scan)
   { name: "Zyte",               domain: "zyte.com",              careersUrl: "https://apply.workable.com/zyte",           atsType: "workable", atsSlug: "zyte" },
   { name: "DevSquad",           domain: "devsquad.com",          careersUrl: "https://apply.workable.com/devsquad",       atsType: "workable", atsSlug: "devsquad" },
+
+  // ════════════════════════════════════════════════
+  // PERSONIO — {slug}.jobs.personio.de/xml
+  // ════════════════════════════════════════════════
+  { name: "Personio",           domain: "personio.de",           careersUrl: "https://personio.jobs.personio.de",          atsType: "personio", atsSlug: "personio" },
+  { name: "Vivid Money",        domain: "vivid.money",           careersUrl: "https://vivid.jobs.personio.de",             atsType: "personio", atsSlug: "vivid" },
+  { name: "Everphone",          domain: "everphone.com",         careersUrl: "https://everphone.jobs.personio.de",         atsType: "personio", atsSlug: "everphone" },
+  { name: "Liqid",              domain: "liqid.de",              careersUrl: "https://liqid.jobs.personio.de",             atsType: "personio", atsSlug: "liqid" },
+  { name: "Circula",            domain: "circula.com",           careersUrl: "https://circula.jobs.personio.de",           atsType: "personio", atsSlug: "circula" },
+  { name: "sevDesk",            domain: "sevdesk.de",            careersUrl: "https://sevdesk.jobs.personio.de",           atsType: "personio", atsSlug: "sevdesk" },
+  { name: "Tandem",             domain: "tandem.net",            careersUrl: "https://tandem.jobs.personio.de",            atsType: "personio", atsSlug: "tandem" },
+  { name: "Penta",              domain: "getpenta.com",          careersUrl: "https://penta.jobs.personio.de",             atsType: "personio", atsSlug: "penta" },
 ];
 
 /** number of companies we actually scrape (excludes custom) */
