@@ -1,4 +1,4 @@
-import { Job } from "./types";
+import { Job, JOB_EXPIRY_DAYS } from "./types";
 import { deduplicateJobs } from "./deduplicate";
 import { scrapeGreenhouse } from "./scrapers/greenhouse";
 import { scrapeLever } from "./scrapers/lever";
@@ -61,8 +61,8 @@ export async function scrapeAllSources(): Promise<ScrapeOutput> {
     (a, b) => new Date(b.postedAt).getTime() - new Date(a.postedAt).getTime()
   );
 
-  // keep only last 14 days
-  const cutoff = Date.now() - 14 * 24 * 60 * 60 * 1000;
+  // keep only last N days (configured in types.ts)
+  const cutoff = Date.now() - JOB_EXPIRY_DAYS * 24 * 60 * 60 * 1000;
   const recentJobs = dedupedJobs.filter(
     (job) => new Date(job.postedAt).getTime() > cutoff
   );
@@ -71,7 +71,7 @@ export async function scrapeAllSources(): Promise<ScrapeOutput> {
   const failures = allReport.filter((r) => r.error);
 
   console.log(
-    `[scraper] done in ${elapsed}s. total: ${allJobs.length} → deduped: ${dedupedJobs.length} → recent (14d): ${recentJobs.length}` +
+    `[scraper] done in ${elapsed}s. total: ${allJobs.length} → deduped: ${dedupedJobs.length} → recent (${JOB_EXPIRY_DAYS}d): ${recentJobs.length}` +
     (failures.length ? ` | ${failures.length} companies failed` : "")
   );
 

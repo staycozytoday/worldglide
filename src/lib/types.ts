@@ -53,6 +53,6 @@ export function getCompanyLogoUrl(domain: string): string {
   return `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
 }
 
-// 14 days (2 weeks) — matches scraper cutoff and "live for 2 weeks" copy
+// 14 days (2 weeks) — matches scraper cutoff
 export const JOB_EXPIRY_DAYS = 14;
 export const JOB_EXPIRY_MS = JOB_EXPIRY_DAYS * 24 * 60 * 60 * 1000;

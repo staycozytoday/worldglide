@@ -1644,6 +1644,7 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
 
   // imported 2026-03-14 (harvest-ats.ts)
   { name: "Multiplier",       domain: "usemultiplier.com",     careersUrl: "https://jobs.gem.com/multiplierhq",            atsType: "gem", atsSlug: "multiplierhq" },
+  { name: "Productboard",    domain: "productboard.com",      careersUrl: "https://jobs.gem.com/productboard",             atsType: "gem", atsSlug: "productboard" },
 
   // remote-first batch — verified slugs
   { name: "Velocity Global", domain: "velocityglobal.com", careersUrl: "https://velocityglobal.com/careers/", atsType: "lever", atsSlug: "velocityglobal" },

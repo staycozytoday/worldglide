@@ -63,6 +63,15 @@ const EXCLUDE_TITLE_PATTERNS = [
   /\b(solution|partner|gsi|global\s+solution)\s+architect/i,
   // Intern roles (typically location-restricted and low relevance)
   /\bintern\b/i,
+  // Mechanical / hardware / facilities design (not software design)
+  /\bmechanical\s+design/i,
+  /\b(facility|facilities)\s+design/i,
+  /\bhot\s+cell\s+design/i,
+  /\breactor\b/i,
+  /\bfuel\s+fabrication/i,
+  /\belectrical\s+design\s+engineer/i,
+  /\bcivil\s+design\s+engineer/i,
+  /\bstructural\s+design\s+engineer/i,
 ];
 
 /** Engineering: must clearly be a software/infra/data engineering role */
@@ -112,6 +121,22 @@ const ENGINEERING_PATTERNS = [
   /\bit\s+(engineer|manager|director|lead|specialist|administrator)\b/i,
   /\bnetwork\s+engineer/i,
   /\bdatabase\s+(engineer|administrator|architect)\b/i,
+  // Crypto / Web3 engineering
+  /\bprotocol\s+engineer/i,
+  /\bsmart\s+contract\s+(engineer|developer|auditor)/i,
+  /\bsolidity\s+(engineer|developer)/i,
+  /\bblockchain\s+architect/i,
+  // AI / ML research
+  /\bresearch\s+(engineer|scientist)/i,
+  /\bapplied\s+scientist/i,
+  /\bml(ops)?\s+engineer/i,
+  // Infra / platform
+  /\brelease\s+engineer/i,
+  /\bautomation\s+engineer/i,
+  /\bperformance\s+engineer/i,
+  /\bintegration\s+engineer/i,
+  /\bapi\s+engineer/i,
+  /\bcore\s+engineer/i,
 ];
 
 /** Design: must clearly be a design role */

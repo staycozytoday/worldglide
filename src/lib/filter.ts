@@ -211,12 +211,24 @@ const RESTRICTION_PHRASES = [
  * Key: atsSlug values from companies.ts
  */
 const TRUSTED_WORLDWIDE_SLUGS = new Set([
-  // Verified worldwide-first companies
+  // Verified worldwide-first companies (original 25)
   "gitlab", "canonical", "remote", "zapier", "buffer",
   "toptal", "safetywing", "hotjar", "close", "helpscout",
   "articulate", "toggl", "gitbook", "posthog", "sourcegraph91",
   "mattermost", "ghost", "doist", "automattic", "superside",
   "wikimedia", "mozilla", "elastic", "testgorilla", "oyster",
+  // Expansion — verified worldwide-first (growth v2)
+  "grafanalabs", "cockroachlabs", "honeycomb", "netlify",
+  "circleci", "planetscale", "cribl", "hashicorp",
+  "sentry", "snyk", "datadog", "cloudflare",
+  "dbtlabsinc", "airbyte", "temporal", "dagster",
+  "supabase", "neon", "turso", "fly",
+  "1password", "tailscale", "bitwarden",
+  "runwayml", "huggingface", "wandb",
+  "deel", "velocityglobal", "omnipresent",
+  "printful", "convertkit", "lottiefiles",
+  "webflow", "framer", "sketch", "miro",
+  "metalab", "hugeinc", "instrument", "mazedesign",
 ]);
 
 export interface FilterResult {
@@ -243,9 +255,26 @@ export function analyzeWorldwideRemote(job: FilterableJob): FilterResult {
         return { pass: false, reason: "structural_pattern_location" };
       }
       if (hasGeographicQualifier(locLower)) {
-        return { pass: false, reason: "geo_qualifier_location" };
+        // Multi-region exception: if a trusted company lists "Remote, X"
+        // across 4+ distinct countries, treat as effectively worldwide.
+        if (job.companySlug && TRUSTED_WORLDWIDE_SLUGS.has(job.companySlug)) {
+          const parts = locLower.split(/[;]/).map(s => s.trim()).filter(Boolean);
+          const countries = new Set<string>();
+          for (const part of parts) {
+            const m = part.match(/remote[,\s]+(.+)/);
+            if (m) countries.add(m[1].trim());
+          }
+          if (countries.size >= 4) {
+            locationIsExactWorldwide = true;
+          } else {
+            return { pass: false, reason: "geo_qualifier_location" };
+          }
+        } else {
+          return { pass: false, reason: "geo_qualifier_location" };
+        }
       }
       if (
+        !locationIsExactWorldwide &&
         !locLower.includes("remote") &&
         !locLower.includes("worldwide") &&
         !locLower.includes("anywhere") &&
