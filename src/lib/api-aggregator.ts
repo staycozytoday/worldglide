@@ -4,6 +4,8 @@ import { scrapeRemoteOK } from "./scrapers/api-remoteok";
 import { scrapeRemotive } from "./scrapers/api-remotive";
 import { scrapeJobicy } from "./scrapers/api-jobicy";
 import { scrapeArbeitnow } from "./scrapers/api-arbeitnow";
+import { scrapeHNWhoIsHiring } from "./scrapers/api-hn";
+import { scrapeDribbble } from "./scrapers/api-dribbble";
 
 export interface ApiAggregatorResult {
   jobs: Job[];
@@ -89,6 +91,30 @@ export async function runApiAggregator(): Promise<ApiAggregatorResult> {
     const msg = err instanceof Error ? err.message : String(err);
     console.error(`[api-aggregator] arbeitnow failed: ${msg}`);
     sources.push({ name: "arbeitnow", jobs: 0, rawCount: 0, error: msg });
+  }
+
+  // --- HN Who's Hiring ---
+  try {
+    const result = await scrapeHNWhoIsHiring();
+    allJobs.push(...result.jobs);
+    totalRaw += result.rawCount;
+    sources.push({ name: "hn-whoishiring", jobs: result.jobs.length, rawCount: result.rawCount });
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error(`[api-aggregator] hn-whoishiring failed: ${msg}`);
+    sources.push({ name: "hn-whoishiring", jobs: 0, rawCount: 0, error: msg });
+  }
+
+  // --- Dribbble ---
+  try {
+    const result = await scrapeDribbble();
+    allJobs.push(...result.jobs);
+    totalRaw += result.rawCount;
+    sources.push({ name: "dribbble", jobs: result.jobs.length, rawCount: result.rawCount });
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error(`[api-aggregator] dribbble failed: ${msg}`);
+    sources.push({ name: "dribbble", jobs: 0, rawCount: 0, error: msg });
   }
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
