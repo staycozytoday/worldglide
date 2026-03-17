@@ -202,6 +202,23 @@ const RESTRICTION_PHRASES = [
   "open to applicants in",
 ];
 
+/** Signals in full description that prove worldwide availability, even if location says otherwise */
+const RESCUE_SIGNALS = [
+  "worldwide", "work from anywhere", "globally",
+  "any location", "location independent",
+  "open to candidates globally", "hire from anywhere",
+  "no geographic restriction", "distributed team",
+  "remote friendly", "across the globe",
+  "open to all locations", "timezone-flexible",
+  "timezone agnostic", "location-agnostic", "location agnostic",
+  "any country", "regardless of location", "truly remote",
+  "100% distributed", "fully distributed", "global workforce",
+  "remote-first", "we hire everywhere", "remote without borders",
+  "any timezone", "no location restrictions", "all geographies",
+  "work from wherever", "live wherever", "based wherever",
+  "every timezone",
+];
+
 /**
  * Companies known to be worldwide-first.
  * When these companies post "Remote" with no geo qualifier, trust it as worldwide.
@@ -390,8 +407,11 @@ export function analyzeWorldwideRemote(job: FilterableJob): FilterResult {
  * Returns true ONLY if the job is genuinely available worldwide.
  * Thin wrapper around analyzeWorldwideRemote for existing call sites.
  */
-export function isWorldwideRemote(job: FilterableJob): boolean {
-  return analyzeWorldwideRemote(job).pass;
+export function isWorldwideRemote(
+  job: FilterableJob,
+  fullDescription?: string
+): boolean {
+  return analyzeWithRescue(job, fullDescription).pass;
 }
 
 /**
@@ -472,4 +492,39 @@ function isWorldwideKeyword(text: string): boolean {
     t.includes("work from anywhere") ||
     t.includes("location independent")
   );
+}
+
+/**
+ * Check if a full job description contains worldwide signals
+ * that override a restrictive location/title.
+ * Only called for trusted companies (phase 1).
+ */
+function rescueByDescription(description: string): boolean {
+  if (!description) return false;
+  const lower = description.toLowerCase();
+  return RESCUE_SIGNALS.some((signal) => lower.includes(signal));
+}
+
+/**
+ * Wrapper that attempts to rescue rejected jobs using full description.
+ * Phase 1: Only rescues trusted company jobs.
+ */
+export function analyzeWithRescue(
+  job: FilterableJob,
+  fullDescription?: string
+): FilterResult {
+  const result = analyzeWorldwideRemote(job);
+  if (result.pass) return result;
+
+  // Only rescue trusted companies (phase 1)
+  if (!job.companySlug || !TRUSTED_WORLDWIDE_SLUGS.has(job.companySlug)) {
+    return result;
+  }
+
+  const descToCheck = fullDescription || job.description || "";
+  if (rescueByDescription(descToCheck)) {
+    return { pass: true, reason: "pass_rescued_by_description" };
+  }
+
+  return result;
 }
