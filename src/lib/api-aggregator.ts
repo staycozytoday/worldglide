@@ -1,6 +1,9 @@
 import { Job } from "./types";
 import { scrapeHimalayas } from "./scrapers/api-himalayas";
 import { scrapeRemoteOK } from "./scrapers/api-remoteok";
+import { scrapeRemotive } from "./scrapers/api-remotive";
+import { scrapeJobicy } from "./scrapers/api-jobicy";
+import { scrapeArbeitnow } from "./scrapers/api-arbeitnow";
 
 export interface ApiAggregatorResult {
   jobs: Job[];
@@ -50,6 +53,42 @@ export async function runApiAggregator(): Promise<ApiAggregatorResult> {
     const msg = err instanceof Error ? err.message : String(err);
     console.error(`[api-aggregator] remoteok failed: ${msg}`);
     sources.push({ name: "remoteok", jobs: 0, rawCount: 0, error: msg });
+  }
+
+  // --- Remotive ---
+  try {
+    const result = await scrapeRemotive();
+    allJobs.push(...result.jobs);
+    totalRaw += result.rawCount;
+    sources.push({ name: "remotive", jobs: result.jobs.length, rawCount: result.rawCount });
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error(`[api-aggregator] remotive failed: ${msg}`);
+    sources.push({ name: "remotive", jobs: 0, rawCount: 0, error: msg });
+  }
+
+  // --- Jobicy ---
+  try {
+    const result = await scrapeJobicy();
+    allJobs.push(...result.jobs);
+    totalRaw += result.rawCount;
+    sources.push({ name: "jobicy", jobs: result.jobs.length, rawCount: result.rawCount });
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error(`[api-aggregator] jobicy failed: ${msg}`);
+    sources.push({ name: "jobicy", jobs: 0, rawCount: 0, error: msg });
+  }
+
+  // --- Arbeitnow ---
+  try {
+    const result = await scrapeArbeitnow();
+    allJobs.push(...result.jobs);
+    totalRaw += result.rawCount;
+    sources.push({ name: "arbeitnow", jobs: result.jobs.length, rawCount: result.rawCount });
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error(`[api-aggregator] arbeitnow failed: ${msg}`);
+    sources.push({ name: "arbeitnow", jobs: 0, rawCount: 0, error: msg });
   }
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
