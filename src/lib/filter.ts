@@ -202,21 +202,63 @@ const RESTRICTION_PHRASES = [
   "open to applicants in",
 ];
 
-/** Signals in full description that prove worldwide availability, even if location says otherwise */
+/**
+ * STRONG rescue signals — these describe the JOB's availability, not the company.
+ * A sentence containing these is likely saying "this role is open worldwide."
+ * Weak/ambiguous signals (e.g. "distributed team", "remote-first") are excluded
+ * because they commonly appear in company boilerplate appended to every listing.
+ */
+/**
+ * Each signal must unambiguously state the JOB is available worldwide.
+ * Excluded: "globally distributed" (describes team, not job availability),
+ * "candidates/talent worldwide" (often boilerplate recruitment language).
+ */
 const RESCUE_SIGNALS = [
-  "worldwide", "work from anywhere", "globally",
-  "any location", "location independent",
-  "open to candidates globally", "hire from anywhere",
-  "no geographic restriction", "distributed team",
-  "remote friendly", "across the globe",
-  "open to all locations", "timezone-flexible",
-  "timezone agnostic", "location-agnostic", "location agnostic",
-  "any country", "regardless of location", "truly remote",
-  "100% distributed", "fully distributed", "global workforce",
-  "remote-first", "we hire everywhere", "remote without borders",
-  "any timezone", "no location restrictions", "all geographies",
-  "work from wherever", "live wherever", "based wherever",
-  "every timezone",
+  // Explicit: "this role is open worldwide"
+  "work from anywhere in the world",
+  "open to candidates worldwide",
+  "open to candidates globally",
+  "open to candidates from anywhere",
+  "hire from anywhere in the world",
+  "we hire everywhere in the world",
+  "regardless of location",
+  "no geographic restriction",
+  "no location restrictions",
+  "location is not a factor",
+  "remote without borders",
+  // Strong worldwide phrases (must include world/global scope)
+  "any country in the world",
+  "anywhere in the world",
+  "from anywhere in the world",
+  "based anywhere in the world",
+  "live and work anywhere in the world",
+  // Strong "all" phrases
+  "open to all locations worldwide",
+  "all countries are welcome",
+  "this role is open globally",
+  "this position is open globally",
+  "can be performed from anywhere",
+  "can be done from anywhere",
+];
+
+/**
+ * Phrases that look like rescue signals but are actually restricted.
+ * "based anywhere in the US" ≠ "based anywhere in the world"
+ * These are checked AFTER a signal match and veto the rescue.
+ */
+const RESCUE_VETOES = [
+  "anywhere in the us",
+  "anywhere in the u.s",
+  "anywhere in the united states",
+  "anywhere in the uk",
+  "anywhere in the u.k",
+  "anywhere in canada",
+  "anywhere in europe",
+  "anywhere in emea",
+  "anywhere in apac",
+  "anywhere in north america",
+  "anywhere in the americas",
+  "anywhere in latin america",
 ];
 
 /**
@@ -495,14 +537,81 @@ function isWorldwideKeyword(text: string): boolean {
 }
 
 /**
+ * Common boilerplate section headers that introduce company-level text.
+ * Everything after these headers is stripped before scanning for rescue signals.
+ */
+const BOILERPLATE_HEADERS = [
+  "about us",
+  "about the company",
+  "about elastic",
+  "about gitlab",
+  "about zapier",
+  "about grafana",
+  "about datadog",
+  "about cloudflare",
+  "who we are",
+  "why join",
+  "why work at",
+  "why work with",
+  "why work for",
+  "our company",
+  "our culture",
+  "our values",
+  "our mission",
+  "our story",
+  "our team",
+  "we take care of our people",
+  "benefits and perks",
+  "benefits & perks",
+  "what we offer",
+  "equal opportunity",
+  "diversity and inclusion",
+  "diversity & inclusion",
+  "compensation and",
+  "compensation range",
+];
+
+/**
+ * Strip boilerplate "About Us" sections from a job description.
+ * Returns only the job-specific content (requirements, responsibilities, etc.)
+ */
+function stripBoilerplate(description: string): string {
+  // Remove HTML tags for cleaner matching
+  const text = description.replace(/<[^>]+>/g, " ");
+  const lower = text.toLowerCase();
+
+  // Find the earliest boilerplate header in the latter half and truncate there
+  let earliestIdx = text.length;
+  for (const header of BOILERPLATE_HEADERS) {
+    const idx = lower.indexOf(header);
+    // Only treat as boilerplate if it's in the latter 60% of the description
+    if (idx !== -1 && idx > text.length * 0.4 && idx < earliestIdx) {
+      earliestIdx = idx;
+    }
+  }
+
+  return text.substring(0, earliestIdx);
+}
+
+/**
  * Check if a full job description contains worldwide signals
  * that override a restrictive location/title.
  * Only called for trusted companies (phase 1).
+ *
+ * Uses two defenses against false positives:
+ * 1. Strip boilerplate "About Us" sections before scanning
+ * 2. Only match strong, job-specific worldwide signals (not weak words like "distributed")
  */
 function rescueByDescription(description: string): boolean {
   if (!description) return false;
-  const lower = description.toLowerCase();
-  return RESCUE_SIGNALS.some((signal) => lower.includes(signal));
+  const jobContent = stripBoilerplate(description).toLowerCase();
+
+  // Check for veto phrases first — "anywhere in the US" is NOT worldwide
+  if (RESCUE_VETOES.some((veto) => jobContent.includes(veto))) {
+    return false;
+  }
+
+  return RESCUE_SIGNALS.some((signal) => jobContent.includes(signal));
 }
 
 /**
@@ -521,10 +630,25 @@ export function analyzeWithRescue(
     return result;
   }
 
+  // Don't rescue if the title itself contains geographic restrictions —
+  // a title like "Engineer - Netherlands" is intentionally geo-scoped
+  if (job.title && titleHasGeoRestriction(job.title)) {
+    return result;
+  }
+
   const descToCheck = fullDescription || job.description || "";
   if (rescueByDescription(descToCheck)) {
     return { pass: true, reason: "pass_rescued_by_description" };
   }
 
   return result;
+}
+
+/**
+ * Check if a job title contains geographic terms that indicate
+ * the role is intentionally scoped to a region/country.
+ */
+function titleHasGeoRestriction(title: string): boolean {
+  const lower = title.toLowerCase();
+  return hasGeographicQualifier(lower) || hasStructuralGeoPattern(lower);
 }
