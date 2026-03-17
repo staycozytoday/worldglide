@@ -6,6 +6,7 @@ import { scrapeAshby } from "./scrapers/ashby";
 import { scrapeGem } from "./scrapers/gem";
 import { scrapeSmartRecruiters } from "./scrapers/smartrecruiters";
 import { scrapeWorkable } from "./scrapers/workable";
+import { runApiAggregator } from "./api-aggregator";
 import { CompanyResult, ScrapeReport } from "./fetch-retry";
 
 export interface ScrapeOutput {
@@ -51,6 +52,28 @@ export async function scrapeAllSources(): Promise<ScrapeOutput> {
     } else {
       console.error(`[scraper] ${source.name} FAILED entirely:`, source.result.reason);
     }
+  }
+
+  // --- Phase 2: External API aggregation ---
+  console.log("[scraper] starting external API aggregation...");
+  try {
+    const apiResult = await runApiAggregator();
+    allJobs.push(...apiResult.jobs);
+
+    // Add API sources to report as pseudo-company entries
+    for (const src of apiResult.sources) {
+      allReport.push({
+        company: `api:${src.name}`,
+        ats: src.name,
+        slug: src.name,
+        jobs: src.jobs,
+        rawJobs: src.rawCount,
+        error: src.error,
+      });
+    }
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error(`[scraper] API aggregation failed entirely: ${msg}`);
   }
 
   // deduplicate

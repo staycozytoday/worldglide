@@ -7,6 +7,27 @@ export type Source =
   | "gem"
   | "smartrecruiters"
   | "workable"
+  | "teamtailor"
+  | "bamboohr"
+  | "recruitee"
+  | "jazzhr"
+  | "personio"
+  | "breezyhr"
+  | "pinpoint"
+  | "dover"
+  | "comeet"
+  | "gohire"
+  | "rippling"
+  | "zoho"
+  | "himalayas"
+  | "remoteok"
+  | "remotive"
+  | "jobicy"
+  | "arbeitnow"
+  | "adzuna"
+  | "themuse"
+  | "hn-whoishiring"
+  | "dribbble"
   | "user-submitted";
 
 export interface Job {
@@ -43,7 +64,7 @@ export interface RemoteCompany {
   name: string;
   domain: string; // e.g. "gitlab.com" — used for logo via logo.clearbit.com
   careersUrl: string;
-  atsType?: "greenhouse" | "lever" | "ashby" | "gem" | "smartrecruiters" | "workable" | "custom";
+  atsType?: "greenhouse" | "lever" | "ashby" | "gem" | "smartrecruiters" | "workable" | "teamtailor" | "bamboohr" | "recruitee" | "jazzhr" | "personio" | "breezyhr" | "pinpoint" | "dover" | "comeet" | "gohire" | "rippling" | "zoho" | "custom";
   atsSlug?: string; // e.g. "gitlab" for boards.greenhouse.io/gitlab
 }
 
