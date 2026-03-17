@@ -1953,6 +1953,26 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "sevDesk",            domain: "sevdesk.de",            careersUrl: "https://sevdesk.jobs.personio.de",           atsType: "personio", atsSlug: "sevdesk" },
   { name: "Tandem",             domain: "tandem.net",            careersUrl: "https://tandem.jobs.personio.de",            atsType: "personio", atsSlug: "tandem" },
   { name: "Penta",              domain: "getpenta.com",          careersUrl: "https://penta.jobs.personio.de",             atsType: "personio", atsSlug: "penta" },
+
+  // ════════════════════════════════════════════════
+  // BREEZY HR — {slug}.breezy.hr/json
+  // ════════════════════════════════════════════════
+  { name: "Unito",              domain: "unito.io",              careersUrl: "https://unito.breezy.hr",                    atsType: "breezyhr", atsSlug: "unito" },
+  { name: "Teal",               domain: "teal.com",              careersUrl: "https://teal.breezy.hr",                     atsType: "breezyhr", atsSlug: "teal" },
+  { name: "DP Logistics",       domain: "dplogistics.com",       careersUrl: "https://dp-logistics.breezy.hr",             atsType: "breezyhr", atsSlug: "dp-logistics" },
+  { name: "Elevation Church",   domain: "elevationchurch.org",   careersUrl: "https://elevation-church.breezy.hr",         atsType: "breezyhr", atsSlug: "elevation-church" },
+  { name: "Nucamp",             domain: "nucamp.co",             careersUrl: "https://nucamp.breezy.hr",                   atsType: "breezyhr", atsSlug: "nucamp" },
+
+  // ════════════════════════════════════════════════
+  // PINPOINT — {slug}.pinpointhq.com/postings.json
+  // ════════════════════════════════════════════════
+  { name: "Lush",               domain: "lush.com",              careersUrl: "https://lush.pinpointhq.com",                atsType: "pinpoint", atsSlug: "lush" },
+  { name: "Doist",              domain: "doist.com",             careersUrl: "https://doist.pinpointhq.com",               atsType: "pinpoint", atsSlug: "doist" },
+  { name: "EasyJet",            domain: "easyjet.com",           careersUrl: "https://easyjet.pinpointhq.com",             atsType: "pinpoint", atsSlug: "easyjet" },
+  { name: "Unmind",             domain: "unmind.com",            careersUrl: "https://unmind.pinpointhq.com",              atsType: "pinpoint", atsSlug: "unmind" },
+  { name: "Davies Group",       domain: "daviesgroup.com",       careersUrl: "https://davies-group.pinpointhq.com",        atsType: "pinpoint", atsSlug: "davies-group" },
+  { name: "Merseyrail",         domain: "merseyrail.org",        careersUrl: "https://merseyrail.pinpointhq.com",          atsType: "pinpoint", atsSlug: "merseyrail" },
+  { name: "citizenM",           domain: "citizenm.com",          careersUrl: "https://citizenm.pinpointhq.com",            atsType: "pinpoint", atsSlug: "citizenm" },
 ];
 
 /** number of companies we actually scrape (excludes custom) */
