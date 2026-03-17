@@ -87,13 +87,18 @@ async function scrapeGemCompany(
     // gem gives us location_type — use it as a fast pre-filter
     if (item.location_type !== "remote") continue;
 
+    const fullDesc = item.content_plain || "";
+
     if (
-      !isWorldwideRemote({
-        title: item.title,
-        description: item.content_plain || "",
-        location: locationName,
-        companySlug: slug,
-      })
+      !isWorldwideRemote(
+        {
+          title: item.title,
+          description: fullDesc.slice(0, 200),
+          location: locationName,
+          companySlug: slug,
+        },
+        fullDesc
+      )
     ) {
       continue;
     }

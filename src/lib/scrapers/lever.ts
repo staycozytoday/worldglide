@@ -78,13 +78,18 @@ async function scrapeLeverCompany(
     const locationText =
       item.categories?.location || item.workplaceType || "";
 
+    const fullDesc = item.descriptionPlain || "";
+
     if (
-      !isWorldwideRemote({
-        title: item.text,
-        description: item.descriptionPlain || "",
-        location: locationText,
-        companySlug: slug,
-      })
+      !isWorldwideRemote(
+        {
+          title: item.text,
+          description: fullDesc.slice(0, 200),
+          location: locationText,
+          companySlug: slug,
+        },
+        fullDesc
+      )
     ) {
       continue;
     }

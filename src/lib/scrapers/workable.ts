@@ -102,13 +102,21 @@ async function scrapeWorkableCompany(
       ? `Remote${locationStr ? ` - ${locationStr}` : ""}`
       : locationStr;
 
+    // TODO: Workable widget API doesn't return descriptions.
+    // To enable description rescue, fetch individual jobs via
+    // /api/v1/widget/accounts/{slug}/jobs/{shortcode} for trusted companies.
+    const fullDesc = "";
+
     if (
-      !isWorldwideRemote({
-        title: item.title || "",
-        description: "",
-        location: fullLocation,
-        companySlug: slug,
-      })
+      !isWorldwideRemote(
+        {
+          title: item.title || "",
+          description: "",
+          location: fullLocation,
+          companySlug: slug,
+        },
+        fullDesc
+      )
     ) {
       continue;
     }

@@ -103,13 +103,18 @@ async function scrapeAshbyCompany(
 
     if (!item.isRemote) continue;
 
+    const fullDesc = item.descriptionHtml ? stripHtml(item.descriptionHtml) : "";
+
     if (
-      !isWorldwideRemote({
-        title: item.title,
-        description: item.descriptionHtml ? stripHtml(item.descriptionHtml) : "",
-        location: locationText,
-        companySlug: slug,
-      })
+      !isWorldwideRemote(
+        {
+          title: item.title,
+          description: fullDesc.slice(0, 200),
+          location: locationText,
+          companySlug: slug,
+        },
+        fullDesc
+      )
     ) {
       continue;
     }

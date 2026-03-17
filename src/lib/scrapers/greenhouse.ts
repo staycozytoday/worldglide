@@ -76,14 +76,18 @@ async function scrapeGreenhouseCompany(
   for (const item of items) {
     const locationName = item.location?.name || "";
     const content = item.content || "";
+    const fullDesc = content ? stripHtml(content) : "";
 
     if (
-      !isWorldwideRemote({
-        title: item.title,
-        description: content,
-        location: locationName,
-        companySlug: slug,
-      })
+      !isWorldwideRemote(
+        {
+          title: item.title,
+          description: fullDesc.slice(0, 200),
+          location: locationName,
+          companySlug: slug,
+        },
+        fullDesc
+      )
     ) {
       continue;
     }

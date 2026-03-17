@@ -119,13 +119,21 @@ async function scrapeSmartRecruitersCompany(
       ? `Remote${locationParts ? ` - ${locationParts}` : ""}`
       : locationParts;
 
+    // TODO: SmartRecruiters list API doesn't return descriptions.
+    // To enable description rescue, fetch individual jobs via
+    // /v1/companies/{slug}/postings/{id} for trusted companies.
+    const fullDesc = "";
+
     if (
-      !isWorldwideRemote({
-        title: item.name || "",
-        description: "",
-        location: locationStr,
-        companySlug: slug,
-      })
+      !isWorldwideRemote(
+        {
+          title: item.name || "",
+          description: "",
+          location: locationStr,
+          companySlug: slug,
+        },
+        fullDesc
+      )
     ) {
       continue;
     }
