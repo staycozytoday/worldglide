@@ -29,26 +29,56 @@ const TRUSTED_SLUGS = new Set([
   "metalab", "hugeinc", "instrument", "mazedesign",
 ]);
 
-const WORLDWIDE_SIGNALS = [
+/**
+ * Two tiers of signals:
+ * - STRONG: tight signals currently used by the rescue filter (high confidence)
+ * - WEAK: broader signals useful for discovery but too noisy for auto-rescue
+ */
+const STRONG_SIGNALS = [
+  "work from anywhere in the world",
+  "open to candidates worldwide",
+  "open to candidates globally",
+  "open to candidates from anywhere",
+  "hire from anywhere in the world",
+  "we hire everywhere in the world",
+  "regardless of location",
+  "no geographic restriction",
+  "no location restrictions",
+  "location is not a factor",
+  "remote without borders",
+  "any country in the world",
+  "anywhere in the world",
+  "from anywhere in the world",
+  "based anywhere in the world",
+  "live and work anywhere in the world",
+  "open to all locations worldwide",
+  "all countries are welcome",
+  "this role is open globally",
+  "this position is open globally",
+  "can be performed from anywhere",
+  "can be done from anywhere",
+];
+
+const WEAK_SIGNALS = [
   "worldwide", "work from anywhere", "globally", "any location",
-  "location independent", "open to candidates globally",
-  "hire from anywhere", "no geographic restriction",
-  "distributed team", "remote friendly", "across the globe",
-  "open to all locations", "timezone-flexible", "timezone agnostic",
-  "location-agnostic", "location agnostic", "any country",
-  "regardless of location", "truly remote", "100% distributed",
-  "fully distributed", "global workforce", "remote-first",
-  "we hire everywhere", "remote without borders", "any timezone",
-  "no location restrictions", "all geographies",
+  "location independent", "distributed team", "remote friendly",
+  "across the globe", "timezone-flexible", "timezone agnostic",
+  "location-agnostic", "any country", "truly remote",
+  "100% distributed", "fully distributed", "global workforce",
+  "remote-first", "we hire everywhere", "any timezone",
+  "all geographies",
 ];
 
 function stripHtml(html: string): string {
   return html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
 }
 
-function findWorldwideSignals(text: string): string[] {
+function findSignals(text: string): { strong: string[]; weak: string[] } {
   const lower = text.toLowerCase();
-  return WORLDWIDE_SIGNALS.filter((s) => lower.includes(s));
+  return {
+    strong: STRONG_SIGNALS.filter((s) => lower.includes(s)),
+    weak: WEAK_SIGNALS.filter((s) => lower.includes(s)),
+  };
 }
 
 async function main() {
@@ -60,8 +90,10 @@ async function main() {
 
   let totalRaw = 0;
   let totalRejected = 0;
-  let rescuable = 0;
-  const examples: { company: string; title: string; location: string; reason: string; signals: string[] }[] = [];
+  let rescuableStrong = 0;
+  let rescuableWeak = 0;
+  const strongExamples: { company: string; title: string; location: string; reason: string; signals: string[] }[] = [];
+  const weakExamples: { company: string; title: string; location: string; reason: string; signals: string[] }[] = [];
 
   for (const company of trustedGreenhouse) {
     try {
@@ -91,16 +123,25 @@ async function main() {
         if (!result.pass) {
           totalRejected++;
 
-          // Now check full description for worldwide signals
-          const signals = findWorldwideSignals(fullDesc);
-          if (signals.length > 0) {
-            rescuable++;
-            examples.push({
+          // Check full description for worldwide signals (both tiers)
+          const { strong, weak } = findSignals(fullDesc);
+          if (strong.length > 0) {
+            rescuableStrong++;
+            strongExamples.push({
               company: company.name,
               title: item.title,
               location,
               reason: result.reason,
-              signals,
+              signals: strong,
+            });
+          } else if (weak.length > 0) {
+            rescuableWeak++;
+            weakExamples.push({
+              company: company.name,
+              title: item.title,
+              location,
+              reason: result.reason,
+              signals: weak,
             });
           }
         }
@@ -113,23 +154,40 @@ async function main() {
   console.log("═══════════════════════════════════════════════════");
   console.log(`Total raw jobs (eng/product/design): ${totalRaw}`);
   console.log(`Rejected by current filter: ${totalRejected}`);
-  console.log(`Rescuable (worldwide signal in full desc): ${rescuable}`);
+  console.log(`Rescuable (STRONG signals): ${rescuableStrong}`);
+  console.log(`Rescuable (weak signals only): ${rescuableWeak}`);
   console.log("═══════════════════════════════════════════════════\n");
 
-  if (examples.length > 0) {
-    console.log("RESCUABLE JOBS (rejected but have worldwide signals in description):\n");
-    for (const ex of examples.slice(0, 30)) {
+  if (strongExamples.length > 0) {
+    console.log("🟢 STRONG SIGNAL JOBS (would be rescued by current filter):\n");
+    for (const ex of strongExamples.slice(0, 20)) {
       console.log(`  ${ex.company} — ${ex.title}`);
       console.log(`    location: "${ex.location}"`);
       console.log(`    rejected: ${ex.reason}`);
       console.log(`    signals:  ${ex.signals.join(", ")}`);
       console.log();
     }
-    if (examples.length > 30) {
-      console.log(`  ... and ${examples.length - 30} more`);
+    if (strongExamples.length > 20) {
+      console.log(`  ... and ${strongExamples.length - 20} more`);
     }
   } else {
-    console.log("No rescuable jobs found.");
+    console.log("🟢 No STRONG signal rescues found.\n");
+  }
+
+  if (weakExamples.length > 0) {
+    console.log("🟡 WEAK SIGNAL JOBS (need manual review to promote signals):\n");
+    for (const ex of weakExamples.slice(0, 15)) {
+      console.log(`  ${ex.company} — ${ex.title}`);
+      console.log(`    location: "${ex.location}"`);
+      console.log(`    rejected: ${ex.reason}`);
+      console.log(`    signals:  ${ex.signals.join(", ")}`);
+      console.log();
+    }
+    if (weakExamples.length > 15) {
+      console.log(`  ... and ${weakExamples.length - 15} more`);
+    }
+  } else {
+    console.log("🟡 No weak signal jobs found.");
   }
 }
 
