@@ -1,5 +1,192 @@
 [
   {
+    "id": "greenhouse_h82qcj",
+    "title": "Distributed Systems Engineer - Data Governance Platform",
+    "company": "Canonical",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=canonical.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/canonical/jobs/4581200",
+    "source": "greenhouse",
+    "tags": [
+      "SaaS Engineering"
+    ],
+    "postedAt": "2026-03-21T17:27:52-04:00",
+    "scrapedAt": "2026-03-21T21:56:24.582Z",
+    "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_awp0jl",
+    "title": " Staff Database Administrator ",
+    "company": "Wikimedia Foundation",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=wikimedia.org&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/wikimedia/jobs/7248737",
+    "source": "greenhouse",
+    "tags": [
+      "Product & Technology"
+    ],
+    "postedAt": "2026-03-21T08:27:04-04:00",
+    "scrapedAt": "2026-03-21T21:56:36.128Z",
+    "description": "&lt;p&gt;&lt;strong&gt;Summary&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;We’re hiring a Staff Database Administrator &lt;a href=&quot;https://wikimediafoundation.org/&quot;&gt;to support and protect the sum o",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_d99jic",
+    "title": "Senior Site Reliability Engineer",
+    "company": "Wikimedia Foundation",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=wikimedia.org&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/wikimedia/jobs/7732949",
+    "source": "greenhouse",
+    "tags": [
+      "Product & Technology"
+    ],
+    "postedAt": "2026-03-21T08:16:52-04:00",
+    "scrapedAt": "2026-03-21T21:56:36.125Z",
+    "description": "&lt;p&gt;&lt;strong&gt;Summary&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;The Wikimedia Foundation is looking for a Senior Site Reliability Engineer to support and develop the platform serving the world’s favo",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_gij15n",
+    "title": "Senior Security Engineer - Incident Response",
+    "company": "Mozilla",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=mozilla.org&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/mozilla/jobs/7381944",
+    "source": "greenhouse",
+    "tags": [
+      "Security"
+    ],
+    "postedAt": "2026-03-21T03:49:04-04:00",
+    "scrapedAt": "2026-03-21T21:56:35.895Z",
+    "description": "&lt;div class=&quot;gmail_default&quot; style=&quot;font-size: small;&quot;&gt; &lt;div&gt; &lt;div&gt;To learn the Hiring Ranges for this position, please select your location from the &lt;strong&gt;",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_giznnd",
+    "title": "Staff Security Engineer, Product Security",
+    "company": "Mozilla",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=mozilla.org&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/mozilla/jobs/7376809",
+    "source": "greenhouse",
+    "tags": [
+      "Security"
+    ],
+    "postedAt": "2026-03-21T03:48:57-04:00",
+    "scrapedAt": "2026-03-21T21:56:35.897Z",
+    "description": "&lt;div class=&quot;gmail_default&quot; style=&quot;font-size: small;&quot;&gt; &lt;div&gt; &lt;div&gt;To learn the Hiring Ranges for this position, please select your location from the &lt;strong&gt;",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_h0n3zc",
+    "title": "Staff Security Engineer",
+    "company": "Mozilla",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=mozilla.org&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/mozilla/jobs/7263230",
+    "source": "greenhouse",
+    "tags": [
+      "Security"
+    ],
+    "postedAt": "2026-03-21T03:48:46-04:00",
+    "scrapedAt": "2026-03-21T21:56:35.897Z",
+    "description": "&lt;div class=&quot;gmail_default&quot; style=&quot;font-size: small;&quot;&gt; &lt;div&gt; &lt;div&gt;To learn the Hiring Ranges for this position, please select your location from the &lt;strong&gt;",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_i1eru5",
+    "title": "Staff Software Engineer, IAM",
+    "company": "Mozilla",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=mozilla.org&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/mozilla/jobs/7017210",
+    "source": "greenhouse",
+    "tags": [
+      "Security"
+    ],
+    "postedAt": "2026-03-21T03:48:29-04:00",
+    "scrapedAt": "2026-03-21T21:56:35.897Z",
+    "description": "&lt;div class=&quot;gmail_default&quot; style=&quot;font-size: small;&quot;&gt; &lt;div&gt; &lt;div&gt;To learn the Hiring Ranges for this position, please select your location from the &lt;strong&gt;",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_47xjyi",
+    "title": "Sr. Mission Integration Engineer, Multinational Digital Infrastructure - ",
+    "company": "Anduril",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
+    "category": "engineering",
+    "url": "https://boards.greenhouse.io/andurilindustries/jobs/5050476007?gh_jid=5050476007",
+    "source": "greenhouse",
+    "tags": [
+      "Maritime & Maneuver Dominance : Maritime Division Leadership : Division Leadership & Operations"
+    ],
+    "postedAt": "2026-03-20T18:28:22-04:00",
+    "scrapedAt": "2026-03-21T21:57:31.841Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Anduril Industries is a defense technology company with a mission to transform U.S. and allied military capabilities with advanced technology. By br",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_uua5pi",
+    "title": "Senior Product Manager, Dashboard and Internal Tools",
+    "company": "Figure Technologies",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=figure.com&sz=128",
+    "category": "product",
+    "url": "https://job-boards.greenhouse.io/figure/jobs/8463088002",
+    "source": "greenhouse",
+    "tags": [
+      "Product"
+    ],
+    "postedAt": "2026-03-20T18:27:56-04:00",
+    "scrapedAt": "2026-03-21T21:57:35.292Z",
+    "description": "&lt;p&gt;&lt;strong&gt;About Figure&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Figure (NASDAQ: FIGR) is transforming capital markets through blockchain. We’re proving that blockchain isn’t just theory - it’s p",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_ccvig3",
+    "title": "Senior Software Engineer (Security & Privacy)",
+    "company": "Wikimedia Foundation",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=wikimedia.org&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/wikimedia/jobs/7565528",
+    "source": "greenhouse",
+    "tags": [
+      "Product & Technology"
+    ],
+    "postedAt": "2026-03-20T18:16:05-04:00",
+    "scrapedAt": "2026-03-21T21:56:36.125Z",
+    "description": "&lt;p&gt;&lt;strong&gt;Timezone preference: GMT-5 through GMT+1&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Senior Software Engineer (Privacy)&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Summa",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_cbqovx",
+    "title": "Engineering Manager, Wikidata Platform ",
+    "company": "Wikimedia Foundation",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=wikimedia.org&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/wikimedia/jobs/7543775",
+    "source": "greenhouse",
+    "tags": [
+      "Product & Technology"
+    ],
+    "postedAt": "2026-03-20T18:10:49-04:00",
+    "scrapedAt": "2026-03-21T21:56:36.124Z",
+    "description": "&lt;h4&gt;&lt;strong&gt;Summary&lt;/strong&gt;&lt;/h4&gt; &lt;p&gt;The Wikimedia Foundation is seeking an Engineering Manager to lead the Wikidata Platform team — the group responsible for the structu",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
     "id": "greenhouse_foz8dx",
     "title": "Systems Engineering Tutor",
     "company": "xAI",
@@ -11,7 +198,7 @@
       "STEM"
     ],
     "postedAt": "2026-03-20T14:02:25-04:00",
-    "scrapedAt": "2026-03-20T22:00:56.032Z",
+    "scrapedAt": "2026-03-21T21:56:52.334Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h3&gt;&lt;strong&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;About xAI&lt;/span&gt;&lt;/strong&gt;&lt;/h3&gt; &lt;p&gt;&l",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -28,7 +215,7 @@
       "Main Staff"
     ],
     "postedAt": "2026-03-20T13:56:20-04:00",
-    "scrapedAt": "2026-03-20T22:00:30.308Z",
+    "scrapedAt": "2026-03-21T21:56:36.720Z",
     "description": "&lt;p&gt;First and most importantly: our mission is to bring transparency and clarity to the world&#39;s data.&lt;/p&gt; &lt;p&gt;Our platform, FiftyOne, is &lt;strong&gt;where AI work happens&lt;/str",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -45,7 +232,7 @@
       "Delivery"
     ],
     "postedAt": "2026-03-20T13:26:31-04:00",
-    "scrapedAt": "2026-03-20T22:00:23.154Z",
+    "scrapedAt": "2026-03-21T21:56:35.106Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;About Turing&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Based in San Francisco, California, Turing is the world’s leading research accelerator ",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -62,7 +249,7 @@
       "Product"
     ],
     "postedAt": "2026-03-20T13:21:15-04:00",
-    "scrapedAt": "2026-03-20T22:01:08.091Z",
+    "scrapedAt": "2026-03-21T21:57:04.392Z",
     "description": "&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&lt;strong&gt;About Us&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt; &lt;p&gt;Hungryroot is using AI to build the most consumer-centric food and wellnes",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -79,25 +266,8 @@
       "Product"
     ],
     "postedAt": "2026-03-20T12:55:16-04:00",
-    "scrapedAt": "2026-03-20T22:01:08.091Z",
+    "scrapedAt": "2026-03-21T21:57:04.392Z",
     "description": "&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&lt;strong&gt;About Us&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt; &lt;p&gt;Hungryroot is using AI to build the most consumer-centric food and wellnes",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_47xjyi",
-    "title": "Sr. Mission Integration Engineer, Multinational Digital Infrastructure - ",
-    "company": "Anduril",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
-    "category": "engineering",
-    "url": "https://boards.greenhouse.io/andurilindustries/jobs/5050476007?gh_jid=5050476007",
-    "source": "greenhouse",
-    "tags": [
-      "Maritime & Maneuver Dominance : Maritime Division Leadership : Division Leadership & Operations"
-    ],
-    "postedAt": "2026-03-20T11:17:14-04:00",
-    "scrapedAt": "2026-03-20T22:01:45.800Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Anduril Industries is a defense technology company with a mission to transform U.S. and allied military capabilities with advanced technology. By br",
     "isWorldwide": true,
     "employmentType": "Full-time"
   },
@@ -113,7 +283,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-20T09:27:14-04:00",
-    "scrapedAt": "2026-03-20T22:01:49.269Z",
+    "scrapedAt": "2026-03-21T21:57:35.531Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;Fingerprint&lt;/strong&gt;&amp;nbsp;empowers developers to stop online fraud at the source.&lt;/p&gt; &lt;p&gt;We work on turning radi",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -130,7 +300,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-20T09:03:54-04:00",
-    "scrapedAt": "2026-03-20T22:00:23.141Z",
+    "scrapedAt": "2026-03-21T21:56:35.172Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Remote&lt;/strong&gt;&lt;/h2&gt; &lt;div&gt;&lt;span style=&quot;font-size: 12pt; font-family: helvetica, arial, sans-serif;&qu",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -147,7 +317,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-20T09:03:53-04:00",
-    "scrapedAt": "2026-03-20T22:00:23.140Z",
+    "scrapedAt": "2026-03-21T21:56:35.171Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Remote&lt;/strong&gt;&lt;/h2&gt; &lt;div&gt;&lt;span style=&quot;font-size: 12pt; font-family: helvetica, arial, sans-serif;&qu",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -164,7 +334,7 @@
       "Design"
     ],
     "postedAt": "2026-03-20T09:03:53-04:00",
-    "scrapedAt": "2026-03-20T22:00:23.142Z",
+    "scrapedAt": "2026-03-21T21:56:35.174Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Remote&lt;/strong&gt;&lt;/h2&gt; &lt;div&gt;&lt;span style=&quot;font-size: 12pt; font-family: helvetica, arial, sans-serif;&qu",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -181,7 +351,7 @@
       "936 Engineering - Data Engineering"
     ],
     "postedAt": "2026-03-19T21:45:44-04:00",
-    "scrapedAt": "2026-03-20T22:00:32.725Z",
+    "scrapedAt": "2026-03-21T21:56:38.357Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;ZoomInfo is where careers accelerate. We move fast, think boldly, and empower you to do the best work of your life. You’ll be surrounded by teammate",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -198,7 +368,7 @@
       "Operations Research"
     ],
     "postedAt": "2026-03-19T17:11:48-04:00",
-    "scrapedAt": "2026-03-20T22:01:08.091Z",
+    "scrapedAt": "2026-03-21T21:57:04.392Z",
     "description": "&lt;p&gt;&lt;strong&gt;About Us&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Hungryroot is using AI to build the most consumer-centric food and wellness company to ever exist. We act as your personal assistant f",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -215,7 +385,7 @@
       "Machine Learning"
     ],
     "postedAt": "2026-03-19T17:06:14-04:00",
-    "scrapedAt": "2026-03-20T22:01:08.091Z",
+    "scrapedAt": "2026-03-21T21:57:04.392Z",
     "description": "&lt;p&gt;&lt;strong&gt;About Us&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Hungryroot is using AI to build the most consumer-centric food and wellness company to ever exist. We act as your personal assistant f",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -232,7 +402,7 @@
       "Research"
     ],
     "postedAt": "2026-03-19T14:46:07-04:00",
-    "scrapedAt": "2026-03-20T22:00:30.315Z",
+    "scrapedAt": "2026-03-21T21:56:36.719Z",
     "description": "&lt;p&gt;&lt;strong&gt;Research Scientist – Controlled 3D Generation&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Location:&lt;/strong&gt; Remote&lt;/p&gt; &lt;p&gt;&lt;strong&gt;About the Role&lt;",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -249,25 +419,8 @@
       "Advancement"
     ],
     "postedAt": "2026-03-19T14:45:42-04:00",
-    "scrapedAt": "2026-03-20T22:00:23.978Z",
+    "scrapedAt": "2026-03-21T21:56:36.128Z",
     "description": "&lt;p&gt;&lt;strong&gt;Summary&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;We are searching for an experienced full-stack software engineer to join the Wikimedia Fundraising Technology team.&amp;nbsp; Each year",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_d99jic",
-    "title": "Senior Site Reliability Engineer",
-    "company": "Wikimedia Foundation",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=wikimedia.org&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/wikimedia/jobs/7732949",
-    "source": "greenhouse",
-    "tags": [
-      "Product & Technology"
-    ],
-    "postedAt": "2026-03-19T09:15:56-04:00",
-    "scrapedAt": "2026-03-20T22:00:23.975Z",
-    "description": "&lt;p&gt;&lt;strong&gt;Summary&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;The Wikimedia Foundation is looking for a Senior Site Reliability Engineer to support and develop the platform serving the world’s favo",
     "isWorldwide": true,
     "employmentType": "Full-time"
   },
@@ -283,7 +436,7 @@
       "Product"
     ],
     "postedAt": "2026-03-18T17:57:34-04:00",
-    "scrapedAt": "2026-03-20T22:00:10.308Z",
+    "scrapedAt": "2026-03-21T21:56:29.750Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h4&gt;&lt;strong&gt;What’s in it for you?&amp;nbsp;&lt;/strong&gt;&lt;/h4&gt; &lt;p&gt;Ready to make a serious impact? Millions of people already rely on",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -300,7 +453,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-18T16:50:28-04:00",
-    "scrapedAt": "2026-03-20T22:01:30.524Z",
+    "scrapedAt": "2026-03-21T21:57:21.037Z",
     "description": "&lt;p&gt;PsiQuantum’s&amp;nbsp;mission is to build the first useful quantum computers—machines capable of delivering the breakthroughs the field has long promised. Since our founding in 2016, our sing",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -317,7 +470,7 @@
       "Software and DevOps Engineering"
     ],
     "postedAt": "2026-03-18T16:25:19-04:00",
-    "scrapedAt": "2026-03-20T22:01:30.450Z",
+    "scrapedAt": "2026-03-21T21:57:21.019Z",
     "description": "&lt;p data-renderer-start-pos=&quot;83&quot;&gt;Join us in pioneering the next generation of nuclear reactors! You&#39;ll leverage your software skills alongside engineers from a variety of discipline",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -334,7 +487,7 @@
       "Research & Development"
     ],
     "postedAt": "2026-03-18T15:42:38-04:00",
-    "scrapedAt": "2026-03-20T22:00:31.175Z",
+    "scrapedAt": "2026-03-21T21:56:37.516Z",
     "description": "&lt;p&gt;RegScale is a continuous controls monitoring (CCM) platform that helps organizations automate and scale their security, risk, and compliance programs. We are at an inflection point, transitio",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -351,7 +504,7 @@
       "Research & Development"
     ],
     "postedAt": "2026-03-18T15:42:25-04:00",
-    "scrapedAt": "2026-03-20T22:00:31.174Z",
+    "scrapedAt": "2026-03-21T21:56:37.516Z",
     "description": "&lt;p&gt;RegScale is a continuous controls monitoring (CCM) platform that helps organizations automate and scale their security, risk, and compliance programs. We are at an inflection point, transitio",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -368,7 +521,7 @@
       "Research & Development"
     ],
     "postedAt": "2026-03-18T15:42:13-04:00",
-    "scrapedAt": "2026-03-20T22:00:31.174Z",
+    "scrapedAt": "2026-03-21T21:56:37.516Z",
     "description": "&lt;p&gt;RegScale is a continuous controls monitoring (CCM) platform that helps organizations automate and scale their security, risk, and compliance programs. We are at an inflection point, transitio",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -385,7 +538,7 @@
       "Research & Development"
     ],
     "postedAt": "2026-03-18T15:41:20-04:00",
-    "scrapedAt": "2026-03-20T22:00:31.174Z",
+    "scrapedAt": "2026-03-21T21:56:37.516Z",
     "description": "&lt;p&gt;RegScale is a continuous controls monitoring (CCM) platform that helps organizations automate and scale their security, risk, and compliance programs. We are at an inflection point, transitio",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -402,7 +555,7 @@
       "Research & Development"
     ],
     "postedAt": "2026-03-18T14:40:06-04:00",
-    "scrapedAt": "2026-03-20T22:00:31.174Z",
+    "scrapedAt": "2026-03-21T21:56:37.516Z",
     "description": "&lt;p&gt;RegScale is a continuous controls monitoring (CCM) platform that helps organizations automate and scale their security, risk, and compliance programs. We are at an inflection point, transitio",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -419,7 +572,7 @@
       "Technology"
     ],
     "postedAt": "2026-03-18T13:43:11-04:00",
-    "scrapedAt": "2026-03-20T22:01:18.048Z",
+    "scrapedAt": "2026-03-21T21:57:12.192Z",
     "description": "&lt;p&gt;We are seeking a skilled Educational Data Analyst to join our dynamic team. This role involves direct interaction with school district administrators to understand their data analysis needs a",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -436,7 +589,7 @@
       "Ubuntu Engineering"
     ],
     "postedAt": "2026-03-18T13:27:04-04:00",
-    "scrapedAt": "2026-03-20T21:59:56.755Z",
+    "scrapedAt": "2026-03-21T21:56:24.587Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -453,7 +606,7 @@
       "SRE"
     ],
     "postedAt": "2026-03-18T12:28:32-04:00",
-    "scrapedAt": "2026-03-20T21:59:56.760Z",
+    "scrapedAt": "2026-03-21T21:56:24.596Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -470,7 +623,7 @@
       "SRE"
     ],
     "postedAt": "2026-03-18T12:28:31-04:00",
-    "scrapedAt": "2026-03-20T21:59:56.760Z",
+    "scrapedAt": "2026-03-21T21:56:24.596Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -487,7 +640,7 @@
       "Commercial Systems"
     ],
     "postedAt": "2026-03-18T12:20:22-04:00",
-    "scrapedAt": "2026-03-20T21:59:56.761Z",
+    "scrapedAt": "2026-03-21T21:56:24.598Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -505,44 +658,10 @@
       "Engineering"
     ],
     "postedAt": "2026-03-18T10:42:24.419Z",
-    "scrapedAt": "2026-03-20T22:01:18.721Z",
+    "scrapedAt": "2026-03-21T21:57:38.736Z",
     "description": "About the company Trust Wallet is the leading non-custodial cryptocurrency wallet, trusted by over 200 million people worldwide to securely manage and grow their digital assets. Our vision is to give ",
     "isWorldwide": true,
     "employmentType": "FullTime"
-  },
-  {
-    "id": "greenhouse_awp0jl",
-    "title": " Staff Database Administrator ",
-    "company": "Wikimedia Foundation",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=wikimedia.org&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/wikimedia/jobs/7248737",
-    "source": "greenhouse",
-    "tags": [
-      "Product & Technology"
-    ],
-    "postedAt": "2026-03-17T17:53:28-04:00",
-    "scrapedAt": "2026-03-20T22:00:23.979Z",
-    "description": "&lt;p&gt;&lt;strong&gt;Summary&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;We’re hiring a Staff Database Administrator &lt;a href=&quot;https://wikimediafoundation.org/&quot;&gt;to support and protect the sum o",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_ccvig3",
-    "title": "Senior Software Engineer (Security & Privacy)",
-    "company": "Wikimedia Foundation",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=wikimedia.org&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/wikimedia/jobs/7565528",
-    "source": "greenhouse",
-    "tags": [
-      "Product & Technology"
-    ],
-    "postedAt": "2026-03-17T17:09:03-04:00",
-    "scrapedAt": "2026-03-20T22:00:23.975Z",
-    "description": "&lt;p&gt;&lt;strong&gt;Timezone preference: GMT-5 through GMT+1&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Senior Software Engineer (Privacy)&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Summa",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
   },
   {
     "id": "lever_xv9sp3",
@@ -557,7 +676,7 @@
       "Product Management"
     ],
     "postedAt": "2026-03-17T20:15:26.468Z",
-    "scrapedAt": "2026-03-20T22:02:48.580Z",
+    "scrapedAt": "2026-03-21T21:57:51.977Z",
     "description": "Arcadia is dedicated to happier, healthier days for all. We believe that there is a better healthcare world – one powered by data. Our platform transforms complex, diverse data into a unified foundati",
     "isWorldwide": true,
     "employmentType": "Full-time Remote"
@@ -574,7 +693,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-17T15:56:10-04:00",
-    "scrapedAt": "2026-03-20T22:01:06.199Z",
+    "scrapedAt": "2026-03-21T21:56:58.289Z",
     "description": "&lt;h2&gt;&lt;strong&gt;Change the way the world presents.&lt;/strong&gt;&lt;/h2&gt; &lt;h3&gt;&lt;strong&gt;About Beautiful.ai&lt;/strong&gt;&lt;/h3&gt; &lt;p&gt;Today, Beautiful.ai powers presentati",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -591,25 +710,8 @@
       "Engineering"
     ],
     "postedAt": "2026-03-17T15:53:29-04:00",
-    "scrapedAt": "2026-03-20T22:01:06.199Z",
+    "scrapedAt": "2026-03-21T21:56:58.289Z",
     "description": "&lt;h2&gt;Change the way the world presents.&lt;/h2&gt; &lt;p style=&quot;text-align: left;&quot;&gt;&lt;strong&gt;About Beautiful.ai&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Today, Beautiful.ai powers prese",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_cbqovx",
-    "title": "Engineering Manager, Wikidata Platform ",
-    "company": "Wikimedia Foundation",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=wikimedia.org&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/wikimedia/jobs/7543775",
-    "source": "greenhouse",
-    "tags": [
-      "Product & Technology"
-    ],
-    "postedAt": "2026-03-17T14:40:33-04:00",
-    "scrapedAt": "2026-03-20T22:00:23.974Z",
-    "description": "&lt;h4&gt;&lt;strong&gt;Summary&lt;/strong&gt;&lt;/h4&gt; &lt;p&gt;The Wikimedia Foundation is seeking an Engineering Manager to lead the Wikidata Platform team — the group responsible for the structu",
     "isWorldwide": true,
     "employmentType": "Full-time"
   },
@@ -625,7 +727,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-17T13:25:06-04:00",
-    "scrapedAt": "2026-03-20T22:01:49.268Z",
+    "scrapedAt": "2026-03-21T21:57:35.531Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;Fingerprint&lt;/strong&gt;&amp;nbsp;empowers developers to stop online fraud at the source.&lt;/p&gt; &lt;p&gt;We work on turning radi",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -642,7 +744,7 @@
       "Product & Technology"
     ],
     "postedAt": "2026-03-17T12:49:32-04:00",
-    "scrapedAt": "2026-03-20T22:00:23.980Z",
+    "scrapedAt": "2026-03-21T21:56:36.130Z",
     "description": "&lt;p&gt;&lt;strong&gt;Staff Software Engineer&amp;nbsp;&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;PLEASE NOTE:&lt;/strong&gt; We will only be considering hiring within UTC-3 to UTC+3 due to the",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -659,7 +761,7 @@
       "Sec Engineering"
     ],
     "postedAt": "2026-03-17T11:59:34-04:00",
-    "scrapedAt": "2026-03-20T21:59:56.679Z",
+    "scrapedAt": "2026-03-21T21:56:24.418Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -676,7 +778,7 @@
       "Firefox"
     ],
     "postedAt": "2026-03-17T11:07:36-04:00",
-    "scrapedAt": "2026-03-20T22:00:24.279Z",
+    "scrapedAt": "2026-03-21T21:56:35.896Z",
     "description": "&lt;div class=&quot;gmail_default&quot; style=&quot;font-size: small;&quot;&gt; &lt;div&gt; &lt;div&gt;To learn the Hiring Ranges for this position, please select your location from the &lt;strong&gt;",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -693,7 +795,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-17T10:13:52-04:00",
-    "scrapedAt": "2026-03-20T22:00:46.567Z",
+    "scrapedAt": "2026-03-21T21:56:43.915Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Lithic is the modern card issuing and processing platform empowering ambitious financial companies to build the future of payments.&lt;/p&gt; &lt;p&",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -711,7 +813,7 @@
       "Acceleration"
     ],
     "postedAt": "2026-03-17T11:17:53.731Z",
-    "scrapedAt": "2026-03-20T22:00:49.852Z",
+    "scrapedAt": "2026-03-21T21:56:56.325Z",
     "description": "About Us Parity is one of the world’s most experienced companies building the core infrastructure behind blockchain - the system that allows information and value to be shared securely without needing",
     "isWorldwide": true,
     "employmentType": "FullTime"
@@ -728,7 +830,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-16T20:03:37-04:00",
-    "scrapedAt": "2026-03-20T22:01:00.117Z",
+    "scrapedAt": "2026-03-21T21:56:56.911Z",
     "description": "&lt;p&gt;&lt;strong&gt;About this opportunity:&lt;/strong&gt;&lt;strong&gt;&lt;br&gt;&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;span style=&quot;font-weight: 300;&quot;&gt;At Freenome, we are seeking a Se",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -745,7 +847,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-16T16:37:01-04:00",
-    "scrapedAt": "2026-03-20T22:00:16.489Z",
+    "scrapedAt": "2026-03-21T21:56:34.279Z",
     "description": "&lt;p&gt;By making evidence the heart of security, we help customers stay ahead of ever-changing cyber-attacks.&amp;nbsp;&lt;/p&gt; &lt;p&gt;Corelight is a cybersecurity company that transforms networ",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -762,7 +864,7 @@
       "Product"
     ],
     "postedAt": "2026-03-16T16:32:03-04:00",
-    "scrapedAt": "2026-03-20T22:00:12.960Z",
+    "scrapedAt": "2026-03-21T21:56:30.584Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Trusted by more than 18,000 Shopify and Shopify Plus stores—like Brooklinen, Ruggable, True Classic and Dr. Squatch—Postscript gives ecommerce brand",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -779,7 +881,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-16T18:51:30.675Z",
-    "scrapedAt": "2026-03-20T22:04:34.395Z",
+    "scrapedAt": "2026-03-21T21:58:56.744Z",
     "description": "Veda builds vault infrastructure for DeFi at scale. We manage $2B+ in total value locked across 15+ blockchain networks, powering yield strategies for partners including Kraken, Etherfi, and Plasma. O",
     "isWorldwide": true,
     "employmentType": "Remote"
@@ -796,7 +898,7 @@
       "Product"
     ],
     "postedAt": "2026-03-16T18:29:45.616Z",
-    "scrapedAt": "2026-03-20T22:04:34.395Z",
+    "scrapedAt": "2026-03-21T21:58:56.743Z",
     "isWorldwide": true,
     "employmentType": "Remote"
   },
@@ -812,7 +914,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-16T14:05:15-04:00",
-    "scrapedAt": "2026-03-20T22:01:49.269Z",
+    "scrapedAt": "2026-03-21T21:57:35.531Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;Fingerprint&lt;/strong&gt;&amp;nbsp;empowers developers to stop online fraud at the source.&lt;/p&gt; &lt;p&gt;We work on turning radi",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -829,7 +931,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-16T14:04:50-04:00",
-    "scrapedAt": "2026-03-20T22:01:49.269Z",
+    "scrapedAt": "2026-03-21T21:57:35.531Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;Fingerprint&lt;/strong&gt;&amp;nbsp;empowers developers to stop online fraud at the source.&lt;/p&gt; &lt;p&gt;We work on turning radi",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -846,7 +948,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-16T14:04:25-04:00",
-    "scrapedAt": "2026-03-20T22:01:49.269Z",
+    "scrapedAt": "2026-03-21T21:57:35.531Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;Fingerprint&lt;/strong&gt;&amp;nbsp;empowers developers to stop online fraud at the source.&lt;/p&gt; &lt;p&gt;We work on turning radi",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -863,7 +965,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-16T13:32:29-04:00",
-    "scrapedAt": "2026-03-20T22:00:46.567Z",
+    "scrapedAt": "2026-03-21T21:56:43.915Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Lithic is the modern card issuing and processing platform empowering ambitious financial companies to build the future of payments.&lt;/p&gt; &lt;p&",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -880,25 +982,8 @@
       "Technology"
     ],
     "postedAt": "2026-03-16T12:06:50-04:00",
-    "scrapedAt": "2026-03-20T22:01:35.805Z",
+    "scrapedAt": "2026-03-21T21:57:21.819Z",
     "description": "&lt;p&gt;&lt;span style=&quot;font-weight: 400; font-family: helvetica, arial, sans-serif; font-size: 12pt;&quot;&gt;At Talkspace, we are committed to fostering a diverse, equitable, inclusive, and be",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_h82qcj",
-    "title": "Distributed Systems Engineer - Data Governance Platform",
-    "company": "Canonical",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=canonical.com&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/canonical/jobs/4581200",
-    "source": "greenhouse",
-    "tags": [
-      "SaaS Engineering"
-    ],
-    "postedAt": "2026-03-14T16:38:06-04:00",
-    "scrapedAt": "2026-03-20T21:59:56.753Z",
-    "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
   },
@@ -914,7 +999,7 @@
       "Sec Engineering"
     ],
     "postedAt": "2026-03-13T17:05:46-04:00",
-    "scrapedAt": "2026-03-20T21:59:56.677Z",
+    "scrapedAt": "2026-03-21T21:56:24.414Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -932,7 +1017,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-13T16:17:58.014Z",
-    "scrapedAt": "2026-03-20T22:00:22.115Z",
+    "scrapedAt": "2026-03-21T21:56:33.805Z",
     "description": "Who We Are Hi, we're DuckDuckGo, the online protection company and remote-first team of 300+ on a mission to raise the standard of trust online. Founded in 2008 and profitable since 2014, annual reven",
     "isWorldwide": true,
     "employmentType": "FullTime"
@@ -949,7 +1034,7 @@
       "Product"
     ],
     "postedAt": "2026-03-13T11:00:27-04:00",
-    "scrapedAt": "2026-03-20T22:01:49.269Z",
+    "scrapedAt": "2026-03-21T21:57:35.532Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;Fingerprint&lt;/strong&gt;&amp;nbsp;empowers developers to stop online fraud at the source.&lt;/p&gt; &lt;p&gt;We work on turning radi",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -966,7 +1051,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-12T17:44:33-04:00",
-    "scrapedAt": "2026-03-20T22:00:05.234Z",
+    "scrapedAt": "2026-03-21T21:56:28.166Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;Why join us&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Brex is the AI-powered spend platform. We help companies spend with confidence with inte",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -983,7 +1068,7 @@
       "Research"
     ],
     "postedAt": "2026-03-12T12:57:07-04:00",
-    "scrapedAt": "2026-03-20T22:00:30.328Z",
+    "scrapedAt": "2026-03-21T21:56:36.727Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p class=&quot;p1&quot;&gt;We are building AI to simulate the world through merging art and science.&lt;br&gt;&lt;br&gt;We believe that world models are a",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1000,7 +1085,7 @@
       "Product Design"
     ],
     "postedAt": "2026-03-12T12:20:39-04:00",
-    "scrapedAt": "2026-03-20T21:59:56.681Z",
+    "scrapedAt": "2026-03-21T21:56:24.421Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1017,7 +1102,7 @@
       "Research"
     ],
     "postedAt": "2026-03-12T12:14:44-04:00",
-    "scrapedAt": "2026-03-20T22:00:30.328Z",
+    "scrapedAt": "2026-03-21T21:56:36.726Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p class=&quot;p1&quot;&gt;We are building AI to simulate the world through merging art and science.&lt;br&gt;&lt;br&gt;We believe that world models are a",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1034,7 +1119,7 @@
       "Research"
     ],
     "postedAt": "2026-03-12T12:14:00-04:00",
-    "scrapedAt": "2026-03-20T22:00:30.327Z",
+    "scrapedAt": "2026-03-21T21:56:36.726Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p class=&quot;p1&quot;&gt;We are building AI to simulate the world through merging art and science.&lt;br&gt;&lt;br&gt;We believe that world models are a",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1051,7 +1136,7 @@
       "Research"
     ],
     "postedAt": "2026-03-12T12:13:21-04:00",
-    "scrapedAt": "2026-03-20T22:00:30.328Z",
+    "scrapedAt": "2026-03-21T21:56:36.727Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p class=&quot;p1&quot;&gt;We are building AI to simulate the world through merging art and science.&lt;br&gt;&lt;br&gt;We believe that world models are a",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1068,7 +1153,7 @@
       "Research"
     ],
     "postedAt": "2026-03-12T12:11:58-04:00",
-    "scrapedAt": "2026-03-20T22:00:30.328Z",
+    "scrapedAt": "2026-03-21T21:56:36.727Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p class=&quot;p1&quot;&gt;We are building AI to simulate the world through merging art and science.&lt;br&gt;&lt;br&gt;We believe that world models are a",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1085,7 +1170,7 @@
       "Main Staff"
     ],
     "postedAt": "2026-03-12T11:54:02-04:00",
-    "scrapedAt": "2026-03-20T22:00:30.308Z",
+    "scrapedAt": "2026-03-21T21:56:36.721Z",
     "description": "&lt;p&gt;First and most importantly: our mission is to bring transparency and clarity to the world&#39;s data.&lt;/p&gt; &lt;p&gt;Our platform, FiftyOne, is &lt;strong&gt;where AI work happens&lt;/str",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1102,7 +1187,7 @@
       "Main Staff"
     ],
     "postedAt": "2026-03-12T11:53:41-04:00",
-    "scrapedAt": "2026-03-20T22:00:30.308Z",
+    "scrapedAt": "2026-03-21T21:56:36.721Z",
     "description": "&lt;p&gt;First and most importantly: our mission is to bring transparency and clarity to the world&#39;s data.&lt;/p&gt; &lt;p&gt;Our platform, FiftyOne, is &lt;strong&gt;where AI work happens&lt;/str",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1120,7 +1205,7 @@
       "Security"
     ],
     "postedAt": "2026-03-11T22:56:33.160Z",
-    "scrapedAt": "2026-03-20T22:00:07.264Z",
+    "scrapedAt": "2026-03-21T21:56:47.813Z",
     "description": "Redox is on a mission to accelerate healthcare’s transformation with useful data. Redox Engine, a flexible interoperability platform, connects and powers real-time healthcare data exchange. With just ",
     "isWorldwide": true,
     "employmentType": "Full Time"
@@ -1137,7 +1222,7 @@
       "Product Management"
     ],
     "postedAt": "2026-03-11T14:59:34-04:00",
-    "scrapedAt": "2026-03-20T22:01:06.817Z",
+    "scrapedAt": "2026-03-21T21:57:00.553Z",
     "description": "&lt;p&gt;&lt;strong&gt;&lt;u&gt;Senior Product Manager&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;HYPR, the Identity Assurance Company, helps organizations create trust in the identity lifecycle. We ",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1154,7 +1239,7 @@
       "Data Science"
     ],
     "postedAt": "2026-03-11T12:20:07-04:00",
-    "scrapedAt": "2026-03-20T22:00:58.329Z",
+    "scrapedAt": "2026-03-21T21:56:54.753Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-family: helvetica, arial, sans-serif; font-size: 12pt;&quot;&gt;Airbnb was born in 2007 when two hosts welcomed three gues",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1171,7 +1256,7 @@
       "Data Science"
     ],
     "postedAt": "2026-03-11T11:48:02-04:00",
-    "scrapedAt": "2026-03-20T22:00:58.329Z",
+    "scrapedAt": "2026-03-21T21:56:54.753Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-family: helvetica, arial, sans-serif; font-size: 12pt;&quot;&gt;Airbnb was born in 2007 when two hosts welcomed three gues",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1188,7 +1273,7 @@
       "Firefox"
     ],
     "postedAt": "2026-03-11T11:31:10-04:00",
-    "scrapedAt": "2026-03-20T22:00:24.280Z",
+    "scrapedAt": "2026-03-21T21:56:35.896Z",
     "description": "&lt;p&gt;To learn the Hiring Ranges for this position, please select your location from the &lt;strong&gt;Apply Now&lt;/strong&gt; dropdown menu.&lt;/p&gt; &lt;p style=&quot;text-align: justify; line-",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1206,7 +1291,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-11T05:29:21.062Z",
-    "scrapedAt": "2026-03-20T22:01:18.720Z",
+    "scrapedAt": "2026-03-21T21:57:38.736Z",
     "description": "About the company Trust Wallet is the leading non-custodial cryptocurrency wallet, trusted by over 200 million people worldwide to securely manage and grow their digital assets. Our vision is to give ",
     "isWorldwide": true,
     "employmentType": "FullTime"
@@ -1223,7 +1308,7 @@
       "Sec Engineering"
     ],
     "postedAt": "2026-03-10T20:59:34-04:00",
-    "scrapedAt": "2026-03-20T21:59:56.681Z",
+    "scrapedAt": "2026-03-21T21:56:24.421Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1240,7 +1325,7 @@
       "Sec Engineering"
     ],
     "postedAt": "2026-03-10T20:50:49-04:00",
-    "scrapedAt": "2026-03-20T21:59:56.682Z",
+    "scrapedAt": "2026-03-21T21:56:24.422Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1257,7 +1342,7 @@
       "Runway Labs"
     ],
     "postedAt": "2026-03-10T19:24:33-04:00",
-    "scrapedAt": "2026-03-20T22:00:30.327Z",
+    "scrapedAt": "2026-03-21T21:56:36.726Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p class=&quot;p1&quot;&gt;We are building AI to simulate the world through merging art and science.&lt;br&gt;&lt;br&gt;We believe that world models are a",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1274,7 +1359,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-10T19:24:33-04:00",
-    "scrapedAt": "2026-03-20T22:00:30.328Z",
+    "scrapedAt": "2026-03-21T21:56:36.726Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p class=&quot;p1&quot;&gt;We are building AI to simulate the world through merging art and science.&lt;br&gt;&lt;br&gt;We believe that world models are a",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1291,7 +1376,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-10T19:24:33-04:00",
-    "scrapedAt": "2026-03-20T22:00:30.328Z",
+    "scrapedAt": "2026-03-21T21:56:36.727Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p class=&quot;p1&quot;&gt;We are building AI to simulate the world through merging art and science.&lt;br&gt;&lt;br&gt;We believe that world models are a",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1308,7 +1393,7 @@
       "Product"
     ],
     "postedAt": "2026-03-10T19:24:33-04:00",
-    "scrapedAt": "2026-03-20T22:00:30.328Z",
+    "scrapedAt": "2026-03-21T21:56:36.727Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p class=&quot;p1&quot;&gt;We are building AI to simulate the world through merging art and science.&lt;br&gt;&lt;br&gt;We believe that world models are a",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1325,7 +1410,7 @@
       "Product"
     ],
     "postedAt": "2026-03-10T19:24:33-04:00",
-    "scrapedAt": "2026-03-20T22:00:30.329Z",
+    "scrapedAt": "2026-03-21T21:56:36.728Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p class=&quot;p1&quot;&gt;We are building AI to simulate the world through merging art and science.&lt;br&gt;&lt;br&gt;We believe that world models are a",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1342,7 +1427,7 @@
       "Product"
     ],
     "postedAt": "2026-03-10T19:24:33-04:00",
-    "scrapedAt": "2026-03-20T22:00:30.329Z",
+    "scrapedAt": "2026-03-21T21:56:36.728Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p class=&quot;p1&quot;&gt;We are building AI to simulate the world through merging art and science.&lt;br&gt;&lt;br&gt;We believe that world models are a",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1359,25 +1444,8 @@
       "AI"
     ],
     "postedAt": "2026-03-10T15:29:55-04:00",
-    "scrapedAt": "2026-03-20T21:59:56.679Z",
+    "scrapedAt": "2026-03-21T21:56:24.417Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_gij15n",
-    "title": "Senior Security Engineer - Incident Response",
-    "company": "Mozilla",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=mozilla.org&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/mozilla/jobs/7381944",
-    "source": "greenhouse",
-    "tags": [
-      "Security"
-    ],
-    "postedAt": "2026-03-10T14:16:17-04:00",
-    "scrapedAt": "2026-03-20T22:00:24.279Z",
-    "description": "&lt;div class=&quot;gmail_default&quot; style=&quot;font-size: small;&quot;&gt; &lt;div&gt; &lt;div&gt;To learn the Hiring Ranges for this position, please select your location from the &lt;strong&gt;",
     "isWorldwide": true,
     "employmentType": "Full-time"
   },
@@ -1393,7 +1461,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-10T11:56:20-04:00",
-    "scrapedAt": "2026-03-20T22:01:47.484Z",
+    "scrapedAt": "2026-03-21T21:57:33.664Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;BrightHire is a category-creating, high-growth, Series B software company with a mission to give everyone the hiring experience they deserve.&lt;/p&",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1410,7 +1478,7 @@
       "AI Engineering"
     ],
     "postedAt": "2026-03-10T10:38:26-04:00",
-    "scrapedAt": "2026-03-20T21:59:56.682Z",
+    "scrapedAt": "2026-03-21T21:56:24.422Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1427,7 +1495,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-10T08:21:02-04:00",
-    "scrapedAt": "2026-03-20T22:01:07.452Z",
+    "scrapedAt": "2026-03-21T21:57:03.740Z",
     "description": "&lt;p&gt;Mixmax is the #1 product helping Revenue teams to become automatically proactive by eliminating busywork for a flawless customer experience&lt;/p&gt; &lt;h3&gt;&lt;strong&gt;The Opportunity&l",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1444,7 +1512,7 @@
       "Engineering General"
     ],
     "postedAt": "2026-03-09T19:43:22-04:00",
-    "scrapedAt": "2026-03-20T22:00:57.516Z",
+    "scrapedAt": "2026-03-21T21:56:53.703Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;Who we are&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Recharge is the subscription platform for the world’s fastest-growing and most innovative",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1461,7 +1529,7 @@
       "Engineering General"
     ],
     "postedAt": "2026-03-09T19:41:16-04:00",
-    "scrapedAt": "2026-03-20T22:00:57.516Z",
+    "scrapedAt": "2026-03-21T21:56:53.703Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;Who we are&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Recharge is the subscription platform for the world’s fastest-growing and most innovative",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1478,25 +1546,8 @@
       "Operations"
     ],
     "postedAt": "2026-03-09T15:17:56-04:00",
-    "scrapedAt": "2026-03-20T22:01:21.538Z",
+    "scrapedAt": "2026-03-21T21:57:14.406Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Agility Robotics is a pioneer. Our robot, Digit, is the first to be sold into workplaces across the ",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_h0n3zc",
-    "title": "Staff Security Engineer",
-    "company": "Mozilla",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=mozilla.org&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/mozilla/jobs/7263230",
-    "source": "greenhouse",
-    "tags": [
-      "Security"
-    ],
-    "postedAt": "2026-03-09T15:16:12-04:00",
-    "scrapedAt": "2026-03-20T22:00:24.280Z",
-    "description": "&lt;div class=&quot;gmail_default&quot; style=&quot;font-size: small;&quot;&gt; &lt;div&gt; &lt;div&gt;To learn the Hiring Ranges for this position, please select your location from the &lt;strong&gt;",
     "isWorldwide": true,
     "employmentType": "Full-time"
   },
@@ -1512,7 +1563,7 @@
       "DevOps Engineering"
     ],
     "postedAt": "2026-03-09T13:37:49-04:00",
-    "scrapedAt": "2026-03-20T21:59:56.682Z",
+    "scrapedAt": "2026-03-21T21:56:24.422Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1529,25 +1580,8 @@
       "Engineering Fast Track"
     ],
     "postedAt": "2026-03-09T05:26:55-04:00",
-    "scrapedAt": "2026-03-20T21:59:56.756Z",
+    "scrapedAt": "2026-03-21T21:56:24.588Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_fbjokn",
-    "title": "Executive Design Director (Brand & Product)",
-    "company": "MetaLab",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=metalab.com&sz=128",
-    "category": "design",
-    "url": "https://job-boards.greenhouse.io/metalab/jobs/7648496",
-    "source": "greenhouse",
-    "tags": [
-      "Design"
-    ],
-    "postedAt": "2026-03-06T17:26:34-05:00",
-    "scrapedAt": "2026-03-20T22:00:31.047Z",
-    "description": "&lt;p data-start=&quot;65&quot; data-end=&quot;149&quot;&gt;&lt;em data-start=&quot;93&quot; data-end=&quot;149&quot;&gt;&lt;em&gt;Our leadership team primarily collaborates during PST business hours,",
     "isWorldwide": true,
     "employmentType": "Full-time"
   }
