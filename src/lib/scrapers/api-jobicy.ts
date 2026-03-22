@@ -23,20 +23,24 @@ interface JobicyJob {
 }
 
 interface JobicyResponse {
-  jobs: JobicyJob[];
+  success?: boolean;
+  error?: string;
+  jobs?: JobicyJob[];
 }
 
 /**
  * Scrape jobs from Jobicy API.
- * GET https://jobicy.com/api/v2/remote-jobs?count=50&geo=anywhere
- * Returns { jobs: [...] }. Uses geo=anywhere to pre-filter for worldwide.
+ * GET https://jobicy.com/api/v2/remote-jobs?count=50
+ * Returns { success, jobs: [...] }.
+ * Note: do NOT pass geo=anywhere — the API rejects it.
+ * Omitting `geo` returns all regions; we filter locally via isWorldwideRemote.
  */
 export async function scrapeJobicy(): Promise<JobicyResult> {
   let rawJobs: JobicyJob[] = [];
 
   try {
     const res = await fetchWithRetry(
-      "https://jobicy.com/api/v2/remote-jobs?count=50&geo=anywhere",
+      "https://jobicy.com/api/v2/remote-jobs?count=50",
       {
         headers: { "User-Agent": "worldglide-jobs/1.0" },
         timeoutMs: 20000,
@@ -49,6 +53,11 @@ export async function scrapeJobicy(): Promise<JobicyResult> {
     }
 
     const data: JobicyResponse = await res.json();
+
+    if (data.success === false) {
+      console.warn(`[jobicy] API error: ${data.error || "unknown"}`);
+      return { jobs: [], rawCount: 0 };
+    }
 
     if (!data.jobs || !Array.isArray(data.jobs)) {
       console.warn("[jobicy] unexpected response format (no jobs array)");
