@@ -10,40 +10,42 @@ export interface HimalayasResult {
 }
 
 interface HimalayasJob {
-  id: string;
+  guid: string;
   title: string;
   companyName: string;
   companyLogo?: string;
-  url?: string;
-  slug?: string;
+  companySlug?: string;
   locationRestrictions?: string[];
+  timezoneRestrictions?: number[];
   description?: string;
   excerpt?: string;
-  pubDate?: string;
-  publishedDate?: string;
+  pubDate?: number; // epoch seconds
+  expiryDate?: number;
   categories?: string[];
-  tags?: string[];
-  seniority?: string;
-  salary?: string;
-  minSalary?: number;
-  maxSalary?: number;
-  salaryCurrency?: string;
+  parentCategories?: string[];
+  seniority?: string[];
+  minSalary?: number | null;
+  maxSalary?: number | null;
+  currency?: string;
   applicationLink?: string;
-  companySlug?: string;
+  employmentType?: string;
 }
 
 interface HimalayasResponse {
   jobs: HimalayasJob[];
-  total_count: number;
+  totalCount: number;
+  offset: number;
+  limit: number;
 }
 
-const MAX_PAGES = 10; // cap at 500 jobs to be polite
-const PAGE_SIZE = 50;
+const MAX_PAGES = 25; // cap at 500 jobs (25 * 20)
+const PAGE_SIZE = 20; // API caps at 20 per request
 
 /**
  * Scrape jobs from Himalayas API.
- * GET https://himalayas.app/jobs/api?limit=50&offset=0
- * Paginated — returns { jobs: [...], total_count }.
+ * GET https://himalayas.app/jobs/api?limit=20&offset=0
+ * Paginated — returns { jobs: [...], totalCount, offset, limit }.
+ * The API caps limit at 20 per request.
  * Empty locationRestrictions = worldwide.
  */
 export async function scrapeHimalayas(): Promise<HimalayasResult> {
@@ -66,7 +68,7 @@ export async function scrapeHimalayas(): Promise<HimalayasResult> {
       }
 
       const data: HimalayasResponse = await res.json();
-      totalCount = data.total_count || 0;
+      totalCount = data.totalCount || 0;
 
       if (!data.jobs || data.jobs.length === 0) {
         break;
@@ -112,44 +114,43 @@ export async function scrapeHimalayas(): Promise<HimalayasResult> {
       continue;
     }
 
-    const category = categorizeJob(item.title, item.tags || []);
+    const category = categorizeJob(item.title, item.categories || []);
     if (!category) continue;
 
     // Build salary string
     let salary: string | undefined;
     if (item.minSalary && item.maxSalary) {
-      const currency = item.salaryCurrency || "USD";
+      const currency = item.currency || "USD";
       salary = `${currency} ${formatSalary(item.minSalary)} - ${formatSalary(item.maxSalary)}`;
-    } else if (item.salary) {
-      salary = item.salary;
     }
 
-    // Build job URL
-    const jobUrl = item.applicationLink
-      || item.url
-      || (item.companySlug && item.slug
-        ? `https://himalayas.app/companies/${item.companySlug}/jobs/${item.slug}`
-        : `https://himalayas.app/jobs/${item.id}`);
+    // Build job URL — guid is the canonical URL, applicationLink may also exist
+    const jobUrl = item.applicationLink || item.guid;
 
     // Build company logo — prefer Himalayas logo, fallback to Google favicons
     const companyDomain = extractDomain(jobUrl);
     const companyLogo = item.companyLogo || (companyDomain ? getCompanyLogoUrl(companyDomain) : undefined);
 
+    // pubDate is epoch seconds — convert to ISO string
+    const postedAt = item.pubDate
+      ? new Date(item.pubDate * 1000).toISOString()
+      : new Date().toISOString();
+
     jobs.push({
-      id: createJobId("himalayas", String(item.id)),
+      id: createJobId("himalayas", item.guid),
       title: item.title,
       company: item.companyName || "Unknown",
       companyLogo,
       category,
       url: jobUrl,
       source: "himalayas",
-      tags: item.tags || item.categories || [],
+      tags: item.categories || [],
       salary,
-      postedAt: item.pubDate || item.publishedDate || new Date().toISOString(),
+      postedAt,
       scrapedAt: new Date().toISOString(),
       description: (item.excerpt || item.description || "").slice(0, 200),
       isWorldwide: true,
-      employmentType: "Full-time",
+      employmentType: item.employmentType || "Full-time",
     });
   }
 
