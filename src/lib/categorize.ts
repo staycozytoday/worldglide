@@ -27,7 +27,7 @@ const EXCLUDE_TITLE_PATTERNS = [
   /sales/i,
   /account\s+(executive|manager|director)/i,
   /business\s+development/i,
-  /revenue/i,
+  /revenue(?!\s+operations)/i,
   // Marketing roles
   /marketing/i,
   /growth\s+market/i,
@@ -40,16 +40,18 @@ const EXCLUDE_TITLE_PATTERNS = [
   /technical\s+support/i,
   /support\s+engineer/i,
   /help\s+desk/i,
+  // Sales operations / marketing operations (before product ops patterns)
+  /\bsales\s+operations/i,
+  /\bmarketing\s+operations/i,
   // Operations / admin / HR / finance / legal
   /\b(hr|human\s+resources|recruiter|recruiting|talent\s+acq)/i,
   /\b(finance|accounting|accountant|payroll|controller)\b/i,
   /\b(legal|counsel|attorney|compliance|paralegal)\b/i,
   /\b(office\s+manager|executive\s+assistant|admin\s+assist)/i,
-  /\b(?<!design\s)operations\s+(manager|director|lead|analyst)/i,
   // Generic leadership that isn't clearly eng/design/product
   /\bchief\s+(revenue|marketing|people|financial|operating)\b/i,
-  // BI/business analyst (not data analyst — that's product)
-  /\b(business\s+analyst|business\s+intelligence)\b/i,
+  // Business analyst (not data analyst — that's product)
+  /\bbusiness\s+analyst\b/i,
   // Copywriting, editorial (not design) — but allow "UX writer/copywriter"
   /\b(?<!ux\s)copywriter\b/i,
   /\b(?<!ux\s)editor(?!ial\s+design)\b/i,
@@ -89,7 +91,12 @@ const ENGINEERING_PATTERNS = [
   /\bcloud\s+engineer/i,
   /\bsystems?\s+engineer/i,
   /\bsecurity\s+engineer/i,
+  /\bapplication\s+security/i,
+  /\bappsec\b/i,
   /\b(qa|quality\s+assurance|sdet|test)\s+engineer/i,
+  /\bsdet\b/i,
+  /\btest\s+(automation|engineer)/i,
+  /\bquality\s+(assurance|engineer)/i,
   /\b(data|ml|machine\s+learning|ai)\s+engineer/i,
   /\bdata\s+scientist/i,
   /\b(embedded|firmware)\s+engineer/i,
@@ -162,7 +169,12 @@ const DESIGN_PATTERNS = [
   /\billustrat/i,
   /\bproduct\s+design/i,
   /\binteraction\s+design/i,
-  /\bbrand\s+designer\b/i,
+  /\bbrand\s+design/i,
+  /\bvisual\s+identity/i,
+  /\banimation\s+design/i,
+  /\bmotion\s+graphic/i,
+  /\b3d\s+design/i,
+  /\b3d\s+artist/i,
   // Vibe coding / creative coding / design engineering
   /\bvibe\s+cod/i,
   /\bcreative\s+(coder|developer|engineer|technologist)/i,
@@ -217,6 +229,17 @@ const PRODUCT_PATTERNS = [
   /\btechnical\s+writing/i,
   /\bdocumentation\s+(engineer|manager|lead|specialist)\b/i,
   /\bapi\s+writer\b/i,
+  // Operations (product-adjacent craft roles)
+  /\boperations\s+(manager|lead|director|analyst|coordinator)/i,
+  /\bbusiness\s+operations/i,
+  /\brevenue\s+operations/i,
+  /\bops\s+(manager|lead|director)/i,
+  // Strategy
+  /\bstrategy\s+(manager|lead|director|analyst)/i,
+  /\bchief\s+of\s+staff/i,
+  // Business intelligence
+  /\bbusiness\s+intelligence/i,
+  /\bbi\s+(analyst|engineer|developer)/i,
 ];
 
 export function categorizeJob(

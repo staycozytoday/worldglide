@@ -1941,6 +1941,66 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   // imported 2026-03-10 (remoteintech scan)
   { name: "Zyte",               domain: "zyte.com",              careersUrl: "https://apply.workable.com/zyte",           atsType: "workable", atsSlug: "zyte" },
   { name: "DevSquad",           domain: "devsquad.com",          careersUrl: "https://apply.workable.com/devsquad",       atsType: "workable", atsSlug: "devsquad" },
+
+  // ════════════════════════════════════════════════
+  // PERSONIO — {slug}.jobs.personio.de/xml
+  // ════════════════════════════════════════════════
+  { name: "Personio",           domain: "personio.de",           careersUrl: "https://personio.jobs.personio.de",          atsType: "personio", atsSlug: "personio" },
+  { name: "Vivid Money",        domain: "vivid.money",           careersUrl: "https://vivid.jobs.personio.de",             atsType: "personio", atsSlug: "vivid" },
+  { name: "Everphone",          domain: "everphone.com",         careersUrl: "https://everphone.jobs.personio.de",         atsType: "personio", atsSlug: "everphone" },
+  { name: "Liqid",              domain: "liqid.de",              careersUrl: "https://liqid.jobs.personio.de",             atsType: "personio", atsSlug: "liqid" },
+  { name: "Circula",            domain: "circula.com",           careersUrl: "https://circula.jobs.personio.de",           atsType: "personio", atsSlug: "circula" },
+  { name: "sevDesk",            domain: "sevdesk.de",            careersUrl: "https://sevdesk.jobs.personio.de",           atsType: "personio", atsSlug: "sevdesk" },
+  { name: "Tandem",             domain: "tandem.net",            careersUrl: "https://tandem.jobs.personio.de",            atsType: "personio", atsSlug: "tandem" },
+  { name: "Penta",              domain: "getpenta.com",          careersUrl: "https://penta.jobs.personio.de",             atsType: "personio", atsSlug: "penta" },
+
+  // ════════════════════════════════════════════════
+  // BREEZY HR — {slug}.breezy.hr/json
+  // ════════════════════════════════════════════════
+  { name: "Unito",              domain: "unito.io",              careersUrl: "https://unito.breezy.hr",                    atsType: "breezyhr", atsSlug: "unito" },
+  { name: "Teal",               domain: "teal.com",              careersUrl: "https://teal.breezy.hr",                     atsType: "breezyhr", atsSlug: "teal" },
+  { name: "DP Logistics",       domain: "dplogistics.com",       careersUrl: "https://dp-logistics.breezy.hr",             atsType: "breezyhr", atsSlug: "dp-logistics" },
+  { name: "Elevation Church",   domain: "elevationchurch.org",   careersUrl: "https://elevation-church.breezy.hr",         atsType: "breezyhr", atsSlug: "elevation-church" },
+  { name: "Nucamp",             domain: "nucamp.co",             careersUrl: "https://nucamp.breezy.hr",                   atsType: "breezyhr", atsSlug: "nucamp" },
+
+  // ════════════════════════════════════════════════
+  // PINPOINT — {slug}.pinpointhq.com/postings.json
+  // ════════════════════════════════════════════════
+  { name: "Lush",               domain: "lush.com",              careersUrl: "https://lush.pinpointhq.com",                atsType: "pinpoint", atsSlug: "lush" },
+  { name: "Doist",              domain: "doist.com",             careersUrl: "https://doist.pinpointhq.com",               atsType: "pinpoint", atsSlug: "doist" },
+  { name: "EasyJet",            domain: "easyjet.com",           careersUrl: "https://easyjet.pinpointhq.com",             atsType: "pinpoint", atsSlug: "easyjet" },
+  { name: "Unmind",             domain: "unmind.com",            careersUrl: "https://unmind.pinpointhq.com",              atsType: "pinpoint", atsSlug: "unmind" },
+  { name: "Davies Group",       domain: "daviesgroup.com",       careersUrl: "https://davies-group.pinpointhq.com",        atsType: "pinpoint", atsSlug: "davies-group" },
+  { name: "Merseyrail",         domain: "merseyrail.org",        careersUrl: "https://merseyrail.pinpointhq.com",          atsType: "pinpoint", atsSlug: "merseyrail" },
+  { name: "citizenM",           domain: "citizenm.com",          careersUrl: "https://citizenm.pinpointhq.com",            atsType: "pinpoint", atsSlug: "citizenm" },
+
+  // ════════════════════════════════════════════════
+  // DISCOVERED — auto-discovered via discover-companies.ts feedback loop
+  // ════════════════════════════════════════════════
+
+  { name: "ChowNow", domain: "chownow.com", careersUrl: "https://chownow.com/careers", atsType: "lever", atsSlug: "chownow" },
+  { name: "Pulley", domain: "pulley.com", careersUrl: "https://pulley.com/careers", atsType: "greenhouse", atsSlug: "pulley" },
+  { name: "Office Hours", domain: "officehours.com", careersUrl: "https://officehours.com/careers", atsType: "ashby", atsSlug: "office-hours" },
+
+  // discovered 2026-03-23 (growth cycle)
+  { name: "Protege",          domain: "protege.com",          careersUrl: "https://protege.com/careers",          atsType: "ashby",      atsSlug: "protege" },
+  { name: "Erasca",           domain: "erasca.com",           careersUrl: "https://erasca.com/careers",           atsType: "greenhouse", atsSlug: "erasca" },
+  { name: "Grow Therapy",     domain: "growtherapy.com",      careersUrl: "https://growtherapy.com/careers",      atsType: "greenhouse", atsSlug: "growtherapy" },
+  { name: "WithCoverage",     domain: "withcoverage.com",     careersUrl: "https://withcoverage.com/careers",     atsType: "greenhouse", atsSlug: "withcoverage" },
+  { name: "Healthcare AI SaaS", domain: "healthcare.com",     careersUrl: "https://healthcare.com/careers",       atsType: "lever",      atsSlug: "healthcare" },
+  { name: "Foxglove",         domain: "foxglove.dev",         careersUrl: "https://foxglove.dev/careers",         atsType: "ashby",      atsSlug: "foxglove" },
+  { name: "Nova Credit",      domain: "novacredit.com",       careersUrl: "https://novacredit.com/careers",       atsType: "greenhouse", atsSlug: "novacredit" },
+  { name: "Enveritas",        domain: "enveritas.org",        careersUrl: "https://enveritas.org/careers",        atsType: "greenhouse", atsSlug: "enveritas" },
+
+  // discovered 2026-03-23 — high job count companies (totalJobCount > 15)
+  { name: "PMG",              domain: "pmg.com",              careersUrl: "https://pmg.com/careers",              atsType: "greenhouse", atsSlug: "pmg" },
+  { name: "Tandem Health",    domain: "tandemhealth.com",     careersUrl: "https://tandemhealth.com/careers",     atsType: "ashby",      atsSlug: "tandem-health" },
+  { name: "Fieldguide",       domain: "fieldguide.com",       careersUrl: "https://fieldguide.com/careers",       atsType: "ashby",      atsSlug: "fieldguide" },
+  { name: "Axle Energy",      domain: "axle.com",             careersUrl: "https://axle.com/careers",             atsType: "greenhouse", atsSlug: "axle" },
+  { name: "Uncountable",      domain: "uncountable.com",      careersUrl: "https://uncountable.com/careers",      atsType: "ashby",      atsSlug: "uncountable" },
+  { name: "MONUMENTAL",       domain: "monumental.com",       careersUrl: "https://monumental.com/careers",       atsType: "ashby",      atsSlug: "monumental" },
+  { name: "Confido Legal",    domain: "confido.com",          careersUrl: "https://confido.com/careers",          atsType: "ashby",      atsSlug: "confido" },
+  { name: "Zattoo",           domain: "zattoo.com",           careersUrl: "https://zattoo.com/careers",           atsType: "greenhouse", atsSlug: "zattoo" },
 ];
 
 /** number of companies we actually scrape (excludes custom) */

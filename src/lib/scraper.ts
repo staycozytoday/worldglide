@@ -6,6 +6,10 @@ import { scrapeAshby } from "./scrapers/ashby";
 import { scrapeGem } from "./scrapers/gem";
 import { scrapeSmartRecruiters } from "./scrapers/smartrecruiters";
 import { scrapeWorkable } from "./scrapers/workable";
+import { scrapePersonio } from "./scrapers/personio";
+import { scrapeBreezyHR } from "./scrapers/breezyhr";
+import { scrapePinpoint } from "./scrapers/pinpoint";
+import { runApiAggregator } from "./api-aggregator";
 import { CompanyResult, ScrapeReport } from "./fetch-retry";
 
 export interface ScrapeOutput {
@@ -22,13 +26,16 @@ export async function scrapeAllSources(): Promise<ScrapeOutput> {
   console.log("[scraper] starting scrape — direct ats only...");
   const startTime = Date.now();
 
-  const [gh, lv, ab, gm, sr, wb] = await Promise.allSettled([
+  const [gh, lv, ab, gm, sr, wb, ps, bz, pp] = await Promise.allSettled([
     scrapeGreenhouse(),
     scrapeLever(),
     scrapeAshby(),
     scrapeGem(),
     scrapeSmartRecruiters(),
     scrapeWorkable(),
+    scrapePersonio(),
+    scrapeBreezyHR(),
+    scrapePinpoint(),
   ]);
 
   const allJobs: Job[] = [];
@@ -41,6 +48,9 @@ export async function scrapeAllSources(): Promise<ScrapeOutput> {
     { name: "gem", result: gm },
     { name: "smartrecruiters", result: sr },
     { name: "workable", result: wb },
+    { name: "personio", result: ps },
+    { name: "breezyhr", result: bz },
+    { name: "pinpoint", result: pp },
   ] as const;
 
   for (const source of sources) {
@@ -51,6 +61,28 @@ export async function scrapeAllSources(): Promise<ScrapeOutput> {
     } else {
       console.error(`[scraper] ${source.name} FAILED entirely:`, source.result.reason);
     }
+  }
+
+  // --- Phase 2: External API aggregation ---
+  console.log("[scraper] starting external API aggregation...");
+  try {
+    const apiResult = await runApiAggregator();
+    allJobs.push(...apiResult.jobs);
+
+    // Add API sources to report as pseudo-company entries
+    for (const src of apiResult.sources) {
+      allReport.push({
+        company: `api:${src.name}`,
+        ats: src.name,
+        slug: src.name,
+        jobs: src.jobs,
+        rawJobs: src.rawCount,
+        error: src.error,
+      });
+    }
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error(`[scraper] API aggregation failed entirely: ${msg}`);
   }
 
   // deduplicate

@@ -1,510 +1,839 @@
+#!/usr/bin/env npx tsx
 /**
- * discover-companies.ts
- * Probes ATS APIs with curated slugs of known remote-first companies.
- * Outputs verified companies ready to paste into companies.ts.
+ * Automated company discovery pipeline.
  *
- * Usage: cd /Users/MacBook/Documents/worldglide && npx tsx scripts/discover-companies.ts
+ * Sources:
+ *   1. GitHub "awesome-remote-job" lists (parses markdown for company names)
+ *   2. YC Company Directory (Algolia search API)
+ *   3. Feedback loop from jobs.json (API-sourced companies not in companies.ts)
+ *   4. a16z portfolio (HTML page with embedded JSON)
+ *   5. Sequoia Capital portfolio (WP REST API)
+ *   6. HN Who's Hiring threads (Firebase HN API)
+ *
+ * For each discovered company name:
+ *   - Generate ATS slug permutations
+ *   - Test slugs against Greenhouse, Lever, Ashby, Personio
+ *   - Sample jobs through isWorldwideRemote() for quality check
+ *   - Output verified companies as JSON
+ *
+ * Usage:
+ *   npx tsx scripts/discover-companies.ts
+ *   npx tsx scripts/discover-companies.ts --source=github     # only GitHub lists
+ *   npx tsx scripts/discover-companies.ts --source=yc          # only YC directory
+ *   npx tsx scripts/discover-companies.ts --source=feedback    # only jobs.json feedback
+ *   npx tsx scripts/discover-companies.ts --source=a16z        # only a16z portfolio
+ *   npx tsx scripts/discover-companies.ts --source=sequoia     # only Sequoia portfolio
+ *   npx tsx scripts/discover-companies.ts --source=hn          # only HN Who's Hiring
+ *   npx tsx scripts/discover-companies.ts --dry-run            # skip ATS probing
+ *   npx tsx scripts/discover-companies.ts --limit=20           # cap candidates
  */
 
-const EXISTING_SLUGS = new Set<string>();
-
-// We'll populate this from the actual companies.ts at runtime
 import { REMOTE_COMPANIES } from "../src/lib/companies";
-for (const c of REMOTE_COMPANIES) {
-  EXISTING_SLUGS.add(`${c.atsType}:${c.atsSlug}`);
-}
+import { isWorldwideRemote } from "../src/lib/filter";
+import { writeFileSync, readFileSync, existsSync } from "fs";
+import { resolve } from "path";
 
-interface Candidate {
+// ─── Configuration ────────────────────────────────────────────────────
+const BATCH_SIZE = 5;
+const REQUEST_TIMEOUT = 8000;
+const BATCH_DELAY = 600;
+const MAX_CANDIDATES_DEFAULT = 100;
+
+// ─── ATS endpoints ────────────────────────────────────────────────────
+const ATS_ENDPOINTS: Record<string, { url: (slug: string) => string; method?: string; body?: string }> = {
+  greenhouse: {
+    url: (s) => `https://boards-api.greenhouse.io/v1/boards/${s}/jobs`,
+  },
+  lever: {
+    url: (s) => `https://api.lever.co/v0/postings/${s}?mode=json`,
+  },
+  ashby: {
+    url: (s) => `https://api.ashbyhq.com/posting-api/job-board/${s}`,
+  },
+  personio: {
+    url: (s) => `https://${s}.jobs.personio.de/xml`,
+  },
+};
+
+// ─── Build existing slugs/names from companies.ts ─────────────────────
+const existingSlugs = new Set(
+  REMOTE_COMPANIES.map((c) => `${c.atsType}:${c.atsSlug?.toLowerCase()}`).filter(Boolean)
+);
+const existingNames = new Set(
+  REMOTE_COMPANIES.map((c) => c.name.toLowerCase())
+);
+const existingDomains = new Set(
+  REMOTE_COMPANIES.map((c) => c.domain.toLowerCase())
+);
+
+// ─── Types ────────────────────────────────────────────────────────────
+interface DiscoveredCompany {
+  name: string;
   slug: string;
-  ats: "greenhouse" | "lever" | "ashby";
-  name?: string; // override display name
+  atsType: string;
+  domain: string;
+  worldwideJobCount: number;
+  totalJobCount: number;
+  source: string;
 }
 
-// ─── Curated list of known remote-first companies to probe ───
-// These are companies commonly found on remote work databases,
-// "awesome remote" lists, and known for worldwide hiring.
-const CANDIDATES: Candidate[] = [
-  // ══════════════════════════════════════
-  // GREENHOUSE candidates
-  // ══════════════════════════════════════
+// ─── Source 1: GitHub awesome-remote-job lists ─────────────────────────
+async function fetchGitHubLists(): Promise<{ name: string; source: string }[]> {
+  const urls = [
+    {
+      url: "https://raw.githubusercontent.com/lukasz-madon/awesome-remote-job/master/README.md",
+      label: "awesome-remote-job",
+    },
+    {
+      url: "https://raw.githubusercontent.com/remoteintech/remote-jobs/main/README.md",
+      label: "remoteintech",
+    },
+  ];
 
-  // AI / ML
-  { slug: "openai", ats: "greenhouse", name: "OpenAI" },
-  { slug: "cohere", ats: "greenhouse", name: "Cohere" },
-  { slug: "huggingface", ats: "greenhouse", name: "Hugging Face" },
-  { slug: "mistralai", ats: "greenhouse", name: "Mistral AI" },
-  { slug: "stability", ats: "greenhouse", name: "Stability AI" },
-  { slug: "perplexityai", ats: "greenhouse", name: "Perplexity AI" },
-  { slug: "replit", ats: "greenhouse", name: "Replit" },
-  { slug: "anyscale", ats: "greenhouse", name: "Anyscale" },
-  { slug: "weights", ats: "greenhouse", name: "Weights & Biases" },
-  { slug: "wandb", ats: "greenhouse", name: "Weights & Biases" },
-  { slug: "deeplearningai", ats: "greenhouse", name: "DeepLearning.AI" },
-  { slug: "runwayml", ats: "greenhouse", name: "Runway" },
-  { slug: "midjourney", ats: "greenhouse", name: "Midjourney" },
-  { slug: "together", ats: "greenhouse", name: "Together AI" },
-  { slug: "togetherai", ats: "greenhouse", name: "Together AI" },
-  { slug: "modal", ats: "greenhouse", name: "Modal" },
-  { slug: "modular", ats: "greenhouse", name: "Modular" },
-  { slug: "character", ats: "greenhouse", name: "Character.AI" },
-  { slug: "characterai", ats: "greenhouse", name: "Character.AI" },
-  { slug: "adept", ats: "greenhouse", name: "Adept AI" },
-  { slug: "adeptai", ats: "greenhouse", name: "Adept AI" },
-  { slug: "inflection", ats: "greenhouse", name: "Inflection AI" },
-  { slug: "inflectionai", ats: "greenhouse", name: "Inflection AI" },
-  { slug: "jasper", ats: "greenhouse", name: "Jasper AI" },
-  { slug: "jasperai", ats: "greenhouse", name: "Jasper AI" },
-  { slug: "scale", ats: "greenhouse", name: "Scale AI" },
-  { slug: "scaleai", ats: "greenhouse", name: "Scale AI" },
-  { slug: "labelbox", ats: "greenhouse", name: "Labelbox" },
-  { slug: "pinecone", ats: "greenhouse", name: "Pinecone" },
-  { slug: "weaviate", ats: "greenhouse", name: "Weaviate" },
-  { slug: "qdrant", ats: "greenhouse", name: "Qdrant" },
-  { slug: "chromadb", ats: "greenhouse", name: "Chroma" },
+  const companies: { name: string; source: string }[] = [];
 
-  // Dev tools & infrastructure
-  { slug: "vercel", ats: "greenhouse", name: "Vercel" },
-  { slug: "supabase", ats: "greenhouse", name: "Supabase" },
-  { slug: "neon", ats: "greenhouse", name: "Neon" },
-  { slug: "neondb", ats: "greenhouse", name: "Neon" },
-  { slug: "turso", ats: "greenhouse", name: "Turso" },
-  { slug: "fly", ats: "greenhouse", name: "Fly.io" },
-  { slug: "flyio", ats: "greenhouse", name: "Fly.io" },
-  { slug: "railway", ats: "greenhouse", name: "Railway" },
-  { slug: "render", ats: "greenhouse", name: "Render" },
-  { slug: "deno", ats: "greenhouse", name: "Deno" },
-  { slug: "bun", ats: "greenhouse", name: "Bun" },
-  { slug: "prisma", ats: "greenhouse", name: "Prisma" },
-  { slug: "hasura", ats: "greenhouse", name: "Hasura" },
-  { slug: "apollographql", ats: "greenhouse", name: "Apollo GraphQL" },
-  { slug: "apollo", ats: "greenhouse", name: "Apollo GraphQL" },
-  { slug: "postman", ats: "greenhouse", name: "Postman" },
-  { slug: "snyk", ats: "greenhouse", name: "Snyk" },
-  { slug: "sonarqube", ats: "greenhouse", name: "SonarQube" },
-  { slug: "sonar", ats: "greenhouse", name: "SonarSource" },
-  { slug: "sonarsource", ats: "greenhouse", name: "SonarSource" },
-  { slug: "sentry", ats: "greenhouse", name: "Sentry" },
-  { slug: "pagerduty", ats: "greenhouse", name: "PagerDuty" },
-  { slug: "pulumi", ats: "greenhouse", name: "Pulumi" },
-  { slug: "terraform", ats: "greenhouse", name: "HashiCorp" },
-  { slug: "hashicorp", ats: "greenhouse", name: "HashiCorp" },
-  { slug: "docker", ats: "greenhouse", name: "Docker" },
-  { slug: "buildkite", ats: "greenhouse", name: "Buildkite" },
-  { slug: "github", ats: "greenhouse", name: "GitHub" },
-  { slug: "mux", ats: "greenhouse", name: "Mux" },
-  { slug: "twilio", ats: "greenhouse", name: "Twilio" },
-  { slug: "kong", ats: "greenhouse", name: "Kong" },
-  { slug: "konghq", ats: "greenhouse", name: "Kong" },
-  { slug: "auth0", ats: "greenhouse", name: "Auth0" },
-  { slug: "clerk", ats: "greenhouse", name: "Clerk" },
-  { slug: "stytch", ats: "greenhouse", name: "Stytch" },
-  { slug: "planetscale", ats: "greenhouse", name: "PlanetScale" },
-  { slug: "couchbase", ats: "greenhouse", name: "Couchbase" },
-  { slug: "redpanda", ats: "greenhouse", name: "Redpanda" },
-  { slug: "redpandadata", ats: "greenhouse", name: "Redpanda" },
-  { slug: "confluent", ats: "greenhouse", name: "Confluent" },
-  { slug: "materialize", ats: "greenhouse", name: "Materialize" },
-  { slug: "timescale", ats: "greenhouse", name: "Timescale" },
-  { slug: "yugabyte", ats: "greenhouse", name: "YugabyteDB" },
-  { slug: "cockroachlabs", ats: "greenhouse", name: "CockroachDB" },
-  { slug: "upstash", ats: "greenhouse", name: "Upstash" },
+  for (const { url, label } of urls) {
+    try {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 15000);
+      const res = await fetch(url, { signal: controller.signal });
+      clearTimeout(timer);
 
-  // Crypto & Web3
-  { slug: "phantom", ats: "greenhouse", name: "Phantom" },
-  { slug: "uniswap", ats: "greenhouse", name: "Uniswap" },
-  { slug: "uniswaplabs", ats: "greenhouse", name: "Uniswap Labs" },
-  { slug: "aave", ats: "greenhouse", name: "Aave" },
-  { slug: "chainalysis", ats: "greenhouse", name: "Chainalysis" },
-  { slug: "chainlink", ats: "greenhouse", name: "Chainlink" },
-  { slug: "chainlinklabs", ats: "greenhouse", name: "Chainlink Labs" },
-  { slug: "polygon", ats: "greenhouse", name: "Polygon" },
-  { slug: "polygonlabs", ats: "greenhouse", name: "Polygon Labs" },
-  { slug: "nearprotocol", ats: "greenhouse", name: "NEAR Protocol" },
-  { slug: "near", ats: "greenhouse", name: "NEAR Protocol" },
-  { slug: "aptos", ats: "greenhouse", name: "Aptos" },
-  { slug: "aptoslabs", ats: "greenhouse", name: "Aptos Labs" },
-  { slug: "sui", ats: "greenhouse", name: "Sui" },
-  { slug: "mysten", ats: "greenhouse", name: "Mysten Labs" },
-  { slug: "mystenlabs", ats: "greenhouse", name: "Mysten Labs" },
-  { slug: "celestia", ats: "greenhouse", name: "Celestia" },
-  { slug: "eigenlabs", ats: "greenhouse", name: "EigenLayer" },
-  { slug: "eigenlayer", ats: "greenhouse", name: "EigenLayer" },
-  { slug: "immutable", ats: "greenhouse", name: "Immutable" },
-  { slug: "ondo", ats: "greenhouse", name: "Ondo Finance" },
-  { slug: "ondofinance", ats: "greenhouse", name: "Ondo Finance" },
-  { slug: "anchorage", ats: "greenhouse", name: "Anchorage Digital" },
-  { slug: "anchoragedigital", ats: "greenhouse", name: "Anchorage Digital" },
-  { slug: "zerion", ats: "greenhouse", name: "Zerion" },
-  { slug: "rainbow", ats: "greenhouse", name: "Rainbow" },
-  { slug: "starkware", ats: "greenhouse", name: "StarkWare" },
-  { slug: "starknet", ats: "greenhouse", name: "StarkNet" },
-  { slug: "optimism", ats: "greenhouse", name: "Optimism" },
-  { slug: "arbitrum", ats: "greenhouse", name: "Arbitrum" },
-  { slug: "offchainlabs", ats: "greenhouse", name: "Offchain Labs" },
-  { slug: "dydx", ats: "greenhouse", name: "dYdX" },
-  { slug: "makerdao", ats: "greenhouse", name: "MakerDAO" },
+      if (!res.ok) {
+        console.error(`  [github] Failed to fetch ${label}: HTTP ${res.status}`);
+        continue;
+      }
 
-  // Fintech & payments
-  { slug: "wise", ats: "greenhouse", name: "Wise" },
-  { slug: "transferwise", ats: "greenhouse", name: "Wise" },
-  { slug: "revolut", ats: "greenhouse", name: "Revolut" },
-  { slug: "plaid", ats: "greenhouse", name: "Plaid" },
-  { slug: "ramp", ats: "greenhouse", name: "Ramp" },
-  { slug: "deel", ats: "greenhouse", name: "Deel" },
-  { slug: "remote", ats: "greenhouse", name: "Remote.com" },
-  { slug: "remotecom", ats: "greenhouse", name: "Remote.com" },
-  { slug: "oyster", ats: "greenhouse", name: "Oyster" },
-  { slug: "oystehr", ats: "greenhouse", name: "Oyster HR" },
-  { slug: "velocity", ats: "greenhouse", name: "Velocity Global" },
-  { slug: "velocityglobal", ats: "greenhouse", name: "Velocity Global" },
+      const md = await res.text();
 
-  // SaaS & productivity
-  { slug: "notion", ats: "greenhouse", name: "Notion" },
-  { slug: "linear", ats: "greenhouse", name: "Linear" },
-  { slug: "loom", ats: "greenhouse", name: "Loom" },
-  { slug: "miro", ats: "greenhouse", name: "Miro" },
-  { slug: "canva", ats: "greenhouse", name: "Canva" },
-  { slug: "pitch", ats: "greenhouse", name: "Pitch" },
-  { slug: "coda", ats: "greenhouse", name: "Coda" },
-  { slug: "superhuman", ats: "greenhouse", name: "Superhuman" },
-  { slug: "shortcut", ats: "greenhouse", name: "Shortcut" },
-  { slug: "clickup", ats: "greenhouse", name: "ClickUp" },
-  { slug: "mondaydotcom", ats: "greenhouse", name: "monday.com" },
-  { slug: "zapier", ats: "greenhouse", name: "Zapier" },
-  { slug: "make", ats: "greenhouse", name: "Make" },
-  { slug: "retool", ats: "greenhouse", name: "Retool" },
-  { slug: "appsmith", ats: "greenhouse", name: "Appsmith" },
-  { slug: "framer", ats: "greenhouse", name: "Framer" },
+      // Parse markdown links: [Company Name](url)
+      // Capture company names from link text in list items
+      const linkPattern = /^\s*[-*]\s*\[([^\]]+)\]\(([^)]+)\)/gm;
+      let match;
+      while ((match = linkPattern.exec(md)) !== null) {
+        const name = match[1].trim();
+        // Skip non-company entries (section headers, generic text, etc.)
+        if (
+          name.length < 2 ||
+          name.length > 50 ||
+          name.startsWith("http") ||
+          /^(a|an|the|and|or|but|for|with)\s/i.test(name) ||
+          /\d{4}/.test(name) || // years
+          name.includes("awesome") ||
+          name.toLowerCase() === "back to top" ||
+          name.toLowerCase().includes("license") ||
+          name.toLowerCase().includes("contributing")
+        ) {
+          continue;
+        }
+        companies.push({ name, source: `github:${label}` });
+      }
 
-  // Security
-  { slug: "crowdstrike", ats: "greenhouse", name: "CrowdStrike" },
-  { slug: "1password", ats: "greenhouse", name: "1Password" },
-  { slug: "onepassword", ats: "greenhouse", name: "1Password" },
-  { slug: "tailscale", ats: "greenhouse", name: "Tailscale" },
-  { slug: "bitwarden", ats: "greenhouse", name: "Bitwarden" },
-  { slug: "vanta", ats: "greenhouse", name: "Vanta" },
-  { slug: "drata", ats: "greenhouse", name: "Drata" },
-  { slug: "lacework", ats: "greenhouse", name: "Lacework" },
-  { slug: "wiz", ats: "greenhouse", name: "Wiz" },
-
-  // Commerce & CMS
-  { slug: "shopify", ats: "greenhouse", name: "Shopify" },
-  { slug: "bigcommerce", ats: "greenhouse", name: "BigCommerce" },
-  { slug: "sanity", ats: "greenhouse", name: "Sanity" },
-  { slug: "strapi", ats: "greenhouse", name: "Strapi" },
-  { slug: "ghost", ats: "greenhouse", name: "Ghost" },
-
-  // Other well-known remote companies
-  { slug: "automattic", ats: "greenhouse", name: "Automattic" },
-  { slug: "buffer", ats: "greenhouse", name: "Buffer" },
-  { slug: "doist", ats: "greenhouse", name: "Doist" },
-  { slug: "toggl", ats: "greenhouse", name: "Toggl" },
-  { slug: "basecamp", ats: "greenhouse", name: "Basecamp" },
-  { slug: "hotjar", ats: "greenhouse", name: "Hotjar" },
-  { slug: "datadog", ats: "greenhouse", name: "Datadog" },
-  { slug: "elastic", ats: "greenhouse", name: "Elastic" },
-
-  // ══════════════════════════════════════
-  // LEVER candidates
-  // ══════════════════════════════════════
-  { slug: "neon-2", ats: "lever", name: "Neon" },
-  { slug: "supabase", ats: "lever", name: "Supabase" },
-  { slug: "vercel", ats: "lever", name: "Vercel" },
-  { slug: "figma", ats: "lever", name: "Figma" },
-  { slug: "linear", ats: "lever", name: "Linear" },
-  { slug: "loom", ats: "lever", name: "Loom" },
-  { slug: "notion", ats: "lever", name: "Notion" },
-  { slug: "framer", ats: "lever", name: "Framer" },
-  { slug: "pitch", ats: "lever", name: "Pitch" },
-  { slug: "coda", ats: "lever", name: "Coda" },
-  { slug: "superhuman", ats: "lever", name: "Superhuman" },
-  { slug: "zapier", ats: "lever", name: "Zapier" },
-  { slug: "make", ats: "lever", name: "Make" },
-  { slug: "retool", ats: "lever", name: "Retool" },
-  { slug: "replit", ats: "lever", name: "Replit" },
-  { slug: "coinbase", ats: "lever", name: "Coinbase" },
-  { slug: "phantom", ats: "lever", name: "Phantom" },
-  { slug: "paxos", ats: "lever", name: "Paxos" },
-  { slug: "anchorage", ats: "lever", name: "Anchorage Digital" },
-  { slug: "kraken", ats: "lever", name: "Kraken" },
-  { slug: "bitstamp", ats: "lever", name: "Bitstamp" },
-  { slug: "gemini-2", ats: "lever", name: "Gemini" },
-  { slug: "blockchain", ats: "lever", name: "Blockchain.com" },
-  { slug: "chainalysis", ats: "lever", name: "Chainalysis" },
-  { slug: "snyk", ats: "lever", name: "Snyk" },
-  { slug: "sentry", ats: "lever", name: "Sentry" },
-  { slug: "docker", ats: "lever", name: "Docker" },
-  { slug: "postman", ats: "lever", name: "Postman" },
-  { slug: "hashicorp", ats: "lever", name: "HashiCorp" },
-  { slug: "pulumi", ats: "lever", name: "Pulumi" },
-  { slug: "grafana", ats: "lever", name: "Grafana Labs" },
-  { slug: "elastic", ats: "lever", name: "Elastic" },
-  { slug: "mux", ats: "lever", name: "Mux" },
-  { slug: "twilio", ats: "lever", name: "Twilio" },
-  { slug: "auth0", ats: "lever", name: "Auth0" },
-  { slug: "okta", ats: "lever", name: "Okta" },
-  { slug: "1password", ats: "lever", name: "1Password" },
-  { slug: "automattic", ats: "lever", name: "Automattic" },
-  { slug: "buffer", ats: "lever", name: "Buffer" },
-  { slug: "toggl", ats: "lever", name: "Toggl" },
-  { slug: "hotjar", ats: "lever", name: "Hotjar" },
-  { slug: "toptal", ats: "lever", name: "Toptal" },
-  { slug: "doist", ats: "lever", name: "Doist" },
-  { slug: "remote", ats: "lever", name: "Remote.com" },
-  { slug: "deel", ats: "lever", name: "Deel" },
-  { slug: "oyster", ats: "lever", name: "Oyster HR" },
-  { slug: "stripe", ats: "lever", name: "Stripe" },
-  { slug: "plaid", ats: "lever", name: "Plaid" },
-  { slug: "wise", ats: "lever", name: "Wise" },
-  { slug: "revolut", ats: "lever", name: "Revolut" },
-  { slug: "cloudflare", ats: "lever", name: "Cloudflare" },
-  { slug: "fastly", ats: "lever", name: "Fastly" },
-  { slug: "netlify", ats: "lever", name: "Netlify" },
-  { slug: "fly", ats: "lever", name: "Fly.io" },
-  { slug: "railway", ats: "lever", name: "Railway" },
-  { slug: "render", ats: "lever", name: "Render" },
-  { slug: "sanity-io", ats: "lever", name: "Sanity" },
-  { slug: "webflow", ats: "lever", name: "Webflow" },
-  { slug: "contentful", ats: "lever", name: "Contentful" },
-  { slug: "ghost-foundation", ats: "lever", name: "Ghost" },
-  { slug: "canva", ats: "lever", name: "Canva" },
-  { slug: "miro", ats: "lever", name: "Miro" },
-
-  // ══════════════════════════════════════
-  // ASHBY candidates
-  // ══════════════════════════════════════
-  { slug: "openai", ats: "ashby", name: "OpenAI" },
-  { slug: "vercel", ats: "ashby", name: "Vercel" },
-  { slug: "linear", ats: "ashby", name: "Linear" },
-  { slug: "supabase", ats: "ashby", name: "Supabase" },
-  { slug: "resend", ats: "ashby", name: "Resend" },
-  { slug: "cal", ats: "ashby", name: "Cal.com" },
-  { slug: "calcom", ats: "ashby", name: "Cal.com" },
-  { slug: "neon", ats: "ashby", name: "Neon" },
-  { slug: "turso", ats: "ashby", name: "Turso" },
-  { slug: "replicate", ats: "ashby", name: "Replicate" },
-  { slug: "huggingface", ats: "ashby", name: "Hugging Face" },
-  { slug: "cohere", ats: "ashby", name: "Cohere" },
-  { slug: "mistral", ats: "ashby", name: "Mistral AI" },
-  { slug: "perplexity", ats: "ashby", name: "Perplexity AI" },
-  { slug: "cursor", ats: "ashby", name: "Cursor" },
-  { slug: "anysphere", ats: "ashby", name: "Anysphere (Cursor)" },
-  { slug: "codeium", ats: "ashby", name: "Codeium" },
-  { slug: "replit", ats: "ashby", name: "Replit" },
-  { slug: "railway", ats: "ashby", name: "Railway" },
-  { slug: "render", ats: "ashby", name: "Render" },
-  { slug: "fly", ats: "ashby", name: "Fly.io" },
-  { slug: "deno", ats: "ashby", name: "Deno" },
-  { slug: "bun", ats: "ashby", name: "Bun (Oven)" },
-  { slug: "oven", ats: "ashby", name: "Oven (Bun)" },
-  { slug: "prisma", ats: "ashby", name: "Prisma" },
-  { slug: "clerk", ats: "ashby", name: "Clerk" },
-  { slug: "stytch", ats: "ashby", name: "Stytch" },
-  { slug: "upstash", ats: "ashby", name: "Upstash" },
-  { slug: "inngest", ats: "ashby", name: "Inngest" },
-  { slug: "trigger", ats: "ashby", name: "Trigger.dev" },
-  { slug: "triggerdev", ats: "ashby", name: "Trigger.dev" },
-  { slug: "tinybird", ats: "ashby", name: "Tinybird" },
-  { slug: "axiom", ats: "ashby", name: "Axiom" },
-  { slug: "highlight", ats: "ashby", name: "Highlight.io" },
-  { slug: "posthog", ats: "ashby", name: "PostHog" },
-  { slug: "sentry", ats: "ashby", name: "Sentry" },
-  { slug: "gitpod", ats: "ashby", name: "Gitpod" },
-  { slug: "coder", ats: "ashby", name: "Coder" },
-  { slug: "spacelift", ats: "ashby", name: "Spacelift" },
-  { slug: "depot", ats: "ashby", name: "Depot" },
-  { slug: "buildkite", ats: "ashby", name: "Buildkite" },
-  { slug: "planetscale", ats: "ashby", name: "PlanetScale" },
-  { slug: "clickhouse", ats: "ashby", name: "ClickHouse" },
-  { slug: "timescale", ats: "ashby", name: "Timescale" },
-  { slug: "materialize", ats: "ashby", name: "Materialize" },
-  { slug: "weaviate", ats: "ashby", name: "Weaviate" },
-  { slug: "qdrant", ats: "ashby", name: "Qdrant" },
-  { slug: "pinecone", ats: "ashby", name: "Pinecone" },
-  { slug: "chroma", ats: "ashby", name: "Chroma" },
-  { slug: "milvus", ats: "ashby", name: "Milvus" },
-  { slug: "zilliz", ats: "ashby", name: "Zilliz" },
-  { slug: "framer", ats: "ashby", name: "Framer" },
-  { slug: "webflow", ats: "ashby", name: "Webflow" },
-  { slug: "retool", ats: "ashby", name: "Retool" },
-  { slug: "appsmith", ats: "ashby", name: "Appsmith" },
-  { slug: "1password", ats: "ashby", name: "1Password" },
-  { slug: "vanta", ats: "ashby", name: "Vanta" },
-  { slug: "drata", ats: "ashby", name: "Drata" },
-  { slug: "teleport", ats: "ashby", name: "Teleport" },
-  { slug: "tailscale", ats: "ashby", name: "Tailscale" },
-  { slug: "phantom", ats: "ashby", name: "Phantom" },
-  { slug: "uniswap", ats: "ashby", name: "Uniswap" },
-  { slug: "zerion", ats: "ashby", name: "Zerion" },
-  { slug: "rainbow", ats: "ashby", name: "Rainbow" },
-  { slug: "immutable", ats: "ashby", name: "Immutable" },
-  { slug: "celestia", ats: "ashby", name: "Celestia" },
-  { slug: "eigenlayer", ats: "ashby", name: "EigenLayer" },
-  { slug: "aptos", ats: "ashby", name: "Aptos" },
-  { slug: "mystenlabs", ats: "ashby", name: "Mysten Labs" },
-  { slug: "starkware", ats: "ashby", name: "StarkWare" },
-  { slug: "optimism", ats: "ashby", name: "Optimism" },
-  { slug: "arbitrum", ats: "ashby", name: "Arbitrum" },
-  { slug: "offchainlabs", ats: "ashby", name: "Offchain Labs" },
-  { slug: "dydx", ats: "ashby", name: "dYdX" },
-  { slug: "zapier", ats: "ashby", name: "Zapier" },
-  { slug: "deel", ats: "ashby", name: "Deel" },
-  { slug: "remote", ats: "ashby", name: "Remote.com" },
-  { slug: "oyster", ats: "ashby", name: "Oyster HR" },
-  { slug: "buffer", ats: "ashby", name: "Buffer" },
-  { slug: "toggl", ats: "ashby", name: "Toggl" },
-  { slug: "doist", ats: "ashby", name: "Doist" },
-  { slug: "hotjar", ats: "ashby", name: "Hotjar" },
-  { slug: "toptal", ats: "ashby", name: "Toptal" },
-  { slug: "automattic", ats: "ashby", name: "Automattic" },
-  { slug: "liveblocks", ats: "ashby", name: "Liveblocks" },
-  { slug: "partykit", ats: "ashby", name: "PartyKit" },
-  { slug: "convex", ats: "ashby", name: "Convex" },
-  { slug: "sanity", ats: "ashby", name: "Sanity" },
-  { slug: "ghost", ats: "ashby", name: "Ghost" },
-];
-
-// ─── API endpoints ───
-function getUrl(ats: string, slug: string): string {
-  switch (ats) {
-    case "greenhouse":
-      return `https://boards-api.greenhouse.io/v1/boards/${slug}/jobs`;
-    case "lever":
-      return `https://api.lever.co/v0/postings/${slug}?limit=1`;
-    case "ashby":
-      return `https://api.ashbyhq.com/posting-api/job-board/${slug}`;
-    default:
-      throw new Error(`Unknown ATS: ${ats}`);
+      console.error(`  [github] Parsed ${companies.length} company names from ${label}`);
+    } catch (err: any) {
+      console.error(`  [github] Error fetching ${label}: ${err.message}`);
+    }
   }
+
+  return companies;
 }
 
-function hasJobs(ats: string, data: any): boolean {
-  switch (ats) {
-    case "greenhouse":
-      return Array.isArray(data?.jobs) && data.jobs.length > 0;
-    case "lever":
-      return Array.isArray(data) && data.length > 0;
-    case "ashby":
-      return Array.isArray(data?.jobs) && data.jobs.length > 0;
-    default:
-      return false;
+// ─── Source 2: YC Company Directory ───────────────────────────────────
+async function fetchYCDirectory(): Promise<{ name: string; source: string }[]> {
+  const companies: { name: string; source: string }[] = [];
+
+  try {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 15000);
+
+    const res = await fetch(
+      "https://45bwzj1sgc-dsn.algolia.net/1/indexes/*/queries",
+      {
+        method: "POST",
+        signal: controller.signal,
+        headers: {
+          "Content-Type": "application/json",
+          "x-algolia-application-id": "45BWZJ1SGC",
+          "x-algolia-api-key":
+            "MjBjYjRiMzY0NzdhZWY0NjExY2NhZjYxMGIxYjc2MTAwNWFkNTkwNTc4NjgxYjU0YzFhYTY2ZGEzMGUxYzg5ZGZiYTAyMWZhNmMwMmQwMzQ5NDcwMjhjMzQ1NjI3MzU2YjM0OTRkYWIzMGUzODA5ZjI3MzA0OGRmYzI5YjdhOWYK",
+        },
+        body: JSON.stringify({
+          requests: [
+            {
+              indexName: "YCCompany_production",
+              params: "hitsPerPage=100&page=0&query=remote",
+            },
+          ],
+        }),
+      }
+    );
+    clearTimeout(timer);
+
+    if (!res.ok) {
+      console.error(`  [yc] Failed to fetch YC directory: HTTP ${res.status}`);
+      return companies;
+    }
+
+    const data = await res.json();
+    const hits = data?.results?.[0]?.hits || [];
+
+    for (const hit of hits) {
+      const name = hit.name?.trim();
+      if (!name || name.length < 2) continue;
+      companies.push({ name, source: "yc-directory" });
+    }
+
+    console.error(`  [yc] Found ${companies.length} companies from YC directory`);
+  } catch (err: any) {
+    console.error(`  [yc] Error fetching YC directory: ${err.message}`);
   }
+
+  return companies;
 }
 
-function getJobCount(ats: string, data: any): number {
-  switch (ats) {
-    case "greenhouse":
-      return data?.jobs?.length ?? 0;
-    case "lever":
-      return Array.isArray(data) ? data.length : 0;
-    case "ashby":
-      return data?.jobs?.length ?? 0;
-    default:
-      return 0;
+// ─── Source 3: Feedback loop from jobs.json ───────────────────────────
+function extractFeedbackCompanies(): { name: string; source: string }[] {
+  const companies: { name: string; source: string }[] = [];
+  const jobsPath = resolve(__dirname, "../public/data/jobs.json");
+
+  if (!existsSync(jobsPath)) {
+    console.error("  [feedback] jobs.json not found, skipping");
+    return companies;
   }
+
+  try {
+    const data = JSON.parse(readFileSync(jobsPath, "utf-8"));
+    const jobs: any[] = Array.isArray(data) ? data : data.jobs || [];
+
+    // API sources whose companies are NOT already tracked via ATS
+    const apiSources = new Set([
+      "himalayas",
+      "remoteok",
+      "remotive",
+      "jobicy",
+      "arbeitnow",
+    ]);
+
+    const seenCompanies = new Set<string>();
+
+    for (const job of jobs) {
+      if (!apiSources.has(job.source)) continue;
+      const company = job.company?.trim();
+      if (!company || company.length < 2) continue;
+
+      const key = company.toLowerCase();
+      if (seenCompanies.has(key)) continue;
+      if (existingNames.has(key)) continue;
+      seenCompanies.add(key);
+
+      companies.push({ name: company, source: `feedback:${job.source}` });
+    }
+
+    console.error(
+      `  [feedback] Found ${companies.length} new companies from jobs.json`
+    );
+  } catch (err: any) {
+    console.error(`  [feedback] Error reading jobs.json: ${err.message}`);
+  }
+
+  return companies;
 }
 
-// ─── Main ───
-async function main() {
-  // Filter out already-known slugs
-  const toProbe = CANDIDATES.filter(
-    (c) => !EXISTING_SLUGS.has(`${c.ats}:${c.slug}`)
-  );
+// ─── Source 4: a16z Portfolio ────────────────────────────────────────
+async function fetchA16zPortfolio(): Promise<{ name: string; source: string }[]> {
+  const companies: { name: string; source: string }[] = [];
 
-  console.log(
-    `\n🔍 Probing ${toProbe.length} candidates (${CANDIDATES.length - toProbe.length} already in database)\n`
-  );
+  try {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 20000);
+    const res = await fetch("https://a16z.com/portfolio/", {
+      signal: controller.signal,
+      headers: { "User-Agent": "worldglide-discover/1.0" },
+    });
+    clearTimeout(timer);
 
-  const verified: {
-    name: string;
-    slug: string;
-    ats: string;
-    jobCount: number;
-  }[] = [];
+    if (!res.ok) {
+      console.error(`  [a16z] Failed to fetch portfolio page: HTTP ${res.status}`);
+      return companies;
+    }
 
-  // Batch by ATS to be polite
-  const byAts = new Map<string, Candidate[]>();
-  for (const c of toProbe) {
-    const list = byAts.get(c.ats) || [];
-    list.push(c);
-    byAts.set(c.ats, list);
+    const html = await res.text();
+
+    // a16z embeds portfolio data as HTML-encoded JSON in Alpine.js components
+    // Pattern: &quot;name&quot;:&quot;CompanyName&quot;
+    const namePattern = /&quot;name&quot;:&quot;([^&]+)&quot;/g;
+    const seen = new Set<string>();
+    const skip = new Set([
+      "andreessen horowitz",
+      "portfolio | andreessen horowitz",
+    ]);
+
+    let match;
+    while ((match = namePattern.exec(html)) !== null) {
+      // Decode HTML entities
+      const raw = match[1]
+        .replace(/&#039;/g, "'")
+        .replace(/&amp;/g, "&")
+        .replace(/&#x2F;/g, "/")
+        .trim();
+
+      if (!raw || raw.length < 2 || raw.length > 60) continue;
+      const key = raw.toLowerCase();
+      if (skip.has(key) || seen.has(key)) continue;
+      // Skip internal/person names (often lowercase single words without capitals)
+      if (/^[a-z]+$/.test(raw) && raw.length < 4) continue;
+      seen.add(key);
+      companies.push({ name: raw, source: "vc:a16z" });
+    }
+
+    console.error(`  [a16z] Parsed ${companies.length} portfolio companies`);
+  } catch (err: any) {
+    console.error(`  [a16z] Error fetching portfolio: ${err.message}`);
   }
 
-  for (const [ats, candidates] of byAts) {
-    console.log(`\n── ${ats.toUpperCase()} (${candidates.length} to probe) ──`);
+  return companies;
+}
 
-    // Process in batches of 10 with delay
-    for (let i = 0; i < candidates.length; i += 10) {
-      const batch = candidates.slice(i, i + 10);
-      const results = await Promise.allSettled(
-        batch.map(async (c) => {
-          const url = getUrl(c.ats, c.slug);
-          const res = await fetch(url, {
-            signal: AbortSignal.timeout(8000),
-          });
-          if (!res.ok) return null;
-          const data = await res.json();
-          if (hasJobs(c.ats, data)) {
-            const count = getJobCount(c.ats, data);
-            return { ...c, jobCount: count };
-          }
-          return null;
-        })
+// ─── Source 5: Sequoia Capital Portfolio ─────────────────────────────
+async function fetchSequoiaPortfolio(): Promise<{ name: string; source: string }[]> {
+  const companies: { name: string; source: string }[] = [];
+
+  try {
+    // Sequoia exposes a WP REST API for their company custom post type
+    // Paginate through all results (max 100 per page)
+    const perPage = 100;
+    let page = 1;
+    let hasMore = true;
+
+    while (hasMore) {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 15000);
+      const url = `https://sequoiacap.com/wp-json/wp/v2/company?per_page=${perPage}&page=${page}&_fields=title`;
+      const res = await fetch(url, {
+        signal: controller.signal,
+        headers: { "User-Agent": "worldglide-discover/1.0" },
+      });
+      clearTimeout(timer);
+
+      if (!res.ok) {
+        if (res.status === 400) break; // Past last page
+        console.error(`  [sequoia] Failed page ${page}: HTTP ${res.status}`);
+        break;
+      }
+
+      const data: any[] = await res.json();
+      if (data.length === 0) break;
+
+      for (const item of data) {
+        const name = item.title?.rendered?.trim();
+        if (!name || name.length < 2 || name.length > 60) continue;
+        companies.push({ name, source: "vc:sequoia" });
+      }
+
+      // Check if there are more pages
+      const totalPages = parseInt(res.headers.get("x-wp-totalpages") || "1", 10);
+      hasMore = page < totalPages;
+      page++;
+
+      // Small delay between pages
+      if (hasMore) await new Promise((r) => setTimeout(r, 300));
+    }
+
+    console.error(`  [sequoia] Fetched ${companies.length} portfolio companies (${page - 1} pages)`);
+  } catch (err: any) {
+    console.error(`  [sequoia] Error fetching portfolio: ${err.message}`);
+  }
+
+  return companies;
+}
+
+// ─── Source 6: HN Who's Hiring threads ──────────────────────────────
+async function fetchHNWhoIsHiring(): Promise<{ name: string; source: string }[]> {
+  const companies: { name: string; source: string }[] = [];
+
+  try {
+    // Get the latest submissions from the "whoishiring" user
+    const controller1 = new AbortController();
+    const timer1 = setTimeout(() => controller1.abort(), 10000);
+    const userRes = await fetch(
+      "https://hacker-news.firebaseio.com/v0/user/whoishiring.json",
+      { signal: controller1.signal }
+    );
+    clearTimeout(timer1);
+
+    if (!userRes.ok) {
+      console.error(`  [hn] Failed to fetch whoishiring user: HTTP ${userRes.status}`);
+      return companies;
+    }
+
+    const userData = await userRes.json();
+    const submissions: number[] = userData.submitted?.slice(0, 6) || [];
+
+    // Find the most recent "Who is hiring?" thread(s)
+    const hiringThreadIds: number[] = [];
+    for (const id of submissions) {
+      const ctrl = new AbortController();
+      const t = setTimeout(() => ctrl.abort(), 8000);
+      const itemRes = await fetch(
+        `https://hacker-news.firebaseio.com/v0/item/${id}.json`,
+        { signal: ctrl.signal }
       );
+      clearTimeout(t);
 
-      for (const r of results) {
-        if (r.status === "fulfilled" && r.value) {
-          const v = r.value;
-          verified.push(v);
-          console.log(`  ✅ ${v.name || v.slug} (${v.slug}) → ${v.jobCount} jobs`);
+      if (!itemRes.ok) continue;
+      const item = await itemRes.json();
+      if (item.title?.includes("Who is hiring?")) {
+        hiringThreadIds.push(id);
+        if (hiringThreadIds.length >= 2) break; // Latest 2 months
+      }
+    }
+
+    if (hiringThreadIds.length === 0) {
+      console.error("  [hn] No Who is hiring? threads found");
+      return companies;
+    }
+
+    // Fetch comments from the threads (sample up to 100 comments per thread)
+    for (const threadId of hiringThreadIds) {
+      const ctrl = new AbortController();
+      const t = setTimeout(() => ctrl.abort(), 10000);
+      const threadRes = await fetch(
+        `https://hacker-news.firebaseio.com/v0/item/${threadId}.json`,
+        { signal: ctrl.signal }
+      );
+      clearTimeout(t);
+
+      if (!threadRes.ok) continue;
+      const thread = await threadRes.json();
+      const kids: number[] = (thread.kids || []).slice(0, 100);
+
+      // Fetch comments in batches of 10
+      for (let i = 0; i < kids.length; i += 10) {
+        const batch = kids.slice(i, i + 10);
+        const results = await Promise.all(
+          batch.map(async (commentId) => {
+            try {
+              const c = new AbortController();
+              const tt = setTimeout(() => c.abort(), 8000);
+              const r = await fetch(
+                `https://hacker-news.firebaseio.com/v0/item/${commentId}.json`,
+                { signal: c.signal }
+              );
+              clearTimeout(tt);
+              if (!r.ok) return null;
+              return r.json();
+            } catch {
+              return null;
+            }
+          })
+        );
+
+        for (const comment of results) {
+          if (!comment?.text) continue;
+          const text: string = comment.text;
+
+          // HN Who's Hiring format: "CompanyName | url | role | location..."
+          // Extract company name from the first pipe-separated segment
+          const pipeMatch = text.match(/^([^|<]+)\|/);
+          if (pipeMatch) {
+            let name = pipeMatch[1]
+              .replace(/<[^>]*>/g, "") // strip HTML
+              .replace(/&#x2F;/g, "/")
+              .replace(/&amp;/g, "&")
+              .replace(/&#039;/g, "'")
+              .replace(/&quot;/g, '"')
+              .trim();
+
+            // Clean up common prefixes/suffixes
+            name = name.replace(/^\*+|\*+$/g, "").trim();
+            name = name.replace(/\(.*?\)\s*$/, "").trim();
+
+            if (
+              name.length >= 2 &&
+              name.length <= 60 &&
+              !/^https?:/.test(name) &&
+              !/hiring|remote|engineer/i.test(name)
+            ) {
+              companies.push({ name, source: "hn-hiring" });
+            }
+          }
+        }
+
+        // Rate limit HN API
+        if (i + 10 < kids.length) {
+          await new Promise((r) => setTimeout(r, 200));
         }
       }
+    }
 
-      // Be polite: 300ms between batches
-      if (i + 10 < candidates.length) {
-        await new Promise((r) => setTimeout(r, 300));
+    // Deduplicate within source
+    const seen = new Set<string>();
+    const unique = companies.filter((c) => {
+      const key = c.name.toLowerCase();
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+
+    companies.length = 0;
+    companies.push(...unique);
+
+    console.error(`  [hn] Extracted ${companies.length} companies from ${hiringThreadIds.length} thread(s)`);
+  } catch (err: any) {
+    console.error(`  [hn] Error: ${err.message}`);
+  }
+
+  return companies;
+}
+
+// ─── Slug generation ──────────────────────────────────────────────────
+function generateSlugs(name: string): string[] {
+  const slugs = new Set<string>();
+
+  // Clean name: lowercase, strip special chars
+  const nameClean = name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "");
+  if (nameClean.length >= 2) slugs.add(nameClean);
+
+  // Hyphenated version: "Acme Corp" -> "acme-corp"
+  const nameHyphen = name
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]+/g, "")
+    .trim()
+    .replace(/\s+/g, "-");
+  if (nameHyphen.length >= 2 && nameHyphen !== nameClean) slugs.add(nameHyphen);
+
+  // First word only: "Acme Corp" -> "acme"
+  const firstWord = name
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]+/g, "")
+    .trim()
+    .split(/\s+/)[0];
+  if (firstWord && firstWord.length >= 2 && firstWord !== nameClean)
+    slugs.add(firstWord);
+
+  // Handle ".io" / ".ai" style names: "Fly.io" -> "fly-io", "flyio", "fly"
+  if (/\.(io|ai|co|dev|app|com)$/i.test(name)) {
+    const base = name
+      .toLowerCase()
+      .replace(/\.(io|ai|co|dev|app|com)$/i, "")
+      .replace(/[^a-z0-9]+/g, "");
+    if (base.length >= 2) {
+      slugs.add(base);
+      const ext = name.match(/\.(io|ai|co|dev|app|com)$/i)?.[1];
+      if (ext) {
+        slugs.add(`${base}-${ext}`);
+        slugs.add(`${base}${ext}`);
       }
     }
   }
 
-  // ─── Output results ───
-  console.log(`\n\n═══════════════════════════════════════════`);
-  console.log(`✅ VERIFIED: ${verified.length} new companies found`);
-  console.log(`═══════════════════════════════════════════\n`);
+  // Common suffixes
+  slugs.add(nameClean + "hq");
+  if (nameClean.endsWith("labs")) slugs.add(nameClean.slice(0, -4));
+  if (nameClean.endsWith("hq")) slugs.add(nameClean.slice(0, -2));
 
-  // Group by ATS for easy pasting
-  const verifiedByAts = new Map<string, typeof verified>();
-  for (const v of verified) {
-    const list = verifiedByAts.get(v.ats) || [];
-    list.push(v);
-    verifiedByAts.set(v.ats, list);
+  return Array.from(slugs).filter((s) => s.length >= 2 && s.length <= 50);
+}
+
+// ─── ATS testing ──────────────────────────────────────────────────────
+async function tryAts(
+  atsType: string,
+  slug: string
+): Promise<{ count: number; sampleJobs: any[] }> {
+  const ep = ATS_ENDPOINTS[atsType];
+  const url = ep.url(slug);
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), REQUEST_TIMEOUT);
+
+  try {
+    const opts: RequestInit = {
+      method: ep.method || "GET",
+      signal: controller.signal,
+      headers: {
+        "User-Agent": "worldglide-discover/1.0",
+        Accept: atsType === "personio" ? "application/xml" : "application/json",
+      },
+      ...(ep.body ? { body: ep.body } : {}),
+    };
+
+    const res = await fetch(url, opts);
+    clearTimeout(timer);
+
+    if (!res.ok) return { count: -1, sampleJobs: [] };
+
+    if (atsType === "personio") {
+      // Personio returns XML; just check if response is non-empty
+      const text = await res.text();
+      const positionMatches = text.match(/<position>/g);
+      const count = positionMatches ? positionMatches.length : 0;
+      return { count: count > 0 ? count : -1, sampleJobs: [] };
+    }
+
+    const data = await res.json();
+
+    let jobs: any[] = [];
+    if (atsType === "greenhouse") jobs = data.jobs || [];
+    else if (atsType === "lever") jobs = Array.isArray(data) ? data : [];
+    else if (atsType === "ashby") jobs = data.jobs || [];
+
+    if (jobs.length === 0) return { count: -1, sampleJobs: [] };
+
+    return { count: jobs.length, sampleJobs: jobs.slice(0, 3) };
+  } catch {
+    clearTimeout(timer);
+    return { count: -1, sampleJobs: [] };
   }
+}
 
-  for (const [ats, companies] of verifiedByAts) {
-    console.log(`\n  // ── discovered ${new Date().toISOString().slice(0, 10)} — ${ats} ──`);
-    for (const c of companies.sort((a, b) =>
-      (a.name || a.slug).localeCompare(b.name || b.slug)
-    )) {
-      const name = c.name || c.slug;
-      const pad1 = " ".repeat(Math.max(1, 24 - name.length));
-      const domain = `${c.slug}.com`;
-      const pad2 = " ".repeat(Math.max(1, 28 - domain.length));
-      const careersBase =
-        ats === "greenhouse"
-          ? `https://boards.greenhouse.io/${c.slug}`
-          : ats === "lever"
-            ? `https://jobs.lever.co/${c.slug}`
-            : `https://jobs.ashbyhq.com/${c.slug}`;
-      console.log(
-        `  { name: "${name}",${pad1}domain: "${domain}",${pad2}careersUrl: "${careersBase}", atsType: "${ats}", atsSlug: "${c.slug}" },`
-      );
+// ─── Worldwide job sampling ──────────────────────────────────────────
+function sampleWorldwide(
+  atsType: string,
+  slug: string,
+  sampleJobs: any[]
+): number {
+  let worldwideCount = 0;
+
+  for (const item of sampleJobs) {
+    let title = "";
+    let location = "";
+    let description = "";
+
+    if (atsType === "greenhouse") {
+      title = item.title || "";
+      location = item.location?.name || "";
+    } else if (atsType === "lever") {
+      title = item.text || "";
+      location = item.categories?.location || item.workplaceType || "";
+      description = item.descriptionPlain || "";
+    } else if (atsType === "ashby") {
+      title = item.title || "";
+      location = item.location || "";
+      if (!item.isRemote) continue;
+    } else {
+      continue; // personio XML not sampled
+    }
+
+    if (
+      isWorldwideRemote({
+        title,
+        description,
+        location,
+        companySlug: slug,
+      })
+    ) {
+      worldwideCount++;
     }
   }
 
-  console.log(`\n\nTotal new companies: ${verified.length}`);
-  console.log(
-    `Job count across new companies: ${verified.reduce((s, v) => s + v.jobCount, 0)}`
-  );
+  return worldwideCount;
 }
 
-main().catch(console.error);
+// ─── Main pipeline ───────────────────────────────────────────────────
+async function main() {
+  const args = process.argv.slice(2);
+  const sourceFilter = args.find((a) => a.startsWith("--source="))?.split("=")[1];
+  const dryRun = args.includes("--dry-run");
+  const limitArg = args.find((a) => a.startsWith("--limit="))?.split("=")[1];
+  const maxCandidates = limitArg ? parseInt(limitArg, 10) : MAX_CANDIDATES_DEFAULT;
+
+  console.error(`[discover] Automated company discovery pipeline`);
+  console.error(
+    `[discover] ${REMOTE_COMPANIES.length} companies already in database`
+  );
+  console.error(
+    `[discover] Sources: ${sourceFilter || "all"}, limit: ${maxCandidates}\n`
+  );
+
+  // ── Gather candidates from all sources ──
+  const allCandidates: { name: string; source: string }[] = [];
+
+  if (!sourceFilter || sourceFilter === "github") {
+    console.error("[discover] Fetching GitHub awesome-remote-job lists...");
+    const gh = await fetchGitHubLists();
+    allCandidates.push(...gh);
+  }
+
+  if (!sourceFilter || sourceFilter === "yc") {
+    console.error("[discover] Fetching YC Company Directory...");
+    const yc = await fetchYCDirectory();
+    allCandidates.push(...yc);
+  }
+
+  if (!sourceFilter || sourceFilter === "feedback") {
+    console.error("[discover] Extracting companies from jobs.json feedback...");
+    const fb = extractFeedbackCompanies();
+    allCandidates.push(...fb);
+  }
+
+  if (!sourceFilter || sourceFilter === "a16z") {
+    console.error("[discover] Fetching a16z portfolio...");
+    const a16z = await fetchA16zPortfolio();
+    allCandidates.push(...a16z);
+  }
+
+  if (!sourceFilter || sourceFilter === "sequoia") {
+    console.error("[discover] Fetching Sequoia Capital portfolio...");
+    const seq = await fetchSequoiaPortfolio();
+    allCandidates.push(...seq);
+  }
+
+  if (!sourceFilter || sourceFilter === "hn") {
+    console.error("[discover] Fetching HN Who's Hiring threads...");
+    const hn = await fetchHNWhoIsHiring();
+    allCandidates.push(...hn);
+  }
+
+  // ── Deduplicate ──
+  const seen = new Set<string>();
+  const uniqueCandidates = allCandidates.filter((c) => {
+    const key = c.name.toLowerCase();
+    if (seen.has(key)) return false;
+    if (existingNames.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+
+  console.error(
+    `\n[discover] ${allCandidates.length} raw candidates -> ${uniqueCandidates.length} unique new names`
+  );
+
+  // Apply limit
+  const candidates = uniqueCandidates.slice(0, maxCandidates);
+  if (uniqueCandidates.length > maxCandidates) {
+    console.error(
+      `[discover] Capped to ${maxCandidates} candidates (use --limit=N to adjust)`
+    );
+  }
+
+  if (dryRun) {
+    console.error("\n[discover] --dry-run: listing candidates without probing ATS\n");
+    for (const c of candidates) {
+      const slugs = generateSlugs(c.name);
+      console.log(
+        `  ${c.name} [${c.source}] -> slugs: ${slugs.join(", ")}`
+      );
+    }
+    console.error(`\n[discover] ${candidates.length} candidates listed`);
+    return;
+  }
+
+  // ── Probe ATS endpoints ──
+  console.error(`\n[discover] Probing ATS endpoints for ${candidates.length} candidates...\n`);
+
+  const atsTypes = ["greenhouse", "lever", "ashby", "personio"];
+  const verified: DiscoveredCompany[] = [];
+
+  for (let i = 0; i < candidates.length; i += BATCH_SIZE) {
+    const batch = candidates.slice(i, i + BATCH_SIZE);
+
+    const batchResults = await Promise.all(
+      batch.map(async (candidate) => {
+        const slugs = generateSlugs(candidate.name);
+        let bestHit: {
+          atsType: string;
+          slug: string;
+          count: number;
+          sampleJobs: any[];
+        } | null = null;
+
+        // Try each ATS x slug combination
+        for (const atsType of atsTypes) {
+          for (const slug of slugs) {
+            const key = `${atsType}:${slug}`;
+            if (existingSlugs.has(key)) continue;
+
+            const { count, sampleJobs } = await tryAts(atsType, slug);
+            if (count > 0) {
+              if (!bestHit || count > bestHit.count) {
+                bestHit = { atsType, slug, count, sampleJobs };
+              }
+              break; // found on this ATS, try next ATS
+            }
+          }
+        }
+
+        if (!bestHit) return null;
+
+        // Sample worldwide jobs
+        const worldwideJobCount = sampleWorldwide(
+          bestHit.atsType,
+          bestHit.slug,
+          bestHit.sampleJobs
+        );
+
+        // Derive domain from slug (best guess)
+        const domain = `${bestHit.slug.replace(/-/g, "")}.com`;
+
+        return {
+          name: candidate.name,
+          slug: bestHit.slug,
+          atsType: bestHit.atsType,
+          domain,
+          worldwideJobCount,
+          totalJobCount: bestHit.count,
+          source: candidate.source,
+        } satisfies DiscoveredCompany;
+      })
+    );
+
+    for (const result of batchResults) {
+      if (result) {
+        verified.push(result);
+        existingSlugs.add(`${result.atsType}:${result.slug}`);
+        console.error(
+          `  + ${result.name} -> ${result.atsType}/${result.slug} (${result.totalJobCount} jobs, ${result.worldwideJobCount} worldwide) [${result.source}]`
+        );
+      }
+    }
+
+    console.error(
+      `[discover] progress: ${Math.min(i + BATCH_SIZE, candidates.length)}/${candidates.length}`
+    );
+
+    // Rate limiting
+    if (i + BATCH_SIZE < candidates.length) {
+      await new Promise((r) => setTimeout(r, BATCH_DELAY));
+    }
+  }
+
+  // ── Sort and output ──
+  verified.sort(
+    (a, b) => b.worldwideJobCount - a.worldwideJobCount || b.totalJobCount - a.totalJobCount
+  );
+
+  // Count by ATS
+  const atsCounts = new Map<string, number>();
+  for (const v of verified) {
+    atsCounts.set(v.atsType, (atsCounts.get(v.atsType) || 0) + 1);
+  }
+  const atsBreakdown = Array.from(atsCounts.entries())
+    .map(([k, v]) => `${k}: ${v}`)
+    .join(", ");
+
+  console.error(`\n[discover] ════════════════════════════════════════`);
+  console.error(
+    `[discover] Found ${verified.length} new companies across ${atsCounts.size} ATS platforms`
+  );
+  if (atsBreakdown) {
+    console.error(`[discover] Breakdown: ${atsBreakdown}`);
+  }
+  console.error(
+    `[discover] ${verified.filter((v) => v.worldwideJobCount > 0).length} have worldwide jobs`
+  );
+  console.error(`[discover] ════════════════════════════════════════\n`);
+
+  // Print to stdout as JSON
+  console.log(JSON.stringify(verified, null, 2));
+
+  // Write results file
+  const outputPath = resolve(__dirname, "discovered-companies.json");
+  writeFileSync(outputPath, JSON.stringify(verified, null, 2));
+  console.error(`[discover] Results written to ${outputPath}`);
+}
+
+main().catch((err) => {
+  console.error("[discover] fatal:", err);
+  process.exit(1);
+});
