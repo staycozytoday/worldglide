@@ -1981,6 +1981,26 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "ChowNow", domain: "chownow.com", careersUrl: "https://chownow.com/careers", atsType: "lever", atsSlug: "chownow" },
   { name: "Pulley", domain: "pulley.com", careersUrl: "https://pulley.com/careers", atsType: "greenhouse", atsSlug: "pulley" },
   { name: "Office Hours", domain: "officehours.com", careersUrl: "https://officehours.com/careers", atsType: "ashby", atsSlug: "office-hours" },
+
+  // discovered 2026-03-23 (growth cycle)
+  { name: "Protege",          domain: "protege.com",          careersUrl: "https://protege.com/careers",          atsType: "ashby",      atsSlug: "protege" },
+  { name: "Erasca",           domain: "erasca.com",           careersUrl: "https://erasca.com/careers",           atsType: "greenhouse", atsSlug: "erasca" },
+  { name: "Grow Therapy",     domain: "growtherapy.com",      careersUrl: "https://growtherapy.com/careers",      atsType: "greenhouse", atsSlug: "growtherapy" },
+  { name: "WithCoverage",     domain: "withcoverage.com",     careersUrl: "https://withcoverage.com/careers",     atsType: "greenhouse", atsSlug: "withcoverage" },
+  { name: "Healthcare AI SaaS", domain: "healthcare.com",     careersUrl: "https://healthcare.com/careers",       atsType: "lever",      atsSlug: "healthcare" },
+  { name: "Foxglove",         domain: "foxglove.dev",         careersUrl: "https://foxglove.dev/careers",         atsType: "ashby",      atsSlug: "foxglove" },
+  { name: "Nova Credit",      domain: "novacredit.com",       careersUrl: "https://novacredit.com/careers",       atsType: "greenhouse", atsSlug: "novacredit" },
+  { name: "Enveritas",        domain: "enveritas.org",        careersUrl: "https://enveritas.org/careers",        atsType: "greenhouse", atsSlug: "enveritas" },
+
+  // discovered 2026-03-23 — high job count companies (totalJobCount > 15)
+  { name: "PMG",              domain: "pmg.com",              careersUrl: "https://pmg.com/careers",              atsType: "greenhouse", atsSlug: "pmg" },
+  { name: "Tandem Health",    domain: "tandemhealth.com",     careersUrl: "https://tandemhealth.com/careers",     atsType: "ashby",      atsSlug: "tandem-health" },
+  { name: "Fieldguide",       domain: "fieldguide.com",       careersUrl: "https://fieldguide.com/careers",       atsType: "ashby",      atsSlug: "fieldguide" },
+  { name: "Axle Energy",      domain: "axle.com",             careersUrl: "https://axle.com/careers",             atsType: "greenhouse", atsSlug: "axle" },
+  { name: "Uncountable",      domain: "uncountable.com",      careersUrl: "https://uncountable.com/careers",      atsType: "ashby",      atsSlug: "uncountable" },
+  { name: "MONUMENTAL",       domain: "monumental.com",       careersUrl: "https://monumental.com/careers",       atsType: "ashby",      atsSlug: "monumental" },
+  { name: "Confido Legal",    domain: "confido.com",          careersUrl: "https://confido.com/careers",          atsType: "ashby",      atsSlug: "confido" },
+  { name: "Zattoo",           domain: "zattoo.com",           careersUrl: "https://zattoo.com/careers",           atsType: "greenhouse", atsSlug: "zattoo" },
 ];
 
 /** number of companies we actually scrape (excludes custom) */
