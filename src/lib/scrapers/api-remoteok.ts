@@ -118,7 +118,7 @@ export async function scrapeRemoteOK(): Promise<RemoteOKResult> {
       postedAt,
       scrapedAt: new Date().toISOString(),
       description: (item.description || "").replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim().slice(0, 200),
-      isWorldwide: true,
+      region: "ww",
       employmentType: "Full-time",
     });
   }

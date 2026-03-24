@@ -121,7 +121,7 @@ export async function scrapeJobicy(): Promise<JobicyResult> {
       postedAt: item.pubDate || new Date().toISOString(),
       scrapedAt: new Date().toISOString(),
       description: stripHtml(item.jobExcerpt || "").slice(0, 200),
-      isWorldwide: true,
+      region: "ww",
       employmentType,
     });
   }

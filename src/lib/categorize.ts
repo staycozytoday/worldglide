@@ -191,6 +191,7 @@ const CREATIVE_PATTERNS = [
 
 export function categorizeJob(
   title: string,
+  _tags?: string[], // accepted for API compatibility but unused — title-only matching is more precise
 ): Category | null {
   const t = title.toLowerCase().trim();
 

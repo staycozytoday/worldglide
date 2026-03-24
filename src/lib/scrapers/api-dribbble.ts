@@ -90,7 +90,7 @@ export async function scrapeDribbble(): Promise<DribbbleResult> {
       tags: ["design"],
       postedAt: new Date().toISOString(), // Dribbble HTML doesn't include dates
       scrapedAt: new Date().toISOString(),
-      isWorldwide: true,
+      region: "ww",
       employmentType: "Full-time",
     });
   }

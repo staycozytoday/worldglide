@@ -196,7 +196,7 @@ export async function scrapeHNWhoIsHiring(): Promise<HNResult> {
       postedAt,
       scrapedAt: new Date().toISOString(),
       description,
-      isWorldwide: true,
+      region: "ww",
       employmentType: "Full-time",
     });
   }

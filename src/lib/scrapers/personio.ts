@@ -102,7 +102,7 @@ async function scrapePersonioCompany(
       postedAt: pos.createdAt || new Date().toISOString(),
       scrapedAt: new Date().toISOString(),
       description: stripHtml(descriptionText).slice(0, 200) || undefined,
-      isWorldwide: true,
+      region: "ww",
       employmentType: pos.schedule || "Full-time",
     });
   }

@@ -114,7 +114,7 @@ async function scrapePinpointCompany(
       postedAt: item.deadline_at || new Date().toISOString(),
       scrapedAt: new Date().toISOString(),
       description: item.description ? stripHtml(item.description).slice(0, 200) : undefined,
-      isWorldwide: true,
+      region: "ww",
       employmentType: item.employment_type_text || "Full-time",
     });
   }

@@ -149,7 +149,7 @@ export async function scrapeHimalayas(): Promise<HimalayasResult> {
       postedAt,
       scrapedAt: new Date().toISOString(),
       description: (item.excerpt || item.description || "").slice(0, 200),
-      isWorldwide: true,
+      region: "ww",
       employmentType: item.employmentType || "Full-time",
     });
   }

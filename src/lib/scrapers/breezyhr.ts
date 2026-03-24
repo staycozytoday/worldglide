@@ -118,7 +118,7 @@ async function scrapeBreezyHRCompany(
       tags: [item.department].filter(Boolean) as string[],
       postedAt: item.published_date || new Date().toISOString(),
       scrapedAt: new Date().toISOString(),
-      isWorldwide: true,
+      region: "ww",
       employmentType: item.type?.name || "Full-time",
     });
   }

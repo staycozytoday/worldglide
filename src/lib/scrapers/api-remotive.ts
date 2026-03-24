@@ -102,7 +102,7 @@ export async function scrapeRemotive(): Promise<RemotiveResult> {
       postedAt: item.publication_date || new Date().toISOString(),
       scrapedAt: new Date().toISOString(),
       description: stripHtml(item.description || "").slice(0, 200),
-      isWorldwide: true,
+      region: "ww",
       employmentType,
     });
   }

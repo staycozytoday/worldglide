@@ -111,7 +111,7 @@ export async function scrapeArbeitnow(): Promise<ArbeitnowResult> {
       postedAt: item.created_at || new Date().toISOString(),
       scrapedAt: new Date().toISOString(),
       description: stripHtml(item.description || "").slice(0, 200),
-      isWorldwide: true,
+      region: "ww",
       employmentType: "Full-time",
     });
   }
