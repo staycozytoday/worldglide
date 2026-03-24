@@ -740,7 +740,7 @@ const APAC_TERMS = [
   "australia", "sydney", "melbourne", "new zealand", "anz",
   "pakistan", "bangladesh", "sri lanka",
   // Timezone signals → APAC
-  "ist", "sgt", "jst", "kst", "cst", "aest", "nzst", "hkt",
+  "ist", "sgt", "jst", "kst", "aest", "nzst", "hkt", // "cst" removed — ambiguous with US Central Standard Time (covered by NOAM_TZ)
   "india standard", "japan standard", "korea standard",
   "utc+5", "utc+5:30", "utc+6", "utc+7", "utc+8", "utc+9", "utc+10", "utc+11",
   "gmt+5", "gmt+5:30", "gmt+6", "gmt+7", "gmt+8", "gmt+9", "gmt+10",

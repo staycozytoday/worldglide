@@ -118,7 +118,7 @@ const EXCLUDE_PATTERNS = [
   /\bscrum\s+master\b/i,
 
   // ── Intern roles ──────────────────────────────────────────────────────────
-  /\bintern\b/i,
+  /\bintern(ship)?\b/i,
 
   // ── Game systems / balance (not visual design) ─────────────────────────────
   /\bnumerical\s+design/i,                                   // "Game Numerical Designer" = game balance, not creative

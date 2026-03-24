@@ -1,7 +1,7 @@
 import { Job, getCompanyLogoUrl } from "../types";
 import { getJobRegion, isRemoteJob } from "../filter";
 import { categorizeJob } from "../categorize";
-import { createJobId, normalizeEmploymentType } from "../utils";
+import { createJobId, normalizeEmploymentType, stripHtml } from "../utils";
 import { REMOTE_COMPANIES } from "../companies";
 import { fetchWithRetry, CompanyResult } from "../fetch-retry";
 
@@ -107,16 +107,10 @@ async function scrapeGreenhouseCompany(
       scrapedAt: new Date().toISOString(),
       description: content ? stripHtml(content).slice(0, 200) : undefined,
       region,
-      employmentType: normalizeEmploymentType(),
+      employmentType: normalizeEmploymentType(undefined), // Greenhouse list API has no employment type field
     });
   }
 
   return { jobs: results, rawCount };
 }
 
-function stripHtml(html: string): string {
-  return html
-    .replace(/<[^>]*>/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-}

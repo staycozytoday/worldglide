@@ -102,6 +102,24 @@ export function normalizeEmploymentType(raw?: string): string {
 }
 
 /**
+ * Strip HTML tags and decode common HTML entities from a string.
+ * Handles double-encoded content (e.g. Greenhouse API returns &lt;div&gt; literally).
+ */
+export function stripHtml(html: string): string {
+  return html
+    .replace(/<[^>]*>/g, " ")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&nbsp;/g, " ")
+    .replace(/<[^>]*>/g, " ") // second pass after entity decode
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+/**
  * Create a simple hash-based ID
  */
 export function createJobId(source: string, identifier: string): string {
