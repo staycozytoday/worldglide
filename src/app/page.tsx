@@ -26,7 +26,7 @@ export default function HomePage() {
           without limits.
         </h1>
         <p className="text-[12px] text-[var(--color-text-muted)] mt-4 max-w-[320px] leading-relaxed">
-          hand-picked remote roles for product designers, ux leads, motion artists &amp; creative technologists. sourced from the world&apos;s best tech companies, startups &amp; studios.
+          hand-picked remote roles for designers, illustrators, motion artists &amp; creative technologists. sourced from the world&apos;s best tech companies, startups &amp; studios.
         </p>
         <p className="text-[10px] text-[var(--color-text-muted)] mt-4 font-mono leading-relaxed max-w-[352px]">
           {stats ? `${jobs.length} creative remote jobs` : "—"} · ww · noam · eur · apac · latam · mena · ssa
