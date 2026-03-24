@@ -11,11 +11,10 @@ export default function SubmitPage() {
             post a job
           </h1>
           <p className="text-[12px] text-[var(--color-text-muted)] mt-4 max-w-[320px] leading-relaxed">
-            free. reviewed manually for quality. only 100% worldwide remote
-            positions. no country restrictions.
+            free. curated by hand &amp; taste. 100% remote. open to talent everywhere. no location restrictions.
           </p>
           <p className="text-[10px] text-[var(--color-text-muted)] mt-4 font-mono">
-            live for 2 weeks ･ reviewed in 24h
+            live for 8 days ･ reviewed within 24h
           </p>
         </div>
 

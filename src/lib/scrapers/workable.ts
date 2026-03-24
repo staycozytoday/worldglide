@@ -1,7 +1,7 @@
 import { Job, getCompanyLogoUrl } from "../types";
-import { isWorldwideRemote } from "../filter";
+import { getJobRegion, isRemoteJob } from "../filter";
 import { categorizeJob } from "../categorize";
-import { createJobId } from "../utils";
+import { createJobId, normalizeEmploymentType } from "../utils";
 import { REMOTE_COMPANIES } from "../companies";
 import { fetchWithRetry, CompanyResult } from "../fetch-retry";
 
@@ -68,7 +68,7 @@ export async function scrapeWorkable(): Promise<WorkableResult> {
 
   const failed = report.filter((r) => r.error).length;
   console.log(
-    `[workable] ${jobs.length} worldwide jobs from ${companies.length} companies` +
+    `[workable] ${jobs.length} creative jobs from ${companies.length} companies` +
       (failed ? ` (${failed} failed)` : "")
   );
   return { jobs, report };
@@ -91,7 +91,10 @@ async function scrapeWorkableCompany(
   const data = await res.json();
   const items = data.jobs || [];
   const rawCount = items.length;
-  const results: Job[] = [];
+
+  // Phase 1: filter to creative remote candidates using list data only
+  type Candidate = { item: any; fullLocation: string };
+  const candidates: Candidate[] = [];
 
   for (const item of items) {
     const loc = item.location || {};
@@ -102,51 +105,73 @@ async function scrapeWorkableCompany(
       ? `Remote${locationStr ? ` - ${locationStr}` : ""}`
       : locationStr;
 
-    // TODO: Workable widget API doesn't return descriptions.
-    // To enable description rescue, fetch individual jobs via
-    // /api/v1/widget/accounts/{slug}/jobs/{shortcode} for trusted companies.
-    const fullDesc = "";
+    const jobFilter = { title: item.title || "", description: "", location: fullLocation, companySlug: slug };
+    if (!isRemoteJob(jobFilter, "")) continue;
+    if (!categorizeJob(item.title || "")) continue;
+    candidates.push({ item, fullLocation });
+  }
 
-    if (
-      !isWorldwideRemote(
-        {
-          title: item.title || "",
-          description: "",
-          location: fullLocation,
-          companySlug: slug,
-        },
-        fullDesc
+  // Phase 2: enrich candidates with individual descriptions (batches of 5)
+  const results: Job[] = [];
+
+  for (let i = 0; i < candidates.length; i += 5) {
+    const batch = candidates.slice(i, i + 5);
+    const descriptions = await Promise.allSettled(
+      batch.map(({ item }) =>
+        fetchWorkableDesc(slug, item.shortcode || item.id)
       )
-    ) {
-      continue;
+    );
+
+    for (let j = 0; j < batch.length; j++) {
+      const { item, fullLocation } = batch[j];
+      const desc = descriptions[j];
+      const fullDesc = desc.status === "fulfilled" ? desc.value : "";
+      const jobFilter = { title: item.title || "", description: fullDesc.slice(0, 200), location: fullLocation, companySlug: slug };
+
+      if (!isRemoteJob(jobFilter, fullDesc)) continue;
+      const category = categorizeJob(item.title || "");
+      if (!category) continue;
+      const region = getJobRegion(jobFilter, fullDesc);
+
+      const jobUrl = item.url || item.shortlink || `https://apply.workable.com/${slug}/j/${item.shortcode}/`;
+
+      results.push({
+        id: createJobId("workable", `${slug}_${item.shortcode || item.id}`),
+        title: (item.title || "").trim(),
+        company: companyName,
+        companyLogo: companyDomain ? getCompanyLogoUrl(companyDomain) : undefined,
+        category,
+        url: jobUrl,
+        source: "workable",
+        tags: item.department ? [item.department] : [],
+        postedAt: item.created_at || new Date().toISOString(),
+        scrapedAt: new Date().toISOString(),
+        description: fullDesc ? fullDesc.slice(0, 200) : undefined,
+        region,
+        employmentType: normalizeEmploymentType(item.employment_type),
+      });
     }
 
-    const category = categorizeJob(item.title || "");
-    if (!category) continue;
-
-    // Workable provides direct URLs
-    const jobUrl =
-      item.url ||
-      item.shortlink ||
-      `https://apply.workable.com/${slug}/j/${item.shortcode}/`;
-
-    results.push({
-      id: createJobId("workable", `${slug}_${item.shortcode || item.id}`),
-      title: item.title || "",
-      company: companyName,
-      companyLogo: companyDomain
-        ? getCompanyLogoUrl(companyDomain)
-        : undefined,
-      category,
-      url: jobUrl,
-      source: "workable",
-      tags: item.department ? [item.department] : [],
-      postedAt: item.created_at || new Date().toISOString(),
-      scrapedAt: new Date().toISOString(),
-      isWorldwide: true,
-      employmentType: "Full-time",
-    });
+    if (i + 5 < candidates.length) {
+      await new Promise((r) => setTimeout(r, 200));
+    }
   }
 
   return { jobs: results, rawCount };
+}
+
+async function fetchWorkableDesc(slug: string, shortcode: string): Promise<string> {
+  const res = await fetchWithRetry(
+    `https://apply.workable.com/api/v1/widget/accounts/${slug}/jobs/${shortcode}`,
+    { headers: { "User-Agent": "worldglide-jobs/1.0" }, timeoutMs: 10000 }
+  );
+  if (!res.ok) return "";
+  const detail = await res.json();
+  const html = [detail.description, detail.requirements, detail.benefits]
+    .filter(Boolean).join(" ");
+  return html ? stripHtml(html) : "";
+}
+
+function stripHtml(html: string): string {
+  return html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
 }

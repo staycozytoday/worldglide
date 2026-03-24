@@ -19,21 +19,17 @@ export default function HomePage() {
       {/* hero */}
       <section className="pt-16 md:pt-24 pb-16">
         <h1 className="text-[32px] md:text-[40px] font-medium tracking-tight leading-[1.1] text-[var(--color-text)]">
-          careers
-          <br />
-          without borders
+          creative jobs
           <br />
           for humans
           <br />
           without limits.
         </h1>
         <p className="text-[12px] text-[var(--color-text-muted)] mt-4 max-w-[320px] leading-relaxed">
-          curated remote roles from global, remote‑first teams. no country
-          limits, only product, engineering &amp; design work you can do from
-          wherever feels like home.
+          hand-picked remote roles for product designers, ux leads, motion artists &amp; creative technologists. sourced from the world&apos;s best tech companies, startups &amp; studios.
         </p>
         <p className="text-[10px] text-[var(--color-text-muted)] mt-4 font-mono leading-relaxed max-w-[352px]">
-          0.2% of remote jobs are actually worldwide remote. based on {stats ? `${jobs.length}/${stats.rawJobsScanned.toLocaleString()}` : "—"} scanned. this is la crème de la crème topped with le jus du jus. you're welcome.
+          {stats ? `${jobs.length} creative remote jobs` : "—"} · ww · noam · eur · apac · latam · mena · ssa
         </p>
       </section>
 

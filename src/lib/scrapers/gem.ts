@@ -1,7 +1,7 @@
 import { Job, getCompanyLogoUrl } from "../types";
-import { isWorldwideRemote } from "../filter";
+import { getJobRegion, isRemoteJob } from "../filter";
 import { categorizeJob } from "../categorize";
-import { createJobId } from "../utils";
+import { createJobId, normalizeEmploymentType } from "../utils";
 import { REMOTE_COMPANIES } from "../companies";
 import { fetchWithRetry, CompanyResult } from "../fetch-retry";
 
@@ -51,7 +51,7 @@ export async function scrapeGem(): Promise<GemResult> {
 
   const failed = report.filter((r) => r.error).length;
   console.log(
-    `[gem] ${jobs.length} worldwide jobs from ${companies.length} companies` +
+    `[gem] ${jobs.length} creative jobs from ${companies.length} companies` +
     (failed ? ` (${failed} failed)` : "")
   );
   return { jobs, report };
@@ -89,26 +89,23 @@ async function scrapeGemCompany(
 
     const fullDesc = item.content_plain || "";
 
-    if (
-      !isWorldwideRemote(
-        {
-          title: item.title,
-          description: fullDesc.slice(0, 200),
-          location: locationName,
-          companySlug: slug,
-        },
-        fullDesc
-      )
-    ) {
-      continue;
-    }
+    const jobFilter = {
+      title: item.title,
+      description: fullDesc.slice(0, 200),
+      location: locationName,
+      companySlug: slug,
+    };
+
+    if (!isRemoteJob(jobFilter, fullDesc)) continue;
 
     const category = categorizeJob(item.title);
     if (!category) continue;
 
+    const region = getJobRegion(jobFilter, fullDesc);
+
     results.push({
       id: createJobId("gem", `${slug}_${item.id}`),
-      title: item.title || "",
+      title: (item.title || "").trim(),
       company: companyName,
       companyLogo: companyDomain ? getCompanyLogoUrl(companyDomain) : undefined,
       category,
@@ -119,17 +116,12 @@ async function scrapeGemCompany(
       postedAt: item.first_published_at || item.created_at || new Date().toISOString(),
       scrapedAt: new Date().toISOString(),
       description: item.content_plain ? item.content_plain.slice(0, 200) : undefined,
-      isWorldwide: true,
-      employmentType: formatEmploymentType(item.employment_type),
+      region,
+      employmentType: normalizeEmploymentType(item.employment_type),
     });
   }
 
   return { jobs: results, rawCount };
-}
-
-function formatEmploymentType(type?: string): string {
-  if (!type) return "Full-time";
-  return type.replace(/_/g, "-").replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
 /** gem job post shape from the api */

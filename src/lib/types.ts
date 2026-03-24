@@ -1,4 +1,6 @@
-export type Category = "engineering" | "product" | "design";
+export type Category = "creative";
+
+export type Region = "ww" | "noam" | "eur" | "apac" | "latam" | "mena" | "ssa";
 
 export type Source =
   | "greenhouse"
@@ -22,7 +24,7 @@ export interface Job {
   postedAt: string; // ISO date
   scrapedAt: string; // ISO date
   description?: string;
-  isWorldwide: boolean;
+  region: Region;
   employmentType?: string;
   expired?: boolean; // true if older than 14 days
 }

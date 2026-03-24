@@ -14,13 +14,13 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "worldglide ･ careers without borders for humans without limits",
+  title: "worldglide · creative jobs for humans without limits",
   description:
-    "curated remote roles from global, remote-first teams. no country limits, only product, engineering & design work you can do from wherever feels like home.",
+    "hand-picked remote creative roles. top remote-first companies. quality over quantity.",
   openGraph: {
-    title: "worldglide ･ careers without borders for humans without limits.",
+    title: "worldglide · creative jobs for humans without limits",
     description:
-      "curated remote roles from global, remote-first teams. no country limits, only product, engineering & design work you can do from wherever feels like home.",
+      "hand-picked remote creative roles. top remote-first companies. quality over quantity.",
     type: "website",
   },
 };

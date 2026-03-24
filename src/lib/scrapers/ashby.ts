@@ -1,7 +1,7 @@
 import { Job, getCompanyLogoUrl } from "../types";
-import { isWorldwideRemote } from "../filter";
+import { getJobRegion, isRemoteJob } from "../filter";
 import { categorizeJob } from "../categorize";
-import { createJobId } from "../utils";
+import { createJobId, normalizeEmploymentType } from "../utils";
 import { REMOTE_COMPANIES } from "../companies";
 import { fetchWithRetry, CompanyResult } from "../fetch-retry";
 
@@ -50,7 +50,7 @@ export async function scrapeAshby(): Promise<AshbyResult> {
 
   const failed = report.filter((r) => r.error).length;
   console.log(
-    `[ashby] ${jobs.length} worldwide jobs from ${companies.length} companies` +
+    `[ashby] ${jobs.length} creative jobs from ${companies.length} companies` +
     (failed ? ` (${failed} failed)` : "")
   );
   return { jobs, report };
@@ -105,26 +105,23 @@ async function scrapeAshbyCompany(
 
     const fullDesc = item.descriptionHtml ? stripHtml(item.descriptionHtml) : "";
 
-    if (
-      !isWorldwideRemote(
-        {
-          title: item.title,
-          description: fullDesc.slice(0, 200),
-          location: locationText,
-          companySlug: slug,
-        },
-        fullDesc
-      )
-    ) {
-      continue;
-    }
+    const jobFilter = {
+      title: item.title,
+      description: fullDesc.slice(0, 200),
+      location: locationText,
+      companySlug: slug,
+    };
+
+    if (!isRemoteJob(jobFilter, fullDesc)) continue;
 
     const category = categorizeJob(item.title);
     if (!category) continue;
 
+    const region = getJobRegion(jobFilter, fullDesc);
+
     results.push({
       id: createJobId("ashby", `${slug}_${item.id}`),
-      title: item.title || "",
+      title: (item.title || "").trim(),
       company: companyName,
       companyLogo: companyDomain
         ? getCompanyLogoUrl(companyDomain)
@@ -144,8 +141,8 @@ async function scrapeAshbyCompany(
       description: item.descriptionHtml
         ? stripHtml(item.descriptionHtml).slice(0, 200)
         : undefined,
-      isWorldwide: true,
-      employmentType: item.employmentType || "Full-time",
+      region,
+      employmentType: normalizeEmploymentType(item.employmentType),
     });
   }
 

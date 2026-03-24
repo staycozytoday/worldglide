@@ -1,13 +1,11 @@
 /**
- * Worldwide-only quality filter.
+ * Geographic filter & region classifier.
  *
- * Philosophy: OPT-IN, not opt-out.
- * A job must PROVE it's worldwide. If there's any doubt, reject it.
- * "Remote" alone is not enough — "Remote, US" is US-only.
- * Only jobs with no geographic qualifiers pass.
+ * v4.2 strategy: show ALL creative jobs, tagged by region.
+ * Regions: WW (worldwide), NOAM, LATAM, EUR, MENA, SSA, APAC.
  *
- * This is the single most important file in the codebase.
- * One false positive = broken trust. Be aggressive with rejections.
+ * The worldwide detector logic is preserved — WW jobs pass it cleanly.
+ * Regional jobs are classified by their location signals.
  */
 
 export interface FilterableJob {
@@ -651,4 +649,238 @@ export function analyzeWithRescue(
 function titleHasGeoRestriction(title: string): boolean {
   const lower = title.toLowerCase();
   return hasGeographicQualifier(lower) || hasStructuralGeoPattern(lower);
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// REGION CLASSIFIER (v4.2)
+// ─────────────────────────────────────────────────────────────────────────────
+
+import type { Region } from "./types";
+
+// ── Geographic terms per region ───────────────────────────────────────────────
+
+const NOAM_TERMS = [
+  "us", "usa", "u.s.", "u.s.a.", "united states", "america",
+  "canada", "ontario", "british columbia", "quebec", "alberta",
+  "mexico", "north america",
+  "california", "new york", "texas", "florida", "washington",
+  "colorado", "massachusetts", "illinois", "georgia", "virginia",
+  "oregon", "pennsylvania", "ohio", "michigan", "north carolina",
+  "arizona", "maryland", "minnesota", "connecticut", "utah",
+  "nevada", "tennessee", "new jersey", "seattle", "san francisco",
+  "nyc", "new york city", "austin", "denver", "chicago", "boston",
+  "los angeles", "toronto", "vancouver", "montreal",
+  // Timezone signals → NOAM
+  "est", "cst", "mst", "pst", "eastern time", "central time",
+  "mountain time", "pacific time", "et ", "ct ", "pt ",
+  "utc-4", "utc-5", "utc-6", "utc-7", "utc-8",
+  "gmt-4", "gmt-5", "gmt-6", "gmt-7", "gmt-8",
+];
+
+const LATAM_TERMS = [
+  "brazil", "argentina", "colombia", "chile", "peru", "venezuela",
+  "ecuador", "uruguay", "paraguay", "bolivia", "costa rica", "panama",
+  "guatemala", "dominican republic", "puerto rico", "jamaica", "trinidad",
+  "cuba", "latin america", "latam", "south america", "são paulo", "sao paulo",
+  "mexico city", "buenos aires", "bogota", "bogotá", "lima",
+  // Timezone signals → LATAM
+  "brt", "art", "clt", "col", "pet",
+  "utc-3", "gmt-3",
+];
+
+const EUR_TERMS = [
+  "europe", "european union", "eu", "emea",
+  "germany", "france", "spain", "italy", "netherlands", "belgium",
+  "switzerland", "austria", "portugal", "luxembourg", "liechtenstein",
+  "sweden", "norway", "denmark", "finland", "iceland",
+  "poland", "czech", "czechia", "czech republic", "slovakia",
+  "hungary", "romania", "bulgaria", "croatia", "slovenia",
+  "serbia", "bosnia", "montenegro", "albania", "north macedonia",
+  "moldova", "ukraine", "belarus", "estonia", "latvia", "lithuania",
+  "greece", "cyprus", "malta", "turkey", "türkiye",
+  "ireland", "united kingdom", "uk", "britain", "england", "scotland", "wales",
+  "dach", "benelux", "cee", "nordics", "nordic", "balkans",
+  "berlin", "london", "paris", "amsterdam", "dublin", "barcelona",
+  "madrid", "lisbon", "munich", "vienna", "zurich", "stockholm",
+  "oslo", "copenhagen", "helsinki", "warsaw", "prague", "budapest",
+  // Timezone signals → EUR
+  "cet", "cest", "gmt", "bst", "wet", "eet", "eest",
+  "utc+0", "utc+1", "utc+2", "utc+3",
+  "gmt+0", "gmt+1", "gmt+2",
+];
+
+const MENA_TERMS = [
+  "middle east", "mena", "north africa",
+  "uae", "united arab emirates", "dubai", "saudi arabia", "saudi",
+  "qatar", "bahrain", "kuwait", "oman", "jordan", "lebanon",
+  "israel", "tel aviv", "egypt", "cairo", "morocco", "tunisia",
+  // Timezone signals → MENA
+  "ast", "arabia standard", "eat",
+  "utc+3", "utc+4", "gmt+3", "gmt+4",
+];
+
+const SSA_TERMS = [
+  "africa", "sub-saharan", "sub saharan",
+  "nigeria", "kenya", "ghana", "ethiopia", "tanzania",
+  "uganda", "rwanda", "south africa", "cape town", "johannesburg",
+  "senegal", "mozambique", "zambia", "zimbabwe", "cameroon",
+  "ivory coast", "nairobi", "lagos",
+  // Timezone signals → SSA (WAT/EAT)
+  "wat", "west africa time", "east africa time",
+];
+
+const APAC_TERMS = [
+  "asia", "asia pacific", "apac", "oceania",
+  "india", "bangalore", "bengaluru", "mumbai", "hyderabad", "delhi",
+  "japan", "tokyo", "korea", "south korea", "seoul",
+  "china", "beijing", "shanghai", "taiwan", "hong kong",
+  "singapore", "malaysia", "kuala lumpur", "philippines", "manila",
+  "indonesia", "jakarta", "thailand", "bangkok", "vietnam",
+  "ho chi minh", "hanoi", "myanmar", "cambodia", "nepal",
+  "australia", "sydney", "melbourne", "new zealand", "anz",
+  "pakistan", "bangladesh", "sri lanka",
+  // Timezone signals → APAC
+  "ist", "sgt", "jst", "kst", "cst", "aest", "nzst", "hkt",
+  "india standard", "japan standard", "korea standard",
+  "utc+5", "utc+5:30", "utc+6", "utc+7", "utc+8", "utc+9", "utc+10", "utc+11",
+  "gmt+5", "gmt+5:30", "gmt+6", "gmt+7", "gmt+8", "gmt+9", "gmt+10",
+];
+
+// ── Remote check ──────────────────────────────────────────────────────────────
+
+const REMOTE_LOCATION_KEYWORDS = [
+  "remote", "worldwide", "anywhere", "global", "distributed",
+  "work from home", "work from anywhere", "fully distributed",
+  "location independent", "virtual", "home-based",
+];
+
+const OFFICE_ONLY_PATTERNS = [
+  /\bin[\s-]office\b/i,
+  /\bon[\s-]site\b/i,
+  /\bonsite\b/i,
+  /\bhybrid\b/i,
+  /\boffice[\s-]based\b/i,
+];
+
+const OFFICE_DESCRIPTION_SIGNALS = [
+  /\b(in[\s-]?office|on[\s-]?site|onsite)\s+role\b/i,
+  /\brequired?\s+to\s+(be\s+)?in\s+(?:the\s+)?office/i,
+  /\bmust\s+(be\s+)?report\s+to\s+(the\s+)?office/i,
+  /\boffice\s+(attendance|presence)\s+required\b/i,
+  /\bthis\s+(role|position)\s+is\s+(in[\s-]?office|on[\s-]?site)\b/i,
+  /\bnot\s+(eligible|available)\s+for\s+remote\b/i,
+  /\bcannot\s+be\s+performed\s+remotely\b/i,
+];
+
+/**
+ * Returns true if the job is (or can be) remote.
+ * Rejects jobs with explicit office-only / hybrid signals in location or description.
+ *
+ * Note: many companies list their HQ city as location even for remote roles.
+ * We check the full description for office-only signals before rejecting.
+ */
+export function isRemoteJob(job: FilterableJob, fullDescription?: string): boolean {
+  const loc = (job.location || "").toLowerCase().trim();
+
+  // If location explicitly says office/hybrid → not remote
+  for (const p of OFFICE_ONLY_PATTERNS) {
+    if (p.test(loc)) return false;
+  }
+
+  // If location has a remote keyword → remote
+  for (const kw of REMOTE_LOCATION_KEYWORDS) {
+    if (loc.includes(kw)) return true;
+  }
+
+  // Location is a city/region name (e.g. "New York") — check description for office signals
+  // Companies often put HQ city as location even for remote roles.
+  const desc = (fullDescription || job.description || "").toLowerCase();
+  for (const p of OFFICE_DESCRIPTION_SIGNALS) {
+    if (p.test(desc)) return false;
+  }
+
+  // No disqualifying signal found → treat as remote-eligible
+  return true;
+}
+
+function matchesTerms(text: string, terms: string[]): boolean {
+  for (const term of terms) {
+    if (term.length <= 3) {
+      if (new RegExp(`\\b${term}\\b`).test(text)) return true;
+    } else {
+      if (text.includes(term)) return true;
+    }
+  }
+  return false;
+}
+
+// ── Geo terms (place names only — no timezones) ───────────────────────────────
+
+const NOAM_GEO = NOAM_TERMS.filter(t => !t.match(/^(est|cst|mst|pst|et |ct |pt |utc-|gmt-|eastern|central|mountain|pacific)/i));
+const LATAM_GEO = LATAM_TERMS.filter(t => !t.match(/^(brt|art|clt|col|pet|utc-3|gmt-3)/i));
+const EUR_GEO   = EUR_TERMS.filter(t => !t.match(/^(cet|cest|gmt|bst|wet|eet|eest|utc\+[0-3]|gmt\+[0-2])/i));
+const MENA_GEO  = MENA_TERMS.filter(t => !t.match(/^(ast|arabia|eat|utc\+3|utc\+4|gmt\+3|gmt\+4)/i));
+const SSA_GEO   = SSA_TERMS.filter(t => !t.match(/^(wat|west africa time|east africa time)/i));
+const APAC_GEO  = APAC_TERMS.filter(t => !t.match(/^(ist|sgt|jst|kst|aest|nzst|hkt|india standard|japan standard|korea standard|utc\+[5-9]|utc\+1[0-1]|gmt\+[5-9]|gmt\+10)/i));
+
+// ── Timezone-only terms (used as fallback when location is ambiguous) ─────────
+
+const NOAM_TZ = ["est", "cst", "mst", "pst", "eastern time", "central time", "mountain time", "pacific time", "et ", "ct ", "pt ", "utc-4", "utc-5", "utc-6", "utc-7", "utc-8", "gmt-4", "gmt-5", "gmt-6", "gmt-7", "gmt-8"];
+const LATAM_TZ = ["brt", "art", "clt", "col", "pet", "utc-3", "gmt-3"];
+const EUR_TZ   = ["cet", "cest", "bst", "wet", "eet", "eest", "utc+0", "utc+1", "utc+2", "gmt+0", "gmt+1", "gmt+2"];
+const MENA_TZ  = ["ast", "arabia standard", "eat", "utc+3", "utc+4", "gmt+3", "gmt+4"];
+const SSA_TZ   = ["wat", "west africa time", "east africa time"];
+const APAC_TZ  = ["ist", "sgt", "jst", "kst", "aest", "nzst", "hkt", "india standard", "japan standard", "korea standard", "utc+5", "utc+5:30", "utc+6", "utc+7", "utc+8", "utc+9", "utc+10", "utc+11", "gmt+5", "gmt+5:30", "gmt+6", "gmt+7", "gmt+8", "gmt+9", "gmt+10"];
+
+function classifyByGeo(text: string): Region | null {
+  if (matchesTerms(text, MENA_GEO)) return "mena";
+  if (matchesTerms(text, SSA_GEO)) return "ssa";
+  if (matchesTerms(text, APAC_GEO)) return "apac";
+  if (matchesTerms(text, LATAM_GEO)) return "latam";
+  if (matchesTerms(text, EUR_GEO)) return "eur";
+  if (matchesTerms(text, NOAM_GEO)) return "noam";
+  return null;
+}
+
+function classifyByTimezone(text: string): Region | null {
+  if (matchesTerms(text, MENA_TZ)) return "mena";
+  if (matchesTerms(text, SSA_TZ)) return "ssa";
+  if (matchesTerms(text, APAC_TZ)) return "apac";
+  if (matchesTerms(text, LATAM_TZ)) return "latam";
+  if (matchesTerms(text, EUR_TZ)) return "eur";
+  if (matchesTerms(text, NOAM_TZ)) return "noam";
+  return null;
+}
+
+/**
+ * Classify a job into one of 7 regions.
+ *
+ * WW  = genuinely worldwide (no geo restriction).
+ * NOAM/LATAM/EUR/MENA/SSA/APAC = region-restricted remote jobs.
+ *
+ * Two-pass approach: location signals first, timezone fallback second.
+ * Timezones follow the location — they only activate when location is ambiguous.
+ */
+export function getJobRegion(job: FilterableJob, fullDescription?: string): Region {
+  // WW: passes the existing worldwide filter
+  if (analyzeWithRescue(job, fullDescription).pass) return "ww";
+
+  // Pass 1: geographic terms from location fields only
+  const locText = [
+    job.location || "",
+    job.candidateRequiredLocation || "",
+    job.jobGeo || "",
+    (job.locationRestrictions || []).join(" "),
+  ].join(" ").toLowerCase();
+
+  const geoRegion = classifyByGeo(locText);
+  if (geoRegion) return geoRegion;
+
+  // Pass 2: timezone signals from description (fallback only)
+  const descSnippet = (fullDescription || job.description || "").substring(0, 600).toLowerCase();
+  const tzRegion = classifyByTimezone(descSnippet);
+  if (tzRegion) return tzRegion;
+
+  // No clear region signal → treat as WW (benefit of the doubt)
+  return "ww";
 }

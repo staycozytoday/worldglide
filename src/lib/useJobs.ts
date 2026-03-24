@@ -2,19 +2,19 @@
 
 import { useEffect, useState } from "react";
 import { getJobs } from "./storage";
-import { Job } from "./types";
+import { Job, Region } from "./types";
 
-export function useJobsByCategory(category: Job["category"]) {
+export function useJobsByRegion(region: Region | null = null) {
   const [jobs, setJobs] = useState<Job[]>([]);
   const [totalCount, setTotalCount] = useState(0);
 
   useEffect(() => {
     getJobs().then((all) => {
       const active = all.filter((j) => !j.expired);
-      setJobs(active.filter((j) => j.category === category));
       setTotalCount(active.length);
+      setJobs(region ? active.filter((j) => j.region === region) : active);
     });
-  }, [category]);
+  }, [region]);
 
   return { jobs, totalCount };
 }

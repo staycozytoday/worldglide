@@ -54,9 +54,9 @@ export default function JobCard({ job, index = 0 }: { job: Job; index?: number }
         </span>
       </a>
 
-      {/* type */}
+      {/* region */}
       <span className="text-[11px] text-[var(--color-text-muted)] w-[80px] shrink-0 hidden lg:block font-mono text-right">
-        {job.category}
+        {job.region}
       </span>
 
       {/* fav — absolute overlay, no layout impact */}

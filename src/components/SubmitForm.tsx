@@ -8,14 +8,14 @@ const inputClass = `w-full h-[40px] px-2 text-[12px] bg-transparent border-b bor
   focus:outline-none focus:border-[var(--color-text)]
   placeholder:text-[var(--color-text-muted)]`;
 
-const CATEGORIES = ["product", "engineering", "design"] as const;
+const CATEGORIES = ["creative"] as const;
 
 const FORMSPREE_ID = "xpqyaogo";
 
 export default function SubmitForm() {
   const [state, setState] = useState<FormState>("idle");
   const [errorMsg, setErrorMsg] = useState("");
-  const [category, setCategory] = useState<string>("product");
+  const [category, setCategory] = useState<string>("creative");
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();

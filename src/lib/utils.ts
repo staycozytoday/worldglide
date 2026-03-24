@@ -87,6 +87,21 @@ function getDateLabel(dateString: string): string {
 }
 
 /**
+ * Normalize employment type strings from ATS APIs to a consistent lowercase format.
+ * APIs return wildly different formats: "Full-time", "FULL_TIME", "fulltime", "Perm - Full-Time", etc.
+ */
+export function normalizeEmploymentType(raw?: string): string {
+  if (!raw) return "full-time";
+  const s = raw.toLowerCase().replace(/_/g, "-").trim();
+  if (/full.?time|permanent|regular|perm\b/.test(s)) return "full-time";
+  if (/part.?time/.test(s)) return "part-time";
+  if (/contract|freelance|temp/.test(s)) return "contract";
+  if (/intern/.test(s)) return "intern";
+  // fallback: keep whatever came in, just lowercased + dashes
+  return s.replace(/\s+/g, "-");
+}
+
+/**
  * Create a simple hash-based ID
  */
 export function createJobId(source: string, identifier: string): string {

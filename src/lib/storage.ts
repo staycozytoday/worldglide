@@ -4,7 +4,7 @@ import { Job, JOB_EXPIRY_MS } from "./types";
 
 export interface ScrapeStats {
   rawJobsScanned: number;
-  worldwideJobs: number;
+  creativeJobs: number;
   companiesScraped: number;
   lastUpdated: string;
 }
@@ -20,13 +20,13 @@ export async function getJobs(): Promise<Job[]> {
   return markExpired(jobs);
 }
 
-export async function getJobsByCategory(
-  category: Job["category"]
+export async function getJobsByRegion(
+  region: Job["region"]
 ): Promise<{ jobs: Job[]; totalCount: number }> {
   const allJobs = await getJobs();
   const activeJobs = allJobs.filter((j) => !j.expired);
   return {
-    jobs: activeJobs.filter((job) => job.category === category),
+    jobs: activeJobs.filter((job) => job.region === region),
     totalCount: activeJobs.length,
   };
 }

@@ -6,11 +6,7 @@ import { useState, useCallback } from "react";
 import ThemeToggle from "./ThemeToggle";
 import { useFavorites } from "@/lib/useFavorites";
 
-const NAV_ITEMS = [
-  { label: "product", href: "/product" },
-  { label: "engineering", href: "/engineering" },
-  { label: "design", href: "/design" },
-];
+const REGIONS = ["ww", "noam", "eur", "apac", "latam", "mena", "ssa"] as const;
 
 export default function Header() {
   const pathname = usePathname();
@@ -19,6 +15,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const { count } = useFavorites();
   const savedActive = searchParams.get("saved") === "1";
+  const activeRegion = searchParams.get("region");
 
   const toggleSaved = useCallback(() => {
     const params = new URLSearchParams(searchParams.toString());
@@ -31,24 +28,30 @@ export default function Header() {
     router.push(pathname + (q ? `?${q}` : ""));
   }, [savedActive, searchParams, pathname, router]);
 
-  const navLink = (item: { label: string; href: string }, mobile = false) => {
-    const isActive = pathname.startsWith(item.href);
+  const setRegion = useCallback((region: string) => {
+    const params = new URLSearchParams(searchParams.toString());
+    if (activeRegion === region) {
+      params.delete("region");
+    } else {
+      params.set("region", region);
+    }
+    router.push(pathname + (params.toString() ? `?${params.toString()}` : ""));
+    setMenuOpen(false);
+  }, [activeRegion, searchParams, pathname, router]);
 
-    return (
-      <Link
-        key={item.href}
-        href={item.href}
-        onClick={() => mobile && setMenuOpen(false)}
-        className={`text-[12px] ${
-          isActive
-            ? "text-[var(--color-text)]"
-            : "text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
-        }`}
-      >
-        {item.label}
-      </Link>
-    );
-  };
+  const regionLink = (r: string) => (
+    <button
+      key={r}
+      onClick={() => setRegion(r)}
+      className={`text-[12px] transition-colors ${
+        activeRegion === r
+          ? "text-[var(--color-text)]"
+          : "text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
+      }`}
+    >
+      {r}
+    </button>
+  );
 
   return (
     <header className="sticky top-0 z-50 bg-[var(--color-bg)]">
@@ -61,9 +64,9 @@ export default function Header() {
             worldglide
           </Link>
 
-          {/* desktop nav — visible sm and up */}
+          {/* desktop nav — region filters */}
           <nav className="hidden sm:flex items-center gap-6 ml-6">
-            {NAV_ITEMS.map((item) => navLink(item))}
+            {REGIONS.map((r) => regionLink(r))}
             {count > 0 && (
               <button
                 onClick={toggleSaved}
@@ -97,7 +100,7 @@ export default function Header() {
       {menuOpen && (
         <div className="sm:hidden border-t border-[var(--color-border)] bg-[var(--color-bg)]">
           <nav className="max-w-[960px] mx-auto px-8 py-4 flex flex-col gap-4">
-            {NAV_ITEMS.map((item) => navLink(item, true))}
+            {REGIONS.map((r) => regionLink(r))}
             {count > 0 && (
               <button
                 onClick={() => { toggleSaved(); setMenuOpen(false); }}
@@ -106,7 +109,6 @@ export default function Header() {
                 ❋
               </button>
             )}
-
             <Link
               href="/submit"
               onClick={() => setMenuOpen(false)}

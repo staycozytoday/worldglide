@@ -198,6 +198,13 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "dbt Labs",         domain: "getdbt.com",            careersUrl: "https://boards.greenhouse.io/dbtlabsinc",      atsType: "greenhouse", atsSlug: "dbtlabsinc" },
   { name: "Solana Labs",      domain: "solanalabs.com",        careersUrl: "https://boards.greenhouse.io/solana",           atsType: "greenhouse", atsSlug: "solana" },
 
+  // ── design agencies, consultancies & gaming studios ──────────────────────
+  { name: "IDEO",             domain: "ideo.com",              careersUrl: "https://boards.greenhouse.io/ideo",             atsType: "greenhouse", atsSlug: "ideo" },
+  { name: "AKQA",             domain: "akqa.com",              careersUrl: "https://boards.greenhouse.io/akqa",             atsType: "greenhouse", atsSlug: "akqa" },
+  { name: "R/GA",             domain: "rga.com",               careersUrl: "https://boards.greenhouse.io/rga",              atsType: "greenhouse", atsSlug: "rga" },
+  { name: "Ogilvy",           domain: "ogilvy.com",            careersUrl: "https://boards.greenhouse.io/ogilvy",           atsType: "greenhouse", atsSlug: "ogilvy" },
+  { name: "2K Games",         domain: "2k.com",                careersUrl: "https://boards.greenhouse.io/2k",               atsType: "greenhouse", atsSlug: "2k" },
+
   // ════════════════════════════════════════════════
   // LEVER — api.lever.co/v0/postings/{slug}
   // ════════════════════════════════════════════════
@@ -237,6 +244,9 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
 
   // imported 2026-03-14 (harvest-ats.ts)
   { name: "Swile",            domain: "swile.co",              careersUrl: "https://jobs.lever.co/swile",                  atsType: "lever", atsSlug: "swile" },
+
+  // ── design agencies & consultancies ──────────────────────────────────────
+  { name: "Fantasy",          domain: "fantasy.co",            careersUrl: "https://jobs.lever.co/fantasy",                atsType: "lever", atsSlug: "fantasy" },
 
   // ════════════════════════════════════════════════
   // ASHBY — api.ashbyhq.com/posting-api/job-board/{slug}
@@ -1899,6 +1909,9 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Horizon3 AI",        domain: "horizon3.ai",           careersUrl: "https://horizon3.ai/careers",               atsType: "ashby", atsSlug: "horizon3ai" },
   { name: "SF Compute",         domain: "sfcompute.com",         careersUrl: "https://sfcompute.com/careers",             atsType: "ashby", atsSlug: "sfcompute" },
 
+  // ── design & product ──────────────────────────────────────────────────────
+  { name: "Superhuman",         domain: "superhuman.com",        careersUrl: "https://jobs.ashbyhq.com/superhuman",       atsType: "ashby", atsSlug: "superhuman" },
+
   // lever — crypto/web3
   { name: "Animoca Brands",     domain: "animocabrands.com",     careersUrl: "https://www.animocabrands.com/careers",     atsType: "lever", atsSlug: "animocabrands" },
   { name: "CertiK",             domain: "certik.com",            careersUrl: "https://www.certik.com/careers",            atsType: "lever", atsSlug: "certik" },
@@ -1932,6 +1945,16 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Freshworks",        domain: "freshworks.com",        careersUrl: "https://jobs.smartrecruiters.com/freshworks",    atsType: "smartrecruiters", atsSlug: "freshworks" },
   { name: "Thales",            domain: "thales.com",            careersUrl: "https://jobs.smartrecruiters.com/thales",        atsType: "smartrecruiters", atsSlug: "thales" },
   { name: "Dataiku",           domain: "dataiku.com",           careersUrl: "https://jobs.smartrecruiters.com/dataiku",       atsType: "smartrecruiters", atsSlug: "dataiku" },
+
+  // ── design, product & media ───────────────────────────────────────────────
+  { name: "Miro",              domain: "miro.com",              careersUrl: "https://jobs.smartrecruiters.com/miro",          atsType: "smartrecruiters", atsSlug: "miro" },
+  { name: "Framer",            domain: "framer.com",            careersUrl: "https://jobs.smartrecruiters.com/framer",        atsType: "smartrecruiters", atsSlug: "framer" },
+  { name: "Wix",               domain: "wix.com",               careersUrl: "https://jobs.smartrecruiters.com/wix",           atsType: "smartrecruiters", atsSlug: "wix" },
+  { name: "Netflix",           domain: "netflix.com",           careersUrl: "https://jobs.smartrecruiters.com/netflix",       atsType: "smartrecruiters", atsSlug: "netflix" },
+  { name: "Shopify",           domain: "shopify.com",           careersUrl: "https://jobs.smartrecruiters.com/shopify",       atsType: "smartrecruiters", atsSlug: "shopify" },
+  { name: "Square",            domain: "squareup.com",          careersUrl: "https://jobs.smartrecruiters.com/square",        atsType: "smartrecruiters", atsSlug: "square" },
+  { name: "DEPT",              domain: "deptagency.com",        careersUrl: "https://jobs.smartrecruiters.com/deptagency",    atsType: "smartrecruiters", atsSlug: "deptagency" },
+  { name: "MediaMonks",        domain: "mediamonks.com",        careersUrl: "https://jobs.smartrecruiters.com/mediamonks",    atsType: "smartrecruiters", atsSlug: "mediamonks" },
 
   // ════════════════════════════════════════════════
   // WORKABLE — apply.workable.com/api/v1/widget/accounts/{slug}

@@ -1,7 +1,7 @@
 import { Job, getCompanyLogoUrl } from "../types";
-import { isWorldwideRemote } from "../filter";
+import { getJobRegion, isRemoteJob } from "../filter";
 import { categorizeJob } from "../categorize";
-import { createJobId } from "../utils";
+import { createJobId, normalizeEmploymentType } from "../utils";
 import { REMOTE_COMPANIES } from "../companies";
 import { fetchWithRetry, CompanyResult } from "../fetch-retry";
 
@@ -48,7 +48,7 @@ export async function scrapeLever(): Promise<LeverResult> {
 
   const failed = report.filter((r) => r.error).length;
   console.log(
-    `[lever] ${jobs.length} worldwide jobs from ${companies.length} companies` +
+    `[lever] ${jobs.length} creative jobs from ${companies.length} companies` +
     (failed ? ` (${failed} failed)` : "")
   );
   return { jobs, report };
@@ -80,29 +80,23 @@ async function scrapeLeverCompany(
 
     const fullDesc = item.descriptionPlain || "";
 
-    if (
-      !isWorldwideRemote(
-        {
-          title: item.text,
-          description: fullDesc.slice(0, 200),
-          location: locationText,
-          companySlug: slug,
-        },
-        fullDesc
-      )
-    ) {
-      continue;
-    }
+    const jobFilter = {
+      title: item.text,
+      description: fullDesc.slice(0, 200),
+      location: locationText,
+      companySlug: slug,
+    };
 
-    const category = categorizeJob(
-      item.text,
-      item.categories?.team ? [item.categories.team] : []
-    );
+    if (!isRemoteJob(jobFilter, fullDesc)) continue;
+
+    const category = categorizeJob(item.text);
     if (!category) continue;
+
+    const region = getJobRegion(jobFilter, fullDesc);
 
     results.push({
       id: createJobId("lever", `${slug}_${item.id}`),
-      title: item.text || "",
+      title: (item.text || "").trim(),
       company: companyName,
       companyLogo: companyDomain ? getCompanyLogoUrl(companyDomain) : undefined,
       category,
@@ -117,8 +111,8 @@ async function scrapeLeverCompany(
         : new Date().toISOString(),
       scrapedAt: new Date().toISOString(),
       description: item.descriptionPlain?.slice(0, 200) || undefined,
-      isWorldwide: true,
-      employmentType: item.categories?.commitment || "Full-time",
+      region,
+      employmentType: normalizeEmploymentType(item.categories?.commitment),
     });
   }
 

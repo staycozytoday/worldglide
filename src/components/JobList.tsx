@@ -1,6 +1,6 @@
 "use client";
 
-import { Job } from "@/lib/types";
+import { Job, Region } from "@/lib/types";
 import JobCard from "./JobCard";
 import { useState } from "react";
 import { useSearchParams } from "next/navigation";
@@ -22,7 +22,7 @@ const COLS: { key: SortColumn; label: string; cls: string; right?: boolean }[] =
   { key: "age", label: "age", cls: "w-[32px] shrink-0 hidden sm:block text-left" },
   { key: "title", label: "title", cls: "flex-1 text-left" },
   { key: "company", label: "company", cls: "w-[96px] sm:w-[160px] shrink-0 text-right", right: true },
-  { key: "type", label: "type", cls: "w-[80px] shrink-0 hidden lg:block text-right", right: true },
+  { key: "type", label: "region", cls: "w-[80px] shrink-0 hidden lg:block text-right", right: true },
 ];
 
 export default function JobList({ jobs, title, subtitle, totalCount }: JobListProps) {
@@ -32,8 +32,14 @@ export default function JobList({ jobs, title, subtitle, totalCount }: JobListPr
   const searchParams = useSearchParams();
   const { isFavorited } = useFavorites();
   const savedActive = searchParams.get("saved") === "1";
+  const activeRegion = searchParams.get("region") as Region | null;
 
-  const filtered = savedActive ? jobs.filter((j) => isFavorited(j.id)) : jobs;
+  const regionFiltered = activeRegion
+    ? jobs.filter((j) => j.region === activeRegion)
+    : jobs;
+  const filtered = savedActive
+    ? regionFiltered.filter((j) => isFavorited(j.id))
+    : regionFiltered;
   const isEmpty = filtered.length === 0;
 
   function handleSort(col: SortColumn) {
@@ -55,7 +61,7 @@ export default function JobList({ jobs, title, subtitle, totalCount }: JobListPr
       case "company":
         return dir * a.company.localeCompare(b.company);
       case "type":
-        return dir * a.category.localeCompare(b.category);
+        return dir * a.region.localeCompare(b.region);
       default:
         return 0;
     }

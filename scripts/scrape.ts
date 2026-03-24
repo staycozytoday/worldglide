@@ -29,7 +29,7 @@ async function main() {
 
   const stats = {
     rawJobsScanned: report.rawJobsTotal,
-    worldwideJobs: jobs.length,
+    creativeJobs: jobs.length,
     companiesScraped: report.companies,
     lastUpdated: new Date().toISOString(),
   };
