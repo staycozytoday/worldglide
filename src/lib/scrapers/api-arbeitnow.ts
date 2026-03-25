@@ -61,7 +61,8 @@ export async function scrapeArbeitnow(): Promise<ArbeitnowResult> {
       const remoteJobs = data.data.filter((item) => item.remote === true);
       allRawJobs.push(...remoteJobs);
 
-      nextUrl = data.links?.next || null;
+      const rawNext = data.links?.next;
+      nextUrl = typeof rawNext === "string" && rawNext.startsWith("https://www.arbeitnow.com/") ? rawNext : null;
 
       // Small delay between pages
       if (nextUrl && page < MAX_PAGES - 1) {

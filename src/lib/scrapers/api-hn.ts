@@ -296,7 +296,7 @@ function parseSegments(segments: string[]): ParsedComment | null {
 
 function stripHtml(html: string): string {
   return html
-    .replace(/<a[^>]*href="([^"]*)"[^>]*>.*?<\/a>/gi, "$1")
+    .replace(/<a[^>]*>(.*?)<\/a>/gi, "$1")
     .replace(/<[^>]*>/g, " ")
     .replace(/&#x27;/g, "'")
     .replace(/&amp;/g, "&")

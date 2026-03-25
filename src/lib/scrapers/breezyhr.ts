@@ -59,6 +59,7 @@ async function scrapeBreezyHRCompany(
   companyName: string,
   companyDomain?: string
 ): Promise<{ jobs: Job[]; rawCount: number }> {
+  if (!/^[a-z0-9-]+$/i.test(slug)) throw new Error(`invalid slug: ${slug}`);
   const res = await fetchWithRetry(
     `https://${slug}.breezy.hr/json`,
     { headers: { "User-Agent": "worldglide-jobs/1.0" }, timeoutMs: 15000 }

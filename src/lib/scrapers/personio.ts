@@ -59,6 +59,7 @@ async function scrapePersonioCompany(
   companyName: string,
   companyDomain?: string
 ): Promise<{ jobs: Job[]; rawCount: number }> {
+  if (!/^[a-z0-9-]+$/i.test(slug)) throw new Error(`invalid slug: ${slug}`);
   const res = await fetchWithRetry(
     `https://${slug}.jobs.personio.de/xml`,
     { headers: { "User-Agent": "worldglide-jobs/1.0" }, timeoutMs: 15000 }

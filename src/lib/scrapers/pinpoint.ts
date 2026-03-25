@@ -59,6 +59,7 @@ async function scrapePinpointCompany(
   companyName: string,
   companyDomain?: string
 ): Promise<{ jobs: Job[]; rawCount: number }> {
+  if (!/^[a-z0-9-]+$/i.test(slug)) throw new Error(`invalid slug: ${slug}`);
   const res = await fetchWithRetry(
     `https://${slug}.pinpointhq.com/postings.json`,
     { headers: { "User-Agent": "worldglide-jobs/1.0" }, timeoutMs: 15000 }
@@ -111,7 +112,7 @@ async function scrapePinpointCompany(
         item.job?.division?.name,
       ].filter(Boolean) as string[],
       salary,
-      postedAt: item.deadline_at || new Date().toISOString(),
+      postedAt: item.published_at || item.created_at || new Date().toISOString(),
       scrapedAt: new Date().toISOString(),
       description: item.description ? stripHtml(item.description).slice(0, 200) : undefined,
       region: "ww",
