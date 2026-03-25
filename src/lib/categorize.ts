@@ -85,13 +85,13 @@ const EXCLUDE_PATTERNS = [
   /sales/i,
   /account\s+(executive|manager|director)/i,
   /business\s+development/i,
-  /revenue/i,
+  /\brevenue\b/i,
 
   // ── Marketing (non-creative) ──────────────────────────────────────────────
   /\bmarketing\s+(manager|director|strategist|analyst|specialist|coordinator)/i,
   /growth\s+market/i,
   /demand\s+gen/i,
-  /seo\s+/i,
+  /\bseo\b/i,
 
   // ── Support / success ─────────────────────────────────────────────────────
   /customer\s+(success|support|service|experience)/i,
@@ -123,7 +123,7 @@ const EXCLUDE_PATTERNS = [
   // ── Game systems / balance (not visual design) ─────────────────────────────
   /\bnumerical\s+design/i,                                   // "Game Numerical Designer" = game balance, not creative
   /\bgame\s+balance\s+designer/i,
-  /\bsystems\s+designer\b(?!.*ux|.*experience)/i,            // game systems designer (not UX systems)
+  /\bsystems\s+designer\b(?!.*(ux|experience))/i,            // game systems designer (not UX systems)
 ];
 
 /**
