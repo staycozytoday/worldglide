@@ -5,7 +5,7 @@
     "company": "Lucky Robots",
     "companyLogo": "https://cdn.dribbble.com/userupload/47081888/file/f911363e954a9967c2fb493ce07e5826.png?resize=24x24",
     "category": "creative",
-    "url": "https://dribbble.com/jobs/303344-Contract-Designer-Marketing-Content",
+    "url": "https://dribbble.com/jobs/304071-Product-Designer",
     "source": "dribbble",
     "tags": [
       "design"
@@ -286,7 +286,7 @@
     "scrapedAt": "2026-03-27T23:48:36.602Z",
     "description": "SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologi",
     "region": "ww",
-    "employmentType": "full-time"
+    "employmentType": "Full-time"
   },
   {
     "id": "greenhouse_dt7gy8",
@@ -314,7 +314,7 @@
     "url": "https://boards.greenhouse.io/andurilindustries/jobs/5091280007?gh_jid=5091280007",
     "source": "greenhouse",
     "tags": [
-      "Hardware Engineering : Test & Evaluation : Test & Evaluation"
+      "design"
     ],
     "postedAt": "2026-03-27T18:55:55-04:00",
     "scrapedAt": "2026-03-27T23:48:46.941Z",
@@ -2868,7 +2868,7 @@
     "scrapedAt": "2026-03-27T23:48:48.335Z",
     "description": "About AppLovin AppLovin makes technologies that help businesses of every size connect to their ideal customers. The company provides end-to-end software and AI solutions for businesses to reach, monet",
     "region": "ww",
-    "employmentType": "full-time"
+    "employmentType": "Full-time"
   },
   {
     "id": "greenhouse_dvz6gd",
@@ -2879,7 +2879,7 @@
     "url": "https://job-boards.greenhouse.io/hugeinc/jobs/7317430",
     "source": "greenhouse",
     "tags": [
-      "Product Strategy"
+      "design"
     ],
     "postedAt": "2026-03-25T18:30:35-04:00",
     "scrapedAt": "2026-03-27T23:47:43.635Z",
@@ -4981,8 +4981,8 @@
     "url": "https://jobs.ashbyhq.com/close/4ca31392-718b-43dd-a1f0-eced8f7727e1",
     "source": "ashby",
     "tags": [
-      "Marketing",
-      "Marketing"
+      "GTM Readiness",
+      "Go To Market"
     ],
     "postedAt": "2026-03-23T20:35:25.131Z",
     "scrapedAt": "2026-03-27T23:47:19.984Z",
@@ -5830,13 +5830,13 @@
   {
     "id": "greenhouse_1rllkc",
     "title": "Director, Product Design",
-    "company": "SoFi",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=sofi.com&sz=128",
+    "company": "ZocDoc",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=zocdoc.com&sz=128",
     "category": "creative",
-    "url": "https://sofi.com/careers/job/7449636003?gh_jid=7449636003",
+    "url": "https://job-boards.greenhouse.io/zocdoc/jobs/7769266",
     "source": "greenhouse",
     "tags": [
-      "Product Design"
+      "Product"
     ],
     "postedAt": "2026-03-20T10:51:30-04:00",
     "scrapedAt": "2026-03-27T23:47:48.526Z",
@@ -6016,15 +6016,15 @@
     "employmentType": "full-time"
   },
   {
-    "id": "greenhouse_keyavk",
-    "title": "Graphic Designer",
-    "company": "SmartBear",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=smartbear.com&sz=128",
+    "id": "greenhouse_1gecez",
+    "title": "Design Engineer, AI Capability Development (Education Labs)",
+    "company": "Anthropic",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
     "category": "creative",
-    "url": "https://job-boards.greenhouse.io/smartbear/jobs/7665421003",
+    "url": "https://job-boards.greenhouse.io/anthropic/jobs/5097186008",
     "source": "greenhouse",
     "tags": [
-      "3005 - Brand and Communications"
+      "AI Research & Engineering"
     ],
     "postedAt": "2026-03-20T08:53:09-04:00",
     "scrapedAt": "2026-03-27T23:47:53.540Z",
@@ -6033,15 +6033,1485 @@
     "employmentType": "full-time"
   },
   {
-    "id": "smartrecruiters_go3eni",
-    "title": "Senior Manager, Learning Designer",
+    "id": "greenhouse_js8bvf",
+    "title": "Senior Brand Designer - Campaigns",
+    "company": "Mercury",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=mercury.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/mercury/jobs/5822668004",
+    "source": "greenhouse",
+    "tags": [
+      "Brand Design"
+    ],
+    "postedAt": "2026-04-02T18:29:23-04:00",
+    "scrapedAt": "2026-04-04T21:51:26.862Z",
+    "description": "In 1954, architect Eero Saarinen designed a radically modern bank branch for Irwin Union in Columbus, Indiana. With glass walls, no private offices, and a floor plan that invited openness, it embodied",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_1dbscb",
+    "title": "Senior Product Designer - Financial Crimes",
+    "company": "Mercury",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=mercury.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/mercury/jobs/5800118004",
+    "source": "greenhouse",
+    "tags": [
+      "Product Design"
+    ],
+    "postedAt": "2026-04-02T18:29:23-04:00",
+    "scrapedAt": "2026-04-04T21:51:26.864Z",
+    "description": "In many countries, profits from drug trafficking and human exploitation are funneled through ordinary-looking businesses, allowing serious harm to blend into everyday commerce. Financial systems can i",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_lzp8vt",
+    "title": "Senior Product Designer – Mobile",
+    "company": "Mercury",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=mercury.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/mercury/jobs/5843845004",
+    "source": "greenhouse",
+    "tags": [
+      "Product Design"
+    ],
+    "postedAt": "2026-04-02T18:29:23-04:00",
+    "scrapedAt": "2026-04-04T21:51:26.864Z",
+    "description": "The Memphis Group burst onto the scene in the early 1980s with a belief that design could be more than purely functional, it could be bold, expressive, and deeply human. They expanded what design coul",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_gtcfiu",
+    "title": "Staff Product Designer, Retirement",
+    "company": "Gusto",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=gusto.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/gusto/jobs/7514758",
+    "source": "greenhouse",
+    "tags": [
+      "Design"
+    ],
+    "postedAt": "2026-04-02T18:11:56-04:00",
+    "scrapedAt": "2026-04-04T21:51:26.855Z",
+    "description": "About Gusto At Gusto, we're on a mission to grow the small business economy. We handle the hard stuff—like payroll, health insurance, 401(k)s, and HR—so owners can focus on their craft and customers. ",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_g8yw0s",
+    "title": "Staff Product Designer, Benefits",
+    "company": "Gusto",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=gusto.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/gusto/jobs/7676166",
+    "source": "greenhouse",
+    "tags": [
+      "Design"
+    ],
+    "postedAt": "2026-04-02T18:02:08-04:00",
+    "scrapedAt": "2026-04-04T21:51:26.854Z",
+    "description": "About Gusto At Gusto, we're on a mission to grow the small business economy. We handle the hard stuff—like payroll, health insurance, 401(k)s, and HR—so owners can focus on their craft and customers. ",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_auhd4l",
+    "title": "Marketing Creative Director - VALORANT (Contract)",
+    "company": "Riot Games",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=riotgames.com&sz=128",
+    "category": "creative",
+    "url": "https://www.riotgames.com/en/work-with-us/job/7695550?gh_jid=7695550",
+    "source": "greenhouse",
+    "tags": [
+      "PubSports"
+    ],
+    "postedAt": "2026-04-02T17:34:36-04:00",
+    "scrapedAt": "2026-04-04T21:51:32.010Z",
+    "description": "As the Marketing Creative Director for VALORANT Mobile, you will report to the China VALORANT Creative Lead, and will be responsible for shaping and delivering world-class campaigns for VALORANT MOBIL",
+    "region": "apac",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_nu2z1j",
+    "title": "Visual Designer",
+    "company": "Fellow",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=fellow.app&sz=128",
+    "category": "creative",
+    "url": "https://fellowproducts.com/pages/careers?gh_jid=5068214007",
+    "source": "greenhouse",
+    "tags": [
+      "Design"
+    ],
+    "postedAt": "2026-04-02T17:27:31-04:00",
+    "scrapedAt": "2026-04-04T21:52:07.775Z",
+    "description": "About Fellow We believe that the act of making should be meaningful and fulfilling, done with intention and precision. Fellow makes beautifully functional tools for any kitchen, designed in San Franci",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_n6tclz",
+    "title": "Product Design Lead, Otter/Menu - Mountain View",
+    "company": "Otter.ai",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=otter.ai&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/otter/jobs/8391450002",
+    "source": "greenhouse",
+    "tags": [
+      "PD Brick & Mortar"
+    ],
+    "postedAt": "2026-04-02T17:06:28-04:00",
+    "scrapedAt": "2026-04-04T21:51:43.671Z",
+    "description": "Who we are In the past, to be a successful restaurateur, you simply had to have a passion for food and a passion for people - but to succeed as a digital restaurateur you also need to have a passion f",
+    "region": "ww",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_rq1l3x",
+    "title": "Video Editor, Digital Designer",
+    "company": "Glossier",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=glossier.com&sz=128",
+    "category": "creative",
+    "url": "https://boards.greenhouse.io/glossier/jobs/7582778?gh_jid=7582778",
+    "source": "greenhouse",
+    "tags": [
+      "Creative"
+    ],
+    "postedAt": "2026-04-02T16:49:29-04:00",
+    "scrapedAt": "2026-04-04T21:52:20.421Z",
+    "description": "Overview We are a people-powered beauty ecosystem, leveraging unique and engaging online and offline experiences as well as consumer participation to fuel our growth. In 11 years, we have built an ico",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_ig1uqd",
+    "title": "Staff Product Designer, UI Infrastructure",
+    "company": "DoorDash",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=doordash.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/doordashusa/jobs/7367938",
+    "source": "greenhouse",
+    "tags": [
+      "321 Product Design"
+    ],
+    "postedAt": "2026-04-02T16:29:50-04:00",
+    "scrapedAt": "2026-04-04T21:52:34.606Z",
+    "description": "This is one of the most technically ambitious design roles at DoorDash. You’ll help define how intelligent systems power the next generation of product design - shaping workflows that thousands of des",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_kc87ya",
+    "title": "UX Design Engineer, Content Tooling",
+    "company": "DoorDash",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=doordash.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/doordashusa/jobs/7767373",
+    "source": "greenhouse",
+    "tags": [
+      "321 Product Design"
+    ],
+    "postedAt": "2026-04-02T16:29:50-04:00",
+    "scrapedAt": "2026-04-04T21:52:34.612Z",
+    "description": "About the Team At DoorDash, we’re reimagining how people connect with the things they need — whether it’s a meal, a grocery run, and anything in between. Our audiences — Consumers, Dashers, and Mercha",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_c0fufh",
+    "title": "Avionics Design Manager",
+    "company": "Rocket Lab",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=rocketlabusa.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7241598003",
+    "source": "greenhouse",
+    "tags": [
+      "4015 USA Space Systems"
+    ],
+    "postedAt": "2026-04-02T16:17:54-04:00",
+    "scrapedAt": "2026-04-04T21:52:11.168Z",
+    "description": "ABOUT ROCKET LAB Rocket Lab is an end-to-end space company delivering responsive launch services, complete spacecraft design and manufacturing, payloads, satellite components, and more – all with the ",
+    "region": "ww",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "lever_kx62ij",
+    "title": "Visual Designer",
+    "company": "ZeroTier",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=zerotier.com&sz=128",
+    "category": "creative",
+    "url": "https://jobs.lever.co/zerotier/7f73612a-a63d-4ffa-8f63-cbdeeff75fed",
+    "source": "lever",
+    "tags": [
+      "Sales & Marketing"
+    ],
+    "postedAt": "2026-04-02T19:59:42.367Z",
+    "scrapedAt": "2026-04-04T21:53:08.533Z",
+    "description": "About Us\nZeroTier leads the world in next-generation connectivity and cybersecurity. Our platform provides highly secure, peer-to-peer virtual networks, relied upon by millions of users and businesses",
+    "region": "ww",
+    "employmentType": "remote"
+  },
+  {
+    "id": "ashby_xftbb6",
+    "title": "Product Designer",
+    "company": "Finch",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=tryfinch.com&sz=128",
+    "category": "creative",
+    "url": "https://jobs.ashbyhq.com/finch/3ecb9486-04a5-4afc-82c0-44255ed441fd",
+    "source": "ashby",
+    "tags": [
+      "Design",
+      "Design"
+    ],
+    "postedAt": "2026-04-02T19:45:12.947Z",
+    "scrapedAt": "2026-04-04T21:51:31.376Z",
+    "description": "Mission Finch was started by 2 friends (Nino & Steph 🙇🏾‍♂️🙇🏻‍♀️) who struggled with anxiety and depression and found self-care challenging to stick with. We decided to build Finch hoping to make s",
+    "region": "latam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_3tcq9l",
+    "title": "Senior Motion Brand Designer",
+    "company": "Ripple",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=ripple.com&sz=128",
+    "category": "creative",
+    "url": "https://ripple.com/careers/all-jobs/job/7572199?gh_jid=7572199",
+    "source": "greenhouse",
+    "tags": [
+      "Marketing"
+    ],
+    "postedAt": "2026-04-02T15:37:54-04:00",
+    "scrapedAt": "2026-04-04T21:51:26.032Z",
+    "description": "At Ripple, we’re building a world where value moves like information does today. It’s big, it’s bold, and we’re already doing it. Through our crypto solutions for financial institutions, businesses, g",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_3bragi",
+    "title": "Senior Brand Designer",
+    "company": "Ripple",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=ripple.com&sz=128",
+    "category": "creative",
+    "url": "https://ripple.com/careers/all-jobs/job/7462060?gh_jid=7462060",
+    "source": "greenhouse",
+    "tags": [
+      "Marketing"
+    ],
+    "postedAt": "2026-04-02T15:35:35-04:00",
+    "scrapedAt": "2026-04-04T21:51:26.029Z",
+    "description": "At Ripple, we’re building a world where value moves like information does today. It’s big, it’s bold, and we’re already doing it. Through our crypto solutions for financial institutions, businesses, g",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_kyyg1s",
+    "title": "Staff Content Designer - Meals and Health",
+    "company": "Instacart",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=instacart.com&sz=128",
+    "category": "creative",
+    "url": "https://instacart.careers/job/?gh_jid=7652275",
+    "source": "greenhouse",
+    "tags": [
+      "Research & Design"
+    ],
+    "postedAt": "2026-04-02T15:29:37-04:00",
+    "scrapedAt": "2026-04-04T21:51:30.057Z",
+    "description": "We're transforming the grocery industry At Instacart, we invite the world to share love through food because we believe everyone should have access to the food they love and more time to enjoy it toge",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "ashby_4bd9vo",
+    "title": "Lead Product Designer, ExtraCash",
+    "company": "Dave",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=dave.com&sz=128",
+    "category": "creative",
+    "url": "https://jobs.ashbyhq.com/dave/81a44a82-f59e-4707-bdb7-459dd9aba88e",
+    "source": "ashby",
+    "tags": [
+      "Product Design",
+      "Design & User Research"
+    ],
+    "postedAt": "2026-04-02T18:59:38.860Z",
+    "scrapedAt": "2026-04-04T21:51:39.079Z",
+    "description": "Dave vs. Goliath. We’re Dave. Dave is a financial app on a mission to build products that level the financial playing field. It is redefining the financial landscape by leveraging technology to create",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_cw17eg",
+    "title": "Manager, User Research",
+    "company": "Asana",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=asana.com&sz=128",
+    "category": "creative",
+    "url": "https://www.asana.com/jobs/apply/7696166?gh_jid=7696166",
+    "source": "greenhouse",
+    "tags": [
+      "Experience Research"
+    ],
+    "postedAt": "2026-04-02T13:52:52-04:00",
+    "scrapedAt": "2026-04-04T21:51:28.520Z",
+    "description": "The Experience Research team at Asana is on a mission to deeply understand the dynamics of modern work—how individuals collaborate, how teams operate, and how organizations scale. We partner with Prod",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_fbh08j",
+    "title": "Product Designer",
+    "company": "Asana",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=asana.com&sz=128",
+    "category": "creative",
+    "url": "https://www.asana.com/jobs/apply/7155785?gh_jid=7155785",
+    "source": "greenhouse",
+    "tags": [
+      "Product Design"
+    ],
+    "postedAt": "2026-04-02T13:52:39-04:00",
+    "scrapedAt": "2026-04-04T21:51:28.522Z",
+    "description": "We are looking for a seasoned Senior Product Designer to join our growing Warsaw product hub. In this role, you will be the design lead for the Value Discovery team, partnering closely with a Senior P",
+    "region": "eur",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_qrabay",
+    "title": "Mobile Product Design Manager",
+    "company": "Asana",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=asana.com&sz=128",
+    "category": "creative",
+    "url": "https://www.asana.com/jobs/apply/6806528?gh_jid=6806528",
+    "source": "greenhouse",
+    "tags": [
+      "Product Design"
+    ],
+    "postedAt": "2026-04-02T13:52:35-04:00",
+    "scrapedAt": "2026-04-04T21:51:28.520Z",
+    "description": "We’re designing the future of teamwork. Asana’s mission is to enable the world’s teams to work together effortlessly — and our Design organization is central to that mission. We’re an inclusive and co",
+    "region": "eur",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_hukp4h",
+    "title": "Senior Product Designer",
+    "company": "Duolingo",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=duolingo.com&sz=128",
+    "category": "creative",
+    "url": "https://careers.duolingo.com/jobs/8489189002?gh_jid=8489189002",
+    "source": "greenhouse",
+    "tags": [
+      "Product Design"
+    ],
+    "postedAt": "2026-04-02T13:29:59-04:00",
+    "scrapedAt": "2026-04-04T21:51:31.269Z",
+    "description": "Our mission at Duolingo is to develop the best education in the world and make it universally available. It’s a big mission, and even though we've made a lot of headway, we still have work to do — and",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "lever_tpdj0b",
+    "title": "Designer, Lead (Accessories & Apparel)",
+    "company": "WHOOP",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=whoop.com&sz=128",
+    "category": "creative",
+    "url": "https://jobs.lever.co/whoop/2b8ea4e2-e585-4e46-9e6c-6eefead4f437",
+    "source": "lever",
+    "tags": [
+      "Accessories & Apparel"
+    ],
+    "postedAt": "2026-04-02T17:27:03.105Z",
+    "scrapedAt": "2026-04-04T21:51:27.593Z",
+    "description": "At WHOOP, we’re on a mission to unlock human performance and healthspan. WHOOP empowers members to perform at their peak through data-driven insights, premium hardware, and high-quality accessories an",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_y5ktzc",
+    "title": "Graphic Designer, Events",
+    "company": "Geotab",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=geotab.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/geotab/jobs/5159429008",
+    "source": "greenhouse",
+    "tags": [
+      "Creative Services"
+    ],
+    "postedAt": "2026-04-02T13:21:40-04:00",
+    "scrapedAt": "2026-04-04T21:52:30.244Z",
+    "description": "Who we are: Geotab ® is a global leader in IoT and connected transportation and certified “Great Place to Work™.” We are a company of diverse and talented individuals who work together to help busines",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_e9nhp7",
+    "title": "Sr. Staff GenAI Content & Conversational Designer, Monetization",
+    "company": "Pinterest",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=pinterest.com&sz=128",
+    "category": "creative",
+    "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7684632",
+    "source": "greenhouse",
+    "tags": [
+      "Design"
+    ],
+    "postedAt": "2026-04-02T13:10:57-04:00",
+    "scrapedAt": "2026-04-04T21:51:31.942Z",
+    "description": "About Pinterest: Millions of people around the world come to our platform to find creative ideas, dream about new possibilities and plan for memories that will last a lifetime. At Pinterest, we’re on ",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_cwf608",
+    "title": "Senior Product Designer (UX/UI) - Mobile",
+    "company": "Toast",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=toasttab.com&sz=128",
+    "category": "creative",
+    "url": "https://careers.toasttab.com/jobs?gh_jid=7757178",
+    "source": "greenhouse",
+    "tags": [
+      "R & D : UX : Customer Experience Platform"
+    ],
+    "postedAt": "2026-04-02T13:10:53-04:00",
+    "scrapedAt": "2026-04-04T21:51:27.030Z",
+    "description": "Our focus is on building the restaurant platform that helps restaurants adapt, take control, and get back to what they do best: building the businesses they love. And because our technology is purpose",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_esvrxi",
+    "title": "Staff Product Designer, Closeup",
+    "company": "Pinterest",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=pinterest.com&sz=128",
+    "category": "creative",
+    "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7545031",
+    "source": "greenhouse",
+    "tags": [
+      "Design"
+    ],
+    "postedAt": "2026-04-02T13:08:05-04:00",
+    "scrapedAt": "2026-04-04T21:51:31.943Z",
+    "description": "About Pinterest: Millions of people around the world come to our platform to find creative ideas, dream about new possibilities and plan for memories that will last a lifetime. At Pinterest, we’re on ",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_hi18ma",
+    "title": "Senior Battery Energy Storage Design Manager, EPC",
+    "company": "Redwood Materials",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=redwoodmaterials.com&sz=128",
+    "category": "creative",
+    "url": "https://boards.greenhouse.io/redwoodmaterials/jobs/5672351004?gh_jid=5672351004",
+    "source": "greenhouse",
+    "tags": [
+      "EPC"
+    ],
+    "postedAt": "2026-04-02T13:07:19-04:00",
+    "scrapedAt": "2026-04-04T21:52:00.146Z",
+    "description": "About Redwood Materials Redwood is localizing a global battery supply chain that seamlessly integrates recovery, reuse, and recycling — keeping critical minerals in circulation and driving the energy ",
+    "region": "ww",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_frgtcy",
+    "title": "Sr. Content Designer, Growth",
+    "company": "Pinterest",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=pinterest.com&sz=128",
+    "category": "creative",
+    "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7338444",
+    "source": "greenhouse",
+    "tags": [
+      "Design"
+    ],
+    "postedAt": "2026-04-02T13:06:24-04:00",
+    "scrapedAt": "2026-04-04T21:51:31.934Z",
+    "description": "About Pinterest: Millions of people around the world come to our platform to find creative ideas, dream about new possibilities and plan for memories that will last a lifetime. At Pinterest, we’re on ",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_oxoxgo",
+    "title": "Senior Motion Designer",
+    "company": "Fireblocks",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=fireblocks.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/fireblocks/jobs/4669743006",
+    "source": "greenhouse",
+    "tags": [
+      "Marketing"
+    ],
+    "postedAt": "2026-04-02T12:29:03-04:00",
+    "scrapedAt": "2026-04-04T21:51:54.850Z",
+    "description": "The world of digital assets is accelerating in speed, magnitude, and complexity, opening the door to new ways for leveraging the blockchain. Fireblocks’ platform and network provide the simplest and m",
+    "region": "mena",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_krar7v",
+    "title": "Concepteur d'expérience utilisateur senior - Senior UX/UI Designer",
+    "company": "OneSpan",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=onespan.com&sz=128",
+    "category": "creative",
+    "url": "https://www.onespan.com/about/careers/job/7773495?gh_jid=7773495",
+    "source": "greenhouse",
+    "tags": [
+      "Product Management"
+    ],
+    "postedAt": "2026-04-02T12:25:14-04:00",
+    "scrapedAt": "2026-04-04T21:51:32.782Z",
+    "description": "At OneSpan , we specialize in digital identity and anti-fraud solutions that create exceptional and secure experiences. Chez OneSpan , nous sommes spécialisés dans les solutions d'identité numérique e",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_4fndfr",
+    "title": "Lead Technical Animator",
+    "company": "2K Games",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=2k.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/2k/jobs/7533086003",
+    "source": "greenhouse",
+    "tags": [
+      "Animation - Hangar 13"
+    ],
+    "postedAt": "2026-04-02T12:09:21-04:00",
+    "scrapedAt": "2026-04-04T21:51:38.092Z",
+    "description": "Job Title Lead Technical Animator Department Technical Art Location(s) Brighton (preferred), Brno, Prague Reports To Associate Director Technical Animation Job Type (Permanent, fixed term, internship)",
+    "region": "eur",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_knf335",
+    "title": "Design Engineer",
+    "company": "Vercel",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=vercel.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/vercel/jobs/5709080004",
+    "source": "greenhouse",
+    "tags": [
+      "Design"
+    ],
+    "postedAt": "2026-04-02T11:32:59-04:00",
+    "scrapedAt": "2026-04-04T21:52:35.214Z",
+    "description": "About Vercel: Vercel gives developers the tools and cloud infrastructure to build, scale, and secure a faster, more personalized web. As the team behind v0, Next.js, and AI SDK, Vercel helps customers",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_8vrsxx",
+    "title": "Senior Product Designer",
+    "company": "Vercel",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=vercel.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/vercel/jobs/5735407004",
+    "source": "greenhouse",
+    "tags": [
+      "Design"
+    ],
+    "postedAt": "2026-04-02T11:32:59-04:00",
+    "scrapedAt": "2026-04-04T21:52:35.219Z",
+    "description": "About Vercel: Vercel gives developers the tools and cloud infrastructure to build, scale, and secure a faster, more personalized web. As the team behind v0, Next.js, and AI SDK, Vercel helps customers",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_5ijnk2",
+    "title": "Brand Designer",
+    "company": "Arize AI",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=arize.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/arizeai/jobs/5844416004",
+    "source": "greenhouse",
+    "tags": [
+      "Marketing"
+    ],
+    "postedAt": "2026-04-02T11:29:53-04:00",
+    "scrapedAt": "2026-04-04T21:52:00.098Z",
+    "description": "About Arize AI is rapidly transforming the world. As generative AI reshapes industries, teams need powerful ways to monitor, troubleshoot, and optimize their AI systems. That’s where we come in. Arize",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_9gpn8",
+    "title": "Product Designer, Crypto",
+    "company": "Stripe",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=stripe.com&sz=128",
+    "category": "creative",
+    "url": "https://stripe.com/jobs/search?gh_jid=7775422",
+    "source": "greenhouse",
+    "tags": [
+      "8811 Product Design"
+    ],
+    "postedAt": "2026-04-02T11:24:42-04:00",
+    "scrapedAt": "2026-04-04T21:51:26.198Z",
+    "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept pay",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_i140ky",
+    "title": "Group Design Director (FTC)",
+    "company": "AKQA",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=akqa.com&sz=128",
+    "category": "creative",
+    "url": "https://www.akqa.com/jobs/7649171/?gh_jid=7649171",
+    "source": "greenhouse",
+    "tags": [
+      "Creative"
+    ],
+    "postedAt": "2026-04-02T11:14:50-04:00",
+    "scrapedAt": "2026-04-04T21:51:38.021Z",
+    "description": "At AKQA (part of WPP), we believe in the imaginative application of art and science to create ideas, products and services that move the world forward. We exist at the intersection of design, technolo",
+    "region": "eur",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_13i95i",
+    "title": "Senior Product Designer, Design Systems",
+    "company": "Affirm",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=affirm.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/affirm/jobs/7619837003",
+    "source": "greenhouse",
+    "tags": [
+      "User Experience"
+    ],
+    "postedAt": "2026-04-02T11:02:43-04:00",
+    "scrapedAt": "2026-04-04T21:51:43.040Z",
+    "description": "Affirm is reinventing credit to make it more honest and friendly, giving consumers the flexibility to buy now and pay later without any hidden fees or compounding interest. Product Design at Affirm dr",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_h4ktq1",
+    "title": "Staff Product Designer",
+    "company": "Affirm",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=affirm.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/affirm/jobs/7605936003",
+    "source": "greenhouse",
+    "tags": [
+      "User Experience"
+    ],
+    "postedAt": "2026-04-02T11:02:43-04:00",
+    "scrapedAt": "2026-04-04T21:51:43.050Z",
+    "description": "Affirm is reinventing credit to make it more honest and friendly, giving consumers the flexibility to buy now and pay later without any hidden fees or compounding interest. The Direct-to-Consumer (DTC",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_7grwy7",
+    "title": "Staff Product Designer, Design Systems",
+    "company": "Affirm",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=affirm.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/affirm/jobs/7615058003",
+    "source": "greenhouse",
+    "tags": [
+      "User Experience"
+    ],
+    "postedAt": "2026-04-02T11:02:43-04:00",
+    "scrapedAt": "2026-04-04T21:51:43.050Z",
+    "description": "Affirm is reinventing credit to make it more honest and friendly, giving consumers the flexibility to buy now and pay later without any hidden fees or compounding interest. Product Design at Affirm dr",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_ciybp",
+    "title": "Staff Product Designer, Business Banking",
+    "company": "Monzo",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=monzo.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/monzo/jobs/7768588",
+    "source": "greenhouse",
+    "tags": [
+      "Design"
+    ],
+    "postedAt": "2026-04-02T10:58:21-04:00",
+    "scrapedAt": "2026-04-04T21:51:38.796Z",
+    "description": "🚀 We’re on a mission to make money work for everyone. We’re waving goodbye to the complicated and confusing ways of traditional banking. After starting as a prepaid card, our product offering has gro",
+    "region": "eur",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_6tqm3",
+    "title": "Staff Product Designer, Operations",
+    "company": "Monzo",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=monzo.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/monzo/jobs/7622277",
+    "source": "greenhouse",
+    "tags": [
+      "Design"
+    ],
+    "postedAt": "2026-04-02T10:57:19-04:00",
+    "scrapedAt": "2026-04-04T21:51:38.796Z",
+    "description": "🚀 We’re on a mission to make money work for everyone. We’re waving goodbye to the complicated and confusing ways of traditional banking. After starting as a prepaid card, our product offering has gro",
+    "region": "eur",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_q291yu",
+    "title": "Senior Product Designer",
+    "company": "Salsify",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=salsify.com&sz=128",
+    "category": "creative",
+    "url": "https://www.salsify.com/careers/current-listings?gh_jid=8491679002",
+    "source": "greenhouse",
+    "tags": [
+      "Product "
+    ],
+    "postedAt": "2026-04-02T10:40:03-04:00",
+    "scrapedAt": "2026-04-04T21:51:44.421Z",
+    "description": "Come join a company who is a key leader in the industry scaling the next core commerce infrastructure and on the path from $100M to $500M! Founded in 2012, Salsify helps brand manufacturers, distribut",
+    "region": "eur",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_rvouyc",
+    "title": "Learning Experience Designer",
+    "company": "Recorded Future",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=recordedfuture.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/recordedfuture/jobs/8481296002",
+    "source": "greenhouse",
+    "tags": [
+      "Customer Training"
+    ],
+    "postedAt": "2026-04-02T10:24:29-04:00",
+    "scrapedAt": "2026-04-04T21:51:43.703Z",
+    "description": "With 1,000+ intelligence professionals serving over 1,900 clients worldwide, Recorded Future is the world’s most advanced, and largest, intelligence company! The Learning Experience Designer at Record",
+    "region": "apac",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_s7oi34",
+    "title": "Senior Learning Experience Designer",
+    "company": "Recorded Future",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=recordedfuture.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/recordedfuture/jobs/8481300002",
+    "source": "greenhouse",
+    "tags": [
+      "Customer Training"
+    ],
+    "postedAt": "2026-04-02T10:24:29-04:00",
+    "scrapedAt": "2026-04-04T21:51:43.706Z",
+    "description": "With 1,000+ intelligence professionals serving over 1,900 clients worldwide, Recorded Future is the world’s most advanced, and largest, intelligence company! The Senior Learning Experience Designer at",
+    "region": "apac",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "ashby_hg3cpo",
+    "title": "Staff Product Designer",
+    "company": "TheyDo",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=theydo.io&sz=128",
+    "category": "creative",
+    "url": "https://jobs.ashbyhq.com/theydo/7490c060-69f6-497e-8bb1-58dbb575b949",
+    "source": "ashby",
+    "tags": [
+      "Product",
+      "Product"
+    ],
+    "postedAt": "2026-04-02T14:18:07.447Z",
+    "scrapedAt": "2026-04-04T21:52:06.256Z",
+    "description": "Help fix customer-centricity at scale Every company wants to become more customer-centric. At TheyDo, we make that ambition real. Our AI-powered journey management platform helps the world’s largest e",
+    "region": "eur",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "smartrecruiters_39vb2l",
+    "title": "UK Content Strategist - Trends",
+    "company": "Canva",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=canva.com&sz=128",
+    "category": "creative",
+    "url": "https://jobs.smartrecruiters.com/canva/6000000000976050",
+    "source": "smartrecruiters",
+    "tags": [
+      null
+    ],
+    "postedAt": "2026-04-02T12:49:32.956Z",
+    "scrapedAt": "2026-04-04T21:51:26.479Z",
+    "description": "Join the team redefining how the world experiences design. Hello, hey, g'day, mabuhay, kia ora, 你好, hallo, vítejte! Thanks for stopping by. We know job hunting can be a little time consuming and you'r",
+    "region": "eur",
+    "employmentType": "contract"
+  },
+  {
+    "id": "smartrecruiters_xx6zp7",
+    "title": "Group Design Lead - Discovery",
+    "company": "Wise",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=wise.com&sz=128",
+    "category": "creative",
+    "url": "https://jobs.smartrecruiters.com/wise/744000118401868",
+    "source": "smartrecruiters",
+    "tags": [
+      null
+    ],
+    "postedAt": "2026-04-02T12:41:52.770Z",
+    "scrapedAt": "2026-04-04T21:51:25.431Z",
+    "description": "Wise is a global technology company, building the best way to move and manage the world’s money. Min fees. Max ease. Full speed. Whether people and businesses are sending money to another country, spe",
+    "region": "eur",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "smartrecruiters_xx5u5j",
+    "title": "Staff Product Designer - Investment Products",
+    "company": "Wise",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=wise.com&sz=128",
+    "category": "creative",
+    "url": "https://jobs.smartrecruiters.com/wise/744000118403275",
+    "source": "smartrecruiters",
+    "tags": [
+      null
+    ],
+    "postedAt": "2026-04-02T12:37:41.291Z",
+    "scrapedAt": "2026-04-04T21:51:25.431Z",
+    "description": "Wise is a global technology company, building the best way to move and manage the world’s money. Min fees. Max ease. Full speed. Whether people and businesses are sending money to another country, spe",
+    "region": "eur",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_qg4397",
+    "title": "Senior Product Designer, Shopping (f/m/x)",
+    "company": "HelloFresh",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=hellofresh.com&sz=128",
+    "category": "creative",
+    "url": "https://careers.hellofresh.com/global/en/job/7610095?gh_jid=7610095",
+    "source": "greenhouse",
+    "tags": [
+      "Tech Consumer - Product Design"
+    ],
+    "postedAt": "2026-04-02T07:43:00-04:00",
+    "scrapedAt": "2026-04-04T21:52:06.536Z",
+    "description": "Work with HelloFresh in Warsaw and its HelloTech organisation, HelloFresh’s global technology backbone with more than 1000 people, building the digital products that power our end-to-end food experien",
+    "region": "eur",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_1n4929",
+    "title": "Learning Experience Specialist (Evening/Night Shift)",
+    "company": "StockX",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=stockx.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/stockx/jobs/8483258002",
+    "source": "greenhouse",
+    "tags": [
+      "Customer Service "
+    ],
+    "postedAt": "2026-04-02T07:39:17-04:00",
+    "scrapedAt": "2026-04-04T21:51:57.782Z",
+    "description": "Help empower our global customers to connect to culture through their passions. Why you'll love this role As a Learning Experience Specialist, you will play a key role in supporting both team performa",
+    "region": "apac",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "ashby_dbx1cl",
+    "title": "Lead Product Designer (Connectivity)",
+    "company": "Deel",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=deel.com&sz=128",
+    "category": "creative",
+    "url": "https://jobs.ashbyhq.com/deel/382bdde7-f5a1-4e7b-a253-af27295ae8b1",
+    "source": "ashby",
+    "tags": [
+      "Product Design",
+      "R&D"
+    ],
+    "postedAt": "2026-04-02T11:08:41.005Z",
+    "scrapedAt": "2026-04-04T21:51:26.468Z",
+    "description": "Who we are is what we do. Deel is the all-in-one payroll and HR platform for global teams. Our vision is to unlock global opportunity for every person, team, and business. Built for the way the world ",
+    "region": "eur",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_syy0sk",
+    "title": "Senior Service Design Lead",
+    "company": "Ping Identity",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=pingidentity.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/pingidentity/jobs/8451690002",
+    "source": "greenhouse",
+    "tags": [
+      "5101 Business Transformation"
+    ],
+    "postedAt": "2026-04-02T06:48:06-04:00",
+    "scrapedAt": "2026-04-04T21:51:57.231Z",
+    "description": "About Ping Identity: At Ping Identity, we believe in making digital experiences both secure and seamless for all users, without compromise. We call this digital freedom. And it's not just something we",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_283ylo",
+    "title": "Senior Instructional Designer",
+    "company": "Samsara",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=samsara.com&sz=128",
+    "category": "creative",
+    "url": "https://www.samsara.com/company/careers/roles/7290232?gh_jid=7290232",
+    "source": "greenhouse",
+    "tags": [
+      "Support"
+    ],
+    "postedAt": "2026-04-02T05:51:47-04:00",
+    "scrapedAt": "2026-04-04T21:51:33.879Z",
+    "description": "Who we are Samsara (NYSE: IOT) is the pioneer of the Connected Operations™ Cloud, which is a platform that enables organizations that depend on physical operations to harness Internet of Things (IoT) ",
+    "region": "apac",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "lever_7tgmin",
+    "title": "Growth Design Director",
+    "company": "Pipedrive",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=pipedrive.com&sz=128",
+    "category": "creative",
+    "url": "https://jobs.lever.co/pipedrive/7425154d-cecb-4f76-8f38-02caa723fff9",
+    "source": "lever",
+    "tags": [
+      "Design",
+      "CPTO"
+    ],
+    "postedAt": "2026-04-02T06:43:18.010Z",
+    "scrapedAt": "2026-04-04T21:53:10.609Z",
+    "description": "We believe it takes great people to create a great product. That’s why our team lives our company values, and we hire based on them, too. Since 2010, Pipedrive has been on a mission to support sales a",
+    "region": "eur",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_set2de",
+    "title": "Senior Product Designer",
+    "company": "Motive",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=gomotive.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/gomotive/jobs/8126196002",
+    "source": "greenhouse",
+    "tags": [
+      "Product"
+    ],
+    "postedAt": "2026-04-02T02:41:28-04:00",
+    "scrapedAt": "2026-04-04T21:52:30.220Z",
+    "description": "Who we are: Motive empowers the people who run physical operations with tools to make their work safer, more productive, and more profitable. For the first time ever, safety, operations and finance te",
+    "region": "apac",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_nw8wsx",
+    "title": "UX Designer - Marvel Strike Force",
+    "company": "Scopely",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=scopely.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/scopely/jobs/5165750008",
+    "source": "greenhouse",
+    "tags": [
+      "Midcore"
+    ],
+    "postedAt": "2026-04-01T21:04:12-04:00",
+    "scrapedAt": "2026-04-04T21:51:44.496Z",
+    "description": "Scopely is looking for a UX Designer to join our Marvel Strike Force team remotely in the United States or Canada on a remote basis. At Scopely, we care deeply about what we do and want to inspire pla",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_5g35m1",
+    "title": "Game Designer - Star Trek Fleet Command",
+    "company": "Scopely",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=scopely.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/scopely/jobs/5065601008",
+    "source": "greenhouse",
+    "tags": [
+      "Live Games Portfolio"
+    ],
+    "postedAt": "2026-04-01T21:03:16-04:00",
+    "scrapedAt": "2026-04-04T21:51:44.468Z",
+    "description": "Scopely is looking for a Game Designer to join our Star Trek Fleet Command team in Spain, Ireland, Portugal, or the United Kingdom on a remote basis within these locations. At Scopely, we care deeply ",
+    "region": "eur",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_52e7ql",
+    "title": "Associate Game Designer - Star Trek Fleet Command",
+    "company": "Scopely",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=scopely.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/scopely/jobs/5065564008",
+    "source": "greenhouse",
+    "tags": [
+      "Live Games Portfolio"
+    ],
+    "postedAt": "2026-04-01T21:03:10-04:00",
+    "scrapedAt": "2026-04-04T21:51:44.460Z",
+    "description": "Scopely is looking for an Associate Game Designer to join our Star Trek Fleet Command team in Barcelona on a hybrid basis. At Scopely, we care deeply about what we do and want to inspire play, every d",
+    "region": "eur",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_bq3sqz",
+    "title": "Senior Design Engineer, Web",
+    "company": "Buildkite",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=buildkite.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/buildkite/jobs/5103466008",
+    "source": "greenhouse",
+    "tags": [
+      "Brand"
+    ],
+    "postedAt": "2026-04-01T20:35:00-04:00",
+    "scrapedAt": "2026-04-04T21:51:47.888Z",
+    "description": "About Buildkite Buildkite’s CI platform is trusted by the world’s leading engineering teams, shipping software to over 1,000,000,000 daily users. Job Overview This is a rare “own the whole surface” we",
+    "region": "apac",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_u891m2",
+    "title": "Sr. Manager, Content Strategy",
+    "company": "Smartsheet",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=smartsheet.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/smartsheet/jobs/7774282",
+    "source": "greenhouse",
+    "tags": [
+      "Demand Generation"
+    ],
+    "postedAt": "2026-04-01T19:58:52-04:00",
+    "scrapedAt": "2026-04-04T21:51:57.878Z",
+    "description": "For over 20 years, Smartsheet has helped people and teams achieve–well, anything. From seamless work management to smart, scalable solutions, we’ve always worked with flow. We’re building tools that e",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_dqi5kk",
+    "title": "Spaceport Designer, Interior Design",
+    "company": "SpaceX",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=spacex.com&sz=128",
+    "category": "creative",
+    "url": "https://boards.greenhouse.io/spacex/jobs/8322729002?gh_jid=8322729002",
+    "source": "greenhouse",
+    "tags": [
+      "Spaceport Development"
+    ],
+    "postedAt": "2026-04-01T18:31:31-04:00",
+    "scrapedAt": "2026-04-04T21:52:15.669Z",
+    "description": "SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologi",
+    "region": "apac",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_kfbk9a",
+    "title": "Instructional Designer (Starlink Training)",
+    "company": "SpaceX",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=spacex.com&sz=128",
+    "category": "creative",
+    "url": "https://boards.greenhouse.io/spacex/jobs/8387913002?gh_jid=8387913002",
+    "source": "greenhouse",
+    "tags": [
+      "Starlink Customer Operations"
+    ],
+    "postedAt": "2026-04-01T17:53:45-04:00",
+    "scrapedAt": "2026-04-04T21:52:15.561Z",
+    "description": "SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologi",
+    "region": "ww",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_n3ykad",
+    "title": "Senior Product Designer",
+    "company": "Mixpanel",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=mixpanel.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/mixpanel/jobs/7767652",
+    "source": "greenhouse",
+    "tags": [
+      "Design"
+    ],
+    "postedAt": "2026-04-01T17:51:56-04:00",
+    "scrapedAt": "2026-04-04T21:51:28.481Z",
+    "description": "About Mixpanel Mixpanel turns data clarity into innovation. Trusted by more than 29,000 companies, including Workday, Pinterest, LG, and Rakuten Viber, Mixpanel’s AI-first digital analytics help teams",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_gvdbdv",
+    "title": "Senior Product Designer, Experience UX",
+    "company": "Roblox",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=roblox.com&sz=128",
+    "category": "creative",
+    "url": "https://careers.roblox.com/jobs/7520404?gh_jid=7520404",
+    "source": "greenhouse",
+    "tags": [
+      "UI/UX"
+    ],
+    "postedAt": "2026-04-01T17:48:25-04:00",
+    "scrapedAt": "2026-04-04T21:51:44.601Z",
+    "description": "Every day, tens of millions of people come to Roblox to explore, create, play, learn, and connect with friends in 3D immersive digital experiences– all created by our global community of developers an",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_cj6dq2",
+    "title": "Senior Product Designer, Consumer",
+    "company": "Reddit",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=reddit.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/reddit/jobs/7701558",
+    "source": "greenhouse",
+    "tags": [
+      "Product Design"
+    ],
+    "postedAt": "2026-04-01T17:45:20-04:00",
+    "scrapedAt": "2026-04-04T21:51:31.982Z",
+    "description": "Reddit is a community of communities. It’s built on shared interests, passion, and trust, and is home to the most open and authentic conversations on the internet. Every day, Reddit users submit, vote",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_372ntn",
+    "title": "Exceptional Designer",
+    "company": "xAI",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/xai/jobs/5041977007",
+    "source": "greenhouse",
+    "tags": [
+      "Design"
+    ],
+    "postedAt": "2026-04-01T17:23:43-04:00",
+    "scrapedAt": "2026-04-04T21:51:55.826Z",
+    "description": "About xAI xAI’s mission is to create AI systems that can accurately understand the universe and aid humanity in its pursuit of knowledge. Our team is small, highly motivated, and focused on engineerin",
+    "region": "ww",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_btkdou",
+    "title": "UX Designer - Growth/Monetization",
+    "company": "xAI",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/xai/jobs/5055630007",
+    "source": "greenhouse",
+    "tags": [
+      "Marketing"
+    ],
+    "postedAt": "2026-04-01T17:23:43-04:00",
+    "scrapedAt": "2026-04-04T21:51:55.849Z",
+    "description": "About xAI xAI’s mission is to create AI systems that can accurately understand the universe and aid humanity in its pursuit of knowledge. Our team is small, highly motivated, and focused on engineerin",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_o73nqn",
+    "title": "Design Director, New York Magazine",
+    "company": "Vox Media",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=voxmedia.com&sz=128",
+    "category": "creative",
+    "url": "http://boards.greenhouse.io/voxmedia/jobs/7669409?gh_jid=7669409",
+    "source": "greenhouse",
+    "tags": [
+      "Print Production"
+    ],
+    "postedAt": "2026-04-01T17:08:27-04:00",
+    "scrapedAt": "2026-04-04T21:52:16.438Z",
+    "description": "New York Magazine is seeking a Design Director to lead its award-winning print and digital design teams. This leader will define and evolve the magazine’s design language, ensuring strong visual story",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "lever_ikspsu",
+    "title": "Graphic Designer",
+    "company": "WHOOP",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=whoop.com&sz=128",
+    "category": "creative",
+    "url": "https://jobs.lever.co/whoop/305273b5-1b74-4b2f-826b-8e23903f669e",
+    "source": "lever",
+    "tags": [
+      "Creative"
+    ],
+    "postedAt": "2026-04-01T20:40:53.782Z",
+    "scrapedAt": "2026-04-04T21:51:27.593Z",
+    "description": "At WHOOP, we’re on a mission to unlock human performance and healthspan. As a Graphic Designer, you’ll play a key role in bringing our brand to life across high-impact, performance-driven channels. Fr",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "ashby_61tsjt",
+    "title": "UI Designer",
+    "company": "Tradeify",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=tradeify.com&sz=128",
+    "category": "creative",
+    "url": "https://jobs.ashbyhq.com/tradeify/c34cb1b5-d9a0-4c67-9419-c3fcfc316f4b",
+    "source": "ashby",
+    "tags": [
+      "Product",
+      "Product"
+    ],
+    "postedAt": "2026-04-01T20:38:27.363Z",
+    "scrapedAt": "2026-04-04T21:51:39.081Z",
+    "description": "About Tradeify Tradeify is a fast-growing fintech company empowering traders with access to capital, advanced tools, and a high-performance trading ecosystem. Our platform combines elite trading techn",
+    "region": "ww",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_hkj5on",
+    "title": "Senior User Experience Designer",
+    "company": "AKQA",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=akqa.com&sz=128",
+    "category": "creative",
+    "url": "https://www.akqa.com/jobs/7554933/?gh_jid=7554933",
+    "source": "greenhouse",
+    "tags": [
+      "User Experience - Freelance"
+    ],
+    "postedAt": "2026-04-01T16:33:19-04:00",
+    "scrapedAt": "2026-04-04T21:51:38.028Z",
+    "description": "At AKQA, we believe in the imaginative application of art and science to create beautiful ideas, products and services. With an entrepreneurial and collaborative approach, we design adaptive digital s",
+    "region": "latam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_l0pnms",
+    "title": "Senior Product Designer - Lifecycle & Growth",
+    "company": "Instacart",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=instacart.com&sz=128",
+    "category": "creative",
+    "url": "https://instacart.careers/job/?gh_jid=7688227",
+    "source": "greenhouse",
+    "tags": [
+      "Product Design"
+    ],
+    "postedAt": "2026-04-01T15:52:47-04:00",
+    "scrapedAt": "2026-04-04T21:51:30.050Z",
+    "description": "We're transforming the grocery industry At Instacart, we invite the world to share love through food because we believe everyone should have access to the food they love and more time to enjoy it toge",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_yajuxf",
+    "title": "Senior Open Source Design Engineer",
+    "company": "Arize AI",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=arize.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/arizeai/jobs/5778086004",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering"
+    ],
+    "postedAt": "2026-04-01T15:32:40-04:00",
+    "scrapedAt": "2026-04-04T21:52:00.101Z",
+    "description": "About Arize AI is rapidly transforming the world. As generative AI reshapes industries, teams need powerful ways to monitor, troubleshoot, and optimize their AI systems. That’s where we come in. Arize",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_aom37f",
+    "title": "Content Strategist",
+    "company": "Bandwidth",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=bandwidth.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/bandwidth/jobs/7743976",
+    "source": "greenhouse",
+    "tags": [
+      "Marketing"
+    ],
+    "postedAt": "2026-04-01T15:15:03-04:00",
+    "scrapedAt": "2026-04-04T21:51:43.682Z",
+    "description": "Who We Are: Bandwidth , a prior “Best of EC” award winner, is a global software company that helps enterprises deliver exceptional experiences through voice, messaging, and emergency services. Reachin",
+    "region": "ww",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "ashby_uvsai3",
+    "title": "Senior Instructional Designer, Customer Education",
+    "company": "Harvey AI",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=harvey.ai&sz=128",
+    "category": "creative",
+    "url": "https://jobs.ashbyhq.com/harvey/cd7495dc-4a71-433d-b5f7-200099f19a80",
+    "source": "ashby",
+    "tags": [
+      "User Operations",
+      "User Operations"
+    ],
+    "postedAt": "2026-04-01T19:13:46.316Z",
+    "scrapedAt": "2026-04-04T21:52:02.092Z",
+    "description": "Why Harvey At Harvey, we’re transforming how legal and professional services operate — not incrementally, but end-to-end. By combining frontier agentic AI, an enterprise-grade platform, and deep domai",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "ashby_l1s10s",
+    "title": "Product Design",
+    "company": "WorkOS",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=workos.com&sz=128",
+    "category": "creative",
+    "url": "https://jobs.ashbyhq.com/workos/bd5dab2b-fa93-4441-9ca0-558593f02b9a",
+    "source": "ashby",
+    "tags": [
+      "Product Design",
+      "Design"
+    ],
+    "postedAt": "2026-04-01T19:04:19.790Z",
+    "scrapedAt": "2026-04-04T21:51:25.538Z",
+    "description": "About WorkOS 🚀 WorkOS builds modern developer tools and APIs that make it easy for companies to become Enterprise Ready. Our platform powers authentication, identity, authorization, and other critica",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_doso74",
+    "title": "Brand Art Director",
+    "company": "The Trade Desk",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=thetradedesk.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/thetradedesk/jobs/5096475007",
+    "source": "greenhouse",
+    "tags": [
+      "Marketing"
+    ],
+    "postedAt": "2026-04-01T14:47:12-04:00",
+    "scrapedAt": "2026-04-04T21:51:34.569Z",
+    "description": "The Trade Desk is changing the way global brands and their agencies advertise to audiences around the world. How? With a media buying platform that helps brands deliver a more insightful and relevant ",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_8paqns",
+    "title": "Director, User Research - Product Design",
+    "company": "DataDog",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=datadoghq.com&sz=128",
+    "category": "creative",
+    "url": "https://careers.datadoghq.com/detail/7514534/?gh_jid=7514534",
+    "source": "greenhouse",
+    "tags": [
+      "Product Design"
+    ],
+    "postedAt": "2026-04-01T14:20:47-04:00",
+    "scrapedAt": "2026-04-04T21:51:30.140Z",
+    "description": "Datadog is hiring a Research leader to define the next evolution of our research practice. You will lead a group that integrates human insights with quantitative depth and AI-driven synthesis to build",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_8rl5li",
+    "title": "Product Designer II, CCM",
+    "company": "DataDog",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=datadoghq.com&sz=128",
+    "category": "creative",
+    "url": "https://careers.datadoghq.com/detail/7559797/?gh_jid=7559797",
+    "source": "greenhouse",
+    "tags": [
+      "Product Design"
+    ],
+    "postedAt": "2026-04-01T14:20:47-04:00",
+    "scrapedAt": "2026-04-04T21:51:30.170Z",
+    "description": "We’re looking for a Product Designer 2 to join the Cloud Cost Management (CCM) team at Datadog, focused specifically on commitment programs. In this role, you’ll design user experiences that help cust",
+    "region": "eur",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_8qgtov",
+    "title": "Product Designer II - Security",
+    "company": "DataDog",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=datadoghq.com&sz=128",
+    "category": "creative",
+    "url": "https://careers.datadoghq.com/detail/7538285/?gh_jid=7538285",
+    "source": "greenhouse",
+    "tags": [
+      "Product Design"
+    ],
+    "postedAt": "2026-04-01T14:20:47-04:00",
+    "scrapedAt": "2026-04-04T21:51:30.170Z",
+    "description": "Datadog is looking for a Product Designer II to join the Shared Capabilities team within our Security Platform. This team builds foundational features used across multiple security products, including",
+    "region": "eur",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_99n1o6",
+    "title": "Senior Interaction Designer, Design Lab",
+    "company": "DataDog",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=datadoghq.com&sz=128",
+    "category": "creative",
+    "url": "https://careers.datadoghq.com/detail/7674142/?gh_jid=7674142",
+    "source": "greenhouse",
+    "tags": [
+      "Product Design"
+    ],
+    "postedAt": "2026-04-01T14:20:47-04:00",
+    "scrapedAt": "2026-04-04T21:51:30.181Z",
+    "description": "We’re looking for a Senior Interaction Designer, Design Lab to innovate and implement how motion and AI-first interaction functions across Datadog’s products and contribute to the visual design evolut",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_99n1nc",
+    "title": "Senior Product Designer, Motion",
+    "company": "DataDog",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=datadoghq.com&sz=128",
+    "category": "creative",
+    "url": "https://careers.datadoghq.com/detail/7674133/?gh_jid=7674133",
+    "source": "greenhouse",
+    "tags": [
+      "Product Design"
+    ],
+    "postedAt": "2026-04-01T14:20:47-04:00",
+    "scrapedAt": "2026-04-04T21:51:30.184Z",
+    "description": "We’re looking for a Senior Product Designer, Motion to innovate and implement how motion and AI-first interaction functions across Datadog’s products and contribute to the visual design evolution of D",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_8coooy",
+    "title": "Staff Visual Designer, Design Lab",
+    "company": "DataDog",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=datadoghq.com&sz=128",
+    "category": "creative",
+    "url": "https://careers.datadoghq.com/detail/7496207/?gh_jid=7496207",
+    "source": "greenhouse",
+    "tags": [
+      "Product Design"
+    ],
+    "postedAt": "2026-04-01T14:20:47-04:00",
+    "scrapedAt": "2026-04-04T21:51:30.197Z",
+    "description": "Datadog is entering a new chapter in how our product looks, feels and operates. We’re building a small, high-leverage Design Lab team to define that evolution, and we’re looking for a Staff Visual Des",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_opcskr",
+    "title": "Freelance Lead UX Designer",
+    "company": "R/GA",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=rga.com&sz=128",
+    "category": "creative",
+    "url": "https://www.rga.com/careers/7768693?gh_jid=7768693",
+    "source": "greenhouse",
+    "tags": [
+      "Experience Design"
+    ],
+    "postedAt": "2026-04-01T12:49:49-04:00",
+    "scrapedAt": "2026-04-04T21:51:37.979Z",
+    "description": "Paste Job Description",
+    "region": "latam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_8ict3r",
+    "title": "Principal Product Designer, Growth",
+    "company": "Stitch Fix",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=stitchfix.com&sz=128",
+    "category": "creative",
+    "url": "https://www.stitchfix.com/careers/jobs?gh_jid=7773121&gh_jid=7773121",
+    "source": "greenhouse",
+    "tags": [
+      "Product Design"
+    ],
+    "postedAt": "2026-04-01T12:41:46-04:00",
+    "scrapedAt": "2026-04-04T21:52:16.433Z",
+    "description": "About Stitch Fix, Inc. Stitch Fix (NASDAQ: SFIX) is the leading online personal styling service that helps people discover the styles they will love that fit perfectly so they always look - and feel -",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "smartrecruiters_og3elx",
+    "title": "Sr. Staff Experience Designer",
     "company": "Visa",
     "companyLogo": "https://www.google.com/s2/favicons?domain=visa.com&sz=128",
     "category": "creative",
-    "url": "https://jobs.smartrecruiters.com/visa/744000115866110",
+    "url": "https://jobs.smartrecruiters.com/visa/744000118217297",
     "source": "smartrecruiters",
     "tags": [
-      "Learning & Development"
+      "Product/Solutions Management"
     ],
     "postedAt": "2026-03-20T12:37:02.200Z",
     "scrapedAt": "2026-03-27T23:47:13.736Z",
@@ -6055,7 +7525,7 @@
     "company": "Grammarly",
     "companyLogo": "https://www.google.com/s2/favicons?domain=grammarly.com&sz=128",
     "category": "creative",
-    "url": "https://job-boards.greenhouse.io/grammarly/jobs/7663987",
+    "url": "https://job-boards.greenhouse.io/monzo/jobs/6703414",
     "source": "greenhouse",
     "tags": [
       "Design"
@@ -6084,15 +7554,82 @@
     "employmentType": "full-time"
   },
   {
-    "id": "ashby_s450v6",
-    "title": "Senior Design Engineer",
-    "company": "n8n",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=n8n.io&sz=128",
+    "id": "greenhouse_kxizys",
+    "title": "Product Designer II - Security",
+    "company": "Elastic",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=elastic.co&sz=128",
     "category": "creative",
-    "url": "https://jobs.ashbyhq.com/n8n/45cc03e9-bcbf-47a0-9511-554c9dc286e8",
-    "source": "ashby",
+    "url": "https://jobs.elastic.co/jobs?gh_jid=7716465&gh_jid=7716465",
+    "source": "greenhouse",
     "tags": [
-      "Product Design",
+      "Security - Cross Team"
+    ],
+    "postedAt": "2026-04-01T08:37:45-04:00",
+    "scrapedAt": "2026-04-04T21:51:22.905Z",
+    "description": "Elastic, the Search AI Company, enables everyone to find the answers they need in real time, using all their data, at scale — unleashing the potential of businesses and people. The Elastic Search AI P",
+    "region": "eur",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_dgngsa",
+    "title": "Lead Product Designer",
+    "company": "Monzo",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=monzo.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/monzo/jobs/6911876",
+    "source": "greenhouse",
+    "tags": [
+      "Design"
+    ],
+    "postedAt": "2026-04-01T08:19:55-04:00",
+    "scrapedAt": "2026-04-04T21:51:38.785Z",
+    "description": "🚀 We’re on a mission to make money work for everyone. We’re waving goodbye to the complicated and confusing ways of traditional banking. After starting as a prepaid card, our product offering has gro",
+    "region": "eur",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_wtgocw",
+    "title": "Principal Product Designer",
+    "company": "Okta",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=okta.com&sz=128",
+    "category": "creative",
+    "url": "https://www.okta.com/company/careers/opportunity/7676796?gh_jid=7676796",
+    "source": "greenhouse",
+    "tags": [
+      "Product Design & UXR-650"
+    ],
+    "postedAt": "2026-04-01T05:17:54-04:00",
+    "scrapedAt": "2026-04-04T21:51:32.121Z",
+    "description": "Secure Every Identity, from AI to Human Identity is the key to unlocking the potential of AI. Okta secures AI by building the trusted, neutral infrastructure that enables organizations to safely embra",
+    "region": "apac",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "smartrecruiters_vmj91t",
+    "title": "Product Designer - (Logistics, Rider)",
+    "company": "Delivery Hero",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=deliveryhero.com&sz=128",
+    "category": "creative",
+    "url": "https://jobs.smartrecruiters.com/deliveryhero/744000118097247",
+    "source": "smartrecruiters",
+    "tags": [
+      null
+    ],
+    "postedAt": "2026-04-01T08:47:03.022Z",
+    "scrapedAt": "2026-04-04T21:51:34.397Z",
+    "description": "As the world’s pioneering local delivery platform, our mission is to deliver an amazing experience, fast, easy, and to your door. We operate in around 65 countries worldwide powered by tech, designed ",
+    "region": "eur",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_pmcp35",
+    "title": "Senior Product Designer",
+    "company": "Dashlane",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=dashlane.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/dashlane/jobs/7516775",
+    "source": "greenhouse",
+    "tags": [
       "Product"
     ],
     "postedAt": "2026-03-20T09:19:45.888Z",
@@ -6102,10 +7639,10 @@
     "employmentType": "full-time"
   },
   {
-    "id": "greenhouse_yfwpoq",
-    "title": "Senior Growth Designer (Paid Social)",
-    "company": "Ethos Life",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=ethoslife.com&sz=128",
+    "id": "greenhouse_dg45x3",
+    "title": "Principal Product Designer, Ads Platform",
+    "company": "Reddit",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=reddit.com&sz=128",
     "category": "creative",
     "url": "https://job-boards.greenhouse.io/ethoslife/jobs/8125152002",
     "source": "greenhouse",
