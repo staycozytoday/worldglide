@@ -11,7 +11,7 @@
       "Product Engineering Backend"
     ],
     "postedAt": "2026-04-04T10:09:07-04:00",
-    "scrapedAt": "2026-04-05T00:23:52.083Z",
+    "scrapedAt": "2026-04-05T01:56:39.882Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Remote&lt;/strong&gt;&lt;/h2&gt; &lt;div&gt;&lt;span style=&quot;font-size: 12pt; font-family: helvetica, arial, sans-serif;&qu",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -28,8 +28,110 @@
       "Product Engineering Backend"
     ],
     "postedAt": "2026-04-04T08:05:43-04:00",
-    "scrapedAt": "2026-04-05T00:23:52.085Z",
+    "scrapedAt": "2026-04-05T01:56:39.885Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Remote&lt;/strong&gt;&lt;/h2&gt; &lt;div&gt;&lt;span style=&quot;font-size: 12pt; font-family: helvetica, arial, sans-serif;&qu",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_ke6njq",
+    "title": "Senior Cloud Security Engineer",
+    "company": "ExtraHop Networks",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=extrahop.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/extrahopnetworks/jobs/5830759004",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering"
+    ],
+    "postedAt": "2026-04-03T18:08:15-04:00",
+    "scrapedAt": "2026-04-05T01:57:58.297Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;At ExtraHop, we’re on a mission to protect and empower the connected enterprise. We reveal what is happening in the very infrastructure that sustain",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_vco0zt",
+    "title": "Senior Engineering Manager, Applied Machine Learning",
+    "company": "ExtraHop Networks",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=extrahop.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/extrahopnetworks/jobs/5839524004",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering"
+    ],
+    "postedAt": "2026-04-03T18:08:15-04:00",
+    "scrapedAt": "2026-04-05T01:57:58.297Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;At ExtraHop, we’re on a mission to protect and empower the connected enterprise. We reveal what is happening in the very infrastructure that sustain",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_jvei28",
+    "title": "Senior Principal Product Manager | NDR",
+    "company": "ExtraHop Networks",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=extrahop.com&sz=128",
+    "category": "product",
+    "url": "https://job-boards.greenhouse.io/extrahopnetworks/jobs/5820325004",
+    "source": "greenhouse",
+    "tags": [
+      "Product Management"
+    ],
+    "postedAt": "2026-04-03T18:08:15-04:00",
+    "scrapedAt": "2026-04-05T01:57:58.297Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;At ExtraHop, we’re on a mission to protect and empower the connected enterprise. We reveal what is happening in the very infrastructure that sustain",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_vd5wml",
+    "title": "Senior Software Engineer | Cloud",
+    "company": "ExtraHop Networks",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=extrahop.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/extrahopnetworks/jobs/5839517004",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering"
+    ],
+    "postedAt": "2026-04-03T18:08:15-04:00",
+    "scrapedAt": "2026-04-05T01:57:58.297Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;At ExtraHop, we’re on a mission to protect and empower the connected enterprise. We reveal what is happening in the very infrastructure that sustain",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_p30u7o",
+    "title": "Senior Software Engineer | Security",
+    "company": "ExtraHop Networks",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=extrahop.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/extrahopnetworks/jobs/5825931004",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering"
+    ],
+    "postedAt": "2026-04-03T18:08:15-04:00",
+    "scrapedAt": "2026-04-05T01:57:58.297Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;At ExtraHop, we’re on a mission to protect and empower the connected enterprise. We reveal what is happening in the very infrastructure that sustain",
+    "isWorldwide": true,
+    "employmentType": "Full-time"
+  },
+  {
+    "id": "greenhouse_lav498",
+    "title": "Software Engineer III | Security",
+    "company": "ExtraHop Networks",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=extrahop.com&sz=128",
+    "category": "engineering",
+    "url": "https://job-boards.greenhouse.io/extrahopnetworks/jobs/5814304004",
+    "source": "greenhouse",
+    "tags": [
+      "Engineering"
+    ],
+    "postedAt": "2026-04-03T18:08:15-04:00",
+    "scrapedAt": "2026-04-05T01:57:58.297Z",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;At ExtraHop, we’re on a mission to protect and empower the connected enterprise. We reveal what is happening in the very infrastructure that sustain",
     "isWorldwide": true,
     "employmentType": "Full-time"
   },
@@ -46,7 +148,7 @@
       "Engineering"
     ],
     "postedAt": "2026-04-03T21:10:35.777Z",
-    "scrapedAt": "2026-04-05T00:24:13.181Z",
+    "scrapedAt": "2026-04-05T01:57:20.508Z",
     "description": "Redox is on a mission to accelerate healthcare’s transformation with useful data. Redox Engine, a flexible interoperability platform, connects and powers real-time healthcare data exchange. With just ",
     "isWorldwide": true,
     "employmentType": "Full Time"
@@ -63,7 +165,7 @@
       "Engineering"
     ],
     "postedAt": "2026-04-03T16:53:57-04:00",
-    "scrapedAt": "2026-04-05T00:24:04.268Z",
+    "scrapedAt": "2026-04-05T01:56:52.566Z",
     "description": "&lt;p&gt;&lt;strong&gt;About SecurityScorecard:&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;SecurityScorecard is the global leader in cybersecurity ratings, with ",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -80,7 +182,7 @@
       "Engineering"
     ],
     "postedAt": "2026-04-03T16:53:56-04:00",
-    "scrapedAt": "2026-04-05T00:24:04.267Z",
+    "scrapedAt": "2026-04-05T01:56:52.564Z",
     "description": "&lt;p&gt;&lt;strong&gt;About SecurityScorecard:&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;SecurityScorecard is the global leader in cybersecurity ratings, with ",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -97,7 +199,7 @@
       "Sec Engineering"
     ],
     "postedAt": "2026-04-03T15:02:45-04:00",
-    "scrapedAt": "2026-04-05T00:23:30.032Z",
+    "scrapedAt": "2026-04-05T01:56:20.639Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -114,7 +216,7 @@
       "Design"
     ],
     "postedAt": "2026-04-03T14:51:15-04:00",
-    "scrapedAt": "2026-04-05T00:24:12.915Z",
+    "scrapedAt": "2026-04-05T01:57:04.867Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Headway’s mission is a big one – to build a new mental health care system everyone can access. We’ve built technology that helps people find great t",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -131,7 +233,7 @@
       "Field Engineering"
     ],
     "postedAt": "2026-04-03T14:35:37-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.952Z",
+    "scrapedAt": "2026-04-05T01:56:20.456Z",
     "description": "&lt;p&gt;This is an opportunity to run a field engineering team, helping customers understand and implement Canonical&#39;s open source solutions in public clouds and in their own data centers. We wor",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -148,7 +250,7 @@
       "Field Engineering"
     ],
     "postedAt": "2026-04-03T14:34:38-04:00",
-    "scrapedAt": "2026-04-05T00:23:30.003Z",
+    "scrapedAt": "2026-04-05T01:56:20.507Z",
     "description": "&lt;p&gt;This is an opportunity to run the worldwide Telco Field Engineering business, helping customers understand and implement Canonical&#39;s open source solutions in public clouds and in their ow",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -165,7 +267,7 @@
       "Engineering"
     ],
     "postedAt": "2026-04-03T14:05:19-04:00",
-    "scrapedAt": "2026-04-05T00:25:10.050Z",
+    "scrapedAt": "2026-04-05T01:57:57.131Z",
     "description": "&lt;p&gt;&lt;strong&gt;About Figure&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Figure (NASDAQ: FIGR) is transforming capital markets through blockchain. We’re proving that blockchain isn’t just theory - it’s p",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -182,7 +284,7 @@
       "Design"
     ],
     "postedAt": "2026-04-03T14:00:39-04:00",
-    "scrapedAt": "2026-04-05T00:23:52.087Z",
+    "scrapedAt": "2026-04-05T01:56:39.886Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h2&gt;&lt;strong&gt;About Remote&lt;/strong&gt;&lt;/h2&gt; &lt;div&gt;&lt;span style=&quot;font-size: 12pt; font-family: helvetica, arial, sans-serif;&qu",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -199,7 +301,7 @@
       "Product"
     ],
     "postedAt": "2026-04-03T12:01:46-04:00",
-    "scrapedAt": "2026-04-05T00:25:10.050Z",
+    "scrapedAt": "2026-04-05T01:57:57.130Z",
     "description": "&lt;p&gt;&lt;strong&gt;About Figure&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Figure (NASDAQ: FIGR) is transforming capital markets through blockchain. We’re proving that blockchain isn’t just theory - it’s p",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -216,7 +318,7 @@
       "Product"
     ],
     "postedAt": "2026-04-03T11:18:47-04:00",
-    "scrapedAt": "2026-04-05T00:25:10.050Z",
+    "scrapedAt": "2026-04-05T01:57:57.131Z",
     "description": "&lt;p&gt;&lt;strong&gt;About Figure&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Figure (NASDAQ: FIGR) is transforming capital markets through blockchain. We’re proving that blockchain isn’t just theory - it’s p",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -233,7 +335,7 @@
       "Engineering"
     ],
     "postedAt": "2026-04-03T09:26:01-04:00",
-    "scrapedAt": "2026-04-05T00:25:09.987Z",
+    "scrapedAt": "2026-04-05T01:57:57.128Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;Fingerprint&lt;/strong&gt;&amp;nbsp;empowers developers to stop online fraud at the source.&lt;/p&gt; &lt;p&gt;We work on turning radi",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -250,7 +352,7 @@
       "Corporate Technology : Information Security : Insider Threat"
     ],
     "postedAt": "2026-04-03T08:51:37-04:00",
-    "scrapedAt": "2026-04-05T00:25:03.655Z",
+    "scrapedAt": "2026-04-05T01:57:50.559Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Anduril Industries is a defense technology company with a mission to transform U.S. and allied military capabilities with advanced technology. By br",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -267,7 +369,7 @@
       "Engineering"
     ],
     "postedAt": "2026-04-02T16:37:27-04:00",
-    "scrapedAt": "2026-04-05T00:23:50.672Z",
+    "scrapedAt": "2026-04-05T01:56:37.901Z",
     "description": "&lt;p&gt;By making evidence the heart of security, we help customers stay ahead of ever-changing cyber-attacks.&amp;nbsp;&lt;/p&gt; &lt;p&gt;Corelight is a cybersecurity company that transforms networ",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -284,7 +386,7 @@
       "Sales & Marketing"
     ],
     "postedAt": "2026-04-02T19:59:42.367Z",
-    "scrapedAt": "2026-04-05T00:25:44.207Z",
+    "scrapedAt": "2026-04-05T01:58:20.916Z",
     "description": "About Us\nZeroTier leads the world in next-generation connectivity and cybersecurity. Our platform provides highly secure, peer-to-peer virtual networks, relied upon by millions of users and businesses",
     "isWorldwide": true,
     "employmentType": "Remote"
@@ -301,7 +403,7 @@
       "Engineering"
     ],
     "postedAt": "2026-04-02T13:35:07-04:00",
-    "scrapedAt": "2026-04-05T00:24:05.320Z",
+    "scrapedAt": "2026-04-05T01:56:54.512Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Lithic is the modern card issuing and processing platform empowering ambitious financial companies to build the future of payments.&lt;/p&gt; &lt;p&",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -318,7 +420,7 @@
       "Software Engineering"
     ],
     "postedAt": "2026-04-02T12:16:52-04:00",
-    "scrapedAt": "2026-04-05T00:24:40.771Z",
+    "scrapedAt": "2026-04-05T01:57:35.461Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h3&gt;&lt;strong&gt;About Ethos&lt;/strong&gt;&lt;/h3&gt; &lt;p&gt;Ethos is a leading life insurance technology company on a mission to protect families ",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -335,7 +437,7 @@
       "5700 Product Management"
     ],
     "postedAt": "2026-04-02T06:48:07-04:00",
-    "scrapedAt": "2026-04-05T00:24:23.614Z",
+    "scrapedAt": "2026-04-05T01:57:20.272Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;About Ping Identity:&amp;nbsp;&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;At Ping Identity, we believe in making digital experiences both secur",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -352,7 +454,7 @@
       "5102 PD MT SaaS"
     ],
     "postedAt": "2026-04-02T06:48:07-04:00",
-    "scrapedAt": "2026-04-05T00:24:23.616Z",
+    "scrapedAt": "2026-04-05T01:57:20.275Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;About Ping Identity:&amp;nbsp;&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;At Ping Identity, we believe in making digital experiences both secur",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -370,7 +472,7 @@
       "Engineering"
     ],
     "postedAt": "2026-04-02T07:44:24.925Z",
-    "scrapedAt": "2026-04-05T00:23:28.726Z",
+    "scrapedAt": "2026-04-05T01:56:18.866Z",
     "description": "About Supabase Supabase is the Postgres development platform, built by developers for developers. We provide a complete backend solution including Database, Auth, Storage, Edge Functions, Realtime, an",
     "isWorldwide": true,
     "employmentType": "FullTime"
@@ -387,7 +489,7 @@
       "Technology"
     ],
     "postedAt": "2026-04-01T21:22:21-04:00",
-    "scrapedAt": "2026-04-05T00:24:33.872Z",
+    "scrapedAt": "2026-04-05T01:57:28.800Z",
     "description": "&lt;p&gt;&lt;strong&gt;About Us&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Hungryroot is using AI to build the most consumer-centric food and wellness company to ever exist. We act as your personal assistant f",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -404,7 +506,7 @@
       "STEM"
     ],
     "postedAt": "2026-04-01T17:23:43-04:00",
-    "scrapedAt": "2026-04-05T00:24:21.057Z",
+    "scrapedAt": "2026-04-05T01:57:18.188Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h3&gt;&lt;strong&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;About xAI&lt;/span&gt;&lt;/strong&gt;&lt;/h3&gt; &lt;p&gt;&l",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -422,7 +524,7 @@
       "Product"
     ],
     "postedAt": "2026-04-01T20:38:27.363Z",
-    "scrapedAt": "2026-04-05T00:23:59.641Z",
+    "scrapedAt": "2026-04-05T01:56:45.883Z",
     "description": "About Tradeify Tradeify is a fast-growing fintech company empowering traders with access to capital, advanced tools, and a high-performance trading ecosystem. Our platform combines elite trading techn",
     "isWorldwide": true,
     "employmentType": "FullTime"
@@ -436,11 +538,11 @@
     "url": "https://jobs.ashbyhq.com/phantom/0af91b03-eb71-400c-b496-356f1fb147d3",
     "source": "ashby",
     "tags": [
-      "Dapps Experience",
+      "Wallet Platform",
       "Engineering"
     ],
     "postedAt": "2026-04-01T17:29:38.730Z",
-    "scrapedAt": "2026-04-05T00:23:41.974Z",
+    "scrapedAt": "2026-04-05T01:56:31.584Z",
     "description": "Phantom is the modern money app used by tens of millions around the world. Our product combines everything people need to manage, spend, and grow their money in one simple, intuitive experience. Phant",
     "isWorldwide": true,
     "employmentType": "FullTime"
@@ -457,7 +559,7 @@
       "360 PMO (use as of 4/1)"
     ],
     "postedAt": "2026-04-01T11:07:51-04:00",
-    "scrapedAt": "2026-04-05T00:24:29.051Z",
+    "scrapedAt": "2026-04-05T01:57:23.803Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;At Veracyte, we offer exciting career opportunities for those interested in joining a pioneering team that is committed to transforming cancer care ",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -474,7 +576,7 @@
       "Engineering"
     ],
     "postedAt": "2026-04-01T11:00:33-04:00",
-    "scrapedAt": "2026-04-05T00:25:09.986Z",
+    "scrapedAt": "2026-04-05T01:57:57.126Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;Fingerprint&lt;/strong&gt;&amp;nbsp;empowers developers to stop online fraud at the source.&lt;/p&gt; &lt;p&gt;We work on turning radi",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -491,7 +593,7 @@
       "Ubuntu Engineering"
     ],
     "postedAt": "2026-04-01T10:26:29-04:00",
-    "scrapedAt": "2026-04-05T00:23:30.005Z",
+    "scrapedAt": "2026-04-05T01:56:20.509Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -508,7 +610,7 @@
       "Ubuntu Engineering"
     ],
     "postedAt": "2026-04-01T10:26:01-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.961Z",
+    "scrapedAt": "2026-04-05T01:56:20.465Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -525,7 +627,7 @@
       "Ubuntu Engineering"
     ],
     "postedAt": "2026-04-01T10:25:40-04:00",
-    "scrapedAt": "2026-04-05T00:23:30.005Z",
+    "scrapedAt": "2026-04-05T01:56:20.509Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -542,7 +644,7 @@
       "Ubuntu Engineering"
     ],
     "postedAt": "2026-04-01T10:23:21-04:00",
-    "scrapedAt": "2026-04-05T00:23:30.006Z",
+    "scrapedAt": "2026-04-05T01:56:20.510Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -559,7 +661,7 @@
       "Ubuntu Engineering"
     ],
     "postedAt": "2026-04-01T10:22:17-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.970Z",
+    "scrapedAt": "2026-04-05T01:56:20.475Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -576,7 +678,7 @@
       "Support Engineering"
     ],
     "postedAt": "2026-04-01T09:03:45-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.997Z",
+    "scrapedAt": "2026-04-05T01:56:20.502Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -593,7 +695,7 @@
       "Support Engineering"
     ],
     "postedAt": "2026-04-01T09:03:44-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.996Z",
+    "scrapedAt": "2026-04-05T01:56:20.501Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -610,7 +712,7 @@
       "Support Engineering"
     ],
     "postedAt": "2026-04-01T09:01:23-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.994Z",
+    "scrapedAt": "2026-04-05T01:56:20.499Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -627,7 +729,7 @@
       "SRE"
     ],
     "postedAt": "2026-04-01T08:47:23-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.989Z",
+    "scrapedAt": "2026-04-05T01:56:20.495Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -644,7 +746,7 @@
       "SRE"
     ],
     "postedAt": "2026-04-01T08:47:23-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.992Z",
+    "scrapedAt": "2026-04-05T01:56:20.497Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -661,7 +763,7 @@
       "Product"
     ],
     "postedAt": "2026-04-01T08:35:23-04:00",
-    "scrapedAt": "2026-04-05T00:23:53.825Z",
+    "scrapedAt": "2026-04-05T01:56:41.658Z",
     "description": "&lt;p&gt;You live at the intersection of security and product management — and there&#39;s no place you&#39;d rather be. You understand that integrations aren&#39;t just plumbing. They&#39;re the conn",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -678,7 +780,7 @@
       "Software and DevOps Engineering"
     ],
     "postedAt": "2026-04-01T08:09:26-04:00",
-    "scrapedAt": "2026-04-05T00:24:48.573Z",
+    "scrapedAt": "2026-04-05T01:57:41.052Z",
     "description": "&lt;p&gt;Join us in pioneering the next generation of nuclear reactors! You&#39;ll leverage your software skills alongside nuclear engineers to model, simulate, design, and deploy advanced fission pow",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -695,7 +797,7 @@
       "SaaS Engineering"
     ],
     "postedAt": "2026-04-01T07:20:57-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.958Z",
+    "scrapedAt": "2026-04-05T01:56:20.462Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -712,7 +814,7 @@
       "SaaS Engineering"
     ],
     "postedAt": "2026-04-01T07:19:53-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.955Z",
+    "scrapedAt": "2026-04-05T01:56:20.459Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -729,7 +831,7 @@
       "SaaS Engineering"
     ],
     "postedAt": "2026-04-01T07:15:58-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.952Z",
+    "scrapedAt": "2026-04-05T01:56:20.456Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -746,7 +848,7 @@
       "SaaS Engineering"
     ],
     "postedAt": "2026-04-01T07:15:58-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.959Z",
+    "scrapedAt": "2026-04-05T01:56:20.463Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -763,7 +865,7 @@
       "SaaS Engineering"
     ],
     "postedAt": "2026-04-01T07:15:57-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.975Z",
+    "scrapedAt": "2026-04-05T01:56:20.480Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -780,7 +882,7 @@
       "SaaS Engineering"
     ],
     "postedAt": "2026-04-01T07:15:21-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.993Z",
+    "scrapedAt": "2026-04-05T01:56:20.498Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -797,7 +899,7 @@
       "SaaS Engineering"
     ],
     "postedAt": "2026-04-01T07:14:36-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.992Z",
+    "scrapedAt": "2026-04-05T01:56:20.497Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is widely used in breakthrough enterprise ",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -814,7 +916,7 @@
       "SaaS Engineering"
     ],
     "postedAt": "2026-04-01T07:13:58-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.989Z",
+    "scrapedAt": "2026-04-05T01:56:20.494Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -831,7 +933,7 @@
       "Operations"
     ],
     "postedAt": "2026-04-01T06:42:48-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.988Z",
+    "scrapedAt": "2026-04-05T01:56:20.494Z",
     "description": "&lt;p&gt;The Canonical Security Operations team is hiring for a Senior or Staff engineer. The Security Operations team is responsible for designing, building, and operating a world-class Security Oper",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -848,7 +950,7 @@
       "Operations"
     ],
     "postedAt": "2026-04-01T06:42:48-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.999Z",
+    "scrapedAt": "2026-04-05T01:56:20.504Z",
     "description": "&lt;p&gt;We have opened several senior/staff Security Operations Engineer (SOC) positions, creating a new team reporting to the CISO. We are looking for a range of experience in these positions - at t",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -865,7 +967,7 @@
       "Operations"
     ],
     "postedAt": "2026-04-01T06:40:52-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.967Z",
+    "scrapedAt": "2026-04-05T01:56:20.471Z",
     "description": "&lt;p&gt;This global leadership role in cyber security is to manage the Security Operations (SecOps) team responsible for design, implementation and evolution of Canonical security practices, techniqu",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -882,7 +984,7 @@
       "Operations"
     ],
     "postedAt": "2026-04-01T06:35:57-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.963Z",
+    "scrapedAt": "2026-04-05T01:56:20.467Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -899,7 +1001,7 @@
       "Field Engineering"
     ],
     "postedAt": "2026-04-01T05:51:32-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.952Z",
+    "scrapedAt": "2026-04-05T01:56:20.457Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -916,7 +1018,7 @@
       "Field Engineering"
     ],
     "postedAt": "2026-04-01T05:51:31-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.998Z",
+    "scrapedAt": "2026-04-05T01:56:20.503Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -933,7 +1035,7 @@
       "Excellence Engineering"
     ],
     "postedAt": "2026-04-01T05:19:27-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.958Z",
+    "scrapedAt": "2026-04-05T01:56:20.462Z",
     "description": "&lt;p&gt;As the most widely used Linux distribution, Ubuntu underpins the security of the entire internet. The role of Security Engineering Manager directly impacts the safety and security of millions",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -950,7 +1052,7 @@
       "Excellence Engineering"
     ],
     "postedAt": "2026-04-01T05:19:27-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.961Z",
+    "scrapedAt": "2026-04-05T01:56:20.464Z",
     "description": "&lt;p&gt;As the most widely used Linux distribution, Ubuntu underpins the security of the entire internet. The role of Security Engineering Manager directly impacts the safety and security of millions",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -967,7 +1069,7 @@
       "Excellence Engineering"
     ],
     "postedAt": "2026-04-01T05:19:27-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.962Z",
+    "scrapedAt": "2026-04-05T01:56:20.466Z",
     "description": "&lt;p&gt;As the most widely used Linux distribution, Ubuntu underpins the security of the entire internet. The role of Security Engineering Manager directly impacts the safety and security of millions",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -984,7 +1086,7 @@
       "Excellence Engineering"
     ],
     "postedAt": "2026-04-01T05:17:21-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.971Z",
+    "scrapedAt": "2026-04-05T01:56:20.476Z",
     "description": "&lt;p&gt;This is a unique opportunity to use your software engineering and cryptography skills to build and maintain the security foundation that enables Ubuntu and its users to operate securely and r",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1001,7 +1103,7 @@
       "Excellence Engineering"
     ],
     "postedAt": "2026-04-01T05:17:21-04:00",
-    "scrapedAt": "2026-04-05T00:23:30.006Z",
+    "scrapedAt": "2026-04-05T01:56:20.510Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1018,7 +1120,7 @@
       "Engineering Fast Track"
     ],
     "postedAt": "2026-04-01T04:12:21-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.967Z",
+    "scrapedAt": "2026-04-05T01:56:20.471Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1035,7 +1137,7 @@
       "Engineering Fast Track"
     ],
     "postedAt": "2026-04-01T04:11:27-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.983Z",
+    "scrapedAt": "2026-04-05T01:56:20.490Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1052,7 +1154,7 @@
       "Engineering Fast Track"
     ],
     "postedAt": "2026-04-01T04:10:14-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.976Z",
+    "scrapedAt": "2026-04-05T01:56:20.481Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1069,7 +1171,7 @@
       "Engineering Fast Track"
     ],
     "postedAt": "2026-04-01T04:09:33-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.995Z",
+    "scrapedAt": "2026-04-05T01:56:20.500Z",
     "description": "&lt;p&gt;This is the general track for Engineering Director at Canonical, apply here if you are confident to run a project which spans teams and time zones, hiring and managing engineering managers an",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1086,7 +1188,7 @@
       "Engineering Fast Track"
     ],
     "postedAt": "2026-04-01T04:08:04-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.957Z",
+    "scrapedAt": "2026-04-05T01:56:20.462Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1103,7 +1205,7 @@
       "Engineering Fast Track"
     ],
     "postedAt": "2026-04-01T04:05:56-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.965Z",
+    "scrapedAt": "2026-04-05T01:56:20.468Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open-source software and operating systems for global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterpris",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1120,7 +1222,7 @@
       "Engineering Fast Track"
     ],
     "postedAt": "2026-04-01T04:05:16-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.986Z",
+    "scrapedAt": "2026-04-05T01:56:20.492Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is widely used in breakthrough enterprise ",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1137,7 +1239,7 @@
       "Engineering Fast Track"
     ],
     "postedAt": "2026-04-01T04:03:51-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.980Z",
+    "scrapedAt": "2026-04-05T01:56:20.487Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1154,7 +1256,7 @@
       "Engineering Fast Track"
     ],
     "postedAt": "2026-04-01T04:03:09-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.990Z",
+    "scrapedAt": "2026-04-05T01:56:20.495Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1171,7 +1273,7 @@
       "Firefox"
     ],
     "postedAt": "2026-04-01T03:01:44-04:00",
-    "scrapedAt": "2026-04-05T00:23:54.346Z",
+    "scrapedAt": "2026-04-05T01:56:40.954Z",
     "description": "&lt;div class=&quot;gmail_default&quot; style=&quot;font-size: small;&quot;&gt; &lt;div&gt; &lt;div&gt;To learn the Hiring Ranges for this position, please select your location from the &lt;strong&gt;",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1188,7 +1290,7 @@
       "R&D"
     ],
     "postedAt": "2026-04-01T01:00:37-04:00",
-    "scrapedAt": "2026-04-05T00:23:28.928Z",
+    "scrapedAt": "2026-04-05T01:56:19.434Z",
     "description": "&lt;p&gt;&lt;strong&gt;About the Team:&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;At Netlify, our mission is to empower developers to move faster with solutions that are intuitive, powerful, and a joy to use. ",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1205,7 +1307,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-31T18:02:08-04:00",
-    "scrapedAt": "2026-04-05T00:23:42.593Z",
+    "scrapedAt": "2026-04-05T01:56:31.671Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Trusted by more than 18,000 Shopify and Shopify Plus stores—like Brooklinen, Ruggable, True Classic and Dr. Squatch—Postscript gives ecommerce brand",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1222,7 +1324,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-31T18:01:54-04:00",
-    "scrapedAt": "2026-04-05T00:23:42.594Z",
+    "scrapedAt": "2026-04-05T01:56:31.672Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Trusted by more than 18,000 Shopify and Shopify Plus stores—like Brooklinen, Ruggable, True Classic and Dr. Squatch—Postscript gives ecommerce brand",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1239,7 +1341,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-31T18:01:37-04:00",
-    "scrapedAt": "2026-04-05T00:23:42.594Z",
+    "scrapedAt": "2026-04-05T01:56:31.672Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Trusted by more than 18,000 Shopify and Shopify Plus stores—like Brooklinen, Ruggable, True Classic and Dr. Squatch—Postscript gives ecommerce brand",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1256,7 +1358,7 @@
       "Product Design"
     ],
     "postedAt": "2026-03-31T17:53:12-04:00",
-    "scrapedAt": "2026-04-05T00:23:55.204Z",
+    "scrapedAt": "2026-04-05T01:56:43.078Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p class=&quot;p1&quot;&gt;We are building AI to simulate the world through merging art and science.&lt;br&gt;&lt;br&gt;We believe that world models are a",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1273,7 +1375,7 @@
       "Product"
     ],
     "postedAt": "2026-03-31T16:54:38-04:00",
-    "scrapedAt": "2026-04-05T00:23:42.594Z",
+    "scrapedAt": "2026-04-05T01:56:31.672Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Trusted by more than 18,000 Shopify and Shopify Plus stores—like Brooklinen, Ruggable, True Classic and Dr. Squatch—Postscript gives ecommerce brand",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1290,7 +1392,7 @@
       "Autonomy"
     ],
     "postedAt": "2026-03-31T15:20:23-04:00",
-    "scrapedAt": "2026-04-05T00:25:07.931Z",
+    "scrapedAt": "2026-04-05T01:57:55.095Z",
     "description": "&lt;div class=&quot;section page-centered&quot;&gt; &lt;div&gt;On our Motion Planning team, you&#39;ll apply your passion in robotics and software development for production-ready autonomous vehicles.",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1307,7 +1409,7 @@
       "Engineering, India"
     ],
     "postedAt": "2026-03-31T14:40:36-04:00",
-    "scrapedAt": "2026-04-05T00:24:29.868Z",
+    "scrapedAt": "2026-04-05T01:57:24.844Z",
     "description": "&lt;p&gt;&lt;em&gt;At FourKites we have the opportunity to tackle complex challenges with real-world impacts. Whether it’s medical supplies from Cardinal Health or groceries for Walmart, the FourKites",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1324,7 +1426,7 @@
       "Devices Engineering"
     ],
     "postedAt": "2026-03-31T13:30:10-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.956Z",
+    "scrapedAt": "2026-04-05T01:56:20.460Z",
     "description": "&lt;p&gt;Work across the full Linux stack from kernel through GUI to optimise Ubuntu, the world’s most widely used Linux desktop and server, for the latest silicon.&lt;/p&gt; &lt;p&gt;The role is a fa",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1341,7 +1443,7 @@
       "Devices Engineering"
     ],
     "postedAt": "2026-03-31T13:26:02-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.955Z",
+    "scrapedAt": "2026-04-05T01:56:20.459Z",
     "description": "&lt;p&gt;Work across the full Linux stack from kernel through GUI to optimise Ubuntu, the world’s most widely used Linux desktop and server, for the latest silicon.&lt;/p&gt; &lt;p&gt;The role is a fa",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1358,7 +1460,7 @@
       "Devices Engineering"
     ],
     "postedAt": "2026-03-31T13:25:33-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.973Z",
+    "scrapedAt": "2026-04-05T01:56:20.477Z",
     "description": "&lt;p&gt;You will work across the full Linux stack from kernel through networking, virtualization and graphics to optimise Ubuntu, the world’s most widely used Linux desktop and server, for the latest",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1375,7 +1477,7 @@
       "Devices Engineering"
     ],
     "postedAt": "2026-03-31T13:25:23-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.972Z",
+    "scrapedAt": "2026-04-05T01:56:20.477Z",
     "description": "&lt;p&gt;Lead an engineering team that partners with the Linux engineers of a major silicon company, and works across the full Linux stack from kernel to GUI, to optimise Ubuntu, the world’s most wide",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1392,7 +1494,7 @@
       "Devices Engineering"
     ],
     "postedAt": "2026-03-31T13:21:55-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.998Z",
+    "scrapedAt": "2026-04-05T01:56:20.503Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1409,7 +1511,7 @@
       "Devices Engineering"
     ],
     "postedAt": "2026-03-31T13:18:55-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.996Z",
+    "scrapedAt": "2026-04-05T01:56:20.501Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1426,7 +1528,7 @@
       "Commercial Systems"
     ],
     "postedAt": "2026-03-31T12:29:49-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.996Z",
+    "scrapedAt": "2026-04-05T01:56:20.501Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1444,7 +1546,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-31T16:10:59.604Z",
-    "scrapedAt": "2026-04-05T00:23:41.974Z",
+    "scrapedAt": "2026-04-05T01:56:31.585Z",
     "description": "Phantom is the modern money app used by tens of millions around the world. Our product combines everything people need to manage, spend, and grow their money in one simple, intuitive experience. Phant",
     "isWorldwide": true,
     "employmentType": "FullTime"
@@ -1461,7 +1563,7 @@
       "Cloud Engineering"
     ],
     "postedAt": "2026-03-31T11:43:29-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.955Z",
+    "scrapedAt": "2026-04-05T01:56:20.459Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1478,7 +1580,7 @@
       "Charm Engineering"
     ],
     "postedAt": "2026-03-31T10:43:57-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.959Z",
+    "scrapedAt": "2026-04-05T01:56:20.463Z",
     "description": "&lt;p&gt;Canonical is building a comprehensive suite of multi-cloud and on-premise data solutions for the enterprise. We want to make it easy to operate any database on any cloud, or on premise. The d",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1495,7 +1597,7 @@
       "Charm Engineering"
     ],
     "postedAt": "2026-03-31T10:41:52-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.959Z",
+    "scrapedAt": "2026-04-05T01:56:20.463Z",
     "description": "&lt;p&gt;&lt;strong&gt;The role of an Engineering Manager at Canonical&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;As an Engineering Manager at Canonical, you must be technically strong, but your main responsib",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1512,7 +1614,7 @@
       "Product"
     ],
     "postedAt": "2026-03-31T10:38:42-04:00",
-    "scrapedAt": "2026-04-05T00:25:09.987Z",
+    "scrapedAt": "2026-04-05T01:57:57.128Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;Fingerprint&lt;/strong&gt;&amp;nbsp;empowers developers to stop online fraud at the source.&lt;/p&gt; &lt;p&gt;We work on turning radi",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1529,7 +1631,7 @@
       "Charm Engineering"
     ],
     "postedAt": "2026-03-31T10:34:16-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.980Z",
+    "scrapedAt": "2026-04-05T01:56:20.486Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1546,7 +1648,7 @@
       "Charm Engineering"
     ],
     "postedAt": "2026-03-31T10:32:00-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.969Z",
+    "scrapedAt": "2026-04-05T01:56:20.473Z",
     "description": "&lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very wide",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1563,7 +1665,7 @@
       "Charm Engineering"
     ],
     "postedAt": "2026-03-31T10:32:00-04:00",
-    "scrapedAt": "2026-04-05T00:23:29.988Z",
+    "scrapedAt": "2026-04-05T01:56:20.494Z",
     "description": "&lt;p&gt;Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterp",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1581,7 +1683,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-31T07:32:18.903Z",
-    "scrapedAt": "2026-04-05T00:25:09.114Z",
+    "scrapedAt": "2026-04-05T01:57:42.776Z",
     "description": "About the company Trust Wallet is the leading non-custodial cryptocurrency wallet, trusted by over 200 million people worldwide to securely manage and grow their digital assets. Our vision is to give ",
     "isWorldwide": true,
     "employmentType": "FullTime"
@@ -1598,7 +1700,7 @@
       "Sec Engineering"
     ],
     "postedAt": "2026-03-30T20:11:11-04:00",
-    "scrapedAt": "2026-04-05T00:23:30.052Z",
+    "scrapedAt": "2026-04-05T01:56:20.658Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1615,7 +1717,7 @@
       "Sec Engineering"
     ],
     "postedAt": "2026-03-30T20:08:50-04:00",
-    "scrapedAt": "2026-04-05T00:23:30.063Z",
+    "scrapedAt": "2026-04-05T01:56:20.669Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1632,7 +1734,7 @@
       "Sec Engineering"
     ],
     "postedAt": "2026-03-30T20:07:04-04:00",
-    "scrapedAt": "2026-04-05T00:23:30.051Z",
+    "scrapedAt": "2026-04-05T01:56:20.658Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1649,7 +1751,7 @@
       "Sec Engineering"
     ],
     "postedAt": "2026-03-30T19:51:01-04:00",
-    "scrapedAt": "2026-04-05T00:23:30.042Z",
+    "scrapedAt": "2026-04-05T01:56:20.648Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1666,7 +1768,7 @@
       "Software Engineering"
     ],
     "postedAt": "2026-03-30T19:10:02-04:00",
-    "scrapedAt": "2026-04-05T00:24:41.085Z",
+    "scrapedAt": "2026-04-05T01:57:35.478Z",
     "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Agility’s commercially deployed humanoids operate alongside teams in warehouses, manufacturing facilities, and distribution centers—tackling physica",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1683,7 +1785,7 @@
       "Engineering"
     ],
     "postedAt": "2026-03-30T19:06:01-04:00",
-    "scrapedAt": "2026-04-05T00:24:29.043Z",
+    "scrapedAt": "2026-04-05T01:57:24.030Z",
     "description": "&lt;p&gt;&lt;strong&gt;About this opportunity:&lt;/strong&gt;&lt;strong&gt;&lt;br&gt;&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;span style=&quot;font-weight: 300;&quot;&gt;As a Senior Manager, Software Te",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1700,7 +1802,7 @@
       "Firefox"
     ],
     "postedAt": "2026-03-30T13:19:32-04:00",
-    "scrapedAt": "2026-04-05T00:23:54.363Z",
+    "scrapedAt": "2026-04-05T01:56:40.968Z",
     "description": "&lt;div class=&quot;gmail_default&quot; style=&quot;font-size: small;&quot;&gt; &lt;div&gt; &lt;div&gt;To learn the Hiring Ranges for this position, please select your location from the &lt;strong&gt;",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1717,7 +1819,7 @@
       "Firefox"
     ],
     "postedAt": "2026-03-30T13:19:15-04:00",
-    "scrapedAt": "2026-04-05T00:23:54.372Z",
+    "scrapedAt": "2026-04-05T01:56:40.978Z",
     "description": "&lt;p&gt;To learn the Hiring Ranges for this position, please select your location from the &lt;strong&gt;Apply Now&lt;/strong&gt; dropdown menu.&lt;/p&gt; &lt;p style=&quot;text-align: justify; line-",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1734,7 +1836,7 @@
       "Firefox"
     ],
     "postedAt": "2026-03-30T13:18:51-04:00",
-    "scrapedAt": "2026-04-05T00:23:54.376Z",
+    "scrapedAt": "2026-04-05T01:56:40.981Z",
     "description": "&lt;div class=&quot;gmail_default&quot; style=&quot;font-size: small;&quot;&gt; &lt;div&gt; &lt;div&gt;To learn the Hiring Ranges for this position, please select your location from the &lt;strong&gt;",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1751,7 +1853,7 @@
       "Security"
     ],
     "postedAt": "2026-03-30T13:18:33-04:00",
-    "scrapedAt": "2026-04-05T00:23:54.375Z",
+    "scrapedAt": "2026-04-05T01:56:40.980Z",
     "description": "&lt;div class=&quot;gmail_default&quot; style=&quot;font-size: small;&quot;&gt; &lt;div&gt; &lt;div&gt;To learn the Hiring Ranges for this position, please select your location from the &lt;strong&gt;",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1768,7 +1870,7 @@
       "Firefox"
     ],
     "postedAt": "2026-03-30T13:18:30-04:00",
-    "scrapedAt": "2026-04-05T00:23:54.358Z",
+    "scrapedAt": "2026-04-05T01:56:40.963Z",
     "description": "&lt;div class=&quot;gmail_default&quot; style=&quot;font-size: small;&quot;&gt; &lt;div&gt; &lt;div&gt;To learn the Hiring Ranges for this position, please select your location from the &lt;strong&gt;",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1785,7 +1887,7 @@
       "Security"
     ],
     "postedAt": "2026-03-30T13:18:23-04:00",
-    "scrapedAt": "2026-04-05T00:23:54.373Z",
+    "scrapedAt": "2026-04-05T01:56:40.979Z",
     "description": "&lt;div class=&quot;gmail_default&quot; style=&quot;font-size: small;&quot;&gt; &lt;div&gt; &lt;div&gt;To learn the Hiring Ranges for this position, please select your location from the &lt;strong&gt;",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1802,7 +1904,7 @@
       "Security"
     ],
     "postedAt": "2026-03-30T13:18:07-04:00",
-    "scrapedAt": "2026-04-05T00:23:54.378Z",
+    "scrapedAt": "2026-04-05T01:56:40.982Z",
     "description": "&lt;div class=&quot;gmail_default&quot; style=&quot;font-size: small;&quot;&gt; &lt;div&gt; &lt;div&gt;To learn the Hiring Ranges for this position, please select your location from the &lt;strong&gt;",
     "isWorldwide": true,
     "employmentType": "Full-time"
@@ -1819,746 +1921,9 @@
       "Strategy, Operations, Data & Ads"
     ],
     "postedAt": "2026-03-30T09:44:19-04:00",
-    "scrapedAt": "2026-04-05T00:23:54.349Z",
+    "scrapedAt": "2026-04-05T01:56:40.957Z",
     "description": "&lt;div class=&quot;gmail_default&quot; style=&quot;font-size: small;&quot;&gt; &lt;div&gt; &lt;div&gt;To learn the Hiring Ranges for this position, please select your location from the &lt;strong&gt;",
     "isWorldwide": true,
     "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_xcqmfj",
-    "title": "Staff Software Engineer, Backend",
-    "company": "Cortex",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=cortex.io&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/cortex/jobs/4891276008",
-    "source": "greenhouse",
-    "tags": [
-      "Engineering"
-    ],
-    "postedAt": "2026-03-28T03:48:36-04:00",
-    "scrapedAt": "2026-04-05T00:24:30.732Z",
-    "description": "&lt;p&gt;&lt;strong&gt;🧠 About Cortex&lt;br&gt;&lt;/strong&gt;Cortex is the Engineering Operations Platform that enables organizations to continuously improve their operational maturity and reduce de",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_6246ub",
-    "title": "Senior Software Engineer, Backend",
-    "company": "Cortex",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=cortex.io&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/cortex/jobs/5165927008",
-    "source": "greenhouse",
-    "tags": [
-      "Engineering"
-    ],
-    "postedAt": "2026-03-28T03:47:41-04:00",
-    "scrapedAt": "2026-04-05T00:24:30.732Z",
-    "description": "&lt;p&gt;&lt;strong&gt;🧠 About Cortex&lt;br&gt;&lt;/strong&gt;Cortex is the Engineering Operations Platform that enables organizations to continuously improve their operational maturity and reduce de",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_h1ecid",
-    "title": "Lead Product Designer",
-    "company": "Cortex",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=cortex.io&sz=128",
-    "category": "design",
-    "url": "https://job-boards.greenhouse.io/cortex/jobs/5166184008",
-    "source": "greenhouse",
-    "tags": [
-      "Product Design"
-    ],
-    "postedAt": "2026-03-28T03:45:36-04:00",
-    "scrapedAt": "2026-04-05T00:24:30.731Z",
-    "description": "&lt;p&gt;&lt;strong&gt;🧠 About Cortex&lt;/strong&gt;&lt;br&gt;Cortex is the Engineering Operations Platform that enables organizations to continuously improve their operational maturity and reduce de",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_ju2rxs",
-    "title": "Senior Application Security Engineer",
-    "company": "Brex",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=brex.com&sz=128",
-    "category": "engineering",
-    "url": "https://www.brex.com/careers/8426273002?gh_jid=8426273002",
-    "source": "greenhouse",
-    "tags": [
-      "Engineering"
-    ],
-    "postedAt": "2026-03-27T16:39:32-04:00",
-    "scrapedAt": "2026-04-05T00:23:35.278Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;Why join us&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Brex is the AI-powered spend platform. We help companies spend with confidence with inte",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_8qkobk",
-    "title": "Senior Front End Engineer - International Contractor",
-    "company": "Knack",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=knack.com&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/knack/jobs/4186717009",
-    "source": "greenhouse",
-    "tags": [
-      "Engineering"
-    ],
-    "postedAt": "2026-03-27T14:58:12-04:00",
-    "scrapedAt": "2026-04-05T00:25:11.164Z",
-    "description": "&lt;p&gt;&lt;strong&gt;About Knack&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;a href=&quot;https://www.knack.com/&quot;&gt;Knack&lt;/a&gt; is an AI-powered no-code software development platform enabling or",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_4yt3f7",
-    "title": "Principal Software Engineer, Web Data - Tech Lead",
-    "company": "ZoomInfo",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=zoominfo.com&sz=128",
-    "category": "engineering",
-    "url": "https://www.zoominfo.com/careers?gh_jid=8378092002",
-    "source": "greenhouse",
-    "tags": [
-      "936 Engineering - Data Engineering"
-    ],
-    "postedAt": "2026-03-27T14:04:25-04:00",
-    "scrapedAt": "2026-04-05T00:23:57.282Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;ZoomInfo is where careers accelerate. We move fast, think boldly, and empower you to do the best work of your life. You’ll be surrounded by teammate",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "ashby_pqjxtb",
-    "title": "Software Engineer - Supavisor",
-    "company": "Supabase",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=supabase.com&sz=128",
-    "category": "engineering",
-    "url": "https://jobs.ashbyhq.com/supabase/8a49c4b3-a48b-4d6a-9c3c-36943fcd0dfb",
-    "source": "ashby",
-    "tags": [
-      "Engineering",
-      "Engineering"
-    ],
-    "postedAt": "2026-03-27T08:30:21.983Z",
-    "scrapedAt": "2026-04-05T00:23:28.727Z",
-    "description": "About Supabase Supabase is the Postgres development platform, built by developers for developers. We provide a complete backend solution including Database, Auth, Storage, Edge Functions, Realtime, an",
-    "isWorldwide": true,
-    "employmentType": "FullTime"
-  },
-  {
-    "id": "greenhouse_zcbqw8",
-    "title": "Member of Technical Staff, Research Engineer (GPU Performance)",
-    "company": "RunwayML",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=runwayml.com&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/runwayml/jobs/4015515005",
-    "source": "greenhouse",
-    "tags": [
-      "Research"
-    ],
-    "postedAt": "2026-03-26T17:15:47-04:00",
-    "scrapedAt": "2026-04-05T00:23:55.203Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p class=&quot;p1&quot;&gt;We are building AI to simulate the world through merging art and science.&lt;br&gt;&lt;br&gt;We believe that world models are a",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_336hfk",
-    "title": "Product Manager, Platform & Monetization",
-    "company": "Expel",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=expel.com&sz=128",
-    "category": "product",
-    "url": "https://expel.com/about/career-listing/8474600002?gh_jid=8474600002",
-    "source": "greenhouse",
-    "tags": [
-      "Product"
-    ],
-    "postedAt": "2026-03-26T16:41:38-04:00",
-    "scrapedAt": "2026-04-05T00:23:53.826Z",
-    "description": "&lt;p&gt;As a Product Manager (Platform &amp;amp; Monetization) at Expel, you will lead our product management team in developing, launching, and refining systems that control how customers purchase, ",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_s3g6ll",
-    "title": "Member of Technical Staff, Research Engineer",
-    "company": "RunwayML",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=runwayml.com&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/runwayml/jobs/4647571005",
-    "source": "greenhouse",
-    "tags": [
-      "Research"
-    ],
-    "postedAt": "2026-03-26T15:44:33-04:00",
-    "scrapedAt": "2026-04-05T00:23:55.203Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p class=&quot;p1&quot;&gt;We are building AI to simulate the world through merging art and science.&lt;br&gt;&lt;br&gt;We believe that world models are a",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_h8mhbe",
-    "title": "Member of Technical Staff, Research Engineer (Datasets)",
-    "company": "RunwayML",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=runwayml.com&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/runwayml/jobs/4483574005",
-    "source": "greenhouse",
-    "tags": [
-      "Research"
-    ],
-    "postedAt": "2026-03-26T15:41:13-04:00",
-    "scrapedAt": "2026-04-05T00:23:55.203Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p class=&quot;p1&quot;&gt;We are building AI to simulate the world through merging art and science.&lt;br&gt;&lt;br&gt;We believe that world models are a",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_adqjq0",
-    "title": "CX Services Program Manager",
-    "company": "GitLab",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=gitlab.com&sz=128",
-    "category": "product",
-    "url": "https://job-boards.greenhouse.io/gitlab/jobs/8481256002",
-    "source": "greenhouse",
-    "tags": [
-      "Customer Success"
-    ],
-    "postedAt": "2026-03-26T15:33:50-04:00",
-    "scrapedAt": "2026-04-05T00:23:30.024Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_3jboc3",
-    "title": "Quantum Applications Architect (Compilation)",
-    "company": "PsiQuantum",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=psiquantum.com&sz=128",
-    "category": "engineering",
-    "url": "https://www.psiquantum.com/apply?gh_jid=7651687003",
-    "source": "greenhouse",
-    "tags": [
-      "Engineering"
-    ],
-    "postedAt": "2026-03-26T15:17:29-04:00",
-    "scrapedAt": "2026-04-05T00:24:48.611Z",
-    "description": "&lt;p&gt;PsiQuantum’s&amp;nbsp;mission is to build the first useful quantum computers—machines capable of delivering the breakthroughs the field has long promised. Since our founding in 2016, our sing",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_wwy06k",
-    "title": "Senior Software Engineer, Treasury",
-    "company": "Lithic",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=lithic.com&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/lithic/jobs/5737189004",
-    "source": "greenhouse",
-    "tags": [
-      "Engineering"
-    ],
-    "postedAt": "2026-03-26T13:04:16-04:00",
-    "scrapedAt": "2026-04-05T00:24:05.321Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Lithic is the modern card issuing and processing platform empowering ambitious financial companies to build the future of payments.&lt;/p&gt; &lt;p&",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_65bo7n",
-    "title": "Senior Machine Learning Engineer",
-    "company": "Fingerprint",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=fingerprint.com&sz=128",
-    "category": "engineering",
-    "url": "https://fingerprint.com/careers/jobs/apply/?gh_jid=5657494004",
-    "source": "greenhouse",
-    "tags": [
-      "Engineering"
-    ],
-    "postedAt": "2026-03-26T11:45:15-04:00",
-    "scrapedAt": "2026-04-05T00:25:09.987Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;Fingerprint&lt;/strong&gt;&amp;nbsp;empowers developers to stop online fraud at the source.&lt;/p&gt; &lt;p&gt;We work on turning radi",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_sc7yip",
-    "title": "Engineering Manager, Program Services",
-    "company": "Lithic",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=lithic.com&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/lithic/jobs/5830207004",
-    "source": "greenhouse",
-    "tags": [
-      "Engineering"
-    ],
-    "postedAt": "2026-03-26T10:36:59-04:00",
-    "scrapedAt": "2026-04-05T00:24:05.320Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Lithic is the modern card issuing and processing platform empowering ambitious financial companies to build the future of payments.&lt;/p&gt; &lt;p&",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_gf7lv6",
-    "title": "Engineering Manager, Lithic Web",
-    "company": "Lithic",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=lithic.com&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/lithic/jobs/5817197004",
-    "source": "greenhouse",
-    "tags": [
-      "Engineering"
-    ],
-    "postedAt": "2026-03-26T10:35:57-04:00",
-    "scrapedAt": "2026-04-05T00:24:05.320Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;Lithic is the modern card issuing and processing platform empowering ambitious financial companies to build the future of payments.&lt;/p&gt; &lt;p&",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "ashby_h6nxxt",
-    "title": "Senior Full Stack Engineer - AI",
-    "company": "Trust Wallet",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=trustwallet.com&sz=128",
-    "category": "engineering",
-    "url": "https://jobs.ashbyhq.com/trust-wallet/0118b24b-52e1-4849-b681-3c46ad6e1860",
-    "source": "ashby",
-    "tags": [
-      "Engineering",
-      "Engineering"
-    ],
-    "postedAt": "2026-03-26T13:36:10.981Z",
-    "scrapedAt": "2026-04-05T00:25:09.112Z",
-    "description": "About the company Trust Wallet is the leading non-custodial cryptocurrency wallet, trusted by over 200 million people worldwide to securely manage and grow their digital assets. Our vision is to give ",
-    "isWorldwide": true,
-    "employmentType": "FullTime"
-  },
-  {
-    "id": "greenhouse_97nzwd",
-    "title": "Staff Data Scientist - AI-enabled Product Understanding (Inference)",
-    "company": "Airbnb",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=airbnb.com&sz=128",
-    "category": "engineering",
-    "url": "https://careers.airbnb.com/positions/7360248?gh_jid=7360248",
-    "source": "greenhouse",
-    "tags": [
-      "Data Science"
-    ],
-    "postedAt": "2026-03-26T09:03:30-04:00",
-    "scrapedAt": "2026-04-05T00:24:24.749Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-family: helvetica, arial, sans-serif; font-size: 12pt;&quot;&gt;Airbnb was born in 2007 when two hosts welcomed three gues",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_3clai2",
-    "title": "Senior / Staff Full-Stack Engineer (Node.js / Next.js)",
-    "company": "ExpressVPN",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=expressvpn.com&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/expressvpn/jobs/8480825002",
-    "source": "greenhouse",
-    "tags": [
-      "Engineering"
-    ],
-    "postedAt": "2026-03-26T07:04:42-04:00",
-    "scrapedAt": "2026-04-05T00:24:25.946Z",
-    "description": "&lt;p&gt;&lt;strong&gt;Location:&lt;/strong&gt; Germany&lt;br&gt;&lt;strong&gt;Team:&lt;/strong&gt; White-label Platform &lt;br&gt;&lt;strong&gt;Working Arrangement&lt;/strong&gt;: Open to remote &amp",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_555oqj",
-    "title": "Systems Engineer, Requirements and Integration",
-    "company": "Oklo",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=oklo.com&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/oklo/jobs/5649054004",
-    "source": "greenhouse",
-    "tags": [
-      "Engineering"
-    ],
-    "postedAt": "2026-03-25T19:59:10-04:00",
-    "scrapedAt": "2026-04-05T00:24:48.578Z",
-    "description": "&lt;div id=&quot;content&quot; class=&quot;highlighter-context page view&quot; data-inline-comments-target=&quot;true&quot; data-testid=&quot;page-content-only&quot;&gt; &lt;div class=&quot;_19pkidpf ",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_kwb0fa",
-    "title": "Software Engineer (Infrastructure) ",
-    "company": "Oklo",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=oklo.com&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/oklo/jobs/5784826004",
-    "source": "greenhouse",
-    "tags": [
-      "Software and DevOps Engineering"
-    ],
-    "postedAt": "2026-03-25T19:55:17-04:00",
-    "scrapedAt": "2026-04-05T00:24:48.577Z",
-    "description": "&lt;p data-renderer-start-pos=&quot;83&quot;&gt;Join us in pioneering the next generation of nuclear reactors! You&#39;ll leverage your software skills alongside engineers from a variety of discipline",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_isz4pa",
-    "title": "Software Engineer",
-    "company": "Oklo",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=oklo.com&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/oklo/jobs/4018702004",
-    "source": "greenhouse",
-    "tags": [
-      "Software and DevOps Engineering"
-    ],
-    "postedAt": "2026-03-25T19:54:00-04:00",
-    "scrapedAt": "2026-04-05T00:24:48.577Z",
-    "description": "&lt;p data-renderer-start-pos=&quot;1&quot;&gt;Join us in pioneering the next generation of nuclear reactors! You&#39;ll leverage your software skills alongside nuclear engineers to model, simulate, d",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_jech8d",
-    "title": "Senior Software Engineer",
-    "company": "Oklo",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=oklo.com&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/oklo/jobs/5739483004",
-    "source": "greenhouse",
-    "tags": [
-      "Software and DevOps Engineering"
-    ],
-    "postedAt": "2026-03-25T19:50:14-04:00",
-    "scrapedAt": "2026-04-05T00:24:48.576Z",
-    "description": "&lt;p&gt;Join us in pioneering the next generation of nuclear reactors! You&#39;ll leverage your software skills alongside nuclear engineers to model, simulate, design, and deploy advanced fission pow",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_rymw50",
-    "title": "Senior Cloud Infrastructure Engineer",
-    "company": "Fingerprint",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=fingerprint.com&sz=128",
-    "category": "engineering",
-    "url": "https://fingerprint.com/careers/jobs/apply/?gh_jid=5824264004",
-    "source": "greenhouse",
-    "tags": [
-      "Engineering"
-    ],
-    "postedAt": "2026-03-25T13:21:09-04:00",
-    "scrapedAt": "2026-04-05T00:25:09.986Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;Fingerprint&lt;/strong&gt;&amp;nbsp;empowers developers to stop online fraud at the source.&lt;/p&gt; &lt;p&gt;We work on turning radi",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_k9vlvb",
-    "title": "Senior Engineering Manager, Design",
-    "company": "GitLab",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=gitlab.com&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/gitlab/jobs/8477658002",
-    "source": "greenhouse",
-    "tags": [
-      "Technical Writing"
-    ],
-    "postedAt": "2026-03-25T13:00:49-04:00",
-    "scrapedAt": "2026-04-05T00:23:30.055Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_il93hs",
-    "title": "Staff Product Designer, Knowledge Graph",
-    "company": "GitLab",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=gitlab.com&sz=128",
-    "category": "design",
-    "url": "https://job-boards.greenhouse.io/gitlab/jobs/8475077002",
-    "source": "greenhouse",
-    "tags": [
-      "Product Design"
-    ],
-    "postedAt": "2026-03-25T11:34:14-04:00",
-    "scrapedAt": "2026-04-05T00:23:30.064Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_utxzl6",
-    "title": "Fuel Performance Engineer",
-    "company": "Oklo",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=oklo.com&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/oklo/jobs/4638962004",
-    "source": "greenhouse",
-    "tags": [
-      "Reactor Engineering"
-    ],
-    "postedAt": "2026-03-25T08:32:34-04:00",
-    "scrapedAt": "2026-04-05T00:24:48.572Z",
-    "description": "&lt;p&gt;Thanks for your interest in Oklo!&amp;nbsp; We are searching for a Fuel Performance Engineer to join our team.&amp;nbsp;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Position Description&lt;/strong&gt;&l",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_j3c3eh",
-    "title": "Senior Product Manager - MetaMask (Engagement)",
-    "company": "ConsenSys",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=consensys.io&sz=128",
-    "category": "product",
-    "url": "https://consensys.io/open-roles/7551395?gh_jid=7551395",
-    "source": "greenhouse",
-    "tags": [
-      "MetaMask"
-    ],
-    "postedAt": "2026-03-25T06:51:54-04:00",
-    "scrapedAt": "2026-04-05T00:23:32.986Z",
-    "description": "&lt;p&gt;Consensys is the leading blockchain and web3 software company founded by Joe Lubin, CEO of Consensys and Co-Founder of Ethereum. Since 2014, Consensys has been at the forefront of innovation,",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_jkwvbs",
-    "title": "Staff UX Researcher - MetaMask",
-    "company": "ConsenSys",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=consensys.io&sz=128",
-    "category": "design",
-    "url": "https://consensys.io/open-roles/7660360?gh_jid=7660360",
-    "source": "greenhouse",
-    "tags": [
-      "MetaMask"
-    ],
-    "postedAt": "2026-03-25T06:51:54-04:00",
-    "scrapedAt": "2026-04-05T00:23:32.986Z",
-    "description": "&lt;p&gt;Consensys is the leading blockchain and web3 software company founded by Joe Lubin, CEO of Consensys and Co-Founder of Ethereum. Since 2014, Consensys has been at the forefront of innovation,",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_c1sr5k",
-    "title": "Solutions Architect",
-    "company": "SecurityScorecard",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=securityscorecard.com&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/securityscorecard/jobs/7744313",
-    "source": "greenhouse",
-    "tags": [
-      "Revenue"
-    ],
-    "postedAt": "2026-03-25T00:30:35-04:00",
-    "scrapedAt": "2026-04-05T00:24:04.268Z",
-    "description": "&lt;p&gt;&lt;strong&gt;About SecurityScorecard:&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;SecurityScorecard is the global leader in cybersecurity ratings, with ",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_d9bzru",
-    "title": "Software Engineer III, Fundraising Tech",
-    "company": "Wikimedia Foundation",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=wikimedia.org&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/wikimedia/jobs/7736459",
-    "source": "greenhouse",
-    "tags": [
-      "Advancement"
-    ],
-    "postedAt": "2026-03-24T15:14:58-04:00",
-    "scrapedAt": "2026-04-05T00:23:53.110Z",
-    "description": "&lt;p&gt;&lt;strong&gt;Summary&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;We are searching for an experienced full-stack software engineer to join the Wikimedia Fundraising Technology team.&amp;nbsp; Each year",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_7wdbb1",
-    "title": "Senior Software Engineer I",
-    "company": "Freenome",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=freenome.com&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/freenome/jobs/8442405002",
-    "source": "greenhouse",
-    "tags": [
-      "Engineering"
-    ],
-    "postedAt": "2026-03-24T14:23:32-04:00",
-    "scrapedAt": "2026-04-05T00:24:29.043Z",
-    "description": "&lt;p&gt;&lt;strong&gt;About this opportunity:&lt;/strong&gt;&lt;strong&gt;&lt;br&gt;&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;span style=&quot;font-weight: 300;&quot;&gt;At Freenome, we are seeking a Se",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_nash28",
-    "title": "Senior Software Engineer II",
-    "company": "Freenome",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=freenome.com&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/freenome/jobs/8414748002",
-    "source": "greenhouse",
-    "tags": [
-      "Engineering"
-    ],
-    "postedAt": "2026-03-24T14:23:32-04:00",
-    "scrapedAt": "2026-04-05T00:24:29.043Z",
-    "description": "&lt;p&gt;&lt;strong&gt;About this opportunity:&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;span style=&quot;font-weight: 300;&quot;&gt;At Freenome we are seeking a Senior Software Engineer to grow our Platf",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "ashby_m6ff0f",
-    "title": "Senior Data Analyst (Web3)",
-    "company": "Trust Wallet",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=trustwallet.com&sz=128",
-    "category": "product",
-    "url": "https://jobs.ashbyhq.com/trust-wallet/04239652-62bb-43d7-87ea-844b0cdfc844",
-    "source": "ashby",
-    "tags": [
-      "Product",
-      "Product"
-    ],
-    "postedAt": "2026-03-24T08:37:48.615Z",
-    "scrapedAt": "2026-04-05T00:25:09.113Z",
-    "description": "About the company Trust Wallet is the leading non-custodial cryptocurrency wallet, trusted by over 200 million people worldwide to securely manage and grow their digital assets. Our vision is to give ",
-    "isWorldwide": true,
-    "employmentType": "FullTime"
-  },
-  {
-    "id": "ashby_7xyb3p",
-    "title": "Senior Frontend Engineer (Web3 - Trading) ",
-    "company": "Trust Wallet",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=trustwallet.com&sz=128",
-    "category": "engineering",
-    "url": "https://jobs.ashbyhq.com/trust-wallet/c40c4c46-4855-476e-b479-b0b18599049f",
-    "source": "ashby",
-    "tags": [
-      "Engineering",
-      "Engineering"
-    ],
-    "postedAt": "2026-03-24T06:57:50.800Z",
-    "scrapedAt": "2026-04-05T00:25:09.113Z",
-    "description": "About the company Trust Wallet is the leading non-custodial cryptocurrency wallet, trusted by over 200 million people worldwide to securely manage and grow their digital assets. Our vision is to give ",
-    "isWorldwide": true,
-    "employmentType": "FullTime"
-  },
-  {
-    "id": "greenhouse_7714zj",
-    "title": "Solutions Architect ",
-    "company": "Typeface",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=typeface.ai&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/typeface/jobs/4989851007",
-    "source": "greenhouse",
-    "tags": [
-      "Customer Success "
-    ],
-    "postedAt": "2026-03-23T19:00:27-04:00",
-    "scrapedAt": "2026-04-05T00:24:22.737Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;&lt;span data-contrast=&quot;none&quot;&gt;&lt;span data-ccp-parastyle=&quot;paragraph&quot; data-ccp-parastyle-defn=&quot;{&amp;quot;",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_b0mw5g",
-    "title": "Staff Data Scientist, Marketplace Optimization and Ranking",
-    "company": "Airbnb",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=airbnb.com&sz=128",
-    "category": "engineering",
-    "url": "https://careers.airbnb.com/positions/7705161?gh_jid=7705161",
-    "source": "greenhouse",
-    "tags": [
-      "Data Science"
-    ],
-    "postedAt": "2026-03-23T16:43:05-04:00",
-    "scrapedAt": "2026-04-05T00:24:24.750Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-family: helvetica, arial, sans-serif; font-size: 12pt;&quot;&gt;Airbnb was born in 2007 when two hosts welcomed three gues",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_12qado",
-    "title": "Lead Software Engineer, Backend",
-    "company": "Cortex",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=cortex.io&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/cortex/jobs/5131543008",
-    "source": "greenhouse",
-    "tags": [
-      "Engineering"
-    ],
-    "postedAt": "2026-03-23T13:21:59-04:00",
-    "scrapedAt": "2026-04-05T00:24:30.731Z",
-    "description": "&lt;p&gt;&lt;strong&gt;🧠 About Cortex&lt;br&gt;&lt;/strong&gt;Cortex is the Engineering Operations Platform that enables organizations to continuously improve their operational maturity and reduce de",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_fwmeeq",
-    "title": "Global Developer Engagement Representative, Part-Time, Contractor",
-    "company": "Roblox",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=roblox.com&sz=128",
-    "category": "engineering",
-    "url": "https://careers.roblox.com/jobs/7736682?gh_jid=7736682",
-    "source": "greenhouse",
-    "tags": [
-      "Developer Relations (Non-Tech)"
-    ],
-    "postedAt": "2026-03-23T12:58:48-04:00",
-    "scrapedAt": "2026-04-05T00:24:04.496Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Every day, tens of millions of people come to Roblox to explore, create, play, learn, and connect wi",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "greenhouse_mvuzl3",
-    "title": "Staff Backend Engineer (AI), Verify",
-    "company": "GitLab",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=gitlab.com&sz=128",
-    "category": "engineering",
-    "url": "https://job-boards.greenhouse.io/gitlab/jobs/8448283002",
-    "source": "greenhouse",
-    "tags": [
-      "DevOps Engineering"
-    ],
-    "postedAt": "2026-03-23T12:28:17-04:00",
-    "scrapedAt": "2026-04-05T00:23:30.063Z",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational",
-    "isWorldwide": true,
-    "employmentType": "Full-time"
-  },
-  {
-    "id": "ashby_q7w32r",
-    "title": "Product Manager - Pricing & Billing",
-    "company": "Supabase",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=supabase.com&sz=128",
-    "category": "product",
-    "url": "https://jobs.ashbyhq.com/supabase/47282e37-34dc-401d-a1cd-dbe85fdd1c22",
-    "source": "ashby",
-    "tags": [
-      "Product",
-      "Product"
-    ],
-    "postedAt": "2026-03-23T14:02:48.327Z",
-    "scrapedAt": "2026-04-05T00:23:28.726Z",
-    "description": "About Supabase Supabase is the Postgres development platform, built by developers for developers to help them ship countless products that people love. This scale means pricing is never a background c",
-    "isWorldwide": true,
-    "employmentType": "FullTime"
-  },
-  {
-    "id": "ashby_5ovvhd",
-    "title": "Software Engineer, Frontend",
-    "company": "Vector",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=vector.com&sz=128",
-    "category": "engineering",
-    "url": "https://jobs.ashbyhq.com/vector/96a4906c-1bc2-469f-b9c0-7cb06cc1982b",
-    "source": "ashby",
-    "tags": [
-      "Engineering",
-      "Engineering"
-    ],
-    "postedAt": "2026-03-22T19:03:43.173Z",
-    "scrapedAt": "2026-04-05T00:25:07.767Z",
-    "description": "About Vector Vector builds mobile and web technology that makes freight move faster. Our platform is used by warehouses, distribution centers, and carriers to streamline check-ins, appointments, dock ",
-    "isWorldwide": true,
-    "employmentType": "FullTime"
   }
 ]

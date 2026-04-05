@@ -1,6 +1,4 @@
-export type Category = "creative";
-
-export type Region = "ww" | "noam" | "eur" | "apac" | "latam" | "mena" | "ssa";
+export type Category = "engineering" | "product" | "design";
 
 export type Source =
   | "greenhouse"
@@ -9,27 +7,6 @@ export type Source =
   | "gem"
   | "smartrecruiters"
   | "workable"
-  | "teamtailor"
-  | "bamboohr"
-  | "recruitee"
-  | "jazzhr"
-  | "personio"
-  | "breezyhr"
-  | "pinpoint"
-  | "dover"
-  | "comeet"
-  | "gohire"
-  | "rippling"
-  | "zoho"
-  | "himalayas"
-  | "remoteok"
-  | "remotive"
-  | "jobicy"
-  | "arbeitnow"
-  | "adzuna"
-  | "themuse"
-  | "hn-whoishiring"
-  | "dribbble"
   | "user-submitted";
 
 export interface Job {
@@ -45,9 +22,9 @@ export interface Job {
   postedAt: string; // ISO date
   scrapedAt: string; // ISO date
   description?: string;
-  region: Region;
+  isWorldwide: boolean;
   employmentType?: string;
-  expired?: boolean; // true if older than 14 days
+  expired?: boolean; // true if older than 7 days
 }
 
 export interface JobSubmission {
@@ -66,7 +43,7 @@ export interface RemoteCompany {
   name: string;
   domain: string; // e.g. "gitlab.com" — used for logo via logo.clearbit.com
   careersUrl: string;
-  atsType?: "greenhouse" | "lever" | "ashby" | "gem" | "smartrecruiters" | "workable" | "teamtailor" | "bamboohr" | "recruitee" | "jazzhr" | "personio" | "breezyhr" | "pinpoint" | "dover" | "comeet" | "gohire" | "rippling" | "zoho" | "custom";
+  atsType?: "greenhouse" | "lever" | "ashby" | "gem" | "smartrecruiters" | "workable" | "custom";
   atsSlug?: string; // e.g. "gitlab" for boards.greenhouse.io/gitlab
 }
 
@@ -76,6 +53,6 @@ export function getCompanyLogoUrl(domain: string): string {
   return `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
 }
 
-// 8 days — keeps listings fresh, peak application window is days 1–7
-export const JOB_EXPIRY_DAYS = 8;
+// 7 days (1 week) — matches scraper cutoff
+export const JOB_EXPIRY_DAYS = 7;
 export const JOB_EXPIRY_MS = JOB_EXPIRY_DAYS * 24 * 60 * 60 * 1000;
