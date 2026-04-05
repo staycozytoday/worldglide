@@ -2,11 +2,11 @@
 
 import { useCallback, useSyncExternalStore } from "react";
 
-const STORAGE_KEY = "visited-companies";
+const STORAGE_KEY = "visited-jobs";
 
 /**
- * Track which companies the user has clicked on.
- * Stored in localStorage as a JSON object: { [company]: timestamp }
+ * Track which individual jobs the user has clicked on.
+ * Stored in localStorage as a JSON object: { [jobId]: timestamp }
  * Expires entries older than 30 days to avoid bloat.
  */
 
@@ -57,13 +57,13 @@ export function useVisited() {
   const store = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 
   const isVisited = useCallback(
-    (company: string) => company in store,
+    (jobId: string) => jobId in store,
     [store],
   );
 
-  const markVisited = useCallback((company: string) => {
+  const markVisited = useCallback((jobId: string) => {
     const s = getStore();
-    s[company] = Date.now();
+    s[jobId] = Date.now();
     cache = { ...s };
     persist();
   }, []);

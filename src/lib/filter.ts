@@ -792,12 +792,20 @@ export function isRemoteJob(job: FilterableJob, fullDescription?: string): boole
     if (loc.includes(kw)) return true;
   }
 
-  // Location is a city/region name (e.g. "New York") — check description for office signals
-  // Companies often put HQ city as location even for remote roles.
+  // Location is a city/region name — check description for office signals
   const desc = (fullDescription || job.description || "").toLowerCase();
   for (const p of OFFICE_DESCRIPTION_SIGNALS) {
     if (p.test(desc)) return false;
   }
+
+  // Check if "remote" appears anywhere in description as a positive signal
+  const hasRemoteInDesc = REMOTE_LOCATION_KEYWORDS.some(kw => desc.includes(kw));
+  if (hasRemoteInDesc) return true;
+
+  // Location looks like a physical address (City, ST or City, Country) with
+  // no remote signal anywhere → reject. Many on-site jobs omit "on-site" tag.
+  const CITY_PATTERN = /\b[a-z]+(?:\s[a-z]+)*,\s*[a-z]{2,}\b/;
+  if (CITY_PATTERN.test(loc)) return false;
 
   // No disqualifying signal found → treat as remote-eligible
   return true;

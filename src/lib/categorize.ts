@@ -67,6 +67,22 @@ const EXCLUDE_PATTERNS = [
   /\bpolicy\s+design/i,
   /\barchitectural\s+project/i,                                   // architecture/construction
 
+  // ── Aerospace / defense / energy / industrial (expanded) ──────────────────
+  /\b(avionics|battery|energy\s+storage|thermal|optical)\s+design/i,
+  /\bhardware\s+(design\s+)?(manager|director|lead|head)/i,
+  /\b(aerospace|defense|naval|marine)\s+design/i,
+  /\b(power\s+systems?|antenna|radar|sonar)\s+design/i,
+  /\b(process|chemical|pipeline)\s+design/i,
+  /\bembedded\s+(systems?\s+)?design/i,
+  /\btest\s+(design\s+)?engineer/i,
+  /\bquality\s+(design\s+)?engineer/i,
+  /\bvalidation\s+engineer/i,
+  /\bfirmware\s+(design|engineer)/i,
+  /\broboti(cs?|x)\s+(design|engineer)/i,
+
+  // ── Hardware design leadership (before creative "design manager") ──
+  /\b(hardware|mechanical|electrical|structural|systems|civil|avionics|thermal|optical|battery|manufacturing|facilities?|mep|antenna)\s+design\s+(manager|director|lead|head)/i,
+
   // ── Fabrication / prototyping (hardware) ──────────────────────────────────
   /machinist/i,
   /fabrication\s+specialist/i,
@@ -169,6 +185,11 @@ const CREATIVE_PATTERNS = [
   /\bcreative\s+(coder|developer|engineer|technologist)\b/i,
   /\bdesign\s+engineer/i,
   /\bcreative\s+tech/i,
+  // AI-native creative
+  /\bai\s+(?:native\s+)?(?:product\s+)?designer\b/i,
+  /\bai\s+(?:native\s+)?(?:ux|ui|visual|graphic|brand|motion|experience|interaction)\s+designer\b/i,
+  /\bai\s+design(?:er)?\b/i,
+  /\bgenai\s+design/i,
   // Specialised
   /\bservice\s+design/i,
   /\bexperience\s+design/i,
@@ -183,10 +204,6 @@ const CREATIVE_PATTERNS = [
   /\bux\s+copywriter/i,
   /\binstructional\s+design/i,
   /\blearning\s+(experience|design)\b/i,
-  /\bindustrial\s+design/i,
-  /\binterior\s+design/i,
-  // Bare "designer"
-  /\bdesigner\b/i,
 ];
 
 export function categorizeJob(

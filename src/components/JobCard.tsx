@@ -9,7 +9,7 @@ export default function JobCard({ job, index = 0 }: { job: Job; index?: number }
   const fresh = isNew(job.postedAt);
   const { isVisited, markVisited } = useVisited();
   const { isFavorited, toggleFavorite } = useFavorites();
-  const visited = isVisited(job.company);
+  const visited = isVisited(job.id);
   const faved = isFavorited(job.id);
 
   return (
@@ -24,7 +24,7 @@ export default function JobCard({ job, index = 0 }: { job: Job; index?: number }
         href={job.url}
         target="_blank"
         rel="noopener noreferrer"
-        onClick={() => markVisited(job.company)}
+        onClick={() => markVisited(job.id)}
         className="flex-1 min-w-0 flex items-center gap-2 h-full"
       >
         <span className={`text-[13px] truncate ${visited ? "text-[var(--color-text-muted)]" : "text-[var(--color-text)]"}`}>
@@ -46,7 +46,7 @@ export default function JobCard({ job, index = 0 }: { job: Job; index?: number }
         href={job.url}
         target="_blank"
         rel="noopener noreferrer"
-        onClick={() => markVisited(job.company)}
+        onClick={() => markVisited(job.id)}
         className="w-[96px] sm:w-[160px] shrink-0 flex items-center justify-end h-full"
       >
         <span className={`text-[13px] truncate ${visited ? "text-[var(--color-text-muted)]" : "text-[var(--color-text)]"}`}>
