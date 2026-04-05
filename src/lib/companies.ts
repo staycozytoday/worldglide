@@ -349,7 +349,6 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "MailerLite", domain: "mailerlite.com", careersUrl: "https://www.mailerlite.com/jobs", atsType: "custom" },
   { name: "Hotjar", domain: "hotjar.com", careersUrl: "https://www.hotjar.com/careers/", atsType: "custom" },
   { name: "DuckDuckGo", domain: "duckduckgo.com", careersUrl: "https://duckduckgo.com/hiring", atsType: "ashby", atsSlug: "duck-duck-go" },
-  { name: "Dribbble", domain: "dribbble.com", careersUrl: "https://dribbble.com/careers", atsType: "custom" },
   { name: "X-Team", domain: "x-team.com", careersUrl: "https://x-team.com/join/", atsType: "custom" },
   { name: "Shopify", domain: "shopify.com", careersUrl: "https://www.shopify.com/careers", atsType: "custom" },
   { name: "Crossover", domain: "crossover.com", careersUrl: "https://www.crossover.com/jobs", atsType: "custom" },
@@ -1941,6 +1940,35 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   // imported 2026-03-10 (remoteintech scan)
   { name: "Zyte",               domain: "zyte.com",              careersUrl: "https://apply.workable.com/zyte",           atsType: "workable", atsSlug: "zyte" },
   { name: "DevSquad",           domain: "devsquad.com",          careersUrl: "https://apply.workable.com/devsquad",       atsType: "workable", atsSlug: "devsquad" },
+
+  // ── Batch: funded startups (topstartups.io, 2026-04-05) ──
+
+  // ashby — recently funded
+  { name: "Adaptive Security",  domain: "adaptivesecurity.com",  careersUrl: "https://jobs.ashbyhq.com/adaptivesecurity",  atsType: "ashby", atsSlug: "adaptivesecurity" },
+  { name: "Opal Security",      domain: "opal.dev",              careersUrl: "https://jobs.ashbyhq.com/Opal",              atsType: "ashby", atsSlug: "Opal" },
+  { name: "Joyful Health",      domain: "joyfulhealth.com",      careersUrl: "https://jobs.ashbyhq.com/joyfulhealth",      atsType: "ashby", atsSlug: "joyfulhealth" },
+  { name: "Doppel",             domain: "doppel.com",            careersUrl: "https://jobs.ashbyhq.com/doppel",            atsType: "ashby", atsSlug: "doppel" },
+  { name: "Blossom Health",     domain: "blossomhealth.com",     careersUrl: "https://jobs.ashbyhq.com/Blossom-Health",    atsType: "ashby", atsSlug: "Blossom-Health" },
+  { name: "Omnea",              domain: "omnea.com",             careersUrl: "https://jobs.ashbyhq.com/omnea",             atsType: "ashby", atsSlug: "omnea" },
+  { name: "Listen Labs",        domain: "listenlabs.com",        careersUrl: "https://jobs.ashbyhq.com/listenlabs",        atsType: "ashby", atsSlug: "listenlabs" },
+  { name: "Avoca",              domain: "avoca.ai",              careersUrl: "https://jobs.ashbyhq.com/avoca",             atsType: "ashby", atsSlug: "avoca" },
+  { name: "Traba",              domain: "traba.work",            careersUrl: "https://jobs.ashbyhq.com/traba",             atsType: "ashby", atsSlug: "traba" },
+  { name: "Ambience Healthcare",domain: "ambiencehealthcare.com",careersUrl: "https://jobs.ashbyhq.com/ambiencehealthcare",atsType: "ashby", atsSlug: "ambiencehealthcare" },
+  { name: "Tennr",              domain: "tennr.com",             careersUrl: "https://jobs.ashbyhq.com/tennr",             atsType: "ashby", atsSlug: "tennr" },
+  { name: "XBOW",               domain: "xbow.com",             careersUrl: "https://jobs.ashbyhq.com/xbowcareers",       atsType: "ashby", atsSlug: "xbowcareers" },
+  { name: "OpenRouter",         domain: "openrouter.ai",         careersUrl: "https://jobs.ashbyhq.com/openrouter",        atsType: "ashby", atsSlug: "openrouter" },
+
+  // greenhouse — recently funded
+  { name: "Harmonic",           domain: "harmonic.ai",           careersUrl: "https://boards.greenhouse.io/harmonic",      atsType: "greenhouse", atsSlug: "harmonic" },
+
+  // ── Batch: arc.dev remote companies (2026-04-05) ──
+
+  // ashby
+  { name: "Hinge Health",       domain: "hingehealth.com",       careersUrl: "https://jobs.ashbyhq.com/hinge-health",      atsType: "ashby", atsSlug: "hinge-health" },
+
+  // greenhouse
+  { name: "Ubiquiti",           domain: "ui.com",                careersUrl: "https://careers.ui.com/",                    atsType: "greenhouse", atsSlug: "ubiquiti" },
+  { name: "ExtraHop Networks",  domain: "extrahop.com",          careersUrl: "https://www.extrahop.com/company/careers/",  atsType: "greenhouse", atsSlug: "extrahopnetworks" },
 ];
 
 /** number of companies we actually scrape (excludes custom) */
