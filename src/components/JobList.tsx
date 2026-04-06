@@ -61,7 +61,7 @@ export default function JobList({ jobs, title, subtitle, totalCount }: JobListPr
       case "company":
         return dir * a.company.localeCompare(b.company);
       case "type":
-        return dir * a.region.localeCompare(b.region);
+        return dir * (a.region ?? "").localeCompare(b.region ?? "");
       default:
         return 0;
     }

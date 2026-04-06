@@ -1,4 +1,6 @@
-export type Category = "engineering" | "product" | "design";
+export type Category = "creative";
+
+export type Region = "ww" | "noam" | "latam" | "eur" | "mena" | "ssa" | "apac";
 
 export type Source =
   | "greenhouse"
@@ -7,6 +9,17 @@ export type Source =
   | "gem"
   | "smartrecruiters"
   | "workable"
+  | "personio"
+  | "breezyhr"
+  | "pinpoint"
+  | "himalayas"
+  | "remoteok"
+  | "remotive"
+  | "jobicy"
+  | "arbeitnow"
+  | "hn"
+  | "hn-whoishiring"
+  | "dribbble"
   | "user-submitted";
 
 export interface Job {
@@ -22,7 +35,8 @@ export interface Job {
   postedAt: string; // ISO date
   scrapedAt: string; // ISO date
   description?: string;
-  isWorldwide: boolean;
+  isWorldwide?: boolean;
+  region?: Region;
   employmentType?: string;
   expired?: boolean; // true if older than 7 days
 }
@@ -43,7 +57,7 @@ export interface RemoteCompany {
   name: string;
   domain: string; // e.g. "gitlab.com" — used for logo via logo.clearbit.com
   careersUrl: string;
-  atsType?: "greenhouse" | "lever" | "ashby" | "gem" | "smartrecruiters" | "workable" | "custom";
+  atsType?: "greenhouse" | "lever" | "ashby" | "gem" | "smartrecruiters" | "workable" | "personio" | "breezyhr" | "pinpoint" | "custom";
   atsSlug?: string; // e.g. "gitlab" for boards.greenhouse.io/gitlab
 }
 
