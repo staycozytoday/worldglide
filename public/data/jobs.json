@@ -1,5 +1,73 @@
 [
   {
+    "id": "greenhouse_kxizys",
+    "title": "Product Designer II - Security",
+    "company": "Elastic",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=elastic.co&sz=128",
+    "category": "creative",
+    "url": "https://jobs.elastic.co/jobs?gh_jid=7716465&gh_jid=7716465",
+    "source": "greenhouse",
+    "tags": [
+      "Security - Cross Team"
+    ],
+    "postedAt": "2026-04-07T04:29:12-04:00",
+    "scrapedAt": "2026-04-07T08:55:21.425Z",
+    "description": "Elastic, the Search AI Company, enables everyone to find the answers they need in real time, using all their data, at scale — unleashing the potential of businesses and people. The Elastic Search AI P",
+    "region": "eur",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_dhtkhb",
+    "title": "Principal Product Designer",
+    "company": "Fivetran",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=fivetran.com&sz=128",
+    "category": "creative",
+    "url": "https://www.fivetran.com/careers/job?gh_jid=7656004003",
+    "source": "greenhouse",
+    "tags": [
+      "Business Intelligence Department"
+    ],
+    "postedAt": "2026-04-07T03:16:35-04:00",
+    "scrapedAt": "2026-04-07T08:55:51.414Z",
+    "description": "From Fivetran’s founding until now, our mission has remained the same: to make access to data as simple and reliable as electricity. With Fivetran, customer data arrives in their warehouses, canonical",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_j9s1hu",
+    "title": "Brand Designer",
+    "company": "Parloa",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=parloa.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.eu.greenhouse.io/parloa/jobs/4814856101",
+    "source": "greenhouse",
+    "tags": [
+      "Marketing"
+    ],
+    "postedAt": "2026-04-07T03:07:52-04:00",
+    "scrapedAt": "2026-04-07T08:56:35.162Z",
+    "description": "About Parloa Parloa’s mission is to make every customer conversation feel effortless for both customers and the companies serving them. As agentic AI accelerates, Parloans are shaping the foundation o",
+    "region": "eur",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_kcrctc",
+    "title": "Motion Designer",
+    "company": "DoorDash",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=doordash.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/doordashusa/jobs/7776270",
+    "source": "greenhouse",
+    "tags": [
+      "411 Brand Marketing"
+    ],
+    "postedAt": "2026-04-07T01:01:37-04:00",
+    "scrapedAt": "2026-04-07T08:57:01.908Z",
+    "description": "About the Team Superette is DoorDash’s award-winning in-house creative studio—a multi-disciplinary collective built to inspire, lead, and deliver culture-shaping work across every channel and touchpoi",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
     "id": "greenhouse_13i95i",
     "title": "Senior Product Designer, Design Systems",
     "company": "Affirm",
@@ -11,7 +79,7 @@
       "User Experience"
     ],
     "postedAt": "2026-04-06T18:32:51-04:00",
-    "scrapedAt": "2026-04-07T02:26:52.597Z",
+    "scrapedAt": "2026-04-07T08:55:49.037Z",
     "description": "Affirm is reinventing credit to make it more honest and friendly, giving consumers the flexibility to buy now and pay later without any hidden fees or compounding interest. Product Design at Affirm dr",
     "region": "noam",
     "employmentType": "full-time"
@@ -28,7 +96,7 @@
       "User Experience"
     ],
     "postedAt": "2026-04-06T18:32:42-04:00",
-    "scrapedAt": "2026-04-07T02:26:52.604Z",
+    "scrapedAt": "2026-04-07T08:55:49.045Z",
     "description": "Affirm is reinventing credit to make it more honest and friendly, giving consumers the flexibility to buy now and pay later without any hidden fees or compounding interest. Product Design at Affirm dr",
     "region": "noam",
     "employmentType": "full-time"
@@ -45,7 +113,7 @@
       "Marketing "
     ],
     "postedAt": "2026-04-06T18:22:04-04:00",
-    "scrapedAt": "2026-04-07T02:27:45.605Z",
+    "scrapedAt": "2026-04-07T08:56:29.807Z",
     "description": "Innovate with purpose At BILL, we believe in empowering the businesses that drive our economy. By replacing outdated financial processes with innovative tools, we help businesses—from startups to esta",
     "region": "noam",
     "employmentType": "full-time"
@@ -62,7 +130,7 @@
       "Product Design"
     ],
     "postedAt": "2026-04-06T18:07:16-04:00",
-    "scrapedAt": "2026-04-07T02:26:33.123Z",
+    "scrapedAt": "2026-04-07T08:55:38.542Z",
     "description": "Reddit is a community of communities. It’s built on shared interests, passion, and trust, and is home to the most open and authentic conversations on the internet. Every day, Reddit users submit, vote",
     "region": "noam",
     "employmentType": "full-time"
@@ -80,26 +148,9 @@
       "Design"
     ],
     "postedAt": "2026-04-06T22:04:14.869Z",
-    "scrapedAt": "2026-04-07T02:26:59.962Z",
+    "scrapedAt": "2026-04-07T08:59:50.444Z",
     "description": "Hi, Future Homie! At Homebase, you’ll join a team that’s bold, fast-moving, and obsessed with helping small businesses thrive. We build with empathy, act with urgency, and take big swings that drive r",
     "region": "noam",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_gn9pij",
-    "title": "Senior Product Designer (Advanced English)",
-    "company": "ThoughtWorks",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=thoughtworks.com&sz=128",
-    "category": "creative",
-    "url": "https://www.thoughtworks.com/careers/jobs/7731450?gh_jid=7731450",
-    "source": "greenhouse",
-    "tags": [
-      "1S_BRPOA DEC Region"
-    ],
-    "postedAt": "2026-04-06T18:03:07-04:00",
-    "scrapedAt": "2026-04-07T02:29:42.281Z",
-    "description": "Thoughtworks is a pioneer in integrating experience design with agile software delivery. Our designers work as part of multi-disciplinary teams that balance the thinking required to understand complex",
-    "region": "latam",
     "employmentType": "full-time"
   },
   {
@@ -115,7 +166,7 @@
       "Marketing"
     ],
     "postedAt": "2026-04-06T21:31:13.920Z",
-    "scrapedAt": "2026-04-07T02:26:00.826Z",
+    "scrapedAt": "2026-04-07T08:57:06.307Z",
     "description": "ABOUT TRADEIFY Tradeify is a fast-growing proprietary trading firm and fintech platform empowering traders with capital, cutting-edge tools, and a high-performance ecosystem. We're building a premium ",
     "region": "ww",
     "employmentType": "full-time"
@@ -132,7 +183,7 @@
       "Product Organization"
     ],
     "postedAt": "2026-04-06T16:54:00-04:00",
-    "scrapedAt": "2026-04-07T02:29:45.564Z",
+    "scrapedAt": "2026-04-07T08:57:10.404Z",
     "description": "You don't just design interfaces, you solve problems people didn't know could be solved. You ask why before you ask how, and you push past surface requirements to find what's really going on. You care",
     "region": "noam",
     "employmentType": "full-time"
@@ -149,7 +200,7 @@
       "Product & Design"
     ],
     "postedAt": "2026-04-06T16:53:12-04:00",
-    "scrapedAt": "2026-04-07T02:29:41.357Z",
+    "scrapedAt": "2026-04-07T08:57:07.212Z",
     "description": "At Playlist, life's richest moments happen when people step away from screens to move, connect, explore, and play. We're building the definitive platform for intentional living, connecting people with",
     "region": "noam",
     "employmentType": "full-time"
@@ -166,7 +217,7 @@
       "Product & Design"
     ],
     "postedAt": "2026-04-06T16:53:12-04:00",
-    "scrapedAt": "2026-04-07T02:29:41.358Z",
+    "scrapedAt": "2026-04-07T08:57:07.212Z",
     "description": "At Playlist, life's richest moments happen when people step away from screens to move, connect, explore, and play. We're building the definitive platform for intentional living, connecting people with",
     "region": "latam",
     "employmentType": "full-time"
@@ -183,7 +234,7 @@
       "Product & Design"
     ],
     "postedAt": "2026-04-06T16:53:12-04:00",
-    "scrapedAt": "2026-04-07T02:29:41.360Z",
+    "scrapedAt": "2026-04-07T08:57:07.214Z",
     "description": "At Playlist, life's richest moments happen when people step away from screens to move, connect, explore, and play. We're building the definitive platform for intentional living, connecting people with",
     "region": "noam",
     "employmentType": "full-time"
@@ -200,7 +251,7 @@
       "Marketing"
     ],
     "postedAt": "2026-04-06T16:53:12-04:00",
-    "scrapedAt": "2026-04-07T02:29:41.364Z",
+    "scrapedAt": "2026-04-07T08:57:07.218Z",
     "description": "At Playlist, life's richest moments happen when people step away from screens to move, connect, explore, and play. We're building the definitive platform for intentional living, connecting people with",
     "region": "latam",
     "employmentType": "full-time"
@@ -217,7 +268,7 @@
       "Maritime & Maneuver Dominance : Maneuver Dominance Engineering : MD - ME"
     ],
     "postedAt": "2026-04-06T16:11:26-04:00",
-    "scrapedAt": "2026-04-07T02:28:08.517Z",
+    "scrapedAt": "2026-04-07T08:56:53.339Z",
     "description": "Anduril Industries is a defense technology company with a mission to transform U.S. and allied military capabilities with advanced technology. By bringing the expertise, technology, and business model",
     "region": "noam",
     "employmentType": "full-time"
@@ -234,24 +285,24 @@
       "Product"
     ],
     "postedAt": "2026-04-06T15:54:59-04:00",
-    "scrapedAt": "2026-04-07T02:29:40.474Z",
+    "scrapedAt": "2026-04-07T08:57:05.771Z",
     "description": "Everlaw is seeking an experienced Senior Product Designe r with a knack for making the complex feel intuitive to join our dynamic Product team. In this role, you’ll play a key role in shaping the futu",
     "region": "noam",
     "employmentType": "full-time"
   },
   {
-    "id": "greenhouse_lxrhyk",
+    "id": "greenhouse_lwn9k7",
     "title": "Instructional Designer - Enterprise",
     "company": "Axon",
     "companyLogo": "https://www.google.com/s2/favicons?domain=axon.com&sz=128",
     "category": "creative",
-    "url": "https://job-boards.greenhouse.io/axon/jobs/7612855003",
+    "url": "https://job-boards.greenhouse.io/axon/jobs/7691291003",
     "source": "greenhouse",
     "tags": [
       "3029 Sales Training"
     ],
-    "postedAt": "2026-04-06T15:43:29-04:00",
-    "scrapedAt": "2026-04-07T02:29:53.317Z",
+    "postedAt": "2026-04-06T15:44:37-04:00",
+    "scrapedAt": "2026-04-07T08:57:15.117Z",
     "description": "Join Axon and be a Force for Good. At Axon, we’re on a mission to Protect Life. We’re explorers, pursuing society’s most critical safety and justice issues with our ecosystem of devices and cloud soft",
     "region": "noam",
     "employmentType": "full-time"
@@ -268,7 +319,7 @@
       "UX"
     ],
     "postedAt": "2026-04-06T15:26:21-04:00",
-    "scrapedAt": "2026-04-07T02:25:42.514Z",
+    "scrapedAt": "2026-04-07T08:55:29.318Z",
     "description": "About the Job: LaunchDarkly’s mission is to power teams to release, measure, and control software safely and at scale. AI tooling has evolved how software is built, but developers and their teams stil",
     "region": "noam",
     "employmentType": "full-time"
@@ -285,7 +336,7 @@
       "UI/UX"
     ],
     "postedAt": "2026-04-06T14:55:44-04:00",
-    "scrapedAt": "2026-04-07T02:27:03.503Z",
+    "scrapedAt": "2026-04-07T08:55:52.185Z",
     "description": "Every day, tens of millions of people come to Roblox to explore, create, play, learn, and connect with friends in 3D immersive digital experiences– all created by our global community of developers an",
     "region": "noam",
     "employmentType": "full-time"
@@ -302,7 +353,7 @@
       "Product"
     ],
     "postedAt": "2026-04-06T14:19:43-04:00",
-    "scrapedAt": "2026-04-07T02:28:58.930Z",
+    "scrapedAt": "2026-04-07T08:56:57.512Z",
     "description": "Strength in Trust OneTrust’s mission is to enable innovation through the responsible use of data and AI. We believe that ensuring data is trusted shouldn’t slow teams down—it should accelerate what’s ",
     "region": "noam",
     "employmentType": "full-time"
@@ -319,7 +370,7 @@
       "Product"
     ],
     "postedAt": "2026-04-06T13:43:28-04:00",
-    "scrapedAt": "2026-04-07T02:26:36.304Z",
+    "scrapedAt": "2026-04-07T08:55:39.657Z",
     "description": "Manager, Product Design Location: Bangalore, India About Rubrik Join the public powerhouse that is securing the future of AI. Rubrik has officially entered a new era. Fresh off a headline-making succe",
     "region": "apac",
     "employmentType": "full-time"
@@ -336,7 +387,7 @@
       "Product"
     ],
     "postedAt": "2026-04-06T13:43:28-04:00",
-    "scrapedAt": "2026-04-07T02:26:36.316Z",
+    "scrapedAt": "2026-04-07T08:55:39.668Z",
     "description": "Senior Manager, Product Design Location: Palo Alto, US About Rubrik Join the public powerhouse that is securing the future of AI. Rubrik has officially entered a new era. Fresh off a headline-making s",
     "region": "ww",
     "employmentType": "full-time"
@@ -353,7 +404,7 @@
       "Product"
     ],
     "postedAt": "2026-04-06T13:43:28-04:00",
-    "scrapedAt": "2026-04-07T02:26:36.317Z",
+    "scrapedAt": "2026-04-07T08:55:39.668Z",
     "description": "Senior Product Designer I Location: Bangalore,India About Rubrik: Join the public powerhouse that is securing the future of AI. Rubrik has officially entered a new era. Fresh off a headline-making suc",
     "region": "apac",
     "employmentType": "full-time"
@@ -370,7 +421,7 @@
       "Product"
     ],
     "postedAt": "2026-04-06T13:43:28-04:00",
-    "scrapedAt": "2026-04-07T02:26:36.319Z",
+    "scrapedAt": "2026-04-07T08:55:39.670Z",
     "description": "Senior User Researcher II Location:-Palo Alto,CA About Rubrik Rubrik is a public company on a mission to secure the world’s data. With Zero Trust Data Security™, we have over $1 Billion in ARR this ye",
     "region": "ww",
     "employmentType": "full-time"
@@ -387,7 +438,7 @@
       "Product"
     ],
     "postedAt": "2026-04-06T13:43:28-04:00",
-    "scrapedAt": "2026-04-07T02:26:36.319Z",
+    "scrapedAt": "2026-04-07T08:55:39.671Z",
     "description": "About Rubrik Rubrik is a newly public company on a mission to secure the world’s data. With Zero Trust Data Security™. Rubrik helps organizations achieve business resilience against cyberattacks, mali",
     "region": "mena",
     "employmentType": "full-time"
@@ -404,7 +455,7 @@
       "Creatives"
     ],
     "postedAt": "2026-04-06T13:20:36-04:00",
-    "scrapedAt": "2026-04-07T02:27:16.269Z",
+    "scrapedAt": "2026-04-07T08:56:01.864Z",
     "description": "Who We Are Verkada is transforming how organizations protect their people and places with an integrated, AI-powered platform. A leader in cloud physical security, Verkada helps organizations strengthe",
     "region": "noam",
     "employmentType": "full-time"
@@ -421,7 +472,7 @@
       "Design Admin"
     ],
     "postedAt": "2026-04-06T13:20:35-04:00",
-    "scrapedAt": "2026-04-07T02:27:16.273Z",
+    "scrapedAt": "2026-04-07T08:56:01.868Z",
     "description": "Who We Are Verkada is transforming how organizations protect their people and places with an integrated, AI-powered platform. A leader in cloud physical security, Verkada helps organizations strengthe",
     "region": "noam",
     "employmentType": "full-time"
@@ -438,7 +489,7 @@
       "UI & UX"
     ],
     "postedAt": "2026-04-06T13:20:35-04:00",
-    "scrapedAt": "2026-04-07T02:27:16.283Z",
+    "scrapedAt": "2026-04-07T08:56:01.879Z",
     "description": "Who We Are Verkada is transforming how organizations protect their people and places with an integrated, AI-powered platform. A leader in cloud physical security, Verkada helps organizations strengthe",
     "region": "noam",
     "employmentType": "full-time"
@@ -455,7 +506,7 @@
       "UI & UX"
     ],
     "postedAt": "2026-04-06T13:20:31-04:00",
-    "scrapedAt": "2026-04-07T02:27:16.283Z",
+    "scrapedAt": "2026-04-07T08:56:01.879Z",
     "description": "Who We Are Verkada is transforming how organizations protect their people and places with an integrated, AI-powered platform. A leader in cloud physical security, Verkada helps organizations strengthe",
     "region": "noam",
     "employmentType": "full-time"
@@ -472,7 +523,7 @@
       "Marketing"
     ],
     "postedAt": "2026-04-06T13:04:03-04:00",
-    "scrapedAt": "2026-04-07T02:25:42.474Z",
+    "scrapedAt": "2026-04-07T08:55:29.334Z",
     "description": "At Webflow, we’re building the world’s leading AI-native Digital Experience Platform, and we’re doing it as a remote-first company built on trust, transparency, and a whole lot of creativity. This wor",
     "region": "latam",
     "employmentType": "full-time"
@@ -489,7 +540,7 @@
       "Creative Services"
     ],
     "postedAt": "2026-04-06T12:48:36-04:00",
-    "scrapedAt": "2026-04-07T02:27:56.754Z",
+    "scrapedAt": "2026-04-07T08:56:42.065Z",
     "description": "About Crunchyroll Founded by fans, Crunchyroll delivers the art and culture of anime to a passionate community. We super-serve over 100 million anime and manga fans across 200+ countries and territori",
     "region": "noam",
     "employmentType": "full-time"
@@ -506,24 +557,24 @@
       "R & D : UX : Customer Experience Platform"
     ],
     "postedAt": "2026-04-06T11:43:55-04:00",
-    "scrapedAt": "2026-04-07T02:25:40.307Z",
+    "scrapedAt": "2026-04-07T08:55:27.080Z",
     "description": "About Toast Our focus is on building the restaurant platform that helps restaurants adapt, take control, and get back to what they do best: building the businesses they love. And because our technolog",
     "region": "noam",
     "employmentType": "full-time"
   },
   {
-    "id": "greenhouse_xe3ws8",
+    "id": "greenhouse_jph6na",
     "title": "Graphic Design Lead",
     "company": "Axon",
     "companyLogo": "https://www.google.com/s2/favicons?domain=axon.com&sz=128",
     "category": "creative",
-    "url": "https://job-boards.greenhouse.io/axon/jobs/7690912003",
+    "url": "https://job-boards.greenhouse.io/axon/jobs/7638556003",
     "source": "greenhouse",
     "tags": [
       "4102 Marketing"
     ],
-    "postedAt": "2026-04-06T11:40:40-04:00",
-    "scrapedAt": "2026-04-07T02:29:53.313Z",
+    "postedAt": "2026-04-06T11:41:53-04:00",
+    "scrapedAt": "2026-04-07T08:57:15.114Z",
     "description": "Join Axon and be a Force for Good. At Axon, we’re on a mission to Protect Life. We’re explorers, pursuing society’s most critical safety and justice issues with our ecosystem of devices and cloud soft",
     "region": "noam",
     "employmentType": "full-time"
@@ -540,7 +591,7 @@
       "Product Department"
     ],
     "postedAt": "2026-04-06T11:16:37-04:00",
-    "scrapedAt": "2026-04-07T02:27:03.551Z",
+    "scrapedAt": "2026-04-07T08:55:51.431Z",
     "description": "From Fivetran’s founding until now, our mission has remained the same: to make access to data as simple and reliable as electricity. With Fivetran, customer data arrives in their warehouses, canonical",
     "region": "noam",
     "employmentType": "full-time"
@@ -558,7 +609,7 @@
       "Design"
     ],
     "postedAt": "2026-04-06T14:53:14.497Z",
-    "scrapedAt": "2026-04-07T02:27:09.263Z",
+    "scrapedAt": "2026-04-07T09:00:04.828Z",
     "description": "The Monad Foundation is a team of dedicated ecosystem and community builders who are on a mission to massively grow the impact of decentralized tech. We believe that the Monad blockchain--the performa",
     "region": "noam",
     "employmentType": "full-time"
@@ -575,7 +626,7 @@
       "Marketing"
     ],
     "postedAt": "2026-04-06T10:52:37-04:00",
-    "scrapedAt": "2026-04-07T02:26:13.199Z",
+    "scrapedAt": "2026-04-07T08:55:30.912Z",
     "description": "The Asana Marketing team is responsible for fueling business growth and building a brand customers love. We create campaigns and content to attract new accounts and inspire current ones to grow with u",
     "region": "noam",
     "employmentType": "full-time"
@@ -592,7 +643,7 @@
       "R & D : UX : Customer Experience Platform"
     ],
     "postedAt": "2026-04-06T10:41:59-04:00",
-    "scrapedAt": "2026-04-07T02:25:40.289Z",
+    "scrapedAt": "2026-04-07T08:55:27.065Z",
     "description": "About Toast Our focus is on building the restaurant platform that helps restaurants adapt, take control, and get back to what they do best: building the businesses they love. And because our technolog",
     "region": "noam",
     "employmentType": "full-time"
@@ -609,7 +660,7 @@
       "Design"
     ],
     "postedAt": "2026-04-06T10:23:11-04:00",
-    "scrapedAt": "2026-04-07T02:25:39.381Z",
+    "scrapedAt": "2026-04-07T08:55:25.010Z",
     "description": "Ready to be pushed beyond what you think you’re capable of? At Coinbase, our mission is to increase economic freedom in the world. It’s a massive, ambitious opportunity that demands the best of us, ev",
     "region": "noam",
     "employmentType": "full-time"
@@ -626,26 +677,9 @@
       "Design"
     ],
     "postedAt": "2026-04-06T09:34:17-04:00",
-    "scrapedAt": "2026-04-07T02:27:10.698Z",
+    "scrapedAt": "2026-04-07T08:55:57.312Z",
     "description": "Headway’s mission is a big one – to build a new mental health care system everyone can access. We’ve built technology that helps people find great therapists with the first software-enabled national n",
     "region": "ww",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_w97wez",
-    "title": "Director, Product Design - Diner",
-    "company": "OpenTable",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=opentable.com&sz=128",
-    "category": "creative",
-    "url": "https://job-boards.greenhouse.io/opentable/jobs/8465454002",
-    "source": "greenhouse",
-    "tags": [
-      "Design"
-    ],
-    "postedAt": "2026-04-06T09:31:42-04:00",
-    "scrapedAt": "2026-04-07T02:30:01.548Z",
-    "description": "With millions of diners, 60,000+ restaurant partners and 25+ years of experience, OpenTable, part of Booking Holdings, Inc. (NASDAQ: BKNG), is an industry leader with a passion for helping restaurants",
-    "region": "noam",
     "employmentType": "full-time"
   },
   {
@@ -660,7 +694,7 @@
       "Creative Services"
     ],
     "postedAt": "2026-04-06T07:43:32-04:00",
-    "scrapedAt": "2026-04-07T02:28:57.991Z",
+    "scrapedAt": "2026-04-07T08:56:56.174Z",
     "description": "Who we are: Geotab ® is a global leader in IoT and connected transportation and certified “Great Place to Work™.” We are a company of diverse and talented individuals who work together to help busines",
     "region": "noam",
     "employmentType": "full-time"
@@ -677,7 +711,7 @@
       "Design"
     ],
     "postedAt": "2026-04-05T09:37:15-04:00",
-    "scrapedAt": "2026-04-07T02:30:01.447Z",
+    "scrapedAt": "2026-04-07T08:57:17.063Z",
     "description": "About Us Welcome to Mixtiles! In the beginning, in 2016, we were just two best friends working on a simple idea: how to make it super easy to turn your favorite smartphone photos into awesome wall art",
     "region": "latam",
     "employmentType": "full-time"
@@ -695,7 +729,7 @@
       "Marketing"
     ],
     "postedAt": "2026-04-05T13:04:26.903Z",
-    "scrapedAt": "2026-04-07T02:27:18.675Z",
+    "scrapedAt": "2026-04-07T09:00:17.790Z",
     "description": "Who we are We're Redis. We built the product that runs the fast apps our world runs on. (If you checked the weather, used your credit card, or looked at your flight status online today, you’re welcome",
     "region": "noam",
     "employmentType": "full-time"
@@ -712,7 +746,7 @@
       "209 - Experience Design"
     ],
     "postedAt": "2026-04-05T08:59:50-04:00",
-    "scrapedAt": "2026-04-07T02:26:48.770Z",
+    "scrapedAt": "2026-04-07T08:55:44.515Z",
     "description": "About Us Founded in 2011, Modus is a global, fully remote team of world-class technologists who thrive in a collaborative, innovative environment. We’re a digital product engineering partner for forwa",
     "region": "noam",
     "employmentType": "full-time"
@@ -729,7 +763,7 @@
       "Body Repair & Tech Trng"
     ],
     "postedAt": "2026-04-05T03:17:39-04:00",
-    "scrapedAt": "2026-04-07T02:27:56.814Z",
+    "scrapedAt": "2026-04-07T08:56:42.822Z",
     "description": "Leading the future in luxury electric and mobility At Lucid, we set out to introduce the most captivating, luxury electric vehicles that elevate the human experience and transcend the perceived limita",
     "region": "ww",
     "employmentType": "full-time"
@@ -746,7 +780,7 @@
       "Product & Engineering"
     ],
     "postedAt": "2026-04-05T01:09:14-04:00",
-    "scrapedAt": "2026-04-07T02:27:15.798Z",
+    "scrapedAt": "2026-04-07T08:56:01.846Z",
     "description": "About Workato Workato transforms technology complexity into business opportunity. As the leader in enterprise orchestration, Workato helps businesses globally streamline operations by connecting data,",
     "region": "noam",
     "employmentType": "full-time"
@@ -763,7 +797,7 @@
       "Product & Engineering"
     ],
     "postedAt": "2026-04-05T01:04:43-04:00",
-    "scrapedAt": "2026-04-07T02:27:15.794Z",
+    "scrapedAt": "2026-04-07T08:56:01.840Z",
     "description": "About Workato Workato transforms technology complexity into business opportunity. As the leader in enterprise orchestration, Workato helps businesses globally streamline operations by connecting data,",
     "region": "noam",
     "employmentType": "full-time"
@@ -780,7 +814,7 @@
       "Product & Engineering"
     ],
     "postedAt": "2026-04-05T00:39:29-04:00",
-    "scrapedAt": "2026-04-07T02:27:15.781Z",
+    "scrapedAt": "2026-04-07T08:56:01.825Z",
     "description": "About Workato Workato transforms technology complexity into business opportunity. As the leader in enterprise orchestration, Workato helps businesses globally streamline operations by connecting data,",
     "region": "noam",
     "employmentType": "full-time"
@@ -797,7 +831,7 @@
       "Product & Engineering"
     ],
     "postedAt": "2026-04-05T00:37:24-04:00",
-    "scrapedAt": "2026-04-07T02:27:15.789Z",
+    "scrapedAt": "2026-04-07T08:56:01.835Z",
     "description": "About Workato Workato transforms technology complexity into business opportunity. As the leader in enterprise orchestration, Workato helps businesses globally streamline operations by connecting data,",
     "region": "noam",
     "employmentType": "full-time"
@@ -814,7 +848,7 @@
       "Design"
     ],
     "postedAt": "2026-04-04T13:28:55-04:00",
-    "scrapedAt": "2026-04-07T02:30:01.549Z",
+    "scrapedAt": "2026-04-07T08:57:17.124Z",
     "description": "With millions of diners, 60,000+ restaurant partners and 25+ years of experience, OpenTable, part of Booking Holdings, Inc. (NASDAQ: BKNG), is an industry leader with a passion for helping restaurants",
     "region": "eur",
     "employmentType": "full-time"
@@ -831,7 +865,7 @@
       "Product Management"
     ],
     "postedAt": "2026-04-03T20:52:19-04:00",
-    "scrapedAt": "2026-04-07T02:27:13.740Z",
+    "scrapedAt": "2026-04-07T08:56:00.748Z",
     "description": "Join us in bringing joy to customer experience. Five9 is a leading provider of cloud contact center software, bringing the power of cloud innovation to customers worldwide. Living our values everyday ",
     "region": "noam",
     "employmentType": "full-time"
@@ -849,7 +883,7 @@
       "Go To Market"
     ],
     "postedAt": "2026-04-03T23:53:35.942Z",
-    "scrapedAt": "2026-04-07T02:25:39.348Z",
+    "scrapedAt": "2026-04-07T08:55:43.854Z",
     "description": "About the team OpenAI is building tools that enable people across an organization to create software, automate work, and build new capabilities with AI. To make that real at scale, we need AI native e",
     "region": "noam",
     "employmentType": "full-time"
@@ -866,7 +900,7 @@
       "1S_BRPOA DEC Region"
     ],
     "postedAt": "2026-04-03T19:52:03-04:00",
-    "scrapedAt": "2026-04-07T02:29:42.278Z",
+    "scrapedAt": "2026-04-07T08:57:08.058Z",
     "description": "Thoughtworks is a pioneer in integrating experience design with agile software delivery. Our designers work as part of multi-disciplinary teams that balance the thinking required to understand complex",
     "region": "latam",
     "employmentType": "full-time"
@@ -883,7 +917,7 @@
       "Vox.com"
     ],
     "postedAt": "2026-04-03T16:26:20-04:00",
-    "scrapedAt": "2026-04-07T02:27:56.720Z",
+    "scrapedAt": "2026-04-07T08:56:42.054Z",
     "description": "Vox is looking for an innovative animator and motion designer to join Unexplainable, to help conceptualize and create a fresh visual look for Vox’s Unexplainable video podcast. Currently an audio-only",
     "region": "noam",
     "employmentType": "full-time"
@@ -900,7 +934,7 @@
       "Education Services"
     ],
     "postedAt": "2026-04-03T16:07:30-04:00",
-    "scrapedAt": "2026-04-07T02:25:30.047Z",
+    "scrapedAt": "2026-04-07T08:55:21.380Z",
     "description": "GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, an",
     "region": "noam",
     "employmentType": "full-time"
@@ -918,26 +952,9 @@
       "Design"
     ],
     "postedAt": "2026-04-03T19:52:07.591Z",
-    "scrapedAt": "2026-04-07T02:27:36.403Z",
+    "scrapedAt": "2026-04-07T09:01:05.466Z",
     "description": "About the Team You'll join ZOE's Experience team — a small multi-disciplinary group of Product Designers, a Content Designer, a Motion Designer and UX Researchers. We care deeply about problem solving",
     "region": "eur",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_fugmn9",
-    "title": "Senior Product Designer, ConsumerX",
-    "company": "Roblox",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=roblox.com&sz=128",
-    "category": "creative",
-    "url": "https://careers.roblox.com/jobs/7774007?gh_jid=7774007",
-    "source": "greenhouse",
-    "tags": [
-      "UI/UX"
-    ],
-    "postedAt": "2026-04-03T14:39:03-04:00",
-    "scrapedAt": "2026-04-07T02:27:03.503Z",
-    "description": "Every day, tens of millions of people come to Roblox to explore, create, play, learn, and connect with friends in 3D immersive digital experiences– all created by our global community of developers an",
-    "region": "noam",
     "employmentType": "full-time"
   },
   {
@@ -952,7 +969,7 @@
       "Product"
     ],
     "postedAt": "2026-04-03T14:05:44-04:00",
-    "scrapedAt": "2026-04-07T02:29:06.305Z",
+    "scrapedAt": "2026-04-07T08:57:01.591Z",
     "description": "Our Mission Healthcare should work for patients, but it doesn’t. In their time of need, they call down outdated insurance directories. Then wait on hold. Then wait weeks for the privilege of a visit. ",
     "region": "ww",
     "employmentType": "full-time"
@@ -969,24 +986,24 @@
       "Design"
     ],
     "postedAt": "2026-04-03T14:00:39-04:00",
-    "scrapedAt": "2026-04-07T02:26:41.231Z",
+    "scrapedAt": "2026-04-07T08:55:42.671Z",
     "description": "About Remote Remote is solving modern organizations’ biggest challenge – navigating global employment compliantly with ease. We make it possible for businesses of all sizes to recruit, pay, and manage",
     "region": "ww",
     "employmentType": "full-time"
   },
   {
-    "id": "greenhouse_p2q68g",
+    "id": "greenhouse_pyorn9",
     "title": "Staff Product Designer, Pay Ecosystem",
     "company": "Remote",
     "companyLogo": "https://www.google.com/s2/favicons?domain=remote.com&sz=128",
     "category": "creative",
-    "url": "https://job-boards.greenhouse.io/remotecom/jobs/7500346003",
+    "url": "https://job-boards.greenhouse.io/remotecom/jobs/7564657003",
     "source": "greenhouse",
     "tags": [
       "Product Design"
     ],
     "postedAt": "2026-04-03T14:00:33-04:00",
-    "scrapedAt": "2026-04-07T02:26:41.233Z",
+    "scrapedAt": "2026-04-07T08:55:42.673Z",
     "description": "About Remote Remote is solving modern organizations’ biggest challenge – navigating global employment compliantly with ease. We make it possible for businesses of all sizes to recruit, pay, and manage",
     "region": "eur",
     "employmentType": "full-time"
@@ -1003,7 +1020,7 @@
       "Hardware"
     ],
     "postedAt": "2026-04-03T13:25:06-04:00",
-    "scrapedAt": "2026-04-07T02:26:32.859Z",
+    "scrapedAt": "2026-04-07T08:55:37.392Z",
     "description": "About the Role Peloton is seeking a Technical Design Lead (L7) to serve as the mechanical and electromechanical architect for our next generation of hardware. This is a \"zero-to-one\" leadership role f",
     "region": "noam",
     "employmentType": "full-time"
@@ -1021,7 +1038,7 @@
       "Product"
     ],
     "postedAt": "2026-04-03T17:23:00.611Z",
-    "scrapedAt": "2026-04-07T02:25:31.763Z",
+    "scrapedAt": "2026-04-07T08:55:25.468Z",
     "description": "The AI orchestration of your wildest imagination. n8n is the open workflow orchestration platform built for the new era of AI. We give technical teams the freedom of code with the speed of no-code, so",
     "region": "eur",
     "employmentType": "full-time"
@@ -1038,26 +1055,9 @@
       "User Experience"
     ],
     "postedAt": "2026-04-03T13:13:36-04:00",
-    "scrapedAt": "2026-04-07T02:26:40.937Z",
+    "scrapedAt": "2026-04-07T08:55:42.380Z",
     "description": "Location Details: Gurugram At GoDaddy the future of work looks different for each team. Some teams work in the office full-time, others have a hybrid arrangement (they work remotely some days and in t",
     "region": "apac",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_fuf8x4",
-    "title": "Senior Product Designer, Creator Foundation",
-    "company": "Roblox",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=roblox.com&sz=128",
-    "category": "creative",
-    "url": "https://careers.roblox.com/jobs/7776523?gh_jid=7776523",
-    "source": "greenhouse",
-    "tags": [
-      "UI/UX"
-    ],
-    "postedAt": "2026-04-03T13:05:18-04:00",
-    "scrapedAt": "2026-04-07T02:27:03.504Z",
-    "description": "Every day, tens of millions of people come to Roblox to explore, create, play, learn, and connect with friends in 3D immersive digital experiences– all created by our global community of developers an",
-    "region": "noam",
     "employmentType": "full-time"
   },
   {
@@ -1072,7 +1072,7 @@
       "Design - Core Experience (Sub Team)"
     ],
     "postedAt": "2026-04-03T13:01:35-04:00",
-    "scrapedAt": "2026-04-07T02:26:36.234Z",
+    "scrapedAt": "2026-04-07T08:55:39.602Z",
     "description": "Role Description Dropbox’s Core team is looking for a Director of Product Design to lead product design teams in building best-in-class product experiences that delight our customers. This leader will",
     "region": "noam",
     "employmentType": "full-time"
@@ -1089,41 +1089,41 @@
       "Design - Growth (Sub Team)"
     ],
     "postedAt": "2026-04-03T13:01:35-04:00",
-    "scrapedAt": "2026-04-07T02:26:36.236Z",
+    "scrapedAt": "2026-04-07T08:55:39.605Z",
     "description": "Role Description The Dropbox Growth team is seeking a Product Designer to create systems and experiences that measurably improve the lifecycle of our 700M+ global users. You’ll join a team dedicated t",
     "region": "eur",
     "employmentType": "full-time"
   },
   {
-    "id": "greenhouse_rprpuf",
+    "id": "greenhouse_rprpui",
     "title": "Senior Content Designer",
     "company": "Dropbox",
     "companyLogo": "https://www.google.com/s2/favicons?domain=dropbox.com&sz=128",
     "category": "creative",
-    "url": "https://jobs.dropbox.com/listing/7712838?gh_jid=7712838",
+    "url": "https://jobs.dropbox.com/listing/7712835?gh_jid=7712835",
     "source": "greenhouse",
     "tags": [
       "Design - Teams and Collab (Sub Team)"
     ],
     "postedAt": "2026-04-03T13:01:35-04:00",
-    "scrapedAt": "2026-04-07T02:26:36.237Z",
+    "scrapedAt": "2026-04-07T08:55:39.605Z",
     "description": "Role Description We're looking for a senior content designer to help define the future of communication in Dropbox. This role goes beyond UX writing: You'll shape how humans and AI interact across the",
     "region": "noam",
     "employmentType": "full-time"
   },
   {
-    "id": "greenhouse_sljzqa",
+    "id": "greenhouse_sljzq7",
     "title": "Staff Product Designer",
     "company": "Dropbox",
     "companyLogo": "https://www.google.com/s2/favicons?domain=dropbox.com&sz=128",
     "category": "creative",
-    "url": "https://jobs.dropbox.com/listing/7558673?gh_jid=7558673",
+    "url": "https://jobs.dropbox.com/listing/7558676?gh_jid=7558676",
     "source": "greenhouse",
     "tags": [
       "Design - Teams and Collab (Sub Team)"
     ],
     "postedAt": "2026-04-03T13:01:35-04:00",
-    "scrapedAt": "2026-04-07T02:26:36.241Z",
+    "scrapedAt": "2026-04-07T08:55:39.610Z",
     "description": "Role Description A s a Staff Product Designer on Teams &amp; Collaboration , this role will lead key strategic design initiatives with a focus on simplifying our existing Teams experiences and while c",
     "region": "noam",
     "employmentType": "full-time"
@@ -1140,7 +1140,7 @@
       "Dash - Design (Sub Team)"
     ],
     "postedAt": "2026-04-03T13:01:35-04:00",
-    "scrapedAt": "2026-04-07T02:26:36.241Z",
+    "scrapedAt": "2026-04-07T08:55:39.610Z",
     "description": "Role Description As a Staff Designer on Dash, you will be at the forefront of reimagining design for the next generation of AI-powered products. You will help define the future of the Dash experience ",
     "region": "noam",
     "employmentType": "full-time"
@@ -1157,7 +1157,7 @@
       "New Initiatives Pods (Sub Team)"
     ],
     "postedAt": "2026-04-03T13:01:35-04:00",
-    "scrapedAt": "2026-04-07T02:26:36.241Z",
+    "scrapedAt": "2026-04-07T08:55:39.610Z",
     "description": "Role Description Dropbox is looking for a Staff Product Designer to lead design for CompanyOS within the New Initiatives Org. CompanyOS is an AI‑native operating system for work that Dropbox uses inte",
     "region": "noam",
     "employmentType": "full-time"
@@ -1174,7 +1174,7 @@
       "Product Design"
     ],
     "postedAt": "2026-04-03T12:28:09-04:00",
-    "scrapedAt": "2026-04-07T02:29:06.272Z",
+    "scrapedAt": "2026-04-07T08:57:01.567Z",
     "description": "Instawork is on a mission to create meaningful economic opportunities for skilled hourly professionals in communities around the globe. Our AI-powered labor marketplace helps local businesses scale, a",
     "region": "noam",
     "employmentType": "full-time"
@@ -1192,7 +1192,7 @@
       "Content"
     ],
     "postedAt": "2026-04-03T16:07:27.550Z",
-    "scrapedAt": "2026-04-07T02:25:36.780Z",
+    "scrapedAt": "2026-04-07T08:55:31.177Z",
     "description": "At NerdWallet, we’re on a mission to bring clarity to all of life’s financial decisions and every great mission needs a team of exceptional Nerds. We’ve built an inclusive, flexible, and candid cultur",
     "region": "noam",
     "employmentType": "full-time"
@@ -1218,7 +1218,7 @@
       "digital nomad"
     ],
     "postedAt": "2026-04-03T16:00:12+00:00",
-    "scrapedAt": "2026-04-07T02:33:56.421Z",
+    "scrapedAt": "2026-04-07T09:37:15.647Z",
     "description": "We are looking for aÂ Senior UX/UI DesignerÂ who can independently own product design across web and mobile â from discovery and UX logic to visual execution and launch support. Role Overview As a S",
     "region": "ww",
     "employmentType": "Full-time"
@@ -1235,26 +1235,43 @@
       "1S_BRPOA DEC Region"
     ],
     "postedAt": "2026-04-03T11:32:51-04:00",
-    "scrapedAt": "2026-04-07T02:29:42.278Z",
+    "scrapedAt": "2026-04-07T08:57:08.058Z",
     "description": "Thoughtworks is a pioneer in integrating experience design with agile software delivery. Our designers work as part of multi-disciplinary teams that balance the thinking required to understand complex",
     "region": "latam",
     "employmentType": "full-time"
   },
   {
-    "id": "greenhouse_g6rtin",
+    "id": "greenhouse_g7cxin",
     "title": "Lead Product Designer (50% Travel to Saudi Arabia)",
     "company": "ThoughtWorks",
     "companyLogo": "https://www.google.com/s2/favicons?domain=thoughtworks.com&sz=128",
     "category": "creative",
-    "url": "https://www.thoughtworks.com/careers/jobs/7641166?gh_jid=7641166",
+    "url": "https://www.thoughtworks.com/careers/jobs/7653343?gh_jid=7653343",
     "source": "greenhouse",
     "tags": [
-      "1W_TWESP SL CXPD"
+      "1W_UKSTH SL CXPD"
     ],
-    "postedAt": "2026-04-03T11:25:27-04:00",
-    "scrapedAt": "2026-04-07T02:29:42.276Z",
+    "postedAt": "2026-04-03T11:26:38-04:00",
+    "scrapedAt": "2026-04-07T08:57:08.056Z",
     "description": "Thoughtworks is a global technology consultancy that delivers extraordinary impact by blending design, engineering and AI expertise. Our designers work in multi-disciplinary teams that shape complex A",
     "region": "eur",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_gohsfb",
+    "title": "Senior Product Designer (Advanced English)",
+    "company": "ThoughtWorks",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=thoughtworks.com&sz=128",
+    "category": "creative",
+    "url": "https://www.thoughtworks.com/careers/jobs/7758583?gh_jid=7758583",
+    "source": "greenhouse",
+    "tags": [
+      "1S_BRPOA DEC Region"
+    ],
+    "postedAt": "2026-04-03T11:25:22-04:00",
+    "scrapedAt": "2026-04-07T08:57:08.062Z",
+    "description": "_*]:min-w-0 gap-3\"> Thoughtworks is a pioneer in integrating experience design with agile software delivery. Our designers work as part of multi-disciplinary teams that balance the thinking required t",
+    "region": "latam",
     "employmentType": "full-time"
   },
   {
@@ -1269,7 +1286,7 @@
       "Technology"
     ],
     "postedAt": "2026-04-03T10:58:48-04:00",
-    "scrapedAt": "2026-04-07T02:27:08.052Z",
+    "scrapedAt": "2026-04-07T08:55:55.045Z",
     "description": "CoreWeave is The Essential Cloud for AI™. Built for pioneers by pioneers, CoreWeave delivers a platform of technology, tools, and teams that enables innovators to build and scale AI with confidence. T",
     "region": "noam",
     "employmentType": "full-time"
@@ -1286,7 +1303,7 @@
       "Data Center - G&A"
     ],
     "postedAt": "2026-04-03T10:58:48-04:00",
-    "scrapedAt": "2026-04-07T02:27:08.070Z",
+    "scrapedAt": "2026-04-07T08:55:55.073Z",
     "description": "CoreWeave is The Essential Cloud for AI™. Built for pioneers by pioneers, CoreWeave delivers a platform of technology, tools, and teams that enables innovators to build and scale AI with confidence. T",
     "region": "noam",
     "employmentType": "full-time"
@@ -1303,7 +1320,7 @@
       "Experience Design"
     ],
     "postedAt": "2026-04-03T09:42:32-04:00",
-    "scrapedAt": "2026-04-07T02:30:16.345Z",
+    "scrapedAt": "2026-04-07T08:57:23.270Z",
     "description": "About R/GA R/GA is a global digital innovation agency specializing in digital product development, brand transformation, media, and communications for major companies. We are on a mission to help comp",
     "region": "noam",
     "employmentType": "full-time"
@@ -1320,24 +1337,24 @@
       "209 - Experience Design"
     ],
     "postedAt": "2026-04-03T09:34:09-04:00",
-    "scrapedAt": "2026-04-07T02:26:48.771Z",
+    "scrapedAt": "2026-04-07T08:55:44.517Z",
     "description": "Senior Product Designer (Mobile, Web, Consumer Commerce &amp; Product) About Us Founded in 2011, Modus is a global, fully remote team of world-class technologists who thrive in a collaborative, innova",
     "region": "noam",
     "employmentType": "full-time"
   },
   {
-    "id": "greenhouse_d1h61k",
+    "id": "greenhouse_h8wrk4",
     "title": "Instructional Designer",
     "company": "Anduril",
     "companyLogo": "https://www.google.com/s2/favicons?domain=anduril.com&sz=128",
     "category": "creative",
-    "url": "https://boards.greenhouse.io/andurilindustries/jobs/5093473007?gh_jid=5093473007",
+    "url": "https://boards.greenhouse.io/andurilindustries/jobs/5091280007?gh_jid=5091280007",
     "source": "greenhouse",
     "tags": [
       "Hardware Engineering : Test & Evaluation : Test & Evaluation"
     ],
-    "postedAt": "2026-04-03T09:16:30-04:00",
-    "scrapedAt": "2026-04-07T02:28:08.165Z",
+    "postedAt": "2026-04-03T08:51:37-04:00",
+    "scrapedAt": "2026-04-07T08:56:52.778Z",
     "description": "Anduril Industries is a defense technology company with a mission to transform U.S. and allied military capabilities with advanced technology. By bringing the expertise, technology, and business model",
     "region": "noam",
     "employmentType": "full-time"
@@ -1354,9 +1371,61 @@
       "Maritime & Maneuver Dominance : Maneuver Dominance Engineering : MD - ME"
     ],
     "postedAt": "2026-04-03T08:51:37-04:00",
-    "scrapedAt": "2026-04-07T02:28:08.436Z",
+    "scrapedAt": "2026-04-07T08:56:53.185Z",
     "description": "Anduril Industries is a defense technology company with a mission to transform U.S. and allied military capabilities with advanced technology. By bringing the expertise, technology, and business model",
     "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "lever_uz51rn",
+    "title": "Product Designer",
+    "company": "Binance",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=binance.com&sz=128",
+    "category": "creative",
+    "url": "https://jobs.lever.co/binance/8601c5cb-c6f7-4f5e-87bf-243165823d2d",
+    "source": "lever",
+    "tags": [
+      "Design",
+      "Product & Design"
+    ],
+    "postedAt": "2026-04-03T12:03:53.151Z",
+    "scrapedAt": "2026-04-07T08:56:19.439Z",
+    "description": "Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume and registered users. We are trusted by 300+ million people in 100+ countries for ",
+    "region": "apac",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_fugl3f",
+    "title": "Senior Product Designer, ConsumerX",
+    "company": "Roblox",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=roblox.com&sz=128",
+    "category": "creative",
+    "url": "https://careers.roblox.com/jobs/7774232?gh_jid=7774232",
+    "source": "greenhouse",
+    "tags": [
+      "UI/UX"
+    ],
+    "postedAt": "2026-04-02T21:57:42-04:00",
+    "scrapedAt": "2026-04-07T08:55:52.185Z",
+    "description": "Every day, tens of millions of people come to Roblox to explore, create, play, learn, and connect with friends in 3D immersive digital experiences– all created by our global community of developers an",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_rwu7v0",
+    "title": "Bluespec Design Engineer",
+    "company": "MatX",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=matx.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/matx/jobs/5173649008",
+    "source": "greenhouse",
+    "tags": [
+      "Hardware"
+    ],
+    "postedAt": "2026-04-02T20:39:11-04:00",
+    "scrapedAt": "2026-04-07T08:57:35.856Z",
+    "description": "What MatX Is Building MatX is seeking engineers with strong Haskell skills to join our team as we create best-in-class silicon for high-performance and sustainable GenAI. The successful candidate for ",
+    "region": "ww",
     "employmentType": "full-time"
   },
   {
@@ -1371,7 +1440,7 @@
       "Field Marketing"
     ],
     "postedAt": "2026-04-02T20:27:46-04:00",
-    "scrapedAt": "2026-04-07T02:27:03.193Z",
+    "scrapedAt": "2026-04-07T08:55:51.359Z",
     "description": "Position Overview SingleStore’s GTM team is seeking a well-rounded Part-Time Visual Designer to support revenue-critical marketing and sales execution with high-quality, on-brand creative. This role f",
     "region": "latam",
     "employmentType": "full-time"
@@ -1388,7 +1457,7 @@
       "Product & Design"
     ],
     "postedAt": "2026-04-02T19:17:04-04:00",
-    "scrapedAt": "2026-04-07T02:27:11.963Z",
+    "scrapedAt": "2026-04-07T08:55:59.050Z",
     "description": "About Descript Descript is an intuitive, AI-powered, collaborative, all-in-one video platform that makes it easy for anyone to create, edit, and share a video. Our goal is to make video editing easy e",
     "region": "noam",
     "employmentType": "full-time"
@@ -1405,7 +1474,7 @@
       "Product & Design"
     ],
     "postedAt": "2026-04-02T19:01:13-04:00",
-    "scrapedAt": "2026-04-07T02:27:21.755Z",
+    "scrapedAt": "2026-04-07T08:56:03.833Z",
     "description": "Lead Product Designer Team: Product, Research &amp; Design Prolific Prolific is not just another player in the AI space – we are the architects of the human data infrastructure that's reshaping the la",
     "region": "eur",
     "employmentType": "full-time"
@@ -1422,7 +1491,7 @@
       "Brand Design"
     ],
     "postedAt": "2026-04-02T18:29:23-04:00",
-    "scrapedAt": "2026-04-07T02:25:40.713Z",
+    "scrapedAt": "2026-04-07T08:55:26.792Z",
     "description": "In 1954, architect Eero Saarinen designed a radically modern bank branch for Irwin Union in Columbus, Indiana. With glass walls, no private offices, and a floor plan that invited openness, it embodied",
     "region": "noam",
     "employmentType": "full-time"
@@ -1439,7 +1508,7 @@
       "Product Design"
     ],
     "postedAt": "2026-04-02T18:29:23-04:00",
-    "scrapedAt": "2026-04-07T02:25:40.714Z",
+    "scrapedAt": "2026-04-07T08:55:26.793Z",
     "description": "In many countries, profits from drug trafficking and human exploitation are funneled through ordinary-looking businesses, allowing serious harm to blend into everyday commerce. Financial systems can i",
     "region": "noam",
     "employmentType": "full-time"
@@ -1456,7 +1525,7 @@
       "Product Design"
     ],
     "postedAt": "2026-04-02T18:29:23-04:00",
-    "scrapedAt": "2026-04-07T02:25:40.714Z",
+    "scrapedAt": "2026-04-07T08:55:26.793Z",
     "description": "The Memphis Group burst onto the scene in the early 1980s with a belief that design could be more than purely functional, it could be bold, expressive, and deeply human. They expanded what design coul",
     "region": "noam",
     "employmentType": "full-time"
@@ -1473,7 +1542,7 @@
       "Design"
     ],
     "postedAt": "2026-04-02T18:11:56-04:00",
-    "scrapedAt": "2026-04-07T02:25:40.238Z",
+    "scrapedAt": "2026-04-07T08:55:26.579Z",
     "description": "About Gusto At Gusto, we're on a mission to grow the small business economy. We handle the hard stuff—like payroll, health insurance, 401(k)s, and HR—so owners can focus on their craft and customers. ",
     "region": "noam",
     "employmentType": "full-time"
@@ -1490,7 +1559,7 @@
       "Design"
     ],
     "postedAt": "2026-04-02T18:02:08-04:00",
-    "scrapedAt": "2026-04-07T02:25:40.238Z",
+    "scrapedAt": "2026-04-07T08:55:26.579Z",
     "description": "About Gusto At Gusto, we're on a mission to grow the small business economy. We handle the hard stuff—like payroll, health insurance, 401(k)s, and HR—so owners can focus on their craft and customers. ",
     "region": "noam",
     "employmentType": "full-time"
@@ -1507,7 +1576,7 @@
       "PubSports"
     ],
     "postedAt": "2026-04-02T17:34:36-04:00",
-    "scrapedAt": "2026-04-07T02:26:36.263Z",
+    "scrapedAt": "2026-04-07T08:55:39.397Z",
     "description": "As the Marketing Creative Director for VALORANT Mobile, you will report to the China VALORANT Creative Lead, and will be responsible for shaping and delivering world-class campaigns for VALORANT MOBIL",
     "region": "apac",
     "employmentType": "full-time"
@@ -1524,7 +1593,7 @@
       "Design"
     ],
     "postedAt": "2026-04-02T17:27:31-04:00",
-    "scrapedAt": "2026-04-07T02:27:47.478Z",
+    "scrapedAt": "2026-04-07T08:56:32.934Z",
     "description": "About Fellow We believe that the act of making should be meaningful and fulfilling, done with intention and precision. Fellow makes beautifully functional tools for any kitchen, designed in San Franci",
     "region": "noam",
     "employmentType": "full-time"
@@ -1541,7 +1610,7 @@
       "Creative"
     ],
     "postedAt": "2026-04-02T17:07:17-04:00",
-    "scrapedAt": "2026-04-07T02:29:48.125Z",
+    "scrapedAt": "2026-04-07T08:57:11.571Z",
     "description": "WHY DEPT®? We are a Growth Invention company built to help the world’s most ambitious brands grow faster. Operating at the intersection of technology and marketing, we create what is next by pioneerin",
     "region": "noam",
     "employmentType": "full-time"
@@ -1558,7 +1627,7 @@
       "321 Product Design"
     ],
     "postedAt": "2026-04-02T16:29:50-04:00",
-    "scrapedAt": "2026-04-07T02:29:06.470Z",
+    "scrapedAt": "2026-04-07T08:57:01.943Z",
     "description": "This is one of the most technically ambitious design roles at DoorDash. You’ll help define how intelligent systems power the next generation of product design - shaping workflows that thousands of des",
     "region": "noam",
     "employmentType": "full-time"
@@ -1575,7 +1644,7 @@
       "321 Product Design"
     ],
     "postedAt": "2026-04-02T16:29:50-04:00",
-    "scrapedAt": "2026-04-07T02:29:06.475Z",
+    "scrapedAt": "2026-04-07T08:57:01.947Z",
     "description": "About the Team At DoorDash, we’re reimagining how people connect with the things they need — whether it’s a meal, a grocery run, and anything in between. Our audiences — Consumers, Dashers, and Mercha",
     "region": "noam",
     "employmentType": "full-time"
@@ -1592,7 +1661,7 @@
       "Sales & Marketing"
     ],
     "postedAt": "2026-04-02T19:59:42.367Z",
-    "scrapedAt": "2026-04-07T02:27:23.345Z",
+    "scrapedAt": "2026-04-07T08:57:45.605Z",
     "description": "About Us\nZeroTier leads the world in next-generation connectivity and cybersecurity. Our platform provides highly secure, peer-to-peer virtual networks, relied upon by millions of users and businesses",
     "region": "ww",
     "employmentType": "remote"
@@ -1610,7 +1679,7 @@
       "Design"
     ],
     "postedAt": "2026-04-02T19:45:12.947Z",
-    "scrapedAt": "2026-04-07T02:25:46.717Z",
+    "scrapedAt": "2026-04-07T08:56:24.804Z",
     "description": "Mission Finch was started by 2 friends (Nino & Steph 🙇🏾‍♂️🙇🏻‍♀️) who struggled with anxiety and depression and found self-care challenging to stick with. We decided to build Finch hoping to make s",
     "region": "latam",
     "employmentType": "full-time"
@@ -1627,7 +1696,7 @@
       "Marketing"
     ],
     "postedAt": "2026-04-02T15:37:54-04:00",
-    "scrapedAt": "2026-04-07T02:25:38.076Z",
+    "scrapedAt": "2026-04-07T08:55:25.716Z",
     "description": "At Ripple, we’re building a world where value moves like information does today. It’s big, it’s bold, and we’re already doing it. Through our crypto solutions for financial institutions, businesses, g",
     "region": "noam",
     "employmentType": "full-time"
@@ -1644,7 +1713,7 @@
       "Marketing"
     ],
     "postedAt": "2026-04-02T15:35:35-04:00",
-    "scrapedAt": "2026-04-07T02:25:38.073Z",
+    "scrapedAt": "2026-04-07T08:55:25.713Z",
     "description": "At Ripple, we’re building a world where value moves like information does today. It’s big, it’s bold, and we’re already doing it. Through our crypto solutions for financial institutions, businesses, g",
     "region": "noam",
     "employmentType": "full-time"
@@ -1661,7 +1730,7 @@
       "Research & Design"
     ],
     "postedAt": "2026-04-02T15:29:37-04:00",
-    "scrapedAt": "2026-04-07T02:26:31.062Z",
+    "scrapedAt": "2026-04-07T08:55:36.339Z",
     "description": "We're transforming the grocery industry At Instacart, we invite the world to share love through food because we believe everyone should have access to the food they love and more time to enjoy it toge",
     "region": "noam",
     "employmentType": "full-time"
@@ -1679,7 +1748,7 @@
       "Design & User Research"
     ],
     "postedAt": "2026-04-02T18:59:38.860Z",
-    "scrapedAt": "2026-04-07T02:26:02.415Z",
+    "scrapedAt": "2026-04-07T08:57:08.115Z",
     "description": "Dave vs. Goliath. We’re Dave. Dave is a financial app on a mission to build products that level the financial playing field. It is redefining the financial landscape by leveraging technology to create",
     "region": "noam",
     "employmentType": "full-time"
@@ -1696,7 +1765,7 @@
       "Experience Research"
     ],
     "postedAt": "2026-04-02T13:52:52-04:00",
-    "scrapedAt": "2026-04-07T02:26:13.207Z",
+    "scrapedAt": "2026-04-07T08:55:30.921Z",
     "description": "The Experience Research team at Asana is on a mission to deeply understand the dynamics of modern work—how individuals collaborate, how teams operate, and how organizations scale. We partner with Prod",
     "region": "noam",
     "employmentType": "full-time"
@@ -1713,7 +1782,7 @@
       "Product Design"
     ],
     "postedAt": "2026-04-02T13:52:39-04:00",
-    "scrapedAt": "2026-04-07T02:26:13.208Z",
+    "scrapedAt": "2026-04-07T08:55:30.922Z",
     "description": "We are looking for a seasoned Senior Product Designer to join our growing Warsaw product hub. In this role, you will be the design lead for the Value Discovery team, partnering closely with a Senior P",
     "region": "eur",
     "employmentType": "full-time"
@@ -1730,7 +1799,7 @@
       "Product Design"
     ],
     "postedAt": "2026-04-02T13:52:35-04:00",
-    "scrapedAt": "2026-04-07T02:26:13.207Z",
+    "scrapedAt": "2026-04-07T08:55:30.921Z",
     "description": "We’re designing the future of teamwork. Asana’s mission is to enable the world’s teams to work together effortlessly — and our Design organization is central to that mission. We’re an inclusive and co",
     "region": "eur",
     "employmentType": "full-time"
@@ -1747,7 +1816,7 @@
       "Product Design"
     ],
     "postedAt": "2026-04-02T13:23:01-04:00",
-    "scrapedAt": "2026-04-07T02:29:54.208Z",
+    "scrapedAt": "2026-04-07T08:57:15.991Z",
     "description": "Location: North America (Canada or US), Remote Narvar is growing! We’re looking for an experienced Staff Product Designer to take on a pivotal leadership role within one of our core product pillars. T",
     "region": "noam",
     "employmentType": "full-time"
@@ -1764,7 +1833,7 @@
       "Design"
     ],
     "postedAt": "2026-04-02T13:10:57-04:00",
-    "scrapedAt": "2026-04-07T02:26:33.149Z",
+    "scrapedAt": "2026-04-07T08:55:37.417Z",
     "description": "About Pinterest: Millions of people around the world come to our platform to find creative ideas, dream about new possibilities and plan for memories that will last a lifetime. At Pinterest, we’re on ",
     "region": "noam",
     "employmentType": "full-time"
@@ -1781,7 +1850,7 @@
       "R & D : UX : Customer Experience Platform"
     ],
     "postedAt": "2026-04-02T13:10:53-04:00",
-    "scrapedAt": "2026-04-07T02:25:40.310Z",
+    "scrapedAt": "2026-04-07T08:55:27.083Z",
     "description": "Our focus is on building the restaurant platform that helps restaurants adapt, take control, and get back to what they do best: building the businesses they love. And because our technology is purpose",
     "region": "noam",
     "employmentType": "full-time"
@@ -1798,7 +1867,7 @@
       "Design"
     ],
     "postedAt": "2026-04-02T13:08:05-04:00",
-    "scrapedAt": "2026-04-07T02:26:33.152Z",
+    "scrapedAt": "2026-04-07T08:55:37.418Z",
     "description": "About Pinterest: Millions of people around the world come to our platform to find creative ideas, dream about new possibilities and plan for memories that will last a lifetime. At Pinterest, we’re on ",
     "region": "noam",
     "employmentType": "full-time"
@@ -1815,7 +1884,7 @@
       "Design"
     ],
     "postedAt": "2026-04-02T13:06:24-04:00",
-    "scrapedAt": "2026-04-07T02:26:33.144Z",
+    "scrapedAt": "2026-04-07T08:55:37.413Z",
     "description": "About Pinterest: Millions of people around the world come to our platform to find creative ideas, dream about new possibilities and plan for memories that will last a lifetime. At Pinterest, we’re on ",
     "region": "noam",
     "employmentType": "full-time"
@@ -1832,7 +1901,7 @@
       "Marketing"
     ],
     "postedAt": "2026-04-02T12:29:03-04:00",
-    "scrapedAt": "2026-04-07T02:27:21.768Z",
+    "scrapedAt": "2026-04-07T08:56:03.578Z",
     "description": "The world of digital assets is accelerating in speed, magnitude, and complexity, opening the door to new ways for leveraging the blockchain. Fireblocks’ platform and network provide the simplest and m",
     "region": "mena",
     "employmentType": "full-time"
@@ -1849,7 +1918,7 @@
       "Product Management"
     ],
     "postedAt": "2026-04-02T12:25:14-04:00",
-    "scrapedAt": "2026-04-07T02:26:37.364Z",
+    "scrapedAt": "2026-04-07T08:55:41.280Z",
     "description": "At OneSpan , we specialize in digital identity and anti-fraud solutions that create exceptional and secure experiences. Chez OneSpan , nous sommes spécialisés dans les solutions d'identité numérique e",
     "region": "noam",
     "employmentType": "full-time"
@@ -1866,7 +1935,7 @@
       "2006 Record Management System - SW"
     ],
     "postedAt": "2026-04-02T11:54:43-04:00",
-    "scrapedAt": "2026-04-07T02:29:53.358Z",
+    "scrapedAt": "2026-04-07T08:57:15.151Z",
     "description": "Join Axon and be a Force for Good. At Axon, we’re on a mission to Protect Life. We’re explorers, pursuing society’s most critical safety and justice issues with our ecosystem of devices and cloud soft",
     "region": "apac",
     "employmentType": "full-time"
@@ -1883,7 +1952,7 @@
       "2018 R&D - Virtual Reality"
     ],
     "postedAt": "2026-04-02T11:54:43-04:00",
-    "scrapedAt": "2026-04-07T02:29:53.396Z",
+    "scrapedAt": "2026-04-07T08:57:15.177Z",
     "description": "Join Axon and be a Force for Good. At Axon, we’re on a mission to Protect Life. We’re explorers, pursuing society’s most critical safety and justice issues with our ecosystem of devices and cloud soft",
     "region": "noam",
     "employmentType": "full-time"
@@ -1900,7 +1969,7 @@
       "Design"
     ],
     "postedAt": "2026-04-02T11:32:59-04:00",
-    "scrapedAt": "2026-04-07T02:29:06.281Z",
+    "scrapedAt": "2026-04-07T08:57:01.549Z",
     "description": "About Vercel: Vercel gives developers the tools and cloud infrastructure to build, scale, and secure a faster, more personalized web. As the team behind v0, Next.js, and AI SDK, Vercel helps customers",
     "region": "noam",
     "employmentType": "full-time"
@@ -1917,7 +1986,7 @@
       "Design"
     ],
     "postedAt": "2026-04-02T11:32:59-04:00",
-    "scrapedAt": "2026-04-07T02:29:06.284Z",
+    "scrapedAt": "2026-04-07T08:57:01.552Z",
     "description": "About Vercel: Vercel gives developers the tools and cloud infrastructure to build, scale, and secure a faster, more personalized web. As the team behind v0, Next.js, and AI SDK, Vercel helps customers",
     "region": "noam",
     "employmentType": "full-time"
@@ -1934,7 +2003,7 @@
       "Marketing"
     ],
     "postedAt": "2026-04-02T11:29:53-04:00",
-    "scrapedAt": "2026-04-07T02:27:30.181Z",
+    "scrapedAt": "2026-04-07T08:56:22.108Z",
     "description": "About Arize AI is rapidly transforming the world. As generative AI reshapes industries, teams need powerful ways to monitor, troubleshoot, and optimize their AI systems. That’s where we come in. Arize",
     "region": "noam",
     "employmentType": "full-time"
@@ -1951,7 +2020,7 @@
       "8811 Product Design"
     ],
     "postedAt": "2026-04-02T11:24:42-04:00",
-    "scrapedAt": "2026-04-07T02:25:38.869Z",
+    "scrapedAt": "2026-04-07T08:55:24.779Z",
     "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept pay",
     "region": "noam",
     "employmentType": "full-time"
@@ -1968,7 +2037,7 @@
       "Creative"
     ],
     "postedAt": "2026-04-02T11:14:50-04:00",
-    "scrapedAt": "2026-04-07T02:26:49.652Z",
+    "scrapedAt": "2026-04-07T08:55:46.125Z",
     "description": "At AKQA (part of WPP), we believe in the imaginative application of art and science to create ideas, products and services that move the world forward. We exist at the intersection of design, technolo",
     "region": "eur",
     "employmentType": "full-time"
@@ -1985,7 +2054,7 @@
       "User Experience"
     ],
     "postedAt": "2026-04-02T11:02:43-04:00",
-    "scrapedAt": "2026-04-07T02:26:52.604Z",
+    "scrapedAt": "2026-04-07T08:55:49.044Z",
     "description": "Affirm is reinventing credit to make it more honest and friendly, giving consumers the flexibility to buy now and pay later without any hidden fees or compounding interest. The Direct-to-Consumer (DTC",
     "region": "noam",
     "employmentType": "full-time"
@@ -2002,7 +2071,7 @@
       "Design"
     ],
     "postedAt": "2026-04-02T10:58:21-04:00",
-    "scrapedAt": "2026-04-07T02:26:51.468Z",
+    "scrapedAt": "2026-04-07T08:55:47.650Z",
     "description": "🚀 We’re on a mission to make money work for everyone. We’re waving goodbye to the complicated and confusing ways of traditional banking. After starting as a prepaid card, our product offering has gro",
     "region": "eur",
     "employmentType": "full-time"
@@ -2019,7 +2088,7 @@
       "Design"
     ],
     "postedAt": "2026-04-02T10:57:19-04:00",
-    "scrapedAt": "2026-04-07T02:26:51.469Z",
+    "scrapedAt": "2026-04-07T08:55:47.651Z",
     "description": "🚀 We’re on a mission to make money work for everyone. We’re waving goodbye to the complicated and confusing ways of traditional banking. After starting as a prepaid card, our product offering has gro",
     "region": "eur",
     "employmentType": "full-time"
@@ -2036,7 +2105,7 @@
       "Product "
     ],
     "postedAt": "2026-04-02T10:40:03-04:00",
-    "scrapedAt": "2026-04-07T02:27:03.218Z",
+    "scrapedAt": "2026-04-07T08:55:51.365Z",
     "description": "Come join a company who is a key leader in the industry scaling the next core commerce infrastructure and on the path from $100M to $500M! Founded in 2012, Salsify helps brand manufacturers, distribut",
     "region": "eur",
     "employmentType": "full-time"
@@ -2053,7 +2122,7 @@
       "Customer Training"
     ],
     "postedAt": "2026-04-02T10:24:29-04:00",
-    "scrapedAt": "2026-04-07T02:27:02.365Z",
+    "scrapedAt": "2026-04-07T08:55:50.534Z",
     "description": "With 1,000+ intelligence professionals serving over 1,900 clients worldwide, Recorded Future is the world’s most advanced, and largest, intelligence company! The Learning Experience Designer at Record",
     "region": "apac",
     "employmentType": "full-time"
@@ -2070,7 +2139,7 @@
       "Customer Training"
     ],
     "postedAt": "2026-04-02T10:24:29-04:00",
-    "scrapedAt": "2026-04-07T02:27:02.366Z",
+    "scrapedAt": "2026-04-07T08:55:50.536Z",
     "description": "With 1,000+ intelligence professionals serving over 1,900 clients worldwide, Recorded Future is the world’s most advanced, and largest, intelligence company! The Senior Learning Experience Designer at",
     "region": "apac",
     "employmentType": "full-time"
@@ -2088,26 +2157,9 @@
       "Product"
     ],
     "postedAt": "2026-04-02T14:18:07.447Z",
-    "scrapedAt": "2026-04-07T02:26:52.019Z",
+    "scrapedAt": "2026-04-07T08:59:22.156Z",
     "description": "Help fix customer-centricity at scale Every company wants to become more customer-centric. At TheyDo, we make that ambition real. Our AI-powered journey management platform helps the world’s largest e",
     "region": "eur",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_3lek6k",
-    "title": "Senior Product Designer - Restaurant Platform",
-    "company": "OpenTable",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=opentable.com&sz=128",
-    "category": "creative",
-    "url": "https://job-boards.greenhouse.io/opentable/jobs/8491629002",
-    "source": "greenhouse",
-    "tags": [
-      "Design"
-    ],
-    "postedAt": "2026-04-02T08:50:00-04:00",
-    "scrapedAt": "2026-04-07T02:30:01.555Z",
-    "description": "With millions of diners, 60,000+ restaurant partners and 25+ years of experience, OpenTable, part of Booking Holdings, Inc. (NASDAQ: BKNG), is an industry leader with a passion for helping restaurants",
-    "region": "noam",
     "employmentType": "full-time"
   },
   {
@@ -2122,7 +2174,7 @@
       "Tech Consumer - Product Design"
     ],
     "postedAt": "2026-04-02T07:43:00-04:00",
-    "scrapedAt": "2026-04-07T02:27:38.752Z",
+    "scrapedAt": "2026-04-07T08:56:28.993Z",
     "description": "Work with HelloFresh in Warsaw and its HelloTech organisation, HelloFresh’s global technology backbone with more than 1000 people, building the digital products that power our end-to-end food experien",
     "region": "eur",
     "employmentType": "full-time"
@@ -2139,7 +2191,7 @@
       "Customer Service "
     ],
     "postedAt": "2026-04-02T07:39:17-04:00",
-    "scrapedAt": "2026-04-07T02:27:25.123Z",
+    "scrapedAt": "2026-04-07T08:56:17.424Z",
     "description": "Help empower our global customers to connect to culture through their passions. Why you'll love this role As a Learning Experience Specialist, you will play a key role in supporting both team performa",
     "region": "apac",
     "employmentType": "full-time"
@@ -2156,7 +2208,7 @@
       "Marketing"
     ],
     "postedAt": "2026-04-02T11:25:40.274Z",
-    "scrapedAt": "2026-04-07T02:32:34.730Z",
+    "scrapedAt": "2026-04-07T09:03:35.788Z",
     "description": "Join Hostinger, and we’ll grow fast! 🚀\n \nWe’re shaping the future of online success - powered by AI and driven by people. With 900+ talented professionals and over 5 million clients in 150 countries,",
     "region": "ww",
     "employmentType": "full-time"
@@ -2174,7 +2226,7 @@
       "R&D"
     ],
     "postedAt": "2026-04-02T11:08:41.005Z",
-    "scrapedAt": "2026-04-07T02:25:36.364Z",
+    "scrapedAt": "2026-04-07T08:55:31.453Z",
     "description": "Who we are is what we do. Deel is the all-in-one payroll and HR platform for global teams. Our vision is to unlock global opportunity for every person, team, and business. Built for the way the world ",
     "region": "eur",
     "employmentType": "full-time"
@@ -2191,8 +2243,26 @@
       "5101 Business Transformation"
     ],
     "postedAt": "2026-04-02T06:48:06-04:00",
-    "scrapedAt": "2026-04-07T02:27:25.357Z",
+    "scrapedAt": "2026-04-07T08:56:17.469Z",
     "description": "About Ping Identity: At Ping Identity, we believe in making digital experiences both secure and seamless for all users, without compromise. We call this digital freedom. And it's not just something we",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "ashby_7vkhpd",
+    "title": "Staff Product Designer - Growth (Onboarding)",
+    "company": "Kraken",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=kraken.com&sz=128",
+    "category": "creative",
+    "url": "https://jobs.ashbyhq.com/kraken.com/4ebcb079-8829-418e-872d-945f577156b2",
+    "source": "ashby",
+    "tags": [
+      "Design",
+      "Design"
+    ],
+    "postedAt": "2026-04-02T09:58:45.889Z",
+    "scrapedAt": "2026-04-07T09:01:45.581Z",
+    "description": "Building the Future of Crypto Our Krakenites are a world-class team with crypto conviction, united by our desire to discover and unlock the potential of crypto and blockchain technology. What makes us",
     "region": "noam",
     "employmentType": "full-time"
   },
@@ -2208,9 +2278,27 @@
       "Support"
     ],
     "postedAt": "2026-04-02T05:51:47-04:00",
-    "scrapedAt": "2026-04-07T02:26:41.053Z",
+    "scrapedAt": "2026-04-07T08:55:42.739Z",
     "description": "Who we are Samsara (NYSE: IOT) is the pioneer of the Connected Operations™ Cloud, which is a platform that enables organizations that depend on physical operations to harness Internet of Things (IoT) ",
     "region": "apac",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "ashby_n4kf96",
+    "title": "Senior Product Designer - Growth (Onboarding)",
+    "company": "Kraken",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=kraken.com&sz=128",
+    "category": "creative",
+    "url": "https://jobs.ashbyhq.com/kraken.com/65808df4-1bb8-4b79-b7fd-698f859be032",
+    "source": "ashby",
+    "tags": [
+      "Design",
+      "Design"
+    ],
+    "postedAt": "2026-04-02T09:25:37.207Z",
+    "scrapedAt": "2026-04-07T09:01:45.567Z",
+    "description": "Building the Future of Crypto Our Krakenites are a world-class team with crypto conviction, united by our desire to discover and unlock the potential of crypto and blockchain technology. What makes us",
+    "region": "noam",
     "employmentType": "full-time"
   },
   {
@@ -2225,7 +2313,7 @@
       "400-Research and Development"
     ],
     "postedAt": "2026-04-02T04:10:39-04:00",
-    "scrapedAt": "2026-04-07T02:29:08.942Z",
+    "scrapedAt": "2026-04-07T08:57:03.004Z",
     "description": "About Ubiquiti At Ubiquiti Inc., we create technology platforms for Businesses, Smart Homes, and Internet Service Providers, driven by our goal to connect everyone, everywhere. To date, Ubiquiti has s",
     "region": "ww",
     "employmentType": "full-time"
@@ -2242,7 +2330,7 @@
       "400-Research and Development"
     ],
     "postedAt": "2026-04-02T04:10:39-04:00",
-    "scrapedAt": "2026-04-07T02:29:08.942Z",
+    "scrapedAt": "2026-04-07T08:57:03.004Z",
     "description": "About Ubiquiti At Ubiquiti Inc., we create technology platforms for Businesses, Smart Homes, and Internet Service Providers, driven by our goal to connect everyone, everywhere. To date, Ubiquiti has s",
     "region": "ww",
     "employmentType": "full-time"
@@ -2259,7 +2347,7 @@
       "400-Research and Development"
     ],
     "postedAt": "2026-04-02T04:10:39-04:00",
-    "scrapedAt": "2026-04-07T02:29:08.942Z",
+    "scrapedAt": "2026-04-07T08:57:03.004Z",
     "description": "About Ubiquiti At Ubiquiti Inc., we create technology platforms for Businesses, Smart Homes, and Internet Service Providers, driven by our goal to connect everyone, everywhere. To date, Ubiquiti has s",
     "region": "ww",
     "employmentType": "full-time"
@@ -2276,7 +2364,7 @@
       "400-Research and Development"
     ],
     "postedAt": "2026-04-02T04:10:39-04:00",
-    "scrapedAt": "2026-04-07T02:29:08.943Z",
+    "scrapedAt": "2026-04-07T08:57:03.004Z",
     "description": "About Ubiquiti At Ubiquiti Inc., we create technology platforms for Businesses, Smart Homes, and Internet Service Providers, driven by our goal to connect everyone, everywhere. To date, Ubiquiti has s",
     "region": "ww",
     "employmentType": "full-time"
@@ -2293,26 +2381,26 @@
       "400-Research and Development"
     ],
     "postedAt": "2026-04-02T04:10:39-04:00",
-    "scrapedAt": "2026-04-07T02:29:08.943Z",
+    "scrapedAt": "2026-04-07T08:57:03.005Z",
     "description": "About Ubiquiti At Ubiquiti Inc., we create technology platforms for Businesses, Smart Homes, and Internet Service Providers, driven by our goal to connect everyone, everywhere. To date, Ubiquiti has s",
     "region": "ww",
     "employmentType": "full-time"
   },
   {
-    "id": "greenhouse_hw0r3",
+    "id": "greenhouse_p3nhu6",
     "title": "Senior UI/UX Designer",
     "company": "Ubiquiti",
     "companyLogo": "https://www.google.com/s2/favicons?domain=ui.com&sz=128",
     "category": "creative",
-    "url": "https://job-boards.greenhouse.io/ubiquiti/jobs/4163852009",
+    "url": "https://job-boards.greenhouse.io/ubiquiti/jobs/4077642009",
     "source": "greenhouse",
     "tags": [
       "400-Research and Development"
     ],
     "postedAt": "2026-04-02T04:10:39-04:00",
-    "scrapedAt": "2026-04-07T02:29:08.945Z",
+    "scrapedAt": "2026-04-07T08:57:03.007Z",
     "description": "About Ubiquiti At Ubiquiti Inc., we create technology platforms for Businesses, Smart Homes, and Internet Service Providers, driven by our goal to connect everyone, everywhere. To date, Ubiquiti has s",
-    "region": "ww",
+    "region": "eur",
     "employmentType": "full-time"
   },
   {
@@ -2327,7 +2415,7 @@
       "400-Research and Development"
     ],
     "postedAt": "2026-04-02T04:10:39-04:00",
-    "scrapedAt": "2026-04-07T02:29:08.945Z",
+    "scrapedAt": "2026-04-07T08:57:03.008Z",
     "description": "About Ubiquiti At Ubiquiti Inc., we create technology platforms for Businesses, Smart Homes, and Internet Service Providers, driven by our goal to connect everyone, everywhere. To date, Ubiquiti has s",
     "region": "ww",
     "employmentType": "full-time"
@@ -2344,7 +2432,7 @@
       "400-Research and Development"
     ],
     "postedAt": "2026-04-02T04:10:39-04:00",
-    "scrapedAt": "2026-04-07T02:29:08.946Z",
+    "scrapedAt": "2026-04-07T08:57:03.009Z",
     "description": "About Ubiquiti At Ubiquiti Inc., we create technology platforms for Businesses, Smart Homes, and Internet Service Providers, driven by our goal to connect everyone, everywhere. To date, Ubiquiti has s",
     "region": "ww",
     "employmentType": "full-time"
@@ -2361,7 +2449,7 @@
       "400-Research and Development"
     ],
     "postedAt": "2026-04-02T04:10:39-04:00",
-    "scrapedAt": "2026-04-07T02:29:08.946Z",
+    "scrapedAt": "2026-04-07T08:57:03.009Z",
     "description": "About Ubiquiti At Ubiquiti Inc., we create technology platforms for Businesses, Smart Homes, and Internet Service Providers, driven by our goal to connect everyone, everywhere. To date, Ubiquiti has s",
     "region": "eur",
     "employmentType": "full-time"
@@ -2379,7 +2467,7 @@
       "CPTO"
     ],
     "postedAt": "2026-04-02T06:43:18.010Z",
-    "scrapedAt": "2026-04-07T02:27:19.179Z",
+    "scrapedAt": "2026-04-07T08:57:27.799Z",
     "description": "We believe it takes great people to create a great product. That’s why our team lives our company values, and we hire based on them, too. Since 2010, Pipedrive has been on a mission to support sales a",
     "region": "eur",
     "employmentType": "full-time"
@@ -2396,7 +2484,7 @@
       "Product"
     ],
     "postedAt": "2026-04-02T02:41:28-04:00",
-    "scrapedAt": "2026-04-07T02:28:58.023Z",
+    "scrapedAt": "2026-04-07T08:56:56.375Z",
     "description": "Who we are: Motive empowers the people who run physical operations with tools to make their work safer, more productive, and more profitable. For the first time ever, safety, operations and finance te",
     "region": "apac",
     "employmentType": "full-time"
@@ -2413,7 +2501,7 @@
       "Midcore"
     ],
     "postedAt": "2026-04-01T21:04:12-04:00",
-    "scrapedAt": "2026-04-07T02:27:03.288Z",
+    "scrapedAt": "2026-04-07T08:55:51.659Z",
     "description": "Scopely is looking for a UX Designer to join our Marvel Strike Force team remotely in the United States or Canada on a remote basis. At Scopely, we care deeply about what we do and want to inspire pla",
     "region": "noam",
     "employmentType": "full-time"
@@ -2430,7 +2518,7 @@
       "Live Games Portfolio"
     ],
     "postedAt": "2026-04-01T21:03:16-04:00",
-    "scrapedAt": "2026-04-07T02:27:03.268Z",
+    "scrapedAt": "2026-04-07T08:55:51.619Z",
     "description": "Scopely is looking for a Game Designer to join our Star Trek Fleet Command team in Spain, Ireland, Portugal, or the United Kingdom on a remote basis within these locations. At Scopely, we care deeply ",
     "region": "eur",
     "employmentType": "full-time"
@@ -2447,7 +2535,7 @@
       "Live Games Portfolio"
     ],
     "postedAt": "2026-04-01T21:03:10-04:00",
-    "scrapedAt": "2026-04-07T02:27:03.262Z",
+    "scrapedAt": "2026-04-07T08:55:51.613Z",
     "description": "Scopely is looking for an Associate Game Designer to join our Star Trek Fleet Command team in Barcelona on a hybrid basis. At Scopely, we care deeply about what we do and want to inspire play, every d",
     "region": "eur",
     "employmentType": "full-time"
@@ -2465,7 +2553,7 @@
       "City Teams"
     ],
     "postedAt": "2026-04-02T00:54:14.464Z",
-    "scrapedAt": "2026-04-07T02:32:16.232Z",
+    "scrapedAt": "2026-04-07T09:03:31.805Z",
     "description": "At Lalamove, we believe in the power of community. Millions of drivers and customers use our technology every day to connect with one another and move things that matter. Delivery is what we do best a",
     "region": "eur",
     "employmentType": "full-time"
@@ -2482,7 +2570,7 @@
       "Brand"
     ],
     "postedAt": "2026-04-01T20:35:00-04:00",
-    "scrapedAt": "2026-04-07T02:27:10.704Z",
+    "scrapedAt": "2026-04-07T08:55:57.286Z",
     "description": "About Buildkite Buildkite’s CI platform is trusted by the world’s leading engineering teams, shipping software to over 1,000,000,000 daily users. Job Overview This is a rare “own the whole surface” we",
     "region": "apac",
     "employmentType": "full-time"
@@ -2499,9 +2587,26 @@
       "Demand Generation"
     ],
     "postedAt": "2026-04-01T19:58:52-04:00",
-    "scrapedAt": "2026-04-07T02:27:26.763Z",
+    "scrapedAt": "2026-04-07T08:56:18.539Z",
     "description": "For over 20 years, Smartsheet has helped people and teams achieve–well, anything. From seamless work management to smart, scalable solutions, we’ve always worked with flow. We’re building tools that e",
     "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_w8kio9",
+    "title": "Senior Product Designer, Core Platform",
+    "company": "Cresta",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=cresta.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/cresta/jobs/5173707008",
+    "source": "greenhouse",
+    "tags": [
+      "Product"
+    ],
+    "postedAt": "2026-04-01T18:00:19-04:00",
+    "scrapedAt": "2026-04-07T08:57:24.215Z",
+    "description": "Cresta is on a mission to turn every customer conversation into a competitive advantage by unlocking the true potential of the contact center. Our platform combines the best of AI and human intelligen",
+    "region": "eur",
     "employmentType": "full-time"
   },
   {
@@ -2516,7 +2621,7 @@
       "Starlink Customer Operations"
     ],
     "postedAt": "2026-04-01T17:53:45-04:00",
-    "scrapedAt": "2026-04-07T02:27:55.659Z",
+    "scrapedAt": "2026-04-07T08:56:40.689Z",
     "description": "SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologi",
     "region": "ww",
     "employmentType": "full-time"
@@ -2533,7 +2638,7 @@
       "Design"
     ],
     "postedAt": "2026-04-01T17:51:56-04:00",
-    "scrapedAt": "2026-04-07T02:25:59.442Z",
+    "scrapedAt": "2026-04-07T08:55:31.118Z",
     "description": "About Mixpanel Mixpanel turns data clarity into innovation. Trusted by more than 29,000 companies, including Workday, Pinterest, LG, and Rakuten Viber, Mixpanel’s AI-first digital analytics help teams",
     "region": "noam",
     "employmentType": "full-time"
@@ -2550,7 +2655,7 @@
       "UI/UX"
     ],
     "postedAt": "2026-04-01T17:48:25-04:00",
-    "scrapedAt": "2026-04-07T02:27:03.504Z",
+    "scrapedAt": "2026-04-07T08:55:52.187Z",
     "description": "Every day, tens of millions of people come to Roblox to explore, create, play, learn, and connect with friends in 3D immersive digital experiences– all created by our global community of developers an",
     "region": "noam",
     "employmentType": "full-time"
@@ -2567,7 +2672,7 @@
       "Product Design"
     ],
     "postedAt": "2026-04-01T17:45:20-04:00",
-    "scrapedAt": "2026-04-07T02:26:33.123Z",
+    "scrapedAt": "2026-04-07T08:55:38.542Z",
     "description": "Reddit is a community of communities. It’s built on shared interests, passion, and trust, and is home to the most open and authentic conversations on the internet. Every day, Reddit users submit, vote",
     "region": "noam",
     "employmentType": "full-time"
@@ -2585,8 +2690,25 @@
       "Design"
     ],
     "postedAt": "2026-04-01T21:42:36.900Z",
-    "scrapedAt": "2026-04-07T02:27:38.648Z",
+    "scrapedAt": "2026-04-07T09:01:09.023Z",
     "description": "About Solace Healthcare in the U.S. is fundamentally broken. The system is so complex that 88% of U.S. adults do not have the health literacy necessary to navigate it without help. Solace cuts through",
+    "region": "noam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_wlbm8q",
+    "title": "Senior Product Designer, AI Builders",
+    "company": "Cresta",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=cresta.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/cresta/jobs/5173681008",
+    "source": "greenhouse",
+    "tags": [
+      "Product"
+    ],
+    "postedAt": "2026-04-01T17:34:35-04:00",
+    "scrapedAt": "2026-04-07T08:57:24.215Z",
+    "description": "Cresta is on a mission to turn every customer conversation into a competitive advantage by unlocking the true potential of the contact center. Our platform combines the best of AI and human intelligen",
     "region": "noam",
     "employmentType": "full-time"
   },
@@ -2602,7 +2724,7 @@
       "People"
     ],
     "postedAt": "2026-04-01T17:00:27-04:00",
-    "scrapedAt": "2026-04-07T02:30:01.486Z",
+    "scrapedAt": "2026-04-07T08:57:17.107Z",
     "description": "Who we are The real world is the next frontier, and at Metropolis, we are creating the artificial intelligence to make it responsive. We are pioneering the Recognition Economy — a future where mundane",
     "region": "noam",
     "employmentType": "full-time"
@@ -2620,7 +2742,7 @@
       "Product"
     ],
     "postedAt": "2026-04-01T20:38:27.363Z",
-    "scrapedAt": "2026-04-07T02:26:00.826Z",
+    "scrapedAt": "2026-04-07T08:57:06.307Z",
     "description": "About Tradeify Tradeify is a fast-growing fintech company empowering traders with access to capital, advanced tools, and a high-performance trading ecosystem. Our platform combines elite trading techn",
     "region": "ww",
     "employmentType": "full-time"
@@ -2637,8 +2759,25 @@
       "User Experience - Freelance"
     ],
     "postedAt": "2026-04-01T16:33:19-04:00",
-    "scrapedAt": "2026-04-07T02:26:49.657Z",
+    "scrapedAt": "2026-04-07T08:55:46.130Z",
     "description": "At AKQA, we believe in the imaginative application of art and science to create beautiful ideas, products and services. With an entrepreneurial and collaborative approach, we design adaptive digital s",
+    "region": "latam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_jqgcb9",
+    "title": "Staff Product Designer - Inovação",
+    "company": "iFood",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=ifood.com.br&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/ifoodcarreiras/jobs/8451740002",
+    "source": "greenhouse",
+    "tags": [
+      "DESIGN DISRUPT | TECH"
+    ],
+    "postedAt": "2026-04-01T15:56:38-04:00",
+    "scrapedAt": "2026-04-07T08:57:27.121Z",
+    "description": "Nosso Modo de Fazer no Time: Transforme sua carreira com o iFood! Somos uma empresa brasileira de tecnologia referência na América Latina. Por meio de soluções inovadoras, conectamos milhares de resta",
     "region": "latam",
     "employmentType": "full-time"
   },
@@ -2654,7 +2793,7 @@
       "Product Design"
     ],
     "postedAt": "2026-04-01T15:52:48-04:00",
-    "scrapedAt": "2026-04-07T02:26:31.058Z",
+    "scrapedAt": "2026-04-07T08:55:36.335Z",
     "description": "We're transforming the grocery industry At Instacart, we invite the world to share love through food because we believe everyone should have access to the food they love and more time to enjoy it toge",
     "region": "noam",
     "employmentType": "full-time"
@@ -2671,7 +2810,7 @@
       "Engineering"
     ],
     "postedAt": "2026-04-01T15:32:40-04:00",
-    "scrapedAt": "2026-04-07T02:27:30.183Z",
+    "scrapedAt": "2026-04-07T08:56:22.112Z",
     "description": "About Arize AI is rapidly transforming the world. As generative AI reshapes industries, teams need powerful ways to monitor, troubleshoot, and optimize their AI systems. That’s where we come in. Arize",
     "region": "noam",
     "employmentType": "full-time"
@@ -2688,7 +2827,7 @@
       "Marketing"
     ],
     "postedAt": "2026-04-01T15:15:03-04:00",
-    "scrapedAt": "2026-04-07T02:27:02.384Z",
+    "scrapedAt": "2026-04-07T08:55:50.511Z",
     "description": "Who We Are: Bandwidth , a prior “Best of EC” award winner, is a global software company that helps enterprises deliver exceptional experiences through voice, messaging, and emergency services. Reachin",
     "region": "ww",
     "employmentType": "full-time"
@@ -2706,7 +2845,7 @@
       "User Operations"
     ],
     "postedAt": "2026-04-01T19:14:52.715Z",
-    "scrapedAt": "2026-04-07T02:26:45.394Z",
+    "scrapedAt": "2026-04-07T08:58:38.410Z",
     "description": "Why Harvey At Harvey, we’re transforming how legal and professional services operate — not incrementally, but end-to-end. By combining frontier agentic AI, an enterprise-grade platform, and deep domai",
     "region": "noam",
     "employmentType": "full-time"
@@ -2724,7 +2863,7 @@
       "Design"
     ],
     "postedAt": "2026-04-01T19:04:19.790Z",
-    "scrapedAt": "2026-04-07T02:25:33.056Z",
+    "scrapedAt": "2026-04-07T08:55:27.477Z",
     "description": "About WorkOS 🚀 WorkOS builds modern developer tools and APIs that make it easy for companies to become Enterprise Ready. Our platform powers authentication, identity, authorization, and other critica",
     "region": "noam",
     "employmentType": "full-time"
@@ -2741,7 +2880,7 @@
       "Marketing"
     ],
     "postedAt": "2026-04-01T14:47:12-04:00",
-    "scrapedAt": "2026-04-07T02:26:40.961Z",
+    "scrapedAt": "2026-04-07T08:55:42.772Z",
     "description": "The Trade Desk is changing the way global brands and their agencies advertise to audiences around the world. How? With a media buying platform that helps brands deliver a more insightful and relevant ",
     "region": "noam",
     "employmentType": "full-time"
@@ -2758,7 +2897,7 @@
       "Product Design"
     ],
     "postedAt": "2026-04-01T14:20:47-04:00",
-    "scrapedAt": "2026-04-07T02:26:31.512Z",
+    "scrapedAt": "2026-04-07T08:55:35.849Z",
     "description": "Datadog is hiring a Research leader to define the next evolution of our research practice. You will lead a group that integrates human insights with quantitative depth and AI-driven synthesis to build",
     "region": "noam",
     "employmentType": "full-time"
@@ -2775,7 +2914,7 @@
       "Product Design"
     ],
     "postedAt": "2026-04-01T14:20:47-04:00",
-    "scrapedAt": "2026-04-07T02:26:31.537Z",
+    "scrapedAt": "2026-04-07T08:55:35.870Z",
     "description": "We’re looking for a Product Designer 2 to join the Cloud Cost Management (CCM) team at Datadog, focused specifically on commitment programs. In this role, you’ll design user experiences that help cust",
     "region": "eur",
     "employmentType": "full-time"
@@ -2792,7 +2931,7 @@
       "Product Design"
     ],
     "postedAt": "2026-04-01T14:20:47-04:00",
-    "scrapedAt": "2026-04-07T02:26:31.547Z",
+    "scrapedAt": "2026-04-07T08:55:35.880Z",
     "description": "We’re looking for a Senior Interaction Designer, Design Lab to innovate and implement how motion and AI-first interaction functions across Datadog’s products and contribute to the visual design evolut",
     "region": "noam",
     "employmentType": "full-time"
@@ -2809,7 +2948,7 @@
       "Product Design"
     ],
     "postedAt": "2026-04-01T14:20:47-04:00",
-    "scrapedAt": "2026-04-07T02:26:31.549Z",
+    "scrapedAt": "2026-04-07T08:55:35.882Z",
     "description": "We’re looking for a Senior Product Designer, Motion to innovate and implement how motion and AI-first interaction functions across Datadog’s products and contribute to the visual design evolution of D",
     "region": "noam",
     "employmentType": "full-time"
@@ -2826,7 +2965,7 @@
       "Product Design"
     ],
     "postedAt": "2026-04-01T14:20:47-04:00",
-    "scrapedAt": "2026-04-07T02:26:31.560Z",
+    "scrapedAt": "2026-04-07T08:55:35.891Z",
     "description": "Datadog is entering a new chapter in how our product looks, feels and operates. We’re building a small, high-leverage Design Lab team to define that evolution, and we’re looking for a Staff Visual Des",
     "region": "noam",
     "employmentType": "full-time"
@@ -2843,7 +2982,7 @@
       "Experience Design"
     ],
     "postedAt": "2026-04-01T12:49:49-04:00",
-    "scrapedAt": "2026-04-07T02:30:16.345Z",
+    "scrapedAt": "2026-04-07T08:57:23.269Z",
     "description": "Paste Job Description",
     "region": "latam",
     "employmentType": "full-time"
@@ -2860,7 +2999,7 @@
       "Product Design"
     ],
     "postedAt": "2026-04-01T12:41:46-04:00",
-    "scrapedAt": "2026-04-07T02:27:57.662Z",
+    "scrapedAt": "2026-04-07T08:56:44.680Z",
     "description": "About Stitch Fix, Inc. Stitch Fix (NASDAQ: SFIX) is the leading online personal styling service that helps people discover the styles they will love that fit perfectly so they always look - and feel -",
     "region": "noam",
     "employmentType": "full-time"
@@ -2877,7 +3016,7 @@
       "8113 Brand Studio"
     ],
     "postedAt": "2026-04-01T12:07:42-04:00",
-    "scrapedAt": "2026-04-07T02:25:38.845Z",
+    "scrapedAt": "2026-04-07T08:55:24.757Z",
     "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies - from the world’s largest enterprises to the most ambitious startups - use Stripe to accept",
     "region": "noam",
     "employmentType": "full-time"
@@ -2894,7 +3033,7 @@
       "8113 Brand Studio"
     ],
     "postedAt": "2026-04-01T11:46:05-04:00",
-    "scrapedAt": "2026-04-07T02:25:38.845Z",
+    "scrapedAt": "2026-04-07T08:55:24.758Z",
     "description": "Who we are About Stripe &amp; Link At Stripe, we’ve spent the last 15 years building financial infrastructure for the internet, serving millions of people and businesses worldwide. Our flagship consum",
     "region": "noam",
     "employmentType": "full-time"
@@ -2911,7 +3050,7 @@
       "8813 Web Presence & Platform"
     ],
     "postedAt": "2026-04-01T11:46:05-04:00",
-    "scrapedAt": "2026-04-07T02:25:38.850Z",
+    "scrapedAt": "2026-04-07T08:55:24.762Z",
     "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies - from the world’s largest enterprises to the most ambitious startups - use Stripe to accept",
     "region": "noam",
     "employmentType": "full-time"
@@ -2928,7 +3067,7 @@
       "8811 Product Design"
     ],
     "postedAt": "2026-04-01T11:46:05-04:00",
-    "scrapedAt": "2026-04-07T02:25:38.868Z",
+    "scrapedAt": "2026-04-07T08:55:24.779Z",
     "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept pay",
     "region": "noam",
     "employmentType": "full-time"
@@ -2945,7 +3084,7 @@
       "8811 Product Design"
     ],
     "postedAt": "2026-04-01T11:46:05-04:00",
-    "scrapedAt": "2026-04-07T02:25:38.869Z",
+    "scrapedAt": "2026-04-07T08:55:24.780Z",
     "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept pay",
     "region": "eur",
     "employmentType": "full-time"
@@ -2962,7 +3101,7 @@
       "8811 Product Design"
     ],
     "postedAt": "2026-04-01T11:46:05-04:00",
-    "scrapedAt": "2026-04-07T02:25:38.869Z",
+    "scrapedAt": "2026-04-07T08:55:24.780Z",
     "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept pay",
     "region": "noam",
     "employmentType": "full-time"
@@ -2979,7 +3118,7 @@
       "8811 Product Design"
     ],
     "postedAt": "2026-04-01T11:46:05-04:00",
-    "scrapedAt": "2026-04-07T02:25:38.869Z",
+    "scrapedAt": "2026-04-07T08:55:24.780Z",
     "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept pay",
     "region": "noam",
     "employmentType": "full-time"
@@ -2996,7 +3135,7 @@
       "8811 Product Design"
     ],
     "postedAt": "2026-04-01T11:46:05-04:00",
-    "scrapedAt": "2026-04-07T02:25:38.870Z",
+    "scrapedAt": "2026-04-07T08:55:24.780Z",
     "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept pay",
     "region": "noam",
     "employmentType": "full-time"
@@ -3013,7 +3152,7 @@
       "8811 Product Design"
     ],
     "postedAt": "2026-04-01T11:46:05-04:00",
-    "scrapedAt": "2026-04-07T02:25:38.877Z",
+    "scrapedAt": "2026-04-07T08:55:24.789Z",
     "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept pay",
     "region": "noam",
     "employmentType": "full-time"
@@ -3030,7 +3169,7 @@
       "8811 Product Design"
     ],
     "postedAt": "2026-04-01T11:46:05-04:00",
-    "scrapedAt": "2026-04-07T02:25:38.877Z",
+    "scrapedAt": "2026-04-07T08:55:24.789Z",
     "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept pay",
     "region": "noam",
     "employmentType": "full-time"
@@ -3047,7 +3186,7 @@
       "8811 Product Design"
     ],
     "postedAt": "2026-04-01T11:46:05-04:00",
-    "scrapedAt": "2026-04-07T02:25:38.884Z",
+    "scrapedAt": "2026-04-07T08:55:24.794Z",
     "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept pay",
     "region": "noam",
     "employmentType": "full-time"
@@ -3064,7 +3203,7 @@
       "8812 UX Research"
     ],
     "postedAt": "2026-04-01T11:46:05-04:00",
-    "scrapedAt": "2026-04-07T02:25:38.889Z",
+    "scrapedAt": "2026-04-07T08:55:24.800Z",
     "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept pay",
     "region": "noam",
     "employmentType": "full-time"
@@ -3081,7 +3220,7 @@
       "Product"
     ],
     "postedAt": "2026-04-01T11:28:49-04:00",
-    "scrapedAt": "2026-04-07T02:29:06.309Z",
+    "scrapedAt": "2026-04-07T08:57:01.594Z",
     "description": "Our Mission Healthcare should work for patients, but it doesn’t. In their time of need, they call down outdated insurance directories. Then wait on hold. Then wait weeks for the privilege of a visit. ",
     "region": "noam",
     "employmentType": "full-time"
@@ -3098,9 +3237,60 @@
       "Product"
     ],
     "postedAt": "2026-04-01T11:28:49-04:00",
-    "scrapedAt": "2026-04-07T02:29:06.312Z",
+    "scrapedAt": "2026-04-07T08:57:01.598Z",
     "description": "Our Mission Healthcare should work for patients, but it doesn’t. In their time of need, they call down outdated insurance directories. Then wait on hold. Then wait weeks for the privilege of a visit. ",
     "region": "ww",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_4t2k9g",
+    "title": "Game Designer & Game Lead",
+    "company": "Wildlife Studios",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=wildlifestudios.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/wildlifestudios/jobs/8375546002",
+    "source": "greenhouse",
+    "tags": [
+      "New Games Product"
+    ],
+    "postedAt": "2026-04-01T11:08:21-04:00",
+    "scrapedAt": "2026-04-07T08:57:32.990Z",
+    "description": "We're looking for a talented and passionate Game Designer &amp; Game Lead to join Wildlife's New Games team . Wildlife is constantly building and releasing new titles with the goal of bringing fun to ",
+    "region": "latam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_yu6oti",
+    "title": "UI/UX Designer",
+    "company": "Wildlife Studios",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=wildlifestudios.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/wildlifestudios/jobs/8328320002",
+    "source": "greenhouse",
+    "tags": [
+      "Game Development Hub"
+    ],
+    "postedAt": "2026-04-01T11:08:21-04:00",
+    "scrapedAt": "2026-04-07T08:57:32.993Z",
+    "description": "We're looking for a talented and passionate UI/UX Designer to join Wildlife's Game Art Team in São Paulo. The Game Art Team at Wildlife is growing. With an audience that numbers in the millions, our g",
+    "region": "latam",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_z7ni7d",
+    "title": "Visual Designer (UI)",
+    "company": "Wildlife Studios",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=wildlifestudios.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/wildlifestudios/jobs/8315640002",
+    "source": "greenhouse",
+    "tags": [
+      "Game Development Hub"
+    ],
+    "postedAt": "2026-04-01T11:08:21-04:00",
+    "scrapedAt": "2026-04-07T08:57:32.994Z",
+    "description": "We're looking for a talented and passionate Visual Designer to join Wildlife's Game Art Team in São Paulo. The Game Art Team at Wildlife is growing. With an audience that numbers in the millions, our ",
+    "region": "latam",
     "employmentType": "full-time"
   },
   {
@@ -3115,7 +3305,7 @@
       "Design"
     ],
     "postedAt": "2026-04-01T11:03:59-04:00",
-    "scrapedAt": "2026-04-07T02:26:10.503Z",
+    "scrapedAt": "2026-04-07T08:55:31.616Z",
     "description": "We’re looking for a Staff Product Designer to help craft the future of the Lattice Platform. Our Core UI team covers a wide variety of critical user touchpoints including navigation, homepages, mobile",
     "region": "noam",
     "employmentType": "full-time"
@@ -3132,7 +3322,7 @@
       "Design"
     ],
     "postedAt": "2026-04-01T10:38:51-04:00",
-    "scrapedAt": "2026-04-07T02:25:40.239Z",
+    "scrapedAt": "2026-04-07T08:55:26.580Z",
     "description": "About Gusto At Gusto, we're on a mission to grow the small business economy. We handle the hard stuff—like payroll, health insurance, 401(k)s, and HR—so owners can focus on their craft and customers. ",
     "region": "noam",
     "employmentType": "full-time"
@@ -3149,7 +3339,7 @@
       "MonopolyGo"
     ],
     "postedAt": "2026-04-01T10:27:20-04:00",
-    "scrapedAt": "2026-04-07T02:27:03.279Z",
+    "scrapedAt": "2026-04-07T08:55:51.635Z",
     "description": "Scopely is looking for a Senior Game Designer to join our Monopoly GO! team in Seville (Spain) on a hybrid basis! At Scopely, we care deeply about what we do and want to inspire play, every day - whet",
     "region": "eur",
     "employmentType": "full-time"
@@ -3167,7 +3357,7 @@
       "Design"
     ],
     "postedAt": "2026-04-01T14:18:24.776Z",
-    "scrapedAt": "2026-04-07T02:27:33.021Z",
+    "scrapedAt": "2026-04-07T09:00:45.537Z",
     "description": "Lead Product Designer - Healthcare Reaktor’s award-winning tech and design community is looking for a Lead Product Designer to join our Amsterdam office. You understand how to sell creative work — Bas",
     "region": "eur",
     "employmentType": "full-time"
@@ -3185,7 +3375,7 @@
       "Design"
     ],
     "postedAt": "2026-04-01T14:15:41.408Z",
-    "scrapedAt": "2026-04-07T02:27:33.021Z",
+    "scrapedAt": "2026-04-07T09:00:45.537Z",
     "description": "Senior Product Designer - Retail Reaktor’s award-winning tech and design community is looking for a Senior Product Designer to join our Amsterdam office. You understand how to sell creative work — gro",
     "region": "eur",
     "employmentType": "full-time"
@@ -3202,7 +3392,7 @@
       "Product"
     ],
     "postedAt": "2026-04-01T09:17:41-04:00",
-    "scrapedAt": "2026-04-07T02:27:46.539Z",
+    "scrapedAt": "2026-04-07T08:56:32.088Z",
     "description": "Bloomreach is building the world’s premier agentic platform for personalization .We’re revolutionizing how businesses connect with their customers, building and deploying AI agents to personalize the ",
     "region": "eur",
     "employmentType": "full-time"
@@ -3220,7 +3410,7 @@
       "Research & Development"
     ],
     "postedAt": "2026-04-01T13:08:28.394Z",
-    "scrapedAt": "2026-04-07T02:26:48.904Z",
+    "scrapedAt": "2026-04-07T08:58:39.287Z",
     "description": "UX Designer Product Organization · UX Design Team MeridianLink is seeking a talented UX Designer to join our UX Design team within the Product organization. This role is ideal for someone who thrives ",
     "region": "noam",
     "employmentType": "full-time"
@@ -3237,7 +3427,7 @@
       "AIR Design"
     ],
     "postedAt": "2026-04-01T09:02:25-04:00",
-    "scrapedAt": "2026-04-07T02:29:41.393Z",
+    "scrapedAt": "2026-04-07T08:57:07.246Z",
     "description": "#LI-HYBRID #LI-YY1 At JetBrains, code is our passion. Ever since we started, back in 2000, we have strived to make the strongest, most effective developer tools on earth. By automating routine checks ",
     "region": "latam",
     "employmentType": "full-time"
@@ -3254,25 +3444,8 @@
       "Design"
     ],
     "postedAt": "2026-04-01T08:53:12-04:00",
-    "scrapedAt": "2026-04-07T02:26:51.460Z",
+    "scrapedAt": "2026-04-07T08:55:47.642Z",
     "description": "🚀 We’re on a mission to make money work for everyone. We’re waving goodbye to the complicated and confusing ways of traditional banking. After starting as a prepaid card, our product offering has gro",
-    "region": "eur",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_kxizys",
-    "title": "Product Designer II - Security",
-    "company": "Elastic",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=elastic.co&sz=128",
-    "category": "creative",
-    "url": "https://jobs.elastic.co/jobs?gh_jid=7716465&gh_jid=7716465",
-    "source": "greenhouse",
-    "tags": [
-      "Security - Cross Team"
-    ],
-    "postedAt": "2026-04-01T08:37:45-04:00",
-    "scrapedAt": "2026-04-07T02:25:29.941Z",
-    "description": "Elastic, the Search AI Company, enables everyone to find the answers they need in real time, using all their data, at scale — unleashing the potential of businesses and people. The Elastic Search AI P",
     "region": "eur",
     "employmentType": "full-time"
   },
@@ -3288,7 +3461,7 @@
       "Design"
     ],
     "postedAt": "2026-04-01T08:19:55-04:00",
-    "scrapedAt": "2026-04-07T02:26:51.460Z",
+    "scrapedAt": "2026-04-07T08:55:47.642Z",
     "description": "🚀 We’re on a mission to make money work for everyone. We’re waving goodbye to the complicated and confusing ways of traditional banking. After starting as a prepaid card, our product offering has gro",
     "region": "eur",
     "employmentType": "full-time"
@@ -3305,8 +3478,25 @@
       "Marketing"
     ],
     "postedAt": "2026-04-01T11:19:07.796Z",
-    "scrapedAt": "2026-04-07T02:32:34.730Z",
+    "scrapedAt": "2026-04-07T09:03:35.788Z",
     "description": "Join Hostinger, and we’ll grow fast! 🚀\n \nWe’re shaping the future of online success - powered by AI and driven by people. With 900+ talented professionals and over 5 million clients in 150 countries,",
+    "region": "eur",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_uaxt8z",
+    "title": "Junior Product Designer",
+    "company": "ComplyAdvantage",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=complyadvantage.com&sz=128",
+    "category": "creative",
+    "url": "https://complyadvantage.com/careers/jobs/8463910002?gh_jid=8463910002",
+    "source": "greenhouse",
+    "tags": [
+      "Technology"
+    ],
+    "postedAt": "2026-04-01T06:38:36-04:00",
+    "scrapedAt": "2026-04-07T08:57:28.177Z",
+    "description": "We are looking for a proactive and curious Junior Product Designer to join our Platform Tribe (specifically the Front End &amp; Design team). While you’ll be embedded in the platform area, your impact",
     "region": "eur",
     "employmentType": "full-time"
   },
@@ -3322,7 +3512,7 @@
       "Design"
     ],
     "postedAt": "2026-04-01T06:16:23-04:00",
-    "scrapedAt": "2026-04-07T02:29:31.316Z",
+    "scrapedAt": "2026-04-07T08:57:05.816Z",
     "description": "We provide a unified Operating System for health professionals that spans appointment management, electronic health records, teleconsultations, billing, patient communication, care coordination, and –",
     "region": "eur",
     "employmentType": "full-time"
@@ -3339,7 +3529,7 @@
       "Design"
     ],
     "postedAt": "2026-04-01T06:16:23-04:00",
-    "scrapedAt": "2026-04-07T02:29:31.338Z",
+    "scrapedAt": "2026-04-07T08:57:05.832Z",
     "description": "What you'll do We are looking for a Senior Product Design Team Manager to lead a team responsible for the design strategy and execution for our clinical experience. The clinical domain encompasses wor",
     "region": "eur",
     "employmentType": "full-time"
@@ -3356,7 +3546,7 @@
       "FlySto"
     ],
     "postedAt": "2026-04-01T06:11:35-04:00",
-    "scrapedAt": "2026-04-07T02:29:41.388Z",
+    "scrapedAt": "2026-04-07T08:57:07.241Z",
     "description": "FlySto is a startup project with a small, distributed team. We have a server, web client, and Android and iOS apps – all written in Kotlin and supported by JetBrains. Modern aircraft, even small ones,",
     "region": "latam",
     "employmentType": "full-time"
@@ -3373,7 +3563,7 @@
       "Kineto"
     ],
     "postedAt": "2026-04-01T06:11:33-04:00",
-    "scrapedAt": "2026-04-07T02:29:41.390Z",
+    "scrapedAt": "2026-04-07T08:57:07.242Z",
     "description": "At JetBrains, we have a passion for building the strongest, most effective developer tools in the world, giving developers the freedom to grow, discover, and create. Over 15 million of the world's mos",
     "region": "eur",
     "employmentType": "full-time"
@@ -3390,7 +3580,7 @@
       "TeamCity Discovery"
     ],
     "postedAt": "2026-04-01T06:10:05-04:00",
-    "scrapedAt": "2026-04-07T02:29:41.393Z",
+    "scrapedAt": "2026-04-07T08:57:07.246Z",
     "description": "At JetBrains, we have a passion for building the strongest, most effective developer tools in the world, giving developers the freedom to grow, discover, and create. Over fifteen million of the world'",
     "region": "latam",
     "employmentType": "full-time"
@@ -3407,7 +3597,7 @@
       "Design"
     ],
     "postedAt": "2026-04-01T05:28:18-04:00",
-    "scrapedAt": "2026-04-07T02:29:43.363Z",
+    "scrapedAt": "2026-04-07T08:57:08.911Z",
     "description": "Senior UX Researcher | Experiences About Tripadvisor The Tripadvisor Group connects people to experiences worth sharing, and aims to be the world’s most trusted source for travel and experiences. We l",
     "region": "eur",
     "employmentType": "full-time"
@@ -3424,7 +3614,7 @@
       "Product Design & UXR-650"
     ],
     "postedAt": "2026-04-01T05:17:54-04:00",
-    "scrapedAt": "2026-04-07T02:26:36.425Z",
+    "scrapedAt": "2026-04-07T08:55:39.906Z",
     "description": "Secure Every Identity, from AI to Human Identity is the key to unlocking the potential of AI. Okta secures AI by building the trusted, neutral infrastructure that enables organizations to safely embra",
     "region": "apac",
     "employmentType": "full-time"
@@ -3442,7 +3632,7 @@
       "Product & Experience"
     ],
     "postedAt": "2026-04-01T09:08:48.071Z",
-    "scrapedAt": "2026-04-07T02:31:36.208Z",
+    "scrapedAt": "2026-04-07T09:01:48.654Z",
     "description": "About BlaBlaCar\nBlaBlaCar is the world’s leading community-based travel app enabling 27 million members a year to carpool or travel by bus in 21 countries. Our team of 800 employees counts over 50 nat",
     "region": "eur",
     "employmentType": "full-time"
@@ -3459,7 +3649,7 @@
       "Product"
     ],
     "postedAt": "2026-04-01T04:42:36-04:00",
-    "scrapedAt": "2026-04-07T02:27:25.106Z",
+    "scrapedAt": "2026-04-07T08:56:17.363Z",
     "description": "About Dashlane Dashlane’s mission is to deliver the credential security every business and employee needs to thrive. Millions of consumers, and over 25,000 brands worldwide, such as Michelin, Air Fran",
     "region": "eur",
     "employmentType": "full-time"
@@ -3476,7 +3666,7 @@
       "Product Design"
     ],
     "postedAt": "2026-04-01T03:21:40-04:00",
-    "scrapedAt": "2026-04-07T02:26:33.113Z",
+    "scrapedAt": "2026-04-07T08:55:38.532Z",
     "description": "Reddit is a community of communities. It’s built on shared interests, passion, and trust, and is home to the most open and authentic conversations on the internet. Every day, Reddit users submit, vote",
     "region": "noam",
     "employmentType": "full-time"
@@ -3493,7 +3683,7 @@
       "Product (78L)"
     ],
     "postedAt": "2026-03-31T23:01:41-04:00",
-    "scrapedAt": "2026-04-07T02:28:59.133Z",
+    "scrapedAt": "2026-04-07T08:56:57.353Z",
     "description": "Waymo is an autonomous driving technology company with the mission to be the world's most trusted driver. Since its start as the Google Self-Driving Car Project in 2009, Waymo has focused on building ",
     "region": "noam",
     "employmentType": "full-time"
@@ -3510,7 +3700,7 @@
       "Design"
     ],
     "postedAt": "2026-03-31T22:35:47-04:00",
-    "scrapedAt": "2026-04-07T02:27:23.821Z",
+    "scrapedAt": "2026-04-07T08:56:07.710Z",
     "description": "About Glean: Glean is the Work AI platform that helps everyone work smarter with AI. What began as the industry’s most advanced enterprise search has evolved into a full-scale Work AI ecosystem, power",
     "region": "noam",
     "employmentType": "full-time"
@@ -3527,7 +3717,7 @@
       "Design"
     ],
     "postedAt": "2026-03-31T22:33:27-04:00",
-    "scrapedAt": "2026-04-07T02:27:23.821Z",
+    "scrapedAt": "2026-04-07T08:56:07.710Z",
     "description": "About Glean: Glean is the Work AI platform that helps everyone work smarter with AI. What began as the industry’s most advanced enterprise search has evolved into a full-scale Work AI ecosystem, power",
     "region": "noam",
     "employmentType": "full-time"
@@ -3544,7 +3734,7 @@
       "Design"
     ],
     "postedAt": "2026-03-31T22:29:38-04:00",
-    "scrapedAt": "2026-04-07T02:27:23.820Z",
+    "scrapedAt": "2026-04-07T08:56:07.710Z",
     "description": "About Glean: Glean is the Work AI platform that helps everyone work smarter with AI. What began as the industry’s most advanced enterprise search has evolved into a full-scale Work AI ecosystem, power",
     "region": "apac",
     "employmentType": "full-time"
@@ -3561,26 +3751,9 @@
       "Visual Design"
     ],
     "postedAt": "2026-03-31T21:38:00-04:00",
-    "scrapedAt": "2026-04-07T02:30:16.346Z",
+    "scrapedAt": "2026-04-07T08:57:23.272Z",
     "description": "Senior Visual Designer, Brand Full-time | Remote | Creative About R/GA R/GA is a global creative innovation company that designs more valuable experiences for people and brands. At R/GA, change is a f",
     "region": "latam",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_dhtkhb",
-    "title": "Principal Product Designer",
-    "company": "Fivetran",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=fivetran.com&sz=128",
-    "category": "creative",
-    "url": "https://www.fivetran.com/careers/job?gh_jid=7656004003",
-    "source": "greenhouse",
-    "tags": [
-      "Business Intelligence Department"
-    ],
-    "postedAt": "2026-03-31T19:46:08-04:00",
-    "scrapedAt": "2026-04-07T02:27:03.535Z",
-    "description": "From Fivetran’s founding until now, our mission has remained the same: to make access to data as simple and reliable as electricity. With Fivetran, customer data arrives in their warehouses, canonical",
-    "region": "noam",
     "employmentType": "full-time"
   },
   {
@@ -3595,7 +3768,7 @@
       "Marketing"
     ],
     "postedAt": "2026-03-31T18:52:19-04:00",
-    "scrapedAt": "2026-04-07T02:27:23.808Z",
+    "scrapedAt": "2026-04-07T08:56:07.695Z",
     "description": "About Glean: Glean is the Work AI platform that helps everyone work smarter with AI. What began as the industry’s most advanced enterprise search has evolved into a full-scale Work AI ecosystem, power",
     "region": "apac",
     "employmentType": "full-time"
@@ -3613,7 +3786,7 @@
       "Marketing"
     ],
     "postedAt": "2026-03-31T22:14:12.301Z",
-    "scrapedAt": "2026-04-07T02:29:06.691Z",
+    "scrapedAt": "2026-04-07T08:58:32.532Z",
     "description": "Filevine is a Legal AI company delivering Legal Operating Intelligence for the future of legal work. Grounded in a singular system of truth, Filevine brings together data, documents, workflows, and te",
     "region": "noam",
     "employmentType": "full-time"
@@ -3631,7 +3804,7 @@
       "Marketing"
     ],
     "postedAt": "2026-03-31T22:14:05.328Z",
-    "scrapedAt": "2026-04-07T02:29:06.691Z",
+    "scrapedAt": "2026-04-07T08:58:32.533Z",
     "description": "Filevine is a Legal AI company delivering Legal Operating Intelligence for the future of legal work. Grounded in a singular system of truth, Filevine brings together data, documents, workflows, and te",
     "region": "noam",
     "employmentType": "full-time"
@@ -3648,7 +3821,7 @@
       "Product Design"
     ],
     "postedAt": "2026-03-31T17:53:12-04:00",
-    "scrapedAt": "2026-04-07T02:26:48.798Z",
+    "scrapedAt": "2026-04-07T08:55:44.531Z",
     "description": "We are building AI to simulate the world through merging art and science. We believe that world models are at the frontier of progress in artificial intelligence. Language models alone won’t solve the",
     "region": "ww",
     "employmentType": "full-time"
@@ -3665,26 +3838,26 @@
       "R & D : Product : Retail"
     ],
     "postedAt": "2026-03-31T17:39:42-04:00",
-    "scrapedAt": "2026-04-07T02:25:40.293Z",
+    "scrapedAt": "2026-04-07T08:55:27.067Z",
     "description": "About Toast Toast builds technology that helps food and beverage businesses run smoother, serve customers better, and grow with confidence. Our platform brings together the tools teams need to power d",
     "region": "noam",
     "employmentType": "full-time"
   },
   {
-    "id": "greenhouse_ctmfw1",
+    "id": "greenhouse_cd1xt2",
     "title": "Senior Product Designer",
     "company": "Toast",
     "companyLogo": "https://www.google.com/s2/favicons?domain=toasttab.com&sz=128",
     "category": "creative",
-    "url": "https://careers.toasttab.com/jobs?gh_jid=7704926",
+    "url": "https://careers.toasttab.com/jobs?gh_jid=7610370",
     "source": "greenhouse",
     "tags": [
-      "R & D : UX : International"
+      "R & D : UX : Enterprise"
     ],
-    "postedAt": "2026-03-31T17:39:42-04:00",
-    "scrapedAt": "2026-04-07T02:25:40.309Z",
-    "description": "At Toast, our mission is simple: help build restaurants everyone loves. We partner with restaurateurs to create the technology that powers unforgettable hospitality, from the first guest interaction t",
-    "region": "eur",
+    "postedAt": "2026-03-31T17:39:39-04:00",
+    "scrapedAt": "2026-04-07T08:55:27.082Z",
+    "description": "About Toast Our focus is on building the restaurant platform that helps restaurants adapt, take control, and get back to what they do best: building the businesses they love. And because our technolog",
+    "region": "noam",
     "employmentType": "full-time"
   },
   {
@@ -3699,7 +3872,7 @@
       "Creative"
     ],
     "postedAt": "2026-03-31T17:25:18-04:00",
-    "scrapedAt": "2026-04-07T02:29:48.105Z",
+    "scrapedAt": "2026-04-07T08:57:11.552Z",
     "description": "WHY DEPT®? We are a Growth Invention company built to help the world’s most ambitious brands grow faster. Operating at the intersection of technology and marketing, we create what is next by pioneerin",
     "region": "latam",
     "employmentType": "full-time"
@@ -3716,7 +3889,7 @@
       "Brand"
     ],
     "postedAt": "2026-03-31T16:52:58-04:00",
-    "scrapedAt": "2026-04-07T02:29:47.286Z",
+    "scrapedAt": "2026-04-07T08:57:11.251Z",
     "description": "About Gigs At Gigs, we're building the operating system for mobile services—a platform that lets tech companies embed global connectivity into their products effortlessly. Just as Stripe lets any busi",
     "region": "noam",
     "employmentType": "full-time"
@@ -3733,7 +3906,7 @@
       "Product"
     ],
     "postedAt": "2026-03-31T16:29:26-04:00",
-    "scrapedAt": "2026-04-07T02:27:20.541Z",
+    "scrapedAt": "2026-04-07T08:56:02.698Z",
     "description": "mabl is on a mission to empower software teams with an AI-powered low-code test automation platform that streamlines testing across web, mobile, API, accessibility, and performance. We enable everyone",
     "region": "noam",
     "employmentType": "full-time"
@@ -3750,7 +3923,7 @@
       "Art & Audio Performance"
     ],
     "postedAt": "2026-03-31T15:21:03-04:00",
-    "scrapedAt": "2026-04-07T02:29:31.761Z",
+    "scrapedAt": "2026-04-07T08:57:05.759Z",
     "description": "Who Are We? HoYoverse is committed to providing immersive virtual world experiences to players around the world. We have brought fans popular games including Genshin Impact, Honkai: Star Rail, Honkai ",
     "region": "apac",
     "employmentType": "full-time"
@@ -3767,7 +3940,7 @@
       "Marketing, Community & Business Development"
     ],
     "postedAt": "2026-03-31T15:21:03-04:00",
-    "scrapedAt": "2026-04-07T02:29:31.765Z",
+    "scrapedAt": "2026-04-07T08:57:05.762Z",
     "description": "Who Are We? HoYoverse is committed to providing immersive virtual world experiences to players around the world. We have brought fans popular games including Genshin Impact, Honkai: Star Rail, Honkai ",
     "region": "noam",
     "employmentType": "full-time"
@@ -3784,26 +3957,9 @@
       "Design"
     ],
     "postedAt": "2026-03-31T15:17:38-04:00",
-    "scrapedAt": "2026-04-07T02:26:33.152Z",
+    "scrapedAt": "2026-04-07T08:55:37.419Z",
     "description": "About Pinterest: Millions of people around the world come to our platform to find creative ideas, dream about new possibilities and plan for memories that will last a lifetime. At Pinterest, we’re on ",
     "region": "noam",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_j9s1hu",
-    "title": "Brand Designer",
-    "company": "Parloa",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=parloa.com&sz=128",
-    "category": "creative",
-    "url": "https://job-boards.eu.greenhouse.io/parloa/jobs/4814856101",
-    "source": "greenhouse",
-    "tags": [
-      "Marketing"
-    ],
-    "postedAt": "2026-03-31T15:01:58-04:00",
-    "scrapedAt": "2026-04-07T02:27:50.430Z",
-    "description": "About Parloa Parloa’s mission is to make every customer conversation feel effortless for both customers and the companies serving them. As agentic AI accelerates, Parloans are shaping the foundation o",
-    "region": "eur",
     "employmentType": "full-time"
   },
   {
@@ -3818,7 +3974,7 @@
       "Design"
     ],
     "postedAt": "2026-03-31T14:31:29-04:00",
-    "scrapedAt": "2026-04-07T02:26:14.534Z",
+    "scrapedAt": "2026-04-07T08:55:33.569Z",
     "description": "At Klaviyo, we value the unique backgrounds, experiences and perspectives each Klaviyo (we call ourselves Klaviyos) brings to our workplace each and every day. We believe everyone deserves a fair shot",
     "region": "noam",
     "employmentType": "full-time"
@@ -3835,7 +3991,7 @@
       "Design"
     ],
     "postedAt": "2026-03-31T14:31:29-04:00",
-    "scrapedAt": "2026-04-07T02:26:14.535Z",
+    "scrapedAt": "2026-04-07T08:55:33.570Z",
     "description": "At Klaviyo, we value the unique backgrounds, experiences and perspectives each Klaviyo (we call ourselves Klaviyos) brings to our workplace each and every day. We believe everyone deserves a fair shot",
     "region": "noam",
     "employmentType": "full-time"
@@ -3852,7 +4008,7 @@
       "Creative"
     ],
     "postedAt": "2026-03-31T14:10:27-04:00",
-    "scrapedAt": "2026-04-07T02:26:50.356Z",
+    "scrapedAt": "2026-04-07T08:55:46.793Z",
     "description": "Location: This position is remote within Colombia Visual Design Lead What’s the role As a Visual Design Lead, you will be responsible for leading the visual and interaction design of digital products,",
     "region": "ww",
     "employmentType": "full-time"
@@ -3869,7 +4025,7 @@
       "Experience Design"
     ],
     "postedAt": "2026-03-31T13:26:51-04:00",
-    "scrapedAt": "2026-04-07T02:30:16.344Z",
+    "scrapedAt": "2026-04-07T08:57:23.268Z",
     "description": "Creative Director About R/GA R/GA is a global digital innovation agency specializing in digital product development, brand transformation, media, and communications for major companies. We are on a mi",
     "region": "latam",
     "employmentType": "full-time"
@@ -3886,7 +4042,7 @@
       "Visual Design"
     ],
     "postedAt": "2026-03-31T13:26:51-04:00",
-    "scrapedAt": "2026-04-07T02:30:16.344Z",
+    "scrapedAt": "2026-04-07T08:57:23.268Z",
     "description": "Creative Director, Art About R/GA R/GA is a global digital innovation agency specializing in digital product development, brand transformation, media, and communications for major companies. We are on",
     "region": "latam",
     "employmentType": "full-time"
@@ -3903,7 +4059,7 @@
       "Technology"
     ],
     "postedAt": "2026-03-31T13:26:51-04:00",
-    "scrapedAt": "2026-04-07T02:30:16.344Z",
+    "scrapedAt": "2026-04-07T08:57:23.268Z",
     "description": "About R/GA In our 40-year history, we’ve changed a lot—from a culture-defining film title studio (Superman, Alien, Ghostbusters); to an interactive advertising agency; to an award-winning product and ",
     "region": "noam",
     "employmentType": "full-time"
@@ -3920,7 +4076,7 @@
       "Experience Design"
     ],
     "postedAt": "2026-03-31T13:26:51-04:00",
-    "scrapedAt": "2026-04-07T02:30:16.345Z",
+    "scrapedAt": "2026-04-07T08:57:23.270Z",
     "description": "R/GA EMEA Senior Experience Designer Location: London / Hybrid About R/GA R/GA is an independent creative innovation company built for the intelligence age. We harness the power of design and technolo",
     "region": "eur",
     "employmentType": "full-time"
@@ -3937,7 +4093,7 @@
       "Visual Design"
     ],
     "postedAt": "2026-03-31T13:26:51-04:00",
-    "scrapedAt": "2026-04-07T02:30:16.346Z",
+    "scrapedAt": "2026-04-07T08:57:23.271Z",
     "description": "About R/GA R/GA is the creative innovation company for the intelligence age. We design intelligent brand systems that help businesses get ahead. We evolve as technology shapes the world, and we help o",
     "region": "eur",
     "employmentType": "full-time"
@@ -3954,7 +4110,7 @@
       "Visual Design"
     ],
     "postedAt": "2026-03-31T13:26:51-04:00",
-    "scrapedAt": "2026-04-07T02:30:16.346Z",
+    "scrapedAt": "2026-04-07T08:57:23.271Z",
     "description": "Senior Designer, Brand Design You are the engine of the creative team—a practitioner who has mastered the fundamentals and is now pushing the boundaries of what a brand can be. You believe that craft ",
     "region": "latam",
     "employmentType": "full-time"
@@ -3971,7 +4127,7 @@
       "Visual Design"
     ],
     "postedAt": "2026-03-31T13:26:51-04:00",
-    "scrapedAt": "2026-04-07T02:30:16.346Z",
+    "scrapedAt": "2026-04-07T08:57:23.272Z",
     "description": "Paste Job Description",
     "region": "latam",
     "employmentType": "full-time"
@@ -3988,7 +4144,7 @@
       "Design"
     ],
     "postedAt": "2026-03-31T13:03:39-04:00",
-    "scrapedAt": "2026-04-07T02:25:39.379Z",
+    "scrapedAt": "2026-04-07T08:55:25.009Z",
     "description": "Ready to be pushed beyond what you think you’re capable of? At Coinbase, our mission is to increase economic freedom in the world. It’s a massive, ambitious opportunity that demands the best of us, ev",
     "region": "noam",
     "employmentType": "full-time"
@@ -4005,7 +4161,7 @@
       "Design"
     ],
     "postedAt": "2026-03-31T12:50:15-04:00",
-    "scrapedAt": "2026-04-07T02:25:29.981Z",
+    "scrapedAt": "2026-04-07T08:55:21.002Z",
     "description": "Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise init",
     "region": "eur",
     "employmentType": "full-time"
@@ -4022,7 +4178,7 @@
       "Design"
     ],
     "postedAt": "2026-03-31T12:50:15-04:00",
-    "scrapedAt": "2026-04-07T02:25:30.002Z",
+    "scrapedAt": "2026-04-07T08:55:21.026Z",
     "description": "Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise init",
     "region": "eur",
     "employmentType": "full-time"
@@ -4039,7 +4195,7 @@
       "Design"
     ],
     "postedAt": "2026-03-31T12:47:53-04:00",
-    "scrapedAt": "2026-04-07T02:25:30.008Z",
+    "scrapedAt": "2026-04-07T08:55:21.033Z",
     "description": "Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise init",
     "region": "eur",
     "employmentType": "full-time"
@@ -4056,7 +4212,7 @@
       "Design"
     ],
     "postedAt": "2026-03-31T12:47:52-04:00",
-    "scrapedAt": "2026-04-07T02:25:30.013Z",
+    "scrapedAt": "2026-04-07T08:55:21.038Z",
     "description": "Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise init",
     "region": "eur",
     "employmentType": "full-time"
@@ -4073,7 +4229,7 @@
       "Design"
     ],
     "postedAt": "2026-03-31T12:47:51-04:00",
-    "scrapedAt": "2026-04-07T02:25:30.002Z",
+    "scrapedAt": "2026-04-07T08:55:21.026Z",
     "description": "Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise init",
     "region": "eur",
     "employmentType": "full-time"
@@ -4090,7 +4246,7 @@
       "Design"
     ],
     "postedAt": "2026-03-31T12:47:50-04:00",
-    "scrapedAt": "2026-04-07T02:25:30.013Z",
+    "scrapedAt": "2026-04-07T08:55:21.039Z",
     "description": "Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise init",
     "region": "eur",
     "employmentType": "full-time"
@@ -4107,7 +4263,7 @@
       "Design"
     ],
     "postedAt": "2026-03-31T12:47:50-04:00",
-    "scrapedAt": "2026-04-07T02:25:30.014Z",
+    "scrapedAt": "2026-04-07T08:55:21.039Z",
     "description": "Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise init",
     "region": "eur",
     "employmentType": "full-time"
@@ -4124,7 +4280,7 @@
       "Design"
     ],
     "postedAt": "2026-03-31T12:46:39-04:00",
-    "scrapedAt": "2026-04-07T02:25:30.014Z",
+    "scrapedAt": "2026-04-07T08:55:21.039Z",
     "description": "Visual Designer Canonical is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough",
     "region": "eur",
     "employmentType": "full-time"
@@ -4141,7 +4297,7 @@
       "Customer Excellence"
     ],
     "postedAt": "2026-03-31T11:44:13-04:00",
-    "scrapedAt": "2026-04-07T02:27:26.755Z",
+    "scrapedAt": "2026-04-07T08:56:18.532Z",
     "description": "For over 20 years, Smartsheet has helped people and teams achieve–well, anything. From seamless work management to smart, scalable solutions, we’ve always worked with flow. We’re building tools that e",
     "region": "ww",
     "employmentType": "full-time"
@@ -4158,7 +4314,7 @@
       "Design"
     ],
     "postedAt": "2026-03-31T11:38:33-04:00",
-    "scrapedAt": "2026-04-07T02:27:28.330Z",
+    "scrapedAt": "2026-04-07T08:56:20.366Z",
     "description": "Airbnb was born in 2007 when two hosts welcomed three guests to their San Francisco home, and has since grown to over 5 million hosts who have welcomed over 2 billion guest arrivals in almost every co",
     "region": "noam",
     "employmentType": "full-time"
@@ -4176,162 +4332,9 @@
       "NordVPN"
     ],
     "postedAt": "2026-03-31T12:04:00.176Z",
-    "scrapedAt": "2026-04-07T02:33:27.946Z",
+    "scrapedAt": "2026-04-07T09:20:36.687Z",
     "description": "The world’s most advanced VPN, and a whole lot more. \n\nIf you’re a curious problem-solver who carves their own path, join the team behind Threat Protection Pro, the NordLynx protocol, and the fastest ",
     "region": "eur",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_fpbeys",
-    "title": "Senior Product Designer - In-Play and Cash-Out",
-    "company": "Super Technologies",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=superbet.com&sz=128",
-    "category": "creative",
-    "url": "https://job-boards.eu.greenhouse.io/superbet/jobs/4818428101",
-    "source": "greenhouse",
-    "tags": [
-      "Player "
-    ],
-    "postedAt": "2026-03-31T05:30:24-04:00",
-    "scrapedAt": "2026-04-07T02:30:17.160Z",
-    "description": "It’s an exciting time to join us! We’re entering new markets, developing new technologies, and moving step by step towards our goal of exciting the world. As our business grows, the number of exciting",
-    "region": "eur",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_x03f1n",
-    "title": "Senior UX Researcher (German Speaker)",
-    "company": "N26",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=n26.com&sz=128",
-    "category": "creative",
-    "url": "https://n26.com/en-eu/careers/positions/7668146?gh_jid=7668146",
-    "source": "greenhouse",
-    "tags": [
-      "UX"
-    ],
-    "postedAt": "2026-03-31T05:26:05-04:00",
-    "scrapedAt": "2026-04-07T02:27:22.682Z",
-    "description": "Mandatory Requirements: Native or C1-level German proficiency is required for this position, as you will be conducting in-depth user research directly with our German market. A portfolio showcasing yo",
-    "region": "eur",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_rv32hz",
-    "title": "Android Engineer - Design System",
-    "company": "SumUp",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=sumup.com&sz=128",
-    "category": "creative",
-    "url": "https://sumup.com/careers/positions/8372327002?gh_jid=8372327002",
-    "source": "greenhouse",
-    "tags": [
-      "Engineering"
-    ],
-    "postedAt": "2026-03-31T05:15:46-04:00",
-    "scrapedAt": "2026-04-07T02:27:49.543Z",
-    "description": "As an Android Engineer in the Design System team , you will translate SumUp’s design language into an easy-to-use, reusable library of user interface components and experience patterns, enabling produ",
-    "region": "eur",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_vfvs3",
-    "title": "iOS Engineer - Design System",
-    "company": "SumUp",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=sumup.com&sz=128",
-    "category": "creative",
-    "url": "https://sumup.com/careers/positions/8426778002?gh_jid=8426778002",
-    "source": "greenhouse",
-    "tags": [
-      "Engineering"
-    ],
-    "postedAt": "2026-03-31T05:02:36-04:00",
-    "scrapedAt": "2026-04-07T02:27:49.570Z",
-    "description": "As an iOS Engineer in the Design System team , you will translate SumUp’s design language into an easy-to-use, reusable library of user interface components and experience patterns, enabling product t",
-    "region": "eur",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_37ftp9",
-    "title": "Senior Product Designer",
-    "company": "Payoneer",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=payoneer.com&sz=128",
-    "category": "creative",
-    "url": "https://www.payoneer.com/careers/position/7067528/?gh_jid=7067528",
-    "source": "greenhouse",
-    "tags": [
-      "Product Guild & Design"
-    ],
-    "postedAt": "2026-03-31T03:58:39-04:00",
-    "scrapedAt": "2026-04-07T02:26:51.743Z",
-    "description": "About Payoneer Founded in 2005, Payoneer is the global financial platform that removes friction from doing business across borders, with a mission to connect the world’s underserved businesses to a ri",
-    "region": "apac",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_xihlqh",
-    "title": "Staff Product Designer - Consumer Experience",
-    "company": "Parloa",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=parloa.com&sz=128",
-    "category": "creative",
-    "url": "https://job-boards.eu.greenhouse.io/parloa/jobs/4679089101",
-    "source": "greenhouse",
-    "tags": [
-      "Product"
-    ],
-    "postedAt": "2026-03-31T03:56:24-04:00",
-    "scrapedAt": "2026-04-07T02:27:50.436Z",
-    "description": "About Parloa Parloa’s mission is to make every customer conversation feel effortless for both customers and the companies serving them. As agentic AI accelerates, Parloans are shaping the foundation o",
-    "region": "eur",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_7ikz0a",
-    "title": "Staff Product Designer - Expert Experience",
-    "company": "Parloa",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=parloa.com&sz=128",
-    "category": "creative",
-    "url": "https://job-boards.eu.greenhouse.io/parloa/jobs/4716871101",
-    "source": "greenhouse",
-    "tags": [
-      "Product"
-    ],
-    "postedAt": "2026-03-31T03:51:20-04:00",
-    "scrapedAt": "2026-04-07T02:27:50.436Z",
-    "description": "About Parloa Parloa’s mission is to make every customer conversation feel effortless for both customers and the companies serving them. As agentic AI accelerates, Parloans are shaping the foundation o",
-    "region": "eur",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_a0v7hl",
-    "title": "Delivery Solutions Architect (Conversational Designer)",
-    "company": "NICE",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=nice.com&sz=128",
-    "category": "creative",
-    "url": "https://boards.eu.greenhouse.io/nice/jobs/4804654101?gh_jid=4804654101",
-    "source": "greenhouse",
-    "tags": [
-      "CX - Agentic Experience Automation"
-    ],
-    "postedAt": "2026-03-31T03:17:00-04:00",
-    "scrapedAt": "2026-04-07T02:30:21.036Z",
-    "description": "At NiCE, we don’t limit our challenges. We challenge our limits. Always. We’re ambitious. We’re game changers. And we play to win. We set the highest standards and execute beyond them. And if you’re l",
-    "region": "eur",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_ttyxfy",
-    "title": "UX Designer, Actimize",
-    "company": "NICE",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=nice.com&sz=128",
-    "category": "creative",
-    "url": "https://boards.eu.greenhouse.io/nice/jobs/4789996101?gh_jid=4789996101",
-    "source": "greenhouse",
-    "tags": [
-      "Actimize - Engineering"
-    ],
-    "postedAt": "2026-03-31T03:17:00-04:00",
-    "scrapedAt": "2026-04-07T02:30:21.077Z",
-    "description": "At NiCE, we don’t limit our challenges. We challenge our limits. Always. We’re ambitious. We’re game changers. And we play to win. We set the highest standards and execute beyond them. And if you’re l",
-    "region": "apac",
     "employmentType": "full-time"
   }
 ]
