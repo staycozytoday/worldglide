@@ -19,11 +19,9 @@ export default function HomePage() {
       {/* hero */}
       <section className="pt-16 md:pt-24 pb-16">
         <h1 className="text-[32px] md:text-[40px] font-medium tracking-tight leading-[1.1] text-[var(--color-text)]">
-          creative jobs
+          freshly baked creative jobs
           <br />
-          for humans
-          <br />
-          without limits.
+          for humans without limits.
         </h1>
         <p className="text-[12px] text-[var(--color-text-muted)] mt-4 max-w-[320px] leading-relaxed">
           hand-picked remote roles for designers, illustrators, motion artists &amp; creative technologists. sourced from the world&apos;s best tech companies, startups &amp; studios.

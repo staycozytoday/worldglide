@@ -772,6 +772,19 @@ const OFFICE_DESCRIPTION_SIGNALS = [
   /\bcannot\s+be\s+performed\s+remotely\b/i,
 ];
 
+const STRONG_REMOTE_SIGNALS = [
+  /\bfully\s+remote\b/i,
+  /\b100%\s+remote\b/i,
+  /\bremote[\s-]first\b/i,
+  /\ball[\s-]remote\b/i,
+  /\bfully\s+distributed\b/i,
+  /\bwork\s+from\s+anywhere\b/i,
+  /\bthis\s+(?:role|position)\s+is\s+(?:fully\s+)?remote\b/i,
+  /\bremote\s+(?:role|position)\b/i,
+];
+
+const CITY_PATTERN = /\b[a-z]+(?:\s[a-z]+)*,\s*[a-z]{2,}\b/;
+
 /**
  * Returns true if the job is (or can be) remote.
  * Rejects jobs with explicit office-only / hybrid signals in location or description.
@@ -781,6 +794,12 @@ const OFFICE_DESCRIPTION_SIGNALS = [
  */
 export function isRemoteJob(job: FilterableJob, fullDescription?: string): boolean {
   const loc = (job.location || "").toLowerCase().trim();
+  const title = (job.title || "").toLowerCase();
+
+  // If title explicitly says hybrid/onsite/in-office → not remote
+  for (const p of OFFICE_ONLY_PATTERNS) {
+    if (p.test(title)) return false;
+  }
 
   // If location explicitly says office/hybrid → not remote
   for (const p of OFFICE_ONLY_PATTERNS) {
@@ -798,14 +817,18 @@ export function isRemoteJob(job: FilterableJob, fullDescription?: string): boole
     if (p.test(desc)) return false;
   }
 
-  // Check if "remote" appears anywhere in description as a positive signal
-  const hasRemoteInDesc = REMOTE_LOCATION_KEYWORDS.some(kw => desc.includes(kw));
-  if (hasRemoteInDesc) return true;
+  // Only trust STRONG remote signals in description — bare "remote" is too
+  // noisy (perks sections mention "remote environment" on in-office roles).
+  if (STRONG_REMOTE_SIGNALS.some((p) => p.test(desc))) return true;
 
   // Location looks like a physical address (City, ST or City, Country) with
-  // no remote signal anywhere → reject. Many on-site jobs omit "on-site" tag.
-  const CITY_PATTERN = /\b[a-z]+(?:\s[a-z]+)*,\s*[a-z]{2,}\b/;
+  // no strong remote signal → reject. Many on-site/hybrid jobs omit the tag
+  // or misspell it (e.g. "Berlin, Germany (Hybird)").
   if (CITY_PATTERN.test(loc)) return false;
+
+  // Also reject parenthesized annotations on otherwise-city locations —
+  // catches typos of hybrid/onsite that slip past the regex set.
+  if (/\([^)]*\)/.test(loc)) return false;
 
   // No disqualifying signal found → treat as remote-eligible
   return true;
