@@ -772,6 +772,19 @@ const OFFICE_DESCRIPTION_SIGNALS = [
   /\bcannot\s+be\s+performed\s+remotely\b/i,
 ];
 
+const STRONG_REMOTE_SIGNALS = [
+  /\bfully\s+remote\b/i,
+  /\b100%\s+remote\b/i,
+  /\bremote[\s-]first\b/i,
+  /\ball[\s-]remote\b/i,
+  /\bfully\s+distributed\b/i,
+  /\bwork\s+from\s+anywhere\b/i,
+  /\bthis\s+(?:role|position)\s+is\s+(?:fully\s+)?remote\b/i,
+  /\bremote\s+(?:role|position)\b/i,
+];
+
+const CITY_PATTERN = /\b[a-z]+(?:\s[a-z]+)*,\s*[a-z]{2,}\b/;
+
 /**
  * Returns true if the job is (or can be) remote.
  * Rejects jobs with explicit office-only / hybrid signals in location or description.
@@ -805,25 +818,12 @@ export function isRemoteJob(job: FilterableJob, fullDescription?: string): boole
   }
 
   // Only trust STRONG remote signals in description — bare "remote" is too
-  // noisy (perks sections mention "remote environment" on in-office roles,
-  // e.g. "work from home stipend for your remote environment" on a hybrid job).
-  const STRONG_REMOTE_SIGNALS = [
-    /\bfully\s+remote\b/i,
-    /\b100%\s+remote\b/i,
-    /\bremote[\s-]first\b/i,
-    /\ball[\s-]remote\b/i,
-    /\bfully\s+distributed\b/i,
-    /\bwork\s+from\s+anywhere\b/i,
-    /\bthis\s+(?:role|position)\s+is\s+(?:fully\s+)?remote\b/i,
-    /\bremote\s+(?:role|position)\b/i,
-  ];
-  const hasStrongRemote = STRONG_REMOTE_SIGNALS.some(p => p.test(desc));
-  if (hasStrongRemote) return true;
+  // noisy (perks sections mention "remote environment" on in-office roles).
+  if (STRONG_REMOTE_SIGNALS.some((p) => p.test(desc))) return true;
 
   // Location looks like a physical address (City, ST or City, Country) with
   // no strong remote signal → reject. Many on-site/hybrid jobs omit the tag
   // or misspell it (e.g. "Berlin, Germany (Hybird)").
-  const CITY_PATTERN = /\b[a-z]+(?:\s[a-z]+)*,\s*[a-z]{2,}\b/;
   if (CITY_PATTERN.test(loc)) return false;
 
   // Also reject parenthesized annotations on otherwise-city locations —
