@@ -5,8 +5,7 @@
       "name": "dev",
       "runtimeExecutable": "/opt/homebrew/bin/npx",
       "runtimeArgs": ["next", "dev"],
-      "port": 3000,
-      "cwd": "/Users/MacBook/Documents/worldglide"
+      "port": 3000
     }
   ]
 }

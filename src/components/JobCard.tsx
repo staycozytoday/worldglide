@@ -5,7 +5,13 @@ import { formatRelativeTime, isNew } from "@/lib/utils";
 import { useVisited } from "@/lib/useVisited";
 import { useFavorites } from "@/lib/useFavorites";
 
+// Only allow http(s) URLs — defense against javascript:/data: from scraped data.
+function safeUrl(url: string): string {
+  return /^https?:\/\//i.test(url) ? url : "#";
+}
+
 export default function JobCard({ job, index = 0 }: { job: Job; index?: number }) {
+  const href = safeUrl(job.url);
   const fresh = isNew(job.postedAt);
   const { isVisited, markVisited } = useVisited();
   const { isFavorited, toggleFavorite } = useFavorites();
@@ -21,7 +27,7 @@ export default function JobCard({ job, index = 0 }: { job: Job; index?: number }
 
       {/* title + new dot — link to job */}
       <a
-        href={job.url}
+        href={href}
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => markVisited(job.id)}
@@ -43,7 +49,7 @@ export default function JobCard({ job, index = 0 }: { job: Job; index?: number }
 
       {/* company */}
       <a
-        href={job.url}
+        href={href}
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => markVisited(job.id)}
