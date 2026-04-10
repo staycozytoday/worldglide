@@ -770,6 +770,7 @@ const OFFICE_DESCRIPTION_SIGNALS = [
   /\bthis\s+(role|position)\s+is\s+(in[\s-]?office|on[\s-]?site)\b/i,
   /\bnot\s+(eligible|available)\s+for\s+remote\b/i,
   /\bcannot\s+be\s+performed\s+remotely\b/i,
+  /\b\w+[\s-]based\s+(?:corporate\s+)?office\b/i,
 ];
 
 const STRONG_REMOTE_SIGNALS = [
