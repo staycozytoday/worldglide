@@ -5,6 +5,8 @@ import { scrapeRemotive } from "./scrapers/api-remotive";
 import { scrapeJobicy } from "./scrapers/api-jobicy";
 import { scrapeArbeitnow } from "./scrapers/api-arbeitnow";
 import { scrapeHNWhoIsHiring } from "./scrapers/api-hn";
+import { scrapeWeWorkRemotely } from "./scrapers/api-weworkremotely";
+import { scrapeWorkingNomads } from "./scrapers/api-workingnomads";
 
 export interface ApiAggregatorResult {
   jobs: Job[];
@@ -102,6 +104,30 @@ export async function runApiAggregator(): Promise<ApiAggregatorResult> {
     const msg = err instanceof Error ? err.message : String(err);
     console.error(`[api-aggregator] hn-whoishiring failed: ${msg}`);
     sources.push({ name: "hn-whoishiring", jobs: 0, rawCount: 0, error: msg });
+  }
+
+  // --- We Work Remotely (RSS) ---
+  try {
+    const result = await scrapeWeWorkRemotely();
+    allJobs.push(...result.jobs);
+    totalRaw += result.rawCount;
+    sources.push({ name: "wwr", jobs: result.jobs.length, rawCount: result.rawCount });
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error(`[api-aggregator] wwr failed: ${msg}`);
+    sources.push({ name: "wwr", jobs: 0, rawCount: 0, error: msg });
+  }
+
+  // --- Working Nomads ---
+  try {
+    const result = await scrapeWorkingNomads();
+    allJobs.push(...result.jobs);
+    totalRaw += result.rawCount;
+    sources.push({ name: "workingnomads", jobs: result.jobs.length, rawCount: result.rawCount });
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error(`[api-aggregator] workingnomads failed: ${msg}`);
+    sources.push({ name: "workingnomads", jobs: 0, rawCount: 0, error: msg });
   }
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);

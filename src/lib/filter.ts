@@ -286,6 +286,26 @@ const TRUSTED_WORLDWIDE_SLUGS = new Set([
   "printful", "convertkit", "lottiefiles",
   "webflow", "framer", "sketch", "miro",
   "metalab", "hugeinc", "instrument", "mazedesign",
+  // Expansion — verified worldwide-first (growth v3)
+  // Design/creative tools & platforms
+  "mural", "chromatic", "zed", "contra", "wetransfer",
+  "dovetail", "gamma", "tldraw", "loom", "stickermule",
+  "canva", "ideogram", "pitch", "rive", "spline",
+  // Remote-first infra & developer tools
+  "vercel", "linear", "notion", "figma", "stripe",
+  "airtable", "retool", "prisma", "fly", "render",
+  "railway", "upstash", "resend", "inngest", "convex",
+  // Open-source & foundations
+  "ideo", "civicactions", "creativecommons", "processingio",
+  // EOR & global hiring platforms (hire worldwide by definition)
+  "niural", "andela", "letsdeel", "papaya", "multiplier",
+  // Verified creative agencies & studios (distributed worldwide)
+  "ueno", "metalab", "clay", "handsome", "basicagency",
+  "fivesixdesign", "10up", "boldcommerce",
+  // Additional worldwide-first companies with creative teams
+  "patreon", "gumroad", "substack", "medium", "ghost",
+  "replit", "coda", "whimsical", "excalidraw",
+  "penpot", "balsamiq", "abstract", "zeroheight",
 ]);
 
 export interface FilterResult {

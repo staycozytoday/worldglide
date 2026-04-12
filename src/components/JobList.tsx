@@ -1,6 +1,6 @@
 "use client";
 
-import { Job, Region } from "@/lib/types";
+import { Job } from "@/lib/types";
 import JobCard from "./JobCard";
 import { useState } from "react";
 import { useSearchParams } from "next/navigation";
@@ -32,14 +32,9 @@ export default function JobList({ jobs, title, subtitle, totalCount }: JobListPr
   const searchParams = useSearchParams();
   const { isFavorited } = useFavorites();
   const savedActive = searchParams.get("saved") === "1";
-  const activeRegion = searchParams.get("region") as Region | null;
-
-  const regionFiltered = activeRegion
-    ? jobs.filter((j) => j.region === activeRegion)
-    : jobs;
   const filtered = savedActive
-    ? regionFiltered.filter((j) => isFavorited(j.id))
-    : regionFiltered;
+    ? jobs.filter((j) => isFavorited(j.id))
+    : jobs;
   const isEmpty = filtered.length === 0;
 
   function handleSort(col: SortColumn) {
