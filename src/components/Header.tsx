@@ -69,9 +69,9 @@ export default function Header() {
           <span className="mr-[8px]">
             <ThemeToggle />
           </span>
-          <Link href="/" className="text-[14px] font-medium tracking-tight">
+          <a href="/" className="text-[14px] font-medium tracking-tight text-[var(--color-text)] no-underline">
             worldglide
-          </Link>
+          </a>
 
           {/* desktop nav — region filters */}
           <nav className="hidden sm:flex items-center gap-6 ml-6">
