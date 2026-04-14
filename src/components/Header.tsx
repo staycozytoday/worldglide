@@ -6,7 +6,16 @@ import { useState, useCallback } from "react";
 import ThemeToggle from "./ThemeToggle";
 import { useFavorites } from "@/lib/useFavorites";
 
-const REGIONS = ["ww", "noam", "eur", "apac", "latam", "mena", "ssa"] as const;
+const REGIONS = [
+  { key: null, label: "all" },
+  { key: "ww", label: "global" },
+  { key: "noam", label: "noam" },
+  { key: "eur", label: "eur" },
+  { key: "apac", label: "apac" },
+  { key: "latam", label: "latam" },
+  { key: "mena", label: "mena" },
+  { key: "ssa", label: "ssa" },
+] as const;
 
 export default function Header() {
   const pathname = usePathname();
@@ -28,28 +37,28 @@ export default function Header() {
     router.push(pathname + (q ? `?${q}` : ""));
   }, [savedActive, searchParams, pathname, router]);
 
-  const setRegion = useCallback((region: string) => {
+  const setRegion = useCallback((region: string | null) => {
     const params = new URLSearchParams(searchParams.toString());
-    if (activeRegion === region) {
+    if (region === null || activeRegion === region) {
       params.delete("region");
     } else {
       params.set("region", region);
     }
-    router.push(pathname + (params.toString() ? `?${params.toString()}` : ""));
+    router.push(pathname + (params.toString() ? `?${params.toString()}` : ""), { scroll: false });
     setMenuOpen(false);
   }, [activeRegion, searchParams, pathname, router]);
 
-  const regionLink = (r: string) => (
+  const regionLink = ({ key, label }: { key: string | null; label: string }) => (
     <button
-      key={r}
-      onClick={() => setRegion(r)}
+      key={label}
+      onClick={() => setRegion(key)}
       className={`text-[12px] transition-colors ${
-        activeRegion === r
+        (key === null ? !activeRegion : activeRegion === key)
           ? "text-[var(--color-text)]"
           : "text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
       }`}
     >
-      {r}
+      {label}
     </button>
   );
 
