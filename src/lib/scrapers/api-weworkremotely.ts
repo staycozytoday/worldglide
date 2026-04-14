@@ -15,8 +15,11 @@ export interface WWRResult {
  */
 const WWR_FEEDS = [
   "https://weworkremotely.com/categories/remote-design-jobs.rss",
-  "https://weworkremotely.com/categories/remote-programming-jobs.rss",
   "https://weworkremotely.com/categories/remote-product-jobs.rss",
+  "https://weworkremotely.com/categories/remote-sales-and-marketing-jobs.rss",
+  "https://weworkremotely.com/categories/remote-full-stack-programming-jobs.rss",
+  "https://weworkremotely.com/categories/remote-front-end-programming-jobs.rss",
+  "https://weworkremotely.com/categories/all-other-remote-jobs.rss",
   "https://weworkremotely.com/remote-jobs.rss",
 ];
 
@@ -105,7 +108,7 @@ export async function scrapeWeWorkRemotely(): Promise<WWRResult> {
       companyLogo: companyDomain ? getCompanyLogoUrl(companyDomain) : undefined,
       category,
       url: item.link,
-      source: "remoteok",
+      source: "wwr",
       tags: [item.category],
       postedAt: new Date(item.pubDate).toISOString(),
       scrapedAt: new Date().toISOString(),

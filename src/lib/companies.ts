@@ -354,7 +354,7 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Igalia", domain: "igalia.com", careersUrl: "https://www.igalia.com/jobs/", atsType: "custom" },
   { name: "YNAB", domain: "ynab.com", careersUrl: "https://www.ynab.com/careers", atsType: "custom" },
   { name: "Zyte", domain: "zyte.com", careersUrl: "https://www.zyte.com/jobs/", atsType: "custom" },
-  { name: "Xapo", domain: "xapo.com", careersUrl: "https://www.xapo.com/careers/", atsType: "custom" },
+  { name: "Xapo Bank", domain: "xapobank.com", careersUrl: "https://xapobank.com/careers", atsType: "greenhouse", atsSlug: "xapo61" },
 
   // ── NEW BATCH (2026-02-24) ──────────────────────
 
@@ -2849,6 +2849,17 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Vouch", domain: "vouch.us", careersUrl: "https://vouch.us/careers", atsType: "smartrecruiters", atsSlug: "vouch" },
   { name: "Wren", domain: "www.wren.co", careersUrl: "https://www.wren.co/careers", atsType: "smartrecruiters", atsSlug: "wren" },
   { name: "Yassir", domain: "yassir.com", careersUrl: "https://yassir.com/careers", atsType: "smartrecruiters", atsSlug: "yassir" },
+
+
+  // ════════════════════════════════════════════════
+  // BATCH v5 (2026-04-14) — worldwide-first companies
+  // verified hire-from-anywhere via EOR/distributed teams
+  // ════════════════════════════════════════════════
+
+  // greenhouse
+  { name: "Muck Rack", domain: "muckrack.com", careersUrl: "https://muckrack.com/careers", atsType: "greenhouse", atsSlug: "muckrack" },
+  { name: "Circle", domain: "circle.so", careersUrl: "https://circle.so/careers", atsType: "greenhouse", atsSlug: "circleso" },
+  { name: "Testlio", domain: "testlio.com", careersUrl: "https://testlio.com/work/", atsType: "greenhouse", atsSlug: "testlio" },
 
 ];
 

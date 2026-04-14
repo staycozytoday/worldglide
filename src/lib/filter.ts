@@ -306,6 +306,14 @@ const TRUSTED_WORLDWIDE_SLUGS = new Set([
   "patreon", "gumroad", "substack", "medium", "ghost",
   "replit", "coda", "whimsical", "excalidraw",
   "penpot", "balsamiq", "abstract", "zeroheight",
+  // Expansion — verified worldwide-first (growth v4)
+  "muckrack", "circleso", "testlio", "xapo61",
+  "canny", "agencyanalytics", "paymentology", "lyssna",
+  "harvest", "outliant", "cofense", "lumenalta",
+  "moderntribe", "levelaccess", "navapbc", "getshogun",
+  "coalitiontech", "goodwaygroup", "awesomemotive",
+  "onthegosystems", "pocketworlds", "aha",
+  "gravityglobal", "order",
 ]);
 
 export interface FilterResult {

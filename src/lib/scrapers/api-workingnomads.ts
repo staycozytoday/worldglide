@@ -85,7 +85,7 @@ export async function scrapeWorkingNomads(): Promise<WorkingNomadsResult> {
       companyLogo: companyDomain ? getCompanyLogoUrl(companyDomain) : undefined,
       category,
       url: item.url,
-      source: "remoteok", // reuse existing source type
+      source: "workingnomads",
       tags,
       postedAt: new Date(item.pub_date).toISOString(),
       scrapedAt: new Date().toISOString(),
@@ -103,9 +103,7 @@ function isWorldwideLocation(loc: string): boolean {
   return (
     loc.includes("anywhere") ||
     loc.includes("worldwide") ||
-    loc.includes("global") ||
-    loc === "remote" ||
-    loc === ""
+    loc.includes("global")
   );
 }
 
