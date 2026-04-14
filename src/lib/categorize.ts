@@ -203,7 +203,7 @@ const CREATIVE_PATTERNS = [
   /\bgame\s+designer?\b/i,
   /\bsound\s+designer?\b/i,
   /\bux\s+copywriter/i,
-  /\binstructional\s+design/i,
+  // removed: /\binstructional\s+design/i — corporate training/L&D, not creative
   /\blearning\s+(experience|design)\b/i,
 ];
 
