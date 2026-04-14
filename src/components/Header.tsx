@@ -8,13 +8,13 @@ import { useFavorites } from "@/lib/useFavorites";
 
 const REGIONS = [
   { key: null, label: "all" },
-  { key: "ww", label: "global" },
   { key: "noam", label: "noam" },
   { key: "eur", label: "eur" },
   { key: "apac", label: "apac" },
   { key: "latam", label: "latam" },
   { key: "mena", label: "mena" },
   { key: "ssa", label: "ssa" },
+  { key: "ww", label: "global" },
 ] as const;
 
 export default function Header() {
