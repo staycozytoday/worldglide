@@ -51,6 +51,7 @@ const EXCLUDE_PATTERNS = [
   /\btooling\s+design/i,
   /\bmechanical[\s/]+(design|engineer)/i,                         // handles "Mechanical / Design Engineer"
   /\bmechanical\s+engineer/i,
+  /\bmechanical\s+\w+\s+design/i,                                // "mechanical product designer", "mechanical product design engineer"
   /\belectrical\s+design\s+engineer/i,
   /\bcivil\s+design/i,
   /\bstructural\s+design/i,
