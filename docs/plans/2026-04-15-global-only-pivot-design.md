@@ -46,6 +46,7 @@ The user has stated for several sessions that only global/worldwide jobs matter.
 | **Job expiry** | 8 days (unchanged). |
 | **Hero headline** | `freshly baked design jobs / for humans without limits.` |
 | **Hero subtitle** | `hand-picked, truly global creative roles. product design, ui, ux, creative direction. open to candidates anywhere in the world. sourced from the world's best tech companies, startups, & studios.` |
+| **Hero stats line** | `{N} global remote design jobs sourced from {C} top remote-first companies & {B} job boards` — replaces current "creative remote jobs" phrasing. `{N}` dynamic, `{C}` = `SCRAPED_COMPANY_COUNT`, `{B}` = external aggregator count (8 today, growing with new sources). |
 | **Meta tags** | Updated to match on-page copy. |
 
 ## Categorizer changes
