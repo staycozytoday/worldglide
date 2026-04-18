@@ -800,3 +800,42 @@ Use `gh pr create ...` or merge locally. Live site updates on next GitHub Action
 - **New scraper fails.** Any new-scraper task that can't produce a working endpoint within one reasonable attempt should be punted — commit a stub with a TODO and move on.
 - **Type drift.** If `Source` union expansions don't propagate, use `grep -rn "source:" src/lib/scrapers/` to cross-check.
 - **Ambiguous-WW fallback false positives.** If post-deploy you see non-worldwide jobs slipping through, revisit [filter.ts:944](../../src/lib/filter.ts:944) (the "benefit of the doubt" branch) and tighten.
+
+---
+
+## Postmortem — Phases 5 & 6 findings (2026-04-18)
+
+### Phase 5 (ATS whitelist expansion) — 0 net adds
+
+Out of the 30+ candidates listed in Task 13, 27 are **already in `companies.ts`**:
+GitLab, Mercury, Typeform, Anthropic, Supabase, Neon, PostHog, Cursor, Clerk, WorkOS, Zapier, Buffer, Ramp, OpenAI, ElevenLabs, Ghost, Automattic, Basecamp, Raycast, Plain, Sanity, Perplexity, Pika, Tines, Attio, Fathom, Hugging Face.
+
+Of the 17 remaining candidates probed against Greenhouse + Ashby + Lever APIs:
+- **Only 2 return HTTP 200**: `chatbase` (Ashby) and `togetherai` (Greenhouse)
+- Inspected manually: Chatbase = 100% on-site NYC; Together AI = 1/51 remote jobs, none creative
+- Cross-probed Workable / SmartRecruiters / Breezy: Midjourney + Arc appeared as 200s on Breezy but returned empty `[]` arrays
+
+**Conclusion:** Small remote-first startups predominantly use ATS we don't support (Gem, Pinpoint, Rippling, Teamtailor) or custom careers pages. Bulk-slug-guessing across big-3 ATS is low-yield. Skipping Tasks 13–15 with zero additions.
+
+### Phase 6 (new source scrapers) — 0 net adds
+
+Every planned source probed and rejected:
+
+| Source | Endpoint | Outcome |
+|--------|----------|---------|
+| Remote.co | `/feed/` etc | Cloudflare HTTP/2 INTERNAL_ERROR — blocked |
+| JustRemote | `/api/jobs` | Returns HTML (SPA shell), no JSON API |
+| 4dayweek.io | `/api/jobs` | Clean JSON but only 2/100 design jobs have 5+ country allowlists, 0 worldwide |
+| NoDesk | /rss, /feed, /api/jobs | All 404 |
+| Authentic Jobs | /api/*, /feed, /rss | All 301 to root (legacy site) |
+| The Hub (thehub.io) | `/api/jobs?isRemote=true` | Works but 77 total remote jobs, 0 design in first page — Nordic-scoped |
+| Remote Rocketship | /api/*, /feed, /rss | All 403 |
+| Flexjobs | /remote-jobs/design-jobs, /feed | Connection refused (000) |
+
+**Conclusion:** The 8 existing boards (WWR, Himalayas, RemoteOK, Remotive, Jobicy, Arbeitnow, HN, Working Nomads) already cover the worldwide-tagged niche. New sources that exist EITHER require headless browsing OR don't have worldwide-specific tagging. Future high-leverage sourcing work should focus on:
+
+1. **Reverse-engineering SPA boards** (Dynamite Jobs, JustRemote) with a headless step
+2. **Tuning existing filters** to catch "open to any country" phrasing more reliably
+3. **Hand-curating** 10-20 truly-worldwide companies from portfolio boards (ADPList, Read CV), not ATS bulk-add
+
+Skipping Tasks 16–21 with zero additions. Proceeding to final verification + deploy.
