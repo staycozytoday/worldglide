@@ -162,13 +162,6 @@ const CREATIVE_PATTERNS = [
   /\bart\s+director\b/i,
   /\bvisual\s+design/i,
   /\bgraphic\s+designer?\b/i,
-  // Motion & multimedia
-  /\bmotion\s+design/i,
-  /\bmotion\s+graphic/i,
-  /\banimator\b/i,
-  /\b3d\s+(artist|designer|generalist)\b/i,
-  // Illustration
-  /\billustrat/i,
   // UX research & writing
   /\buser\s+research/i,
   /\bux\s+research/i,
@@ -200,11 +193,7 @@ const CREATIVE_PATTERNS = [
   /\baccessibility\s+(designer|specialist|lead|manager)\b/i,
   /\bconversational\s+design/i,
   /\bvoice\s+design/i,
-  /\bgame\s+designer?\b/i,
-  /\bsound\s+designer?\b/i,
   /\bux\s+copywriter/i,
-  // removed: /\binstructional\s+design/i — corporate training/L&D, not creative
-  /\blearning\s+(experience|design)\b/i,
 ];
 
 export function categorizeJob(
