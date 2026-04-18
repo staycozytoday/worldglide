@@ -27,7 +27,15 @@ export default function HomePage() {
           hand-picked, truly global creative roles. product design, ui, ux, creative direction. open to candidates anywhere in the world. sourced from the world&apos;s best tech companies, startups, &amp; studios.
         </p>
         <p className="text-[10px] text-[var(--color-text-muted)] mt-4 font-mono leading-relaxed max-w-[400px]">
-          {stats ? `${jobs.length} global remote design jobs sourced from ${SCRAPED_COMPANY_COUNT} top remote-first companies & ${JOB_BOARD_COUNT} job boards` : "—"}
+          {stats ? (
+            <>
+              {jobs.length} global remote design jobs
+              <br />
+              sourced from {SCRAPED_COMPANY_COUNT} remote-first companies
+              <br />
+              &amp; {JOB_BOARD_COUNT} job boards
+            </>
+          ) : "—"}
         </p>
       </section>
 
