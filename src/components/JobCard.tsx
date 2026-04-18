@@ -60,11 +60,6 @@ export default function JobCard({ job, index = 0 }: { job: Job; index?: number }
         </span>
       </a>
 
-      {/* region */}
-      <span className="text-[11px] text-[var(--color-text-muted)] w-[80px] shrink-0 hidden lg:block font-mono text-right">
-        {job.region === "ww" ? "global" : job.region}
-      </span>
-
       {/* fav — absolute overlay, no layout impact */}
       <button
         onClick={(e) => { e.preventDefault(); e.stopPropagation(); toggleFavorite(job.id); }}

@@ -1,7 +1,7 @@
 import { JOB_EXPIRY_DAYS } from "./types";
 
 /**
- * Check if a job is expired (older than 14 days)
+ * Check if a job is expired (older than JOB_EXPIRY_DAYS — 8 days in v6)
  */
 export function isExpired(postedAt: string): boolean {
   const posted = new Date(postedAt).getTime();
@@ -21,7 +21,9 @@ export function isNew(postedAt: string): boolean {
 }
 
 /**
- * Format a date string to a relative time (e.g., "2h ago", "3d ago")
+ * Format a date string to a relative time (e.g., "2h ago", "3d ago").
+ * Jobs older than JOB_EXPIRY_DAYS (8) are filtered out upstream, so the
+ * max value you'll ever see here is "8d". No weeks/months format.
  */
 export function formatRelativeTime(dateString: string): string {
   const date = new Date(dateString).getTime();
@@ -35,9 +37,7 @@ export function formatRelativeTime(dateString: string): string {
   if (minutes < 1) return "now";
   if (minutes < 60) return `${minutes}m`;
   if (hours < 24) return `${hours}h`;
-  if (days < 7) return `${days}d`;
-  if (days < 30) return `${Math.floor(days / 7)}w`;
-  return `${Math.floor(days / 30)}mo`;
+  return `${days}d`;
 }
 
 /**

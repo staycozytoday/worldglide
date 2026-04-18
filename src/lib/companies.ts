@@ -175,7 +175,6 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Udacity", domain: "udacity.com", careersUrl: "https://boards.greenhouse.io/udacity", atsType: "greenhouse", atsSlug: "udacity" },
 
   // imported 2026-03-10 (remoteintech scan)
-  { name: "RunwayML", domain: "runwayml.com", careersUrl: "https://boards.greenhouse.io/runwayml", atsType: "greenhouse", atsSlug: "runwayml" },
   { name: "Amplemarket", domain: "amplemarket.com", careersUrl: "https://boards.greenhouse.io/amplemarket", atsType: "greenhouse", atsSlug: "amplemarket" },
   { name: "Zup Innovation", domain: "zup.com.br", careersUrl: "https://boards.greenhouse.io/zupinnovation", atsType: "greenhouse", atsSlug: "zupinnovation" },
 
@@ -386,7 +385,6 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "GitBook", domain: "gitbook.com", careersUrl: "https://www.gitbook.com/careers", atsType: "ashby", atsSlug: "gitbook" },
 
   // lever — new
-  { name: "Strapi", domain: "strapi.io", careersUrl: "https://strapi.io/careers", atsType: "lever", atsSlug: "strapi" },
   { name: "Prismic", domain: "prismic.io", careersUrl: "https://prismic.io/careers", atsType: "lever", atsSlug: "prismic" },
 
   // ── BATCH 2 (2026-02-24) ───────────────────────
@@ -855,7 +853,6 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Superset", domain: "superset.com", careersUrl: "https://www.superset.com/careers", atsType: "greenhouse", atsSlug: "superset" },
 
   // ashby — AI & ML
-  { name: "Runway", domain: "runwayml.com", careersUrl: "https://runwayml.com/careers", atsType: "ashby", atsSlug: "runway" },
   { name: "Pika", domain: "pika.art", careersUrl: "https://pika.art/careers", atsType: "ashby", atsSlug: "pika" },
   { name: "LangChain", domain: "langchain.com", careersUrl: "https://www.langchain.com/careers", atsType: "ashby", atsSlug: "langchain" },
 
@@ -2450,7 +2447,6 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Wellth", domain: "wellthapp.com", careersUrl: "https://wellthapp.com/careers", atsType: "ashby", atsSlug: "wellth" },
   { name: "Etched", domain: "etched.ai", careersUrl: "https://etched.ai/careers", atsType: "ashby", atsSlug: "etched" },
   { name: "Inference", domain: "inference.ai", careersUrl: "https://inference.ai/careers", atsType: "ashby", atsSlug: "inference" },
-  { name: "Outerbounds", domain: "outerbounds.co", careersUrl: "https://outerbounds.co/careers", atsType: "ashby", atsSlug: "outerbounds" },
   { name: "Aim", domain: "aimstack.io", careersUrl: "https://aimstack.io/careers", atsType: "ashby", atsSlug: "aim" },
   { name: "Tactiq", domain: "tactiq.io", careersUrl: "https://tactiq.io/careers", atsType: "ashby", atsSlug: "tactiq" },
   { name: "Bland", domain: "bland.ai", careersUrl: "https://bland.ai/careers", atsType: "ashby", atsSlug: "bland" },
@@ -2568,7 +2564,6 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
 
   // ashby
   { name: "Airwallex", domain: "airwallex.com", careersUrl: "https://www.airwallex.com/careers", atsType: "ashby", atsSlug: "airwallex" },
-  { name: "Personio", domain: "personio.com", careersUrl: "https://www.personio.com/careers/", atsType: "ashby", atsSlug: "personio" },
   { name: "LanceDB", domain: "lancedb.com", careersUrl: "https://lancedb.com/careers", atsType: "ashby", atsSlug: "lancedb" },
   { name: "Superduper", domain: "superduper.io", careersUrl: "https://superduper.io/careers", atsType: "ashby", atsSlug: "superduper" },
   { name: "Curated", domain: "curated.com", careersUrl: "https://curated.com/careers", atsType: "ashby", atsSlug: "curated" },
@@ -2867,3 +2862,6 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
 export const SCRAPED_COMPANY_COUNT = REMOTE_COMPANIES.filter(
   (c) => c.atsType !== "custom",
 ).length;
+
+// Number of external aggregator scrapers we run (keep in sync with api-aggregator.ts).
+export const JOB_BOARD_COUNT = 8;

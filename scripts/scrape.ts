@@ -16,7 +16,12 @@ async function main() {
   const startTime = Date.now();
   console.log("[scrape] starting standalone scrape...");
 
-  const { jobs, report } = await scrapeAllSources();
+  const { jobs: allJobs, report } = await scrapeAllSources();
+
+  // v6: hard-cut to global-only. Non-WW jobs are never persisted.
+  // See docs/plans/2026-04-15-global-only-pivot-design.md.
+  const jobs = allJobs.filter((j) => j.region === "ww");
+  const dropped = allJobs.length - jobs.length;
 
   // write to public/data/ so Next.js static export includes them
   const outDir = join(process.cwd(), "public", "data");
@@ -41,8 +46,8 @@ async function main() {
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   console.log(`[scrape] done in ${elapsed}s`);
-  console.log(`[scrape] ${jobs.length} worldwide jobs from ${report.companies} companies`);
-  console.log(`[scrape] ${report.rawJobsTotal} total jobs scanned → ${jobs.length} passed filter`);
+  console.log(`[scrape] ${jobs.length} worldwide jobs from ${report.companies} companies (dropped ${dropped} non-WW)`);
+  console.log(`[scrape] ${report.rawJobsTotal} total jobs scanned → ${allJobs.length} passed filter → ${jobs.length} global-only`);
   if (report.failed > 0) {
     console.log(`[scrape] ${report.failed} companies failed`);
   }
