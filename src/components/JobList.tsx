@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { useFavorites } from "@/lib/useFavorites";
 
-type SortColumn = "age" | "title" | "company" | "type";
+type SortColumn = "age" | "title" | "company";
 type SortDir = "asc" | "desc";
 
 interface JobListProps {
@@ -22,7 +22,6 @@ const COLS: { key: SortColumn; label: string; cls: string; right?: boolean }[] =
   { key: "age", label: "age", cls: "w-[32px] shrink-0 hidden sm:block text-left" },
   { key: "title", label: "title", cls: "flex-1 text-left" },
   { key: "company", label: "company", cls: "w-[96px] sm:w-[160px] shrink-0 text-right", right: true },
-  { key: "type", label: "region", cls: "w-[80px] shrink-0 hidden lg:block text-right", right: true },
 ];
 
 export default function JobList({ jobs, title, subtitle, totalCount }: JobListProps) {
@@ -55,8 +54,6 @@ export default function JobList({ jobs, title, subtitle, totalCount }: JobListPr
         return dir * a.title.localeCompare(b.title);
       case "company":
         return dir * a.company.localeCompare(b.company);
-      case "type":
-        return dir * (a.region ?? "").localeCompare(b.region ?? "");
       default:
         return 0;
     }
