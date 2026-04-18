@@ -8,14 +8,11 @@ const inputClass = `w-full h-[40px] px-2 text-[12px] bg-transparent border-b bor
   focus:outline-none focus:border-[var(--color-text)]
   placeholder:text-[var(--color-text-muted)]`;
 
-const CATEGORIES = ["creative"] as const;
-
 const FORMSPREE_ID = "xpqyaogo";
 
 export default function SubmitForm() {
   const [state, setState] = useState<FormState>("idle");
   const [errorMsg, setErrorMsg] = useState("");
-  const [category, setCategory] = useState<string>("creative");
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -31,7 +28,7 @@ export default function SubmitForm() {
       return;
     }
 
-    formData.set("category", category);
+    formData.set("category", "creative");
 
     try {
       const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
@@ -97,25 +94,6 @@ export default function SubmitForm() {
             }
           }}
         />
-      </div>
-
-      <div>
-        <div className="flex gap-2">
-          {CATEGORIES.map((cat) => (
-            <button
-              key={cat}
-              type="button"
-              onClick={() => setCategory(cat)}
-              className={`h-[40px] flex-1 text-[11px] font-mono ${
-                category === cat
-                  ? "bg-[var(--color-text)] text-[var(--color-bg)]"
-                  : "text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
       </div>
 
       <div>
