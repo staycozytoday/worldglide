@@ -26,20 +26,18 @@ export default function HomePage() {
         <p className="text-[12px] text-[var(--color-text-muted)] mt-4 max-w-[360px] leading-relaxed">
           hand-picked, truly global creative roles. product
           <br />
-          design, ui, ux, creative direction. open to candidates
+          design, ui, ux, &amp; creative direction. open to candidates
           <br />
           anywhere in the world. sourced from the world&apos;s
           <br />
-          best tech companies, startups, &amp; studios.
+          top remote companies, startups, &amp; studios.
         </p>
         <p className="text-[10px] text-[var(--color-text-muted)] mt-4 font-mono leading-relaxed max-w-[400px]">
           {stats ? (
             <>
               {jobs.length} global remote design jobs
               <br />
-              from {SCRAPED_COMPANY_COUNT} remote-first companies
-              <br />
-              &amp; {JOB_BOARD_COUNT} job boards.
+              from {SCRAPED_COMPANY_COUNT} companies &amp; {JOB_BOARD_COUNT} job boards.
             </>
           ) : "—"}
         </p>
