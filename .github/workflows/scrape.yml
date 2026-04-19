@@ -2,7 +2,9 @@ name: scrape jobs
 
 on:
   schedule:
-    - cron: "28 21 * * *" # 4:28am Bangkok (UTC+7)
+    - cron: "28 21 * * *" # 04:28 Bangkok (UTC+7) — morning
+    - cron: "48 7 * * *"  # 14:48 Bangkok (UTC+7) — afternoon
+    - cron: "28 13 * * *" # 20:28 Bangkok (UTC+7) — evening
   workflow_dispatch: # manual trigger
 
 permissions:
