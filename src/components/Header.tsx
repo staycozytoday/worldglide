@@ -31,7 +31,7 @@ export default function Header() {
           <span className="mr-[8px]">
             <ThemeToggle />
           </span>
-          <a href="/" className="text-[14px] font-medium tracking-tight text-[var(--color-text)] no-underline">
+          <a href="/" className="text-[14px] font-medium tracking-tight text-[var(--color-text)] hover:text-[var(--color-text-muted)] transition-colors no-underline">
             worldglide
           </a>
 
