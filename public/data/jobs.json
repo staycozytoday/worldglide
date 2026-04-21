@@ -1,5 +1,23 @@
 [
   {
+    "id": "ashby_e01mxh",
+    "title": "AI Designer",
+    "company": "Recraft",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=recraft.ai&sz=128",
+    "category": "creative",
+    "url": "https://jobs.ashbyhq.com/recraft/64655615-7a15-4e41-bd92-d2c91201b7a8",
+    "source": "ashby",
+    "tags": [
+      "ML",
+      "Engineering"
+    ],
+    "postedAt": "2026-04-21T14:56:39.984Z",
+    "scrapedAt": "2026-04-21T15:00:09.114Z",
+    "description": "About Us Founded in the US in 2022 and now based in London, UK, Recraft is an AI tool for professional designers, illustrators, and marketers, setting a new standard for excellence in image generation",
+    "region": "ww",
+    "employmentType": "part-time"
+  },
+  {
     "id": "ashby_ijc03c",
     "title": "UX Researcher",
     "company": "SkydropX",
@@ -12,7 +30,7 @@
       "Product"
     ],
     "postedAt": "2026-04-20T21:52:11.968Z",
-    "scrapedAt": "2026-04-21T09:17:25.639Z",
+    "scrapedAt": "2026-04-21T15:01:20.352Z",
     "description": "Estamos innovando la logística y esto lo hemos logrado gracias a un equipo de personas visionarias, con ganas de crecer y cambiar el mundo . En Skydropx encontrarás un espacio para desarrollar tu carr",
     "region": "ww",
     "employmentType": "full-time"
@@ -29,7 +47,7 @@
       "Product"
     ],
     "postedAt": "2026-04-19T14:35:12-04:00",
-    "scrapedAt": "2026-04-21T09:22:35.697Z",
+    "scrapedAt": "2026-04-21T14:57:07.206Z",
     "description": "AppsFlyer is a global SaaS company trusted by leading brands such as Meta, TikTok, Nike, and eBay to measure, analyze, and optimize their growth. Our platform processes billions of events daily, and p",
     "region": "ww",
     "employmentType": "full-time"
@@ -46,7 +64,7 @@
       "Design"
     ],
     "postedAt": "2026-04-17T18:02:07-04:00",
-    "scrapedAt": "2026-04-21T09:22:37.926Z",
+    "scrapedAt": "2026-04-21T14:57:18.011Z",
     "description": "About Ethos Ethos is a leading life insurance technology company on a mission to protect families by democratizing access to life insurance and empowering agents at scale. With its robust three-sided ",
     "region": "ww",
     "employmentType": "full-time"
@@ -63,7 +81,7 @@
       "Research & Development"
     ],
     "postedAt": "2026-04-17T16:30:01-04:00",
-    "scrapedAt": "2026-04-21T09:14:30.006Z",
+    "scrapedAt": "2026-04-21T14:56:44.837Z",
     "description": "RegScale is a continuous controls monitoring (CCM) platform purpose-built to deliver fast and efficient GRC outcomes. We help organizations break out of the slow and expensive realities that plague le",
     "region": "ww",
     "employmentType": "full-time"
@@ -80,8 +98,25 @@
       "Domains & Applications"
     ],
     "postedAt": "2026-04-17T15:19:19-04:00",
-    "scrapedAt": "2026-04-21T09:14:22.676Z",
+    "scrapedAt": "2026-04-21T14:56:36.950Z",
     "description": "Squarespace is a design-centric product company at heart, whose mission is to be the all-in-one platform for anyone who wants to stand out. You will be challenged in an organization that values vision",
+    "region": "ww",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_4lmjls",
+    "title": "Senior Content Designer - 12 Month FTC",
+    "company": "Skyscanner",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=skyscanner.net&sz=128",
+    "category": "creative",
+    "url": "http://www.skyscanner.net/jobs/job/7825930?gh_jid=7825930",
+    "source": "greenhouse",
+    "tags": [
+      "Product Design"
+    ],
+    "postedAt": "2026-04-17T12:27:02-04:00",
+    "scrapedAt": "2026-04-21T14:56:56.415Z",
+    "description": "About Skyscanner Everyone loves travelling, but planning is not without its challenges ✈️. That's why we've spent 20 years building tools that turn travel-planning chaos into a breeze. Today, around 1",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -98,7 +133,7 @@
       "NordVPN"
     ],
     "postedAt": "2026-04-17T10:51:15.212Z",
-    "scrapedAt": "2026-04-21T09:23:41.921Z",
+    "scrapedAt": "2026-04-21T15:21:06.751Z",
     "description": "The world’s most advanced VPN, and a whole lot more\nIf you’re a design leader who loves both strong visuals and helping designers do their best work, join the team behind a broad portfolio of Nord Sec",
     "region": "ww",
     "employmentType": "full-time"
@@ -122,7 +157,7 @@
     ],
     "salary": "USD 250k - 290k",
     "postedAt": "2026-04-17T00:00:38+00:00",
-    "scrapedAt": "2026-04-21T09:25:49.104Z",
+    "scrapedAt": "2026-04-21T15:26:12.089Z",
     "description": "We are building AI to simulate the world through merging art and science. We believe that world models are at the frontier of progress in artificial intelligence. Language models alone wonât solve t",
     "region": "ww",
     "employmentType": "Full-time"
@@ -139,7 +174,7 @@
       "Machine Learning & Research"
     ],
     "postedAt": "2026-04-16T23:54:27.952Z",
-    "scrapedAt": "2026-04-21T09:14:10.395Z",
+    "scrapedAt": "2026-04-21T14:56:46.479Z",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -155,7 +190,7 @@
       "Product Design"
     ],
     "postedAt": "2026-04-15T17:20:02-04:00",
-    "scrapedAt": "2026-04-21T09:21:45.975Z",
+    "scrapedAt": "2026-04-21T14:57:02.847Z",
     "description": "🧠 About Cortex Cortex is the Engineering Operations Platform that enables organizations to continuously improve their operational maturity and reduce developer friction. With centralized visibility, ",
     "region": "ww",
     "employmentType": "full-time"
@@ -172,7 +207,7 @@
       "Product Design"
     ],
     "postedAt": "2026-04-15T06:31:31-04:00",
-    "scrapedAt": "2026-04-21T09:23:44.384Z",
+    "scrapedAt": "2026-04-21T14:58:31.463Z",
     "description": "About Us Circle is building the world’s leading all-in-one platform for online communities. We make it possible for creators, coaches, educators, and businesses to bring together their audience with e",
     "region": "ww",
     "employmentType": "full-time"
@@ -189,7 +224,7 @@
       "Product Design"
     ],
     "postedAt": "2026-04-15T03:51:01-04:00",
-    "scrapedAt": "2026-04-21T09:23:19.845Z",
+    "scrapedAt": "2026-04-21T14:57:48.292Z",
     "description": "Founded in 2017, refurbed is Europe’s fastest-growing marketplace for refurbished products, active in 12 European countries and having surpassed €2Bn in GMV — all while being profitable. With beautifu",
     "region": "ww",
     "employmentType": "full-time"
@@ -206,7 +241,7 @@
       "Marketing & Communications"
     ],
     "postedAt": "2026-04-14T19:26:42-04:00",
-    "scrapedAt": "2026-04-21T09:22:46.242Z",
+    "scrapedAt": "2026-04-21T14:57:22.949Z",
     "description": "SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologi",
     "region": "ww",
     "employmentType": "full-time"
@@ -223,7 +258,7 @@
       "Product & Technology"
     ],
     "postedAt": "2026-04-14T18:20:26-04:00",
-    "scrapedAt": "2026-04-21T09:14:28.701Z",
+    "scrapedAt": "2026-04-21T14:56:43.661Z",
     "description": "Summary The Wikimedia Foundation is looking for an experienced mixed-method UX researcher (3-month contract) to extend our capabilities for doing qualitative and quantitative research to understand th",
     "region": "ww",
     "employmentType": "full-time"
@@ -241,8 +276,25 @@
       "Product"
     ],
     "postedAt": "2026-04-14T21:52:19.415Z",
-    "scrapedAt": "2026-04-21T09:17:25.639Z",
+    "scrapedAt": "2026-04-21T15:01:20.353Z",
     "description": "Estamos innovando la logística y esto lo hemos logrado gracias a un equipo de personas visionarias, con ganas de crecer y cambiar el mundo . En Skydropx encontrarás un espacio para desarrollar tu carr",
+    "region": "ww",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_2q2zsu",
+    "title": "Senior Product Designer",
+    "company": "Valtech",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=valtech.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.eu.greenhouse.io/valtech/jobs/4814311101",
+    "source": "greenhouse",
+    "tags": [
+      "Design & Experience"
+    ],
+    "postedAt": "2026-04-14T12:20:47-04:00",
+    "scrapedAt": "2026-04-21T14:58:21.330Z",
+    "description": "Why Valtech? We’re the experience innovation company - a trusted partner to the world’s most recognized brands. To our people we offer growth opportunities, a values-driven culture, international care",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -258,7 +310,7 @@
       "Product Design"
     ],
     "postedAt": "2026-04-14T10:59:41-04:00",
-    "scrapedAt": "2026-04-21T09:14:03.435Z",
+    "scrapedAt": "2026-04-21T14:56:27.601Z",
     "description": "GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, an",
     "region": "ww",
     "employmentType": "full-time"
@@ -276,7 +328,7 @@
       "Product"
     ],
     "postedAt": "2026-04-14T10:11:05.781Z",
-    "scrapedAt": "2026-04-21T09:16:29.937Z",
+    "scrapedAt": "2026-04-21T15:03:18.495Z",
     "description": "Ready to shape the future of data?\n\nMatillion is the intelligent data integration platform.\n\nWe're changing how the world works with data – and we need driven, curious people who think big and move fa",
     "region": "ww",
     "employmentType": "full-time"
@@ -293,7 +345,7 @@
       "Creative"
     ],
     "postedAt": "2026-04-14T03:46:18-04:00",
-    "scrapedAt": "2026-04-21T09:23:14.272Z",
+    "scrapedAt": "2026-04-21T14:57:44.159Z",
     "description": "Teamlead Visual Design / UI Design Zurich, hybrid DEPT® is a Growth Invention company built to help the world’s most ambitious brands grow faster. Operating at the intersection of technology and marke",
     "region": "ww",
     "employmentType": "full-time"
@@ -325,7 +377,7 @@
       "digital nomad"
     ],
     "postedAt": "2026-04-14T00:01:02+00:00",
-    "scrapedAt": "2026-04-21T09:25:49.105Z",
+    "scrapedAt": "2026-04-21T15:26:12.090Z",
     "description": "Senior Product Designer â Product Design / UX Remote â LATAM / Full-time / Remote Info on the Senior Product Designer role Ready to take the next step in your international career? We can support ",
     "region": "ww",
     "employmentType": "Full-time"
@@ -342,42 +394,8 @@
       "Creative"
     ],
     "postedAt": "2026-04-13T14:57:23-04:00",
-    "scrapedAt": "2026-04-21T09:14:30.048Z",
+    "scrapedAt": "2026-04-21T14:56:44.829Z",
     "description": "Location: This position is remote within Colombia Senior Visual Designer What’s the role As a Senior Visual Designer at Huge, you are a talented and driven professional that will create gorgeous, grou",
-    "region": "ww",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_jkwvbs",
-    "title": "Staff UX Researcher - MetaMask",
-    "company": "ConsenSys",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=consensys.io&sz=128",
-    "category": "creative",
-    "url": "https://consensys.io/open-roles/7660360?gh_jid=7660360",
-    "source": "greenhouse",
-    "tags": [
-      "MetaMask"
-    ],
-    "postedAt": "2026-04-13T10:43:17-04:00",
-    "scrapedAt": "2026-04-21T09:14:16.923Z",
-    "description": "Consensys is the leading blockchain and web3 software company founded by Joe Lubin, CEO of Consensys and Co-Founder of Ethereum. Since 2014, Consensys has been at the forefront of innovation, pioneeri",
-    "region": "ww",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_p3jrft",
-    "title": "Senior Staff Product Designer",
-    "company": "Remote",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=remote.com&sz=128",
-    "category": "creative",
-    "url": "https://job-boards.greenhouse.io/remotecom/jobs/7660139003",
-    "source": "greenhouse",
-    "tags": [
-      "Design"
-    ],
-    "postedAt": "2026-04-13T08:59:23-04:00",
-    "scrapedAt": "2026-04-21T09:14:28.083Z",
-    "description": "About Remote Remote is solving modern organizations’ biggest challenge – navigating global employment compliantly with ease. We make it possible for businesses of all sizes to recruit, pay, and manage",
     "region": "ww",
     "employmentType": "full-time"
   }
