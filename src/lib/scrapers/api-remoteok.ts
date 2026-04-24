@@ -27,17 +27,11 @@ interface RemoteOKJob {
   original?: boolean;
 }
 
-/**
- * Scrape jobs from RemoteOK API.
- * GET https://remoteok.com/api — returns JSON array.
- * First element is metadata (legal notice), skip it.
- * All RemoteOK jobs are remote by definition.
- */
-export async function scrapeRemoteOK(): Promise<RemoteOKResult> {
-  let rawJobs: RemoteOKJob[] = [];
+const DESIGN_TAGS = ["design", "ui", "ux"];
 
+async function fetchTagJobs(tag: string): Promise<RemoteOKJob[]> {
   try {
-    const res = await fetchWithRetry("https://remoteok.com/api", {
+    const res = await fetchWithRetry(`https://remoteok.com/api?tag=${tag}`, {
       headers: {
         "User-Agent": "worldglide-jobs/1.0",
         Accept: "application/json",
@@ -46,25 +40,40 @@ export async function scrapeRemoteOK(): Promise<RemoteOKResult> {
     });
 
     if (!res.ok) {
-      console.warn(`[remoteok] API returned ${res.status}`);
-      return { jobs: [], rawCount: 0 };
+      console.warn(`[remoteok] tag=${tag} returned ${res.status}`);
+      return [];
     }
 
     const data = await res.json();
+    if (!Array.isArray(data)) return [];
 
-    if (!Array.isArray(data)) {
-      console.warn("[remoteok] unexpected response format (not an array)");
-      return { jobs: [], rawCount: 0 };
-    }
-
-    // First element is metadata/legal — skip it
-    rawJobs = data.slice(1).filter((item: unknown) => {
+    return data.slice(1).filter((item: unknown) => {
       return item && typeof item === "object" && "position" in (item as Record<string, unknown>);
     });
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err);
-    console.error(`[remoteok] fetch failed: ${msg}`);
-    return { jobs: [], rawCount: 0 };
+    console.error(`[remoteok] tag=${tag} fetch failed: ${msg}`);
+    return [];
+  }
+}
+
+/**
+ * Scrape jobs from RemoteOK API using design-specific tags.
+ * Fetches tag=design, tag=ui, tag=ux and deduplicates by job ID.
+ * First element of each response is metadata — skipped.
+ */
+export async function scrapeRemoteOK(): Promise<RemoteOKResult> {
+  const tagResults = await Promise.all(DESIGN_TAGS.map(fetchTagJobs));
+
+  const seen = new Set<string>();
+  const rawJobs: RemoteOKJob[] = [];
+  for (const batch of tagResults) {
+    for (const job of batch) {
+      if (!seen.has(job.id)) {
+        seen.add(job.id);
+        rawJobs.push(job);
+      }
+    }
   }
 
   const rawCount = rawJobs.length;
