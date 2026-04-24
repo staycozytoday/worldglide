@@ -46,6 +46,8 @@ const COUNTRY_AND_REGION_TERMS = [
   // ── Middle East ───────────────────────────────────────────────
   "israel", "uae", "united arab emirates", "dubai", "saudi arabia",
   "qatar", "bahrain", "kuwait", "oman", "jordan", "lebanon",
+  "doha", "riyadh", "jeddah", "muscat", "manama", "abu dhabi",
+  "amman", "beirut", "ramallah",
   // ── Asia ──────────────────────────────────────────────────────
   "india", "japan", "korea", "south korea", "china", "singapore",
   "taiwan", "hong kong", "philippines", "indonesia", "thailand",
@@ -94,7 +96,8 @@ const COUNTRY_AND_REGION_TERMS = [
   "new york city", "nyc", "san francisco", "sf", "seattle",
   "austin", "denver", "chicago", "boston", "los angeles", "la",
   "toronto", "vancouver", "montreal", "sydney", "melbourne",
-  "tel aviv", "bangalore", "bengaluru", "hyderabad", "mumbai",
+  "tel aviv", "doha", "abu dhabi", "riyadh", "muscat", "manama",
+  "bangalore", "bengaluru", "hyderabad", "mumbai",
   "tokyo", "seoul", "shanghai", "beijing", "são paulo", "sao paulo",
   "mexico city", "buenos aires", "bogota", "bogotá", "lima",
   "lagos", "nairobi", "cairo", "cape town",
@@ -175,6 +178,29 @@ const WORLDWIDE_EXACT_LOCATIONS = [
   "remote - flexible location",
   "no office",
   "home office",
+  // Additional variants seen in ATS listings
+  "remote, global",
+  "global / remote",
+  "anywhere / remote",
+  "global (remote)",
+  "worldwide (remote)",
+  "fully remote / worldwide",
+  "remote-global",
+  "open to all",
+  "no location required",
+  "any location",
+  "location flexible",
+  "flexible location",
+  "work remotely",
+  "remote - open",
+  "fully remote - global",
+  "remote | global",
+  "remote (global)",
+  "global, remote",
+  "anywhere, remote",
+  "remote – worldwide",
+  "remote – global",
+  "remote – anywhere",
 ];
 
 /** Phrases in title/description that prove geographic restriction */
@@ -314,6 +340,28 @@ const TRUSTED_WORLDWIDE_SLUGS = new Set([
   "coalitiontech", "goodwaygroup", "awesomemotive",
   "onthegosystems", "pocketworlds", "aha",
   "gravityglobal", "order",
+  // AI-native & LLM companies (remote-first by design)
+  "anthropic", "openai", "cohere", "mistral", "perplexity",
+  "adept", "together", "imbue", "characterai",
+  // Design-forward SaaS (remote-first, global teams)
+  "typeform", "intercom", "amplitude", "mixpanel", "fullstory",
+  "beehiiv", "mailerlite", "klaviyo",
+  // Global fintech (hire worldwide)
+  "brex", "ramp", "mercury", "wise", "paddle", "lemonsqueezy",
+  "payoneer", "airwallex",
+  // Remote-first infra & developer tools
+  "gitpod", "loops", "hookdeck", "svix", "trigger",
+  "sanity", "contentful", "storyblok", "hygraph", "directus",
+  // Creative & media platforms
+  "envato", "creativemarket", "designcuts",
+  "supernova", "zeroheight",
+  "adobe", "invision",
+  // Content & creator economy
+  "grammarly", "squarespace", "bigcommerce", "shopify",
+  "cargo", "readymag",
+  // Creative agencies & studios (distributed)
+  "mediamonks", "stinkstudios", "wearephi",
+  "rottenrobots", "makemepulse",
 ]);
 
 export interface FilterResult {

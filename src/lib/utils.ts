@@ -1,7 +1,7 @@
 import { JOB_EXPIRY_DAYS } from "./types";
 
 /**
- * Check if a job is expired (older than JOB_EXPIRY_DAYS — 8 days in v6)
+ * Check if a job is expired (older than JOB_EXPIRY_DAYS)
  */
 export function isExpired(postedAt: string): boolean {
   const posted = new Date(postedAt).getTime();
@@ -21,9 +21,8 @@ export function isNew(postedAt: string): boolean {
 }
 
 /**
- * Format a date string to a relative time (e.g., "2h ago", "3d ago").
- * Jobs older than JOB_EXPIRY_DAYS (8) are filtered out upstream, so the
- * max value you'll ever see here is "8d". No weeks/months format.
+ * Format a date string to a relative time (e.g., "2h ago", "3d ago", "2w ago").
+ * Jobs older than JOB_EXPIRY_DAYS (30) are filtered out upstream.
  */
 export function formatRelativeTime(dateString: string): string {
   const date = new Date(dateString).getTime();
@@ -33,11 +32,13 @@ export function formatRelativeTime(dateString: string): string {
   const minutes = Math.floor(diffMs / (1000 * 60));
   const hours = Math.floor(diffMs / (1000 * 60 * 60));
   const days = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+  const weeks = Math.floor(days / 7);
 
   if (minutes < 1) return "now";
   if (minutes < 60) return `${minutes}m`;
   if (hours < 24) return `${hours}h`;
-  return `${days}d`;
+  if (days < 7) return `${days}d`;
+  return `${weeks}w`;
 }
 
 /**
@@ -83,6 +84,7 @@ function getDateLabel(dateString: string): string {
   if (diffDays === 1) return "yesterday";
   if (diffDays < 7) return "this week";
   if (diffDays < 14) return "last week";
+  if (diffDays < 30) return "this month";
   return "expired";
 }
 

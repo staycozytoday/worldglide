@@ -194,6 +194,51 @@ const CREATIVE_PATTERNS = [
   /\bconversational\s+design/i,
   /\bvoice\s+design/i,
   /\bux\s+copywriter/i,
+  // Motion & animation
+  /\bmotion\s+(designer|graphic|design)\b/i,
+  /\bmotion\s+graphics?\b/i,
+  /\banimator\b/i,
+  /\banimation\s+(designer|director|lead|artist)\b/i,
+  /\b[23]d\s+animator\b/i,
+  /\bcharacter\s+animator\b/i,
+  // 3D & visual effects
+  /\b3d\s+(designer|artist|generalist)\b/i,
+  /\b3d\s+design\b/i,
+  /\bvfx\s+artist\b/i,
+  /\bvisual\s+effects?\s+artist\b/i,
+  /\benvironmental?\s+artist\b/i,
+  /\bconcept\s+artist\b/i,
+  /\bcharacter\s+designer\b/i,
+  // Illustration
+  /\billustrator\b/i,
+  /\billustration\s+(designer|director|lead)\b/i,
+  /\beditorial\s+illustrator\b/i,
+  /\bdigital\s+illustrator\b/i,
+  // Video & production
+  /\bvideo\s+(designer|editor|producer|director)\b/i,
+  /\bcreative\s+producer\b/i,
+  /\bproduction\s+designer\b/i,
+  // Copywriting & creative writing
+  /\bcopywriter\b/i,
+  /\bcopy\s+director\b/i,
+  /\bcreative\s+writer\b/i,
+  /\bcreative\s+copywriter\b/i,
+  // Brand identity & packaging
+  /\bidentity\s+designer\b/i,
+  /\bbrand\s+identity\b/i,
+  /\bpackaging\s+designer\b/i,
+  // Additional digital & UI
+  /\bemail\s+designer\b/i,
+  /\bpresentation\s+designer\b/i,
+  /\bmultimedia\s+(designer|artist)\b/i,
+  /\bweb\s+designer\b/i,
+  /\bdigital\s+designer\b/i,
+  /\bcreative\s+lead\b/i,
+  /\bui\s+artist\b/i,
+  // Game art (excluded: game balance, numerical, systems — already in EXCLUDE_PATTERNS)
+  /\bgame\s+artist\b/i,
+  /\blevel\s+artist\b/i,
+  /\bgame\s+(?:ui\s+)?designer\b/i,
 ];
 
 export function categorizeJob(

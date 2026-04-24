@@ -69,6 +69,6 @@ export function getCompanyLogoUrl(domain: string): string {
   return `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
 }
 
-// 8 days — keeps jobs visible a bit longer to avoid gaps
-export const JOB_EXPIRY_DAYS = 8;
+// 30 days — WWR and other sources list jobs for weeks; 8d was cutting too aggressively
+export const JOB_EXPIRY_DAYS = 30;
 export const JOB_EXPIRY_MS = JOB_EXPIRY_DAYS * 24 * 60 * 60 * 1000;
