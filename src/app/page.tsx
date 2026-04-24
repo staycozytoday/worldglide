@@ -37,7 +37,7 @@ export default function HomePage() {
             <>
               {jobs.length} global remote design jobs
               <br />
-              from {SCRAPED_COMPANY_COUNT} companies &amp; {JOB_BOARD_COUNT} job boards.
+              from {SCRAPED_COMPANY_COUNT.toLocaleString()} companies &amp; {JOB_BOARD_COUNT} job boards.
             </>
           ) : "—"}
         </p>
