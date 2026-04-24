@@ -107,6 +107,7 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Nextdoor", domain: "nextdoor.com", careersUrl: "https://about.nextdoor.com/careers/", atsType: "greenhouse", atsSlug: "nextdoor" },
   { name: "OpenDoor", domain: "opendoor.com", careersUrl: "https://www.opendoor.com/careers", atsType: "greenhouse", atsSlug: "opendoor" },
   { name: "Epic Games", domain: "epicgames.com", careersUrl: "https://www.epicgames.com/site/en-US/careers", atsType: "greenhouse", atsSlug: "epicgames" },
+  { name: "Unity Technologies", domain: "unity.com", careersUrl: "https://careers.unity.com/", atsType: "greenhouse", atsSlug: "unity" },
   { name: "Twitch", domain: "twitch.tv", careersUrl: "https://www.twitch.tv/jobs/en/", atsType: "greenhouse", atsSlug: "twitch" },
   { name: "Ziprecruiter", domain: "ziprecruiter.com", careersUrl: "https://www.ziprecruiter.com/careers", atsType: "greenhouse", atsSlug: "ziprecruiter" },
   { name: "Pinterest", domain: "pinterest.com", careersUrl: "https://www.pinterestcareers.com/", atsType: "greenhouse", atsSlug: "pinterest" },
@@ -2855,6 +2856,9 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Muck Rack", domain: "muckrack.com", careersUrl: "https://muckrack.com/careers", atsType: "greenhouse", atsSlug: "muckrack" },
   { name: "Circle", domain: "circle.so", careersUrl: "https://circle.so/careers", atsType: "greenhouse", atsSlug: "circleso" },
   { name: "Testlio", domain: "testlio.com", careersUrl: "https://testlio.com/work/", atsType: "greenhouse", atsSlug: "testlio" },
+  { name: "Wix",               domain: "wix.com",               careersUrl: "https://www.wix.com/jobs/",              atsType: "greenhouse", atsSlug: "wix" },
+  { name: "Etsy",              domain: "etsy.com",              careersUrl: "https://www.etsy.com/careers",           atsType: "greenhouse", atsSlug: "etsy" },
+  { name: "Kickstarter",       domain: "kickstarter.com",       careersUrl: "https://www.kickstarter.com/careers",    atsType: "greenhouse", atsSlug: "kickstarter" },
 
   // ════════════════════════════════════════════════
   // BATCH v6 (2026-04-24) — design tools, creative-led companies
