@@ -29,8 +29,8 @@ interface JobicyResponse {
 }
 
 /**
- * Scrape jobs from Jobicy API.
- * GET https://jobicy.com/api/v2/remote-jobs?count=50
+ * Scrape jobs from Jobicy API, filtered to design industry.
+ * GET https://jobicy.com/api/v2/remote-jobs?count=50&industry=design
  * Returns { success, jobs: [...] }.
  * Note: do NOT pass geo=anywhere — the API rejects it.
  * Omitting `geo` returns all regions; we filter locally via isWorldwideRemote.
@@ -40,7 +40,7 @@ export async function scrapeJobicy(): Promise<JobicyResult> {
 
   try {
     const res = await fetchWithRetry(
-      "https://jobicy.com/api/v2/remote-jobs?count=50",
+      "https://jobicy.com/api/v2/remote-jobs?count=50&industry=design",
       {
         headers: { "User-Agent": "worldglide-jobs/1.0" },
         timeoutMs: 20000,

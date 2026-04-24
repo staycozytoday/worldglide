@@ -29,15 +29,15 @@ interface RemotiveResponse {
 }
 
 /**
- * Scrape jobs from Remotive API.
- * GET https://remotive.com/api/remote-jobs — returns { jobs: [...] }.
+ * Scrape jobs from Remotive API, filtered to Design & Creative category.
+ * GET https://remotive.com/api/remote-jobs?category=Design+%26+Creative
  * Max 4 requests/day — single request, no pagination.
  */
 export async function scrapeRemotive(): Promise<RemotiveResult> {
   let rawJobs: RemotiveJob[] = [];
 
   try {
-    const res = await fetchWithRetry("https://remotive.com/api/remote-jobs", {
+    const res = await fetchWithRetry("https://remotive.com/api/remote-jobs?category=Design+%26+Creative", {
       headers: { "User-Agent": "worldglide-jobs/1.0" },
       timeoutMs: 20000,
     });

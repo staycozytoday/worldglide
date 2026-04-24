@@ -20,8 +20,8 @@ interface WNJob {
 }
 
 /**
- * Scrape jobs from Working Nomads API.
- * GET https://www.workingnomads.com/api/exposed_jobs/ — returns JSON array.
+ * Scrape jobs from Working Nomads API, filtered to design-and-multimedia category.
+ * GET https://www.workingnomads.com/api/exposed_jobs/?category=design-and-multimedia
  * Each job has a `location` field that can be "Anywhere in the world",
  * region-specific like "USA only", or timezone-based like "CET (+/- 3 hours)".
  * We only keep jobs where location indicates truly worldwide.
@@ -30,7 +30,7 @@ export async function scrapeWorkingNomads(): Promise<WorkingNomadsResult> {
   let rawJobs: WNJob[] = [];
 
   try {
-    const res = await fetchWithRetry("https://www.workingnomads.com/api/exposed_jobs/", {
+    const res = await fetchWithRetry("https://www.workingnomads.com/api/exposed_jobs/?category=design-and-multimedia", {
       headers: {
         "User-Agent": "worldglide-jobs/1.0",
         Accept: "application/json",
