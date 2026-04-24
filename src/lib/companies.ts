@@ -2856,6 +2856,30 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Circle", domain: "circle.so", careersUrl: "https://circle.so/careers", atsType: "greenhouse", atsSlug: "circleso" },
   { name: "Testlio", domain: "testlio.com", careersUrl: "https://testlio.com/work/", atsType: "greenhouse", atsSlug: "testlio" },
 
+  // ════════════════════════════════════════════════
+  // BATCH v6 (2026-04-24) — design tools, creative-led companies
+  // ════════════════════════════════════════════════
+
+  // greenhouse
+  { name: "Miro",             domain: "miro.com",             careersUrl: "https://miro.com/careers/",              atsType: "greenhouse", atsSlug: "miro" },
+  { name: "Monday.com",       domain: "monday.com",           careersUrl: "https://monday.com/careers",             atsType: "greenhouse", atsSlug: "mondaydotcom" },
+  { name: "UserTesting",      domain: "usertesting.com",      careersUrl: "https://www.usertesting.com/about/careers", atsType: "greenhouse", atsSlug: "usertesting" },
+  { name: "Vimeo",            domain: "vimeo.com",            careersUrl: "https://vimeo.com/jobs",                 atsType: "greenhouse", atsSlug: "vimeo" },
+  { name: "Wistia",           domain: "wistia.com",           careersUrl: "https://wistia.com/about/jobs",          atsType: "greenhouse", atsSlug: "wistia" },
+  { name: "Dribbble",         domain: "dribbble.com",         careersUrl: "https://dribbble.com/careers",           atsType: "greenhouse", atsSlug: "dribbble" },
+  { name: "Coda",             domain: "coda.io",              careersUrl: "https://coda.io/careers",                atsType: "greenhouse", atsSlug: "coda" },
+  { name: "Snap Inc.",        domain: "snap.com",             careersUrl: "https://careers.snap.com/",              atsType: "greenhouse", atsSlug: "snap" },
+
+  // lever
+  { name: "Pitch",            domain: "pitch.com",            careersUrl: "https://pitch.com/jobs",                 atsType: "lever",      atsSlug: "pitch" },
+  { name: "Zeplin",           domain: "zeplin.io",            careersUrl: "https://zeplin.io/careers",              atsType: "lever",      atsSlug: "zeplin" },
+  { name: "ustwo",            domain: "ustwo.com",            careersUrl: "https://www.ustwo.com/join-us",          atsType: "lever",      atsSlug: "ustwo" },
+
+  // ashby
+  { name: "Framer",           domain: "framer.com",           careersUrl: "https://www.framer.com/careers/",        atsType: "ashby",      atsSlug: "framer" },
+  { name: "Lottiefiles",      domain: "lottiefiles.com",      careersUrl: "https://lottiefiles.com/careers",        atsType: "ashby",      atsSlug: "lottiefiles" },
+  { name: "Flowbase",         domain: "flowbase.co",          careersUrl: "https://www.flowbase.co/careers",        atsType: "ashby",      atsSlug: "flowbase" },
+
 ];
 
 /** number of companies we actually scrape (excludes custom) */
