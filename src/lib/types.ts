@@ -22,6 +22,7 @@ export type Source =
   | "wwr"
   | "workingnomads"
   | "dribbble"
+  | "muse"
   | "user-submitted";
 
 export interface Job {

@@ -2884,6 +2884,64 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Lottiefiles",      domain: "lottiefiles.com",      careersUrl: "https://lottiefiles.com/careers",        atsType: "ashby",      atsSlug: "lottiefiles" },
   { name: "Flowbase",         domain: "flowbase.co",          careersUrl: "https://www.flowbase.co/careers",        atsType: "ashby",      atsSlug: "flowbase" },
 
+  // ════════════════════════════════════════════════
+  // BATCH v7 (2026-04-25) — EdTech, health, SaaS, agencies
+  // ════════════════════════════════════════════════
+
+  // EdTech — design-heavy products with global teams
+  { name: "Coursera",         domain: "coursera.org",         careersUrl: "https://about.coursera.org/careers",         atsType: "greenhouse", atsSlug: "coursera" },
+  { name: "Udemy",            domain: "udemy.com",            careersUrl: "https://about.udemy.com/careers/",           atsType: "greenhouse", atsSlug: "udemy" },
+  { name: "MasterClass",      domain: "masterclass.com",      careersUrl: "https://www.masterclass.com/jobs",           atsType: "greenhouse", atsSlug: "masterclass" },
+  { name: "Quizlet",          domain: "quizlet.com",          careersUrl: "https://quizlet.com/careers",                atsType: "greenhouse", atsSlug: "quizlet" },
+  { name: "Kahoot!",          domain: "kahoot.com",           careersUrl: "https://kahoot.com/careers/",                atsType: "greenhouse", atsSlug: "kahoot" },
+  { name: "Chegg",            domain: "chegg.com",            careersUrl: "https://careers.chegg.com/",                 atsType: "greenhouse", atsSlug: "chegg" },
+  { name: "Skillshare",       domain: "skillshare.com",       careersUrl: "https://www.skillshare.com/careers",         atsType: "greenhouse", atsSlug: "skillshare" },
+  { name: "Pluralsight",      domain: "pluralsight.com",      careersUrl: "https://www.pluralsight.com/careers",        atsType: "greenhouse", atsSlug: "pluralsight" },
+
+  // Health & wellness
+  { name: "Headspace",        domain: "headspace.com",        careersUrl: "https://www.headspace.com/careers",          atsType: "greenhouse", atsSlug: "headspace" },
+  { name: "Noom",             domain: "noom.com",             careersUrl: "https://www.noom.com/careers/",              atsType: "greenhouse", atsSlug: "noom" },
+  { name: "Oscar Health",     domain: "hioscar.com",          careersUrl: "https://www.hioscar.com/careers",            atsType: "greenhouse", atsSlug: "oscar" },
+  { name: "Ro",               domain: "ro.co",                careersUrl: "https://ro.co/careers",                      atsType: "greenhouse", atsSlug: "ro" },
+
+  // Marketing & growth SaaS
+  { name: "ActiveCampaign",   domain: "activecampaign.com",   careersUrl: "https://www.activecampaign.com/careers",     atsType: "greenhouse", atsSlug: "activecampaign" },
+  { name: "Iterable",         domain: "iterable.com",         careersUrl: "https://iterable.com/careers/",              atsType: "greenhouse", atsSlug: "iterable" },
+  { name: "Yotpo",            domain: "yotpo.com",            careersUrl: "https://www.yotpo.com/careers/",             atsType: "greenhouse", atsSlug: "yotpo" },
+  { name: "Sendbird",         domain: "sendbird.com",         careersUrl: "https://sendbird.com/careers",               atsType: "greenhouse", atsSlug: "sendbird" },
+  { name: "Recharge",         domain: "rechargepayments.com", careersUrl: "https://rechargepayments.com/careers/",      atsType: "greenhouse", atsSlug: "rechargecommerce" },
+  { name: "Strava",           domain: "strava.com",           careersUrl: "https://www.strava.com/careers",             atsType: "greenhouse", atsSlug: "strava" },
+  { name: "Eventbrite",       domain: "eventbrite.com",       careersUrl: "https://www.eventbrite.com/careers/",        atsType: "greenhouse", atsSlug: "eventbrite" },
+
+  // Creative & media platforms
+  { name: "Shutterstock",     domain: "shutterstock.com",     careersUrl: "https://www.shutterstock.com/careers",       atsType: "greenhouse", atsSlug: "shutterstock" },
+  { name: "SoundCloud",       domain: "soundcloud.com",       careersUrl: "https://soundcloud.com/jobs",                atsType: "greenhouse", atsSlug: "soundcloud" },
+  { name: "Bandcamp",         domain: "bandcamp.com",         careersUrl: "https://bandcamp.com/jobs",                  atsType: "greenhouse", atsSlug: "bandcamp" },
+  { name: "Bumble",           domain: "bumble.com",           careersUrl: "https://team.bumble.com/",                   atsType: "greenhouse", atsSlug: "bumble" },
+
+  // AI/creative tools
+  { name: "Stability AI",     domain: "stability.ai",         careersUrl: "https://stability.ai/careers",               atsType: "greenhouse", atsSlug: "stabilityai" },
+  { name: "ElevenLabs",       domain: "elevenlabs.io",        careersUrl: "https://elevenlabs.io/careers",              atsType: "ashby",      atsSlug: "elevenlabs" },
+  { name: "Rive",             domain: "rive.app",             careersUrl: "https://rive.app/careers",                   atsType: "ashby",      atsSlug: "rive" },
+  { name: "Spline",           domain: "spline.design",        careersUrl: "https://spline.design/careers",              atsType: "ashby",      atsSlug: "spline" },
+
+  // HR & people tools
+  { name: "Lattice",          domain: "lattice.com",          careersUrl: "https://lattice.com/careers",                atsType: "greenhouse", atsSlug: "lattice" },
+  { name: "Culture Amp",      domain: "cultureamp.com",       careersUrl: "https://www.cultureamp.com/careers",         atsType: "greenhouse", atsSlug: "cultureamp" },
+  { name: "Leapsome",         domain: "leapsome.com",         careersUrl: "https://www.leapsome.com/company/careers",   atsType: "greenhouse", atsSlug: "leapsome" },
+
+  // E-commerce & marketplace
+  { name: "Faire",            domain: "faire.com",            careersUrl: "https://www.faire.com/careers",              atsType: "lever",      atsSlug: "faire" },
+  { name: "Whatnot",          domain: "whatnot.com",          careersUrl: "https://www.whatnot.com/careers",            atsType: "ashby",      atsSlug: "whatnot" },
+  { name: "Gorgias",          domain: "gorgias.com",          careersUrl: "https://www.gorgias.com/careers",            atsType: "ashby",      atsSlug: "gorgias" },
+
+  // Developer tools / infra
+  { name: "Whimsical",        domain: "whimsical.com",        careersUrl: "https://whimsical.com/careers",              atsType: "ashby",      atsSlug: "whimsical" },
+  { name: "Liveblocks",       domain: "liveblocks.io",        careersUrl: "https://liveblocks.io/careers",              atsType: "ashby",      atsSlug: "liveblocks" },
+  { name: "Vercel",           domain: "vercel.com",           careersUrl: "https://vercel.com/careers",                 atsType: "ashby",      atsSlug: "vercel" },
+  { name: "Descript",         domain: "descript.com",         careersUrl: "https://www.descript.com/careers",           atsType: "ashby",      atsSlug: "descript" },
+  { name: "Bezel",            domain: "getbezel.com",         careersUrl: "https://www.getbezel.com/careers",           atsType: "ashby",      atsSlug: "bezel" },
+
 ];
 
 /** number of companies we actually scrape (excludes custom) */
@@ -2892,4 +2950,4 @@ export const SCRAPED_COMPANY_COUNT = REMOTE_COMPANIES.filter(
 ).length;
 
 // Number of external aggregator scrapers we run (keep in sync with api-aggregator.ts).
-export const JOB_BOARD_COUNT = 8;
+export const JOB_BOARD_COUNT = 9;

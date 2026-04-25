@@ -7,6 +7,7 @@ import { scrapeArbeitnow } from "./scrapers/api-arbeitnow";
 import { scrapeHNWhoIsHiring } from "./scrapers/api-hn";
 import { scrapeWeWorkRemotely } from "./scrapers/api-weworkremotely";
 import { scrapeWorkingNomads } from "./scrapers/api-workingnomads";
+import { scrapeMuse } from "./scrapers/api-muse";
 
 export interface ApiAggregatorResult {
   jobs: Job[];
@@ -128,6 +129,18 @@ export async function runApiAggregator(): Promise<ApiAggregatorResult> {
     const msg = err instanceof Error ? err.message : String(err);
     console.error(`[api-aggregator] workingnomads failed: ${msg}`);
     sources.push({ name: "workingnomads", jobs: 0, rawCount: 0, error: msg });
+  }
+
+  // --- The Muse ---
+  try {
+    const result = await scrapeMuse();
+    allJobs.push(...result.jobs);
+    totalRaw += result.rawCount;
+    sources.push({ name: "muse", jobs: result.jobs.length, rawCount: result.rawCount });
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error(`[api-aggregator] muse failed: ${msg}`);
+    sources.push({ name: "muse", jobs: 0, rawCount: 0, error: msg });
   }
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
