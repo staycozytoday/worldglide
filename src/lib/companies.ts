@@ -3074,6 +3074,32 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
 
   // Remote-first HR & hiring
 
+  // ── batch v13: more Lever companies with design teams ───────────
+
+  // Design agencies on Lever
+  { name: "Frog Design",       domain: "frogdesign.com",       careersUrl: "https://jobs.lever.co/frogdesign",           atsType: "lever",      atsSlug: "frogdesign" },
+  { name: "Work & Co",         domain: "work.co",              careersUrl: "https://jobs.lever.co/workco",               atsType: "lever",      atsSlug: "workco" },
+  { name: "Ragged Edge",       domain: "raggededge.com",       careersUrl: "https://jobs.lever.co/raggededge",           atsType: "lever",      atsSlug: "raggededge" },
+  { name: "Koto",              domain: "koto.studio",          careersUrl: "https://jobs.lever.co/koto",                 atsType: "lever",      atsSlug: "koto" },
+  { name: "Wolff Olins",       domain: "wolffolins.com",       careersUrl: "https://jobs.lever.co/wolffolins",           atsType: "lever",      atsSlug: "wolffolins" },
+  { name: "Pentagram",         domain: "pentagram.com",        careersUrl: "https://jobs.lever.co/pentagram",            atsType: "lever",      atsSlug: "pentagram" },
+  { name: "Collins",           domain: "wearecollins.com",     careersUrl: "https://jobs.lever.co/wearecollins",         atsType: "lever",      atsSlug: "wearecollins" },
+
+  // Tech companies on Lever with design teams
+  { name: "InVision",          domain: "invisionapp.com",      careersUrl: "https://jobs.lever.co/invisionapp",          atsType: "lever",      atsSlug: "invisionapp" },
+  { name: "Abstract",          domain: "abstract.com",         careersUrl: "https://jobs.lever.co/abstract",             atsType: "lever",      atsSlug: "abstract" },
+  { name: "Marvel",            domain: "marvelapp.com",        careersUrl: "https://jobs.lever.co/marvelapp",            atsType: "lever",      atsSlug: "marvelapp" },
+  { name: "Sketch",            domain: "sketch.com",           careersUrl: "https://jobs.lever.co/sketch",               atsType: "lever",      atsSlug: "sketch" },
+  { name: "Grammarly",         domain: "grammarly.com",        careersUrl: "https://jobs.lever.co/grammarly",            atsType: "lever",      atsSlug: "grammarly" },
+  { name: "Dovetail",          domain: "dovetail.com",         careersUrl: "https://jobs.lever.co/dovetailapp",          atsType: "lever",      atsSlug: "dovetailapp" },
+  { name: "Maze",              domain: "maze.co",              careersUrl: "https://jobs.lever.co/maze",                 atsType: "lever",      atsSlug: "maze" },
+  { name: "Hotjar",            domain: "hotjar.com",           careersUrl: "https://jobs.lever.co/hotjar",               atsType: "lever",      atsSlug: "hotjar" },
+  { name: "Heap",              domain: "heap.io",              careersUrl: "https://jobs.lever.co/heap",                 atsType: "lever",      atsSlug: "heap" },
+  { name: "Lyssna",            domain: "lyssna.com",           careersUrl: "https://jobs.lever.co/lyssna",               atsType: "lever",      atsSlug: "lyssna" },
+  { name: "Contra",            domain: "contra.com",           careersUrl: "https://jobs.lever.co/contra",               atsType: "lever",      atsSlug: "contra" },
+  { name: "Wetransfer",        domain: "wetransfer.com",       careersUrl: "https://jobs.lever.co/wetransfer",           atsType: "lever",      atsSlug: "wetransfer" },
+  { name: "Envato",            domain: "envato.com",           careersUrl: "https://jobs.lever.co/envato",               atsType: "lever",      atsSlug: "envato" },
+
 ];
 
 /** number of companies we actually scrape (excludes custom) */
