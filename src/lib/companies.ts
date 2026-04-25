@@ -3100,6 +3100,28 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Wetransfer",        domain: "wetransfer.com",       careersUrl: "https://jobs.lever.co/wetransfer",           atsType: "lever",      atsSlug: "wetransfer" },
   { name: "Envato",            domain: "envato.com",           careersUrl: "https://jobs.lever.co/envato",               atsType: "lever",      atsSlug: "envato" },
 
+  // ── batch v15: global creative agencies (high-yield) ───────────
+  { name: "VML",               domain: "vml.com",              careersUrl: "https://boards.greenhouse.io/vml",           atsType: "greenhouse", atsSlug: "vml" },
+  { name: "Grey",              domain: "grey.com",             careersUrl: "https://boards.greenhouse.io/grey",          atsType: "greenhouse", atsSlug: "grey" },
+  { name: "Publicis Sapient",  domain: "publicissapient.com",  careersUrl: "https://boards.greenhouse.io/publicissapient", atsType: "greenhouse", atsSlug: "publicissapient" },
+  { name: "Razorfish",         domain: "razorfish.com",        careersUrl: "https://boards.greenhouse.io/razorfish",     atsType: "greenhouse", atsSlug: "razorfish" },
+  { name: "Digitas",           domain: "digitas.com",          careersUrl: "https://boards.greenhouse.io/digitas",       atsType: "greenhouse", atsSlug: "digitas" },
+  { name: "BBH",               domain: "bartleboglehegarty.com", careersUrl: "https://boards.greenhouse.io/bbh",         atsType: "greenhouse", atsSlug: "bbh" },
+  { name: "Droga5",            domain: "droga5.com",           careersUrl: "https://boards.greenhouse.io/droga5",        atsType: "greenhouse", atsSlug: "droga5" },
+  { name: "72andSunny",        domain: "72andsunny.com",       careersUrl: "https://boards.greenhouse.io/72andsunny",    atsType: "greenhouse", atsSlug: "72andsunny" },
+  { name: "MullenLowe",        domain: "mullenlowe.com",       careersUrl: "https://boards.greenhouse.io/mullenlowe",    atsType: "greenhouse", atsSlug: "mullenlowe" },
+  { name: "Havas",             domain: "havas.com",            careersUrl: "https://boards.greenhouse.io/havas",         atsType: "greenhouse", atsSlug: "havas" },
+  { name: "McCann",            domain: "mccann.com",           careersUrl: "https://boards.greenhouse.io/mccann",        atsType: "greenhouse", atsSlug: "mccann" },
+  { name: "DDB",               domain: "ddb.com",              careersUrl: "https://boards.greenhouse.io/ddb",           atsType: "greenhouse", atsSlug: "ddb" },
+  { name: "TBWA",              domain: "tbwa.com",             careersUrl: "https://boards.greenhouse.io/tbwa",          atsType: "greenhouse", atsSlug: "tbwa" },
+  { name: "Saatchi & Saatchi", domain: "saatchi.com",          careersUrl: "https://boards.greenhouse.io/saatchi",       atsType: "greenhouse", atsSlug: "saatchi" },
+  { name: "FCB",               domain: "fcb.com",              careersUrl: "https://boards.greenhouse.io/fcb",           atsType: "greenhouse", atsSlug: "fcb" },
+  { name: "Critical Mass",     domain: "criticalmass.com",     careersUrl: "https://boards.greenhouse.io/criticalmass",  atsType: "greenhouse", atsSlug: "criticalmass" },
+  { name: "Landor",            domain: "landor.com",           careersUrl: "https://boards.greenhouse.io/landor",        atsType: "greenhouse", atsSlug: "landor" },
+  { name: "Siegel+Gale",       domain: "siegelgale.com",       careersUrl: "https://boards.greenhouse.io/siegelgale",    atsType: "greenhouse", atsSlug: "siegelgale" },
+  { name: "Wieden+Kennedy",    domain: "wk.com",               careersUrl: "https://boards.greenhouse.io/wieden",        atsType: "greenhouse", atsSlug: "wieden" },
+  { name: "Mother",            domain: "motherlondon.com",     careersUrl: "https://boards.greenhouse.io/mother",        atsType: "greenhouse", atsSlug: "mother" },
+
   // ── batch v14: Ashby-native design/creative companies ──────────
 
   // Design research & testing
