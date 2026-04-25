@@ -362,6 +362,14 @@ const TRUSTED_WORLDWIDE_SLUGS = new Set([
   // Creative agencies & studios (distributed)
   "mediamonks", "stinkstudios", "wearephi",
   "rottenrobots", "makemepulse",
+  "coforma", "moniker",
+  // AI-native remote-first (2026 additions)
+  "elevenlabs", "stabilityai", "descript", "raycast",
+  // Open-source & distributed products
+  "tally", "rows", "calcom", "penpot", "metabase", "hex",
+  "observable", "liveblocks",
+  // Design tools & creative platforms
+  "gamma", "spline", "rive", "lottiefiles",
 ]);
 
 export interface FilterResult {
