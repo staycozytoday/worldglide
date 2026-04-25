@@ -1,6 +1,15 @@
 {
-  "rawJobsScanned": 0,
-  "creativeJobs": 43,
-  "companiesScraped": 10,
-  "lastUpdated": "2026-04-25T09:50:32.451Z"
+  "totalJobs": 424,
+  "lastUpdated": "2026-04-25T10:19:05.545115Z",
+  "bySource": {
+    "greenhouse": 329,
+    "ashby": 60,
+    "remoteok": 6,
+    "wwr": 26,
+    "lever": 2,
+    "remotive": 1
+  },
+  "byCategory": {
+    "creative": 424
+  }
 }

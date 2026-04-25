@@ -3000,27 +3000,14 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   // ════════════════════════════════════════════════
 
   // European tech
-  { name: "GetYourGuide",      domain: "getyourguide.com",     careersUrl: "https://careers.getyourguide.com/",          atsType: "greenhouse", atsSlug: "getyourguide" },
-  { name: "HelloFresh",        domain: "hellofresh.com",        careersUrl: "https://www.hellofresh.com/careers/",        atsType: "greenhouse", atsSlug: "hellofresh" },
-  { name: "Babbel",            domain: "babbel.com",           careersUrl: "https://jobs.babbel.com/en/",                atsType: "greenhouse", atsSlug: "babbel" },
   { name: "Bolt",              domain: "bolt.eu",              careersUrl: "https://bolt.eu/en/careers/",                atsType: "greenhouse", atsSlug: "bolteu" },
-  { name: "Pipedrive",         domain: "pipedrive.com",        careersUrl: "https://www.pipedrive.com/en/jobs",          atsType: "greenhouse", atsSlug: "pipedrive" },
   { name: "Checkout.com",      domain: "checkout.com",         careersUrl: "https://www.checkout.com/careers",           atsType: "greenhouse", atsSlug: "checkout" },
-  { name: "Brainly",           domain: "brainly.com",          careersUrl: "https://brainly.com/careers",                atsType: "greenhouse", atsSlug: "brainly" },
-  { name: "Doctolib",          domain: "doctolib.fr",          careersUrl: "https://careers.doctolib.fr/",               atsType: "lever",      atsSlug: "doctolib" },
   { name: "Luko",              domain: "luko.eu",              careersUrl: "https://careers.luko.eu/",                   atsType: "lever",      atsSlug: "luko" },
-  { name: "Mollie",            domain: "mollie.com",           careersUrl: "https://jobs.mollie.com/",                   atsType: "greenhouse", atsSlug: "mollie" },
   { name: "Teamleader",        domain: "teamleader.eu",        careersUrl: "https://www.teamleader.eu/about-us/jobs",    atsType: "greenhouse", atsSlug: "teamleader" },
-  { name: "Malt",              domain: "malt.com",             careersUrl: "https://www.malt.com/about/jobs",            atsType: "lever",      atsSlug: "malt" },
-  { name: "Alan",              domain: "alan.com",             careersUrl: "https://alan.com/en-gb/jobs",                atsType: "lever",      atsSlug: "alan" },
 
   // Fashion & lifestyle
   { name: "Warby Parker",      domain: "warbyparker.com",      careersUrl: "https://www.warbyparker.com/jobs",           atsType: "greenhouse", atsSlug: "warbyparker" },
   { name: "Allbirds",          domain: "allbirds.com",         careersUrl: "https://www.allbirds.com/pages/careers",     atsType: "greenhouse", atsSlug: "allbirds" },
-  { name: "Glossier",          domain: "glossier.com",         careersUrl: "https://www.glossier.com/careers",           atsType: "lever",      atsSlug: "glossier" },
-  { name: "Gymshark",          domain: "gymshark.com",         careersUrl: "https://www.gymshark.com/pages/careers",     atsType: "greenhouse", atsSlug: "gymshark" },
-  { name: "Rent the Runway",   domain: "renttherunway.com",    careersUrl: "https://www.renttherunway.com/content/aboutus/careers", atsType: "greenhouse", atsSlug: "renttherunway" },
-  { name: "Stitch Fix",        domain: "stitchfix.com",        careersUrl: "https://www.stitchfix.com/careers/",         atsType: "greenhouse", atsSlug: "stitchfix" },
 
   // More gaming studios
   { name: "Zynga",             domain: "zynga.com",            careersUrl: "https://www.zynga.com/careers/",             atsType: "greenhouse", atsSlug: "zynga" },
@@ -3029,8 +3016,6 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Tripwire Interactive", domain: "tripwireinteractive.com", careersUrl: "https://www.tripwireinteractive.com/careers", atsType: "greenhouse", atsSlug: "tripwireinteractive" },
 
   // SaaS / marketing
-  { name: "Braze",             domain: "braze.com",            careersUrl: "https://www.braze.com/company/careers/",     atsType: "greenhouse", atsSlug: "braze" },
-  { name: "Sprout Social",     domain: "sproutsocial.com",     careersUrl: "https://sproutsocial.com/careers/",          atsType: "greenhouse", atsSlug: "sproutsocial" },
   { name: "Front",             domain: "front.com",            careersUrl: "https://front.com/careers",                  atsType: "greenhouse", atsSlug: "front" },
   { name: "Guru",              domain: "guru.com",             careersUrl: "https://www.guru.com/careers/",              atsType: "greenhouse", atsSlug: "guru" },
   { name: "Campaign Monitor",  domain: "campaignmonitor.com",  careersUrl: "https://www.campaignmonitor.com/company/careers/", atsType: "greenhouse", atsSlug: "campaignmonitor" },
@@ -3041,15 +3026,53 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
 
   // Developer tools
   { name: "CodeSandbox",       domain: "codesandbox.io",       careersUrl: "https://codesandbox.io/jobs",                atsType: "ashby",      atsSlug: "codesandbox" },
-  { name: "Replit",            domain: "replit.com",           careersUrl: "https://replit.com/careers",                 atsType: "ashby",      atsSlug: "replit" },
   { name: "Val Town",          domain: "val.town",             careersUrl: "https://val.town/careers",                   atsType: "ashby",      atsSlug: "valtown" },
 
   // Creator economy
-  { name: "Patreon",           domain: "patreon.com",          careersUrl: "https://www.patreon.com/careers",            atsType: "greenhouse", atsSlug: "patreon" },
   { name: "Teachable",         domain: "teachable.com",        careersUrl: "https://teachable.com/careers",              atsType: "greenhouse", atsSlug: "teachable" },
-  { name: "Thinkific",         domain: "thinkific.com",        careersUrl: "https://www.thinkific.com/careers/",         atsType: "greenhouse", atsSlug: "thinkific" },
   { name: "Kajabi",            domain: "kajabi.com",           careersUrl: "https://kajabi.com/careers",                 atsType: "greenhouse", atsSlug: "kajabi" },
-  { name: "Maven",             domain: "maven.com",            careersUrl: "https://maven.com/careers",                  atsType: "ashby",      atsSlug: "maven" },
+
+  // ── batch v12: remote-first SaaS, design, AI, media ────────────
+
+  // Design & creative tools
+  { name: "Overflow",          domain: "overflow.io",          careersUrl: "https://overflow.io/careers",                atsType: "ashby",      atsSlug: "overflow" },
+  { name: "Zeroheight",        domain: "zeroheight.com",       careersUrl: "https://zeroheight.com/jobs",                atsType: "ashby",      atsSlug: "zeroheight" },
+  { name: "Supernova",         domain: "supernova.io",         careersUrl: "https://www.supernova.io/careers",           atsType: "ashby",      atsSlug: "supernova" },
+  { name: "Eraser",            domain: "eraser.io",            careersUrl: "https://www.eraser.io/careers",              atsType: "ashby",      atsSlug: "eraser" },
+  { name: "Motiff",            domain: "motiff.com",           careersUrl: "https://motiff.com/careers",                 atsType: "greenhouse", atsSlug: "motiff" },
+  { name: "Uizard",            domain: "uizard.io",            careersUrl: "https://uizard.io/careers",                  atsType: "greenhouse", atsSlug: "uizard" },
+  { name: "Mobbin",            domain: "mobbin.com",           careersUrl: "https://mobbin.com/careers",                 atsType: "ashby",      atsSlug: "mobbin" },
+  { name: "Diagram",           domain: "diagram.com",          careersUrl: "https://diagram.com/careers",                atsType: "ashby",      atsSlug: "diagram" },
+
+  // Remote-first SaaS (design-adjacent)
+  { name: "Crowdin",           domain: "crowdin.com",          careersUrl: "https://boards.greenhouse.io/crowdin",       atsType: "greenhouse", atsSlug: "crowdin" },
+  { name: "Lingo",             domain: "lingoapp.com",         careersUrl: "https://boards.greenhouse.io/lingo",         atsType: "greenhouse", atsSlug: "lingo" },
+  { name: "Brandfolder",       domain: "brandfolder.com",      careersUrl: "https://boards.greenhouse.io/brandfolder",   atsType: "greenhouse", atsSlug: "brandfolder" },
+  { name: "Canto",             domain: "canto.com",            careersUrl: "https://boards.greenhouse.io/canto",         atsType: "greenhouse", atsSlug: "canto" },
+  { name: "Widen",             domain: "widen.com",            careersUrl: "https://boards.greenhouse.io/widen",         atsType: "greenhouse", atsSlug: "widen" },
+
+  // AI-first & generative companies
+  { name: "Midjourney",        domain: "midjourney.com",       careersUrl: "https://boards.greenhouse.io/midjourney",    atsType: "greenhouse", atsSlug: "midjourney" },
+  { name: "Kling",             domain: "klingai.com",          careersUrl: "https://boards.greenhouse.io/kling",         atsType: "greenhouse", atsSlug: "kling" },
+  { name: "Runway",            domain: "runwayml.com",         careersUrl: "https://runwayml.com/careers",               atsType: "lever",      atsSlug: "runwayml" },
+  { name: "Adobe Firefly",     domain: "adobe.com",            careersUrl: "https://jobs.lever.co/adobe",                atsType: "lever",      atsSlug: "adobe" },
+  { name: "Luma AI",           domain: "lumalabs.ai",          careersUrl: "https://jobs.lever.co/lumalabs",             atsType: "lever",      atsSlug: "lumalabs" },
+  { name: "Magnific",          domain: "magnific.ai",          careersUrl: "https://boards.greenhouse.io/magnific",      atsType: "greenhouse", atsSlug: "magnific" },
+
+  // Global media & publishing
+  { name: "Dotdash Meredith",  domain: "dotdashmeredith.com",  careersUrl: "https://boards.greenhouse.io/dotdashmeredith", atsType: "greenhouse", atsSlug: "dotdashmeredith" },
+  { name: "Condé Nast",        domain: "condenast.com",        careersUrl: "https://boards.greenhouse.io/condenast",     atsType: "greenhouse", atsSlug: "condenast" },
+  { name: "The Atlantic",      domain: "theatlantic.com",      careersUrl: "https://boards.greenhouse.io/theatlantic",   atsType: "greenhouse", atsSlug: "theatlantic" },
+
+  // E-commerce & marketplace
+  { name: "Redbubble",         domain: "redbubble.com",        careersUrl: "https://boards.greenhouse.io/redbubble",     atsType: "greenhouse", atsSlug: "redbubble" },
+  { name: "Displate",          domain: "displate.com",         careersUrl: "https://boards.greenhouse.io/displate",      atsType: "greenhouse", atsSlug: "displate" },
+  { name: "Society6",          domain: "society6.com",         careersUrl: "https://boards.greenhouse.io/society6",      atsType: "greenhouse", atsSlug: "society6" },
+  { name: "Threadless",        domain: "threadless.com",       careersUrl: "https://boards.greenhouse.io/threadless",    atsType: "greenhouse", atsSlug: "threadless" },
+  { name: "Printify",          domain: "printify.com",         careersUrl: "https://boards.greenhouse.io/printify",      atsType: "greenhouse", atsSlug: "printify" },
+  { name: "Gooten",            domain: "gooten.com",           careersUrl: "https://boards.greenhouse.io/gooten",        atsType: "greenhouse", atsSlug: "gooten" },
+
+  // Remote-first HR & hiring
 
 ];
 

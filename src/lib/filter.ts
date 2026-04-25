@@ -370,6 +370,17 @@ const TRUSTED_WORLDWIDE_SLUGS = new Set([
   "observable", "liveblocks",
   // Design tools & creative platforms
   "gamma", "spline", "rive", "lottiefiles",
+  // Design tools (batch v12)
+  "mazedesign", "zeroheight", "supernova", "whimsical",
+  "mobbin", "frontify",
+  // AI creative (batch v12)
+  "runwayml", "lumalabs", "elevenlabs", "stabilityai",
+  // Creator economy / publishing (batch v12)
+  "ghost", "substack", "medium",
+  // Print-on-demand (worldwide by nature)
+  "printify", "gelato", "printful",
+  // Remote-first HR (batch v12)
+  "greenhouse", "leapsome", "cultureamp",
 ]);
 
 export interface FilterResult {
