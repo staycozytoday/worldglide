@@ -381,6 +381,25 @@ const TRUSTED_WORLDWIDE_SLUGS = new Set([
   "printify", "gelato", "printful",
   // Remote-first HR (batch v12)
   "greenhouse", "leapsome", "cultureamp",
+  // Lever design agencies & studios (batch v13)
+  "frogdesign", "ideo", "hugeinc", "instrument", "workco",
+  "ustwo", "fantasy", "koto", "wolffolins", "wearecollins",
+  "superside", "metalab",
+  // Lever design-first SaaS (batch v13) — all known remote-first
+  "dropbox", "loom", "typeform", "intercom", "invisionapp",
+  "abstract", "pitch", "coda", "notion", "linear",
+  "airtable", "miro", "figma", "canva", "webflow", "framer",
+  "sketch", "descript", "grammarly", "squarespace",
+  "dovetailapp", "maze", "hotjar", "amplitude", "mixpanel",
+  "productboard", "pendo", "lyssna", "contra", "wetransfer",
+  "envato", "stickermule",
+  // Ashby companies (batch v14) — remote-first by nature
+  "sprig", "jam", "fathom", "grain", "runway",
+  "ideogram", "liveblocks2",
+  "basic", "buck", "stinkstudios",
+  "vercel", "supabase", "resend", "raycast", "arc",
+  "perplexity", "cursor",
+  "descripthq", "pitchhq", "mirohq", "framerhq",
 ]);
 
 export interface FilterResult {

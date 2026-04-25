@@ -3100,6 +3100,42 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Wetransfer",        domain: "wetransfer.com",       careersUrl: "https://jobs.lever.co/wetransfer",           atsType: "lever",      atsSlug: "wetransfer" },
   { name: "Envato",            domain: "envato.com",           careersUrl: "https://jobs.lever.co/envato",               atsType: "lever",      atsSlug: "envato" },
 
+  // ── batch v14: Ashby-native design/creative companies ──────────
+
+  // Design research & testing
+  { name: "Ballpark",          domain: "ballparkhq.com",       careersUrl: "https://jobs.ashbyhq.com/ballpark",          atsType: "ashby",      atsSlug: "ballpark" },
+  { name: "Notably",           domain: "notably.ai",           careersUrl: "https://jobs.ashbyhq.com/notably",           atsType: "ashby",      atsSlug: "notably" },
+  { name: "Condens",           domain: "condens.io",           careersUrl: "https://jobs.ashbyhq.com/condens",           atsType: "ashby",      atsSlug: "condens" },
+
+  // Collaboration & productivity (Ashby)
+  { name: "Liveblocks",        domain: "liveblocks.io",        careersUrl: "https://jobs.ashbyhq.com/liveblocks",        atsType: "ashby",      atsSlug: "liveblocks2" },
+  { name: "Jam",               domain: "jam.dev",              careersUrl: "https://jobs.ashbyhq.com/jam",               atsType: "ashby",      atsSlug: "jam" },
+  { name: "Grain",             domain: "grain.com",            careersUrl: "https://jobs.ashbyhq.com/grain",             atsType: "ashby",      atsSlug: "grain" },
+  { name: "Notta",             domain: "notta.ai",             careersUrl: "https://jobs.ashbyhq.com/notta",             atsType: "ashby",      atsSlug: "notta" },
+
+  // AI-native product companies (Ashby)
+  { name: "Runway",            domain: "runwayml.com",         careersUrl: "https://jobs.ashbyhq.com/runway",            atsType: "ashby",      atsSlug: "runway" },
+
+  // Creative tools & platforms (Ashby)
+  { name: "Descript",          domain: "descript.com",         careersUrl: "https://jobs.ashbyhq.com/descript",          atsType: "ashby",      atsSlug: "descripthq" },
+  { name: "Pitch",             domain: "pitch.com",            careersUrl: "https://jobs.ashbyhq.com/pitch",             atsType: "ashby",      atsSlug: "pitchhq" },
+  { name: "Miro",              domain: "miro.com",             careersUrl: "https://jobs.ashbyhq.com/miro",              atsType: "ashby",      atsSlug: "mirohq" },
+  { name: "Typeform",          domain: "typeform.com",         careersUrl: "https://jobs.ashbyhq.com/typeform",          atsType: "ashby",      atsSlug: "typeformhq" },
+  { name: "Framer",            domain: "framer.com",           careersUrl: "https://jobs.ashbyhq.com/framer",            atsType: "ashby",      atsSlug: "framerhq" },
+  { name: "Webflow",           domain: "webflow.com",          careersUrl: "https://jobs.ashbyhq.com/webflow",           atsType: "ashby",      atsSlug: "webflowhq" },
+
+  // Agencies & studios (Ashby)
+  { name: "BASIC",             domain: "basicagency.com",      careersUrl: "https://jobs.ashbyhq.com/basic",             atsType: "ashby",      atsSlug: "basic" },
+  { name: "Unfold",            domain: "unfold.co",            careersUrl: "https://jobs.ashbyhq.com/unfold",            atsType: "ashby",      atsSlug: "unfold" },
+  { name: "BUCK",              domain: "buck.tv",              careersUrl: "https://jobs.ashbyhq.com/buck",              atsType: "ashby",      atsSlug: "buck" },
+  { name: "Stink Studios",     domain: "stinkstudios.com",     careersUrl: "https://jobs.ashbyhq.com/stinkstudios",      atsType: "ashby",      atsSlug: "stinkstudios" },
+  { name: "Media.Monks",       domain: "mediamonks.com",       careersUrl: "https://jobs.ashbyhq.com/mediamonks",        atsType: "ashby",      atsSlug: "mediamonks" },
+  { name: "2x4",               domain: "2x4.org",              careersUrl: "https://jobs.ashbyhq.com/2x4",               atsType: "ashby",      atsSlug: "2x4" },
+
+  // Developer tools with design teams (Ashby)
+  { name: "Arc",               domain: "arc.net",              careersUrl: "https://jobs.ashbyhq.com/arc",               atsType: "ashby",      atsSlug: "arc" },
+  { name: "Codeium",           domain: "codeium.com",          careersUrl: "https://jobs.ashbyhq.com/codeium",           atsType: "ashby",      atsSlug: "codeium" },
+
 ];
 
 /** number of companies we actually scrape (excludes custom) */
