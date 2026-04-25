@@ -40,7 +40,7 @@ export async function scrapeJobicy(): Promise<JobicyResult> {
 
   try {
     const res = await fetchWithRetry(
-      "https://jobicy.com/api/v2/remote-jobs?count=50&industry=design",
+      "https://jobicy.com/api/v2/remote-jobs?count=50&tag=design",
       {
         headers: { "User-Agent": "worldglide-jobs/1.0" },
         timeoutMs: 20000,

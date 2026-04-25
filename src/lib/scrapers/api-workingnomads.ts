@@ -30,7 +30,7 @@ export async function scrapeWorkingNomads(): Promise<WorkingNomadsResult> {
   let rawJobs: WNJob[] = [];
 
   try {
-    const res = await fetchWithRetry("https://www.workingnomads.com/api/exposed_jobs/?category=design-and-multimedia", {
+    const res = await fetchWithRetry("https://www.workingnomads.com/api/exposed_jobs/", {
       headers: {
         "User-Agent": "worldglide-jobs/1.0",
         Accept: "application/json",

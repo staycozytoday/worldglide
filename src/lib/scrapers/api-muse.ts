@@ -41,7 +41,7 @@ export async function scrapeMuse(): Promise<MuseResult> {
   const allRaw: MuseJob[] = [];
 
   for (let page = 0; page < MAX_PAGES; page++) {
-    const url = `https://www.themuse.com/api/public/jobs?category=Design&location=Flexible+%2F+Remote&page=${page}`;
+    const url = `https://www.themuse.com/api/public/jobs?category=Design&page=${page}`;
     try {
       const res = await fetchWithRetry(url, {
         headers: { "User-Agent": "worldglide-jobs/1.0", Accept: "application/json" },
