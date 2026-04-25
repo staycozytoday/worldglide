@@ -239,6 +239,28 @@ const CREATIVE_PATTERNS = [
   /\bgame\s+artist\b/i,
   /\blevel\s+artist\b/i,
   /\bgame\s+(?:ui\s+)?designer\b/i,
+  // AR/VR/spatial
+  /\bxr\s+designer\b/i,
+  /\bspatial\s+(ui\s+)?designer\b/i,
+  /\baugmented\s+reality\s+designer\b/i,
+  /\bvirtual\s+reality\s+designer\b/i,
+  // Typography & iconography
+  /\btypograph/i,
+  /\bicon\s+designer\b/i,
+  // Social & digital creative
+  /\bsocial\s+(media\s+)?designer\b/i,
+  /\bdigital\s+creative\b/i,
+  // Creative strategy
+  /\bcreative\s+strateg/i,
+  // Design consulting
+  /\bdesign\s+consultant\b/i,
+  // Print & editorial
+  /\beditorial\s+designer\b/i,
+  /\bprint\s+designer\b/i,
+  /\blayout\s+designer\b/i,
+  // Broader "designer" patterns (compound titles like "UI/UX Designer")
+  /\bui[\s\/]+ux\s+designer\b/i,
+  /\bux[\s\/]+ui\s+designer\b/i,
 ];
 
 export function categorizeJob(
