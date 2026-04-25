@@ -1,13 +1,8 @@
 import { Job } from "./types";
 import { scrapeHimalayas } from "./scrapers/api-himalayas";
-import { scrapeRemoteOK } from "./scrapers/api-remoteok";
-import { scrapeRemotive } from "./scrapers/api-remotive";
 import { scrapeJobicy } from "./scrapers/api-jobicy";
 import { scrapeArbeitnow } from "./scrapers/api-arbeitnow";
 import { scrapeHNWhoIsHiring } from "./scrapers/api-hn";
-import { scrapeWeWorkRemotely } from "./scrapers/api-weworkremotely";
-import { scrapeWorkingNomads } from "./scrapers/api-workingnomads";
-import { scrapeMuse } from "./scrapers/api-muse";
 
 export interface ApiAggregatorResult {
   jobs: Job[];
@@ -23,9 +18,10 @@ export interface ApiSourceResult {
 }
 
 /**
- * Orchestrates running external API scrapers sequentially.
- * Sequential to avoid hammering multiple APIs at once and to
- * make debugging easier when an API misbehaves.
+ * Orchestrates running external API scrapers.
+ * Only includes sources that provide direct company application URLs.
+ * Job board aggregators (RemoteOK, WWR, Remotive, WorkingNomads, Muse)
+ * are excluded because they link to the board listing, not the actual job post.
  */
 export async function runApiAggregator(): Promise<ApiAggregatorResult> {
   console.log("[api-aggregator] starting external API scrapes...");
@@ -45,30 +41,6 @@ export async function runApiAggregator(): Promise<ApiAggregatorResult> {
     const msg = err instanceof Error ? err.message : String(err);
     console.error(`[api-aggregator] himalayas failed: ${msg}`);
     sources.push({ name: "himalayas", jobs: 0, rawCount: 0, error: msg });
-  }
-
-  // --- RemoteOK ---
-  try {
-    const result = await scrapeRemoteOK();
-    allJobs.push(...result.jobs);
-    totalRaw += result.rawCount;
-    sources.push({ name: "remoteok", jobs: result.jobs.length, rawCount: result.rawCount });
-  } catch (err) {
-    const msg = err instanceof Error ? err.message : String(err);
-    console.error(`[api-aggregator] remoteok failed: ${msg}`);
-    sources.push({ name: "remoteok", jobs: 0, rawCount: 0, error: msg });
-  }
-
-  // --- Remotive ---
-  try {
-    const result = await scrapeRemotive();
-    allJobs.push(...result.jobs);
-    totalRaw += result.rawCount;
-    sources.push({ name: "remotive", jobs: result.jobs.length, rawCount: result.rawCount });
-  } catch (err) {
-    const msg = err instanceof Error ? err.message : String(err);
-    console.error(`[api-aggregator] remotive failed: ${msg}`);
-    sources.push({ name: "remotive", jobs: 0, rawCount: 0, error: msg });
   }
 
   // --- Jobicy ---
@@ -105,42 +77,6 @@ export async function runApiAggregator(): Promise<ApiAggregatorResult> {
     const msg = err instanceof Error ? err.message : String(err);
     console.error(`[api-aggregator] hn-whoishiring failed: ${msg}`);
     sources.push({ name: "hn-whoishiring", jobs: 0, rawCount: 0, error: msg });
-  }
-
-  // --- We Work Remotely (RSS) ---
-  try {
-    const result = await scrapeWeWorkRemotely();
-    allJobs.push(...result.jobs);
-    totalRaw += result.rawCount;
-    sources.push({ name: "wwr", jobs: result.jobs.length, rawCount: result.rawCount });
-  } catch (err) {
-    const msg = err instanceof Error ? err.message : String(err);
-    console.error(`[api-aggregator] wwr failed: ${msg}`);
-    sources.push({ name: "wwr", jobs: 0, rawCount: 0, error: msg });
-  }
-
-  // --- Working Nomads ---
-  try {
-    const result = await scrapeWorkingNomads();
-    allJobs.push(...result.jobs);
-    totalRaw += result.rawCount;
-    sources.push({ name: "workingnomads", jobs: result.jobs.length, rawCount: result.rawCount });
-  } catch (err) {
-    const msg = err instanceof Error ? err.message : String(err);
-    console.error(`[api-aggregator] workingnomads failed: ${msg}`);
-    sources.push({ name: "workingnomads", jobs: 0, rawCount: 0, error: msg });
-  }
-
-  // --- The Muse ---
-  try {
-    const result = await scrapeMuse();
-    allJobs.push(...result.jobs);
-    totalRaw += result.rawCount;
-    sources.push({ name: "muse", jobs: result.jobs.length, rawCount: result.rawCount });
-  } catch (err) {
-    const msg = err instanceof Error ? err.message : String(err);
-    console.error(`[api-aggregator] muse failed: ${msg}`);
-    sources.push({ name: "muse", jobs: 0, rawCount: 0, error: msg });
   }
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);

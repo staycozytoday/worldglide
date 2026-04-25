@@ -13,16 +13,10 @@ export type Source =
   | "breezyhr"
   | "pinpoint"
   | "himalayas"
-  | "remoteok"
-  | "remotive"
   | "jobicy"
   | "arbeitnow"
   | "hn"
   | "hn-whoishiring"
-  | "wwr"
-  | "workingnomads"
-  | "dribbble"
-  | "muse"
   | "user-submitted";
 
 export interface Job {

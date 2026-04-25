@@ -1,15 +1,12 @@
 {
-  "totalJobs": 452,
-  "lastUpdated": "2026-04-25T20:37:04.874304Z",
+  "totalJobs": 448,
+  "lastUpdated": "2026-04-25T22:49:00.415105Z",
   "bySource": {
-    "greenhouse": 329,
+    "greenhouse": 357,
     "ashby": 60,
-    "remoteok": 6,
-    "lever": 30,
-    "wwr": 26,
-    "remotive": 1
+    "lever": 31
   },
   "byCategory": {
-    "creative": 452
+    "creative": 448
   }
 }

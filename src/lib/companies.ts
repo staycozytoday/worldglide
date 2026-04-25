@@ -3166,4 +3166,4 @@ export const SCRAPED_COMPANY_COUNT = REMOTE_COMPANIES.filter(
 ).length;
 
 // Number of external aggregator scrapers we run (keep in sync with api-aggregator.ts).
-export const JOB_BOARD_COUNT = 9;
+export const JOB_BOARD_COUNT = 4;

@@ -13,8 +13,8 @@ async function main() {
   }
 
   const existing: Job[] = JSON.parse(readFileSync(join(process.cwd(), "public/data/jobs.json"), "utf8"));
-  const existingNonApi = existing.filter(j => 
-    !["remoteok","remotive","jobicy","workingnomads","arbeitnow","himalayas","wwr","hn","hn-whoishiring","muse"].includes(j.source)
+  const existingNonApi = existing.filter(j =>
+    !["himalayas","jobicy","arbeitnow","hn","hn-whoishiring"].includes(j.source)
   );
   
   const merged = [...existingNonApi, ...apiJobs].filter(j => !isExpired(j.postedAt));
