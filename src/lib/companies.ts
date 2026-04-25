@@ -2942,6 +2942,56 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Descript",         domain: "descript.com",         careersUrl: "https://www.descript.com/careers",           atsType: "ashby",      atsSlug: "descript" },
   { name: "Bezel",            domain: "getbezel.com",         careersUrl: "https://www.getbezel.com/careers",           atsType: "ashby",      atsSlug: "bezel" },
 
+  // ════════════════════════════════════════════════
+  // BATCH v8 (2026-04-25) — gaming, social, fintech, agencies
+  // ════════════════════════════════════════════════
+
+  // Gaming studios — game art / UI / concept art roles
+  { name: "Devolver Digital",  domain: "devolverdigital.com",  careersUrl: "https://www.devolverdigital.com/careers",    atsType: "lever",      atsSlug: "devolverdigital" },
+  { name: "Raw Fury",          domain: "rawfury.com",          careersUrl: "https://rawfury.com/careers/",              atsType: "lever",      atsSlug: "rawfury" },
+  { name: "Klei Entertainment",domain: "klei.com",             careersUrl: "https://www.klei.com/careers",              atsType: "lever",      atsSlug: "klei" },
+  { name: "Scopely",           domain: "scopely.com",          careersUrl: "https://scopely.com/careers/",              atsType: "greenhouse", atsSlug: "scopely" },
+  { name: "Jam City",          domain: "jamcity.com",          careersUrl: "https://jamcity.com/careers/",              atsType: "greenhouse", atsSlug: "jamcity" },
+  { name: "Miniclip",          domain: "miniclip.com",         careersUrl: "https://www.miniclip.com/careers/",         atsType: "greenhouse", atsSlug: "miniclip" },
+  { name: "Playtika",          domain: "playtika.com",         careersUrl: "https://careers.playtika.com/",             atsType: "greenhouse", atsSlug: "playtika" },
+
+  // Social & consumer
+  { name: "Discord",           domain: "discord.com",          careersUrl: "https://discord.com/jobs",                  atsType: "greenhouse", atsSlug: "discord" },
+  { name: "Duolingo",          domain: "duolingo.com",         careersUrl: "https://careers.duolingo.com/",             atsType: "greenhouse", atsSlug: "duolingo" },
+  { name: "Snap Inc.",         domain: "snap.com",             careersUrl: "https://careers.snap.com/",                 atsType: "greenhouse", atsSlug: "snap" },
+  { name: "Nextdoor",          domain: "nextdoor.com",         careersUrl: "https://about.nextdoor.com/careers/",       atsType: "greenhouse", atsSlug: "nextdoor" },
+  { name: "Meetup",            domain: "meetup.com",           careersUrl: "https://www.meetup.com/jobs/",              atsType: "greenhouse", atsSlug: "meetup" },
+
+  // Fintech & crypto
+  { name: "Kraken",            domain: "kraken.com",           careersUrl: "https://www.kraken.com/careers",            atsType: "lever",      atsSlug: "kraken" },
+  { name: "Gemini",            domain: "gemini.com",           careersUrl: "https://www.gemini.com/careers",            atsType: "greenhouse", atsSlug: "gemini" },
+  { name: "Paxful",            domain: "paxful.com",           careersUrl: "https://paxful.com/careers",                atsType: "greenhouse", atsSlug: "paxful" },
+  { name: "Revolut",           domain: "revolut.com",          careersUrl: "https://www.revolut.com/careers",           atsType: "greenhouse", atsSlug: "revolut" },
+  { name: "N26",               domain: "n26.com",              careersUrl: "https://n26.com/en-eu/careers",             atsType: "greenhouse", atsSlug: "n26" },
+  { name: "Monzo",             domain: "monzo.com",            careersUrl: "https://monzo.com/careers/",                atsType: "greenhouse", atsSlug: "monzo" },
+  { name: "Klarna",            domain: "klarna.com",           careersUrl: "https://www.klarna.com/careers/",           atsType: "greenhouse", atsSlug: "klarna" },
+
+  // B2B SaaS
+  { name: "Loom",              domain: "loom.com",             careersUrl: "https://www.loom.com/careers",              atsType: "ashby",      atsSlug: "loom" },
+  { name: "Typeform",          domain: "typeform.com",         careersUrl: "https://www.typeform.com/careers/",         atsType: "greenhouse", atsSlug: "typeform" },
+  { name: "Mural",             domain: "mural.co",             careersUrl: "https://www.mural.co/careers",              atsType: "greenhouse", atsSlug: "mural" },
+  { name: "Pendo",             domain: "pendo.io",             careersUrl: "https://www.pendo.io/careers/",             atsType: "greenhouse", atsSlug: "pendo" },
+  { name: "UserLeap",          domain: "sprig.com",            careersUrl: "https://sprig.com/careers",                 atsType: "greenhouse", atsSlug: "userleap" },
+  { name: "Productboard",      domain: "productboard.com",     careersUrl: "https://www.productboard.com/careers/",     atsType: "greenhouse", atsSlug: "productboard" },
+  { name: "Chameleon",         domain: "chameleon.io",         careersUrl: "https://www.chameleon.io/careers",          atsType: "ashby",      atsSlug: "chameleon" },
+  { name: "Appcues",           domain: "appcues.com",          careersUrl: "https://www.appcues.com/careers",           atsType: "greenhouse", atsSlug: "appcues" },
+
+  // Creative agencies / studios (remote-distributed)
+  { name: "Fantasy",           domain: "fantasy.co",           careersUrl: "https://fantasy.co/careers",                atsType: "lever",      atsSlug: "fantasyinteractive" },
+  { name: "Work & Co",         domain: "work.co",              careersUrl: "https://work.co/careers",                   atsType: "lever",      atsSlug: "workandco" },
+  { name: "Moniker",           domain: "monikerworld.com",     careersUrl: "https://monikerworld.com/careers",          atsType: "ashby",      atsSlug: "moniker" },
+  { name: "Coforma",           domain: "coforma.io",           careersUrl: "https://coforma.io/careers",                atsType: "lever",      atsSlug: "coforma" },
+
+  // Data & analytics (design-heavy dashboards)
+  { name: "Hex",               domain: "hex.tech",             careersUrl: "https://hex.tech/careers",                  atsType: "ashby",      atsSlug: "hex" },
+  { name: "Metabase",          domain: "metabase.com",         careersUrl: "https://www.metabase.com/jobs/",            atsType: "ashby",      atsSlug: "metabase" },
+  { name: "Observable",        domain: "observablehq.com",     careersUrl: "https://observablehq.com/careers",          atsType: "ashby",      atsSlug: "observablehq" },
+
 ];
 
 /** number of companies we actually scrape (excludes custom) */
