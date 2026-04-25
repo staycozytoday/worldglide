@@ -27,7 +27,7 @@ interface RemoteOKJob {
   original?: boolean;
 }
 
-const DESIGN_TAGS = ["design", "ui", "ux"];
+const DESIGN_TAGS = ["design", "ui", "ux", "animation", "copywriting"];
 
 async function fetchTagJobs(tag: string): Promise<RemoteOKJob[]> {
   try {

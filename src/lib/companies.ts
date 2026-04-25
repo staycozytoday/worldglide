@@ -3038,6 +3038,61 @@ export const REMOTE_COMPANIES: RemoteCompany[] = [
   { name: "Bootcamp",          domain: "joinbootcamp.com",     careersUrl: "https://joinbootcamp.com/careers",          atsType: "ashby",      atsSlug: "bootcamp" },
   { name: "Polywork",          domain: "polywork.com",          careersUrl: "https://www.polywork.com/careers",          atsType: "ashby",      atsSlug: "polywork" },
 
+  // ════════════════════════════════════════════════
+  // BATCH v10 (2026-04-25) — international, consumer tech, food, mobility
+  // ════════════════════════════════════════════════
+
+  // International / LatAm tech
+  { name: "Nubank",            domain: "nubank.com.br",        careersUrl: "https://nubank.com.br/en/careers/",         atsType: "greenhouse", atsSlug: "nubank" },
+  { name: "MercadoLibre",      domain: "mercadolibre.com",     careersUrl: "https://careers.mercadolibre.com/",         atsType: "greenhouse", atsSlug: "mercadolibre" },
+  { name: "Rappi",             domain: "rappi.com",            careersUrl: "https://about.rappi.com/careers",           atsType: "lever",      atsSlug: "rappi" },
+  { name: "Grab",              domain: "grab.com",             careersUrl: "https://grab.careers/",                     atsType: "greenhouse", atsSlug: "grab" },
+  { name: "Gojek",             domain: "gojek.com",            careersUrl: "https://www.gojek.com/careers/",            atsType: "lever",      atsSlug: "gojek" },
+  { name: "Bukalapak",         domain: "bukalapak.com",        careersUrl: "https://careers.bukalapak.com/",            atsType: "greenhouse", atsSlug: "bukalapak" },
+  { name: "Tokopedia",         domain: "tokopedia.com",        careersUrl: "https://www.tokopedia.com/careers/",        atsType: "greenhouse", atsSlug: "tokopedia" },
+
+  // Food & delivery tech
+  { name: "DoorDash",          domain: "doordash.com",         careersUrl: "https://careers.doordash.com/",             atsType: "greenhouse", atsSlug: "doordash" },
+  { name: "Deliveroo",         domain: "deliveroo.com",        careersUrl: "https://deliveroo.com/careers/",            atsType: "greenhouse", atsSlug: "deliveroo" },
+  { name: "Instacart",         domain: "instacart.com",        careersUrl: "https://instacart.com/company/careers",     atsType: "greenhouse", atsSlug: "instacart" },
+  { name: "Gopuff",            domain: "gopuff.com",           careersUrl: "https://www.gopuff.com/go/careers",         atsType: "greenhouse", atsSlug: "gopuff" },
+
+  // Mobility & transport
+  { name: "Lyft",              domain: "lyft.com",             careersUrl: "https://www.lyft.com/careers",              atsType: "greenhouse", atsSlug: "lyft" },
+  { name: "Bird",              domain: "bird.co",              careersUrl: "https://www.bird.co/careers/",              atsType: "greenhouse", atsSlug: "bird" },
+  { name: "Lime",              domain: "li.me",                careersUrl: "https://www.li.me/careers",                 atsType: "greenhouse", atsSlug: "lime" },
+
+  // PropTech
+  { name: "Zillow",            domain: "zillow.com",           careersUrl: "https://www.zillow.com/careers/",           atsType: "greenhouse", atsSlug: "zillow" },
+  { name: "Redfin",            domain: "redfin.com",           careersUrl: "https://www.redfin.com/jobs",               atsType: "greenhouse", atsSlug: "redfin" },
+  { name: "Divvy Homes",       domain: "divvyhomes.com",       careersUrl: "https://www.divvyhomes.com/careers",        atsType: "greenhouse", atsSlug: "divvyhomes" },
+
+  // Fashion & retail tech
+  { name: "Farfetch",          domain: "farfetch.com",         careersUrl: "https://www.farfetch.com/careers/",         atsType: "greenhouse", atsSlug: "farfetch" },
+  { name: "GOAT Group",        domain: "goatgroup.com",        careersUrl: "https://www.goatgroup.com/careers",         atsType: "greenhouse", atsSlug: "goatgroup" },
+  { name: "StockX",            domain: "stockx.com",           careersUrl: "https://stockx.com/about/careers/",         atsType: "greenhouse", atsSlug: "stockx" },
+  { name: "Poshmark",          domain: "poshmark.com",         careersUrl: "https://poshmark.com/careers",              atsType: "greenhouse", atsSlug: "poshmark" },
+  { name: "ThredUp",           domain: "thredup.com",          careersUrl: "https://www.thredup.com/careers/",          atsType: "greenhouse", atsSlug: "thredup" },
+
+  // HR & workforce tech
+  { name: "Lattice",           domain: "lattice.com",          careersUrl: "https://lattice.com/careers",               atsType: "greenhouse", atsSlug: "lattice" },
+  { name: "Personio",          domain: "personio.com",         careersUrl: "https://www.personio.com/about-personio/jobs/", atsType: "greenhouse", atsSlug: "personio" },
+  { name: "Bob (HiBob)",       domain: "hibob.com",            careersUrl: "https://www.hibob.com/careers/",            atsType: "greenhouse", atsSlug: "hibob" },
+  { name: "Pave",              domain: "pave.com",             careersUrl: "https://www.pave.com/careers",              atsType: "ashby",      atsSlug: "pave" },
+
+  // Security & enterprise
+  { name: "1Password",         domain: "1password.com",        careersUrl: "https://1password.com/careers/",            atsType: "greenhouse", atsSlug: "1password" },
+  { name: "Dashlane",          domain: "dashlane.com",         careersUrl: "https://www.dashlane.com/about/careers",    atsType: "greenhouse", atsSlug: "dashlane" },
+  { name: "LastPass",          domain: "lastpass.com",         careersUrl: "https://www.lastpass.com/company/careers",  atsType: "greenhouse", atsSlug: "lastpass" },
+
+  // More design-forward SaaS
+  { name: "Calendly",          domain: "calendly.com",         careersUrl: "https://calendly.com/careers",              atsType: "greenhouse", atsSlug: "calendly" },
+  { name: "Luma",              domain: "lu.ma",                careersUrl: "https://lu.ma/careers",                     atsType: "ashby",      atsSlug: "luma" },
+  { name: "Beehiiv",           domain: "beehiiv.com",          careersUrl: "https://www.beehiiv.com/careers",           atsType: "ashby",      atsSlug: "beehiiv" },
+  { name: "Cal.com",           domain: "cal.com",              careersUrl: "https://cal.com/careers",                   atsType: "ashby",      atsSlug: "calcom" },
+  { name: "Loops",             domain: "loops.so",             careersUrl: "https://loops.so/careers",                  atsType: "ashby",      atsSlug: "loops" },
+  { name: "Resend",            domain: "resend.com",           careersUrl: "https://resend.com/careers",                atsType: "ashby",      atsSlug: "resend" },
+
 ];
 
 /** number of companies we actually scrape (excludes custom) */
