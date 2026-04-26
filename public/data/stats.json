@@ -1,12 +1,6 @@
 {
-  "totalJobs": 448,
-  "lastUpdated": "2026-04-25T22:49:00.415105Z",
-  "bySource": {
-    "greenhouse": 357,
-    "ashby": 60,
-    "lever": 31
-  },
-  "byCategory": {
-    "creative": 448
-  }
+  "rawJobsScanned": 80868,
+  "creativeJobs": 50,
+  "companiesScraped": 2195,
+  "lastUpdated": "2026-04-26T08:50:28.745Z"
 }
