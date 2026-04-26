@@ -17,6 +17,12 @@ export type Source =
   | "arbeitnow"
   | "hn"
   | "hn-whoishiring"
+  | "remoteok"
+  | "remotive"
+  | "wwr"
+  | "workingnomads"
+  | "muse"
+  | "dribbble"
   | "user-submitted";
 
 export interface Job {
