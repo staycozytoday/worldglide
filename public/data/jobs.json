@@ -1,24 +1,54 @@
 [
   {
-    "id": "himalayas_q12pbw",
-    "title": "Remote Social Media Video Editor  (Project based)",
-    "company": "PsiQuantum",
-    "companyLogo": "https://cdn-images.himalayas.app/wgtxoc92rapws1pn9n1ucj7qr7on",
+    "id": "greenhouse_hjxyyy",
+    "title": "Graphic Designer",
+    "company": "SpaceX",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=spacex.com&sz=128",
     "category": "creative",
-    "url": "https://himalayas.app/companies/psiquantum/jobs/remote-social-media-video-editor-project-based",
-    "source": "himalayas",
+    "url": "https://boards.greenhouse.io/spacex/jobs/8505407002?gh_jid=8505407002",
+    "source": "greenhouse",
     "tags": [
-      "Video-Editing",
-      "Post-production",
-      "Social-Media",
-      "Content-Creation",
-      "Video-Production"
+      "Marketing & Communications"
     ],
-    "postedAt": "2026-04-30T20:34:26.000Z",
-    "scrapedAt": "2026-04-30T22:18:33.038Z",
-    "description": "PsiQuantum’s mission is to build the first useful quantum computers—machines capable of delivering the breakthroughs the field has long promised.",
+    "postedAt": "2026-04-30T19:27:07-04:00",
+    "scrapedAt": "2026-05-01T09:23:06.547Z",
+    "description": "SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologi",
     "region": "ww",
-    "employmentType": "Full Time"
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_sg2srb",
+    "title": "Product Design Manager, Platforms, Plan, and Analytics",
+    "company": "GitLab",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=gitlab.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/gitlab/jobs/8502372002",
+    "source": "greenhouse",
+    "tags": [
+      "Product Design"
+    ],
+    "postedAt": "2026-04-30T18:34:50-04:00",
+    "scrapedAt": "2026-05-01T09:22:31.570Z",
+    "description": "GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, an",
+    "region": "ww",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_il93hs",
+    "title": "Staff Product Designer, Knowledge Graph",
+    "company": "GitLab",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=gitlab.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/gitlab/jobs/8475077002",
+    "source": "greenhouse",
+    "tags": [
+      "Product Design"
+    ],
+    "postedAt": "2026-04-30T18:34:50-04:00",
+    "scrapedAt": "2026-05-01T09:22:31.590Z",
+    "description": "GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, an",
+    "region": "ww",
+    "employmentType": "full-time"
   },
   {
     "id": "greenhouse_f3y4ds",
@@ -32,7 +62,7 @@
       "Firefox"
     ],
     "postedAt": "2026-04-30T16:33:50-04:00",
-    "scrapedAt": "2026-04-30T22:14:57.993Z",
+    "scrapedAt": "2026-05-01T09:22:41.986Z",
     "description": "To learn the Hiring Ranges for this position, please select your location from the Apply Now dropdown menu. To learn more about our Hiring Range System, please click this link. Why Mozilla? Mozilla Co",
     "region": "ww",
     "employmentType": "full-time"
@@ -50,7 +80,7 @@
       "Engineering"
     ],
     "postedAt": "2026-04-30T17:40:30.582Z",
-    "scrapedAt": "2026-04-30T22:17:44.678Z",
+    "scrapedAt": "2026-05-01T09:24:47.756Z",
     "description": "About Us Founded in the US in 2022 and now based in London, UK, Recraft is an AI tool for professional designers, illustrators, and marketers, setting a new standard for excellence in image generation",
     "region": "ww",
     "employmentType": "part-time"
@@ -67,7 +97,7 @@
       "Marketing & Communications"
     ],
     "postedAt": "2026-04-30T13:10:25-04:00",
-    "scrapedAt": "2026-04-30T22:15:31.585Z",
+    "scrapedAt": "2026-05-01T09:23:06.617Z",
     "description": "SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologi",
     "region": "ww",
     "employmentType": "full-time"
@@ -84,7 +114,7 @@
       "Marketing"
     ],
     "postedAt": "2026-04-30T13:06:12-04:00",
-    "scrapedAt": "2026-04-30T22:15:48.170Z",
+    "scrapedAt": "2026-05-01T09:23:20.155Z",
     "description": "About the Role Matic is looking for a talented Freelance Graphic Designer to support our marketing team on an as-needed basis. This role is ideal for a versatile designer who can move seamlessly betwe",
     "region": "ww",
     "employmentType": "full-time"
@@ -101,7 +131,7 @@
       "400-Research and Development"
     ],
     "postedAt": "2026-04-30T06:18:08-04:00",
-    "scrapedAt": "2026-04-30T22:15:41.346Z",
+    "scrapedAt": "2026-05-01T09:23:14.391Z",
     "description": "About Ubiquiti At Ubiquiti Inc., we create technology platforms for Businesses, Smart Homes, and Internet Service Providers, driven by our goal to connect everyone, everywhere. To date, Ubiquiti has s",
     "region": "ww",
     "employmentType": "full-time"
@@ -118,7 +148,7 @@
       "400-Research and Development"
     ],
     "postedAt": "2026-04-30T06:18:08-04:00",
-    "scrapedAt": "2026-04-30T22:15:41.348Z",
+    "scrapedAt": "2026-05-01T09:23:14.393Z",
     "description": "About Ubiquiti At Ubiquiti Inc., we create technology platforms for Businesses, Smart Homes, and Internet Service Providers, driven by our goal to connect everyone, everywhere. To date, Ubiquiti has s",
     "region": "ww",
     "employmentType": "full-time"
@@ -135,7 +165,7 @@
       "Creative | Carmichael Lynch"
     ],
     "postedAt": "2026-04-29T13:31:16-04:00",
-    "scrapedAt": "2026-04-30T22:15:59.540Z",
+    "scrapedAt": "2026-05-01T09:23:31.311Z",
     "description": "What We Believe Carmichael Lynch is an integrated creative agency built on the belief that the strongest brands are brave enough to define their true purpose. Since 1962, we’ve helped clients uncover ",
     "region": "ww",
     "employmentType": "full-time"
@@ -152,7 +182,7 @@
       "Product Design"
     ],
     "postedAt": "2026-04-29T05:50:26-04:00",
-    "scrapedAt": "2026-04-30T22:16:09.285Z",
+    "scrapedAt": "2026-05-01T09:23:40.152Z",
     "description": "About Us Circle is building the world’s leading all-in-one platform for online communities. We make it possible for creators, coaches, educators, and businesses to bring together their audience with e",
     "region": "ww",
     "employmentType": "full-time"
@@ -169,7 +199,7 @@
       "Product Design"
     ],
     "postedAt": "2026-04-29T05:49:39-04:00",
-    "scrapedAt": "2026-04-30T22:16:09.285Z",
+    "scrapedAt": "2026-05-01T09:23:40.151Z",
     "description": "About Us Circle is building the world’s leading all-in-one platform for online communities. We make it possible for creators, coaches, educators, and businesses to bring together their audience with e",
     "region": "ww",
     "employmentType": "full-time"
@@ -186,7 +216,7 @@
       "Product"
     ],
     "postedAt": "2026-04-29T04:56:00-04:00",
-    "scrapedAt": "2026-04-30T22:15:58.839Z",
+    "scrapedAt": "2026-05-01T09:23:30.666Z",
     "description": "📍 Eindhoven HQ (Hybrid: 3 days in office) This Is What You Say At Parties 👋 At Sendcloud, we make global shipping easier. Our all-in-one SaaS platform helps e-commerce businesses automate and improv",
     "region": "ww",
     "employmentType": "full-time"
@@ -204,7 +234,7 @@
       "Saily"
     ],
     "postedAt": "2026-04-29T08:32:23.574Z",
-    "scrapedAt": "2026-04-30T22:16:59.533Z",
+    "scrapedAt": "2026-05-01T09:25:35.790Z",
     "description": "At Saily, we’re removing the hassle of staying connected while traveling — no roaming fees, no plastic SIM cards, just lightning-fast, secure mobile data in 200+ destinations. Saily has millions of pa",
     "region": "ww",
     "employmentType": "full-time"
@@ -221,7 +251,7 @@
       "Design"
     ],
     "postedAt": "2026-04-27T15:40:39-04:00",
-    "scrapedAt": "2026-04-30T22:15:07.822Z",
+    "scrapedAt": "2026-05-01T09:22:49.624Z",
     "description": "1 in 4 people in the US have a treatable mental health condition, but most providers don't accept insurance, making therapy too expensive for most people. Headway’s mission is to fix this by building ",
     "region": "ww",
     "employmentType": "full-time"
@@ -238,7 +268,7 @@
       "Marketing"
     ],
     "postedAt": "2026-04-27T12:32:11-04:00",
-    "scrapedAt": "2026-04-30T22:15:16.540Z",
+    "scrapedAt": "2026-05-01T09:22:58.078Z",
     "description": "About Arize AI is rapidly transforming the world. As generative AI reshapes industries, teams need powerful ways to monitor, troubleshoot, and optimize their AI systems. That’s where we come in. Arize",
     "region": "ww",
     "employmentType": "full-time"
@@ -255,42 +285,8 @@
       "Product Design"
     ],
     "postedAt": "2026-04-27T09:55:23-04:00",
-    "scrapedAt": "2026-04-30T22:15:50.555Z",
+    "scrapedAt": "2026-05-01T09:23:22.377Z",
     "description": "Founded in 2017, refurbed is Europe’s fastest-growing marketplace for refurbished products, active in 12 European countries and having surpassed €2Bn in GMV — all while being profitable. With beautifu",
-    "region": "ww",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_sg2srb",
-    "title": "Product Design Manager, Platforms, Plan, and Analytics",
-    "company": "GitLab",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=gitlab.com&sz=128",
-    "category": "creative",
-    "url": "https://job-boards.greenhouse.io/gitlab/jobs/8502372002",
-    "source": "greenhouse",
-    "tags": [
-      "Product Design"
-    ],
-    "postedAt": "2026-04-27T09:46:44-04:00",
-    "scrapedAt": "2026-04-30T22:14:46.695Z",
-    "description": "GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, an",
-    "region": "ww",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_il93hs",
-    "title": "Staff Product Designer, Knowledge Graph",
-    "company": "GitLab",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=gitlab.com&sz=128",
-    "category": "creative",
-    "url": "https://job-boards.greenhouse.io/gitlab/jobs/8475077002",
-    "source": "greenhouse",
-    "tags": [
-      "Product Design"
-    ],
-    "postedAt": "2026-04-27T09:46:44-04:00",
-    "scrapedAt": "2026-04-30T22:14:46.714Z",
-    "description": "GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, an",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -307,7 +303,7 @@
       "Design"
     ],
     "postedAt": "2026-04-27T12:02:37.132Z",
-    "scrapedAt": "2026-04-30T22:15:11.061Z",
+    "scrapedAt": "2026-05-01T09:22:41.282Z",
     "description": "Who We Are Hi, we're DuckDuckGo, the online protection company and remote-first team of 300+ on a mission to raise the standard of trust online. Founded in 2008 and profitable since 2014, annual reven",
     "region": "ww",
     "employmentType": "full-time"
@@ -324,25 +320,8 @@
       "Business Marketing_SD1_2146"
     ],
     "postedAt": "2026-04-24T03:06:41-04:00",
-    "scrapedAt": "2026-04-30T22:16:02.428Z",
+    "scrapedAt": "2026-05-01T09:23:34.875Z",
     "description": "About PhonePe Limited: Headquartered in India, its flagship product, the PhonePe digital payments app, was launched in Aug 2016. As of April 2025, PhonePe has over 60 Crore (600 Million) registered us",
-    "region": "ww",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_qjyd7l",
-    "title": "Copywriter",
-    "company": "Critical Mass",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=criticalmass.com&sz=128",
-    "category": "creative",
-    "url": "https://job-boards.greenhouse.io/criticalmass/jobs/7452423",
-    "source": "greenhouse",
-    "tags": [
-      "Creative"
-    ],
-    "postedAt": "2026-04-23T15:38:00-04:00",
-    "scrapedAt": "2026-04-30T22:16:21.066Z",
-    "description": "As a Copywriter, you are a short storyteller who loves to collaborate with creatives and strategists to bring a digital voice to life. You’ve got the basics of site copy, banner ads and direct e-mails",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -358,7 +337,7 @@
       "Creative"
     ],
     "postedAt": "2026-04-23T15:38:00-04:00",
-    "scrapedAt": "2026-04-30T22:16:21.077Z",
+    "scrapedAt": "2026-05-01T09:23:46.210Z",
     "description": "As a Freelance Senior Designer, you will develop breakthrough creative concepts that translate visually across interactive platforms for web-based marketing initiatives and product launches. You're an",
     "region": "ww",
     "employmentType": "full-time"
@@ -375,7 +354,7 @@
       "Creative"
     ],
     "postedAt": "2026-04-22T16:34:11-04:00",
-    "scrapedAt": "2026-04-30T22:16:21.038Z",
+    "scrapedAt": "2026-05-01T09:23:46.173Z",
     "description": "Landor is looking for a 3D Design Intern to join our Cincinnati studio. Could this be you? We are Landor, part of WPP World-leading brand experts, underpinned by the most expansive strategic &amp; cre",
     "region": "ww",
     "employmentType": "full-time"
@@ -392,7 +371,7 @@
       "Design"
     ],
     "postedAt": "2026-04-22T15:34:14-04:00",
-    "scrapedAt": "2026-04-30T22:15:30.334Z",
+    "scrapedAt": "2026-05-01T09:23:05.405Z",
     "description": "About Ethos Ethos is a leading life insurance technology company on a mission to protect families by democratizing access to life insurance and empowering agents at scale. With its robust three-sided ",
     "region": "ww",
     "employmentType": "full-time"
@@ -410,7 +389,7 @@
       "Surfshark"
     ],
     "postedAt": "2026-04-21T13:15:54.953Z",
-    "scrapedAt": "2026-04-30T22:15:01.995Z",
+    "scrapedAt": "2026-05-01T09:22:49.492Z",
     "description": "At Surfshark, video is a powerful addition to our communication - a way to visualize stories, bring our brand to life, and connect with millions worldwide. From snappy social video edits to clear expl",
     "region": "ww",
     "employmentType": "full-time"
@@ -428,7 +407,7 @@
       "Product"
     ],
     "postedAt": "2026-04-20T21:52:11.968Z",
-    "scrapedAt": "2026-04-30T22:18:03.740Z",
+    "scrapedAt": "2026-05-01T09:25:24.507Z",
     "description": "Estamos innovando la logística y esto lo hemos logrado gracias a un equipo de personas visionarias, con ganas de crecer y cambiar el mundo . En Skydropx encontrarás un espacio para desarrollar tu carr",
     "region": "ww",
     "employmentType": "full-time"
@@ -445,7 +424,7 @@
       "Product"
     ],
     "postedAt": "2026-04-19T14:35:12-04:00",
-    "scrapedAt": "2026-04-30T22:15:26.615Z",
+    "scrapedAt": "2026-05-01T09:23:03.307Z",
     "description": "AppsFlyer is a global SaaS company trusted by leading brands such as Meta, TikTok, Nike, and eBay to measure, analyze, and optimize their growth. Our platform processes billions of events daily, and p",
     "region": "ww",
     "employmentType": "full-time"
@@ -462,7 +441,7 @@
       "Research & Development"
     ],
     "postedAt": "2026-04-17T16:30:01-04:00",
-    "scrapedAt": "2026-04-30T22:14:59.610Z",
+    "scrapedAt": "2026-05-01T09:22:43.199Z",
     "description": "RegScale is a continuous controls monitoring (CCM) platform purpose-built to deliver fast and efficient GRC outcomes. We help organizations break out of the slow and expensive realities that plague le",
     "region": "ww",
     "employmentType": "full-time"
@@ -479,7 +458,7 @@
       "Domains & Applications"
     ],
     "postedAt": "2026-04-17T15:19:19-04:00",
-    "scrapedAt": "2026-04-30T22:14:52.142Z",
+    "scrapedAt": "2026-05-01T09:22:36.597Z",
     "description": "Squarespace is a design-centric product company at heart, whose mission is to be the all-in-one platform for anyone who wants to stand out. You will be challenged in an organization that values vision",
     "region": "ww",
     "employmentType": "full-time"
@@ -497,7 +476,7 @@
       "NordVPN"
     ],
     "postedAt": "2026-04-17T10:51:15.212Z",
-    "scrapedAt": "2026-04-30T22:16:59.531Z",
+    "scrapedAt": "2026-05-01T09:25:35.789Z",
     "description": "The world’s most advanced VPN, and a whole lot more\nIf you’re a design leader who loves both strong visuals and helping designers do their best work, join the team behind a broad portfolio of Nord Sec",
     "region": "ww",
     "employmentType": "full-time"
@@ -514,7 +493,7 @@
       "Machine Learning & Research"
     ],
     "postedAt": "2026-04-16T23:54:27.952Z",
-    "scrapedAt": "2026-04-30T22:14:48.863Z",
+    "scrapedAt": "2026-05-01T09:22:33.917Z",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -530,7 +509,7 @@
       "Product Design"
     ],
     "postedAt": "2026-04-15T17:20:02-04:00",
-    "scrapedAt": "2026-04-30T22:15:22.867Z",
+    "scrapedAt": "2026-05-01T09:22:59.285Z",
     "description": "🧠 About Cortex Cortex is the Engineering Operations Platform that enables organizations to continuously improve their operational maturity and reduce developer friction. With centralized visibility, ",
     "region": "ww",
     "employmentType": "full-time"
@@ -547,7 +526,7 @@
       "Product & Technology"
     ],
     "postedAt": "2026-04-14T18:20:26-04:00",
-    "scrapedAt": "2026-04-30T22:14:57.976Z",
+    "scrapedAt": "2026-05-01T09:22:41.953Z",
     "description": "Summary The Wikimedia Foundation is looking for an experienced mixed-method UX researcher (3-month contract) to extend our capabilities for doing qualitative and quantitative research to understand th",
     "region": "ww",
     "employmentType": "full-time"
@@ -565,7 +544,7 @@
       "Product"
     ],
     "postedAt": "2026-04-14T21:52:19.415Z",
-    "scrapedAt": "2026-04-30T22:18:03.740Z",
+    "scrapedAt": "2026-05-01T09:25:24.507Z",
     "description": "Estamos innovando la logística y esto lo hemos logrado gracias a un equipo de personas visionarias, con ganas de crecer y cambiar el mundo . En Skydropx encontrarás un espacio para desarrollar tu carr",
     "region": "ww",
     "employmentType": "full-time"
@@ -583,7 +562,7 @@
       "Product"
     ],
     "postedAt": "2026-04-14T10:11:05.781Z",
-    "scrapedAt": "2026-04-30T22:15:09.939Z",
+    "scrapedAt": "2026-05-01T09:23:00.126Z",
     "description": "Ready to shape the future of data?\n\nMatillion is the intelligent data integration platform.\n\nWe're changing how the world works with data – and we need driven, curious people who think big and move fa",
     "region": "ww",
     "employmentType": "full-time"
@@ -600,7 +579,7 @@
       "Creative"
     ],
     "postedAt": "2026-04-14T03:46:18-04:00",
-    "scrapedAt": "2026-04-30T22:15:46.781Z",
+    "scrapedAt": "2026-05-01T09:23:18.946Z",
     "description": "Teamlead Visual Design / UI Design Zurich, hybrid DEPT® is a Growth Invention company built to help the world’s most ambitious brands grow faster. Operating at the intersection of technology and marke",
     "region": "ww",
     "employmentType": "full-time"
@@ -617,7 +596,7 @@
       "MetaMask"
     ],
     "postedAt": "2026-04-13T10:43:17-04:00",
-    "scrapedAt": "2026-04-30T22:14:48.440Z",
+    "scrapedAt": "2026-05-01T09:22:33.112Z",
     "description": "Consensys is the leading blockchain and web3 software company founded by Joe Lubin, CEO of Consensys and Co-Founder of Ethereum. Since 2014, Consensys has been at the forefront of innovation, pioneeri",
     "region": "ww",
     "employmentType": "full-time"
@@ -634,7 +613,7 @@
       "Design"
     ],
     "postedAt": "2026-04-13T08:59:23-04:00",
-    "scrapedAt": "2026-04-30T22:14:57.312Z",
+    "scrapedAt": "2026-05-01T09:22:41.376Z",
     "description": "About Remote Remote is solving modern organizations’ biggest challenge – navigating global employment compliantly with ease. We make it possible for businesses of all sizes to recruit, pay, and manage",
     "region": "ww",
     "employmentType": "full-time"
@@ -651,7 +630,7 @@
       "Design "
     ],
     "postedAt": "2026-04-09T23:47:25-04:00",
-    "scrapedAt": "2026-04-30T22:15:40.345Z",
+    "scrapedAt": "2026-05-01T09:23:13.479Z",
     "description": "About Figure Figure (NASDAQ: FIGR) is transforming capital markets through blockchain. We’re proving that blockchain isn’t just theory - it’s powering real products used by hundreds of thousands of co",
     "region": "ww",
     "employmentType": "full-time"
@@ -668,7 +647,7 @@
       "Product"
     ],
     "postedAt": "2026-04-09T15:56:11-04:00",
-    "scrapedAt": "2026-04-30T22:15:48.118Z",
+    "scrapedAt": "2026-05-01T09:23:20.204Z",
     "description": "About Mighty Networks Mighty Networks is a pioneering community platform that’s delivered $500M in community earnings to our customers in the past year. Tens of thousands of creators including Tony Ro",
     "region": "ww",
     "employmentType": "full-time"
@@ -686,7 +665,7 @@
       "Surfshark"
     ],
     "postedAt": "2026-04-03T09:06:06.429Z",
-    "scrapedAt": "2026-04-30T22:15:01.994Z",
+    "scrapedAt": "2026-05-01T09:22:49.491Z",
     "description": "Our Content Team produces any written copy that Surfshark needs — blog posts, landing pages, emails, PPC copy, you name it. They combine professionalism with a playful tone and work together to produc",
     "region": "ww",
     "employmentType": "full-time"
@@ -704,7 +683,7 @@
       "Surfshark"
     ],
     "postedAt": "2026-04-03T07:45:37.791Z",
-    "scrapedAt": "2026-04-30T22:15:01.994Z",
+    "scrapedAt": "2026-05-01T09:22:49.491Z",
     "description": "Our Content Team produces any written copy that Surfshark needs — blog posts, landing pages, emails, PPC copy, you name it. We combine professionalism with a playful tone and work together to produce ",
     "region": "ww",
     "employmentType": "full-time"
@@ -721,7 +700,7 @@
       "Sales & Marketing"
     ],
     "postedAt": "2026-04-02T19:59:42.367Z",
-    "scrapedAt": "2026-04-30T22:15:18.194Z",
+    "scrapedAt": "2026-05-01T09:23:08.091Z",
     "description": "About Us\nZeroTier leads the world in next-generation connectivity and cybersecurity. Our platform provides highly secure, peer-to-peer virtual networks, relied upon by millions of users and businesses",
     "region": "ww",
     "employmentType": "remote"
@@ -739,7 +718,7 @@
       "NordVPN"
     ],
     "postedAt": "2026-04-01T09:32:16.088Z",
-    "scrapedAt": "2026-04-30T22:16:59.530Z",
+    "scrapedAt": "2026-05-01T09:25:35.787Z",
     "description": "The Marketing department aims to encourage the world to be as enthusiastic about our products as we are. We have more than twenty different teams with specific areas of focus. Our teams are sharp, hig",
     "region": "ww",
     "employmentType": "full-time"
