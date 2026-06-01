@@ -1,5 +1,20 @@
 [
   {
+    "id": "hn-whoishiring_7k6dy0",
+    "title": "SWE (Product, Data, Design, Infra, Payments), Product Designer, GTM, more",
+    "company": "Natural",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=natural.co&sz=128",
+    "category": "creative",
+    "url": "https://natural.co",
+    "source": "hn-whoishiring",
+    "tags": [],
+    "postedAt": "2026-06-01T19:17:02.000Z",
+    "scrapedAt": "2026-06-01T23:16:15.548Z",
+    "description": "Natural | SWE (Product, Data, Design, Infra, Payments), Product Designer, GTM, more | San Francisco, CA (Onsite) We're building payment rails for AI agents; fully-owned rails across traditional bankin",
+    "region": "ww",
+    "employmentType": "Full-time"
+  },
+  {
     "id": "hn-whoishiring_7k6g59",
     "title": "Infra Eng-Storage, Infra Eng-Observability, Product Design, Infra Eng-General, Product Eng (full-stack)",
     "company": "Railway",
@@ -9,7 +24,7 @@
     "source": "hn-whoishiring",
     "tags": [],
     "postedAt": "2026-06-01T18:52:40.000Z",
-    "scrapedAt": "2026-06-01T19:09:41.849Z",
+    "scrapedAt": "2026-06-01T23:16:15.548Z",
     "description": "Railway | Infra Eng-Storage, Infra Eng-Observability, Product Design, Infra Eng-General, Product Eng (full-stack) | REMOTE (Worldwide) | https://railway.com/careers Do you feel scared and alone when o",
     "region": "ww",
     "employmentType": "Full-time"
@@ -26,7 +41,7 @@
       "UX & Design"
     ],
     "postedAt": "2026-06-01T13:10:09-04:00",
-    "scrapedAt": "2026-06-01T19:05:33.349Z",
+    "scrapedAt": "2026-06-01T23:12:28.018Z",
     "description": "PagerDuty (NYSE:PD) is a leader in Digital Operations Management. In an always-on world, organizations of all sizes trust PagerDuty to help them deliver a perfect digital experience to their customers",
     "region": "ww",
     "employmentType": "full-time"
@@ -43,7 +58,7 @@
       "Marketing"
     ],
     "postedAt": "2026-06-01T12:48:15-04:00",
-    "scrapedAt": "2026-06-01T19:05:43.627Z",
+    "scrapedAt": "2026-06-01T23:12:32.348Z",
     "description": "We are open to remote candidates located within PST to GMT time zones. At Metalab, we design some of the world’s most beloved digital products. From zero-to-one startups to global enterprises, we help",
     "region": "ww",
     "employmentType": "full-time"
@@ -60,10 +75,27 @@
       "Sales & Marketing"
     ],
     "postedAt": "2026-06-01T16:38:38.461Z",
-    "scrapedAt": "2026-06-01T19:06:00.355Z",
+    "scrapedAt": "2026-06-01T23:12:42.048Z",
     "description": "About Us\nZeroTier leads the world in next-generation connectivity and cybersecurity. Our platform provides highly secure, peer-to-peer virtual networks, relied upon by millions of users and businesses",
     "region": "ww",
     "employmentType": "remote"
+  },
+  {
+    "id": "greenhouse_o6mbie",
+    "title": "Senior UX Writer, Contract",
+    "company": "Critical Mass",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=criticalmass.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/criticalmass/jobs/7958968",
+    "source": "greenhouse",
+    "tags": [
+      "Creative"
+    ],
+    "postedAt": "2026-06-01T10:12:01-04:00",
+    "scrapedAt": "2026-06-01T23:13:35.675Z",
+    "description": "Are you a seasoned UX Writer who is passionate about delivering elevated digital experiences through useful, meaningful copy? One of Critical Mass' clients is looking for a Senior UX Writer who is exc",
+    "region": "ww",
+    "employmentType": "full-time"
   },
   {
     "id": "smartrecruiters_ga10r0",
@@ -77,25 +109,8 @@
       null
     ],
     "postedAt": "2026-05-29T20:10:21.378Z",
-    "scrapedAt": "2026-06-01T19:05:41.515Z",
+    "scrapedAt": "2026-06-01T23:12:27.381Z",
     "description": "Our strategic objective is to create connected solutions, improving the quality of life worldwide. Let’s grow together, enjoy more, and inspire each other. ·&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&",
-    "region": "ww",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_o76xu6",
-    "title": "Senior Designer",
-    "company": "Critical Mass",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=criticalmass.com&sz=128",
-    "category": "creative",
-    "url": "https://job-boards.greenhouse.io/criticalmass/jobs/7947036",
-    "source": "greenhouse",
-    "tags": [
-      "Creative"
-    ],
-    "postedAt": "2026-05-29T14:09:27-04:00",
-    "scrapedAt": "2026-06-01T19:06:49.039Z",
-    "description": "We're looking for a Senior Designer who can operate in two gears simultaneously: campaign thinker and systems builder. You bring the creative instinct to develop compelling, on-brand campaigns and the",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -111,7 +126,7 @@
       "Product & Engineering"
     ],
     "postedAt": "2026-05-29T13:32:35-04:00",
-    "scrapedAt": "2026-06-01T19:06:39.941Z",
+    "scrapedAt": "2026-06-01T23:13:28.045Z",
     "description": "About Carrot: Carrot is a global, comprehensive fertility and family care platform, supporting members and their families through many of life's most memorable moments. Trusted by many of the world’s ",
     "region": "ww",
     "employmentType": "full-time"
@@ -128,7 +143,7 @@
       "UX - Engagement"
     ],
     "postedAt": "2026-05-29T05:22:31-04:00",
-    "scrapedAt": "2026-06-01T19:05:56.313Z",
+    "scrapedAt": "2026-06-01T23:12:42.889Z",
     "description": "About the opportunity We're looking for a Senior Product Designer to join N26's UX team in our Grow and Engage domain. There are a couple of areas within the domain where we're adding design strength,",
     "region": "ww",
     "employmentType": "full-time"
@@ -146,7 +161,7 @@
       "Product Development"
     ],
     "postedAt": "2026-05-29T08:22:33.588Z",
-    "scrapedAt": "2026-06-01T19:05:57.610Z",
+    "scrapedAt": "2026-06-01T23:12:39.461Z",
     "description": "Who is Sonar?\nSonar is driving the future of agent-centric software development. As the leader in AI code review and verification, we solve a critical problem: ensuring that software generated by AI-a",
     "region": "ww",
     "employmentType": "full-time"
@@ -163,7 +178,7 @@
       "Design"
     ],
     "postedAt": "2026-05-28T15:23:13-04:00",
-    "scrapedAt": "2026-06-01T19:05:43.626Z",
+    "scrapedAt": "2026-06-01T23:12:32.347Z",
     "description": "We are open to candidates based in the Americas. We believe magic happens when thoughtful collaboration and unparalleled expertise come together to turn great ideas into great products. Design Leads a",
     "region": "ww",
     "employmentType": "full-time"
@@ -180,7 +195,7 @@
       "Product Design"
     ],
     "postedAt": "2026-05-28T08:15:24-04:00",
-    "scrapedAt": "2026-06-01T19:05:55.480Z",
+    "scrapedAt": "2026-06-01T23:12:42.054Z",
     "description": "About Skyscanner Everyone loves travelling, but planning is not without its challenges️. That's why we've spent 20 years building tools that turn travel-planning chaos into a breeze. Today, around 160",
     "region": "ww",
     "employmentType": "full-time"
@@ -197,7 +212,7 @@
       "Product Design"
     ],
     "postedAt": "2026-05-28T08:15:24-04:00",
-    "scrapedAt": "2026-06-01T19:05:55.486Z",
+    "scrapedAt": "2026-06-01T23:12:42.060Z",
     "description": "About Skyscanner Everyone loves travelling, but planning is not without its challenges️. That's why we've spent 20 years building tools that turn travel-planning chaos into a breeze. Today, around 160",
     "region": "ww",
     "employmentType": "full-time"
@@ -214,7 +229,7 @@
       "MetaMask"
     ],
     "postedAt": "2026-05-28T02:22:57-04:00",
-    "scrapedAt": "2026-06-01T19:05:24.212Z",
+    "scrapedAt": "2026-06-01T23:12:11.098Z",
     "description": "Consensys is the leading blockchain and web3 software company. Founded by Joe Lubin, CEO of Consensys and Co-Founder of Ethereum in 2014, Consensys has been at the forefront of innovation, pioneering ",
     "region": "ww",
     "employmentType": "full-time"
@@ -231,7 +246,7 @@
       "Design "
     ],
     "postedAt": "2026-05-27T13:16:19-04:00",
-    "scrapedAt": "2026-06-01T19:06:14.773Z",
+    "scrapedAt": "2026-06-01T23:13:02.604Z",
     "description": "About Figure Figure (NASDAQ: FIGR) is transforming capital markets through blockchain. We’re proving that blockchain isn’t just theory - it’s powering real products used by hundreds of thousands of co",
     "region": "ww",
     "employmentType": "full-time"
@@ -248,7 +263,7 @@
       "Design"
     ],
     "postedAt": "2026-05-27T13:06:59-04:00",
-    "scrapedAt": "2026-06-01T19:05:58.435Z",
+    "scrapedAt": "2026-06-01T23:12:45.894Z",
     "description": "Reimagine the infrastructure of cancer care within a community that values integrity, inspires growth, and is uniquely positioned to create a more modern, connected oncology ecosystem. We're looking f",
     "region": "ww",
     "employmentType": "full-time"
@@ -265,7 +280,7 @@
       "Corporate Marketing"
     ],
     "postedAt": "2026-05-26T18:48:38-04:00",
-    "scrapedAt": "2026-06-01T19:05:33.539Z",
+    "scrapedAt": "2026-06-01T23:12:28.230Z",
     "description": "Who we are Samsara (NYSE: IOT) is the pioneer of the Connected Operations™ Cloud, which is a platform that enables organizations that depend on physical operations to harness Internet of Things (IoT) ",
     "region": "ww",
     "employmentType": "full-time"
@@ -282,7 +297,7 @@
       "Zero"
     ],
     "postedAt": "2026-05-26T17:51:05-04:00",
-    "scrapedAt": "2026-06-01T19:05:43.625Z",
+    "scrapedAt": "2026-06-01T23:12:32.347Z",
     "description": "We are open to remote candidates based in the Americas time zones. Zero is a small team inside Metalab. We explore new tools, workflows, and ways of building products. We test ideas fast, validate wha",
     "region": "ww",
     "employmentType": "full-time"
@@ -299,7 +314,7 @@
       "Product Management"
     ],
     "postedAt": "2026-05-26T17:33:46-04:00",
-    "scrapedAt": "2026-06-01T19:05:37.327Z",
+    "scrapedAt": "2026-06-01T23:12:29.073Z",
     "description": "The Trade Desk is a global technology company and the world’s leading independent platform for digital advertising, with nearly 4,000 employees across more than 30 offices. Our technology helps advert",
     "region": "ww",
     "employmentType": "full-time"
@@ -316,7 +331,7 @@
       "Marketing"
     ],
     "postedAt": "2026-05-26T14:21:42-04:00",
-    "scrapedAt": "2026-06-01T19:06:03.024Z",
+    "scrapedAt": "2026-06-01T23:12:50.445Z",
     "description": "About Acquia Acquia empowers the world’s most ambitious brands to create digital customer experiences that matter. With open source Drupal at its core, the Acquia Digital Experience Platform (DXP) ena",
     "region": "ww",
     "employmentType": "full-time"
@@ -333,7 +348,7 @@
       "Marketing"
     ],
     "postedAt": "2026-05-22T22:47:41-04:00",
-    "scrapedAt": "2026-06-01T19:05:55.498Z",
+    "scrapedAt": "2026-06-01T23:12:42.071Z",
     "description": "At JFrog, we’re reinventing DevOps to help the world’s greatest companies innovate -- and we want you along for the ride. This is a special place with a unique combination of brilliance, spirit and ju",
     "region": "ww",
     "employmentType": "full-time"
@@ -350,7 +365,7 @@
       "00 - Departamento Genérico - Seleccionar está opción roles de Marzo 2026 en adelante"
     ],
     "postedAt": "2026-05-22T16:41:42-04:00",
-    "scrapedAt": "2026-06-01T19:05:52.220Z",
+    "scrapedAt": "2026-06-01T23:12:38.736Z",
     "description": "Objective We are looking for a Staff AI UX Designer to join our AI Products Chapter and help us design the next generation of AI-driven experiences within Spin that is part of a multi business ecosyst",
     "region": "ww",
     "employmentType": "full-time"
@@ -367,7 +382,7 @@
       "Engineering"
     ],
     "postedAt": "2026-05-22T14:54:10-04:00",
-    "scrapedAt": "2026-06-01T19:06:29.093Z",
+    "scrapedAt": "2026-06-01T23:13:16.954Z",
     "description": "We are seeking an AI-native Senior UX Designer to help shape the future of enterprise software in an AI-first world. This role is for designers who are driven to deeply understand users and translate ",
     "region": "ww",
     "employmentType": "full-time"
@@ -384,7 +399,7 @@
       "Design"
     ],
     "postedAt": "2026-05-21T19:14:46-04:00",
-    "scrapedAt": "2026-06-01T19:05:43.627Z",
+    "scrapedAt": "2026-06-01T23:12:32.348Z",
     "description": "We are open to remote candidates for this role. Folks who specialize in motion design at Metalab are called Motion Designers. Regardless of the title, these individuals play a critical role in elevati",
     "region": "ww",
     "employmentType": "full-time"
@@ -401,7 +416,7 @@
       "Consumer Apps"
     ],
     "postedAt": "2026-05-21T15:46:37-04:00",
-    "scrapedAt": "2026-06-01T19:06:23.554Z",
+    "scrapedAt": "2026-06-01T23:13:11.214Z",
     "description": "ARE YOU READY TO TAKE YOUR CAREER TO NEW HEIGHTS? ARE YOU SEEKING A NEW CHALLENGE IN A DYNAMIC SECTOR? This is a very exciting and highly innovative time here at Outside. OUR TRUE NORTH:Outside Intera",
     "region": "ww",
     "employmentType": "full-time"
@@ -418,7 +433,7 @@
       "Mapping"
     ],
     "postedAt": "2026-05-21T15:46:37-04:00",
-    "scrapedAt": "2026-06-01T19:06:23.554Z",
+    "scrapedAt": "2026-06-01T23:13:11.214Z",
     "description": "ARE YOU READY TO TAKE YOUR CAREER TO NEW HEIGHTS? ARE YOU SEEKING A NEW CHALLENGE IN A DYNAMIC SECTOR? This is a very exciting and highly innovative time here at Outside. OUR TRUE NORTH:Outside Intera",
     "region": "ww",
     "employmentType": "full-time"
@@ -435,7 +450,7 @@
       "Creative"
     ],
     "postedAt": "2026-05-20T08:15:38-04:00",
-    "scrapedAt": "2026-06-01T19:06:20.891Z",
+    "scrapedAt": "2026-06-01T23:13:08.371Z",
     "description": "Zagreb, hybrid DEPT® is a Growth Invention company built to help the world’s most ambitious brands grow faster. Operating at the intersection of technology and marketing, our 4,000+ specialists delive",
     "region": "ww",
     "employmentType": "full-time"
@@ -452,7 +467,7 @@
       "400-Research and Development"
     ],
     "postedAt": "2026-05-20T03:46:47-04:00",
-    "scrapedAt": "2026-06-01T19:06:15.773Z",
+    "scrapedAt": "2026-06-01T23:13:03.545Z",
     "description": "About Ubiquiti At Ubiquiti Inc., we create technology platforms for Businesses, Smart Homes, and Internet Service Providers, driven by our goal to connect everyone, everywhere. To date, Ubiquiti has s",
     "region": "ww",
     "employmentType": "full-time"
@@ -469,7 +484,7 @@
       "400-Research and Development"
     ],
     "postedAt": "2026-05-20T03:46:47-04:00",
-    "scrapedAt": "2026-06-01T19:06:15.773Z",
+    "scrapedAt": "2026-06-01T23:13:03.546Z",
     "description": "About Ubiquiti At Ubiquiti Inc., we create technology platforms for Businesses, Smart Homes, and Internet Service Providers, driven by our goal to connect everyone, everywhere. To date, Ubiquiti has s",
     "region": "ww",
     "employmentType": "full-time"
@@ -486,7 +501,7 @@
       "400-Research and Development"
     ],
     "postedAt": "2026-05-20T03:46:47-04:00",
-    "scrapedAt": "2026-06-01T19:06:15.776Z",
+    "scrapedAt": "2026-06-01T23:13:03.549Z",
     "description": "About Ubiquiti At Ubiquiti Inc., we create technology platforms for Businesses, Smart Homes, and Internet Service Providers, driven by our goal to connect everyone, everywhere. To date, Ubiquiti has s",
     "region": "ww",
     "employmentType": "full-time"
@@ -503,7 +518,7 @@
       "400-Research and Development"
     ],
     "postedAt": "2026-05-20T03:46:47-04:00",
-    "scrapedAt": "2026-06-01T19:06:15.777Z",
+    "scrapedAt": "2026-06-01T23:13:03.549Z",
     "description": "About Ubiquiti At Ubiquiti Inc., we create technology platforms for Businesses, Smart Homes, and Internet Service Providers, driven by our goal to connect everyone, everywhere. To date, Ubiquiti has s",
     "region": "ww",
     "employmentType": "full-time"
@@ -520,7 +535,7 @@
       "Experience Design (XD)"
     ],
     "postedAt": "2026-05-20T01:02:50-04:00",
-    "scrapedAt": "2026-06-01T19:06:33.981Z",
+    "scrapedAt": "2026-06-01T23:13:21.967Z",
     "description": "ABOUT WONGDOODY We are a Human Experience Company. Human experience is not just what we do, it’s who we are — a highly collaborative collection of global experts building experiences that can help tra",
     "region": "ww",
     "employmentType": "full-time"
@@ -537,7 +552,7 @@
       "Design"
     ],
     "postedAt": "2026-05-19T19:41:10-04:00",
-    "scrapedAt": "2026-06-01T19:05:43.626Z",
+    "scrapedAt": "2026-06-01T23:12:32.347Z",
     "description": "We are open to remote candidates located within PST to BRT time zones. At Metalab, we partner with companies ready to change the world—helping them create products that improve lives, reshape markets,",
     "region": "ww",
     "employmentType": "full-time"
@@ -554,7 +569,7 @@
       "CX & Design"
     ],
     "postedAt": "2026-05-19T18:07:23-04:00",
-    "scrapedAt": "2026-06-01T19:06:20.907Z",
+    "scrapedAt": "2026-06-01T23:13:08.385Z",
     "description": "Senior UX/UI Designer, pipelining - The active hiring process for this role is planned during summer. Skopje, hybrid DEPT® is a Growth Invention company built to help the world’s most ambitious brands",
     "region": "ww",
     "employmentType": "full-time"
@@ -571,7 +586,7 @@
       "CX & Design"
     ],
     "postedAt": "2026-05-19T18:07:23-04:00",
-    "scrapedAt": "2026-06-01T19:06:20.911Z",
+    "scrapedAt": "2026-06-01T23:13:08.389Z",
     "description": "UX Researcher (d/f/m) Berlin, Hamburg, Hybrid JOB PURPOSE As a User Researcher , you help product teams make confident, customer-centered decisions by uncovering real user needs, motivations, behavior",
     "region": "ww",
     "employmentType": "full-time"
@@ -588,7 +603,7 @@
       "Creative"
     ],
     "postedAt": "2026-05-19T21:42:47.405Z",
-    "scrapedAt": "2026-06-01T19:08:19.997Z",
+    "scrapedAt": "2026-06-01T23:14:57.953Z",
     "description": "Reports to: Associate Creative Director or Creative Director\nLocation and Timezone: Remote. North America or Latin America, friendly to EST\nWorks closely with: Creative, Production, Tech\n \nThe Role\nTh",
     "region": "ww",
     "employmentType": "full-time"
@@ -605,7 +620,7 @@
       "Creative"
     ],
     "postedAt": "2026-05-19T21:23:25.407Z",
-    "scrapedAt": "2026-06-01T19:08:19.997Z",
+    "scrapedAt": "2026-06-01T23:14:57.953Z",
     "description": "Reports to: Executive Creative Director\nLocation and Timezone: Remote in North America or Latin America, with ability to work PST hours\nWorks closely with: Creative, Production, Tech, Growth, and Exte",
     "region": "ww",
     "employmentType": "full-time"
@@ -622,7 +637,7 @@
       "Brand Content Strategy"
     ],
     "postedAt": "2026-05-18",
-    "scrapedAt": "2026-06-01T19:05:23.045Z",
+    "scrapedAt": "2026-06-01T23:12:09.766Z",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -639,7 +654,7 @@
       "Business Units"
     ],
     "postedAt": "2026-05-16T17:17:06.325Z",
-    "scrapedAt": "2026-06-01T19:05:23.191Z",
+    "scrapedAt": "2026-06-01T23:12:09.704Z",
     "description": "Superside is looking for a Creative Director, AI Video with a strong background in filmmaking, cinematography, post-production, and AI-driven creative workflows to help shape the future of video produ",
     "region": "ww",
     "employmentType": "contract"
@@ -657,7 +672,7 @@
       "Design"
     ],
     "postedAt": "2026-05-15T13:32:28.453Z",
-    "scrapedAt": "2026-06-01T19:05:54.937Z",
+    "scrapedAt": "2026-06-01T23:12:37.601Z",
     "description": "At Sword, we’re building AI to heal billions and unlock humanity’s full potential. In doing so, we’re pioneering AI Care, a fundamentally new approach to healthcare built for medical reasoning, safety",
     "region": "ww",
     "employmentType": "full-time"
@@ -674,7 +689,7 @@
       "Creative"
     ],
     "postedAt": "2026-05-14T22:46:15.868Z",
-    "scrapedAt": "2026-06-01T19:08:19.997Z",
+    "scrapedAt": "2026-06-01T23:14:57.953Z",
     "description": "Location: The Americas (Remote)\nAvailability: West Coast preferred; East Coast acceptable if West Coast hours can be observed when needed and travel is feasible\nTimezone: Must be able to work full PST",
     "region": "ww",
     "employmentType": "full-time"
@@ -691,7 +706,7 @@
       "Design"
     ],
     "postedAt": "2026-05-14T22:43:27.479Z",
-    "scrapedAt": "2026-06-01T19:06:34.187Z",
+    "scrapedAt": "2026-06-01T23:13:08.990Z",
     "description": "Who we are\nHi there 👋 We’re Ethena, compliance training that customizes itself to you. Ethena combines top-rated training content with intelligent AI that builds and adapts training to reflect your c",
     "region": "ww",
     "employmentType": "full-time"
@@ -709,7 +724,7 @@
       "Saily"
     ],
     "postedAt": "2026-05-14T13:17:20.289Z",
-    "scrapedAt": "2026-06-01T19:08:18.673Z",
+    "scrapedAt": "2026-06-01T23:14:56.697Z",
     "description": "At Saily, we’re removing the hassle from getting secure data plans while traveling.\n\nNo roaming charges, no plastic SIM cards. Just fast, secure mobile data in 200+ countries. Join the team behind Lon",
     "region": "ww",
     "employmentType": "full-time"
@@ -726,7 +741,7 @@
       "Facetune"
     ],
     "postedAt": "2026-05-14T08:04:26-04:00",
-    "scrapedAt": "2026-06-01T19:06:35.758Z",
+    "scrapedAt": "2026-06-01T23:13:23.732Z",
     "description": "Facetune is one of the world's most recognized creative brands, used by hundreds of millions of people to express themselves visually. We're looking for a Product Designer to own projects end-to-end -",
     "region": "ww",
     "employmentType": "full-time"
@@ -743,7 +758,7 @@
       "Design"
     ],
     "postedAt": "2026-05-13T19:43:25-04:00",
-    "scrapedAt": "2026-06-01T19:05:33.493Z",
+    "scrapedAt": "2026-06-01T23:12:28.377Z",
     "description": "About Remote Remote is solving modern organizations’ biggest challenge – navigating global employment compliantly with ease. We make it possible for businesses of all sizes to recruit, pay, and manage",
     "region": "ww",
     "employmentType": "full-time"
@@ -760,7 +775,7 @@
       "Design"
     ],
     "postedAt": "2026-05-12T16:15:42-04:00",
-    "scrapedAt": "2026-06-01T19:05:43.672Z",
+    "scrapedAt": "2026-06-01T23:12:32.331Z",
     "description": "Senior UX/UI Designer, Strategic &amp; Client Facing - Direct Contract Location: Remote (U.S.) Type: Contract (long-term fractional, with potential for full-time conversion based on business need) Rep",
     "region": "ww",
     "employmentType": "full-time"
@@ -777,7 +792,7 @@
       "Design"
     ],
     "postedAt": "2026-05-12T16:08:44-04:00",
-    "scrapedAt": "2026-06-01T19:05:43.672Z",
+    "scrapedAt": "2026-06-01T23:12:32.331Z",
     "description": "UX/UI Designer, Production &amp; Execution - Direct Contract Location: Remote Type: Contract (long-term fractional, with potential for full-time conversion based on business need) Reports To: Director",
     "region": "ww",
     "employmentType": "full-time"
@@ -794,7 +809,7 @@
       "Creative"
     ],
     "postedAt": "2026-05-11T12:01:55-04:00",
-    "scrapedAt": "2026-06-01T19:06:49.040Z",
+    "scrapedAt": "2026-06-01T23:13:35.672Z",
     "description": "The Senior Designer is responsible for leading the execution of high-quality visual and interactive web design solutions, driving the successful delivery of large-scale website redesigns and scalable ",
     "region": "ww",
     "employmentType": "full-time"
@@ -812,7 +827,7 @@
       "Product"
     ],
     "postedAt": "2026-05-08T15:21:55.068Z",
-    "scrapedAt": "2026-06-01T19:08:14.013Z",
+    "scrapedAt": "2026-06-01T23:14:53.363Z",
     "description": "At Kpler, we are dedicated to helping our clients navigate complex markets with ease. By simplifying global trade information and providing valuable insights, we empower organisations to make informed",
     "region": "ww",
     "employmentType": "full-time"
@@ -830,7 +845,7 @@
       "Product"
     ],
     "postedAt": "2026-05-08T14:08:12.490Z",
-    "scrapedAt": "2026-06-01T19:08:14.014Z",
+    "scrapedAt": "2026-06-01T23:14:53.365Z",
     "description": "At Kpler, we are dedicated to helping our clients navigate complex markets with ease. By simplifying global trade information and providing valuable insights, we empower organisations to make informed",
     "region": "ww",
     "employmentType": "full-time"
@@ -848,7 +863,7 @@
       "Activation"
     ],
     "postedAt": "2026-05-08T11:54:38.749Z",
-    "scrapedAt": "2026-06-01T19:06:18.017Z",
+    "scrapedAt": "2026-06-01T23:12:54.229Z",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -864,7 +879,7 @@
       "Facetune"
     ],
     "postedAt": "2026-05-07T15:31:55-04:00",
-    "scrapedAt": "2026-06-01T19:06:35.757Z",
+    "scrapedAt": "2026-06-01T23:13:23.731Z",
     "description": "Lightricks is an AI-first company creating next-generation content creation technology for businesses, enterprises, and studios with a mission to bridge the gap between imagination and creation. At ou",
     "region": "ww",
     "employmentType": "full-time"
@@ -881,7 +896,7 @@
       "Design"
     ],
     "postedAt": "2026-05-06T11:57:00-04:00",
-    "scrapedAt": "2026-06-01T19:05:43.627Z",
+    "scrapedAt": "2026-06-01T23:12:32.348Z",
     "description": "We are open to remote candidates based in the Americas time zones. At Metalab, we design some of the world’s most beloved products. Founders at early-stage startups hire us to help build businesses fr",
     "region": "ww",
     "employmentType": "full-time"
@@ -899,7 +914,7 @@
       "Incogni"
     ],
     "postedAt": "2026-05-05T08:27:42.926Z",
-    "scrapedAt": "2026-06-01T19:05:41.578Z",
+    "scrapedAt": "2026-06-01T23:12:27.474Z",
     "description": "We’re designing, developing, and growing Incogni — a privacy-tech product that helps people protect their personal data online. With Incogni, anyone can automatically remove their personal information",
     "region": "ww",
     "employmentType": "full-time"
@@ -917,7 +932,7 @@
       "Marketing"
     ],
     "postedAt": "2026-05-05T07:19:33.631Z",
-    "scrapedAt": "2026-06-01T19:05:51.239Z",
+    "scrapedAt": "2026-06-01T23:12:46.411Z",
     "description": "About the company Trust Wallet is the leading non-custodial cryptocurrency wallet, trusted by over 200 million people worldwide to securely manage and grow their digital assets. Our vision is to give ",
     "region": "ww",
     "employmentType": "full-time"
