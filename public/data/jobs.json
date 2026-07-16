@@ -1,5 +1,40 @@
 [
   {
+    "id": "lever_yue7ac",
+    "title": "Senior Design Researcher, WHOOP Labs Doha",
+    "company": "WHOOP",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=whoop.com&sz=128",
+    "category": "creative",
+    "url": "https://jobs.lever.co/whoop/6cd8476b-5a39-4373-8b60-04c4f0c05f4c",
+    "source": "lever",
+    "tags": [
+      "Machine Learning & Research"
+    ],
+    "postedAt": "2026-07-16T20:52:42.685Z",
+    "scrapedAt": "2026-07-16T22:26:57.280Z",
+    "description": "At WHOOP, we’re on a mission to unlock human performance and healthspan. WHOOP empowers members to perform at a higher level through a deeper understanding of their bodies, behaviors, and daily lives.",
+    "region": "ww",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "ashby_33hggh",
+    "title": "Creative Design Lead (Marketing Campaigns)",
+    "company": "DuckDuckGo",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=duckduckgo.com&sz=128",
+    "category": "creative",
+    "url": "https://jobs.ashbyhq.com/duck-duck-go/2b76bbee-43df-48d4-ba9c-e7e0d6827d6a",
+    "source": "ashby",
+    "tags": [
+      "Design",
+      "Design"
+    ],
+    "postedAt": "2026-07-16T19:53:46.406Z",
+    "scrapedAt": "2026-07-16T22:27:03.076Z",
+    "description": "Who We Are Hi, we're DuckDuckGo, the online protection company and remote-first team of 300+ on a mission to raise the standard of trust online. Founded in 2008 and profitable since 2014, annual reven",
+    "region": "ww",
+    "employmentType": "full-time"
+  },
+  {
     "id": "greenhouse_51xud0",
     "title": "Motion Designer/Editor",
     "company": "DEPT®",
@@ -11,32 +46,10 @@
       "Creative Design"
     ],
     "postedAt": "2026-07-16T07:22:11-04:00",
-    "scrapedAt": "2026-07-16T15:18:16.530Z",
+    "scrapedAt": "2026-07-16T22:27:54.489Z",
     "description": "DEPT® is a Growth Invention company built to help the world’s most ambitious brands grow faster. Operating at the intersection of technology and marketing, our 4,000+ specialists deliver growth invent",
     "region": "ww",
     "employmentType": "full-time"
-  },
-  {
-    "id": "himalayas_9bcxni",
-    "title": "Senior UX Designer",
-    "company": "Flying Bisons",
-    "companyLogo": "https://cdn-images.himalayas.app/w9rya1bo0jhq3qyghmyg15ay0uxc",
-    "category": "creative",
-    "url": "https://himalayas.app/companies/flying-bisons/jobs/senior-ux-designer",
-    "source": "himalayas",
-    "tags": [
-      "UX-Design",
-      "Strategic-Design",
-      "Product-Design",
-      "UX-Research",
-      "Service-Design"
-    ],
-    "salary": "PLN 180k - 240k",
-    "postedAt": "2026-07-15T20:34:45.000Z",
-    "scrapedAt": "2026-07-16T15:19:07.759Z",
-    "description": "At Flying Bisons, we’re building Europe’s leading Strategic Design & Implementation consultancy — delivering the quality, rigor, and impact you’d expect from top-tier consulting firms, but fully speci",
-    "region": "ww",
-    "employmentType": "Contractor"
   },
   {
     "id": "greenhouse_hjxyyy",
@@ -50,7 +63,7 @@
       "Marketing & Communications"
     ],
     "postedAt": "2026-07-15T14:26:20-04:00",
-    "scrapedAt": "2026-07-16T15:17:07.265Z",
+    "scrapedAt": "2026-07-16T22:27:41.144Z",
     "description": "SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologi",
     "region": "ww",
     "employmentType": "full-time"
@@ -67,7 +80,7 @@
       "Product"
     ],
     "postedAt": "2026-07-15T10:50:32-04:00",
-    "scrapedAt": "2026-07-16T15:18:43.324Z",
+    "scrapedAt": "2026-07-16T22:28:33.784Z",
     "description": "WHO WE ARE Nova Credit is a credit infrastructure and analytics company that enables businesses to grow responsibly by harnessing alternative credit data. The company leverages its unique data infrast",
     "region": "ww",
     "employmentType": "full-time"
@@ -84,7 +97,7 @@
       "Design"
     ],
     "postedAt": "2026-07-15T08:30:00-04:00",
-    "scrapedAt": "2026-07-16T15:16:22.281Z",
+    "scrapedAt": "2026-07-16T22:27:09.279Z",
     "description": "Work from anywhere, impact everywhere Diversity is at the heart of who we are at Xapo Bank. We’re a fully distributed team of over 160 Xapiens that work remotely from 50+ countries around the world. O",
     "region": "ww",
     "employmentType": "full-time"
@@ -101,7 +114,7 @@
       "Design"
     ],
     "postedAt": "2026-07-14T19:01:05-04:00",
-    "scrapedAt": "2026-07-16T15:16:22.210Z",
+    "scrapedAt": "2026-07-16T22:27:09.287Z",
     "description": "Copywriter - Conversion &amp; Growth Location: Remote (U.S.) Type: Contract, 1099 (long-term fractional, with potential for full-time conversion based on business need) Reports To: Director of Design ",
     "region": "ww",
     "employmentType": "full-time"
@@ -118,7 +131,7 @@
       "Design"
     ],
     "postedAt": "2026-07-14T17:19:10-04:00",
-    "scrapedAt": "2026-07-16T15:16:22.210Z",
+    "scrapedAt": "2026-07-16T22:27:09.288Z",
     "description": "Copywriter - Nonprofit Location: Remote (U.S.) Type: Contract, 1099 (long-term fractional, with potential for full-time conversion based on business need) Reports To: Director of Design As Cro Metrics",
     "region": "ww",
     "employmentType": "full-time"
@@ -135,7 +148,7 @@
       "Design"
     ],
     "postedAt": "2026-07-14T16:58:02-04:00",
-    "scrapedAt": "2026-07-16T15:16:22.211Z",
+    "scrapedAt": "2026-07-16T22:27:09.288Z",
     "description": "UX/UI Designer, Production &amp; Execution Location: Remote Type: Contract, 1099 (long-term fractional, with potential for full-time conversion based on business need) Reports To: Director of Design A",
     "region": "ww",
     "employmentType": "full-time"
@@ -152,7 +165,7 @@
       "UX"
     ],
     "postedAt": "2026-07-14T10:42:48-04:00",
-    "scrapedAt": "2026-07-16T15:18:16.495Z",
+    "scrapedAt": "2026-07-16T22:27:54.457Z",
     "description": "Associate Director Experience Design Zürich, Hybrid DEPT® is a Growth Invention company built to help the world’s most ambitious brands grow faster. Operating at the intersection of technology and mar",
     "region": "ww",
     "employmentType": "full-time"
@@ -170,7 +183,7 @@
       "Product"
     ],
     "postedAt": "2026-07-14T13:11:55.195Z",
-    "scrapedAt": "2026-07-16T15:16:22.980Z",
+    "scrapedAt": "2026-07-16T22:27:15.571Z",
     "description": "Are you ready to shape the future of data?\nMatillion is the company behind Maia, the AI Data Automation platform. \nIn the AI economy, demand for data is exploding. Manual data engineering can’t keep u",
     "region": "ww",
     "employmentType": "full-time"
@@ -187,7 +200,7 @@
       "Facetune"
     ],
     "postedAt": "2026-07-14T06:07:20-04:00",
-    "scrapedAt": "2026-07-16T15:18:37.746Z",
+    "scrapedAt": "2026-07-16T22:28:12.025Z",
     "description": "Lightricks is an AI-first company creating next-generation content creation technology for businesses, enterprises, and studios with a mission to bridge the gap between imagination and creation. At ou",
     "region": "ww",
     "employmentType": "full-time"
@@ -204,7 +217,7 @@
       "Design"
     ],
     "postedAt": "2026-07-14T03:15:23-04:00",
-    "scrapedAt": "2026-07-16T15:16:22.280Z",
+    "scrapedAt": "2026-07-16T22:27:09.278Z",
     "description": "Work from anywhere, impact everywhere Diversity is at the heart of who we are at Xapo Bank. We’re a fully distributed team of over 160 Xapiens that work remotely from 50+ countries around the world. O",
     "region": "ww",
     "employmentType": "full-time"
@@ -221,7 +234,7 @@
       "Product"
     ],
     "postedAt": "2026-07-13T13:55:09-04:00",
-    "scrapedAt": "2026-07-16T15:18:30.463Z",
+    "scrapedAt": "2026-07-16T22:28:05.081Z",
     "description": "Kickstarter is the leading crowdfunding platform for creative projects across film, games, music, art, design, and technology. Since our founding in 2009, our mission to help bring creative projects t",
     "region": "ww",
     "employmentType": "full-time"
@@ -238,7 +251,7 @@
       "Creative Production"
     ],
     "postedAt": "2026-07-13T11:58:25-04:00",
-    "scrapedAt": "2026-07-16T15:18:16.555Z",
+    "scrapedAt": "2026-07-16T22:27:54.513Z",
     "description": "WHY DEPT®? We are a Growth Invention company built to help the world’s most ambitious brands grow faster. Operating at the intersection of technology and marketing, we create what is next by pioneerin",
     "region": "ww",
     "employmentType": "full-time"
@@ -256,7 +269,7 @@
       "Product"
     ],
     "postedAt": "2026-07-13T14:24:45.876Z",
-    "scrapedAt": "2026-07-16T15:16:53.370Z",
+    "scrapedAt": "2026-07-16T22:27:48.860Z",
     "description": "Jeeves is a groundbreaking financial operating system built for global businesses that provides corporate cards, cross-border payments, and spend management software within one unified platform. The c",
     "region": "ww",
     "employmentType": "full-time"
@@ -273,7 +286,7 @@
       "User Experience"
     ],
     "postedAt": "2026-07-09T03:19:39-04:00",
-    "scrapedAt": "2026-07-16T15:16:22.308Z",
+    "scrapedAt": "2026-07-16T22:27:09.317Z",
     "description": "At AKQA (part of WPP), our Experience Design discipline sets the standard for innovation, creativity, and craft. As a Lead Experience Designer, you’ll imagine what’s next and help make what matters. Y",
     "region": "ww",
     "employmentType": "full-time"
@@ -291,7 +304,7 @@
       "Engineering"
     ],
     "postedAt": "2026-07-08T13:26:47.305Z",
-    "scrapedAt": "2026-07-16T15:16:36.459Z",
+    "scrapedAt": "2026-07-16T22:27:55.956Z",
     "description": "About Us Founded in the US in 2022 and now based in London, UK, Recraft is an AI tool for professional designers, illustrators, and marketers, setting a new standard for excellence in image generation",
     "region": "ww",
     "employmentType": "part-time"
@@ -309,7 +322,7 @@
       "Audio"
     ],
     "postedAt": "2026-07-07T13:52:15.353Z",
-    "scrapedAt": "2026-07-16T15:17:41.321Z",
+    "scrapedAt": "2026-07-16T22:28:31.849Z",
     "description": "With multiple awards to our name, Larian Studios has proven that we’re dedicated to delivering high-quality role-playing games As we move on to new projects, the studio that brought you Baldur’s Gate ",
     "region": "ww",
     "employmentType": "fixed-term-employment"
@@ -326,7 +339,7 @@
       "Brand Creative"
     ],
     "postedAt": "2026-07-06T13:08:55-04:00",
-    "scrapedAt": "2026-07-16T15:18:16.490Z",
+    "scrapedAt": "2026-07-16T22:27:54.452Z",
     "description": "WHY DEPT®? We are a Growth Invention company built to help the world’s most ambitious brands grow faster. Operating at the intersection of technology and marketing, we create what is next by pioneerin",
     "region": "ww",
     "employmentType": "full-time"
@@ -343,7 +356,7 @@
       "Product Design"
     ],
     "postedAt": "2026-07-03T07:39:44-04:00",
-    "scrapedAt": "2026-07-16T15:18:26.038Z",
+    "scrapedAt": "2026-07-16T22:27:58.318Z",
     "description": "Founded in 2017, refurbed is Europe’s fastest-growing marketplace for refurbished products, active in 23 European countries and having surpassed €2Bn in GMV — all while being profitable. With beautifu",
     "region": "ww",
     "employmentType": "full-time"
@@ -360,7 +373,7 @@
       "UX"
     ],
     "postedAt": "2026-07-03T07:14:53-04:00",
-    "scrapedAt": "2026-07-16T15:18:16.558Z",
+    "scrapedAt": "2026-07-16T22:27:54.515Z",
     "description": "UX Researcher (d/f/m) Berlin, Hamburg, Hybrid JOB PURPOSE As a User Researcher , you help product teams make confident, customer-centered decisions by uncovering real user needs, motivations, behavior",
     "region": "ww",
     "employmentType": "full-time"
@@ -377,7 +390,7 @@
       "Growth Marketing"
     ],
     "postedAt": "2026-07-02T16:26:10-04:00",
-    "scrapedAt": "2026-07-16T15:16:37.076Z",
+    "scrapedAt": "2026-07-16T22:27:25.029Z",
     "description": "Maven is the world's largest virtual clinic for women and families on a mission to make healthcare work for all of us. Maven's award-winning digital programs provide clinical, emotional, and financial",
     "region": "ww",
     "employmentType": "full-time"
@@ -395,7 +408,7 @@
       "Marketing"
     ],
     "postedAt": "2026-07-02T10:49:50.667Z",
-    "scrapedAt": "2026-07-16T15:17:22.594Z",
+    "scrapedAt": "2026-07-16T22:28:16.110Z",
     "description": "RISE is on a mission to accelerate internet for the Philippines by providing excellent services and high-quality support to our business and wholesale partners. We focus on the efficiency of connectiv",
     "region": "ww",
     "employmentType": "full-time"
@@ -410,7 +423,7 @@
     "source": "hn-whoishiring",
     "tags": [],
     "postedAt": "2026-07-01T23:22:34.000Z",
-    "scrapedAt": "2026-07-16T15:19:10.975Z",
+    "scrapedAt": "2026-07-16T22:29:47.862Z",
     "description": "Railway | Infra Eng-Storage, Infra Eng-Observability, Brand Designer - Web, Infra Eng-General, Product Eng (full-stack) | REMOTE (Worldwide) | https://railway.com/careers Do you feel scared and alone ",
     "region": "ww",
     "employmentType": "Full-time"
@@ -427,7 +440,7 @@
       "Design"
     ],
     "postedAt": "2026-06-29T21:59:33.320Z",
-    "scrapedAt": "2026-07-16T15:17:53.541Z",
+    "scrapedAt": "2026-07-16T22:28:42.767Z",
     "description": "HappyCo is a company where people can grow their careers and work with like minded people, with no egos or politics. HappyCo is values driven and offers a flexible, supportive culture. Join HappyCo an",
     "region": "ww",
     "employmentType": "full-time"
@@ -444,7 +457,7 @@
       null
     ],
     "postedAt": "2026-06-29T01:05:29.279Z",
-    "scrapedAt": "2026-07-16T15:16:00.972Z",
+    "scrapedAt": "2026-07-16T22:26:58.456Z",
     "description": "Join the team redefining how the world experiences design. Hey, g'day, mabuhay, kia ora, 你好, hallo, vítejte! Thanks for stopping by. We know job hunting can be a little time consuming and you're proba",
     "region": "ww",
     "employmentType": "full-time"
@@ -461,7 +474,7 @@
       "Product House"
     ],
     "postedAt": "2026-06-28T09:54:17-04:00",
-    "scrapedAt": "2026-07-16T15:16:56.807Z",
+    "scrapedAt": "2026-07-16T22:27:30.855Z",
     "description": "(Part-time position - ~92 hours per month) At Bringg, we're on a mission to transform last-mile delivery into a powerful driver of growth, loyalty, and operational excellence. As an AI-powered SaaS pl",
     "region": "ww",
     "employmentType": "full-time"
@@ -478,7 +491,7 @@
       "Design"
     ],
     "postedAt": "2026-06-26T12:16:28-04:00",
-    "scrapedAt": "2026-07-16T15:16:35.502Z",
+    "scrapedAt": "2026-07-16T22:27:23.474Z",
     "description": "Reimagine the infrastructure of cancer care within a community that values integrity, inspires growth, and is uniquely positioned to create a more modern, connected oncology ecosystem. We’re looking f",
     "region": "ww",
     "employmentType": "full-time"
@@ -495,7 +508,7 @@
       "Growth Marketing & Community"
     ],
     "postedAt": "2026-06-26T13:12:41.469Z",
-    "scrapedAt": "2026-07-16T15:17:22.310Z",
+    "scrapedAt": "2026-07-16T22:28:15.758Z",
     "description": "About Plume:\n\nPlume is a passion-fueled, mission-driven company that is trans-founded with a vision to transform healthcare for every trans life. We hope to make gender-affirming hormone therapy easil",
     "region": "ww",
     "employmentType": "full-time"
@@ -512,7 +525,7 @@
       "Creative"
     ],
     "postedAt": "2026-06-25T13:57:07-04:00",
-    "scrapedAt": "2026-07-16T15:18:49.664Z",
+    "scrapedAt": "2026-07-16T22:28:40.147Z",
     "description": "Landor is looking for a 3D Design Intern to join our Cincinnati studio. Could this be you? We are Landor, part of WPP World-leading brand experts, underpinned by the most expansive strategic &amp; cre",
     "region": "ww",
     "employmentType": "full-time"
@@ -529,7 +542,7 @@
       "Creative"
     ],
     "postedAt": "2026-06-25T13:57:07-04:00",
-    "scrapedAt": "2026-07-16T15:18:49.667Z",
+    "scrapedAt": "2026-07-16T22:28:40.150Z",
     "description": "Do you think in systems rather than individual screens? Do you love turning complex requirements into clear structures, reusable patterns and compelling experiences? Then this role could be the perfec",
     "region": "ww",
     "employmentType": "full-time"
@@ -546,7 +559,7 @@
       "Visual Design"
     ],
     "postedAt": "2026-06-24T16:44:17-04:00",
-    "scrapedAt": "2026-07-16T15:18:28.794Z",
+    "scrapedAt": "2026-07-16T22:28:03.470Z",
     "description": "Design Leader to be based in UAE ———— About R/GA R/GA is a creative innovation company for the intelligence age. We harness design and technology to create more valuable experiences for people and bra",
     "region": "ww",
     "employmentType": "full-time"
@@ -563,7 +576,7 @@
       "Corporate Marketing"
     ],
     "postedAt": "2026-06-24T16:06:28-04:00",
-    "scrapedAt": "2026-07-16T15:16:20.246Z",
+    "scrapedAt": "2026-07-16T22:27:07.389Z",
     "description": "Who we are Samsara (NYSE: IOT) is the pioneer of the Connected Operations™ Cloud, which is a platform that enables organizations that depend on physical operations to harness Internet of Things (IoT) ",
     "region": "ww",
     "employmentType": "full-time"
@@ -581,7 +594,7 @@
       "Engineering R&D"
     ],
     "postedAt": "2026-06-23T13:47:52.387Z",
-    "scrapedAt": "2026-07-16T15:17:08.855Z",
+    "scrapedAt": "2026-07-16T22:28:02.093Z",
     "description": "Sonatype is the software supply chain security company. We provide the world’s best end-to-end software supply chain security solution, combining the only proactive protection against malicious open s",
     "region": "ww",
     "employmentType": "full-time"
@@ -598,25 +611,8 @@
       "Design "
     ],
     "postedAt": "2026-06-22T17:13:15-04:00",
-    "scrapedAt": "2026-07-16T15:17:41.148Z",
+    "scrapedAt": "2026-07-16T22:27:48.216Z",
     "description": "About Figure Figure (NASDAQ: FIGR) is transforming capital markets through blockchain. We’re proving that blockchain isn’t just theory - it’s powering real products used by hundreds of thousands of co",
-    "region": "ww",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_504lcj",
-    "title": "Senior UX Designer",
-    "company": "DEPT®",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=dept.com&sz=128",
-    "category": "creative",
-    "url": "https://job-boards.greenhouse.io/dept/jobs/8020366",
-    "source": "greenhouse",
-    "tags": [
-      "UX"
-    ],
-    "postedAt": "2026-06-22T07:21:17-04:00",
-    "scrapedAt": "2026-07-16T15:18:16.552Z",
-    "description": "Senior UX Designer Basel, hybrid DEPT® is a Growth Invention company built to help the world’s most ambitious brands grow faster. Operating at the intersection of technology and marketing, our 4,000+ ",
     "region": "ww",
     "employmentType": "full-time"
   }
