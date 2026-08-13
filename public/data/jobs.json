@@ -1,5 +1,47 @@
 [
   {
+    "id": "lever_p7mwn7",
+    "title": "Video Editor",
+    "company": "Nitra",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=nitra.com&sz=128",
+    "category": "creative",
+    "url": "https://jobs.lever.co/nitra/152cc5c8-f8b4-4a8e-b251-a74e995c804d",
+    "source": "lever",
+    "tags": [
+      "Marketing"
+    ],
+    "postedAt": "2026-08-13T07:52:02.078Z",
+    "scrapedAt": "2026-08-13T08:58:08.972Z",
+    "region": "ww",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "himalayas_t6hi0r",
+    "title": "Senior Motion Designer",
+    "company": "The Multiple",
+    "companyLogo": "https://cdn-images.himalayas.app/kjngfwjwjdwod2sce3t6i7zn37e8",
+    "category": "creative",
+    "url": "https://himalayas.app/companies/the-multiple/jobs/senior-motion-designer",
+    "source": "himalayas",
+    "tags": [
+      "Motion-Designer",
+      "Motion-Design",
+      "Social-Media-Creative",
+      "Video-Editor",
+      "Content-Creator",
+      "Creative-Designer",
+      "Senior-Motion-Designer",
+      "Senior-Motion-Graphics-Designer",
+      "Senior-Animation-Designer",
+      "Senior-Video-Editor-Motion-Designer"
+    ],
+    "postedAt": "2026-08-13T01:46:59.000Z",
+    "scrapedAt": "2026-08-13T08:59:06.291Z",
+    "description": "Who are we? Welcome to Multiple (), your go-to iGaming service provider.",
+    "region": "ww",
+    "employmentType": "Full Time"
+  },
+  {
     "id": "greenhouse_g28c2j",
     "title": "Sr UX Writer",
     "company": "Nintendo",
@@ -11,38 +53,10 @@
       "8570 - Consumer Service"
     ],
     "postedAt": "2026-08-12T16:54:10-04:00",
-    "scrapedAt": "2026-08-12T22:09:50.607Z",
+    "scrapedAt": "2026-08-13T08:56:46.793Z",
     "description": "Nintendo of America About Nintendo of America : From the launch of the Nintendo Entertainment System ™ more than 30 years ago, Nintendo’s mission has been to create smiles through unique entertainment",
     "region": "ww",
     "employmentType": "full-time"
-  },
-  {
-    "id": "himalayas_6l1hpe",
-    "title": "Senior UX Researcher (100% Remote Worldwide)",
-    "company": "Tether Operations Limited",
-    "companyLogo": "https://cdn-images.himalayas.app/zel05qtfpctrwz9bbjs7cx799p6j",
-    "category": "creative",
-    "url": "https://himalayas.app/companies/tether-operations-limited/jobs/senior-ux-researcher-100-remote-worldwide",
-    "source": "himalayas",
-    "tags": [
-      "UX-Research",
-      "UX-Researcher",
-      "Product-Research",
-      "Consumer-Research",
-      "Developer-Experience",
-      "Senior-UX-Researcher",
-      "Lead-UX-Researcher",
-      "Senior-User-Experience-Research-Manager",
-      "Senior-User-Researcher",
-      "UX-Research-Lead",
-      "Senior-Design-Researcher",
-      "Senior-Product-Researcher"
-    ],
-    "postedAt": "2026-08-12T20:30:16.000Z",
-    "scrapedAt": "2026-08-12T22:10:19.084Z",
-    "description": "Join Tether and Shape the Future of Digital Finance At Tether, we’re not just building products, we’re pioneering a global financial revolution.",
-    "region": "ww",
-    "employmentType": "Full Time"
   },
   {
     "id": "greenhouse_h9hfyi",
@@ -56,7 +70,7 @@
       "NAM Engineering"
     ],
     "postedAt": "2026-08-12T14:48:03-04:00",
-    "scrapedAt": "2026-08-12T22:09:18.270Z",
+    "scrapedAt": "2026-08-13T08:56:23.740Z",
     "description": "Londrina, Brasil - Híbrido Na Platform Science, trabalhamos para conectar tudo que se move. Fundada em 2015, somos uma plataforma de IoT aberta que faz parcerias com frotas inovadoras, desenvolvedores",
     "region": "ww",
     "employmentType": "full-time"
@@ -73,7 +87,7 @@
       "370 - Product Design"
     ],
     "postedAt": "2026-08-12T14:05:25-04:00",
-    "scrapedAt": "2026-08-12T22:09:37.673Z",
+    "scrapedAt": "2026-08-13T08:56:35.072Z",
     "description": "Hover helps people design, improve, and protect the properties they love. With proprietary AI built on over a decade of real property data, Hover answers age-old questions like “What will it look like",
     "region": "ww",
     "employmentType": "full-time"
@@ -90,7 +104,7 @@
       "Experience Design (XD)"
     ],
     "postedAt": "2026-08-12T12:59:42-04:00",
-    "scrapedAt": "2026-08-12T22:09:52.004Z",
+    "scrapedAt": "2026-08-13T08:56:48.287Z",
     "description": "ABOUT WONGDOODY We are a Human Experience Company. Human experience is not just what we do, it’s who we are — a highly collaborative collection of global experts building experiences that can help tra",
     "region": "ww",
     "employmentType": "full-time"
@@ -107,7 +121,7 @@
       "8811 Product Design"
     ],
     "postedAt": "2026-08-12T12:56:27-04:00",
-    "scrapedAt": "2026-08-12T22:07:21.626Z",
+    "scrapedAt": "2026-08-13T08:55:41.789Z",
     "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept pay",
     "region": "ww",
     "employmentType": "full-time"
@@ -124,7 +138,7 @@
       "Product Management"
     ],
     "postedAt": "2026-08-12T12:50:54-04:00",
-    "scrapedAt": "2026-08-12T22:08:55.965Z",
+    "scrapedAt": "2026-08-13T08:56:07.271Z",
     "description": "Maven Clinic is the world's largest virtual clinic for women and families on a mission to make healthcare work for all of us. Through Maven Enterprise, the company partners with more than 2,300 employ",
     "region": "ww",
     "employmentType": "full-time"
@@ -141,7 +155,7 @@
       "Brand Design"
     ],
     "postedAt": "2026-08-11T11:44:18-04:00",
-    "scrapedAt": "2026-08-12T22:08:38.842Z",
+    "scrapedAt": "2026-08-13T08:56:02.756Z",
     "description": "About Skyscanner Everyone loves travelling, but planning is not without its challenges ✈️. That's why we've spent 20 years building tools that turn travel-planning chaos into a breeze. Today, around 1",
     "region": "ww",
     "employmentType": "full-time"
@@ -158,7 +172,7 @@
       "Design"
     ],
     "postedAt": "2026-08-10T18:02:53-04:00",
-    "scrapedAt": "2026-08-12T22:09:14.618Z",
+    "scrapedAt": "2026-08-13T08:56:19.681Z",
     "description": "About Co-Star Someone downloads Co–Star every 5 seconds. In the five years since we launched, 25% of young people 18-25 in the US have downloaded the app. Big Sean has rapped about us, Ariana Grande &",
     "region": "ww",
     "employmentType": "full-time"
@@ -175,7 +189,7 @@
       "Engenharia & Tecnologia"
     ],
     "postedAt": "2026-08-10T17:42:56-04:00",
-    "scrapedAt": "2026-08-12T22:09:49.970Z",
+    "scrapedAt": "2026-08-13T08:56:46.178Z",
     "description": "Sobre a Stone: Somos muito mais do que uma empresa de maquininhas! A Stone é uma empresa de tecnologia e serviços financeiros focada no(a) cliente. Nascemos com o propósito de ser protagonistas na tra",
     "region": "ww",
     "employmentType": "full-time"
@@ -192,7 +206,7 @@
       "Engenharia & Tecnologia"
     ],
     "postedAt": "2026-08-10T17:39:02-04:00",
-    "scrapedAt": "2026-08-12T22:09:49.969Z",
+    "scrapedAt": "2026-08-13T08:56:46.178Z",
     "description": "Sobre a Stone: Somos muito mais do que uma empresa de maquininhas! A Stone é uma empresa de tecnologia e serviços financeiros focada no(a) cliente. Nascemos com o propósito de ser protagonistas na tra",
     "region": "ww",
     "employmentType": "full-time"
@@ -209,7 +223,7 @@
       "Engenharia & Tecnologia"
     ],
     "postedAt": "2026-08-10T13:11:52-04:00",
-    "scrapedAt": "2026-08-12T22:09:49.968Z",
+    "scrapedAt": "2026-08-13T08:56:46.177Z",
     "description": "Sobre a Stone: Somos muito mais do que uma empresa de maquininhas! A Stone é uma empresa de tecnologia e serviços financeiros focada no(a) cliente. Nascemos com o propósito de ser protagonistas na tra",
     "region": "ww",
     "employmentType": "full-time"
@@ -226,7 +240,7 @@
       "Design"
     ],
     "postedAt": "2026-08-08T16:29:51-04:00",
-    "scrapedAt": "2026-08-12T22:09:55.064Z",
+    "scrapedAt": "2026-08-13T08:56:51.360Z",
     "description": "Flex is a growth-stage, NYC headquartered FinTech company that is creating the best rent payment experience. It’s hard to believe that it’s 2026 and paying rent on time is expensive, inflexible, and d",
     "region": "ww",
     "employmentType": "full-time"
@@ -243,7 +257,7 @@
       "Product & Engineering"
     ],
     "postedAt": "2026-08-08T08:32:52-04:00",
-    "scrapedAt": "2026-08-12T22:09:57.989Z",
+    "scrapedAt": "2026-08-13T08:56:54.214Z",
     "description": "About Carrot: Carrot is the leading global fertility and family care platform, built on intelligent care orchestration: the right clinical guidance, at the right moment, in the context of each member’",
     "region": "ww",
     "employmentType": "full-time"
@@ -261,7 +275,7 @@
       "Product"
     ],
     "postedAt": "2026-08-07T10:29:54.295Z",
-    "scrapedAt": "2026-08-12T22:08:53.951Z",
+    "scrapedAt": "2026-08-13T08:57:41.734Z",
     "description": "We're all about helping brands turn ideas into impact.\n\nFrontify’s brand platform transforms how teams organize digital assets, collaborate on projects, and create engaging campaigns. Our people empow",
     "region": "ww",
     "employmentType": "full-time"
@@ -278,7 +292,7 @@
       "Engenharia & Tecnologia"
     ],
     "postedAt": "2026-08-06T16:55:06-04:00",
-    "scrapedAt": "2026-08-12T22:09:49.989Z",
+    "scrapedAt": "2026-08-13T08:56:46.197Z",
     "description": "Sobre a Stone: Somos muito mais do que uma empresa de maquininhas! A Stone é uma empresa de tecnologia e serviços financeiros focada no(a) cliente. Nascemos com o propósito de ser protagonistas na tra",
     "region": "ww",
     "employmentType": "full-time"
@@ -295,7 +309,7 @@
       "UX"
     ],
     "postedAt": "2026-08-06T11:14:24-04:00",
-    "scrapedAt": "2026-08-12T22:09:37.045Z",
+    "scrapedAt": "2026-08-13T08:56:34.431Z",
     "description": "Senior UX Designer Basel, hybrid DEPT® is a Growth Invention company built to help the world’s most ambitious brands grow faster. Operating at the intersection of technology and marketing, our 4,000+ ",
     "region": "ww",
     "employmentType": "full-time"
@@ -312,7 +326,7 @@
       "Product Design"
     ],
     "postedAt": "2026-08-06T09:03:53-04:00",
-    "scrapedAt": "2026-08-12T22:09:59.167Z",
+    "scrapedAt": "2026-08-13T08:56:55.885Z",
     "description": "About Us Circle is building the world’s leading all-in-one platform for online communities. We make it possible for creators, coaches, educators, and businesses to bring together their audience with e",
     "region": "ww",
     "employmentType": "full-time"
@@ -329,7 +343,7 @@
       "Product Design"
     ],
     "postedAt": "2026-08-06T09:03:26-04:00",
-    "scrapedAt": "2026-08-12T22:09:59.167Z",
+    "scrapedAt": "2026-08-13T08:56:55.885Z",
     "description": "About Us Circle is building the world’s leading all-in-one platform for online communities. We make it possible for creators, coaches, educators, and businesses to bring together their audience with e",
     "region": "ww",
     "employmentType": "full-time"
@@ -346,7 +360,7 @@
       "User Experience"
     ],
     "postedAt": "2026-08-06T06:15:50-04:00",
-    "scrapedAt": "2026-08-12T22:08:07.792Z",
+    "scrapedAt": "2026-08-13T08:55:52.078Z",
     "description": "At AKQA (part of WPP), our Experience Design discipline sets the standard for innovation, creativity, and craft. As a Lead Experience Designer, you’ll imagine what’s next and help make what matters. Y",
     "region": "ww",
     "employmentType": "full-time"
@@ -363,7 +377,7 @@
       "Product & Technology"
     ],
     "postedAt": "2026-08-05T19:24:21-04:00",
-    "scrapedAt": "2026-08-12T22:08:06.269Z",
+    "scrapedAt": "2026-08-13T08:55:50.359Z",
     "description": "Summary The Wikimedia Foundation is looking for a Lead UX Researcher to join the UX Research team, where you’ll lead in providing the insights decision-makers need to make informed, human-centered dec",
     "region": "ww",
     "employmentType": "full-time"
@@ -380,7 +394,7 @@
       "Design"
     ],
     "postedAt": "2026-08-05T18:20:03-04:00",
-    "scrapedAt": "2026-08-12T22:08:07.767Z",
+    "scrapedAt": "2026-08-13T08:55:52.052Z",
     "description": "Location: Remote (U.S.) Type: Contract, 1099 (long-term fractional, with potential for full-time conversion based on business need) As Cro Metrics continues to scale its integrated growth marketing se",
     "region": "ww",
     "employmentType": "full-time"
@@ -397,7 +411,7 @@
       "Design"
     ],
     "postedAt": "2026-08-05T18:19:51-04:00",
-    "scrapedAt": "2026-08-12T22:08:07.767Z",
+    "scrapedAt": "2026-08-13T08:55:52.051Z",
     "description": "Location: Remote (U.S.) Type: Contract, 1099 (long-term fractional, with potential for full-time conversion based on business need) As Cro Metrics continues to scale its integrated growth marketing se",
     "region": "ww",
     "employmentType": "full-time"
@@ -414,7 +428,7 @@
       "Jito Foundation"
     ],
     "postedAt": "2026-08-04T20:39:25.274Z",
-    "scrapedAt": "2026-08-12T22:09:09.844Z",
+    "scrapedAt": "2026-08-13T08:58:13.951Z",
     "description": " \nJTX is our trading app, and it runs on the fastest market infrastructure on Solana, which we also built. It’s live today, self-custodial, and native mobile apps are in development.\nWe’re looking for",
     "region": "ww",
     "employmentType": "full-time"
@@ -431,7 +445,7 @@
       "Mapping"
     ],
     "postedAt": "2026-08-04T13:06:30-04:00",
-    "scrapedAt": "2026-08-12T22:09:39.782Z",
+    "scrapedAt": "2026-08-13T08:56:37.797Z",
     "description": "ARE YOU READY TO TAKE YOUR CAREER TO NEW HEIGHTS? ARE YOU SEEKING A NEW CHALLENGE IN A DYNAMIC SECTOR? This is a very exciting and highly innovative time here at Outside. OUR TRUE NORTH:Outside Intera",
     "region": "ww",
     "employmentType": "full-time"
@@ -449,7 +463,7 @@
       "Business Units"
     ],
     "postedAt": "2026-08-04T15:31:41.708Z",
-    "scrapedAt": "2026-08-12T22:07:04.527Z",
+    "scrapedAt": "2026-08-13T08:55:39.962Z",
     "description": "Superside is hiring a Director of Creative Strategy to lead and evolve our Strategy function. You'll shape how strategy drives creative excellence across the business, leading a team of strategists wh",
     "region": "ww",
     "employmentType": "employee"
@@ -467,10 +481,44 @@
       "Business Units"
     ],
     "postedAt": "2026-08-04T15:28:31.957Z",
-    "scrapedAt": "2026-08-12T22:07:04.528Z",
+    "scrapedAt": "2026-08-13T08:55:39.963Z",
     "description": "Superside is hiring a Senior Creative Strategist to turn insights into breakthrough creative work. You'll partner with enterprise customers and multidisciplinary creative teams to develop insight-driv",
     "region": "ww",
     "employmentType": "employee"
+  },
+  {
+    "id": "greenhouse_9gnz8",
+    "title": "Motion Designer",
+    "company": "Valtech",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=valtech.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.eu.greenhouse.io/valtech/jobs/4940175101",
+    "source": "greenhouse",
+    "tags": [
+      "Design & Experience"
+    ],
+    "postedAt": "2026-08-04T11:09:53-04:00",
+    "scrapedAt": "2026-08-13T08:56:48.419Z",
+    "description": "The role As a Lead Motion Designer / Editor , you will be a hands-on creative leader responsible for defining and delivering motion design, editorial, and VFX work. You will use motion as a storytelli",
+    "region": "ww",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_hw0r3",
+    "title": "Senior UI/UX Designer",
+    "company": "Ubiquiti",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=ui.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/ubiquiti/jobs/4163852009",
+    "source": "greenhouse",
+    "tags": [
+      "400-Research and Development"
+    ],
+    "postedAt": "2026-08-04T05:51:42-04:00",
+    "scrapedAt": "2026-08-13T08:56:26.205Z",
+    "description": "About Ubiquiti At Ubiquiti Inc., we create technology platforms for Businesses, Smart Homes, and Internet Service Providers, driven by our goal to connect everyone, everywhere. To date, Ubiquiti has s",
+    "region": "ww",
+    "employmentType": "full-time"
   },
   {
     "id": "greenhouse_nyycu6",
@@ -484,7 +532,7 @@
       "Product"
     ],
     "postedAt": "2026-08-03T17:07:06-04:00",
-    "scrapedAt": "2026-08-12T22:09:43.478Z",
+    "scrapedAt": "2026-08-13T08:56:39.021Z",
     "description": "About SmartAsset: SmartAsset is an online destination for consumer-focused financial information, educational content, personalized calculators, and tools. Our mission is to help people make smart fin",
     "region": "ww",
     "employmentType": "full-time"
@@ -499,7 +547,7 @@
     "source": "hn-whoishiring",
     "tags": [],
     "postedAt": "2026-08-03T20:21:05.000Z",
-    "scrapedAt": "2026-08-12T22:10:21.335Z",
+    "scrapedAt": "2026-08-13T08:59:08.347Z",
     "description": "Railway | Infra Eng-Storage, Product Eng (full-stack), Infra Eng-Observability, Brand Designer - Web, Infra Eng-General| REMOTE (Worldwide) | https://railway.com/careers Do you feel scared and alone w",
     "region": "ww",
     "employmentType": "Full-time"
@@ -516,7 +564,7 @@
       "400-Research and Development"
     ],
     "postedAt": "2026-07-31T13:20:17-04:00",
-    "scrapedAt": "2026-08-12T22:09:21.084Z",
+    "scrapedAt": "2026-08-13T08:56:26.206Z",
     "description": "About Ubiquiti At Ubiquiti Inc., we create technology platforms for Businesses, Smart Homes, and Internet Service Providers, driven by our goal to connect everyone, everywhere. To date, Ubiquiti has s",
     "region": "ww",
     "employmentType": "full-time"
@@ -533,7 +581,7 @@
       "UX"
     ],
     "postedAt": "2026-07-31T07:38:38-04:00",
-    "scrapedAt": "2026-08-12T22:09:36.994Z",
+    "scrapedAt": "2026-08-13T08:56:34.382Z",
     "description": "Associate Director Experience Design Zürich, Hybrid DEPT® is a Growth Invention company built to help the world’s most ambitious brands grow faster. Operating at the intersection of technology and mar",
     "region": "ww",
     "employmentType": "full-time"
@@ -551,7 +599,7 @@
       "Design"
     ],
     "postedAt": "2026-07-31T08:36:19.478Z",
-    "scrapedAt": "2026-08-12T22:07:08.012Z",
+    "scrapedAt": "2026-08-13T08:55:43.372Z",
     "description": "Who We Are Hi, we're DuckDuckGo, the online protection company and remote-first team of 300+ on a mission to raise the standard of trust online. Founded in 2008 and profitable since 2014, annual reven",
     "region": "ww",
     "employmentType": "full-time"
@@ -568,7 +616,7 @@
       "Marketing & Communications"
     ],
     "postedAt": "2026-07-30T16:25:40-04:00",
-    "scrapedAt": "2026-08-12T22:09:12.765Z",
+    "scrapedAt": "2026-08-13T08:56:17.751Z",
     "description": "SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologi",
     "region": "ww",
     "employmentType": "full-time"
@@ -585,7 +633,7 @@
       "Marketing"
     ],
     "postedAt": "2026-07-29T18:30:19-04:00",
-    "scrapedAt": "2026-08-12T22:09:55.066Z",
+    "scrapedAt": "2026-08-13T08:56:51.362Z",
     "description": "Flex is a growth-stage, NYC headquartered FinTech company that is creating the best rent payment experience. It’s hard to believe that it’s 2026 and paying rent on time is expensive, inflexible, and d",
     "region": "ww",
     "employmentType": "full-time"
@@ -602,7 +650,7 @@
       "Growth Design"
     ],
     "postedAt": "2026-07-29T09:53:58-04:00",
-    "scrapedAt": "2026-08-12T22:09:59.167Z",
+    "scrapedAt": "2026-08-13T08:56:55.886Z",
     "description": "About Us Circle is building the world’s leading all-in-one platform for online communities. We make it possible for creators, coaches, educators, and businesses to bring together their audience with e",
     "region": "ww",
     "employmentType": "full-time"
@@ -620,7 +668,7 @@
       "Engineering"
     ],
     "postedAt": "2026-07-29T07:22:16.036Z",
-    "scrapedAt": "2026-08-12T22:07:31.567Z",
+    "scrapedAt": "2026-08-13T08:56:07.029Z",
     "description": "About the company Trust Wallet is the leading non-custodial cryptocurrency wallet, trusted by over 200 million people worldwide to securely manage and grow their digital assets. Our vision is to give ",
     "region": "ww",
     "employmentType": "full-time"
@@ -638,7 +686,7 @@
       "Business Units"
     ],
     "postedAt": "2026-07-27T20:29:21.217Z",
-    "scrapedAt": "2026-08-12T22:07:04.528Z",
+    "scrapedAt": "2026-08-13T08:55:39.963Z",
     "description": "Superside is hiring a Creative Strategist, Performance Marketing to lead the strategic thinking behind our clients' highest-volume, highest-velocity creative programs. You'll sit at the intersection o",
     "region": "ww",
     "employmentType": "contract"
@@ -655,7 +703,7 @@
       "Marketing & Communications"
     ],
     "postedAt": "2026-07-24T17:17:59-04:00",
-    "scrapedAt": "2026-08-12T22:09:12.673Z",
+    "scrapedAt": "2026-08-13T08:56:17.665Z",
     "description": "SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologi",
     "region": "ww",
     "employmentType": "full-time"
@@ -672,7 +720,7 @@
       "Product"
     ],
     "postedAt": "2026-07-23T21:46:16-04:00",
-    "scrapedAt": "2026-08-12T22:09:59.172Z",
+    "scrapedAt": "2026-08-13T08:56:55.907Z",
     "description": "WHO WE ARE Nova Credit is the industry’s leading cash flow intelligence platform, enabling businesses to unlock the power of cash flow data in how they operate. The company leverages its industry-lead",
     "region": "ww",
     "employmentType": "full-time"
@@ -690,7 +738,7 @@
       "Marketing"
     ],
     "postedAt": "2026-07-22T15:29:56.556Z",
-    "scrapedAt": "2026-08-12T22:07:12.372Z",
+    "scrapedAt": "2026-08-13T08:55:48.170Z",
     "description": "About Injective Injective is trailblazing a new era of Web3-enabled finance. As a Layer‑1 blockchain built exclusively for financial applications, Injective is one of the industry’s fastest‑growing ec",
     "region": "ww",
     "employmentType": "full-time"
@@ -707,7 +755,7 @@
       "Design"
     ],
     "postedAt": "2026-07-22T06:34:14-04:00",
-    "scrapedAt": "2026-08-12T22:08:07.806Z",
+    "scrapedAt": "2026-08-13T08:55:52.064Z",
     "description": "Work from anywhere, impact everywhere Diversity is at the heart of who we are at Xapo Bank. We’re a fully distributed team of over 160 Xapiens that work remotely from 50+ countries around the world. O",
     "region": "ww",
     "employmentType": "full-time"
@@ -724,7 +772,7 @@
       "Design"
     ],
     "postedAt": "2026-07-22T05:21:21-04:00",
-    "scrapedAt": "2026-08-12T22:08:07.808Z",
+    "scrapedAt": "2026-08-13T08:55:52.065Z",
     "description": "Work from anywhere, impact everywhere Diversity is at the heart of who we are at Xapo Bank. We’re a fully distributed team of over 160 Xapiens that work remotely from 50+ countries around the world. O",
     "region": "ww",
     "employmentType": "full-time"
@@ -742,7 +790,7 @@
       "Product"
     ],
     "postedAt": "2026-07-20T22:39:38.311Z",
-    "scrapedAt": "2026-08-12T22:07:14.049Z",
+    "scrapedAt": "2026-08-13T08:55:49.858Z",
     "description": "About Tradeify Tradeify is a professional-grade futures trading platform providing access to commodities, equity indices, currencies, and interest rate products. We equip traders with the execution to",
     "region": "ww",
     "employmentType": "full-time"
@@ -760,7 +808,7 @@
       "Product"
     ],
     "postedAt": "2026-07-20T07:49:09.755Z",
-    "scrapedAt": "2026-08-12T22:09:25.904Z",
+    "scrapedAt": "2026-08-13T08:58:30.688Z",
     "description": "About the Company:\nNetomi is the leading agentic AI platform for enterprise customer experience. We work with the largest global brands like Delta Airlines, MetLife, MGM, United, and others to enable ",
     "region": "ww",
     "employmentType": "full-time"
@@ -777,7 +825,7 @@
       "Creative"
     ],
     "postedAt": "2026-07-17T06:05:18-04:00",
-    "scrapedAt": "2026-08-12T22:10:11.435Z",
+    "scrapedAt": "2026-08-13T08:57:01.856Z",
     "description": "Do you think in systems rather than individual screens? Do you love turning complex requirements into clear structures, reusable patterns and compelling experiences? Then this role could be the perfec",
     "region": "ww",
     "employmentType": "full-time"
