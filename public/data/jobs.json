@@ -1,5 +1,23 @@
 [
   {
+    "id": "lever_cz6oax",
+    "title": "Senior/Lead Product Design Contractor",
+    "company": "AllTrails",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=alltrails.com&sz=128",
+    "category": "creative",
+    "url": "https://jobs.lever.co/alltrails/716655e5-d86a-4e33-a76b-dee3acf4638e",
+    "source": "lever",
+    "tags": [
+      "Design",
+      "Product Design"
+    ],
+    "postedAt": "2026-09-16T00:26:42.115Z",
+    "scrapedAt": "2026-09-16T12:52:54.369Z",
+    "description": "About AllTrails \nAllTrails is the app for exploring the outdoors. We help people spend more time outside by connecting them to their next adventure. AllTrails is home to the world’s largest outdoor co",
+    "region": "ww",
+    "employmentType": "contract"
+  },
+  {
     "id": "greenhouse_1ewsdf",
     "title": "Core Design Engineer",
     "company": "Oklo",
@@ -11,25 +29,8 @@
       "Reactor Engineering"
     ],
     "postedAt": "2026-09-14T11:26:58-04:00",
-    "scrapedAt": "2026-09-15T23:34:27.998Z",
+    "scrapedAt": "2026-09-16T12:51:51.308Z",
     "description": "Thanks for your interest in Oklo! We are searching for a Core Design Engineer to join our engineering team. Position Description Core Design Engineers at Oklo are responsible for designing performant ",
-    "region": "ww",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_699hoa",
-    "title": "Senior Quantitative UX Researcher",
-    "company": "Trustpilot",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=trustpilot.com&sz=128",
-    "category": "creative",
-    "url": "https://corporate.trustpilot.com/careers/job/8200593?gh_jid=8200593",
-    "source": "greenhouse",
-    "tags": [
-      "Design & Research"
-    ],
-    "postedAt": "2026-09-14T06:51:58-04:00",
-    "scrapedAt": "2026-09-15T23:33:42.537Z",
-    "description": "At Trustpilot, we're on an incredible journey. We're a profitable, high-growth FTSE-250 company with a big vision: to become the universal symbol of trust. We run the world's largest open customer rev",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -45,7 +46,7 @@
       "Product Design"
     ],
     "postedAt": "2026-09-14T05:13:34-04:00",
-    "scrapedAt": "2026-09-15T23:34:43.726Z",
+    "scrapedAt": "2026-09-16T12:52:12.510Z",
     "description": "Ebury helps ambitious businesses unlock global growth, and we take the same approach with our people. We encourage innovation and movement, collaboration and problem-solving, and foster an environment",
     "region": "ww",
     "employmentType": "full-time"
@@ -62,7 +63,7 @@
       "Product Design"
     ],
     "postedAt": "2026-09-14T05:12:51-04:00",
-    "scrapedAt": "2026-09-15T23:34:43.739Z",
+    "scrapedAt": "2026-09-16T12:52:12.524Z",
     "description": "Ebury helps ambitious businesses unlock global growth, and we take the same approach with our people. We encourage innovation and movement, collaboration and problem-solving, and foster an environment",
     "region": "ww",
     "employmentType": "full-time"
@@ -79,7 +80,7 @@
       "Advancement"
     ],
     "postedAt": "2026-09-11T14:33:07-04:00",
-    "scrapedAt": "2026-09-15T23:33:39.503Z",
+    "scrapedAt": "2026-09-16T12:51:04.303Z",
     "description": "The Wikimedia Foundation is seeking a Lead Learning Experience Designer to create innovative, engaging, and accessible learning experiences that strengthen the capacity of volunteers and communities a",
     "region": "ww",
     "employmentType": "full-time"
@@ -96,7 +97,7 @@
       "8811 Product Design"
     ],
     "postedAt": "2026-09-10T13:11:58-04:00",
-    "scrapedAt": "2026-09-15T23:33:30.115Z",
+    "scrapedAt": "2026-09-16T12:50:53.627Z",
     "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept pay",
     "region": "ww",
     "employmentType": "full-time"
@@ -113,8 +114,26 @@
       "8812 UX Research"
     ],
     "postedAt": "2026-09-10T13:11:58-04:00",
-    "scrapedAt": "2026-09-15T23:33:30.168Z",
+    "scrapedAt": "2026-09-16T12:50:53.674Z",
     "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies - from the world’s largest enterprises to the most ambitious startups - use Stripe to accept",
+    "region": "ww",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "lever_q5se74",
+    "title": "UX/UI Designer M/W/X",
+    "company": "Veepee",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=veepee.com&sz=128",
+    "category": "creative",
+    "url": "https://jobs.lever.co/veepee/4a8a7401-9010-435a-a04d-6aaa2b110092",
+    "source": "lever",
+    "tags": [
+      "UX/UI designer",
+      "Marketing"
+    ],
+    "postedAt": "2026-09-10T14:05:27.439Z",
+    "scrapedAt": "2026-09-16T12:53:32.342Z",
+    "description": "Pioneer of online flash sales since 2001 and key player in European e-commerce, Veepee collaborates with over 7,000 brands to offer highly discounted products available for a limited time. Operating a",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -131,7 +150,7 @@
       "Product"
     ],
     "postedAt": "2026-09-08T17:12:34.699Z",
-    "scrapedAt": "2026-09-15T23:34:09.287Z",
+    "scrapedAt": "2026-09-16T12:51:32.278Z",
     "description": "Estamos innovando la logística y esto lo hemos logrado gracias a un equipo de personas visionarias, con ganas de crecer y cambiar el mundo . En Skydropx encontrarás un espacio para desarrollar tu carr",
     "region": "ww",
     "employmentType": "full-time"
@@ -148,7 +167,7 @@
       "UX"
     ],
     "postedAt": "2026-09-07T07:25:27-04:00",
-    "scrapedAt": "2026-09-15T23:34:41.588Z",
+    "scrapedAt": "2026-09-16T12:52:10.701Z",
     "description": "Senior UX Designer (Focus on Research) Zagreb, Hybrid JOB PURPOSE As a User Researcher , you help product teams make confident, customer-centered decisions by uncovering real user needs, motivations, ",
     "region": "ww",
     "employmentType": "full-time"
@@ -165,24 +184,7 @@
       "Shared Services"
     ],
     "postedAt": "2026-09-07",
-    "scrapedAt": "2026-09-15T23:33:27.778Z",
-    "region": "ww",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_tv64wd",
-    "title": "Lead Experience Designer",
-    "company": "AKQA",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=akqa.com&sz=128",
-    "category": "creative",
-    "url": "https://www.akqa.com/jobs/8045759/?gh_jid=8045759",
-    "source": "greenhouse",
-    "tags": [
-      "User Experience"
-    ],
-    "postedAt": "2026-09-02T12:54:55-04:00",
-    "scrapedAt": "2026-09-15T23:33:40.944Z",
-    "description": "At AKQA (part of WPP), our Experience Design discipline sets the standard for innovation, creativity, and craft. As a Lead Experience Designer, you’ll imagine what’s next and help make what matters. Y",
+    "scrapedAt": "2026-09-16T12:50:51.923Z",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -199,7 +201,7 @@
       "Design"
     ],
     "postedAt": "2026-09-02T16:48:49.966Z",
-    "scrapedAt": "2026-09-15T23:35:39.813Z",
+    "scrapedAt": "2026-09-16T12:53:12.158Z",
     "description": "We are Fantasy.\nThe creative partner behind the world’s biggest digital products, launching the next generation of intelligent experiences. For over two decades, we’ve partnered with industry leaders ",
     "region": "ww",
     "employmentType": "full-time"
@@ -216,7 +218,7 @@
       "Marketing & Communications"
     ],
     "postedAt": "2026-09-01T19:48:33-04:00",
-    "scrapedAt": "2026-09-15T23:34:27.031Z",
+    "scrapedAt": "2026-09-16T12:51:50.360Z",
     "description": "SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologi",
     "region": "ww",
     "employmentType": "full-time"
@@ -233,7 +235,7 @@
       "Marketing & Communications"
     ],
     "postedAt": "2026-09-01T19:48:33-04:00",
-    "scrapedAt": "2026-09-15T23:34:27.207Z",
+    "scrapedAt": "2026-09-16T12:51:50.538Z",
     "description": "SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologi",
     "region": "ww",
     "employmentType": "full-time"
@@ -250,7 +252,7 @@
       "Media & Entertainment"
     ],
     "postedAt": "2026-09-01T13:07:30-04:00",
-    "scrapedAt": "2026-09-15T23:34:44.576Z",
+    "scrapedAt": "2026-09-16T12:52:13.549Z",
     "description": "ARE YOU READY TO TAKE YOUR CAREER TO NEW HEIGHTS? ARE YOU SEEKING A NEW CHALLENGE IN A DYNAMIC SECTOR? This is a very exciting and highly innovative time here at Outside. OUR TRUE NORTH:Outside Intera",
     "region": "ww",
     "employmentType": "full-time"
@@ -267,7 +269,7 @@
       "Mapping"
     ],
     "postedAt": "2026-09-01T13:07:30-04:00",
-    "scrapedAt": "2026-09-15T23:34:44.577Z",
+    "scrapedAt": "2026-09-16T12:52:13.551Z",
     "description": "ARE YOU READY TO TAKE YOUR CAREER TO NEW HEIGHTS? ARE YOU SEEKING A NEW CHALLENGE IN A DYNAMIC SECTOR? This is a very exciting and highly innovative time here at Outside. OUR TRUE NORTH:Outside Intera",
     "region": "ww",
     "employmentType": "full-time"
@@ -284,7 +286,7 @@
       "Creative"
     ],
     "postedAt": "2026-09-01T12:17:19-04:00",
-    "scrapedAt": "2026-09-15T23:33:40.924Z",
+    "scrapedAt": "2026-09-16T12:51:05.638Z",
     "description": "Location: This position is remote within Colombia. *]:pointer-events-auto R6Vx5W_threadScrollVars scroll-mb-[calc(var(--scroll-root-safe-area-inset-bottom,0px)+var(--thread-response-height))] scroll-m",
     "region": "ww",
     "employmentType": "full-time"
@@ -301,26 +303,8 @@
       "Creative"
     ],
     "postedAt": "2026-09-01T12:15:40-04:00",
-    "scrapedAt": "2026-09-15T23:33:40.919Z",
+    "scrapedAt": "2026-09-16T12:51:05.633Z",
     "description": "Location: This position is remote within Colombia. About Creative. At Huge, Creative brings together designers, writers, and technologists to create meaningful digital experiences. We combine creativi",
-    "region": "ww",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "lever_l3ej64",
-    "title": "Product Designer",
-    "company": "AllTrails",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=alltrails.com&sz=128",
-    "category": "creative",
-    "url": "https://jobs.lever.co/alltrails/0a84e45b-b67b-48a6-94d4-6bdaa2746e93",
-    "source": "lever",
-    "tags": [
-      "Design",
-      "Product Design"
-    ],
-    "postedAt": "2026-09-01T15:31:52.951Z",
-    "scrapedAt": "2026-09-15T23:35:14.881Z",
-    "description": "AllTrails is the app for exploring the outdoors. We help people spend more time outside by connecting them to their next adventure. Home to the world’s largest outdoor community, with members and trai",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -337,7 +321,7 @@
       "Engineering"
     ],
     "postedAt": "2026-08-28T13:41:50.597Z",
-    "scrapedAt": "2026-09-15T23:34:04.969Z",
+    "scrapedAt": "2026-09-16T12:51:28.172Z",
     "description": "About Us Founded in the US in 2022 and now based in London, UK, Recraft is an AI tool for professional designers, illustrators, and marketers, setting a new standard for excellence in image generation",
     "region": "ww",
     "employmentType": "full-time"
@@ -354,7 +338,7 @@
       "MZLA/Thunderbird"
     ],
     "postedAt": "2026-08-27T15:53:21-04:00",
-    "scrapedAt": "2026-09-15T23:33:39.588Z",
+    "scrapedAt": "2026-09-16T12:51:04.371Z",
     "description": "Why Thunderbird? Thunderbird is one of the world’s most trusted open-source email applications, empowering more than 20 million people globally. At MZLA, the team behind Thunderbird, we build privacy-",
     "region": "ww",
     "employmentType": "full-time"
@@ -371,7 +355,7 @@
       "Design"
     ],
     "postedAt": "2026-08-26T13:28:48-04:00",
-    "scrapedAt": "2026-09-15T23:34:59.855Z",
+    "scrapedAt": "2026-09-16T12:52:44.818Z",
     "description": "Flex is a growth-stage, NYC headquartered FinTech company that is creating the best rent payment experience. It’s hard to believe that it’s 2026 and paying rent on time is expensive, inflexible, and d",
     "region": "ww",
     "employmentType": "full-time"
@@ -388,7 +372,7 @@
       "UX"
     ],
     "postedAt": "2026-08-26T09:00:52-04:00",
-    "scrapedAt": "2026-09-15T23:34:41.540Z",
+    "scrapedAt": "2026-09-16T12:52:10.653Z",
     "description": "Associate Director Experience Design Zürich, Hybrid DEPT® is a Growth Invention company built to help the world’s most ambitious brands grow faster. Operating at the intersection of technology and mar",
     "region": "ww",
     "employmentType": "full-time"
@@ -405,7 +389,7 @@
       "Experience Design"
     ],
     "postedAt": "2026-08-25T13:15:06-04:00",
-    "scrapedAt": "2026-09-15T23:34:54.556Z",
+    "scrapedAt": "2026-09-16T12:52:33.307Z",
     "description": "As a Senior Experience Designer at Code and Theory, you are crucial to evolving how users interact with digital platforms. You'll lead the creation of not just compelling deliverables but impactful so",
     "region": "ww",
     "employmentType": "full-time"
@@ -423,7 +407,7 @@
       "Design"
     ],
     "postedAt": "2026-08-24T21:11:18.865Z",
-    "scrapedAt": "2026-09-15T23:33:44.043Z",
+    "scrapedAt": "2026-09-16T12:51:07.531Z",
     "description": "Brand Designer Greptile is an AI code reviewer that catches bugs and anti-patterns in pull requests with complete context of the codebase. Hundreds of top software companies, from YC startups to big t",
     "region": "ww",
     "employmentType": "full-time"
@@ -441,7 +425,7 @@
       "Design"
     ],
     "postedAt": "2026-08-19T13:18:46.538Z",
-    "scrapedAt": "2026-09-15T23:33:31.848Z",
+    "scrapedAt": "2026-09-16T12:50:55.699Z",
     "description": "Who We Are Hi, we're DuckDuckGo, the online protection company and remote-first team of 300+ on a mission to raise the standard of trust online. Founded in 2008 and profitable since 2014, annual reven",
     "region": "ww",
     "employmentType": "full-time"
