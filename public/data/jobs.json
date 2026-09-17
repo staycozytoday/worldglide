@@ -1,56 +1,48 @@
 [
   {
-    "id": "himalayas_i6o3u5",
-    "title": "Senior Game Artist | 2D & Motion",
-    "company": "GTO Wizard",
-    "companyLogo": "https://cdn-images.himalayas.app/t02ee7ab4ifgq0wbakpj5l6g5cvs",
+    "id": "himalayas_yid7lz",
+    "title": "UI/UX Designer",
+    "company": "Digital Forms",
+    "companyLogo": "https://cdn-images.himalayas.app/ifvkut627nlxwbeunf53j9uhmk1i",
     "category": "creative",
-    "url": "https://himalayas.app/companies/gto-wizard/jobs/senior-game-artist-2d-motion",
+    "url": "https://himalayas.app/companies/digitalforms/jobs/ui-ux-designer",
     "source": "himalayas",
     "tags": [
-      "Senior-Game-Artist",
-      "2D-Artist",
-      "Motion-Graphics-Designer",
-      "Game-Artist",
-      "Mobile-Game-Development",
-      "Senior-2D-Artist",
-      "Senior-2D-Animator",
-      "Senior-Animator"
+      "UI-UX-Design",
+      "Product-Design",
+      "UX-Design",
+      "UI-Design",
+      "Design-Systems",
+      "UI-UX-Designer",
+      "UI-Designer",
+      "UX-Designer",
+      "UX-UI-Design",
+      "UI-UX-Design-Expert",
+      "UI-Visual-Designer"
     ],
-    "postedAt": "2026-09-16T22:38:36.000Z",
-    "scrapedAt": "2026-09-16T23:44:52.192Z",
-    "description": "About UsGTO Wizard is the worldwide leader in training and education for serious poker players.",
+    "salary": "PLN 10k - 24k",
+    "postedAt": "2026-09-17T06:35:17.000Z",
+    "scrapedAt": "2026-09-17T12:51:08.613Z",
+    "description": "Are you a user-obsessed, systems-minded designer who loves turning messy requirements into clear, intuitive, and scalable digital products?",
     "region": "ww",
     "employmentType": "Contractor"
   },
   {
-    "id": "himalayas_hh83g3",
-    "title": "Lead Product Designer | Mobile / Games",
-    "company": "GTO Wizard",
-    "companyLogo": "https://cdn-images.himalayas.app/t02ee7ab4ifgq0wbakpj5l6g5cvs",
+    "id": "greenhouse_mujijw",
+    "title": "Design Director Corporate Branding",
+    "company": "Landor",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=landor.com&sz=128",
     "category": "creative",
-    "url": "https://himalayas.app/companies/gto-wizard/jobs/lead-product-designer-mobile-games",
-    "source": "himalayas",
+    "url": "https://job-boards.greenhouse.io/landor/jobs/7849957",
+    "source": "greenhouse",
     "tags": [
-      "Product-Design",
-      "Mobile-Game-Design",
-      "UX-Design",
-      "Game-Design",
-      "Product-Leadership",
-      "Product-Designer",
-      "Senior-Mobile-Game-Designer",
-      "Product-Designer-(Games)",
-      "Lead-UI-UX-Designer",
-      "Lead-UX-UI-Designer",
-      "Game-Design-Lead",
-      "Senior-Mobile-UX-Designer",
-      "Lead-UI-Designer"
+      "Creative"
     ],
-    "postedAt": "2026-09-16T20:33:11.000Z",
-    "scrapedAt": "2026-09-16T23:44:52.192Z",
-    "description": "About UsGTO Wizard is the worldwide leader in training and education for serious poker players.",
+    "postedAt": "2026-09-16T03:34:39-04:00",
+    "scrapedAt": "2026-09-17T12:50:19.946Z",
+    "description": "Do you think in systems rather than individual screens? Do you love turning complex requirements into clear structures, reusable patterns and compelling experiences? Then this role could be the perfec",
     "region": "ww",
-    "employmentType": "Contractor"
+    "employmentType": "full-time"
   },
   {
     "id": "lever_tmhzr7",
@@ -65,7 +57,7 @@
       "Product"
     ],
     "postedAt": "2026-09-16T03:47:16.164Z",
-    "scrapedAt": "2026-09-16T23:42:11.766Z",
+    "scrapedAt": "2026-09-17T12:48:34.304Z",
     "description": "About Tala\n \nTala is AI-native credit infrastructure for the global majority, combining proprietary risk intelligence with an expanding network of capital and distribution partners to power credit acc",
     "region": "ww",
     "employmentType": "full-time"
@@ -83,7 +75,7 @@
       "Product Design"
     ],
     "postedAt": "2026-09-16T00:26:42.115Z",
-    "scrapedAt": "2026-09-16T23:43:13.245Z",
+    "scrapedAt": "2026-09-17T12:49:30.976Z",
     "description": "About AllTrails \nAllTrails is the app for exploring the outdoors. We help people spend more time outside by connecting them to their next adventure. AllTrails is home to the world’s largest outdoor co",
     "region": "ww",
     "employmentType": "contract"
@@ -100,8 +92,25 @@
       "Reactor Engineering"
     ],
     "postedAt": "2026-09-14T11:26:58-04:00",
-    "scrapedAt": "2026-09-16T23:42:49.950Z",
+    "scrapedAt": "2026-09-17T12:49:01.521Z",
     "description": "Thanks for your interest in Oklo! We are searching for a Core Design Engineer to join our engineering team. Position Description Core Design Engineers at Oklo are responsible for designing performant ",
+    "region": "ww",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_699hoa",
+    "title": "Senior Quantitative UX Researcher",
+    "company": "Trustpilot",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=trustpilot.com&sz=128",
+    "category": "creative",
+    "url": "https://corporate.trustpilot.com/careers/job/8200593?gh_jid=8200593",
+    "source": "greenhouse",
+    "tags": [
+      "Design & Research"
+    ],
+    "postedAt": "2026-09-14T06:51:58-04:00",
+    "scrapedAt": "2026-09-17T12:48:26.111Z",
+    "description": "At Trustpilot, we're on an incredible journey. We're a profitable, high-growth FTSE-250 company with a big vision: to become the universal symbol of trust. We run the world's largest open customer rev",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -117,24 +126,24 @@
       "Product Design"
     ],
     "postedAt": "2026-09-14T05:13:34-04:00",
-    "scrapedAt": "2026-09-16T23:43:28.298Z",
+    "scrapedAt": "2026-09-17T12:49:48.103Z",
     "description": "Ebury helps ambitious businesses unlock global growth, and we take the same approach with our people. We encourage innovation and movement, collaboration and problem-solving, and foster an environment",
     "region": "ww",
     "employmentType": "full-time"
   },
   {
-    "id": "greenhouse_tfwgzy",
-    "title": "Senior Product Designer - Mobile",
+    "id": "greenhouse_tfvu0f",
+    "title": "Senior Product Designer - Onboarding & Activation",
     "company": "Ebury",
     "companyLogo": "https://www.google.com/s2/favicons?domain=ebury.com&sz=128",
     "category": "creative",
-    "url": "https://job-boards.eu.greenhouse.io/ebury/jobs/4975326101",
+    "url": "https://job-boards.eu.greenhouse.io/ebury/jobs/4975325101",
     "source": "greenhouse",
     "tags": [
       "Product Design"
     ],
-    "postedAt": "2026-09-14T05:12:51-04:00",
-    "scrapedAt": "2026-09-16T23:43:28.310Z",
+    "postedAt": "2026-09-14T05:12:07-04:00",
+    "scrapedAt": "2026-09-17T12:49:48.118Z",
     "description": "Ebury helps ambitious businesses unlock global growth, and we take the same approach with our people. We encourage innovation and movement, collaboration and problem-solving, and foster an environment",
     "region": "ww",
     "employmentType": "full-time"
@@ -151,7 +160,7 @@
       "Advancement"
     ],
     "postedAt": "2026-09-11T14:33:07-04:00",
-    "scrapedAt": "2026-09-16T23:41:55.809Z",
+    "scrapedAt": "2026-09-17T12:48:22.269Z",
     "description": "The Wikimedia Foundation is seeking a Lead Learning Experience Designer to create innovative, engaging, and accessible learning experiences that strengthen the capacity of volunteers and communities a",
     "region": "ww",
     "employmentType": "full-time"
@@ -168,7 +177,7 @@
       "8811 Product Design"
     ],
     "postedAt": "2026-09-10T13:11:58-04:00",
-    "scrapedAt": "2026-09-16T23:41:41.348Z",
+    "scrapedAt": "2026-09-17T12:47:53.997Z",
     "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept pay",
     "region": "ww",
     "employmentType": "full-time"
@@ -185,7 +194,7 @@
       "8812 UX Research"
     ],
     "postedAt": "2026-09-10T13:11:58-04:00",
-    "scrapedAt": "2026-09-16T23:41:41.389Z",
+    "scrapedAt": "2026-09-17T12:47:54.042Z",
     "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies - from the world’s largest enterprises to the most ambitious startups - use Stripe to accept",
     "region": "ww",
     "employmentType": "full-time"
@@ -203,7 +212,7 @@
       "Marketing"
     ],
     "postedAt": "2026-09-10T14:05:27.439Z",
-    "scrapedAt": "2026-09-16T23:43:53.223Z",
+    "scrapedAt": "2026-09-17T12:50:11.307Z",
     "description": "Pioneer of online flash sales since 2001 and key player in European e-commerce, Veepee collaborates with over 7,000 brands to offer highly discounted products available for a limited time. Operating a",
     "region": "ww",
     "employmentType": "full-time"
@@ -221,7 +230,7 @@
       "Product"
     ],
     "postedAt": "2026-09-08T17:12:34.699Z",
-    "scrapedAt": "2026-09-16T23:42:21.899Z",
+    "scrapedAt": "2026-09-17T12:48:40.902Z",
     "description": "Estamos innovando la logística y esto lo hemos logrado gracias a un equipo de personas visionarias, con ganas de crecer y cambiar el mundo . En Skydropx encontrarás un espacio para desarrollar tu carr",
     "region": "ww",
     "employmentType": "full-time"
@@ -238,7 +247,7 @@
       "UX"
     ],
     "postedAt": "2026-09-07T07:25:27-04:00",
-    "scrapedAt": "2026-09-16T23:43:26.430Z",
+    "scrapedAt": "2026-09-17T12:49:29.580Z",
     "description": "Senior UX Designer (Focus on Research) Zagreb, Hybrid JOB PURPOSE As a User Researcher , you help product teams make confident, customer-centered decisions by uncovering real user needs, motivations, ",
     "region": "ww",
     "employmentType": "full-time"
@@ -255,7 +264,7 @@
       "Shared Services"
     ],
     "postedAt": "2026-09-07",
-    "scrapedAt": "2026-09-16T23:41:38.408Z",
+    "scrapedAt": "2026-09-17T12:47:51.885Z",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -272,7 +281,7 @@
       "Design"
     ],
     "postedAt": "2026-09-02T16:48:49.966Z",
-    "scrapedAt": "2026-09-16T23:43:31.228Z",
+    "scrapedAt": "2026-09-17T12:49:48.545Z",
     "description": "We are Fantasy.\nThe creative partner behind the world’s biggest digital products, launching the next generation of intelligent experiences. For over two decades, we’ve partnered with industry leaders ",
     "region": "ww",
     "employmentType": "full-time"
@@ -289,7 +298,7 @@
       "Marketing & Communications"
     ],
     "postedAt": "2026-09-01T19:48:33-04:00",
-    "scrapedAt": "2026-09-16T23:42:48.929Z",
+    "scrapedAt": "2026-09-17T12:49:00.561Z",
     "description": "SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologi",
     "region": "ww",
     "employmentType": "full-time"
@@ -306,7 +315,7 @@
       "Marketing & Communications"
     ],
     "postedAt": "2026-09-01T19:48:33-04:00",
-    "scrapedAt": "2026-09-16T23:42:49.082Z",
+    "scrapedAt": "2026-09-17T12:49:00.721Z",
     "description": "SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologi",
     "region": "ww",
     "employmentType": "full-time"
@@ -323,7 +332,7 @@
       "Media & Entertainment"
     ],
     "postedAt": "2026-09-01T13:07:30-04:00",
-    "scrapedAt": "2026-09-16T23:43:29.141Z",
+    "scrapedAt": "2026-09-17T12:49:48.689Z",
     "description": "ARE YOU READY TO TAKE YOUR CAREER TO NEW HEIGHTS? ARE YOU SEEKING A NEW CHALLENGE IN A DYNAMIC SECTOR? This is a very exciting and highly innovative time here at Outside. OUR TRUE NORTH:Outside Intera",
     "region": "ww",
     "employmentType": "full-time"
@@ -340,7 +349,7 @@
       "Mapping"
     ],
     "postedAt": "2026-09-01T13:07:30-04:00",
-    "scrapedAt": "2026-09-16T23:43:29.142Z",
+    "scrapedAt": "2026-09-17T12:49:48.691Z",
     "description": "ARE YOU READY TO TAKE YOUR CAREER TO NEW HEIGHTS? ARE YOU SEEKING A NEW CHALLENGE IN A DYNAMIC SECTOR? This is a very exciting and highly innovative time here at Outside. OUR TRUE NORTH:Outside Intera",
     "region": "ww",
     "employmentType": "full-time"
@@ -357,7 +366,7 @@
       "Creative"
     ],
     "postedAt": "2026-09-01T12:17:19-04:00",
-    "scrapedAt": "2026-09-16T23:41:57.081Z",
+    "scrapedAt": "2026-09-17T12:48:23.625Z",
     "description": "Location: This position is remote within Colombia. *]:pointer-events-auto R6Vx5W_threadScrollVars scroll-mb-[calc(var(--scroll-root-safe-area-inset-bottom,0px)+var(--thread-response-height))] scroll-m",
     "region": "ww",
     "employmentType": "full-time"
@@ -374,7 +383,7 @@
       "Creative"
     ],
     "postedAt": "2026-09-01T12:15:40-04:00",
-    "scrapedAt": "2026-09-16T23:41:57.077Z",
+    "scrapedAt": "2026-09-17T12:48:23.621Z",
     "description": "Location: This position is remote within Colombia. About Creative. At Huge, Creative brings together designers, writers, and technologists to create meaningful digital experiences. We combine creativi",
     "region": "ww",
     "employmentType": "full-time"
@@ -391,7 +400,7 @@
       "Creative"
     ],
     "postedAt": "2026-09-01T11:31:06-04:00",
-    "scrapedAt": "2026-09-16T23:41:57.086Z",
+    "scrapedAt": "2026-09-17T12:48:23.630Z",
     "description": "Location: This position is remote within Colombia *]:pointer-events-auto R6Vx5W_threadScrollVars scroll-mb-[calc(var(--scroll-root-safe-area-inset-bottom,0px)+var(--thread-response-height))] scroll-mt",
     "region": "ww",
     "employmentType": "full-time"
@@ -408,7 +417,7 @@
       "Creative"
     ],
     "postedAt": "2026-09-01T11:29:28-04:00",
-    "scrapedAt": "2026-09-16T23:41:57.084Z",
+    "scrapedAt": "2026-09-17T12:48:23.628Z",
     "description": "Location: This position is remote within Colombia *]:pointer-events-auto R6Vx5W_threadScrollVars scroll-mb-[calc(var(--scroll-root-safe-area-inset-bottom,0px)+var(--thread-response-height))] scroll-mt",
     "region": "ww",
     "employmentType": "full-time"
@@ -426,7 +435,7 @@
       "Engineering"
     ],
     "postedAt": "2026-08-28T13:41:50.597Z",
-    "scrapedAt": "2026-09-16T23:42:17.472Z",
+    "scrapedAt": "2026-09-17T12:48:36.000Z",
     "description": "About Us Founded in the US in 2022 and now based in London, UK, Recraft is an AI tool for professional designers, illustrators, and marketers, setting a new standard for excellence in image generation",
     "region": "ww",
     "employmentType": "full-time"
@@ -443,7 +452,7 @@
       "MZLA/Thunderbird"
     ],
     "postedAt": "2026-08-27T15:53:21-04:00",
-    "scrapedAt": "2026-09-16T23:41:55.890Z",
+    "scrapedAt": "2026-09-17T12:48:22.306Z",
     "description": "Why Thunderbird? Thunderbird is one of the world’s most trusted open-source email applications, empowering more than 20 million people globally. At MZLA, the team behind Thunderbird, we build privacy-",
     "region": "ww",
     "employmentType": "full-time"
@@ -460,7 +469,7 @@
       "Design"
     ],
     "postedAt": "2026-08-26T13:28:48-04:00",
-    "scrapedAt": "2026-09-16T23:43:42.028Z",
+    "scrapedAt": "2026-09-17T12:50:01.624Z",
     "description": "Flex is a growth-stage, NYC headquartered FinTech company that is creating the best rent payment experience. It’s hard to believe that it’s 2026 and paying rent on time is expensive, inflexible, and d",
     "region": "ww",
     "employmentType": "full-time"
@@ -477,7 +486,7 @@
       "UX"
     ],
     "postedAt": "2026-08-26T09:00:52-04:00",
-    "scrapedAt": "2026-09-16T23:43:26.390Z",
+    "scrapedAt": "2026-09-17T12:49:29.537Z",
     "description": "Associate Director Experience Design Zürich, Hybrid DEPT® is a Growth Invention company built to help the world’s most ambitious brands grow faster. Operating at the intersection of technology and mar",
     "region": "ww",
     "employmentType": "full-time"
@@ -495,7 +504,7 @@
       "Design"
     ],
     "postedAt": "2026-08-24T21:11:18.865Z",
-    "scrapedAt": "2026-09-16T23:41:54.891Z",
+    "scrapedAt": "2026-09-17T12:48:10.262Z",
     "description": "Brand Designer Greptile is an AI code reviewer that catches bugs and anti-patterns in pull requests with complete context of the codebase. Hundreds of top software companies, from YC startups to big t",
     "region": "ww",
     "employmentType": "full-time"
@@ -513,7 +522,7 @@
       "Design"
     ],
     "postedAt": "2026-08-19T13:18:46.538Z",
-    "scrapedAt": "2026-09-16T23:41:42.044Z",
+    "scrapedAt": "2026-09-17T12:47:55.866Z",
     "description": "Who We Are Hi, we're DuckDuckGo, the online protection company and remote-first team of 300+ on a mission to raise the standard of trust online. Founded in 2008 and profitable since 2014, annual reven",
     "region": "ww",
     "employmentType": "full-time"
