@@ -1,5 +1,81 @@
 [
   {
+    "id": "greenhouse_grn9q5",
+    "title": "Associate Creative Director, Digital Design",
+    "company": "Samsara",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=samsara.com&sz=128",
+    "category": "creative",
+    "url": "https://www.samsara.com/company/careers/roles/8205153?gh_jid=8205153",
+    "source": "greenhouse",
+    "tags": [
+      "Corporate Marketing"
+    ],
+    "postedAt": "2026-09-25T17:59:25-04:00",
+    "scrapedAt": "2026-09-25T23:59:25.225Z",
+    "description": "Who we are Samsara (NYSE: IOT) is the pioneer of the Connected Operations™ Cloud, which is a platform that enables organizations that depend on physical operations to harness Internet of Things (IoT) ",
+    "region": "ww",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "himalayas_yplu65",
+    "title": "Product Designer | Visual Designer",
+    "company": "Beyondlabs",
+    "category": "creative",
+    "url": "https://himalayas.app/companies/beyondlabs/jobs/product-designer-visual-designer",
+    "source": "himalayas",
+    "tags": [
+      "Product-Designer",
+      "Visual-Designer",
+      "UI-Designer",
+      "UX-Designer",
+      "UI-UX-Designer",
+      "Product-Visual-Designer",
+      "Product-Visual-Design",
+      "Product-Design-(UX-UI)",
+      "Product-UI-Visual-Design",
+      "UI-Visual-Designer"
+    ],
+    "postedAt": "2026-09-25T20:49:03.000Z",
+    "scrapedAt": "2026-09-26T00:03:46.927Z",
+    "description": "## Company OverviewAt Beyond Labs, we are a leading provider of on-demand, dedicated product teams for startups and enterprise clients.",
+    "region": "ww",
+    "employmentType": "Full Time"
+  },
+  {
+    "id": "greenhouse_c31fi4",
+    "title": "UX Research Manager, Payments",
+    "company": "Stripe",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=stripe.com&sz=128",
+    "category": "creative",
+    "url": "https://stripe.com/jobs/search?gh_jid=8165259",
+    "source": "greenhouse",
+    "tags": [
+      "8812 UX Research"
+    ],
+    "postedAt": "2026-09-25T16:44:59-04:00",
+    "scrapedAt": "2026-09-25T23:58:45.633Z",
+    "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies - from the world’s largest enterprises to the most ambitious startups - use Stripe to accept",
+    "region": "ww",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_bnnxic",
+    "title": "Product Design Manager, Global Payments",
+    "company": "Stripe",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=stripe.com&sz=128",
+    "category": "creative",
+    "url": "https://stripe.com/jobs/search?gh_jid=8096726",
+    "source": "greenhouse",
+    "tags": [
+      "8811 Product Design"
+    ],
+    "postedAt": "2026-09-25T16:44:52-04:00",
+    "scrapedAt": "2026-09-25T23:58:45.584Z",
+    "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept pay",
+    "region": "ww",
+    "employmentType": "full-time"
+  },
+  {
     "id": "ashby_wr7lds",
     "title": "Copywriter",
     "company": "SkydropX",
@@ -12,25 +88,8 @@
       "Marketing"
     ],
     "postedAt": "2026-09-25T00:28:59.818Z",
-    "scrapedAt": "2026-09-25T18:01:01.511Z",
+    "scrapedAt": "2026-09-25T23:59:29.743Z",
     "description": "Estamos innovando la logística y esto lo hemos logrado gracias a un equipo de personas visionarias, con ganas de crecer y cambiar el mundo . En Skydropx encontrarás un espacio para desarrollar tu carr",
-    "region": "ww",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_grn9q5",
-    "title": "Associate Creative Director, Digital Design",
-    "company": "Samsara",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=samsara.com&sz=128",
-    "category": "creative",
-    "url": "https://www.samsara.com/company/careers/roles/8205153?gh_jid=8205153",
-    "source": "greenhouse",
-    "tags": [
-      "Corporate Marketing"
-    ],
-    "postedAt": "2026-09-24T19:20:04-04:00",
-    "scrapedAt": "2026-09-25T18:01:09.992Z",
-    "description": "Who we are Samsara (NYSE: IOT) is the pioneer of the Connected Operations™ Cloud, which is a platform that enables organizations that depend on physical operations to harness Internet of Things (IoT) ",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -46,7 +105,7 @@
       "Thunderbird"
     ],
     "postedAt": "2026-09-24T08:28:41-04:00",
-    "scrapedAt": "2026-09-25T18:01:12.354Z",
+    "scrapedAt": "2026-09-25T23:59:35.788Z",
     "description": "Why Thunderbird? Thunderbird is one of the world’s most trusted open-source email applications, empowering more than 20 million people globally. At MZLA, the team behind Thunderbird, we build privacy-",
     "region": "ww",
     "employmentType": "full-time"
@@ -63,7 +122,7 @@
       "Product"
     ],
     "postedAt": "2026-09-23T16:28:23-04:00",
-    "scrapedAt": "2026-09-25T18:04:46.285Z",
+    "scrapedAt": "2026-09-26T00:03:29.934Z",
     "description": "About Carrot: Carrot is the leading global fertility and family care platform, built on intelligent care orchestration: the right clinical guidance, at the right moment, in the context of each member’",
     "region": "ww",
     "employmentType": "full-time"
@@ -80,7 +139,7 @@
       "Mapping"
     ],
     "postedAt": "2026-09-23T13:17:58-04:00",
-    "scrapedAt": "2026-09-25T18:03:47.346Z",
+    "scrapedAt": "2026-09-26T00:02:14.189Z",
     "description": "ARE YOU READY TO TAKE YOUR CAREER TO NEW HEIGHTS? ARE YOU SEEKING A NEW CHALLENGE IN A DYNAMIC SECTOR? This is a very exciting and highly innovative time here at Outside. OUR TRUE NORTH:Outside Intera",
     "region": "ww",
     "employmentType": "full-time"
@@ -98,7 +157,7 @@
       "Product"
     ],
     "postedAt": "2026-09-23T10:32:17.285Z",
-    "scrapedAt": "2026-09-25T18:03:23.790Z",
+    "scrapedAt": "2026-09-26T00:01:21.953Z",
     "description": "At Kpler, we are dedicated to helping our clients navigate complex markets with ease. By simplifying global trade information and providing valuable insights, we empower organisations to make informed",
     "region": "ww",
     "employmentType": "full-time"
@@ -115,7 +174,7 @@
       "LAM Engineering"
     ],
     "postedAt": "2026-09-22T13:23:03-04:00",
-    "scrapedAt": "2026-09-25T18:03:06.175Z",
+    "scrapedAt": "2026-09-26T00:02:03.440Z",
     "description": "Londrina, Brasil - Híbrido Na Platform Science, trabalhamos para conectar tudo que se move. Fundada em 2015, somos uma plataforma de IoT aberta que faz parcerias com frotas inovadoras, desenvolvedores",
     "region": "ww",
     "employmentType": "full-time"
@@ -132,7 +191,7 @@
       "Media & Entertainment"
     ],
     "postedAt": "2026-09-21T14:25:59-04:00",
-    "scrapedAt": "2026-09-25T18:03:47.344Z",
+    "scrapedAt": "2026-09-26T00:02:14.188Z",
     "description": "ARE YOU READY TO TAKE YOUR CAREER TO NEW HEIGHTS? ARE YOU SEEKING A NEW CHALLENGE IN A DYNAMIC SECTOR? This is a very exciting and highly innovative time here at Outside. OUR TRUE NORTH:Outside Intera",
     "region": "ww",
     "employmentType": "full-time"
@@ -149,7 +208,7 @@
       "LAM Product"
     ],
     "postedAt": "2026-09-21T11:51:56-04:00",
-    "scrapedAt": "2026-09-25T18:03:06.171Z",
+    "scrapedAt": "2026-09-26T00:02:03.437Z",
     "description": "Londrina, Brasil - Híbrido Na Platform Science, trabalhamos para conectar tudo que se move. Fundada em 2015, somos uma plataforma de IoT aberta que faz parcerias com frotas inovadoras, desenvolvedores",
     "region": "ww",
     "employmentType": "full-time"
@@ -166,7 +225,7 @@
       "Advancement"
     ],
     "postedAt": "2026-09-18T19:13:40-04:00",
-    "scrapedAt": "2026-09-25T18:01:12.228Z",
+    "scrapedAt": "2026-09-25T23:59:35.702Z",
     "description": "The Wikimedia Foundation is seeking a Lead Learning Experience Designer to create innovative, engaging, and accessible learning experiences that strengthen the capacity of volunteers and communities a",
     "region": "ww",
     "employmentType": "full-time"
@@ -184,7 +243,7 @@
       "Art"
     ],
     "postedAt": "2026-09-18T14:37:00.444Z",
-    "scrapedAt": "2026-09-25T18:01:18.359Z",
+    "scrapedAt": "2026-09-25T23:59:35.557Z",
     "description": "As a 2D Animator, you'll be a pivotal creative force, reporting directly to the Lead 2D Animator. You'll be instrumental in bringing our mobile games to life by designing, creating, and implementing h",
     "region": "ww",
     "employmentType": "full-time"
@@ -202,7 +261,7 @@
       "Art"
     ],
     "postedAt": "2026-09-18T14:33:45.267Z",
-    "scrapedAt": "2026-09-25T18:01:18.360Z",
+    "scrapedAt": "2026-09-25T23:59:35.557Z",
     "description": "As an Associate 2D Animator, you'll be a vital part of our creative team, reporting directly to the Lead 2D Animator. You'll contribute to bringing our games to life by creating engaging and high-qual",
     "region": "ww",
     "employmentType": "full-time"
@@ -219,7 +278,7 @@
       "UX"
     ],
     "postedAt": "2026-09-17T10:28:49-04:00",
-    "scrapedAt": "2026-09-25T18:03:23.957Z",
+    "scrapedAt": "2026-09-26T00:02:11.422Z",
     "description": "Associate Director Experience Design Zürich, Hybrid DEPT® is a Growth Invention company built to help the world’s most ambitious brands grow faster. Operating at the intersection of technology and mar",
     "region": "ww",
     "employmentType": "full-time"
@@ -236,7 +295,7 @@
       "UX"
     ],
     "postedAt": "2026-09-17T10:28:49-04:00",
-    "scrapedAt": "2026-09-25T18:03:24.002Z",
+    "scrapedAt": "2026-09-26T00:02:11.466Z",
     "description": "Senior UX Designer (Focus on Research) Zagreb, Hybrid JOB PURPOSE As a User Researcher , you help product teams make confident, customer-centered decisions by uncovering real user needs, motivations, ",
     "region": "ww",
     "employmentType": "full-time"
@@ -254,7 +313,7 @@
       "Product"
     ],
     "postedAt": "2026-09-16T03:47:16.164Z",
-    "scrapedAt": "2026-09-25T18:01:05.197Z",
+    "scrapedAt": "2026-09-25T23:59:26.598Z",
     "description": "About Tala\n \nTala is AI-native credit infrastructure for the global majority, combining proprietary risk intelligence with an expanding network of capital and distribution partners to power credit acc",
     "region": "ww",
     "employmentType": "full-time"
@@ -272,7 +331,7 @@
       "Product Design"
     ],
     "postedAt": "2026-09-16T00:26:42.115Z",
-    "scrapedAt": "2026-09-25T18:02:36.963Z",
+    "scrapedAt": "2026-09-26T00:00:32.207Z",
     "description": "About AllTrails \nAllTrails is the app for exploring the outdoors. We help people spend more time outside by connecting them to their next adventure. AllTrails is home to the world’s largest outdoor co",
     "region": "ww",
     "employmentType": "contract"
@@ -289,7 +348,7 @@
       "Reactor Engineering"
     ],
     "postedAt": "2026-09-14T11:26:58-04:00",
-    "scrapedAt": "2026-09-25T18:02:51.430Z",
+    "scrapedAt": "2026-09-26T00:01:58.399Z",
     "description": "Thanks for your interest in Oklo! We are searching for a Core Design Engineer to join our engineering team. Position Description Core Design Engineers at Oklo are responsible for designing performant ",
     "region": "ww",
     "employmentType": "full-time"
@@ -306,7 +365,7 @@
       "Product Design"
     ],
     "postedAt": "2026-09-14T05:13:34-04:00",
-    "scrapedAt": "2026-09-25T18:03:46.492Z",
+    "scrapedAt": "2026-09-26T00:02:13.331Z",
     "description": "Ebury helps ambitious businesses unlock global growth, and we take the same approach with our people. We encourage innovation and movement, collaboration and problem-solving, and foster an environment",
     "region": "ww",
     "employmentType": "full-time"
@@ -323,42 +382,8 @@
       "Product Design"
     ],
     "postedAt": "2026-09-14T05:12:51-04:00",
-    "scrapedAt": "2026-09-25T18:03:46.508Z",
+    "scrapedAt": "2026-09-26T00:02:13.347Z",
     "description": "Ebury helps ambitious businesses unlock global growth, and we take the same approach with our people. We encourage innovation and movement, collaboration and problem-solving, and foster an environment",
-    "region": "ww",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_bnnxic",
-    "title": "Product Design Manager, Global Payments",
-    "company": "Stripe",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=stripe.com&sz=128",
-    "category": "creative",
-    "url": "https://stripe.com/jobs/search?gh_jid=8096726",
-    "source": "greenhouse",
-    "tags": [
-      "8811 Product Design"
-    ],
-    "postedAt": "2026-09-10T13:11:58-04:00",
-    "scrapedAt": "2026-09-25T18:00:23.639Z",
-    "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept pay",
-    "region": "ww",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_c31fi4",
-    "title": "UX Research Manager, Payments",
-    "company": "Stripe",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=stripe.com&sz=128",
-    "category": "creative",
-    "url": "https://stripe.com/jobs/search?gh_jid=8165259",
-    "source": "greenhouse",
-    "tags": [
-      "8812 UX Research"
-    ],
-    "postedAt": "2026-09-10T13:11:58-04:00",
-    "scrapedAt": "2026-09-25T18:00:23.693Z",
-    "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies - from the world’s largest enterprises to the most ambitious startups - use Stripe to accept",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -375,7 +400,7 @@
       "Marketing"
     ],
     "postedAt": "2026-09-10T14:05:27.439Z",
-    "scrapedAt": "2026-09-25T18:03:30.956Z",
+    "scrapedAt": "2026-09-26T00:01:26.459Z",
     "description": "Pioneer of online flash sales since 2001 and key player in European e-commerce, Veepee collaborates with over 7,000 brands to offer highly discounted products available for a limited time. Operating a",
     "region": "ww",
     "employmentType": "full-time"
@@ -393,7 +418,7 @@
       "Product"
     ],
     "postedAt": "2026-09-08T17:12:34.699Z",
-    "scrapedAt": "2026-09-25T18:01:01.511Z",
+    "scrapedAt": "2026-09-25T23:59:29.742Z",
     "description": "Estamos innovando la logística y esto lo hemos logrado gracias a un equipo de personas visionarias, con ganas de crecer y cambiar el mundo . En Skydropx encontrarás un espacio para desarrollar tu carr",
     "region": "ww",
     "employmentType": "full-time"
@@ -410,7 +435,7 @@
       "Shared Services"
     ],
     "postedAt": "2026-09-07",
-    "scrapedAt": "2026-09-25T18:00:12.893Z",
+    "scrapedAt": "2026-09-25T23:58:43.991Z",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -427,7 +452,7 @@
       "Design"
     ],
     "postedAt": "2026-09-02T16:48:49.966Z",
-    "scrapedAt": "2026-09-25T18:02:46.462Z",
+    "scrapedAt": "2026-09-26T00:00:45.444Z",
     "description": "We are Fantasy.\nThe creative partner behind the world’s biggest digital products, launching the next generation of intelligent experiences. For over two decades, we’ve partnered with industry leaders ",
     "region": "ww",
     "employmentType": "full-time"
@@ -444,7 +469,7 @@
       "Marketing & Communications"
     ],
     "postedAt": "2026-09-01T19:48:33-04:00",
-    "scrapedAt": "2026-09-25T18:02:50.334Z",
+    "scrapedAt": "2026-09-26T00:01:53.032Z",
     "description": "SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologi",
     "region": "ww",
     "employmentType": "full-time"
@@ -461,7 +486,7 @@
       "Marketing & Communications"
     ],
     "postedAt": "2026-09-01T19:48:33-04:00",
-    "scrapedAt": "2026-09-25T18:02:50.527Z",
+    "scrapedAt": "2026-09-26T00:01:53.213Z",
     "description": "SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologi",
     "region": "ww",
     "employmentType": "full-time"
@@ -478,7 +503,7 @@
       "Creative"
     ],
     "postedAt": "2026-09-01T12:17:19-04:00",
-    "scrapedAt": "2026-09-25T18:01:19.527Z",
+    "scrapedAt": "2026-09-25T23:59:37.678Z",
     "description": "Location: This position is remote within Colombia. *]:pointer-events-auto R6Vx5W_threadScrollVars scroll-mb-[calc(var(--scroll-root-safe-area-inset-bottom,0px)+var(--thread-response-height))] scroll-m",
     "region": "ww",
     "employmentType": "full-time"
@@ -495,7 +520,7 @@
       "Creative"
     ],
     "postedAt": "2026-09-01T11:31:06-04:00",
-    "scrapedAt": "2026-09-25T18:01:19.531Z",
+    "scrapedAt": "2026-09-25T23:59:37.683Z",
     "description": "Location: This position is remote within Colombia *]:pointer-events-auto R6Vx5W_threadScrollVars scroll-mb-[calc(var(--scroll-root-safe-area-inset-bottom,0px)+var(--thread-response-height))] scroll-mt",
     "region": "ww",
     "employmentType": "full-time"
@@ -512,7 +537,7 @@
       "Creative"
     ],
     "postedAt": "2026-09-01T11:29:28-04:00",
-    "scrapedAt": "2026-09-25T18:01:19.529Z",
+    "scrapedAt": "2026-09-25T23:59:37.681Z",
     "description": "Location: This position is remote within Colombia *]:pointer-events-auto R6Vx5W_threadScrollVars scroll-mb-[calc(var(--scroll-root-safe-area-inset-bottom,0px)+var(--thread-response-height))] scroll-mt",
     "region": "ww",
     "employmentType": "full-time"
@@ -530,7 +555,7 @@
       "Engineering"
     ],
     "postedAt": "2026-08-28T13:41:50.597Z",
-    "scrapedAt": "2026-09-25T18:00:56.763Z",
+    "scrapedAt": "2026-09-25T23:59:25.006Z",
     "description": "About Us Founded in the US in 2022 and now based in London, UK, Recraft is an AI tool for professional designers, illustrators, and marketers, setting a new standard for excellence in image generation",
     "region": "ww",
     "employmentType": "full-time"
