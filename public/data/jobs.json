@@ -1,5 +1,81 @@
 [
   {
+    "id": "himalayas_w53yej",
+    "title": "Senior UX Designer",
+    "company": "King Group",
+    "companyLogo": "https://cdn-images.himalayas.app/fz8kr89a7aziu296jpt72gv1th9o",
+    "category": "creative",
+    "url": "https://himalayas.app/companies/king-group/jobs/senior-ux-designer",
+    "source": "himalayas",
+    "tags": [
+      "Senior-UX-Designer",
+      "UX-Design",
+      "Product-Design",
+      "UX-Research",
+      "Product-Design-UA",
+      "Senior-UX-Design",
+      "Senior-UX-Architect",
+      "Product-Designer",
+      "UI-UX-Designer"
+    ],
+    "postedAt": "2026-10-06T16:46:31.000Z",
+    "scrapedAt": "2026-10-06T19:01:52.209Z",
+    "description": "King Group — команда, яка створює міжнародні продукти у сфері iGaming для ринків UA та Tier-1.",
+    "region": "ww",
+    "employmentType": "Full Time"
+  },
+  {
+    "id": "greenhouse_z3dfo3",
+    "title": "Product Designer - End User (Autofill)",
+    "company": "Bitwarden",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=bitwarden.com&sz=128",
+    "category": "creative",
+    "url": "https://bitwarden.com/careers/8013629003/?gh_jid=8013629003",
+    "source": "greenhouse",
+    "tags": [
+      "Product"
+    ],
+    "postedAt": "2026-10-06T12:42:48-04:00",
+    "scrapedAt": "2026-10-06T18:57:57.372Z",
+    "description": "Product Designer, End User Experience (Autofill) Bitwarden is the trusted identity security leader for millions of users worldwide, empowering enterprises, developers, and individuals to securely mana",
+    "region": "ww",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_z2w70u",
+    "title": "Product Designer - Admiration Experience & Reporting",
+    "company": "Bitwarden",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=bitwarden.com&sz=128",
+    "category": "creative",
+    "url": "https://bitwarden.com/careers/8013635003/?gh_jid=8013635003",
+    "source": "greenhouse",
+    "tags": [
+      "Product"
+    ],
+    "postedAt": "2026-10-06T12:40:35-04:00",
+    "scrapedAt": "2026-10-06T18:57:57.372Z",
+    "description": "Bitwarden is the trusted identity security leader for millions of users worldwide, empowering enterprises, developers, and individuals to securely manage and share sensitive information anywhere. Bitw",
+    "region": "ww",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_z3zs7k",
+    "title": "Product Designer - End User Experience",
+    "company": "Bitwarden",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=bitwarden.com&sz=128",
+    "category": "creative",
+    "url": "https://bitwarden.com/careers/8013615003/?gh_jid=8013615003",
+    "source": "greenhouse",
+    "tags": [
+      "Product"
+    ],
+    "postedAt": "2026-10-06T12:04:20-04:00",
+    "scrapedAt": "2026-10-06T18:57:57.373Z",
+    "description": "Bitwarden is the trusted identity security leader for millions of users worldwide, empowering enterprises, developers, and individuals to securely manage and share sensitive information anywhere. Bitw",
+    "region": "ww",
+    "employmentType": "full-time"
+  },
+  {
     "id": "greenhouse_eaus66",
     "title": "Creative Director, Oasis",
     "company": "Mixtiles",
@@ -11,7 +87,7 @@
       "Marketing"
     ],
     "postedAt": "2026-10-06T02:38:47-04:00",
-    "scrapedAt": "2026-10-06T14:30:44.700Z",
+    "scrapedAt": "2026-10-06T18:58:45.152Z",
     "description": "The Company Mixtiles is a $300M+ profitable consumer brand reinventing how homes feel. We build products people didn't know they needed, and now can't imagine living without. Wall photos. Self-waterin",
     "region": "ww",
     "employmentType": "full-time"
@@ -28,7 +104,7 @@
       "Design"
     ],
     "postedAt": "2026-10-06T01:02:02-04:00",
-    "scrapedAt": "2026-10-06T14:30:03.422Z",
+    "scrapedAt": "2026-10-06T18:57:56.804Z",
     "description": "Work from anywhere, impact everywhere Diversity is at the heart of who we are at Xapo Bank. We’re a fully distributed team of over 160 Xapiens that work remotely from 50+ countries around the world. O",
     "region": "ww",
     "employmentType": "full-time"
@@ -45,8 +121,25 @@
       "00 - Departamento Genérico - Seleccionar está opción roles de Marzo 2026 en adelante"
     ],
     "postedAt": "2026-10-05T20:38:55-04:00",
-    "scrapedAt": "2026-10-06T14:30:10.038Z",
+    "scrapedAt": "2026-10-06T18:58:03.262Z",
     "description": "IC3 UX Researcher Mid Job Family: Design &gt; Sub-family: UX Research Reports to (role): UX Reseach Lead or Head of Research Objective of the Role Desarrolla habilidades para liderar proyectos de inve",
+    "region": "ww",
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_grn9q5",
+    "title": "Associate Creative Director, Digital Design",
+    "company": "Samsara",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=samsara.com&sz=128",
+    "category": "creative",
+    "url": "https://www.samsara.com/company/careers/roles/8205153?gh_jid=8205153",
+    "source": "greenhouse",
+    "tags": [
+      "Corporate Marketing"
+    ],
+    "postedAt": "2026-10-05T17:49:07-04:00",
+    "scrapedAt": "2026-10-06T18:57:54.855Z",
+    "description": "Who we are Samsara (NYSE: IOT) is the pioneer of the Connected Operations™ Cloud, which is a platform that enables organizations that depend on physical operations to harness Internet of Things (IoT) ",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -62,7 +155,7 @@
       "Design"
     ],
     "postedAt": "2026-10-05T15:45:29-04:00",
-    "scrapedAt": "2026-10-06T14:30:57.432Z",
+    "scrapedAt": "2026-10-06T18:58:58.442Z",
     "description": "Flex is a growth-stage, NYC headquartered FinTech company that is creating the best rent payment experience. It’s hard to believe that it’s 2026 and paying rent on time is expensive, inflexible, and d",
     "region": "ww",
     "employmentType": "full-time"
@@ -79,7 +172,7 @@
       "UX"
     ],
     "postedAt": "2026-10-05T09:40:30-04:00",
-    "scrapedAt": "2026-10-06T14:30:41.971Z",
+    "scrapedAt": "2026-10-06T18:58:42.350Z",
     "description": "Senior UX Designer (Focus on Research) Zagreb, Split, Hybrid JOB PURPOSE As a User Researcher , you help product teams make confident, customer-centered decisions by uncovering real user needs, motiva",
     "region": "ww",
     "employmentType": "full-time"
@@ -97,7 +190,7 @@
       "Marketing"
     ],
     "postedAt": "2026-10-04T17:23:23.601Z",
-    "scrapedAt": "2026-10-06T14:30:27.863Z",
+    "scrapedAt": "2026-10-06T18:58:28.821Z",
     "description": "Recraft is a graphic design research lab building state-of-the-art image generation models and tools for designers, illustrators, marketers, and developers. Founded in 2022 and based in London, we bui",
     "region": "ww",
     "employmentType": "full-time"
@@ -114,7 +207,7 @@
       "8812 UX Research"
     ],
     "postedAt": "2026-10-02T08:22:26-04:00",
-    "scrapedAt": "2026-10-06T14:29:51.819Z",
+    "scrapedAt": "2026-10-06T18:57:46.879Z",
     "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies - from the world’s largest enterprises to the most ambitious startups - use Stripe to accept",
     "region": "ww",
     "employmentType": "full-time"
@@ -131,7 +224,7 @@
       "Reactor Engineering"
     ],
     "postedAt": "2026-10-01T17:37:48-04:00",
-    "scrapedAt": "2026-10-06T14:30:29.685Z",
+    "scrapedAt": "2026-10-06T18:58:30.312Z",
     "description": "Thanks for your interest in Oklo! We are searching for a Core Design Engineer to join our engineering team. Position Description Core Design Engineers at Oklo are responsible for designing performant ",
     "region": "ww",
     "employmentType": "full-time"
@@ -149,7 +242,7 @@
       "Marketing"
     ],
     "postedAt": "2026-10-01T19:37:53.532Z",
-    "scrapedAt": "2026-10-06T14:30:00.896Z",
+    "scrapedAt": "2026-10-06T18:57:56.978Z",
     "description": "About Tradeify Tradeify is a fast-growing futures trading company built to help traders access the tools, technology, and opportunities they need to succeed. We combine a trader-first approach with mo",
     "region": "ww",
     "employmentType": "full-time"
@@ -167,7 +260,7 @@
       "Design"
     ],
     "postedAt": "2026-10-01T17:55:27.006Z",
-    "scrapedAt": "2026-10-06T14:29:54.236Z",
+    "scrapedAt": "2026-10-06T18:57:49.328Z",
     "description": "Who We Are Hi, we're DuckDuckGo, the online protection company and remote-first team of 300+ on a mission to raise the standard of trust online. Founded in 2008 and profitable since 2014, annual reven",
     "region": "ww",
     "employmentType": "full-time"
@@ -182,7 +275,7 @@
     "source": "hn-whoishiring",
     "tags": [],
     "postedAt": "2026-10-01T15:03:25.000Z",
-    "scrapedAt": "2026-10-06T14:36:12.098Z",
+    "scrapedAt": "2026-10-06T19:01:55.180Z",
     "description": "We The Flywheel | Production Designer | REMOTE (async, global) | Contract, part-time to full-time | https://wetheflywheel.com/en/careers/production-designer-rem... We're a small, agent-led studio. Mos",
     "region": "ww",
     "employmentType": "Full-time"
@@ -199,7 +292,7 @@
       "Marketing"
     ],
     "postedAt": "2026-10-01T07:35:53-04:00",
-    "scrapedAt": "2026-10-06T14:30:21.769Z",
+    "scrapedAt": "2026-10-06T18:58:13.147Z",
     "description": "As a Graphic Designer, you will be a visual storyteller for our marketing team, responsible for maintaining brand integrity through high-quality communication design and creative excellence. You’ll he",
     "region": "ww",
     "employmentType": "full-time"
@@ -216,7 +309,7 @@
       "UX"
     ],
     "postedAt": "2026-09-30T09:49:35-04:00",
-    "scrapedAt": "2026-10-06T14:30:41.929Z",
+    "scrapedAt": "2026-10-06T18:58:42.308Z",
     "description": "Associate Director Experience Design Zürich, Hybrid DEPT® is a Growth Invention company built to help the world’s most ambitious brands grow faster. Operating at the intersection of technology and mar",
     "region": "ww",
     "employmentType": "full-time"
@@ -233,7 +326,7 @@
       "400-Research and Development"
     ],
     "postedAt": "2026-09-30T00:06:50-04:00",
-    "scrapedAt": "2026-10-06T14:30:37.444Z",
+    "scrapedAt": "2026-10-06T18:58:37.678Z",
     "description": "About Ubiquiti At Ubiquiti Inc., we create technology platforms for Businesses, Smart Homes, and Internet Service Providers, driven by our goal to connect everyone, everywhere. To date, Ubiquiti has s",
     "region": "ww",
     "employmentType": "full-time"
@@ -250,7 +343,7 @@
       "Marketing & Communications"
     ],
     "postedAt": "2026-09-29T17:52:51-04:00",
-    "scrapedAt": "2026-10-06T14:30:28.648Z",
+    "scrapedAt": "2026-10-06T18:58:29.284Z",
     "description": "SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologi",
     "region": "ww",
     "employmentType": "full-time"
@@ -267,7 +360,7 @@
       "Marketing & Communications"
     ],
     "postedAt": "2026-09-29T17:52:51-04:00",
-    "scrapedAt": "2026-10-06T14:30:28.848Z",
+    "scrapedAt": "2026-10-06T18:58:29.478Z",
     "description": "SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologi",
     "region": "ww",
     "employmentType": "full-time"
@@ -284,7 +377,7 @@
       "Mapping"
     ],
     "postedAt": "2026-09-28T13:34:40-04:00",
-    "scrapedAt": "2026-10-06T14:30:44.721Z",
+    "scrapedAt": "2026-10-06T18:58:45.157Z",
     "description": "ARE YOU READY TO TAKE YOUR CAREER TO NEW HEIGHTS? ARE YOU SEEKING A NEW CHALLENGE IN A DYNAMIC SECTOR? This is a very exciting and highly innovative time here at Outside. OUR TRUE NORTH:Outside Intera",
     "region": "ww",
     "employmentType": "full-time"
@@ -301,26 +394,8 @@
       "Media & Entertainment"
     ],
     "postedAt": "2026-09-28T13:29:20-04:00",
-    "scrapedAt": "2026-10-06T14:30:44.719Z",
+    "scrapedAt": "2026-10-06T18:58:45.156Z",
     "description": "ARE YOU READY TO TAKE YOUR CAREER TO NEW HEIGHTS? ARE YOU SEEKING A NEW CHALLENGE IN A DYNAMIC SECTOR? This is a very exciting and highly innovative time here at Outside. OUR TRUE NORTH:Outside Intera",
-    "region": "ww",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "ashby_wr7lds",
-    "title": "Copywriter",
-    "company": "SkydropX",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=skydropx.com&sz=128",
-    "category": "creative",
-    "url": "https://jobs.ashbyhq.com/skydropx/2cd0fe60-0091-494b-8dac-b5a54af7ac98",
-    "source": "ashby",
-    "tags": [
-      "Marketing",
-      "Marketing"
-    ],
-    "postedAt": "2026-09-25T00:28:59.818Z",
-    "scrapedAt": "2026-10-06T14:30:33.624Z",
-    "description": "Estamos innovando la logística y esto lo hemos logrado gracias a un equipo de personas visionarias, con ganas de crecer y cambiar el mundo . En Skydropx encontrarás un espacio para desarrollar tu carr",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -336,7 +411,7 @@
       "Product"
     ],
     "postedAt": "2026-09-23T16:28:23-04:00",
-    "scrapedAt": "2026-10-06T14:31:00.308Z",
+    "scrapedAt": "2026-10-06T18:59:01.307Z",
     "description": "About Carrot: Carrot is the leading global fertility and family care platform, built on intelligent care orchestration: the right clinical guidance, at the right moment, in the context of each member’",
     "region": "ww",
     "employmentType": "full-time"
@@ -354,7 +429,7 @@
       "Product"
     ],
     "postedAt": "2026-09-23T10:32:17.285Z",
-    "scrapedAt": "2026-10-06T14:34:44.602Z",
+    "scrapedAt": "2026-10-06T19:00:32.481Z",
     "description": "At Kpler, we are dedicated to helping our clients navigate complex markets with ease. By simplifying global trade information and providing valuable insights, we empower organisations to make informed",
     "region": "ww",
     "employmentType": "full-time"
@@ -371,7 +446,7 @@
       "LAM Engineering"
     ],
     "postedAt": "2026-09-22T13:23:03-04:00",
-    "scrapedAt": "2026-10-06T14:30:34.947Z",
+    "scrapedAt": "2026-10-06T18:58:35.197Z",
     "description": "Londrina, Brasil - Híbrido Na Platform Science, trabalhamos para conectar tudo que se move. Fundada em 2015, somos uma plataforma de IoT aberta que faz parcerias com frotas inovadoras, desenvolvedores",
     "region": "ww",
     "employmentType": "full-time"
@@ -388,7 +463,7 @@
       "Advancement"
     ],
     "postedAt": "2026-09-18T19:13:40-04:00",
-    "scrapedAt": "2026-10-06T14:30:02.146Z",
+    "scrapedAt": "2026-10-06T18:57:55.458Z",
     "description": "The Wikimedia Foundation is seeking a Lead Learning Experience Designer to create innovative, engaging, and accessible learning experiences that strengthen the capacity of volunteers and communities a",
     "region": "ww",
     "employmentType": "full-time"
@@ -406,7 +481,7 @@
       "Art"
     ],
     "postedAt": "2026-09-18T14:37:00.444Z",
-    "scrapedAt": "2026-10-06T14:32:08.533Z",
+    "scrapedAt": "2026-10-06T18:58:55.563Z",
     "description": "As a 2D Animator, you'll be a pivotal creative force, reporting directly to the Lead 2D Animator. You'll be instrumental in bringing our mobile games to life by designing, creating, and implementing h",
     "region": "ww",
     "employmentType": "full-time"
@@ -424,7 +499,7 @@
       "Art"
     ],
     "postedAt": "2026-09-18T14:33:45.267Z",
-    "scrapedAt": "2026-10-06T14:32:08.534Z",
+    "scrapedAt": "2026-10-06T18:58:55.563Z",
     "description": "As an Associate 2D Animator, you'll be a vital part of our creative team, reporting directly to the Lead 2D Animator. You'll contribute to bringing our games to life by creating engaging and high-qual",
     "region": "ww",
     "employmentType": "full-time"
@@ -442,25 +517,8 @@
       "Product"
     ],
     "postedAt": "2026-09-16T03:47:16.164Z",
-    "scrapedAt": "2026-10-06T14:31:32.206Z",
+    "scrapedAt": "2026-10-06T18:58:26.516Z",
     "description": "About Tala\n \nTala is the AI-native credit infrastructure that connects global capital to the global majority.  We combine proprietary risk intelligence with an expanding network of capital and distrib",
-    "region": "ww",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_699hoa",
-    "title": "Senior Quantitative UX Researcher",
-    "company": "Trustpilot",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=trustpilot.com&sz=128",
-    "category": "creative",
-    "url": "https://corporate.trustpilot.com/careers/job/8200593?gh_jid=8200593",
-    "source": "greenhouse",
-    "tags": [
-      "Design & Research"
-    ],
-    "postedAt": "2026-09-14T06:51:58-04:00",
-    "scrapedAt": "2026-10-06T14:30:04.882Z",
-    "description": "At Trustpilot, we're on an incredible journey. We're a profitable, high-growth FTSE-250 company with a big vision: to become the universal symbol of trust. We run the world's largest open customer rev",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -476,24 +534,7 @@
       "Product Design"
     ],
     "postedAt": "2026-09-14T05:13:34-04:00",
-    "scrapedAt": "2026-10-06T14:30:43.861Z",
-    "description": "Ebury helps ambitious businesses unlock global growth, and we take the same approach with our people. We encourage innovation and movement, collaboration and problem-solving, and foster an environment",
-    "region": "ww",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_tfvu0f",
-    "title": "Senior Product Designer - Onboarding & Activation",
-    "company": "Ebury",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=ebury.com&sz=128",
-    "category": "creative",
-    "url": "https://job-boards.eu.greenhouse.io/ebury/jobs/4975325101",
-    "source": "greenhouse",
-    "tags": [
-      "Product Design"
-    ],
-    "postedAt": "2026-09-14T05:12:07-04:00",
-    "scrapedAt": "2026-10-06T14:30:43.875Z",
+    "scrapedAt": "2026-10-06T18:58:44.271Z",
     "description": "Ebury helps ambitious businesses unlock global growth, and we take the same approach with our people. We encourage innovation and movement, collaboration and problem-solving, and foster an environment",
     "region": "ww",
     "employmentType": "full-time"
@@ -511,7 +552,7 @@
       "Marketing"
     ],
     "postedAt": "2026-09-10T14:05:27.439Z",
-    "scrapedAt": "2026-10-06T14:34:50.775Z",
+    "scrapedAt": "2026-10-06T19:00:56.067Z",
     "description": "Pioneer of online flash sales since 2001 and key player in European e-commerce, Veepee collaborates with over 7,000 brands to offer highly discounted products available for a limited time. Operating a",
     "region": "ww",
     "employmentType": "full-time"
