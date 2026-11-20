@@ -1,5 +1,22 @@
 [
   {
+    "id": "greenhouse_thzbzz",
+    "title": "Principal Product Designer",
+    "company": "Figure Technologies",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=figure.com&sz=128",
+    "category": "creative",
+    "url": "https://job-boards.greenhouse.io/figure/jobs/8841922002",
+    "source": "greenhouse",
+    "tags": [
+      "Design "
+    ],
+    "postedAt": "2026-11-19T22:54:07-05:00",
+    "scrapedAt": "2026-11-20T16:25:17.038Z",
+    "description": "About Figure We’re Figure (Nasdaq: FIGR), and we’re building the future of capital markets with blockchain and AI. We make lending faster and cheaper for everyone by automating the origination process",
+    "region": "ww",
+    "employmentType": "full-time"
+  },
+  {
     "id": "greenhouse_ww7cs8",
     "title": "Product Design Lead",
     "company": "Carrot Fertility",
@@ -11,7 +28,7 @@
       "Product"
     ],
     "postedAt": "2026-11-19T16:00:13-05:00",
-    "scrapedAt": "2026-11-20T02:26:40.017Z",
+    "scrapedAt": "2026-11-20T16:25:39.630Z",
     "description": "About Carrot: Carrot is the leading global fertility and family care platform, built on intelligent care orchestration: the right clinical guidance, at the right moment, in the context of each member’",
     "region": "ww",
     "employmentType": "full-time"
@@ -28,7 +45,7 @@
       "Product & Engineering"
     ],
     "postedAt": "2026-11-19T14:33:37-05:00",
-    "scrapedAt": "2026-11-20T02:26:40.017Z",
+    "scrapedAt": "2026-11-20T16:25:39.629Z",
     "description": "About Carrot: Carrot is the leading global fertility and family care platform, built on intelligent care orchestration: the right clinical guidance, at the right moment, in the context of each member’",
     "region": "ww",
     "employmentType": "full-time"
@@ -45,7 +62,7 @@
       "Design"
     ],
     "postedAt": "2026-11-19T14:30:26-05:00",
-    "scrapedAt": "2026-11-20T02:26:01.183Z",
+    "scrapedAt": "2026-11-20T16:25:00.209Z",
     "description": "About Grupo QuintoAndar We are Grupo QuintoAndar, the largest housing platform in Latin America . Driven by our shared purpose of helping people love where they live , we build technology and solution",
     "region": "ww",
     "employmentType": "full-time"
@@ -62,7 +79,7 @@
       "8812 UX Research"
     ],
     "postedAt": "2026-11-19T12:10:02-05:00",
-    "scrapedAt": "2026-11-20T02:25:39.344Z",
+    "scrapedAt": "2026-11-20T16:24:37.704Z",
     "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies - from the world’s largest enterprises to the most ambitious startups - use Stripe to accept",
     "region": "ww",
     "employmentType": "full-time"
@@ -80,7 +97,7 @@
       "Content"
     ],
     "postedAt": "2026-11-19T13:41:15.889Z",
-    "scrapedAt": "2026-11-20T02:26:11.477Z",
+    "scrapedAt": "2026-11-20T16:25:10.616Z",
     "description": "Are you our new Freelance Copywriter? Freelance | Remote | Flexible hours | Spanish, French or German Dapper is a B2B marketing agency with 21+ nationalities on the team. For content, we’re looking fo",
     "region": "ww",
     "employmentType": "contract"
@@ -97,25 +114,25 @@
       "UX"
     ],
     "postedAt": "2026-11-18T16:51:07-05:00",
-    "scrapedAt": "2026-11-20T02:26:22.253Z",
+    "scrapedAt": "2026-11-20T16:25:22.246Z",
     "description": "Associate Director Experience Design Zürich, Hybrid DEPT® is a Growth Invention company built to help the world’s most ambitious brands grow faster. Operating at the intersection of technology and mar",
     "region": "ww",
     "employmentType": "full-time"
   },
   {
-    "id": "greenhouse_6fx571",
+    "id": "greenhouse_5k0zqq",
     "title": "Senior UX Designer (Focus on Research)",
     "company": "DEPT®",
     "companyLogo": "https://www.google.com/s2/favicons?domain=dept.com&sz=128",
     "category": "creative",
-    "url": "https://job-boards.greenhouse.io/dept/jobs/8336632",
+    "url": "https://job-boards.greenhouse.io/dept/jobs/8176202",
     "source": "greenhouse",
     "tags": [
       "UX"
     ],
     "postedAt": "2026-11-18T16:51:07-05:00",
-    "scrapedAt": "2026-11-20T02:26:22.280Z",
-    "description": "Senior UX Designer (Focus on Research) Skopje JOB PURPOSE As a User Researcher , you help product teams make confident, customer-centered decisions by uncovering real user needs, motivations, behavior",
+    "scrapedAt": "2026-11-20T16:25:22.275Z",
+    "description": "Senior UX Designer (Focus on Research) Zagreb, Split, Hybrid JOB PURPOSE As a User Researcher , you help product teams make confident, customer-centered decisions by uncovering real user needs, motiva",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -131,7 +148,7 @@
       "Growth"
     ],
     "postedAt": "2026-11-18T14:11:14-05:00",
-    "scrapedAt": "2026-11-20T02:26:16.886Z",
+    "scrapedAt": "2026-11-20T16:25:17.042Z",
     "description": "Fingerprint empowers enterprises to detect and stop online fraud with the world’s most accurate device intelligence. We lead our industry with bleeding-edge identification capabilities and work on tur",
     "region": "ww",
     "employmentType": "full-time"
@@ -148,7 +165,7 @@
       "Marketing & Communications"
     ],
     "postedAt": "2026-11-18T11:03:10-05:00",
-    "scrapedAt": "2026-11-20T02:26:10.094Z",
+    "scrapedAt": "2026-11-20T16:25:09.261Z",
     "description": "SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologi",
     "region": "ww",
     "employmentType": "full-time"
@@ -166,7 +183,7 @@
       "Product Design"
     ],
     "postedAt": "2026-11-18T01:28:00.305Z",
-    "scrapedAt": "2026-11-20T02:28:37.286Z",
+    "scrapedAt": "2026-11-20T16:28:37.589Z",
     "description": "AllTrails is the app for exploring the outdoors. We help people spend more time outside by connecting them to their next adventure. Home to the world’s largest outdoor community, with members and trai",
     "region": "ww",
     "employmentType": "full-time"
@@ -183,7 +200,7 @@
       "Design"
     ],
     "postedAt": "2026-11-17T10:32:34-05:00",
-    "scrapedAt": "2026-11-20T02:26:00.550Z",
+    "scrapedAt": "2026-11-20T16:24:59.570Z",
     "description": "Reimagine how we translate complex ML and LLM capabilities into clear, actionable insights for researchers, data scientists, and evidence teams. This is your chance to design software and systems that",
     "region": "ww",
     "employmentType": "full-time"
@@ -200,7 +217,7 @@
       "Landor"
     ],
     "postedAt": "2026-11-17T09:36:28-05:00",
-    "scrapedAt": "2026-11-20T02:26:47.559Z",
+    "scrapedAt": "2026-11-20T16:25:47.719Z",
     "description": "We are Landor, part of WPP World leading brand experts, underpinned by the most expansive strategic &amp; creative capabilities in our category. We make brands more valuable and less vulnerable. We bu",
     "region": "ww",
     "employmentType": "full-time"
@@ -217,7 +234,7 @@
       "Product Design"
     ],
     "postedAt": "2026-11-17T04:38:39-05:00",
-    "scrapedAt": "2026-11-20T02:26:24.209Z",
+    "scrapedAt": "2026-11-20T16:25:24.116Z",
     "description": "Ebury helps ambitious businesses unlock global growth, and we take the same approach with our people. We encourage innovation and movement, collaboration and problem-solving, and foster an environment",
     "region": "ww",
     "employmentType": "full-time"
@@ -234,7 +251,7 @@
       "Product Design"
     ],
     "postedAt": "2026-11-16T06:06:00-05:00",
-    "scrapedAt": "2026-11-20T02:26:24.216Z",
+    "scrapedAt": "2026-11-20T16:25:24.124Z",
     "description": "Ebury helps ambitious businesses unlock global growth, and we take the same approach with our people. We encourage innovation and movement, collaboration and problem-solving, and foster an environment",
     "region": "ww",
     "employmentType": "full-time"
@@ -251,25 +268,8 @@
       "Product Design"
     ],
     "postedAt": "2026-11-16T06:06:00-05:00",
-    "scrapedAt": "2026-11-20T02:26:24.216Z",
+    "scrapedAt": "2026-11-20T16:25:24.125Z",
     "description": "Ebury helps ambitious businesses unlock global growth, and we take the same approach with our people. We encourage innovation and movement, collaboration and problem-solving, and foster an environment",
-    "region": "ww",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_thzbzz",
-    "title": "Principal Product Designer",
-    "company": "Figure Technologies",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=figure.com&sz=128",
-    "category": "creative",
-    "url": "https://job-boards.greenhouse.io/figure/jobs/8841922002",
-    "source": "greenhouse",
-    "tags": [
-      "Design "
-    ],
-    "postedAt": "2026-11-14T11:15:47-05:00",
-    "scrapedAt": "2026-11-20T02:26:16.902Z",
-    "description": "About Figure Figure Technology Solutions, Inc. (Nasdaq: FIGR; OPEN: FGRS) is the leading blockchain-native capital marketplace for the origination, funding, sale and trading of tokenized assets. More ",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -285,7 +285,7 @@
       "Product"
     ],
     "postedAt": "2026-11-13",
-    "scrapedAt": "2026-11-20T02:25:37.821Z",
+    "scrapedAt": "2026-11-20T16:24:36.168Z",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -301,7 +301,7 @@
       "3250 - Circuits"
     ],
     "postedAt": "2026-11-12T11:47:43-05:00",
-    "scrapedAt": "2026-11-20T02:26:10.826Z",
+    "scrapedAt": "2026-11-20T16:25:09.978Z",
     "description": "PsiQuantum’s mission is to build the first useful quantum computers—machines capable of delivering the breakthroughs the field has long promised. Since our founding in 2016, our singular focus has bee",
     "region": "ww",
     "employmentType": "full-time"
@@ -318,7 +318,7 @@
       "LAM Engineering"
     ],
     "postedAt": "2026-11-10T15:08:12-05:00",
-    "scrapedAt": "2026-11-20T02:26:15.423Z",
+    "scrapedAt": "2026-11-20T16:25:15.574Z",
     "description": "Londrina, Brasil - Híbrido Na Platform Science, trabalhamos para conectar tudo que se move. Fundada em 2015, somos uma plataforma de IoT aberta que faz parcerias com frotas inovadoras, desenvolvedores",
     "region": "ww",
     "employmentType": "full-time"
@@ -335,7 +335,7 @@
       "610 Product"
     ],
     "postedAt": "2026-11-10T13:19:39-05:00",
-    "scrapedAt": "2026-11-20T02:25:44.154Z",
+    "scrapedAt": "2026-11-20T16:24:42.673Z",
     "description": "We offer a hybrid work environment. Most US-based positions can also be performed remotely (any exceptions will be noted in the Minimum Qualifications below.) Our Mission: To actively connect people t",
     "region": "ww",
     "employmentType": "full-time"
@@ -352,7 +352,7 @@
       "Product & Technology"
     ],
     "postedAt": "2026-11-06T17:40:31-05:00",
-    "scrapedAt": "2026-11-20T02:25:47.062Z",
+    "scrapedAt": "2026-11-20T16:24:45.649Z",
     "description": "Location: Remote Duration: Permanent Hours: Full time Summary The Wikimedia Foundation is a non-profit organization supporting Wikipedia and other Wiki projects. The Foundation operates one of the wor",
     "region": "ww",
     "employmentType": "full-time"
@@ -369,7 +369,7 @@
       "00 - Departamento Genérico - Seleccionar está opción roles de Marzo 2026 en adelante"
     ],
     "postedAt": "2026-11-06T10:51:36-05:00",
-    "scrapedAt": "2026-11-20T02:25:54.529Z",
+    "scrapedAt": "2026-11-20T16:24:53.459Z",
     "description": "Objetivo del Rol El Product Designer Staff es un líder en diseño con un alto nivel de especialización, encargado de elevar la calidad del diseño y aportar un pensamiento estratégico en una o varias ár",
     "region": "ww",
     "employmentType": "full-time"
@@ -387,7 +387,7 @@
       "Products"
     ],
     "postedAt": "2026-11-05T15:34:50.924Z",
-    "scrapedAt": "2026-11-20T02:25:40.904Z",
+    "scrapedAt": "2026-11-20T16:24:39.327Z",
     "description": "Camunda is the enterprise platform for agentic orchestration , enabling organizations to coordinate AI agents, people, and systems across complex, end-to-end business processes. With built-in governan",
     "region": "ww",
     "employmentType": "full-time"
@@ -404,7 +404,7 @@
       "Creative"
     ],
     "postedAt": "2026-11-05T05:03:00-05:00",
-    "scrapedAt": "2026-11-20T02:26:47.560Z",
+    "scrapedAt": "2026-11-20T16:25:47.719Z",
     "description": "Do you think in systems rather than individual screens? Do you love turning complex requirements into clear structures, reusable patterns and compelling experiences? Then this role could be the perfec",
     "region": "ww",
     "employmentType": "full-time"
@@ -422,7 +422,7 @@
       "Crypto Banter"
     ],
     "postedAt": "2026-11-05T07:46:47.432Z",
-    "scrapedAt": "2026-11-20T02:28:36.150Z",
+    "scrapedAt": "2026-11-20T16:28:32.168Z",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -438,7 +438,7 @@
       "Product"
     ],
     "postedAt": "2026-11-03T14:29:50-05:00",
-    "scrapedAt": "2026-11-20T02:26:04.905Z",
+    "scrapedAt": "2026-11-20T16:25:03.868Z",
     "description": "About Us Hungryroot is using AI to build the most consumer-centric food and wellness company to ever exist. We act as your personal assistant for healthy living—getting to know your goals, lifestyle, ",
     "region": "ww",
     "employmentType": "full-time"
@@ -455,7 +455,7 @@
       "Design"
     ],
     "postedAt": "2026-10-29T11:36:36-04:00",
-    "scrapedAt": "2026-11-20T02:26:22.125Z",
+    "scrapedAt": "2026-11-20T16:25:22.181Z",
     "description": "Honor Technology’s mission is to change the way society cares for older adults. As a leader in aging care innovation, Honor provides the technology, tools, and services that empower older adults to li",
     "region": "ww",
     "employmentType": "full-time"
@@ -473,7 +473,7 @@
       "Crypto"
     ],
     "postedAt": "2026-10-28T13:04:43.363Z",
-    "scrapedAt": "2026-11-20T02:29:32.743Z",
+    "scrapedAt": "2026-11-20T16:29:45.171Z",
     "description": "About Unlimit\n \nUnlimit is a global fintech ecosystem built to eliminate financial borders holding businesses back. The company provides the extensive infrastructure needed to scale globally, integrat",
     "region": "ww",
     "employmentType": "full-time"
