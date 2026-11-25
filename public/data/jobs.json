@@ -1,26 +1,37 @@
 [
   {
-    "id": "himalayas_x9udm4",
-    "title": "Optomechanical Design Engineer — Precision CNC Parts",
-    "company": "micro1",
-    "companyLogo": "https://cdn-images.himalayas.app/91oa56akgt3qjqc1nh3uoruub40c",
+    "id": "greenhouse_3dkn39",
+    "title": "Motion Graphics Producer",
+    "company": "SpaceX",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=spacex.com&sz=128",
     "category": "creative",
-    "url": "https://himalayas.app/companies/micro1/jobs/optomechanical-design-engineer-precision-cnc-parts?utm_source=api",
-    "source": "himalayas",
+    "url": "https://boards.greenhouse.io/spacex/jobs/8942070002?gh_jid=8942070002",
+    "source": "greenhouse",
     "tags": [
-      "Opto-Mechanical-Designer",
-      "Mechanical-Design-Engineer",
-      "CNC-Machining-Engineer",
-      "Machining-Engineer",
-      "Design-Engineer",
-      "Mechanical-Engineer"
+      "Marketing & Communications"
     ],
-    "salary": "USD 90 - 155",
-    "postedAt": "2026-11-25T14:21:00.000Z",
-    "scrapedAt": "2026-11-25T18:18:30.330Z",
-    "description": "Role Title: Optomechanical Design Engineer — Precision CNC Parts (Remote) Role Type: Contractor Location: Fully remote Opportunity Snapshot Pay: $90 -$155/hour Duration: Initial phase of 20 part packa",
+    "postedAt": "2026-11-25T16:51:48-05:00",
+    "scrapedAt": "2026-11-25T22:38:53.957Z",
+    "description": "SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologi",
     "region": "ww",
-    "employmentType": "Contractor"
+    "employmentType": "full-time"
+  },
+  {
+    "id": "greenhouse_nfmdx4",
+    "title": "Sr. Graphic Designer, Marketing & Communications",
+    "company": "SpaceX",
+    "companyLogo": "https://www.google.com/s2/favicons?domain=spacex.com&sz=128",
+    "category": "creative",
+    "url": "https://boards.greenhouse.io/spacex/jobs/8731862002?gh_jid=8731862002",
+    "source": "greenhouse",
+    "tags": [
+      "Marketing & Communications"
+    ],
+    "postedAt": "2026-11-25T16:51:48-05:00",
+    "scrapedAt": "2026-11-25T22:38:54.166Z",
+    "description": "SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologi",
+    "region": "ww",
+    "employmentType": "full-time"
   },
   {
     "id": "greenhouse_52ec9l",
@@ -34,25 +45,8 @@
       "UX"
     ],
     "postedAt": "2026-11-25T06:48:51-05:00",
-    "scrapedAt": "2026-11-25T18:13:03.820Z",
+    "scrapedAt": "2026-11-25T22:39:18.158Z",
     "description": "Associate Director Experience Design Zürich, Hybrid DEPT® is a Growth Invention company built to help the world’s most ambitious brands grow faster. Operating at the intersection of technology and mar",
-    "region": "ww",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_5k0zqq",
-    "title": "Senior UX Designer (Focus on Research)",
-    "company": "DEPT®",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=dept.com&sz=128",
-    "category": "creative",
-    "url": "https://job-boards.greenhouse.io/dept/jobs/8176202",
-    "source": "greenhouse",
-    "tags": [
-      "UX"
-    ],
-    "postedAt": "2026-11-25T06:48:51-05:00",
-    "scrapedAt": "2026-11-25T18:13:03.856Z",
-    "description": "Senior UX Designer (Focus on Research) Zagreb, Split, Hybrid JOB PURPOSE As a User Researcher , you help product teams make confident, customer-centered decisions by uncovering real user needs, motiva",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -68,25 +62,8 @@
       "Design "
     ],
     "postedAt": "2026-11-24T21:41:24-05:00",
-    "scrapedAt": "2026-11-25T18:12:54.828Z",
+    "scrapedAt": "2026-11-25T22:39:12.788Z",
     "description": "About Figure We’re Figure (Nasdaq: FIGR), and we’re building the future of capital markets with blockchain and AI. We make lending faster and cheaper for everyone by automating the origination process",
-    "region": "ww",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_3dkn39",
-    "title": "Motion Graphics Producer",
-    "company": "SpaceX",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=spacex.com&sz=128",
-    "category": "creative",
-    "url": "https://boards.greenhouse.io/spacex/jobs/8942070002?gh_jid=8942070002",
-    "source": "greenhouse",
-    "tags": [
-      "Marketing & Communications"
-    ],
-    "postedAt": "2026-11-24T14:16:12-05:00",
-    "scrapedAt": "2026-11-25T18:12:47.015Z",
-    "description": "SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologi",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -103,7 +80,7 @@
       "Product"
     ],
     "postedAt": "2026-11-23T20:17:27.614Z",
-    "scrapedAt": "2026-11-25T18:13:27.792Z",
+    "scrapedAt": "2026-11-25T22:39:19.117Z",
     "description": "🌎 About Us\nTeamSnap is made up of innovators, technologists, builders, and problem-solvers shaping the future of youth sports. We’ve been setting the standard in youth sports technology since we were",
     "region": "ww",
     "employmentType": "full-time"
@@ -120,25 +97,8 @@
       "Marketing"
     ],
     "postedAt": "2026-11-23T13:41:29-05:00",
-    "scrapedAt": "2026-11-25T18:12:44.528Z",
+    "scrapedAt": "2026-11-25T22:38:51.162Z",
     "description": "Agility’s commercially deployed humanoids operate alongside teams in warehouses, manufacturing facilities, and distribution centers—tackling physically demanding and repetitive tasks while enabling wo",
-    "region": "ww",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_nfmdx4",
-    "title": "Sr. Graphic Designer, Marketing & Communications",
-    "company": "SpaceX",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=spacex.com&sz=128",
-    "category": "creative",
-    "url": "https://boards.greenhouse.io/spacex/jobs/8731862002?gh_jid=8731862002",
-    "source": "greenhouse",
-    "tags": [
-      "Marketing & Communications"
-    ],
-    "postedAt": "2026-11-20T17:06:05-05:00",
-    "scrapedAt": "2026-11-25T18:12:47.182Z",
-    "description": "SpaceX was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not. Today SpaceX is actively developing the technologi",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -154,7 +114,7 @@
       "Product"
     ],
     "postedAt": "2026-11-19T16:00:13-05:00",
-    "scrapedAt": "2026-11-25T18:13:25.430Z",
+    "scrapedAt": "2026-11-25T22:39:44.348Z",
     "description": "About Carrot: Carrot is the leading global fertility and family care platform, built on intelligent care orchestration: the right clinical guidance, at the right moment, in the context of each member’",
     "region": "ww",
     "employmentType": "full-time"
@@ -171,25 +131,8 @@
       "Product & Engineering"
     ],
     "postedAt": "2026-11-19T14:33:37-05:00",
-    "scrapedAt": "2026-11-25T18:13:25.430Z",
+    "scrapedAt": "2026-11-25T22:39:44.347Z",
     "description": "About Carrot: Carrot is the leading global fertility and family care platform, built on intelligent care orchestration: the right clinical guidance, at the right moment, in the context of each member’",
-    "region": "ww",
-    "employmentType": "full-time"
-  },
-  {
-    "id": "greenhouse_vnrj0t",
-    "title": "Grupo QuintoAndar | Staff Product Designer II",
-    "company": "QuintoAndar",
-    "companyLogo": "https://www.google.com/s2/favicons?domain=quintoandar.com.br&sz=128",
-    "category": "creative",
-    "url": "https://job-boards.greenhouse.io/quintoandar/jobs/4422353009",
-    "source": "greenhouse",
-    "tags": [
-      "Design"
-    ],
-    "postedAt": "2026-11-19T14:30:26-05:00",
-    "scrapedAt": "2026-11-25T18:12:37.717Z",
-    "description": "About Grupo QuintoAndar We are Grupo QuintoAndar, the largest housing platform in Latin America . Driven by our shared purpose of helping people love where they live , we build technology and solution",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -205,7 +148,7 @@
       "8812 UX Research"
     ],
     "postedAt": "2026-11-19T12:10:02-05:00",
-    "scrapedAt": "2026-11-25T18:12:08.878Z",
+    "scrapedAt": "2026-11-25T22:38:20.233Z",
     "description": "Who we are About Stripe Stripe is a financial infrastructure platform for businesses. Millions of companies - from the world’s largest enterprises to the most ambitious startups - use Stripe to accept",
     "region": "ww",
     "employmentType": "full-time"
@@ -222,7 +165,7 @@
       "Growth"
     ],
     "postedAt": "2026-11-18T14:11:14-05:00",
-    "scrapedAt": "2026-11-25T18:12:54.789Z",
+    "scrapedAt": "2026-11-25T22:39:12.800Z",
     "description": "Fingerprint empowers enterprises to detect and stop online fraud with the world’s most accurate device intelligence. We lead our industry with bleeding-edge identification capabilities and work on tur",
     "region": "ww",
     "employmentType": "full-time"
@@ -240,7 +183,7 @@
       "Product Design"
     ],
     "postedAt": "2026-11-18T01:28:00.305Z",
-    "scrapedAt": "2026-11-25T18:15:17.455Z",
+    "scrapedAt": "2026-11-25T22:40:31.858Z",
     "description": "AllTrails is the app for exploring the outdoors. We help people spend more time outside by connecting them to their next adventure. Home to the world’s largest outdoor community, with members and trai",
     "region": "ww",
     "employmentType": "full-time"
@@ -257,7 +200,7 @@
       "Design"
     ],
     "postedAt": "2026-11-17T10:32:34-05:00",
-    "scrapedAt": "2026-11-25T18:12:36.979Z",
+    "scrapedAt": "2026-11-25T22:38:43.742Z",
     "description": "Reimagine how we translate complex ML and LLM capabilities into clear, actionable insights for researchers, data scientists, and evidence teams. This is your chance to design software and systems that",
     "region": "ww",
     "employmentType": "full-time"
@@ -274,7 +217,7 @@
       "Landor"
     ],
     "postedAt": "2026-11-17T09:36:28-05:00",
-    "scrapedAt": "2026-11-25T18:13:33.129Z",
+    "scrapedAt": "2026-11-25T22:39:52.278Z",
     "description": "We are Landor, part of WPP World leading brand experts, underpinned by the most expansive strategic &amp; creative capabilities in our category. We make brands more valuable and less vulnerable. We bu",
     "region": "ww",
     "employmentType": "full-time"
@@ -291,7 +234,7 @@
       "Product Design"
     ],
     "postedAt": "2026-11-17T04:38:39-05:00",
-    "scrapedAt": "2026-11-25T18:13:05.737Z",
+    "scrapedAt": "2026-11-25T22:39:20.155Z",
     "description": "Ebury helps ambitious businesses unlock global growth, and we take the same approach with our people. We encourage innovation and movement, collaboration and problem-solving, and foster an environment",
     "region": "ww",
     "employmentType": "full-time"
@@ -308,7 +251,7 @@
       "Product Design"
     ],
     "postedAt": "2026-11-16T06:06:00-05:00",
-    "scrapedAt": "2026-11-25T18:13:05.747Z",
+    "scrapedAt": "2026-11-25T22:39:20.169Z",
     "description": "Ebury helps ambitious businesses unlock global growth, and we take the same approach with our people. We encourage innovation and movement, collaboration and problem-solving, and foster an environment",
     "region": "ww",
     "employmentType": "full-time"
@@ -325,7 +268,7 @@
       "Product Design"
     ],
     "postedAt": "2026-11-16T06:06:00-05:00",
-    "scrapedAt": "2026-11-25T18:13:05.748Z",
+    "scrapedAt": "2026-11-25T22:39:20.170Z",
     "description": "Ebury helps ambitious businesses unlock global growth, and we take the same approach with our people. We encourage innovation and movement, collaboration and problem-solving, and foster an environment",
     "region": "ww",
     "employmentType": "full-time"
@@ -342,7 +285,7 @@
       "Product"
     ],
     "postedAt": "2026-11-13",
-    "scrapedAt": "2026-11-25T18:12:06.442Z",
+    "scrapedAt": "2026-11-25T22:38:18.117Z",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -358,7 +301,7 @@
       "3250 - Circuits"
     ],
     "postedAt": "2026-11-12T11:47:43-05:00",
-    "scrapedAt": "2026-11-25T18:12:48.072Z",
+    "scrapedAt": "2026-11-25T22:38:55.072Z",
     "description": "PsiQuantum’s mission is to build the first useful quantum computers—machines capable of delivering the breakthroughs the field has long promised. Since our founding in 2016, our singular focus has bee",
     "region": "ww",
     "employmentType": "full-time"
@@ -375,7 +318,7 @@
       "LAM Engineering"
     ],
     "postedAt": "2026-11-10T15:08:12-05:00",
-    "scrapedAt": "2026-11-25T18:12:53.197Z",
+    "scrapedAt": "2026-11-25T22:39:11.216Z",
     "description": "Londrina, Brasil - Híbrido Na Platform Science, trabalhamos para conectar tudo que se move. Fundada em 2015, somos uma plataforma de IoT aberta que faz parcerias com frotas inovadoras, desenvolvedores",
     "region": "ww",
     "employmentType": "full-time"
@@ -392,7 +335,7 @@
       "610 Product"
     ],
     "postedAt": "2026-11-10T13:19:39-05:00",
-    "scrapedAt": "2026-11-25T18:12:18.828Z",
+    "scrapedAt": "2026-11-25T22:38:25.930Z",
     "description": "We offer a hybrid work environment. Most US-based positions can also be performed remotely (any exceptions will be noted in the Minimum Qualifications below.) Our Mission: To actively connect people t",
     "region": "ww",
     "employmentType": "full-time"
@@ -409,7 +352,7 @@
       "Product & Technology"
     ],
     "postedAt": "2026-11-06T17:40:31-05:00",
-    "scrapedAt": "2026-11-25T18:12:21.878Z",
+    "scrapedAt": "2026-11-25T22:38:29.312Z",
     "description": "Location: Remote Duration: Permanent Hours: Full time Summary The Wikimedia Foundation is a non-profit organization supporting Wikipedia and other Wiki projects. The Foundation operates one of the wor",
     "region": "ww",
     "employmentType": "full-time"
@@ -426,7 +369,7 @@
       "00 - Departamento Genérico - Seleccionar está opción roles de Marzo 2026 en adelante"
     ],
     "postedAt": "2026-11-06T10:51:36-05:00",
-    "scrapedAt": "2026-11-25T18:12:30.315Z",
+    "scrapedAt": "2026-11-25T22:38:37.294Z",
     "description": "Objetivo del Rol El Product Designer Staff es un líder en diseño con un alto nivel de especialización, encargado de elevar la calidad del diseño y aportar un pensamiento estratégico en una o varias ár",
     "region": "ww",
     "employmentType": "full-time"
@@ -444,7 +387,7 @@
       "Products"
     ],
     "postedAt": "2026-11-05T15:34:50.924Z",
-    "scrapedAt": "2026-11-25T18:12:10.849Z",
+    "scrapedAt": "2026-11-25T22:38:21.450Z",
     "description": "Camunda is the enterprise platform for agentic orchestration , enabling organizations to coordinate AI agents, people, and systems across complex, end-to-end business processes. With built-in governan",
     "region": "ww",
     "employmentType": "full-time"
@@ -461,7 +404,7 @@
       "Creative"
     ],
     "postedAt": "2026-11-05T05:03:00-05:00",
-    "scrapedAt": "2026-11-25T18:13:33.131Z",
+    "scrapedAt": "2026-11-25T22:39:52.279Z",
     "description": "Do you think in systems rather than individual screens? Do you love turning complex requirements into clear structures, reusable patterns and compelling experiences? Then this role could be the perfec",
     "region": "ww",
     "employmentType": "full-time"
@@ -479,7 +422,7 @@
       "Crypto Banter"
     ],
     "postedAt": "2026-11-05T07:46:47.432Z",
-    "scrapedAt": "2026-11-25T18:15:14.713Z",
+    "scrapedAt": "2026-11-25T22:40:29.958Z",
     "region": "ww",
     "employmentType": "full-time"
   },
@@ -495,7 +438,7 @@
       "Product"
     ],
     "postedAt": "2026-11-03T14:29:50-05:00",
-    "scrapedAt": "2026-11-25T18:12:41.648Z",
+    "scrapedAt": "2026-11-25T22:38:48.351Z",
     "description": "About Us Hungryroot is using AI to build the most consumer-centric food and wellness company to ever exist. We act as your personal assistant for healthy living—getting to know your goals, lifestyle, ",
     "region": "ww",
     "employmentType": "full-time"
@@ -512,7 +455,7 @@
       "Design"
     ],
     "postedAt": "2026-10-29T11:36:36-04:00",
-    "scrapedAt": "2026-11-25T18:13:03.744Z",
+    "scrapedAt": "2026-11-25T22:39:18.102Z",
     "description": "Honor Technology’s mission is to change the way society cares for older adults. As a leader in aging care innovation, Honor provides the technology, tools, and services that empower older adults to li",
     "region": "ww",
     "employmentType": "full-time"
